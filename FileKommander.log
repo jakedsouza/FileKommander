@@ -1,0 +1,210 @@
+04:57:44,830  INFO FileKommander:28 - Reading Properties File
+04:57:44,838  WARN GateBuilder:44 - GATE_HOME is not set trying to find GATE_HOME in sysenv
+04:58:11,739  INFO FileKommander:28 - Reading Properties File
+04:58:25,042  WARN GateBuilder:44 - GATE_HOME is not set trying to find GATE_HOME in sysenv
+04:58:52,852  INFO FileKommander:28 - Reading Properties File
+04:58:57,526  WARN GateBuilder:44 - GATE_HOME is not set trying to find GATE_HOME in sysenv
+04:58:59,100  INFO GateBuilder:64 - Initialising GATE
+04:58:59,100  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+04:58:59,128  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+04:58:59,129  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+04:58:59,130  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+04:58:59,130  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:02:54,373  INFO FileKommander:28 - Reading Properties File
+05:02:58,521  WARN GateBuilder:44 - GATE_HOME is not set trying to find GATE_HOME in sysenv
+05:03:04,955  INFO GateBuilder:64 - Initialising GATE
+05:03:59,299  INFO FileKommander:28 - Reading Properties File
+05:04:03,958  WARN GateBuilder:44 - GATE_HOME is not set trying to find GATE_HOME in sysenv
+05:04:05,016  INFO GateBuilder:64 - Initialising GATE
+05:04:12,719  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:04:12,724  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:04:12,724  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:04:12,725  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:04:12,725  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:05:31,468  INFO FileKommander:28 - Reading Properties File
+05:05:40,391  INFO FileKommander:28 - Reading Properties File
+05:05:40,418  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:05:40,419  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:05:40,419  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:05:40,424  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:05:40,425  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:05:49,488  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:05:49,493  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:05:49,493  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:05:49,498  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:05:49,499  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:06:01,665  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:06:01,671  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:06:01,671  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:06:01,677  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:06:01,677  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:07:02,408  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:07:02,415  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:07:02,416  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:07:02,422  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:07:02,423  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:11:43,767  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:11:43,772  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:11:43,772  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:11:43,777  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:11:43,777  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:13:03,817  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:13:03,822  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:13:03,823  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:13:03,828  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:13:03,829  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:13:52,158  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:13:52,164  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:13:52,164  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:13:52,168  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:13:52,169  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:14:00,762  INFO FileKommander:28 - Reading Properties File
+05:14:00,788  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:14:00,789  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:14:00,790  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:14:00,797  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:14:00,797  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:16:03,996  INFO FileKommander:28 - Reading Properties File
+05:16:04,020  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:16:04,020  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:16:04,021  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:16:04,024  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:16:04,025  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:16:05,679 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+05:16:32,999  INFO FileKommander:28 - Reading Properties File
+05:16:33,008  WARN GateBuilder:45 - GATE_HOME is not set trying to find GATE_HOME in sysenv
+05:16:33,012  INFO GateBuilder:65 - Initialising GATE
+05:16:33,026  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:16:33,030  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:16:33,030  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:16:33,031  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:16:33,031  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:16:34,245 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+05:16:34,298  INFO GateBuilder:67 - Done initialising GATE
+05:16:34,735  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/D:/Program%20Files/GATE_Developer_7.0/plugins/ANNIE/
+05:16:57,664  INFO FileKommander:28 - Reading Properties File
+05:16:57,674  WARN GateBuilder:45 - GATE_HOME is not set trying to find GATE_HOME in sysenv
+05:16:57,679  INFO GateBuilder:65 - Initialising GATE
+05:16:57,697  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:16:57,702  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:16:57,703  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:16:57,703  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:16:57,704  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:16:58,905 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+05:16:58,945  INFO GateBuilder:67 - Done initialising GATE
+05:16:59,237  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/D:/Program%20Files/GATE_Developer_7.0/plugins/ANNIE/
+05:17:20,910  INFO FileKommander:28 - Reading Properties File
+05:17:20,917  WARN GateBuilder:45 - GATE_HOME is not set trying to find GATE_HOME in sysenv
+05:17:20,921  INFO GateBuilder:65 - Initialising GATE
+05:17:20,942  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:17:20,948  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:17:20,949  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:17:20,949  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:17:20,950  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:17:59,666  INFO FileKommander:28 - Reading Properties File
+05:17:59,674  WARN GateBuilder:45 - GATE_HOME is not set trying to find GATE_HOME in sysenv
+05:17:59,677  INFO GateBuilder:65 - Initialising GATE
+05:17:59,692  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:17:59,696  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:17:59,697  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:17:59,697  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:17:59,698  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:18:28,228  INFO FileKommander:28 - Reading Properties File
+05:18:28,236  WARN GateBuilder:45 - GATE_HOME is not set trying to find GATE_HOME in sysenv
+05:18:28,239  INFO GateBuilder:65 - Initialising GATE
+05:18:28,258  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:18:28,264  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:18:28,265  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:18:28,265  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:18:28,266  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:18:55,836  INFO FileKommander:28 - Reading Properties File
+05:18:55,847  WARN GateBuilder:45 - GATE_HOME is not set trying to find GATE_HOME in sysenv
+05:18:55,852  INFO GateBuilder:65 - Initialising GATE
+05:18:55,869  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+05:18:55,873  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+05:18:55,874  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+05:18:55,874  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+05:18:55,875  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+05:18:57,473 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+05:18:57,521  INFO GateBuilder:67 - Done initialising GATE
+05:18:57,834  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/D:/Program%20Files/GATE_Developer_7.0/plugins/ANNIE/
+05:41:20,911  INFO FileKommander:31 - Reading Properties File
+05:41:21,014 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+05:41:21,019 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+05:41:21,020 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+05:41:21,037 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+05:41:21,038 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+05:41:32,261  INFO FileKommander:31 - Reading Properties File
+05:41:32,365 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+05:41:32,370 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+05:41:32,371 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+05:41:32,388 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+05:41:32,389 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+05:41:37,442  INFO FileKommander:31 - Reading Properties File
+05:41:37,548 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+05:41:37,552 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+05:41:37,552 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+05:41:37,568 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+05:41:37,569 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+05:53:04,936  INFO FileKommander:32 - Reading Properties File
+05:53:05,012 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+05:53:05,016 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+05:53:05,017 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+05:53:05,028 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+05:53:05,029 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+05:53:05,100 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is prlist.xml
+05:53:05,101 DEBUG DefaultFileSystem:281 - Could not locate file prlist.xml at null: no protocol: prlist.xml
+05:53:05,102 DEBUG ConfigurationUtils:493 - Loading configuration from the path prlist.xml
+05:53:39,878  INFO FileKommander:32 - Reading Properties File
+05:53:39,956 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+05:53:39,961 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+05:53:39,962 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+05:53:39,973 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+05:53:39,974 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+05:53:40,046 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is prlist.xml
+05:53:40,046 DEBUG DefaultFileSystem:281 - Could not locate file prlist.xml at null: no protocol: prlist.xml
+05:53:40,047 DEBUG ConfigurationUtils:493 - Loading configuration from the path prlist.xml
+06:05:33,886 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is prlist	.xml
+06:05:33,891 DEBUG DefaultFileSystem:281 - Could not locate file prlist	.xml at null: no protocol: prlist	.xml
+06:05:43,251 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is prlist.xml
+06:05:43,258 DEBUG DefaultFileSystem:281 - Could not locate file prlist.xml at null: no protocol: prlist.xml
+06:05:43,273 DEBUG ConfigurationUtils:493 - Loading configuration from the path prlist.xml
+06:06:02,648 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is prlist.xml
+06:06:02,654 DEBUG DefaultFileSystem:281 - Could not locate file prlist.xml at null: no protocol: prlist.xml
+06:06:02,667 DEBUG ConfigurationUtils:493 - Loading configuration from the path prlist.xml
+06:07:11,238 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is prlist.xml
+06:07:11,245 DEBUG DefaultFileSystem:281 - Could not locate file prlist.xml at null: no protocol: prlist.xml
+06:07:11,256 DEBUG ConfigurationUtils:493 - Loading configuration from the path prlist.xml
+06:07:30,883 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is prlist.xml
+06:07:30,889 DEBUG DefaultFileSystem:281 - Could not locate file prlist.xml at null: no protocol: prlist.xml
+06:07:30,908 DEBUG ConfigurationUtils:493 - Loading configuration from the path prlist.xml
+06:07:52,697  INFO FileKommander:36 - Reading Properties File
+06:07:52,790 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+06:07:52,793 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+06:07:52,794 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+06:07:52,807 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+06:07:52,808 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+06:13:14,897  INFO FileKommander:36 - Reading Properties File
+06:13:14,989 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+06:13:14,993 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+06:13:14,994 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+06:13:15,007 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+06:13:15,008 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+06:13:26,254  INFO FileKommander:36 - Reading Properties File
+06:13:26,341 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+06:13:26,345 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+06:13:26,345 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+06:13:26,358 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+06:13:26,358 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+06:13:50,642  INFO FileKommander:36 - Reading Properties File
+06:13:50,744 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+06:13:50,747 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+06:13:50,748 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+06:13:50,764 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+06:13:50,765 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+06:14:43,562  INFO FileKommander:36 - Reading Properties File
+06:14:43,673 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+06:14:43,677 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+06:14:43,678 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+06:14:43,692 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+06:14:43,692 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
