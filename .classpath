@@ -17,7 +17,7 @@
 	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
 	<classpathentry kind="lib" path="lib/gate-asm.jar"/>
 	<classpathentry kind="lib" path="lib/gate-compiler-jdt.jar"/>
-	<classpathentry kind="lib" path="lib/gate.jar"/>
+	<classpathentry kind="lib" path="lib/gate.jar" sourcepath="D:/Program Files/GATE_Developer_7.0/src"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="lib/tika-core.jar"/>
 	<classpathentry kind="lib" path="lib/tika-parsers.jar"/>

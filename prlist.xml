@@ -1,6 +1,0 @@
-<config>
-  <gui>
-    <windowManager config-class="com.poly.nlp.filekommander.gate.ProcessingResource"
-      prClass="false" />
-  </gui>
-</config>
