@@ -3,4 +3,7 @@ Phases:
 preprocessing1
 preprocessingActions
 preprocessingObjects
+preprocessingObjects2
+preprocessingObjects3
 preprocessing3
+preprocessingMultipleSentences
