@@ -127,6 +127,7 @@ public class GateBuilder {
 		// URL u=new
 		// File("ie/deri/nlp/LanguageResources/gazetteers/mylists.def").toURL();
 		params.put("listsURL", new File(gazetteerFilePath).toURI().toURL());
+		params.put("caseSensitive",false);
 		DefaultGazetteer gazetteer = (DefaultGazetteer) Factory.createResource(
 				"gate.creole.gazetteer.DefaultGazetteer", params);
 		prList.add(gazetteer);

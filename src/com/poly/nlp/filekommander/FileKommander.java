@@ -1,8 +1,12 @@
 package com.poly.nlp.filekommander;
 
+import gate.Annotation;
+import gate.AnnotationSet;
 import gate.Corpus;
 import gate.Document;
 import gate.Factory;
+import gate.FeatureMap;
+import gate.annotation.ImmutableAnnotationSetImpl;
 import gate.creole.SerialAnalyserController;
 import gate.util.GateException;
 
@@ -13,6 +17,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.util.Iterator;
 import java.util.Properties;
 
 import org.apache.commons.configuration.Configuration;
@@ -24,6 +29,7 @@ import org.apache.commons.configuration.beanutils.BeanHelper;
 import org.apache.commons.configuration.beanutils.XMLBeanDeclaration;
 import org.apache.log4j.Logger;
 
+import com.poly.nlp.filekommander.file.actions.FileActionUtils;
 import com.poly.nlp.filekommander.gate.GateBuilder;
 import com.poly.nlp.filekommander.gate.ProcessingResource;
 
@@ -64,6 +70,26 @@ public class FileKommander {
 		corpus.add(doc);
 		a.setCorpus(corpus);
 		a.execute();
+		AnnotationSet defaultAnnotSet = doc.getAnnotations();	
+		AnnotationSet all = defaultAnnotSet.get("all");
+		for (Annotation annotation : all) {
+			FeatureMap featureMap = annotation.getFeatures();
+			AnnotationSet actionsAnnotation =  (AnnotationSet)featureMap.get("actions");
+			AnnotationSet directoryName =  (AnnotationSet)featureMap.get("directoryName");
+			AnnotationSet fileName =  (AnnotationSet)featureMap.get("fileName");
+			AnnotationSet phraseName =  (AnnotationSet)featureMap.get("phraseName");
+			AnnotationSet quotedObject =  (AnnotationSet)featureMap.get("quotedObject");
+			String content =  (String)featureMap.get("content");
+		for(Annotation annot2 : actionsAnnotation){
+			FeatureMap featureMap2 = annot2.getFeatures();
+			String actionType = (String)featureMap2.get("minorType");
+			FileActionUtils.callAction(actionType,annotation);
+			
+		}
+		
+		}
+		
+		
 		corpus.clear();  
 	
 	}
