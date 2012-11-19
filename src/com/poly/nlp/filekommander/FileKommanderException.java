@@ -19,7 +19,7 @@ public class FileKommanderException extends RuntimeException {
 	private static final Logger log = Logger.getLogger(FileKommanderException.class);
 
 	
-	FileKommanderException(String message){
+	FileKommanderException(String message){	
 		log.error(message);
 	}
 	
