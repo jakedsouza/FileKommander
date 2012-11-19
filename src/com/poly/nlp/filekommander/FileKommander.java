@@ -75,11 +75,6 @@ public class FileKommander {
 		for (Annotation annotation : all) {
 			FeatureMap featureMap = annotation.getFeatures();
 			AnnotationSet actionsAnnotation =  (AnnotationSet)featureMap.get("actions");
-			AnnotationSet directoryName =  (AnnotationSet)featureMap.get("directoryName");
-			AnnotationSet fileName =  (AnnotationSet)featureMap.get("fileName");
-			AnnotationSet phraseName =  (AnnotationSet)featureMap.get("phraseName");
-			AnnotationSet quotedObject =  (AnnotationSet)featureMap.get("quotedObject");
-			String content =  (String)featureMap.get("content");
 		for(Annotation annot2 : actionsAnnotation){
 			FeatureMap featureMap2 = annot2.getFeatures();
 			String actionType = (String)featureMap2.get("minorType");
