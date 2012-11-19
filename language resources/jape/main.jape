@@ -1,9 +1,9 @@
 MultiPhase:RelationExtractionGrammars
 Phases: 
-preprocessing1
+preprocessingCC
 preprocessingActions
 preprocessingObjects
 preprocessingObjects2
 preprocessingObjects3
 preprocessing3
-preprocessingMultipleSentences
+final
