@@ -945,3 +945,53 @@ Memory: 35612k; change: 11091k; max: 40207k; Net time:   1.34s; since prev. mill
 08:16:24,647 DEBUG SerialController:164 - Time taken so far by JAPE Transducer_0001D: 336
 08:16:24,647 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
 Memory: 35612k; change: 0k; max: 40207k; Net time:   1.34s; since prev. millisecs: 0
+16:36:56,721  INFO FileKommander:42 - Reading Properties File
+16:36:56,807 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+16:36:56,811 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+16:36:56,811 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+16:36:56,825 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+16:36:56,826 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+16:36:56,993  INFO GateBuilder:81 - Initialising GATE
+16:36:57,008  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+16:36:57,008  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+16:36:57,022  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+16:36:57,022  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+16:36:57,023  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+16:36:59,994 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+16:37:00,982  INFO GateBuilder:83 - Done initialising GATE
+16:37:01,747  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/D:/Program%20Files/GATE_Developer_7.0/plugins/ANNIE/
+16:37:45,675 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+16:37:45,681 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 22742k; change: 22742k; max: 22742k; Net time:   0.0s; since prev. millisecs: 6
+16:37:45,682 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 6
+16:37:45,898 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 23959k; change: 1217k; max: 23959k; Net time:   0.22s; since prev. millisecs: 217
+16:37:45,898 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 217
+16:37:45,911 DEBUG SinglePhaseTransducer:216 - Start: prepare
+16:37:45,955 DEBUG SinglePhaseTransducer:216 - Start: find
+16:37:46,399 DEBUG SinglePhaseTransducer:216 - Start: split
+16:37:46,476 DEBUG SinglePhaseTransducer:216 - Start: cleanup
+16:37:46,487 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 34909k; change: 10950k; max: 34909k; Net time:   0.81s; since prev. millisecs: 588
+16:37:46,487 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 588
+16:37:46,724 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE POS Tagger_0001B]---------
+Memory: 35518k; change: 609k; max: 35518k; Net time:   1.4s; since prev. millisecs: 238
+16:37:46,725 DEBUG SerialController:164 - Time taken so far by ANNIE POS Tagger_0001B: 238
+16:37:46,741 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Gazetteer_0001C]---------
+Memory: 35518k; change: 0k; max: 35518k; Net time:   1.6s; since prev. millisecs: 17
+16:37:46,742 DEBUG SerialController:164 - Time taken so far by ANNIE Gazetteer_0001C: 17
+16:37:46,742 DEBUG SinglePhaseTransducer:216 - Start: ConjunctionIdentifier
+16:37:46,870 DEBUG SinglePhaseTransducer:216 - Start: preprocessingActions
+16:37:46,890 DEBUG SinglePhaseTransducer:216 - Start: preprocessingObjects
+16:37:46,974 DEBUG SinglePhaseTransducer:216 - Start: preprocessingObjects2
+16:37:46,994 DEBUG SinglePhaseTransducer:216 - Start: preprocessingObjects3
+16:37:47,058 DEBUG SinglePhaseTransducer:216 - Start: preprocessing3
+16:37:47,066 DEBUG SinglePhaseTransducer:216 - Start: preprocessingMultipleSentences
+16:37:47,156 DEBUG Profiler:280 - ---------LOG: ~Execute PR [JAPE Transducer_0001D]---------
+Memory: 22204k; change: -13314k; max: 35518k; Net time:   1.48s; since prev. millisecs: 415
+16:37:47,157 DEBUG SerialController:164 - Time taken so far by JAPE Transducer_0001D: 415
+16:37:47,157 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
+Memory: 22204k; change: 0k; max: 35518k; Net time:   1.48s; since prev. millisecs: 1
