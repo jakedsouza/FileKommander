@@ -1,0 +1,33 @@
+Phase: PhraseObjects
+Input:  Lookup Split Token Sentence  action  quotedObject SpaceToken
+Options:debug = true  control = appelt
+
+Rule: PhraseName
+(
+  ({Lookup.minorType == phrase})
+  {SpaceToken}
+  ({Token.string == "named"} | {Token.string == "called"})[0,1]
+  ({SpaceToken})[0,1]
+  ({quotedObject}):phraseNameFromRef
+)
+-->
+:phraseNameFromRef
+ {
+	    gate.AnnotationSet matchedAnns= (gate.AnnotationSet) bindings.get("phraseNameFromRef");	
+		Annotation firstAnn = matchedAnns.iterator().next();
+	//	System.out.println(firstAnn.getFeatures());
+		gate.FeatureMap newFeatures= Factory.newFeatureMap();
+	newFeatures.put("rule","PhraseName");
+	newFeatures.put("derivedFromRule","PhraseName");
+	try{
+		String content = doc.getContent().getContent(matchedAnns.firstNode().getOffset(),
+                 matchedAnns.lastNode().getOffset()).toString();
+				 newFeatures.put("string", content);
+		  }
+	  catch(InvalidOffsetException ioe){
+		        //this should never happen
+		        throw new GateRuntimeException(ioe);
+	}	
+	//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
+    outputAS.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"phraseName", newFeatures);
+} 

@@ -2,8 +2,11 @@ MultiPhase:RelationExtractionGrammars
 Phases: 
 preprocessingCC
 preprocessingActions
-preprocessingObjects
-preprocessingObjects2
-preprocessingObjects3
-preprocessing3
-final
+preprocessingObjects1
+FileObjects
+DirectoryObjects
+PhraseObjects
+finalCleanup	
+//preprocessingObjects2
+//preprocessingObjects3
+//preprocessing3

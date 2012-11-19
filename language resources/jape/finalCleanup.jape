@@ -1,0 +1,45 @@
+Phase: finalCleanup
+ Input: Sentence action directoryName fileName phraseName quotedObject
+ Options: control = first
+ 
+ 
+ Rule: FinalCleanup
+ (
+ {Sentence}
+ 
+ ):acq
+ -->
+ :acq{
+	 gate.AnnotationSet  acq = (AnnotationSet) bindings.get("acq");
+	  Annotation firstAnn = acq.iterator().next();
+	  AnnotationSet actions = inputAS.get("action", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+	  AnnotationSet directoryName = inputAS.get("directoryName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+	  AnnotationSet fileName = inputAS.get("fileName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+	  AnnotationSet phraseName = inputAS.get("phraseName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+	  AnnotationSet quotedObject = inputAS.get("quotedObject", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+	  
+	  String content = null ;
+	  try{
+		  content = doc.getContent().getContent(firstAnn.getStartNode().getOffset(),
+				  firstAnn.getEndNode().getOffset()).toString();
+		  }
+	  catch(InvalidOffsetException ioe){
+		        //this should never happen
+		        throw new GateRuntimeException(ioe);
+	}
+		gate.FeatureMap newFeatures= Factory.newFeatureMap();
+	newFeatures.put("actions",actions);
+	newFeatures.put("directoryName",directoryName);
+	newFeatures.put("fileName",fileName);
+	newFeatures.put("phraseName",phraseName);
+	newFeatures.put("quotedObject",quotedObject);
+	newFeatures.put("content",content);
+	//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
+  outputAS.add(acq.firstNode(),acq.lastNode(),"all", newFeatures);
+  outputAS.removeAll(actions);
+  outputAS.removeAll(directoryName);
+  outputAS.removeAll(fileName);
+  outputAS.removeAll(phraseName);
+  outputAS.removeAll(quotedObject);
+
+ }

@@ -24,6 +24,15 @@ Rule: Actions
 	newFeatures.put("rule","Actions");
 	newFeatures.put("majorType","Actions");
 	newFeatures.put("minorType",firstAnn.getFeatures().get("minorType"));
+	try{
+		String content = doc.getContent().getContent(matchedAnns.firstNode().getOffset(),
+                 matchedAnns.lastNode().getOffset()).toString();
+				 newFeatures.put("string", content);
+		  }
+	  catch(InvalidOffsetException ioe){
+		        //this should never happen
+		        throw new GateRuntimeException(ioe);
+	}	
 	//System.out.println(firstAnn.getFeatures().get("minorType"));
 	//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"action", newFeatures);
 	outputAS.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"action", newFeatures);

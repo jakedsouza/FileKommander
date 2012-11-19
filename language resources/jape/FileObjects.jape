@@ -1,0 +1,164 @@
+Phase: FileObjects
+Input:  Lookup Split Token Sentence  action  quotedObject SpaceToken
+Options:debug = true  control = appelt
+
+Macro: QUOTE
+( 
+		{Token.string == "\"" , Token.kind == punctuation} |
+		{Token.string == "\'" , Token.kind == punctuation}
+)
+
+Macro: FILEEXTENTION
+(
+		{Token.category == "." , Token.kind == punctuation}
+		( {Token.kind == word , Token.length == 3 } | {Token.kind == word , Token.length == 4 })
+)
+
+Macro: SIMPLEFILENAME
+(
+	(
+		{Token.kind== word}
+		FILEEXTENTION
+	)	
+)
+
+Macro: QUOTEDFILENAME
+(
+	(
+		QUOTE						
+		(				 
+				(SIMPLEFILENAME)
+		)
+		QUOTE 
+	)	
+)
+
+
+Macro:QUOTEDCOMPLEXFILENAME
+(
+	(
+		QUOTE				
+		(				 
+			({Token})+
+		)
+		FILEEXTENTION	
+		QUOTE
+	)		
+
+)
+
+Rule: SimpleFileName
+(
+( SIMPLEFILENAME )
+):simpleFileName
+
+--> 
+:simpleFileName
+  {
+    gate.AnnotationSet matchedAnns= (gate.AnnotationSet) bindings.get("simpleFileName");	
+	Annotation firstAnn = matchedAnns.iterator().next();
+//	System.out.println(firstAnn.getFeatures());
+
+	gate.FeatureMap newFeatures= Factory.newFeatureMap();
+	newFeatures.put("rule","FileName");
+	newFeatures.put("derivedFromRule","SimpleFileName");
+	  try{
+		String content = doc.getContent().getContent(matchedAnns.firstNode().getOffset(),
+                 matchedAnns.lastNode().getOffset()).toString();
+				 newFeatures.put("string", content);
+		  }
+	  catch(InvalidOffsetException ioe){
+		        //this should never happen
+		        throw new GateRuntimeException(ioe);
+	}	
+	//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
+  outputAS.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileName", newFeatures);
+  }
+ 
+Rule: QuotedFileName
+(
+( QUOTEDFILENAME ):quotedFilename
+)
+
+--> 
+:quotedFilename
+  {
+    gate.AnnotationSet matchedAnns= (gate.AnnotationSet) bindings.get("quotedFilename");	
+  //  System.out.println(matchedAnns);
+    Annotation firstAnn = matchedAnns.iterator().next();
+//	System.out.println(firstAnn.getFeatures());
+
+	gate.FeatureMap newFeatures= Factory.newFeatureMap();
+	newFeatures.put("rule","FileName");
+		newFeatures.put("derivedFromRule","QuotedFileName");
+  try{
+		String content = doc.getContent().getContent(matchedAnns.firstNode().getOffset(),
+                 matchedAnns.lastNode().getOffset()).toString();
+				 newFeatures.put("string", content);
+		  }
+	  catch(InvalidOffsetException ioe){
+		        //this should never happen
+		        throw new GateRuntimeException(ioe);
+	}		 
+
+	 //annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
+  outputAS.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileName", newFeatures);
+  }		
+
+Rule: QuotedComplexFileName
+(
+( QUOTEDCOMPLEXFILENAME ):quotedComplexFilename
+)
+
+--> 
+:quotedComplexFilename
+  {
+    gate.AnnotationSet matchedAnns= (gate.AnnotationSet) bindings.get("quotedComplexFilename");	
+  //  System.out.println(matchedAnns);
+    Annotation firstAnn = matchedAnns.iterator().next();
+//	System.out.println(firstAnn.getFeatures());
+	
+	gate.FeatureMap newFeatures= Factory.newFeatureMap();
+	newFeatures.put("rule","FileName");
+		newFeatures.put("derivedFromRule","QuotedComplexFileName");
+	    try{
+		String content = doc.getContent().getContent(matchedAnns.firstNode().getOffset(),
+                 matchedAnns.lastNode().getOffset()).toString();
+				 newFeatures.put("string", content);
+		  }
+	  catch(InvalidOffsetException ioe){
+		        //this should never happen
+		        throw new GateRuntimeException(ioe);
+	}		//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
+  outputAS.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileName", newFeatures);
+  }		
+  
+Rule: FileName1
+(
+  ({Lookup.minorType == file})
+  {SpaceToken}
+  ({Token.string == "named"} | {Token.string == "called"})[0,1]
+  ({SpaceToken})[0,1]
+  (SIMPLEFILENAME|QUOTEDCOMPLEXFILENAME|QUOTEDFILENAME|{quotedObject}):fileNameFromRef
+)
+-->
+:fileNameFromRef
+ {
+	    gate.AnnotationSet matchedAnns= (gate.AnnotationSet) bindings.get("fileNameFromRef");	
+		Annotation firstAnn = matchedAnns.iterator().next();
+	//	System.out.println(firstAnn.getFeatures());
+		gate.FeatureMap newFeatures= Factory.newFeatureMap();
+	newFeatures.put("rule","FileName");
+	newFeatures.put("derivedFromRule","fileNameFromRef");
+	   try{
+		String content = doc.getContent().getContent(matchedAnns.firstNode().getOffset(),
+                 matchedAnns.lastNode().getOffset()).toString();
+				 newFeatures.put("string", content);
+		  }
+	  catch(InvalidOffsetException ioe){
+		        //this should never happen
+		        throw new GateRuntimeException(ioe);
+	}	
+		//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
+	    outputAS.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileName", newFeatures);
+} 

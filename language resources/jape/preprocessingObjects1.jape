@@ -1,0 +1,38 @@
+Phase: preprocessingObjects1
+Input:  Lookup Split Token Sentence 
+Options: control = first
+
+Macro: QUOTE
+( 
+		{Token.string == "\"" , Token.kind == punctuation} |
+		{Token.string == "\'" , Token.kind == punctuation}
+)
+
+
+Rule: QuotedObject
+(
+		(QUOTE
+		({Token})+		
+		QUOTE ):quotedObject
+)
+-->
+:quotedObject
+{
+  gate.AnnotationSet matchedAnns= (gate.AnnotationSet) bindings.get("quotedObject");	
+	Annotation firstAnn = matchedAnns.iterator().next();
+	//System.out.println(firstAnn.getFeatures());
+	gate.FeatureMap newFeatures= Factory.newFeatureMap();
+	newFeatures.put("rule","QuotedObject");
+	try{
+		String content = doc.getContent().getContent(matchedAnns.firstNode().getOffset(),
+                 matchedAnns.lastNode().getOffset()).toString();
+				 newFeatures.put("string", content);
+		  }
+	  catch(InvalidOffsetException ioe){
+		        //this should never happen
+		        throw new GateRuntimeException(ioe);
+	}	
+	//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
+outputAS.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"quotedObject", newFeatures);
+}
+

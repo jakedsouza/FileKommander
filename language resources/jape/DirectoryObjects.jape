@@ -1,0 +1,34 @@
+Phase: DirectoryObjects
+Input:  Lookup Split Token Sentence  action  quotedObject SpaceToken
+Options:debug = true  control = appelt
+
+Rule: DirectoryName
+(
+  ({Lookup.minorType == directory})
+  {SpaceToken}
+  ({Token.string == "named"} | {Token.string == "called"})[0,1]
+  ({SpaceToken})[0,1]
+  ({quotedObject}):directoryNameFromRef
+)
+-->
+:directoryNameFromRef
+ {
+	    gate.AnnotationSet matchedAnns= (gate.AnnotationSet) bindings.get("directoryNameFromRef");	
+		Annotation firstAnn = matchedAnns.iterator().next();
+	//	System.out.println(firstAnn.getFeatures());
+
+		gate.FeatureMap newFeatures= Factory.newFeatureMap();
+	newFeatures.put("rule","DirectoryName");
+	newFeatures.put("derivedFromRule","DirectoryName");
+	try{
+		String content = doc.getContent().getContent(matchedAnns.firstNode().getOffset(),
+                 matchedAnns.lastNode().getOffset()).toString();
+				 newFeatures.put("string", content);
+		  }
+	  catch(InvalidOffsetException ioe){
+		        //this should never happen
+		        throw new GateRuntimeException(ioe);
+	}	
+	//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
+    outputAS.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"directoryName", newFeatures);
+} 
