@@ -28,7 +28,7 @@ import org.apache.log4j.Logger;
 import com.poly.nlp.filekommander.FileKommander;
 
 /**
- * @author jake
+ * @author jake , neha
  * 
  */
 public class GateBuilder {

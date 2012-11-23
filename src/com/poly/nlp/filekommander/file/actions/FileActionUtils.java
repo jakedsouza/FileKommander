@@ -16,7 +16,7 @@ import gate.AnnotationSet;
 import gate.FeatureMap;
 
 /**
- * @author jake
+ * @author jake , neha
  * 
  */
 public class FileActionUtils {

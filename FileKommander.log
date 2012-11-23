@@ -579,3 +579,241 @@ Memory: 57141k; change: 17393k; max: 57141k; Net time:   1.14s; since prev. mill
 Memory: 57141k; change: 0k; max: 57141k; Net time:   1.14s; since prev. millisecs: 1
 11:13:47,888  INFO FileActionUtils:34 - DeleteAction action called
 11:14:00,451  INFO FileActionUtils:34 - DeleteAction action called
+13:10:41,604  INFO FileKommander:48 - Reading Properties File
+13:10:41,758 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+13:10:41,763 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+13:10:41,764 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+13:10:41,790 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+13:10:41,791 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+13:10:41,914  INFO GateBuilder:81 - Initialising GATE
+13:10:41,929  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+13:10:41,929  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+13:10:41,930  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+13:10:41,930  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+13:10:41,930  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+13:10:43,837 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+13:10:43,952  INFO GateBuilder:83 - Done initialising GATE
+13:10:44,480  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/D:/Program%20Files/GATE_Developer_7.0/plugins/ANNIE/
+13:10:46,953 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+13:10:46,957 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 25322k; change: 25322k; max: 25322k; Net time:   0.0s; since prev. millisecs: 4
+13:10:46,957 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 4
+13:10:47,050 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 26566k; change: 1244k; max: 26566k; Net time:   0.9s; since prev. millisecs: 93
+13:10:47,051 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 93
+13:10:47,058 DEBUG SinglePhaseTransducer:216 - Start: prepare
+13:10:47,082 DEBUG SinglePhaseTransducer:216 - Start: find
+13:10:47,406 DEBUG SinglePhaseTransducer:216 - Start: split
+13:10:47,451 DEBUG SinglePhaseTransducer:216 - Start: cleanup
+13:10:47,459 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 36519k; change: 9953k; max: 36519k; Net time:   0.50s; since prev. millisecs: 409
+13:10:47,460 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 409
+13:10:47,609 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE POS Tagger_0001B]---------
+Memory: 36519k; change: 0k; max: 36519k; Net time:   0.65s; since prev. millisecs: 150
+13:10:47,609 DEBUG SerialController:164 - Time taken so far by ANNIE POS Tagger_0001B: 150
+13:10:47,626 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Gazetteer_0001C]---------
+Memory: 37141k; change: 622k; max: 37141k; Net time:   0.67s; since prev. millisecs: 17
+13:10:47,626 DEBUG SerialController:164 - Time taken so far by ANNIE Gazetteer_0001C: 17
+13:10:47,627 DEBUG SinglePhaseTransducer:216 - Start: ConjunctionIdentifier
+13:10:47,739 DEBUG SinglePhaseTransducer:216 - Start: preprocessingActions
+13:10:47,762 DEBUG SinglePhaseTransducer:216 - Start: preprocessingObjects1
+13:10:47,783 DEBUG SinglePhaseTransducer:216 - Start: FileObjects
+13:10:47,859 DEBUG SinglePhaseTransducer:216 - Start: DirectoryObjects
+13:10:47,882 DEBUG SinglePhaseTransducer:216 - Start: PhraseObjects
+13:10:47,889 DEBUG SinglePhaseTransducer:216 - Start: finalCleanup
+13:10:48,008 DEBUG Profiler:280 - ---------LOG: ~Execute PR [JAPE Transducer_0001D]---------
+Memory: 23693k; change: -13448k; max: 37141k; Net time:   1.5s; since prev. millisecs: 382
+13:10:48,009 DEBUG SerialController:164 - Time taken so far by JAPE Transducer_0001D: 382
+13:10:48,009 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
+Memory: 23693k; change: 0k; max: 37141k; Net time:   1.5s; since prev. millisecs: 1
+13:10:48,011  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,011  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,012  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,012  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,012  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,012  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,012  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,013  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,013  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,013  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,013  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,013  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,014  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,014  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,014  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,014  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,014  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,015  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,015  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,015  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,015  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,015  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,016  INFO FileActionUtils:30 - CreateAction action called
+13:10:48,016  INFO FileActionUtils:62 - StatsAction action called
+13:10:48,016  INFO FileActionUtils:62 - StatsAction action called
+13:10:48,016  INFO FileActionUtils:46 - OpenAction action called
+13:10:48,016  INFO FileActionUtils:46 - OpenAction action called
+13:10:48,017  INFO FileActionUtils:46 - OpenAction action called
+13:10:48,017  INFO FileActionUtils:62 - StatsAction action called
+13:10:48,017  INFO FileActionUtils:46 - OpenAction action called
+13:10:48,017  INFO FileActionUtils:46 - OpenAction action called
+13:10:48,017  INFO FileActionUtils:26 - CloseAction action called
+13:10:48,018  INFO FileActionUtils:26 - CloseAction action called
+13:10:48,018  INFO FileActionUtils:26 - CloseAction action called
+13:10:48,018  INFO FileActionUtils:26 - CloseAction action called
+13:10:48,018  INFO FileActionUtils:26 - CloseAction action called
+13:10:48,019  INFO FileActionUtils:54 - RenameAction action called
+13:10:48,019  INFO FileActionUtils:54 - RenameAction action called
+13:10:48,019  INFO FileActionUtils:54 - RenameAction action called
+13:10:48,019  INFO FileActionUtils:54 - RenameAction action called
+13:10:48,019  INFO FileActionUtils:54 - RenameAction action called
+13:10:48,020  INFO FileActionUtils:54 - RenameAction action called
+13:10:48,020  INFO FileActionUtils:54 - RenameAction action called
+13:10:48,020  INFO FileActionUtils:54 - RenameAction action called
+13:10:48,020  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,020  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,021  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,021  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,021  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,021  INFO FileActionUtils:58 - ReplaceAction action called
+13:10:48,022  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,022  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,022  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,022  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,023  INFO FileActionUtils:50 - RemoveAction action called
+13:10:48,023  INFO FileActionUtils:34 - DeleteAction action called
+13:10:48,023  INFO FileActionUtils:42 - InsertAction action called
+13:10:48,028  INFO FileActionUtils:50 - RemoveAction action called
+13:10:48,029  INFO FileActionUtils:42 - InsertAction action called
+13:10:48,029  INFO FileActionUtils:42 - InsertAction action called
+13:10:48,029  INFO FileActionUtils:42 - InsertAction action called
+13:10:48,030  INFO FileActionUtils:42 - InsertAction action called
+13:10:48,030  INFO FileActionUtils:42 - InsertAction action called
+13:10:48,030  INFO FileActionUtils:42 - InsertAction action called
+13:10:48,031  INFO FileActionUtils:42 - InsertAction action called
+13:10:48,031  INFO FileActionUtils:42 - InsertAction action called
+13:10:48,031  INFO FileActionUtils:42 - InsertAction action called
+13:10:48,032  INFO FileActionUtils:42 - InsertAction action called
+13:10:48,032  INFO FileActionUtils:42 - InsertAction action called
+13:38:13,188  INFO FileKommander:48 - Reading Properties File
+13:38:13,272 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+13:38:13,276 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+13:38:13,276 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+13:38:13,290 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+13:38:13,291 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/Documents/GitHub/FileKommander/FileKommander.properties
+13:38:13,349  INFO GateBuilder:81 - Initialising GATE
+13:38:13,364  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+13:38:13,365  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+13:38:13,365  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+13:38:13,366  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+13:38:13,366  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+13:38:14,937 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+13:38:14,987  INFO GateBuilder:83 - Done initialising GATE
+13:38:15,391  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/D:/Program%20Files/GATE_Developer_7.0/plugins/ANNIE/
+13:38:18,595 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+13:38:18,602 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 25066k; change: 25066k; max: 25066k; Net time:   0.0s; since prev. millisecs: 7
+13:38:18,602 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 7
+13:38:18,743 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 26308k; change: 1242k; max: 26308k; Net time:   0.14s; since prev. millisecs: 141
+13:38:18,743 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 141
+13:38:18,755 DEBUG SinglePhaseTransducer:216 - Start: prepare
+13:38:18,788 DEBUG SinglePhaseTransducer:216 - Start: find
+13:38:19,338 DEBUG SinglePhaseTransducer:216 - Start: split
+13:38:19,418 DEBUG SinglePhaseTransducer:216 - Start: cleanup
+13:38:19,429 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 36244k; change: 9936k; max: 36244k; Net time:   0.83s; since prev. millisecs: 686
+13:38:19,430 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 686
+13:38:19,618 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE POS Tagger_0001B]---------
+Memory: 36244k; change: 0k; max: 36244k; Net time:   1.2s; since prev. millisecs: 189
+13:38:19,618 DEBUG SerialController:164 - Time taken so far by ANNIE POS Tagger_0001B: 189
+13:38:19,650 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Gazetteer_0001C]---------
+Memory: 36244k; change: 0k; max: 36244k; Net time:   1.5s; since prev. millisecs: 32
+13:38:19,651 DEBUG SerialController:164 - Time taken so far by ANNIE Gazetteer_0001C: 32
+13:38:19,651 DEBUG SinglePhaseTransducer:216 - Start: ConjunctionIdentifier
+13:38:19,803 DEBUG SinglePhaseTransducer:216 - Start: preprocessingActions
+13:38:19,844 DEBUG SinglePhaseTransducer:216 - Start: preprocessingObjects1
+13:38:19,877 DEBUG SinglePhaseTransducer:216 - Start: FileObjects
+13:38:19,979 DEBUG SinglePhaseTransducer:216 - Start: DirectoryObjects
+13:38:20,018 DEBUG SinglePhaseTransducer:216 - Start: PhraseObjects
+13:38:20,034 DEBUG SinglePhaseTransducer:216 - Start: finalCleanup
+13:38:20,172 DEBUG Profiler:280 - ---------LOG: ~Execute PR [JAPE Transducer_0001D]---------
+Memory: 52389k; change: 16145k; max: 52389k; Net time:   1.57s; since prev. millisecs: 522
+13:38:20,173 DEBUG SerialController:164 - Time taken so far by JAPE Transducer_0001D: 522
+13:38:20,173 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
+Memory: 52389k; change: 0k; max: 52389k; Net time:   1.57s; since prev. millisecs: 1
+13:38:20,176  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,176  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,177  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,177  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,177  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,178  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,178  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,178  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,179  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,179  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,179  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,180  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,180  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,181  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,181  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,181  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,182  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,182  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,183  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,183  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,184  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,184  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,184  INFO FileActionUtils:30 - CreateAction action called
+13:38:20,184  INFO FileActionUtils:62 - StatsAction action called
+13:38:20,185  INFO FileActionUtils:62 - StatsAction action called
+13:38:20,185  INFO FileActionUtils:46 - OpenAction action called
+13:38:20,185  INFO FileActionUtils:46 - OpenAction action called
+13:38:20,186  INFO FileActionUtils:46 - OpenAction action called
+13:38:20,186  INFO FileActionUtils:62 - StatsAction action called
+13:38:20,186  INFO FileActionUtils:46 - OpenAction action called
+13:38:20,187  INFO FileActionUtils:46 - OpenAction action called
+13:38:20,187  INFO FileActionUtils:26 - CloseAction action called
+13:38:20,187  INFO FileActionUtils:26 - CloseAction action called
+13:38:20,187  INFO FileActionUtils:26 - CloseAction action called
+13:38:20,188  INFO FileActionUtils:26 - CloseAction action called
+13:38:20,188  INFO FileActionUtils:26 - CloseAction action called
+13:38:20,189  INFO FileActionUtils:54 - RenameAction action called
+13:38:20,189  INFO FileActionUtils:54 - RenameAction action called
+13:38:20,189  INFO FileActionUtils:54 - RenameAction action called
+13:38:20,189  INFO FileActionUtils:54 - RenameAction action called
+13:38:20,190  INFO FileActionUtils:54 - RenameAction action called
+13:38:20,190  INFO FileActionUtils:54 - RenameAction action called
+13:38:20,190  INFO FileActionUtils:54 - RenameAction action called
+13:38:20,191  INFO FileActionUtils:54 - RenameAction action called
+13:38:20,191  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,191  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,192  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,192  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,192  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,193  INFO FileActionUtils:58 - ReplaceAction action called
+13:38:20,193  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,194  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,194  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,195  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,195  INFO FileActionUtils:50 - RemoveAction action called
+13:38:20,196  INFO FileActionUtils:34 - DeleteAction action called
+13:38:20,196  INFO FileActionUtils:42 - InsertAction action called
+13:38:20,196  INFO FileActionUtils:50 - RemoveAction action called
+13:38:20,197  INFO FileActionUtils:42 - InsertAction action called
+13:38:20,197  INFO FileActionUtils:42 - InsertAction action called
+13:38:20,197  INFO FileActionUtils:42 - InsertAction action called
+13:38:20,197  INFO FileActionUtils:42 - InsertAction action called
+13:38:20,198  INFO FileActionUtils:42 - InsertAction action called
+13:38:20,198  INFO FileActionUtils:42 - InsertAction action called
+13:38:20,199  INFO FileActionUtils:42 - InsertAction action called
+13:38:20,199  INFO FileActionUtils:42 - InsertAction action called
+13:38:20,200  INFO FileActionUtils:42 - InsertAction action called
+13:38:20,200  INFO FileActionUtils:42 - InsertAction action called
+13:38:20,201  INFO FileActionUtils:42 - InsertAction action called

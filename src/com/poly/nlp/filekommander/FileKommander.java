@@ -33,17 +33,17 @@ import com.poly.nlp.filekommander.file.actions.FileActionUtils;
 import com.poly.nlp.filekommander.gate.GateBuilder;
 import com.poly.nlp.filekommander.gate.ProcessingResource;
 
-public class FileKommander {
-	
+public class FileKommander {	
 	private static final Logger log = Logger.getLogger(FileKommander.class);
 	private final String fileSeparator = System.getProperty("file.separator");
-	public static String newline =("\n");
-
-	
-	
+	public static String newline =("\n");	
 	
 	public static void main(String[] args) throws GateException, ConfigurationException, IOException {
-	
+		// Read args to run in cli mode or in GUI mo
+		// If CLI - Run CLI CODE 
+		// ELSE IF GUI Run GUI Code . BOth the codes must be independent and s
+		// SHOULD CAll the same Functions it
+		
 		// Load properties file 
 		log.info("Reading Properties File");		
 		Configuration config = null ;
@@ -89,6 +89,44 @@ public class FileKommander {
 	
 	}
 	
+	public void cliMode(){
+		
+	}	
+	public void guiMode(){
+		
+	}
+	
+	public void loadConfig(){
+		
+	}
+	
+	public void initGATE(){
+		
+	}
+	
+	public String getData(){
+		return null ;
+	}
+	
+	public String getDataMIC(){
+		return null ;
+	}
+	
+	public String getDataTextBox(){
+		return null;
+	}
+	
+	public String getDataCLI(){
+		return null;
+	}
+	
+	public void printMessage(){
+		// Print to log , gui , cli 
+	}
+	
+	public void executeAction(){
+		
+	}
 	
 	public static String getContents(File aFile) {
 		// ...checks on aFile are elided
