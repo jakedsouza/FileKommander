@@ -7,6 +7,8 @@ import gate.Document;
 import gate.Factory;
 import gate.FeatureMap;
 import gate.annotation.ImmutableAnnotationSetImpl;
+import gate.creole.ExecutionException;
+import gate.creole.ResourceInstantiationException;
 import gate.creole.SerialAnalyserController;
 import gate.util.GateException;
 
@@ -33,61 +35,129 @@ import com.poly.nlp.filekommander.file.actions.FileActionUtils;
 import com.poly.nlp.filekommander.gate.GateBuilder;
 import com.poly.nlp.filekommander.gate.ProcessingResource;
 
-public class FileKommander {	
+public class FileKommander implements Runnable{	
 	private static final Logger log = Logger.getLogger(FileKommander.class);
 	private final String fileSeparator = System.getProperty("file.separator");
 	public static String newline =("\n");	
-	
-	public static void main(String[] args) throws GateException, ConfigurationException, IOException {
-		// Read args to run in cli mode or in GUI mo
-		// If CLI - Run CLI CODE 
-		// ELSE IF GUI Run GUI Code . BOth the codes must be independent and s
-		// SHOULD CAll the same Functions it
-		
-		// Load properties file 
-		log.info("Reading Properties File");		
-		Configuration config = null ;
-		try {
-			config = new PropertiesConfiguration("FileKommander.properties");
-		} catch (ConfigurationException e) {
-			log.error("Error reading properties file", e);
-		}
-		
-		String gateHome = config.getString("gateHome");
-		String gazetteerFilePath = config.getString("gazetteerFilePath");
-		String japeFilePath = config.getString("japeFilePath");
-		
-		
-		GateBuilder gateBuilder = new GateBuilder(gateHome,gazetteerFilePath,japeFilePath);
-		gateBuilder.setup();
-		gateBuilder.loadANNIE();
-		gateBuilder.loadAllProcessingResources();
-		SerialAnalyserController a = gateBuilder.getAnnieController();
-
-		File file = new File("language resources/corpus/GoodCorp.txt") ;
-		Document doc = Factory.newDocument(getContents(file));
-		Corpus corpus =Factory.newCorpus("BatchProcessApp Corpus");;
-		corpus.add(doc);
-		a.setCorpus(corpus);
-		a.execute();
-		AnnotationSet defaultAnnotSet = doc.getAnnotations();	
-		AnnotationSet all = defaultAnnotSet.get("all");
-		for (Annotation annotation : all) {
-			FeatureMap featureMap = annotation.getFeatures();
-			AnnotationSet actionsAnnotation =  (AnnotationSet)featureMap.get("actions");
-		for(Annotation annot2 : actionsAnnotation){
-			FeatureMap featureMap2 = annot2.getFeatures();
-			String actionType = (String)featureMap2.get("minorType");
-			FileActionUtils.callAction(actionType,annotation);
-			
-		}
-		
-		}
-		
-		
-		corpus.clear();  
-	
+	private String gateHome ;
+	private String gazetteerFilePath ;
+	private String japeFilePath ; 
+	private SerialAnalyserController annie; 
+	private GateBuilder gateBuilder;
+	private String userInputText ;
+	/**
+	 * @return the gateHome
+	 */
+	public String getGateHome() {
+		return gateHome;
 	}
+
+	/**
+	 * @param gateHome the gateHome to set
+	 */
+	public void setGateHome(String gateHome) {
+		this.gateHome = gateHome;
+	}
+
+	/**
+	 * @return the gazetteerFilePath
+	 */
+	public String getGazetteerFilePath() {
+		return gazetteerFilePath;
+	}
+
+	/**
+	 * @param gazetteerFilePath the gazetteerFilePath to set
+	 */
+	public void setGazetteerFilePath(String gazetteerFilePath) {
+		this.gazetteerFilePath = gazetteerFilePath;
+	}
+
+	/**
+	 * @return the japeFilePath
+	 */
+	public String getJapeFilePath() {
+		return japeFilePath;
+	}
+
+	/**
+	 * @param japeFilePath the japeFilePath to set
+	 */
+	public void setJapeFilePath(String japeFilePath) {
+		this.japeFilePath = japeFilePath;
+	}
+
+	/**
+	 * @return the gateBuilder
+	 */
+	public GateBuilder getGateBuilder() {
+		return gateBuilder;
+	}
+
+	/**
+	 * @param gateBuilder the gateBuilder to set
+	 */
+	public void setGateBuilder(GateBuilder gateBuilder) {
+		this.gateBuilder = gateBuilder;
+	}
+
+	/**
+	 * @return the annie
+	 */
+	public SerialAnalyserController getAnnie() {
+		return annie;
+	}
+
+	/**
+	 * @param annie the annie to set
+	 */
+	public void setAnnie(SerialAnalyserController annie) {
+		this.annie = annie;
+	}
+
+//	public static void main1(String[] args) throws GateException, ConfigurationException, IOException {
+//		// Read args to run in cli mode or in GUI mode 
+//		// If CLI - Run CLI CODE 
+//		// ELSE IF GUI Run GUI Code if no args run GUI . 
+//		//BOth the codes must be independent and s
+//		// SHOULD CAll the same Functions it
+//		
+//		// Load properties file 		
+////		FileKommander kommander = new FileKommander(); 
+////		Configuration config  = kommander.loadConfig("FileKommander.properties");
+////		
+////		kommander.setGateHome(config.getString("gateHome"));
+////		kommander.setGazetteerFilePath(config.getString("gazetteerFilePath"));
+////		kommander.setJapeFilePath(config.getString("japeFilePath"));
+////		
+//		
+////		kommander.gateBuilder = kommander.initGATE(kommander.getGateHome(),kommander.getGazetteerFilePath(),kommander.getJapeFilePath());
+//		
+////		kommander.annie = kommander.initANNIE();
+//
+//		File file = new File("language resources/corpus/GoodCorp.txt") ;
+//		Document doc = Factory.newDocument(getContents(file));
+//		Corpus corpus =Factory.newCorpus("BatchProcessApp Corpus");;
+//		corpus.add(doc);
+////		kommander.annie.setCorpus(corpus);
+////		kommander.annie.execute();
+//		AnnotationSet defaultAnnotSet = doc.getAnnotations();	
+//		AnnotationSet all = defaultAnnotSet.get("all");
+//		for (Annotation annotation : all) {
+//			FeatureMap featureMap = annotation.getFeatures();
+//			AnnotationSet actionsAnnotation =  (AnnotationSet)featureMap.get("actions");
+//		for(Annotation annot2 : actionsAnnotation){
+//			FeatureMap featureMap2 = annot2.getFeatures();
+//			String actionType = (String)featureMap2.get("minorType");
+//			FileActionUtils.callAction(actionType,annotation);			
+//		}
+//		
+//		}
+//		
+//		
+//		corpus.clear();  
+//	
+//	}
 	
 	public void cliMode(){
 		
@@ -96,11 +166,34 @@ public class FileKommander {
 		
 	}
 	
-	public void loadConfig(){
-		
+	public  Configuration loadConfig(String configFileName) throws ConfigurationException{
+		if(configFileName == null || configFileName == ""){
+			throw new ConfigurationException("Config file name is empty");
+		}
+		log.info("Reading Properties File" + configFileName);		
+		Configuration config = null ;
+		try {
+			config = new PropertiesConfiguration(configFileName);
+		} catch (ConfigurationException e) {
+			log.error("Error reading properties file", e);
+		}
+		return config;
 	}
 	
-	public void initGATE(){
+	public GateBuilder initGATE() throws MalformedURLException, GateException{
+		GateBuilder gateBuilder = new GateBuilder(this.gateHome,this.gazetteerFilePath,this.japeFilePath);
+		gateBuilder.setup();
+		this.gateBuilder = gateBuilder;
+		return gateBuilder; 
+	}
+	
+	public SerialAnalyserController initANNIE() throws ResourceInstantiationException, MalformedURLException{
+		if(this.getGateBuilder() == null){
+			throw new RuntimeException("Gate must be initialised");
+		}
+		this.getGateBuilder().loadANNIE();
+		this.getGateBuilder().loadAllProcessingResources();
+		return  this.getGateBuilder().getAnnieController();
 		
 	}
 	
@@ -166,4 +259,63 @@ public class FileKommander {
 		return contents.toString();
 	}
 
+	/**
+	 * @return the userInputText
+	 */
+	public String getUserInputText() {
+		return userInputText;
+	}
+
+	/**
+	 * @param userInputText the userInputText to set
+	 */
+	public void setUserInputText(String userInputText) {
+		this.userInputText = userInputText;
+	}
+
+	@Override
+	public void run() {
+		Thread thread = new  Thread(this);
+		
+		System.out.println(thread);
+		if(1==1){
+			return;
+		}
+		System.out.println(this.userInputText);
+		Document doc = null ;
+		Corpus corpus = null ;
+		try {
+			 doc = Factory.newDocument(this.userInputText);
+				corpus=Factory.newCorpus("BatchProcessApp Corpus");;
+
+		} catch (ResourceInstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		corpus.add(doc);
+		this.annie.setCorpus(corpus);
+		try {
+			this.annie.execute();
+		} catch (ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		AnnotationSet defaultAnnotSet = doc.getAnnotations();	
+		AnnotationSet all = defaultAnnotSet.get("all");
+		for (Annotation annotation : all) {
+			FeatureMap featureMap = annotation.getFeatures();
+			AnnotationSet actionsAnnotation =  (AnnotationSet)featureMap.get("actions");
+		for(Annotation annot2 : actionsAnnotation){
+			FeatureMap featureMap2 = annot2.getFeatures();
+			String actionType = (String)featureMap2.get("minorType");
+			FileActionUtils.callAction(actionType,annotation);			
+		}
+		
+		}
+		
+		
+		corpus.clear();  
+
+}
 }
