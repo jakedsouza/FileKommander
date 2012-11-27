@@ -275,12 +275,7 @@ public class FileKommander implements Runnable{
 
 	@Override
 	public void run() {
-		Thread thread = new  Thread(this);
-		
-		System.out.println(thread);
-		if(1==1){
-			return;
-		}
+		Thread thread = new  Thread(this);		
 		System.out.println(this.userInputText);
 		Document doc = null ;
 		Corpus corpus = null ;

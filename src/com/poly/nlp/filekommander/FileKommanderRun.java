@@ -5,6 +5,11 @@ package com.poly.nlp.filekommander;
 
 import gate.util.GateException;
 
+import java.awt.EventQueue;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
@@ -12,7 +17,7 @@ import java.net.URL;
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;
 
-import com.poly.nlp.filekommander.views.SWTWindow;
+import com.poly.nlp.filekommander.views.FileKommanderGUIV2;
 
 /**
  * @author jake
@@ -20,7 +25,7 @@ import com.poly.nlp.filekommander.views.SWTWindow;
  */
 public class FileKommanderRun {
 	private static FileKommander kommander;
-	static SWTWindow window;
+	static FileKommanderGUIV2 guiv2 ;
 	
 	/**
 	 * @param args
@@ -40,21 +45,49 @@ public class FileKommanderRun {
 		kommander.initGATE();
 		kommander.setAnnie(kommander.initANNIE());
 
-		window = new SWTWindow();
-		window.open();
-		String text = ""; 
-		String oldText = "";
-		while (true ) {			
-			if(!text.equals(oldText)){
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					guiv2 = new FileKommanderGUIV2();
+					guiv2.getFrmFileKommander().setVisible(true);
+					guiv2.getRunBtn().addMouseListener(new MouseAdapter() {
+						@Override
+						public void mouseClicked(MouseEvent e) {
+							analyseTextInput();
+						}
+					});
+					guiv2.getInputTextFld().addKeyListener(new KeyAdapter() {
+						@Override
+						public void keyPressed(KeyEvent e) {
+						    int key = e.getKeyCode();
+					        if (key == java.awt.event.KeyEvent.VK_ENTER) {
+					        	analyseTextInput();					    
+					        }
 
+						}
+					});
+					
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
-			oldText = text ;
-		}
+		});
 		
 		
+
 		
 	}
 
+	/**
+	 * 
+	 */
+	public static void analyseTextInput(){
+		String text = guiv2.getInputTextFld().getText() ;
+		guiv2.getOutputLbl().setText("You Pressed - " + text);
+		kommander.setUserInputText(text);
+		kommander.run();
+	}
 	
 	/**
 	 * @return the kommander

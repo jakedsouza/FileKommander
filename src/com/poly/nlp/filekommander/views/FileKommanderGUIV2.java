@@ -17,6 +17,10 @@ import javax.swing.JTextArea;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.UnsupportedLookAndFeelException;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 public class FileKommanderGUIV2 {
 
@@ -54,24 +58,8 @@ public class FileKommanderGUIV2 {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		LookAndFeelInfo [] info = UIManager.getInstalledLookAndFeels();
-		 
-				try {
-					UIManager.setLookAndFeel("javax.swing.plaf.nimbus");
-				} catch (ClassNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (InstantiationException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (IllegalAccessException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				} catch (UnsupportedLookAndFeelException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				frmFileKommander = new JFrame();
+    	frmFileKommander = new JFrame();
+    	
 		frmFileKommander.setTitle("File Kommander");
 		frmFileKommander.setResizable(false);
 		frmFileKommander.setBounds(100, 100, 485, 320);
@@ -88,6 +76,7 @@ public class FileKommanderGUIV2 {
 		frmFileKommander.getContentPane().add(micBtn);
 		
 		runBtn = new JButton("Run");
+	
 		runBtn.setBounds(410, 12, 63, 26);
 		frmFileKommander.getContentPane().add(runBtn);
 		
@@ -110,8 +99,8 @@ public class FileKommanderGUIV2 {
 			      "  <LI>The Peabody Institute" +
 			      "  <LI>The Nitze School of Advanced International Studies" +
 			      "</UL>";
-		outputLbl = new JLabel(labelText);
-		outputLbl.setBounds(6, 63, 491, 171);
+		outputLbl = new JLabel("");
+		outputLbl.setBounds(6, 63, 461, 171);
 		frmFileKommander.getContentPane().add(outputLbl);
 		
 	}
@@ -127,7 +116,11 @@ public class FileKommanderGUIV2 {
 	public JButton getMicBtn() {
 		return micBtn;
 	}
+	
 	public JButton getRunBtn() {
 		return runBtn;
+	}
+	public JFrame getFrmFileKommander() {
+		return frmFileKommander;
 	}
 }
