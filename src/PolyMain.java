@@ -25,7 +25,8 @@ public class PolyMain {
 		if (Gate.getGateHome() == null)
 			Gate.setGateHome(gateHome);
        
-		
+		// jakes comments 
+		// hahaha 
 		Gate.init();
 		Gate.getCreoleRegister().registerDirectories(
 						new File("C:/Users/MixPool/ws/GatePractice/" + "plugins", "ANNIE")
