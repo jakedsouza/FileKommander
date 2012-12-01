@@ -46,6 +46,7 @@ public class FileKommanderGUIV2 {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+
     	frmFileKommander = new JFrame();
     	
 		frmFileKommander.setTitle("File Kommander");
@@ -78,6 +79,15 @@ public class FileKommanderGUIV2 {
 		frmFileKommander.getContentPane().add(outputLbl);
 		
 	}
+
+	public void displayErrorMessage(String message){
+		// TODO 
+	}
+	
+	public void clearErrorMessage(){
+		// TODO 
+	}
+	
 	public JLabel getOutputLbl() {
 		return outputLbl;
 	}

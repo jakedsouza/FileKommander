@@ -27,9 +27,13 @@ import com.poly.nlp.filekommander.gate.GateBuilder;
 
 public class FileKommander implements Runnable{	
 	private static final Logger log = Logger.getLogger(FileKommander.class);
+	public static final int FILE= 0 ; 
+	public static final int DIRECTORY = 1 ;
+	
 //	private final String fileSeparator = System.getProperty("file.separator");
 	public static String newline =("\n");	
 	private String gateHome ;
+	private String workingDirectory;
 	private String gazetteerFilePath ;
 	private String japeFilePath ; 
 	private SerialAnalyserController annie; 
@@ -263,6 +267,20 @@ public class FileKommander implements Runnable{
 		this.userInputText = userInputText;
 	}
 
+	/**
+	 * @return the workingDirectory
+	 */
+	public String getWorkingDirectory() {
+		return workingDirectory;
+	}
+
+	/**
+	 * @param workingDirectory the workingDirectory to set
+	 */
+	public void setWorkingDirectory(String workingDirectory) {
+		this.workingDirectory = workingDirectory;
+	}
+
 	@Override
 	public void run() {
 		System.out.println(this.userInputText);
@@ -302,4 +320,6 @@ public class FileKommander implements Runnable{
 		corpus.clear();  
 
 }
+
+	
 }

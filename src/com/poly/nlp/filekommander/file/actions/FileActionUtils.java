@@ -106,4 +106,28 @@ public class FileActionUtils {
 		
 	}
 	
+	public static void create(String name , int type){
+		// if type == directory create directory else create file , if file name is null 
+		// or has illegal characters , display error message working directory in FileKommander.getWotkingdir 
+		// TODO get type from FileKommander.FILE/DIRECTORY ;
+	}
+	
+	public static void delete(String name , int type){
+		
+	}
+	
+	public static void exists(String name , int type){
+		
+	}
+	
+	public static void open(String name){
+		
+	}
+	
+	public static void rename(String oldName, String newName){
+		
+	}
+	
+	
+	
 }

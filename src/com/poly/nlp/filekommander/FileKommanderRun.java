@@ -5,7 +5,6 @@ package com.poly.nlp.filekommander;
 
 import gate.util.GateException;
 
-import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -42,7 +41,7 @@ public class FileKommanderRun {
 		kommander.setGateHome(config.getString("gateHome"));
 		kommander.setGazetteerFilePath(config.getString("gazetteerFilePath"));
 		kommander.setJapeFilePath(config.getString("japeFilePath"));
-		
+		kommander.setWorkingDirectory(config.getString("workingDirectory"));
 		kommander.initGATE();
 		kommander.setAnnie(kommander.initANNIE());
 
