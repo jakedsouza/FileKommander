@@ -3,7 +3,12 @@
  */
 package com.poly.nlp.filekommander.file.actions;
 
+import java.awt.Desktop;
 import java.io.File;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Arrays;
 
 import org.apache.log4j.Logger;
 
@@ -125,8 +130,52 @@ public class FileActionUtils {
 		
 	}
 	
-	public static void open(String name){
-		
+	public static boolean open(String name){
+		String errorMsg = "";
+		if(name.equals("") || name.equals("")){
+			errorMsg = "File Name is empty";
+			return false;
+		}
+		// String workingDirectory = FileKommanderRun.getKommander().getWorkingDirectory();
+	    String workingDirectory = "testDir/";
+		File file = new File(name);
+		 if(!file.exists()){
+		    	errorMsg = "File " + name + " doesnot exist in the directory " ;
+		    	FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
+		    	return false;
+		    }
+		try
+	    {
+	        if (OSDetector.isWindows())
+	        {
+	        	System.out.println(file.getAbsolutePath());
+	        	String [] command = new String[]{"rundll32.exe", "url.dll,FileProtocolHandler",file.getAbsolutePath()};
+	            System.out.println(Arrays.toString(command));
+	        	Runtime.getRuntime().exec(command);
+	            return true;
+	        } else if (OSDetector.isLinux() || OSDetector.isMac())
+	        {
+	            Runtime.getRuntime().exec(new String[]{"/usr/bin/open",
+	                                                   file.getAbsolutePath()});
+	            return true;
+	        } else
+	        {
+	            // Unknown OS, try with desktop
+	            if (Desktop.isDesktopSupported())
+	            {
+	                Desktop.getDesktop().open(file);
+	                return true;
+	            }
+	            else
+	            {
+	                return false;
+	            }
+	        }
+	    } catch (Exception e)
+	    {
+	        e.printStackTrace(System.err);
+	        return false;
+	    }
 	}
 	
 	public static void rename(String oldName, String newName){
@@ -138,7 +187,6 @@ public class FileActionUtils {
 		}
 		// String workingDirectory = FileKommanderRun.getKommander().getWorkingDirectory();
 		String workingDirectory = "testDir/";
-		 new File(workingDirectory).mkdirs();
 		// File (or directory) with old name
 	    File file = new File(workingDirectory + oldName);
 	    
@@ -163,14 +211,9 @@ public class FileActionUtils {
 	    }else{
 	    	System.out.println("Rename successfull");
 	    }
-		
+
 		
 	}
-	
-	
-	public static void main(String args[]){
-		FileActionUtils.rename("jake.txt", "neha.txt");
-	}
-	
+		
 	
 }
