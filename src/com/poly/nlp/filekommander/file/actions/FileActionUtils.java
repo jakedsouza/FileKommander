@@ -120,14 +120,107 @@ public class FileActionUtils {
 		// if type == directory create directory else create file , if file name is null 
 		// or has illegal characters , display error message working directory in FileKommander.getWotkingdir 
 		// TODO get type from FileKommander.FILE/DIRECTORY ;
+		String errorMsg="";
+		
+		System.out.println("name of object is"+name);
+		System.out.println("type of object is"+type);
+		try{
+		if(type == FileKommander.FILE){
+			File file = new File("testDir/" + name);
+			if(file.exists()){
+				errorMsg = "File named "+name+" already exists. Do you want to continue ?";
+				System.out.println(errorMsg);
+			}else{
+				file.createNewFile();
+				System.out.println("file created successfully.");
+			}
+			
+		}else if(type == FileKommander.DIRECTORY){
+			Boolean success = new File("testDir/" + name).mkdirs();
+			if(!success){
+				errorMsg = "Could not create folder"+name; 	
+				System.out.println(errorMsg);
+			}else{
+				System.out.println("folder");
+			}
+		}
+		//System.out.println("error is .."+errorMsg);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		
 	}
 	
 	public static void delete(String name , int type){
+		String errorMsg="";
 		
+		System.out.println("name of object is"+name);
+		System.out.println("type of object is"+type);
+		try{
+		if(type == FileKommander.FILE){
+			File file = new File("testDir/" + name);
+			if(file.exists()){
+				Boolean success = file.delete();
+				if(!success){
+					errorMsg = "Could not delete the file "+name;
+					System.out.println(errorMsg);
+				}else{
+					System.out.println("deleted file successfully");
+				}
+			}else{
+				errorMsg = "This file doesn't exist. Hence can't be deleted";
+				System.out.println(errorMsg);
+			}
+			
+		}else if(type == FileKommander.DIRECTORY){
+			File directory = new File("testDir/" + name);
+			
+			if(directory.isDirectory()){
+				//if directory is empty
+				if(directory.list().length == 0){
+					directory.delete();
+					System.out.println("directory deleted successfully");
+				}else{
+					String files[] = directory.list();
+					for (String temp : files) {
+		        	      //construct the file structure
+		        	      File fileDelete = new File(directory, temp);
+		 
+		        	      //recursive delete
+		        	     fileDelete.delete();
+		        	   }
+		 
+		        	   //check the directory again, if empty then delete it
+		        	   if(directory.list().length==0){
+		           	     directory.delete();
+		        	     System.out.println("directory deleted successfully " + directory.getAbsolutePath());
+		        	   }
+		    		}
+					
+				}
+		}
+		//System.out.println("error is .."+errorMsg);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 	
-	public static void exists(String name , int type){
+	public static void exists(String name){
+		String errorMsg="";
 		
+		System.out.println("name of object is"+name);
+		try{
+			File file = new File("testDir/" + name);
+			if(file.exists()){
+				System.out.println("File/Folder exists!");
+			}else{
+				errorMsg = "File/Folder "+name+" doesn't exist!";
+				System.out.println(errorMsg);
+			}
+		  
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 	
 	public static boolean open(String name){
