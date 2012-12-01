@@ -82,6 +82,7 @@ public class FileKommanderGUIV2 {
 
 	public void displayErrorMessage(String message){
 		// TODO 
+		System.out.println(message);
 	}
 	
 	public void clearErrorMessage(){

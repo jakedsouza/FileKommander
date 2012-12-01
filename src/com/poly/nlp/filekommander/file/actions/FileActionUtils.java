@@ -3,7 +3,12 @@
  */
 package com.poly.nlp.filekommander.file.actions;
 
+import java.io.File;
+
 import org.apache.log4j.Logger;
+
+import com.poly.nlp.filekommander.FileKommander;
+import com.poly.nlp.filekommander.FileKommanderRun;
 
 import gate.Annotation;
 import gate.AnnotationSet;
@@ -125,9 +130,47 @@ public class FileActionUtils {
 	}
 	
 	public static void rename(String oldName, String newName){
+		String errorMsg = "";
+		if(oldName.equals(null) || oldName.equals("") || newName.equals(null) || newName.equals("")){
+			errorMsg = "Rename action failed as the new or old names were empty" ; 
+			FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
+			return ;
+		}
+		// String workingDirectory = FileKommanderRun.getKommander().getWorkingDirectory();
+		String workingDirectory = "testDir/";
+		 new File(workingDirectory).mkdirs();
+		// File (or directory) with old name
+	    File file = new File(workingDirectory + oldName);
+	    
+	    if(!file.exists()){
+	    	errorMsg = "File " + oldName+ "doesnot exist in the directory " ;
+	    	FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
+	    	return ;
+	    }
+	    
+	    // File (or directory) with new name
+	    File file2 = new File(workingDirectory + newName);
+	    if(file2.exists()) {
+	    	errorMsg = "File " + newName + " exists in the directory " ;
+	    	FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
+	    	return ;
+	    }
+	    // Rename file (or directory)
+	    boolean success = file.renameTo(file2);
+	    if (!success) {
+	    	errorMsg = "Error renaming file" ;
+	    	FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
+	    }else{
+	    	System.out.println("Rename successfull");
+	    }
+		
 		
 	}
 	
+	
+	public static void main(String args[]){
+		FileActionUtils.rename("jake.txt", "neha.txt");
+	}
 	
 	
 }
