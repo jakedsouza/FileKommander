@@ -5,12 +5,16 @@ package com.poly.nlp.filekommander;
 
 import gate.util.GateException;
 
+import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.net.MalformedURLException;
+
+import javax.swing.SwingWorker;
+
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;
 
@@ -80,6 +84,7 @@ public class FileKommanderRun {
 	 * 
 	 */
 	public static void analyseTextInput(){
+		showProgress();
 		String text = guiv2.getInputTextFld().getText() ;
 		guiv2.getOutputLbl().setText("You Pressed - " + text);
 		kommander.setUserInputText(text);
@@ -99,5 +104,25 @@ public class FileKommanderRun {
 	public static void setKommander(FileKommander kommander) {
 		FileKommanderRun.kommander = kommander;
 	}
+	
+	public static void showProgress(){
+		MySwingWorker worker = new MySwingWorker();
+		worker.execute();
+	}
+
 
 }
+
+class MySwingWorker extends SwingWorker<Integer, String> {
+
+	protected Integer doInBackground() throws Exception {
+		for (int i=0; i<=100; i++) {
+			  
+	   FileKommanderRun.guiv2.getProgressBar().setValue(i);
+       Thread.sleep(50);
+        
+}
+return null;
+}
+} 
+

@@ -7,6 +7,7 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JProgressBar;
 import javax.swing.JLabel;
+import javax.swing.SwingUtilities;
 
 public class FileKommanderGUIV2 {
 
@@ -26,6 +27,7 @@ public class FileKommanderGUIV2 {
 				try {
 					FileKommanderGUIV2 window = new FileKommanderGUIV2();
 					window.frmFileKommander.setVisible(true);
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -67,26 +69,12 @@ public class FileKommanderGUIV2 {
 		frmFileKommander.getContentPane().add(runBtn);
 		
 		progressBar = new JProgressBar();
-		progressBar.setValue(50);
-		progressBar.setBounds(6, 42, 467, 9);
+		progressBar.setValue(0);
+		progressBar.setBounds(6, 49, 463, 9);
 		frmFileKommander.getContentPane().add(progressBar);
-//		String labelText =
-//			      "<html>The Applied Physics Laboratory is a division " +
-//			      "of the Johns Hopkins University." +
-//			      "<P>" +
-//			      "Major JHU divisions include:" +
-//			      "<UL>" +
-//			      "  <LI>The Applied Physics Laboratory" +
-//			      "  <LI>The Krieger School of Arts and Sciences" +
-//			      "  <LI>The Whiting School of Engineering" +
-//			      "  <LI>The School of Medicine" +
-//			      "  <LI>The School of Public Health" +
-//			      "  <LI>The School of Nursing" +
-//			      "  <LI>The Peabody Institute" +
-//			      "  <LI>The Nitze School of Advanced International Studies" +
-//			      "</UL>";
+
 		outputLbl = new JLabel("");
-		outputLbl.setBounds(6, 63, 461, 171);
+		outputLbl.setBounds(6, 82, 467, 171);
 		frmFileKommander.getContentPane().add(outputLbl);
 		
 	}

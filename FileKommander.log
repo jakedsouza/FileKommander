@@ -49,3 +49,511 @@ Memory: 39346k; change: 0k; max: 39346k; Net time:   0.11s; since prev. millisec
 23:03:50,337 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
 Memory: 39346k; change: 0k; max: 39346k; Net time:   0.12s; since prev. millisecs: 1
 23:03:50,339  INFO FileActionUtils:24 - CreateAction action called
+23:22:37,656  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+23:22:37,735 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+23:22:37,739 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+23:22:37,743 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+23:22:37,753 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+23:22:37,753 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+23:22:37,821  INFO GateBuilder:75 - Initialising GATE
+23:22:37,840  WARN Gate:266 - GATE home system property ("gate.home") not set.
+Attempting to guess...
+23:22:37,841  WARN Gate:286 - Using "C:\Users\Neha\Desktop\FileKommander" as GATE Home.
+If this is not correct please set it manually using the -Dgate.home option in your start-up script
+23:22:37,841  INFO Gate:297 - Using C:\Users\Neha\Desktop\FileKommander as GATE home
+23:24:11,838  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+23:24:11,913 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+23:24:11,917 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+23:24:11,921 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+23:24:11,930 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+23:24:11,930 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+23:24:12,016  INFO GateBuilder:75 - Initialising GATE
+23:24:12,032  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+23:24:12,032  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+23:24:12,033  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+23:24:12,033  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+23:24:12,034  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+23:24:13,695 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+23:24:14,816  INFO GateBuilder:77 - Done initialising GATE
+23:24:15,303  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+23:24:42,026 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+23:24:42,032 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 32157k; change: 32157k; max: 32157k; Net time:   0.0s; since prev. millisecs: 6
+23:24:42,033 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 6
+23:24:42,043 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 32157k; change: 0k; max: 32157k; Net time:   0.1s; since prev. millisecs: 11
+23:24:42,043 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 11
+23:24:42,047 DEBUG SinglePhaseTransducer:216 - Start: prepare
+23:24:42,073 DEBUG SinglePhaseTransducer:216 - Start: find
+23:24:42,076 DEBUG SinglePhaseTransducer:216 - Start: split
+23:24:42,077 DEBUG SinglePhaseTransducer:216 - Start: cleanup
+23:24:42,078 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 32784k; change: 627k; max: 32784k; Net time:   0.5s; since prev. millisecs: 35
+23:24:42,079 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 35
+23:24:42,089 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE POS Tagger_0001B]---------
+Memory: 32784k; change: 0k; max: 32784k; Net time:   0.6s; since prev. millisecs: 11
+23:24:42,090 DEBUG SerialController:164 - Time taken so far by ANNIE POS Tagger_0001B: 11
+23:24:42,091 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Gazetteer_0001C]---------
+Memory: 32784k; change: 0k; max: 32784k; Net time:   0.6s; since prev. millisecs: 2
+23:24:42,091 DEBUG SerialController:164 - Time taken so far by ANNIE Gazetteer_0001C: 2
+23:24:42,092 DEBUG SinglePhaseTransducer:216 - Start: ConjunctionIdentifier
+23:24:42,094 DEBUG SinglePhaseTransducer:216 - Start: preprocessingActions
+23:24:42,096 DEBUG SinglePhaseTransducer:216 - Start: preprocessingObjects1
+23:24:42,097 DEBUG SinglePhaseTransducer:216 - Start: FileObjects
+23:24:42,100 DEBUG SinglePhaseTransducer:216 - Start: DirectoryObjects
+23:24:42,101 DEBUG SinglePhaseTransducer:216 - Start: PhraseObjects
+23:24:42,101 DEBUG SinglePhaseTransducer:216 - Start: finalCleanup
+23:24:42,131 DEBUG Profiler:280 - ---------LOG: ~Execute PR [JAPE Transducer_0001D]---------
+Memory: 33411k; change: 627k; max: 33411k; Net time:   0.10s; since prev. millisecs: 40
+23:24:42,131 DEBUG SerialController:164 - Time taken so far by JAPE Transducer_0001D: 40
+23:24:42,131 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
+Memory: 33411k; change: 0k; max: 33411k; Net time:   0.10s; since prev. millisecs: 0
+23:24:42,133  INFO FileActionUtils:48 - RenameAction action called
+00:30:51,687  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+00:30:51,761 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+00:30:51,764 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+00:30:51,769 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+00:30:51,777 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+00:30:51,778 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+00:30:51,828  INFO GateBuilder:75 - Initialising GATE
+00:30:51,843  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+00:30:51,843  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+00:30:51,844  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+00:30:51,844  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+00:30:51,845  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+00:30:53,207 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+00:30:53,258  INFO GateBuilder:77 - Done initialising GATE
+00:30:53,658  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+00:31:21,337 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+00:31:21,343 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 28883k; change: 28883k; max: 28883k; Net time:   0.0s; since prev. millisecs: 6
+00:31:21,344 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 6
+00:31:21,345 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 28883k; change: 0k; max: 28883k; Net time:   0.0s; since prev. millisecs: 2
+00:31:21,345 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 2
+00:31:21,356 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 29528k; change: 645k; max: 29528k; Net time:   0.1s; since prev. millisecs: 11
+00:31:21,357 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 11
+00:31:42,704  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+00:31:42,789 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+00:31:42,793 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+00:31:42,798 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+00:31:42,807 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+00:31:42,807 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+00:31:42,860  INFO GateBuilder:75 - Initialising GATE
+00:31:42,877  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+00:31:42,878  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+00:31:42,878  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+00:31:42,879  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+00:31:42,879  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+00:31:44,250 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+00:31:44,300  INFO GateBuilder:77 - Done initialising GATE
+00:31:44,630  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+00:31:48,821 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+00:31:48,827 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 33958k; change: 33958k; max: 33958k; Net time:   0.0s; since prev. millisecs: 6
+00:31:48,828 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 6
+00:31:48,828 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 33958k; change: 0k; max: 33958k; Net time:   0.0s; since prev. millisecs: 1
+00:31:48,829 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 1
+00:31:48,840 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 33958k; change: 0k; max: 33958k; Net time:   0.1s; since prev. millisecs: 12
+00:31:48,841 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 12
+00:32:09,652  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+00:32:09,728 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+00:32:09,732 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+00:32:09,736 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+00:32:09,745 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+00:32:09,745 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+00:32:09,797  INFO GateBuilder:75 - Initialising GATE
+00:32:09,813  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+00:32:09,813  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+00:32:09,814  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+00:32:09,814  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+00:32:09,815  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+00:32:11,205 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+00:32:11,245  INFO GateBuilder:77 - Done initialising GATE
+00:32:11,581  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+00:32:17,215 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+00:32:17,220 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 29677k; change: 29677k; max: 29677k; Net time:   0.0s; since prev. millisecs: 6
+00:32:17,221 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 6
+00:32:17,221 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 29677k; change: 0k; max: 29677k; Net time:   0.0s; since prev. millisecs: 1
+00:32:17,222 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 1
+00:32:17,233 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 30338k; change: 661k; max: 30338k; Net time:   0.1s; since prev. millisecs: 12
+00:32:17,233 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 12
+00:32:29,876  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+00:32:29,948 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+00:32:29,953 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+00:32:29,957 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+00:32:29,966 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+00:32:29,967 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+00:32:30,017  INFO GateBuilder:75 - Initialising GATE
+00:32:30,033  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+00:32:30,034  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+00:32:30,035  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+00:32:30,035  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+00:32:30,036  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+00:32:31,407 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+00:32:31,445  INFO GateBuilder:77 - Done initialising GATE
+00:32:31,785  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+00:32:51,916  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+00:32:51,990 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+00:32:51,994 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+00:32:51,999 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+00:32:52,008 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+00:32:52,009 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+00:32:52,060  INFO GateBuilder:75 - Initialising GATE
+00:32:52,077  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+00:32:52,077  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+00:32:52,078  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+00:32:52,078  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+00:32:52,079  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+00:32:53,432 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+00:32:53,483  INFO GateBuilder:77 - Done initialising GATE
+00:32:53,818  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+00:34:00,107  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+00:34:00,180 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+00:34:00,185 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+00:34:00,189 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+00:34:00,197 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+00:34:00,198 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+00:34:00,247  INFO GateBuilder:75 - Initialising GATE
+00:34:00,263  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+00:34:00,264  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+00:34:00,265  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+00:34:00,265  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+00:34:00,266  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+00:34:01,661 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+00:34:01,715  INFO GateBuilder:77 - Done initialising GATE
+00:34:02,049  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+00:34:08,639 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+00:34:08,645 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 29912k; change: 29912k; max: 29912k; Net time:   0.0s; since prev. millisecs: 5
+00:34:08,645 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 5
+00:34:08,654 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 29912k; change: 0k; max: 29912k; Net time:   0.1s; since prev. millisecs: 10
+00:34:08,655 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 10
+00:34:08,659 DEBUG SinglePhaseTransducer:216 - Start: prepare
+00:34:08,687 DEBUG SinglePhaseTransducer:216 - Start: find
+00:34:08,688 DEBUG SinglePhaseTransducer:216 - Start: split
+00:34:08,689 DEBUG SinglePhaseTransducer:216 - Start: cleanup
+00:34:08,690 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 30569k; change: 657k; max: 30569k; Net time:   0.5s; since prev. millisecs: 36
+00:34:08,690 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 36
+00:34:08,696 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE POS Tagger_0001B]---------
+Memory: 30569k; change: 0k; max: 30569k; Net time:   0.5s; since prev. millisecs: 6
+00:34:08,696 DEBUG SerialController:164 - Time taken so far by ANNIE POS Tagger_0001B: 6
+00:34:08,697 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Gazetteer_0001C]---------
+Memory: 30569k; change: 0k; max: 30569k; Net time:   0.5s; since prev. millisecs: 1
+00:34:08,697 DEBUG SerialController:164 - Time taken so far by ANNIE Gazetteer_0001C: 1
+00:34:08,698 DEBUG SinglePhaseTransducer:216 - Start: ConjunctionIdentifier
+00:34:08,699 DEBUG SinglePhaseTransducer:216 - Start: preprocessingActions
+00:34:08,699 DEBUG SinglePhaseTransducer:216 - Start: preprocessingObjects1
+00:34:08,700 DEBUG SinglePhaseTransducer:216 - Start: FileObjects
+00:34:08,701 DEBUG SinglePhaseTransducer:216 - Start: DirectoryObjects
+00:34:08,701 DEBUG SinglePhaseTransducer:216 - Start: PhraseObjects
+00:34:08,702 DEBUG SinglePhaseTransducer:216 - Start: finalCleanup
+00:34:08,708 DEBUG Profiler:280 - ---------LOG: ~Execute PR [JAPE Transducer_0001D]---------
+Memory: 30569k; change: 0k; max: 30569k; Net time:   0.6s; since prev. millisecs: 11
+00:34:08,709 DEBUG SerialController:164 - Time taken so far by JAPE Transducer_0001D: 11
+00:34:08,709 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
+Memory: 30569k; change: 0k; max: 30569k; Net time:   0.7s; since prev. millisecs: 1
+00:34:08,729 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+00:34:08,729 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 31217k; change: 31217k; max: 31217k; Net time:   0.0s; since prev. millisecs: 0
+00:34:08,730 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 5
+00:34:08,731 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 31217k; change: 0k; max: 31217k; Net time:   0.0s; since prev. millisecs: 2
+00:34:08,731 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 12
+00:34:08,732 DEBUG SinglePhaseTransducer:216 - Start: prepare
+00:34:08,733 DEBUG SinglePhaseTransducer:216 - Start: find
+00:34:08,734 DEBUG SinglePhaseTransducer:216 - Start: split
+00:34:08,735 DEBUG SinglePhaseTransducer:216 - Start: cleanup
+00:34:08,735 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 31217k; change: 0k; max: 31217k; Net time:   0.0s; since prev. millisecs: 4
+00:34:08,736 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 40
+00:34:08,785 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE POS Tagger_0001B]---------
+Memory: 31217k; change: 0k; max: 31217k; Net time:   0.5s; since prev. millisecs: 50
+00:34:08,785 DEBUG SerialController:164 - Time taken so far by ANNIE POS Tagger_0001B: 56
+00:34:08,786 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Gazetteer_0001C]---------
+Memory: 31217k; change: 0k; max: 31217k; Net time:   0.5s; since prev. millisecs: 1
+00:34:08,787 DEBUG SerialController:164 - Time taken so far by ANNIE Gazetteer_0001C: 2
+00:34:08,787 DEBUG SinglePhaseTransducer:216 - Start: ConjunctionIdentifier
+00:34:08,788 DEBUG SinglePhaseTransducer:216 - Start: preprocessingActions
+00:34:08,788 DEBUG SinglePhaseTransducer:216 - Start: preprocessingObjects1
+00:34:08,789 DEBUG SinglePhaseTransducer:216 - Start: FileObjects
+00:34:08,790 DEBUG SinglePhaseTransducer:216 - Start: DirectoryObjects
+00:34:08,791 DEBUG SinglePhaseTransducer:216 - Start: PhraseObjects
+00:34:08,791 DEBUG SinglePhaseTransducer:216 - Start: finalCleanup
+00:34:08,792 DEBUG Profiler:280 - ---------LOG: ~Execute PR [JAPE Transducer_0001D]---------
+Memory: 31217k; change: 0k; max: 31217k; Net time:   0.6s; since prev. millisecs: 6
+00:34:08,793 DEBUG SerialController:164 - Time taken so far by JAPE Transducer_0001D: 17
+00:34:08,793 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
+Memory: 31217k; change: 0k; max: 31217k; Net time:   0.6s; since prev. millisecs: 1
+00:34:08,898 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+00:34:08,899 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 31864k; change: 31864k; max: 31864k; Net time:   0.0s; since prev. millisecs: 0
+00:34:08,899 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 5
+00:34:08,900 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 31864k; change: 0k; max: 31864k; Net time:   0.0s; since prev. millisecs: 2
+00:34:08,900 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 14
+00:34:08,901 DEBUG SinglePhaseTransducer:216 - Start: prepare
+00:34:08,902 DEBUG SinglePhaseTransducer:216 - Start: find
+00:34:08,903 DEBUG SinglePhaseTransducer:216 - Start: split
+00:34:08,903 DEBUG SinglePhaseTransducer:216 - Start: cleanup
+00:34:08,904 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 32512k; change: 648k; max: 32512k; Net time:   0.0s; since prev. millisecs: 4
+00:34:08,905 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 44
+00:34:08,907 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE POS Tagger_0001B]---------
+Memory: 32512k; change: 0k; max: 32512k; Net time:   0.0s; since prev. millisecs: 3
+00:34:08,908 DEBUG SerialController:164 - Time taken so far by ANNIE POS Tagger_0001B: 59
+00:34:08,908 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Gazetteer_0001C]---------
+Memory: 32512k; change: 0k; max: 32512k; Net time:   0.1s; since prev. millisecs: 1
+00:34:08,909 DEBUG SerialController:164 - Time taken so far by ANNIE Gazetteer_0001C: 3
+00:34:08,909 DEBUG SinglePhaseTransducer:216 - Start: ConjunctionIdentifier
+00:34:08,910 DEBUG SinglePhaseTransducer:216 - Start: preprocessingActions
+00:34:08,910 DEBUG SinglePhaseTransducer:216 - Start: preprocessingObjects1
+00:34:08,911 DEBUG SinglePhaseTransducer:216 - Start: FileObjects
+00:34:08,912 DEBUG SinglePhaseTransducer:216 - Start: DirectoryObjects
+00:34:08,912 DEBUG SinglePhaseTransducer:216 - Start: PhraseObjects
+00:34:08,913 DEBUG SinglePhaseTransducer:216 - Start: finalCleanup
+00:34:08,914 DEBUG Profiler:280 - ---------LOG: ~Execute PR [JAPE Transducer_0001D]---------
+Memory: 32512k; change: 0k; max: 32512k; Net time:   0.1s; since prev. millisecs: 6
+00:34:08,914 DEBUG SerialController:164 - Time taken so far by JAPE Transducer_0001D: 23
+00:34:08,914 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
+Memory: 32512k; change: 0k; max: 32512k; Net time:   0.1s; since prev. millisecs: 0
+00:34:14,394  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+00:34:14,472 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+00:34:14,476 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+00:34:14,481 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+00:34:14,489 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+00:34:14,489 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+00:34:14,541  INFO GateBuilder:75 - Initialising GATE
+00:34:14,559  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+00:34:14,559  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+00:34:14,560  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+00:34:14,560  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+00:34:14,561  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+00:34:15,917 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+00:34:15,956  INFO GateBuilder:77 - Done initialising GATE
+00:34:16,288  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+00:34:23,869 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+00:34:23,874 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 32796k; change: 32796k; max: 32796k; Net time:   0.0s; since prev. millisecs: 5
+00:34:23,875 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 5
+00:34:23,875 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 32796k; change: 0k; max: 32796k; Net time:   0.0s; since prev. millisecs: 1
+00:34:23,876 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 1
+00:34:23,886 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 34113k; change: 1317k; max: 34113k; Net time:   0.1s; since prev. millisecs: 11
+00:34:23,887 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 11
+00:34:42,204  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+00:34:42,283 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+00:34:42,287 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+00:34:42,292 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+00:34:42,301 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+00:34:42,301 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+00:34:42,353  INFO GateBuilder:75 - Initialising GATE
+00:34:42,370  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+00:34:42,370  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+00:34:42,371  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+00:34:42,371  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+00:34:42,371  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+00:34:43,728 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+00:34:43,778  INFO GateBuilder:77 - Done initialising GATE
+00:34:44,115  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+00:34:48,122 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+00:34:48,128 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 32879k; change: 32879k; max: 32879k; Net time:   0.0s; since prev. millisecs: 5
+00:34:48,128 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 5
+00:34:48,129 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 32879k; change: 0k; max: 32879k; Net time:   0.0s; since prev. millisecs: 2
+00:34:48,129 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 2
+00:34:48,140 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 32879k; change: 0k; max: 32879k; Net time:   0.1s; since prev. millisecs: 11
+00:34:48,141 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 11
+00:40:19,782  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+00:40:19,861 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+00:40:19,865 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+00:40:19,869 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+00:40:19,878 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+00:40:19,878 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+00:40:19,930  INFO GateBuilder:75 - Initialising GATE
+00:40:19,944  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+00:40:19,945  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+00:40:19,945  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+00:40:19,946  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+00:40:19,946  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+00:40:21,406 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+00:40:21,461  INFO GateBuilder:77 - Done initialising GATE
+00:40:21,783  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+00:40:35,217 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+00:40:35,223 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 29119k; change: 29119k; max: 29119k; Net time:   0.0s; since prev. millisecs: 6
+00:40:35,223 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 6
+00:40:35,224 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 29119k; change: 0k; max: 29119k; Net time:   0.0s; since prev. millisecs: 1
+00:40:35,225 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 1
+00:40:35,235 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 29767k; change: 648k; max: 29767k; Net time:   0.1s; since prev. millisecs: 11
+00:40:35,236 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 11
+00:40:43,331 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+00:40:43,331 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 30414k; change: 30414k; max: 30414k; Net time:   0.0s; since prev. millisecs: 0
+00:40:43,332 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 6
+00:40:43,333 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 30414k; change: 0k; max: 30414k; Net time:   0.0s; since prev. millisecs: 2
+00:40:43,333 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 3
+00:40:43,334 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 30414k; change: 0k; max: 30414k; Net time:   0.0s; since prev. millisecs: 1
+00:40:43,335 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 12
+01:26:49,848  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+01:26:49,935 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+01:26:49,939 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+01:26:49,943 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+01:26:49,952 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+01:26:49,952 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+01:26:50,003  INFO GateBuilder:75 - Initialising GATE
+01:26:50,018  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+01:26:50,018  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+01:26:50,028  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+01:26:50,028  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+01:26:50,029  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+01:26:51,386 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+01:26:51,438  INFO GateBuilder:77 - Done initialising GATE
+01:26:51,800  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+01:26:57,604 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+01:26:57,608 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 29559k; change: 29559k; max: 29559k; Net time:   0.0s; since prev. millisecs: 4
+01:26:57,609 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 4
+01:26:57,609 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 29559k; change: 0k; max: 29559k; Net time:   0.0s; since prev. millisecs: 1
+01:26:57,610 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 1
+01:26:57,618 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 30210k; change: 651k; max: 30210k; Net time:   0.1s; since prev. millisecs: 9
+01:26:57,619 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 9
+01:27:07,558 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+01:27:07,559 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 31505k; change: 31505k; max: 31505k; Net time:   0.0s; since prev. millisecs: 1
+01:27:07,559 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 5
+01:27:07,560 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 31505k; change: 0k; max: 31505k; Net time:   0.0s; since prev. millisecs: 1
+01:27:07,560 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 2
+01:27:07,563 DEBUG SinglePhaseTransducer:216 - Start: prepare
+01:27:07,587 DEBUG SinglePhaseTransducer:216 - Start: find
+01:27:07,588 DEBUG SinglePhaseTransducer:216 - Start: split
+01:27:07,588 DEBUG SinglePhaseTransducer:216 - Start: cleanup
+01:27:07,590 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 31505k; change: 0k; max: 31505k; Net time:   0.3s; since prev. millisecs: 30
+01:27:07,590 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 39
+01:27:07,595 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE POS Tagger_0001B]---------
+Memory: 32152k; change: 647k; max: 32152k; Net time:   0.3s; since prev. millisecs: 5
+01:27:07,595 DEBUG SerialController:164 - Time taken so far by ANNIE POS Tagger_0001B: 5
+01:27:07,596 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Gazetteer_0001C]---------
+Memory: 32152k; change: 0k; max: 32152k; Net time:   0.3s; since prev. millisecs: 1
+01:27:07,596 DEBUG SerialController:164 - Time taken so far by ANNIE Gazetteer_0001C: 1
+01:27:07,597 DEBUG SinglePhaseTransducer:216 - Start: ConjunctionIdentifier
+01:27:07,598 DEBUG SinglePhaseTransducer:216 - Start: preprocessingActions
+01:27:07,600 DEBUG SinglePhaseTransducer:216 - Start: preprocessingObjects1
+01:27:07,600 DEBUG SinglePhaseTransducer:216 - Start: FileObjects
+01:27:07,601 DEBUG SinglePhaseTransducer:216 - Start: DirectoryObjects
+01:27:07,601 DEBUG SinglePhaseTransducer:216 - Start: PhraseObjects
+01:27:07,602 DEBUG SinglePhaseTransducer:216 - Start: finalCleanup
+01:27:07,608 DEBUG Profiler:280 - ---------LOG: ~Execute PR [JAPE Transducer_0001D]---------
+Memory: 32152k; change: 0k; max: 32152k; Net time:   0.5s; since prev. millisecs: 12
+01:27:07,608 DEBUG SerialController:164 - Time taken so far by JAPE Transducer_0001D: 12
+01:27:07,608 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
+Memory: 32152k; change: 0k; max: 32152k; Net time:   0.5s; since prev. millisecs: 0
+01:27:07,638  INFO FileActionUtils:24 - CreateAction action called
+01:27:18,850  INFO FileKommander:163 - Reading Properties FileFileKommander.properties
+01:27:18,925 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+01:27:18,928 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+01:27:18,934 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+01:27:18,942 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+01:27:18,943 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/Neha/Desktop/FileKommander/FileKommander.properties
+01:27:18,993  INFO GateBuilder:75 - Initialising GATE
+01:27:19,009  INFO Gate:297 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL as GATE home
+01:27:19,010  INFO Gate:321 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\plugins as installed plug-ins directory.
+01:27:19,010  INFO Gate:344 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as site configuration file.
+01:27:19,010  INFO Gate:356 - Using C:\Program Files\gate-7.0-build4195-ALL\gate-7.0-build4195-ALL\gate.xml as user configuration file
+01:27:19,011  INFO Gate:369 - Using C:\Users\Neha\gate.session as user session file
+01:27:20,417 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+01:27:20,466  INFO GateBuilder:77 - Done initialising GATE
+01:27:20,788  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/C:/Program%20Files/gate-7.0-build4195-ALL/gate-7.0-build4195-ALL/plugins/ANNIE/
+01:27:26,577 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+01:27:26,591 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 30411k; change: 30411k; max: 30411k; Net time:   0.1s; since prev. millisecs: 13
+01:27:26,592 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 13
+01:27:26,616 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 31059k; change: 648k; max: 31059k; Net time:   0.3s; since prev. millisecs: 26
+01:27:26,617 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 26
+01:27:26,627 DEBUG SinglePhaseTransducer:216 - Start: prepare
+01:27:26,718 DEBUG SinglePhaseTransducer:216 - Start: find
+01:27:26,720 DEBUG SinglePhaseTransducer:216 - Start: split
+01:27:26,721 DEBUG SinglePhaseTransducer:216 - Start: cleanup
+01:27:26,725 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 31059k; change: 0k; max: 31059k; Net time:   0.14s; since prev. millisecs: 109
+01:27:26,726 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 109
+01:27:26,737 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE POS Tagger_0001B]---------
+Memory: 31059k; change: 0k; max: 31059k; Net time:   0.16s; since prev. millisecs: 12
+01:27:26,739 DEBUG SerialController:164 - Time taken so far by ANNIE POS Tagger_0001B: 12
+01:27:26,740 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Gazetteer_0001C]---------
+Memory: 31059k; change: 0k; max: 31059k; Net time:   0.16s; since prev. millisecs: 3
+01:27:26,741 DEBUG SerialController:164 - Time taken so far by ANNIE Gazetteer_0001C: 3
+01:27:26,743 DEBUG SinglePhaseTransducer:216 - Start: ConjunctionIdentifier
+01:27:26,745 DEBUG SinglePhaseTransducer:216 - Start: preprocessingActions
+01:27:26,747 DEBUG SinglePhaseTransducer:216 - Start: preprocessingObjects1
+01:27:26,748 DEBUG SinglePhaseTransducer:216 - Start: FileObjects
+01:27:26,750 DEBUG SinglePhaseTransducer:216 - Start: DirectoryObjects
+01:27:26,751 DEBUG SinglePhaseTransducer:216 - Start: PhraseObjects
+01:27:26,753 DEBUG SinglePhaseTransducer:216 - Start: finalCleanup
+01:27:26,770 DEBUG Profiler:280 - ---------LOG: ~Execute PR [JAPE Transducer_0001D]---------
+Memory: 31706k; change: 647k; max: 31706k; Net time:   0.19s; since prev. millisecs: 30
+01:27:26,771 DEBUG SerialController:164 - Time taken so far by JAPE Transducer_0001D: 30
+01:27:26,772 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
+Memory: 31706k; change: 0k; max: 31706k; Net time:   0.19s; since prev. millisecs: 2
