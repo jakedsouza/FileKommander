@@ -20,7 +20,7 @@ public class PolyMain {
 	@SuppressWarnings("unused")
 	private static SerialAnalyserController pipelineController;
 	public static void main(String[] args)throws Exception
-	{
+	{// jake new comment for neha
 		File gateHome = new File("C:/Users/MixPool/ws/GatePractice/");
 		if (Gate.getGateHome() == null)
 			Gate.setGateHome(gateHome);
