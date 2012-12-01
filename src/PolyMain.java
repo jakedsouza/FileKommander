@@ -24,7 +24,7 @@ public class PolyMain {
 		File gateHome = new File("C:/Users/MixPool/ws/GatePractice/");
 		if (Gate.getGateHome() == null)
 			Gate.setGateHome(gateHome);
-       
+       //lll
 		// jakes comments 
 		// hahaha 
 		Gate.init();
