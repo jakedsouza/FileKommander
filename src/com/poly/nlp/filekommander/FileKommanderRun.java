@@ -25,7 +25,7 @@ import com.poly.nlp.filekommander.views.FileKommanderGUIV2;
  */
 public class FileKommanderRun {
 	private static FileKommander kommander;
-	static FileKommanderGUIV2 guiv2 ;
+	private static FileKommanderGUIV2 guiv2 ;
 	
 	/**
 	 * @param args
@@ -104,6 +104,20 @@ public class FileKommanderRun {
 		FileKommanderRun.kommander = kommander;
 	}
 	
+	/**
+	 * @return the guiv2
+	 */
+	public static FileKommanderGUIV2 getGuiv2() {
+		return guiv2;
+	}
+
+	/**
+	 * @param guiv2 the guiv2 to set
+	 */
+	public static void setGuiv2(FileKommanderGUIV2 guiv2) {
+		FileKommanderRun.guiv2 = guiv2;
+	}
+
 	public static void showProgress(){
 		MySwingWorker worker = new MySwingWorker();
 		worker.execute();
@@ -117,7 +131,7 @@ class MySwingWorker extends SwingWorker<Integer, String> {
 	protected Integer doInBackground() throws Exception {
 		for (int i=0; i<=100; i++) {
 			  
-	   FileKommanderRun.guiv2.getProgressBar().setValue(i);
+	   FileKommanderRun.getGuiv2().getProgressBar().setValue(i);
        Thread.sleep(50);
         
 }
