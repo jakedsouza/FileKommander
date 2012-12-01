@@ -3,24 +3,10 @@ package com.poly.nlp.filekommander.views;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import java.awt.Window.Type;
 import javax.swing.JTextField;
-import java.awt.BorderLayout;
-import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JProgressBar;
-import javax.swing.SwingConstants;
-import javax.swing.JFormattedTextField;
-import javax.swing.DropMode;
 import javax.swing.JLabel;
-import javax.swing.JTextArea;
-import javax.swing.UIManager;
-import javax.swing.UIManager.LookAndFeelInfo;
-import javax.swing.UnsupportedLookAndFeelException;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
 
 public class FileKommanderGUIV2 {
 
@@ -84,21 +70,21 @@ public class FileKommanderGUIV2 {
 		progressBar.setValue(50);
 		progressBar.setBounds(6, 42, 467, 9);
 		frmFileKommander.getContentPane().add(progressBar);
-		String labelText =
-			      "<html>The Applied Physics Laboratory is a division " +
-			      "of the Johns Hopkins University." +
-			      "<P>" +
-			      "Major JHU divisions include:" +
-			      "<UL>" +
-			      "  <LI>The Applied Physics Laboratory" +
-			      "  <LI>The Krieger School of Arts and Sciences" +
-			      "  <LI>The Whiting School of Engineering" +
-			      "  <LI>The School of Medicine" +
-			      "  <LI>The School of Public Health" +
-			      "  <LI>The School of Nursing" +
-			      "  <LI>The Peabody Institute" +
-			      "  <LI>The Nitze School of Advanced International Studies" +
-			      "</UL>";
+//		String labelText =
+//			      "<html>The Applied Physics Laboratory is a division " +
+//			      "of the Johns Hopkins University." +
+//			      "<P>" +
+//			      "Major JHU divisions include:" +
+//			      "<UL>" +
+//			      "  <LI>The Applied Physics Laboratory" +
+//			      "  <LI>The Krieger School of Arts and Sciences" +
+//			      "  <LI>The Whiting School of Engineering" +
+//			      "  <LI>The School of Medicine" +
+//			      "  <LI>The School of Public Health" +
+//			      "  <LI>The School of Nursing" +
+//			      "  <LI>The Peabody Institute" +
+//			      "  <LI>The Nitze School of Advanced International Studies" +
+//			      "</UL>";
 		outputLbl = new JLabel("");
 		outputLbl.setBounds(6, 63, 461, 171);
 		frmFileKommander.getContentPane().add(outputLbl);

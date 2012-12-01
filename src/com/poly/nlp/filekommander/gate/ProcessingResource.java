@@ -15,7 +15,6 @@ public class ProcessingResource {
 	public String prClass ;
 	public Map<String, String> params;
 	
-	@SuppressWarnings("unused")
 	public ProcessingResource(){}
 	
 	public ProcessingResource(String prClass) {

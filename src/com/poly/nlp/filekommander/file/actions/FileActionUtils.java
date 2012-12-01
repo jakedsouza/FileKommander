@@ -3,13 +3,7 @@
  */
 package com.poly.nlp.filekommander.file.actions;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-
 import org.apache.log4j.Logger;
-
-import com.poly.nlp.filekommander.gate.GateBuilder;
 
 import gate.Annotation;
 import gate.AnnotationSet;

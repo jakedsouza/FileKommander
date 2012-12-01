@@ -6,26 +6,20 @@ package com.poly.nlp.filekommander.gate;
 import gate.Factory;
 import gate.FeatureMap;
 import gate.Gate;
-import gate.GateConstants;
 import gate.ProcessingResource;
-import gate.creole.ANNIEConstants;
 import gate.creole.ResourceInstantiationException;
 import gate.creole.SerialAnalyserController;
 import gate.creole.Transducer;
-import gate.creole.annotdelete.AnnotationDeletePR;
 import gate.creole.gazetteer.DefaultGazetteer;
 import gate.util.GateException;
 
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URI;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.apache.log4j.Logger;
-
-import com.poly.nlp.filekommander.FileKommander;
 
 /**
  * @author jake , neha

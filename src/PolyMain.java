@@ -1,7 +1,6 @@
 
 
 import gate.Gate;
-import gate.gui.MainFrame;
 import gate.creole.SerialAnalyserController;
 //import gate.AnnotationSet;
 import gate.Corpus;
@@ -18,6 +17,7 @@ import java.util.ArrayList;
 
 public class PolyMain {
 	//private static Pipeline pipeline;
+	@SuppressWarnings("unused")
 	private static SerialAnalyserController pipelineController;
 	public static void main(String[] args)throws Exception
 	{

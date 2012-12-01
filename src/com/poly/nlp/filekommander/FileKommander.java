@@ -6,7 +6,6 @@ import gate.Corpus;
 import gate.Document;
 import gate.Factory;
 import gate.FeatureMap;
-import gate.annotation.ImmutableAnnotationSetImpl;
 import gate.creole.ExecutionException;
 import gate.creole.ResourceInstantiationException;
 import gate.creole.SerialAnalyserController;
@@ -14,30 +13,21 @@ import gate.util.GateException;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.util.Iterator;
-import java.util.Properties;
-
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
-import org.apache.commons.configuration.XMLConfiguration;
-import org.apache.commons.configuration.beanutils.BeanDeclaration;
-import org.apache.commons.configuration.beanutils.BeanHelper;
-import org.apache.commons.configuration.beanutils.XMLBeanDeclaration;
 import org.apache.log4j.Logger;
 
 import com.poly.nlp.filekommander.file.actions.FileActionUtils;
 import com.poly.nlp.filekommander.gate.GateBuilder;
-import com.poly.nlp.filekommander.gate.ProcessingResource;
 
 public class FileKommander implements Runnable{	
 	private static final Logger log = Logger.getLogger(FileKommander.class);
-	private final String fileSeparator = System.getProperty("file.separator");
+//	private final String fileSeparator = System.getProperty("file.separator");
 	public static String newline =("\n");	
 	private String gateHome ;
 	private String gazetteerFilePath ;
@@ -275,7 +265,6 @@ public class FileKommander implements Runnable{
 
 	@Override
 	public void run() {
-		Thread thread = new  Thread(this);		
 		System.out.println(this.userInputText);
 		Document doc = null ;
 		Corpus corpus = null ;

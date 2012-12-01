@@ -66,6 +66,7 @@ public class HLTTutorial {
 	public SerialAnalyserController  _annieController;
 
 
+	@SuppressWarnings("deprecation")
 	private void initializeGate() throws GateException, MalformedURLException {
 
 		System.out.println("SYSENV: "+System.getenv("GATE_HOME"));
@@ -256,6 +257,7 @@ public class HLTTutorial {
 	private void toRDF(AnnotationSet relationAnnotationSet, int code) {		
 		//get the company
 
+		@SuppressWarnings("rawtypes")
 		Iterator annoIter = relationAnnotationSet.iterator();
 
 		//iterate over annotations
