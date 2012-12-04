@@ -16,7 +16,7 @@ import java.util.ArrayList;
 //import java.util.Iterator;
 
 public class PolyMain {
-	//private static Pipeline pipeline;
+	//private static Pipeline pipeline; 
 	@SuppressWarnings("unused")
 	private static SerialAnalyserController pipelineController;
 	public static void main(String[] args)throws Exception

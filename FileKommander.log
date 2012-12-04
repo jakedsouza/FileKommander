@@ -557,3 +557,43 @@ Memory: 31706k; change: 647k; max: 31706k; Net time:   0.19s; since prev. millis
 01:27:26,771 DEBUG SerialController:164 - Time taken so far by JAPE Transducer_0001D: 30
 01:27:26,772 DEBUG Profiler:280 - ---------LOG: Execute controller [ANNIE_00015] finished---------
 Memory: 31706k; change: 0k; max: 31706k; Net time:   0.19s; since prev. millisecs: 2
+06:38:04,218  INFO FileKommander:167 - Reading Properties FileFileKommander.properties
+06:38:04,678 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+06:38:04,681 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+06:38:04,723 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+06:38:04,766 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+06:38:04,767 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/git/FileKommander/FileKommander.properties
+06:38:05,103  INFO GateBuilder:75 - Initialising GATE
+06:38:05,122  WARN Gate:266 - GATE home system property ("gate.home") not set.
+Attempting to guess...
+06:38:05,123  WARN Gate:286 - Using "C:\Users\jake\git\FileKommander" as GATE Home.
+If this is not correct please set it manually using the -Dgate.home option in your start-up script
+06:38:05,124  INFO Gate:297 - Using C:\Users\jake\git\FileKommander as GATE home
+06:38:32,829  INFO FileKommander:167 - Reading Properties FileFileKommander.properties
+06:38:32,900 DEBUG PropertiesConfiguration:588 - FileName set to FileKommander.properties
+06:38:32,903 DEBUG ConfigurationUtils:449 - ConfigurationUtils.locate(): base is null, name is FileKommander.properties
+06:38:32,907 DEBUG DefaultFileSystem:281 - Could not locate file FileKommander.properties at null: no protocol: FileKommander.properties
+06:38:32,915 DEBUG ConfigurationUtils:493 - Loading configuration from the path FileKommander.properties
+06:38:32,915 DEBUG PropertiesConfiguration:626 - Base path set to file:///C:/Users/jake/git/FileKommander/FileKommander.properties
+06:38:32,960  INFO GateBuilder:75 - Initialising GATE
+06:38:32,972  INFO Gate:297 - Using D:\Program Files\GATE_Developer_7.0 as GATE home
+06:38:32,972  INFO Gate:321 - Using D:\Program Files\GATE_Developer_7.0\plugins as installed plug-ins directory.
+06:38:32,973  INFO Gate:344 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as site configuration file.
+06:38:32,973  INFO Gate:356 - Using D:\Program Files\GATE_Developer_7.0\gate.xml as user configuration file
+06:38:32,973  INFO Gate:369 - Using C:\Users\jake\gate.session as user session file
+06:38:35,653 DEBUG Gate:553 - user config loaded; DBCONFIG={}
+06:38:36,412  INFO GateBuilder:77 - Done initialising GATE
+06:38:37,155  INFO CreoleRegisterImpl:317 - CREOLE plugin loaded: file:/D:/Program%20Files/GATE_Developer_7.0/plugins/ANNIE/
+06:38:45,501 DEBUG Profiler:176 - -----------------------------------------------
+New profiler run: Execute controller [ANNIE_00015]
+-----------------------------------------------
+
+06:38:45,507 DEBUG Profiler:280 - ---------LOG: ~Execute PR [Document Reset PR_00016]---------
+Memory: 38176k; change: 38176k; max: 38176k; Net time:   0.0s; since prev. millisecs: 6
+06:38:45,508 DEBUG SerialController:164 - Time taken so far by Document Reset PR_00016: 6
+06:38:45,510 DEBUG Profiler:280 - ---------LOG: ~Execute PR [GATE Unicode Tokeniser_00017]---------
+Memory: 38176k; change: 0k; max: 38176k; Net time:   0.0s; since prev. millisecs: 3
+06:38:45,511 DEBUG SerialController:164 - Time taken so far by GATE Unicode Tokeniser_00017: 3
+06:38:45,539 DEBUG Profiler:280 - ---------LOG: ~Execute PR [ANNIE Sentence Splitter_00018]---------
+Memory: 38176k; change: 0k; max: 38176k; Net time:   0.3s; since prev. millisecs: 29
+06:38:45,539 DEBUG SerialController:164 - Time taken so far by ANNIE Sentence Splitter_00018: 29
