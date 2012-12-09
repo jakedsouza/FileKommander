@@ -281,8 +281,37 @@ public class FileKommander implements Runnable{
 		this.workingDirectory = workingDirectory;
 	}
 
+	public AnnotationSet analyseText(String text){
+		System.out.println(this.userInputText);
+		Document doc = null ;
+		Corpus corpus = null ;
+		try {
+			 doc = Factory.newDocument(text);
+				corpus=Factory.newCorpus("BatchProcessApp Corpus");;
+
+		} catch (ResourceInstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		corpus.add(doc);
+		this.annie.setCorpus(corpus);
+		try {
+			this.annie.execute();
+		} catch (ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		AnnotationSet defaultAnnotSet = doc.getAnnotations();	
+		AnnotationSet all = defaultAnnotSet.get("all");
+		corpus.clear(); 
+		return all ;
+	}
+	
 	@Override
 	public void run() {
+		
+	
 		System.out.println(this.userInputText);
 		Document doc = null ;
 		Corpus corpus = null ;
