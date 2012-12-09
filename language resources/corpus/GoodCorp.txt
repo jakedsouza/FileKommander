@@ -112,3 +112,13 @@ delete "xxx" after the last occurrence of "yyy" in abc.txt	.
 
 Replace all occurences of "jake neha" with "neha jake" in the file abc.txt	.
 
+Open/close such and such file.
+Insert phrase X before/after every/first/last occurrence of phrase Y in file Z.
+Which files (having such and such properties) contains the phrase X?
+Delete every/first/last occurrence of phrase X which occurs before/after phrase Y from file Z.
+Append file X to file Y.
+Create/delete file X.
+Before any occurrence of phrase X in file Y add phrase Z.
+How many occurrence of phrase X occur in file Y?
+When was the last time file X edited?
+Underline every occurrence of phrase X in file Y.

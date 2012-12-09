@@ -17,7 +17,8 @@ Phase: finalCleanup
 	  AnnotationSet fileName = inputAS.get("fileName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
 	  AnnotationSet phraseName = inputAS.get("phraseName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
 	  AnnotationSet quotedObject = inputAS.get("quotedObject", acq.firstNode().getOffset(), acq.lastNode().getOffset());
-	  
+	  AnnotationSet positions = inputAS.get("position", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+
 	  String content = null ;
 	  try{
 		  content = doc.getContent().getContent(firstAnn.getStartNode().getOffset(),
@@ -34,6 +35,7 @@ Phase: finalCleanup
 	newFeatures.put("phraseName",phraseName);
 	newFeatures.put("quotedObject",quotedObject);
 	newFeatures.put("content",content);
+	newFeatures.put("position",positions);
 	//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
   outputAS.add(acq.firstNode(),acq.lastNode(),"all", newFeatures);
   outputAS.removeAll(actions);
@@ -41,5 +43,5 @@ Phase: finalCleanup
   outputAS.removeAll(fileName);
   outputAS.removeAll(phraseName);
   outputAS.removeAll(quotedObject);
-
+  outputAS.removeAll(positions);
  }
