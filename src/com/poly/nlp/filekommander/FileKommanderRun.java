@@ -3,7 +3,9 @@
  */
 package com.poly.nlp.filekommander;
 
+import gate.Annotation;
 import gate.AnnotationSet;
+import gate.FeatureMap;
 import gate.util.GateException;
 
 import java.awt.EventQueue;
@@ -20,6 +22,7 @@ import javax.swing.SwingWorker;
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;
 
+import com.poly.nlp.filekommander.file.actions.FileActionUtils;
 import com.poly.nlp.filekommander.views.FileKommanderGUIV2;
 
 /**
@@ -83,12 +86,23 @@ public class FileKommanderRun {
 	 * 
 	 */
 	public static void analyseTextInput() {
-	//	showProgress();
+		// showProgress();
 		String text = guiv2.getInputTextFld().getText();
 		guiv2.getOutputLbl().setText("You Pressed - " + text);
 		kommander.setUserInputText(text);
 		AnnotationSet allAnnotations = kommander.analyseText(text);
-		//	kommander.run();
+		// kommander.run();
+		for (Annotation annotation : allAnnotations) {
+			FeatureMap featureMap = annotation.getFeatures();
+			AnnotationSet actionsAnnotation = (AnnotationSet) featureMap
+					.get("actions");
+			for (Annotation annot2 : actionsAnnotation) {
+				FeatureMap featureMap2 = annot2.getFeatures();
+				String actionType = (String) featureMap2.get("minorType");
+				FileActionUtils.callAction(actionType, annotation);
+			}
+
+		}
 	}
 
 	/**

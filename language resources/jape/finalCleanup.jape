@@ -1,47 +1,54 @@
 Phase: finalCleanup
- Input: Sentence action directoryName fileName phraseName quotedObject
- Options: control = first
- 
- 
- Rule: FinalCleanup
- (
- {Sentence}
- 
- ):acq
- -->
- :acq{
-	 gate.AnnotationSet  acq = (AnnotationSet) bindings.get("acq");
-	  Annotation firstAnn = acq.iterator().next();
-	  AnnotationSet actions = inputAS.get("action", acq.firstNode().getOffset(), acq.lastNode().getOffset());
-	  AnnotationSet directoryName = inputAS.get("directoryName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
-	  AnnotationSet fileName = inputAS.get("fileName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
-	  AnnotationSet phraseName = inputAS.get("phraseName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
-	  AnnotationSet quotedObject = inputAS.get("quotedObject", acq.firstNode().getOffset(), acq.lastNode().getOffset());
-	  AnnotationSet positions = inputAS.get("position", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+Input: Sentence action directoryName fileName phraseName quotedObject
+Options: control = first
 
-	  String content = null ;
-	  try{
-		  content = doc.getContent().getContent(firstAnn.getStartNode().getOffset(),
-				  firstAnn.getEndNode().getOffset()).toString();
-		  }
-	  catch(InvalidOffsetException ioe){
-		        //this should never happen
-		        throw new GateRuntimeException(ioe);
-	}
-		gate.FeatureMap newFeatures= Factory.newFeatureMap();
-	newFeatures.put("actions",actions);
-	newFeatures.put("directoryName",directoryName);
-	newFeatures.put("fileName",fileName);
-	newFeatures.put("phraseName",phraseName);
-	newFeatures.put("quotedObject",quotedObject);
-	newFeatures.put("content",content);
-	newFeatures.put("position",positions);
-	//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
-  outputAS.add(acq.firstNode(),acq.lastNode(),"all", newFeatures);
-  outputAS.removeAll(actions);
-  outputAS.removeAll(directoryName);
-  outputAS.removeAll(fileName);
-  outputAS.removeAll(phraseName);
-  outputAS.removeAll(quotedObject);
-  outputAS.removeAll(positions);
- }
+
+Rule: FinalCleanup
+(
+		{Sentence}
+
+		):acq
+		-->
+		:acq{
+			gate.AnnotationSet  acq = (AnnotationSet) bindings.get("acq");
+			Annotation firstAnn = acq.iterator().next();
+			AnnotationSet actions = inputAS.get("action", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+			AnnotationSet directoryName = inputAS.get("directoryName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+			AnnotationSet fileName = inputAS.get("fileName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+			AnnotationSet phraseName = inputAS.get("phraseName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+			AnnotationSet quotedObject = inputAS.get("quotedObject", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+			AnnotationSet positions = inputAS.get("position", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+
+			String content = null ;
+			try{
+				content = doc.getContent().getContent(firstAnn.getStartNode().getOffset(),
+						firstAnn.getEndNode().getOffset()).toString();
+			}
+			catch(InvalidOffsetException ioe){
+				//this should never happen
+				throw new GateRuntimeException(ioe);
+			}
+			gate.FeatureMap newFeatures= Factory.newFeatureMap();
+			if(!actions.isEmpty())	
+				newFeatures.put("actions",actions);
+			if(!directoryName.isEmpty())
+				newFeatures.put("directoryName",directoryName);
+			if(!fileName.isEmpty())
+				newFeatures.put("fileName",fileName);
+			if(!phraseName.isEmpty())
+				newFeatures.put("phraseName",phraseName);
+			if(!quotedObject.isEmpty())
+				newFeatures.put("quotedObject",quotedObject);
+			if(!content.isEmpty())
+				newFeatures.put("content",content);
+			if(!positions.isEmpty())
+				newFeatures.put("position",positions);
+			//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
+			outputAS.add(acq.firstNode(),acq.lastNode(),"all", newFeatures);
+			outputAS.removeAll(actions);
+			outputAS.removeAll(directoryName);
+			outputAS.removeAll(fileName);
+			outputAS.removeAll(phraseName);
+			outputAS.removeAll(quotedObject);
+			outputAS.removeAll(positions);
+		}
