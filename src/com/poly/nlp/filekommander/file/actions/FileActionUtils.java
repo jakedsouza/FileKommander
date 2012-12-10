@@ -4,11 +4,16 @@
 package com.poly.nlp.filekommander.file.actions;
 
 import java.awt.Desktop;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
 
@@ -302,11 +307,59 @@ public class FileActionUtils {
 	    	errorMsg = "Error renaming file" ;
 	    	FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
 	    }else{
-	    	System.out.println("Rename successfull");
+	    	System.out.println("Rename successful");
 	    }
 
+	}
+	
+	public static void insert(String phraseToBeInserted, String existingPhrase, String position, String fileName ) throws IOException {
+		String errorMsg = "";
+		File file = new File("testDir/" + fileName);
+		if(file.exists()){
+			BufferedReader reader = new BufferedReader(new FileReader(file));
+//				   new BufferedReader(new FileReader(file))/;
+				    String line = "";
+				    while ((line = reader.readLine()) != null) {
+				    	   Pattern pattern = Pattern.compile(existingPhrase, Pattern.CASE_INSENSITIVE);
+				    	  // pattern.
+						    Matcher matcher = pattern.matcher(line);
+						    // Check all occurrences
+						    while (matcher.find()) {
+/*						    	
+						    	switch(location){
+						    	
+						    	case "before":
+						    		break;
+						    	case "after":
+						    		break;
+						    	case "":
+						    		break;
+						    	default
+						    		break;
+						    	}*/
+						      System.out.print("Start index: " + matcher.start());
+						      System.out.print(" End index: " + matcher.end() + " ");
+						      System.out.println(matcher.group());
+						    }
+						    
+				
+				    }
+				
+		}else{
+			errorMsg = "File named "+fileName+" doesn't exist. Do you want to continue ?";
+			System.out.println(errorMsg);
+		}
+	}
+	
+	public static void remove(String phraseToBeRemoved, String position, String fileName){
 		
 	}
-		
 	
+	public static void replace(String phraseToBeInserted, String existingPhrase, String position, String fileName){
+		
+	}
+	
+	public static void stats(){
+		
+	}
 }
