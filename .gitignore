@@ -1,3 +1,4 @@
 /bin
 /FileKommander.log
 /FileKommander.properties
+*.class
