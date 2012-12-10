@@ -99,6 +99,7 @@ public class FileKommanderRun {
 			for (Annotation annot2 : actionsAnnotation) {
 				FeatureMap featureMap2 = annot2.getFeatures();
 				String actionType = (String) featureMap2.get("minorType");
+				FileActionUtils.analyseAction(actionType, annotation);
 				FileActionUtils.callAction(actionType, annotation);
 			}
 
