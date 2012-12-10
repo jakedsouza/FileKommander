@@ -11,6 +11,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -34,8 +35,53 @@ public class FileActionUtils {
 	public static void CloseAction() {
 		log.info("CloseAction action called");
 	}
+	
+	public static void AnalyseCreateAction(Annotation annotation){
 
-	public static void CreateAction() {
+		FeatureMap featureMap = annotation.getFeatures();
+		String content = (String) featureMap.get("content");
+		ArrayList<String> fileNamesList = null;
+		ArrayList<String> directoryNamesList = null;
+		ArrayList<String> quotedObjectNamesList = null;
+		if (featureMap.containsKey("fileName")) {
+			fileNamesList = new ArrayList<>();
+			AnnotationSet fileNames = (AnnotationSet) featureMap
+					.get("fileName");
+			for (Annotation file : fileNames) {
+				FeatureMap featureMap2 = file.getFeatures();
+				String fileName = (String) featureMap2.get("string");
+				fileNamesList.add(fileName);
+			}
+		}
+
+		if (featureMap.containsKey("directoryName")) {
+			directoryNamesList = new ArrayList<>();
+			AnnotationSet fileNames = (AnnotationSet) featureMap
+					.get("directoryName");
+			for (Annotation file : fileNames) {
+				FeatureMap featureMap2 = file.getFeatures();
+				String fileName = (String) featureMap2.get("string");
+				directoryNamesList.add(fileName);
+			}
+		}
+
+		if (featureMap.containsKey("quotedObject")) {
+			quotedObjectNamesList = new ArrayList<>();
+			AnnotationSet fileNames = (AnnotationSet) featureMap
+					.get("quotedObject");
+			for (Annotation file : fileNames) {
+				FeatureMap featureMap2 = file.getFeatures();
+				String fileName = (String) featureMap2.get("string");
+				quotedObjectNamesList.add(fileName);
+			}
+		}
+
+		log.info("Files to be Created : " + fileNamesList);
+		log.info("Directories to be Created : " + directoryNamesList);
+		log.info("Files to be Created : " + quotedObjectNamesList);
+	}
+
+	public static void CreateAction(Annotation annotation) {
 		log.info("CreateAction action called");
 	}
 
@@ -70,6 +116,51 @@ public class FileActionUtils {
 	public static void StatsAction() {
 		log.info("StatsAction action called");
 	}
+	
+	public static void analyseAction(String actionType, Annotation annotation) {
+		if (actionType == null)
+			return;		
+		switch (actionType) {
+		case "close":
+			AnalyseCloseAction(annotation);
+			break;
+		case "create":
+			AnalyseCreateAction(annotation);
+			break;
+		case "delete":
+			DeleteAction();
+			break;
+		case "exists":
+			ExistsAction();
+			break;
+		case "insert":
+			InsertAction();
+			break;
+		case "open":
+			OpenAction();
+			break;
+		case "remove":
+			RemoveAction();
+			break;
+		case "rename":
+			RenameAction();
+			break;
+		case "replace":
+			ReplaceAction();
+			break;
+		case "stats":
+			StatsAction();
+			break;
+		default:
+			break;
+		}
+
+	}
+	
+	private static void AnalyseCloseAction(Annotation annotation) {
+		// TODO Auto-generated method stub
+		
+	}
 
 	public static void callAction(String actionType, Annotation annotation) {
 		if(actionType == null )
@@ -88,7 +179,7 @@ public class FileActionUtils {
 			CloseAction();
 			break;
 		case "create":
-			CreateAction();
+			CreateAction(annotation);
 			break;
 		case "delete":
 			DeleteAction();
