@@ -30,6 +30,10 @@ public class FileKommander implements Runnable{
 	public static final int FILE= 0 ; 
 	public static final int DIRECTORY = 1 ;
 	
+	public static final int COUNT= 2 ; 
+	public static final int SIZEOF= 3 ;
+	
+	
 //	private final String fileSeparator = System.getProperty("file.separator");
 	public static String newline =("\n");	
 	private String gateHome ;
@@ -109,49 +113,7 @@ public class FileKommander implements Runnable{
 		this.annie = annie;
 	}
 
-//	public static void main1(String[] args) throws GateException, ConfigurationException, IOException {
-//		// Read args to run in cli mode or in GUI mode 
-//		// If CLI - Run CLI CODE 
-//		// ELSE IF GUI Run GUI Code if no args run GUI . 
-//		//BOth the codes must be independent and s
-//		// SHOULD CAll the same Functions it
-//		
-//		// Load properties file 		
-////		FileKommander kommander = new FileKommander(); 
-////		Configuration config  = kommander.loadConfig("FileKommander.properties");
-////		
-////		kommander.setGateHome(config.getString("gateHome"));
-////		kommander.setGazetteerFilePath(config.getString("gazetteerFilePath"));
-////		kommander.setJapeFilePath(config.getString("japeFilePath"));
-////		
-//		
-////		kommander.gateBuilder = kommander.initGATE(kommander.getGateHome(),kommander.getGazetteerFilePath(),kommander.getJapeFilePath());
-//		
-////		kommander.annie = kommander.initANNIE();
-//
-//		File file = new File("language resources/corpus/GoodCorp.txt") ;
-//		Document doc = Factory.newDocument(getContents(file));
-//		Corpus corpus =Factory.newCorpus("BatchProcessApp Corpus");;
-//		corpus.add(doc);
-////		kommander.annie.setCorpus(corpus);
-////		kommander.annie.execute();
-//		AnnotationSet defaultAnnotSet = doc.getAnnotations();	
-//		AnnotationSet all = defaultAnnotSet.get("all");
-//		for (Annotation annotation : all) {
-//			FeatureMap featureMap = annotation.getFeatures();
-//			AnnotationSet actionsAnnotation =  (AnnotationSet)featureMap.get("actions");
-//		for(Annotation annot2 : actionsAnnotation){
-//			FeatureMap featureMap2 = annot2.getFeatures();
-//			String actionType = (String)featureMap2.get("minorType");
-//			FileActionUtils.callAction(actionType,annotation);			
-//		}
-//		
-//		}
-//		
-//		
-//		corpus.clear();  
-//	
-//	}
+
 	
 	public void cliMode(){
 		

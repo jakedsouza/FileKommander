@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.StreamTokenizer;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
 import com.poly.nlp.filekommander.FileKommander;
@@ -35,7 +37,8 @@ public class FileActionUtils {
 	public static void CloseAction() {
 		log.info("CloseAction action called");
 	}
-	
+
+
 	public static void AnalyseCreateAction(Annotation annotation){
 
 		FeatureMap featureMap = annotation.getFeatures();
@@ -116,8 +119,8 @@ public class FileActionUtils {
 	public static void StatsAction() {
 		log.info("StatsAction action called");
 	}
-	
-	public static void analyseAction(String actionType, Annotation annotation) {
+
+public static void analyseAction(String actionType, Annotation annotation) {
 		if (actionType == null)
 			return;		
 		switch (actionType) {
@@ -450,7 +453,122 @@ public class FileActionUtils {
 		
 	}
 	
-	public static void stats(){
+	//parentObjectName = name of the file/folder
+	//parentObjectType = file or folder- 0,1
+	public static void stats(String parentObjectName, int statsType, int parentObjectType) throws IOException{
 		
+		if(statsType == FileKommander.COUNT){
+			if(parentObjectType == FileKommander.FILE){
+				count(parentObjectName, parentObjectType, "words");
+				
+			}else if(parentObjectType == FileKommander.DIRECTORY){
+				count(parentObjectName, parentObjectType, "files");
+			}
+		}else if(statsType == FileKommander.SIZEOF){
+			sizeOf(parentObjectName);
+		}
+		
+	}
+	
+	//to count a specific word
+	public static void stats(String parentObjectName, String wordToBeCounted) throws IOException{
+		
+		count(parentObjectName, wordToBeCounted);
+		
+	}
+	
+	public static void count(String parentObjectName, String wordToBeCounted) throws IOException{
+		File f = new File("testDir/" + parentObjectName);
+		String line = "";
+		int count = 0;
+		if(f.exists()){
+	        FileReader fr = new FileReader(f);
+	        BufferedReader br = new BufferedReader(fr);
+	        while((line = br.readLine()) != null){
+	        	count += StringUtils.countMatches(line, wordToBeCounted);
+	        }
+		}
+	}
+	
+	private static void sizeOf(String parentObjectName) {
+		File f = new File("testDir/" + parentObjectName);
+		if(f.exists()){
+			long b = f.length();
+			printSize(b);
+			if(f.isDirectory()){
+				long bd = sizeofDirectory(f);
+				printSize(bd);
+			}
+		}else {
+			System.out.println("File doesn't exists.");
+		}
+
+		
+	}
+
+	private static void printSize(long b){
+		long k = b/1024;
+		long m = k/1024;
+		long g = m/1024;
+		if(b < 1024){
+			System.out.println("The size of the file is "+b+" Bytes");
+		}else if(k < 1024){
+			System.out.println("The size of the file is "+k+" KB");
+		}else if(m < 1024){
+			System.out.println("The size of the file is "+m+" MB");
+		}else {
+			System.out.println("The size of the file is "+g+" GB");
+		}
+	}
+	
+	private static long sizeofDirectory(File f) {
+		long size = 0;
+		File[] subFiles = f.listFiles();
+		for (File file : subFiles) {
+			if (file.isFile()) {
+				size += file.length();
+			} else {
+				size += sizeofDirectory(file);
+			}
+		}
+		return size;		
+	}
+
+	public static void count(String parentObjectName, int parentObjectType, String type) throws IOException{
+		File f = new File("testDir/" + parentObjectName);
+		if(type.equals("words")){
+			if(f.exists()){
+	        FileReader fr = new FileReader(f);
+	        BufferedReader br = new BufferedReader(fr);
+	        StreamTokenizer stz = new StreamTokenizer(br);
+	             int index = 0;
+	            int numWords =0;
+	            
+	            while(index !=StreamTokenizer.TT_EOF )
+	            {
+	                index =stz.nextToken();
+	                numWords++;
+	            }
+	                    
+	                   System.out.println("no. of words in file = " + numWords);
+			}else {
+				System.out.println("This file doesn't exists.");
+			}
+		}else if(type.equals("files")){
+			int count = 0;
+			int countDirectory = 0;
+			int countAll = 0;
+            for (File file : f.listFiles()) {
+                    if (file.isFile()) {
+                            count++;
+                    }else if(file.isDirectory()){
+                    		countDirectory++;
+                    }
+            }
+            countAll = count + countDirectory;
+            System.out.println("Number of files: " + count);
+            System.out.println("Number of folders:" + countDirectory);
+            System.out.println("Number of files and folders: "+countAll);
+		}
 	}
 }
