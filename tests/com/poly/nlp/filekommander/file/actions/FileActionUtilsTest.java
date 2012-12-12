@@ -5,6 +5,8 @@ package com.poly.nlp.filekommander.file.actions;
 
 import static org.junit.Assert.*;
 
+import java.io.File;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,43 +32,22 @@ public class FileActionUtilsTest {
 	}
 
 	/**
-	 * Test method for {@link com.poly.nlp.filekommander.file.actions.FileActionUtils#create(java.lang.String, int)}.
+	 * Test method for {@link com.poly.nlp.filekommander.file.actions.FileActionUtils#printSize(long)}.
 	 */
 	@Test
-	public void testCreate() {
-		fail("Not yet implemented"); // TODO
+	public void testPrintSize() {
+	//	FileActionUtils. ;
+		
 	}
-
-	/**
-	 * Test method for {@link com.poly.nlp.filekommander.file.actions.FileActionUtils#delete(java.lang.String, int)}.
-	 */
+	
 	@Test
-	public void testDelete() {
-		fail("Not yet implemented"); // TODO
-	}
-
-	/**
-	 * Test method for {@link com.poly.nlp.filekommander.file.actions.FileActionUtils#exists(java.lang.String, int)}.
-	 */
-	@Test
-	public void testExists() {
-		fail("Not yet implemented"); // TODO
-	}
-
-	/**
-	 * Test method for {@link com.poly.nlp.filekommander.file.actions.FileActionUtils#open(java.lang.String)}.
-	 */
-	@Test
-	public void testOpen() {
-		fail("Not yet implemented"); // TODO
-	}
-
-	/**
-	 * Test method for {@link com.poly.nlp.filekommander.file.actions.FileActionUtils#rename(java.lang.String, java.lang.String)}.
-	 */
-	@Test
-	public void testRename() {
-		fail("Not yet implemented"); // TODO
+	public void testSizeOfDirectory() {
+		File f = new File("E:\\1");
+		long answer = 1443 ;
+		long output = FileActionUtils.sizeofDirectory(f);
+		System.out.println(output);
+		assertEquals(answer, output, 0);	
+		
 	}
 
 }

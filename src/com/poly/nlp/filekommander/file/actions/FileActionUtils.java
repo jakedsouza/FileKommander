@@ -17,6 +17,10 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import com.poly.nlp.filekommander.FileKommander;
 import com.poly.nlp.filekommander.FileKommanderRun;
+import com.poly.nlp.filekommander.views.models.CreateModel;
+import com.poly.nlp.filekommander.views.models.DeleteModel;
+import com.poly.nlp.filekommander.views.models.GenericActionModel;
+
 import gate.Annotation;
 import gate.AnnotationSet;
 import gate.FeatureMap;
@@ -28,80 +32,112 @@ import gate.FeatureMap;
 public class FileActionUtils {
 	private static final Logger log = Logger.getLogger(FileActionUtils.class);
 
-	public static void AnalyseCreateAction(Annotation annotation) {
-
+	public static GenericActionModel AnalyseCreateAction(Annotation annotation) {
 		FeatureMap featureMap = annotation.getFeatures();
-		String content = (String) featureMap.get("content");
-		ArrayList<String> fileNamesList = null;
-		ArrayList<String> directoryNamesList = null;
-		ArrayList<String> quotedObjectNamesList = null;
-		if (featureMap.containsKey("fileName")) {
-			fileNamesList = new ArrayList<>();
-			AnnotationSet fileNames = (AnnotationSet) featureMap
-					.get("fileName");
-			for (Annotation file : fileNames) {
-				FeatureMap featureMap2 = file.getFeatures();
-				String fileName = (String) featureMap2.get("string");
-				fileNamesList.add(fileName);
+		ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
+				featureMap, "fileName");
+		ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
+				featureMap, "directoryName");
+		ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
+				featureMap, "quotedObject");
+		CreateModel createModel = new CreateModel();
+		if (fileNamesList != null) {
+			for (String fileName : fileNamesList) {
+				createModel.add(fileName, FileKommander.FILE);
 			}
 		}
-
-		if (featureMap.containsKey("directoryName")) {
-			directoryNamesList = new ArrayList<>();
-			AnnotationSet fileNames = (AnnotationSet) featureMap
-					.get("directoryName");
-			for (Annotation file : fileNames) {
-				FeatureMap featureMap2 = file.getFeatures();
-				String fileName = (String) featureMap2.get("string");
-				directoryNamesList.add(fileName);
+		if (directoryNamesList != null) {
+			for (String folderName : directoryNamesList) {
+				createModel.add(folderName, FileKommander.DIRECTORY);
 			}
 		}
-
-		if (featureMap.containsKey("quotedObject")) {
-			quotedObjectNamesList = new ArrayList<>();
-			AnnotationSet fileNames = (AnnotationSet) featureMap
-					.get("quotedObject");
-			for (Annotation file : fileNames) {
-				FeatureMap featureMap2 = file.getFeatures();
-				String fileName = (String) featureMap2.get("string");
-				quotedObjectNamesList.add(fileName);
+		if (quotedObjectNamesList != null) {
+			for (String quotedName : quotedObjectNamesList) {
+				if(!fileNamesList.contains(quotedName) && !directoryNamesList.contains(quotedName))
+				createModel.add(quotedName, FileKommander.DIRECTORY);
 			}
 		}
-
 		log.info("Files to be Created : " + fileNamesList);
 		log.info("Directories to be Created : " + directoryNamesList);
 		log.info("Files to be Created : " + quotedObjectNamesList);
+		return createModel;
 	}
 
-	public static void AnalyseDeleteAction(Annotation annotation) {
+	public static GenericActionModel AnalyseDeleteAction(Annotation annotation) {
+		DeleteModel deleteModel = new DeleteModel();
+		FeatureMap featureMap = annotation.getFeatures();
+		String content = (String) featureMap.get("content");
+		ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
+				featureMap, "fileName");
+		ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
+				featureMap, "directoryName");
+		ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
+				featureMap, "quotedObject");
+		for (String fileName : quotedObjectNamesList) {
+			deleteModel.add(fileName, FileKommander.FILE);
+		}
+		for (String fileName : fileNamesList) {
+			deleteModel.add(fileName, FileKommander.FILE);
+		}
+		for (String folderName : directoryNamesList) {
+			deleteModel.add(folderName, FileKommander.DIRECTORY);
+		}
+		log.info("Files to be Deleted : " + fileNamesList);
+		log.info("Directories to be Deleted : " + directoryNamesList);
+		log.info("Files to be Deleted : " + quotedObjectNamesList);
+		return deleteModel;
+	}
+
+	public static GenericActionModel AnalyseExistsAction(Annotation annotation) {
+		return null;
 
 	}
 
-	public static void AnalyseExistsAction(Annotation annotation) {
+	public static GenericActionModel AnalyseInsertAction(Annotation annotation) {
+		return null;
 
 	}
 
-	public static void AnalyseInsertAction(Annotation annotation) {
+	public static GenericActionModel AnalyseOpenAction(Annotation annotation) {
+		return null;
 
 	}
 
-	public static void AnalyseOpenAction(Annotation annotation) {
+	public static GenericActionModel AnalyseRemoveAction(Annotation annotation) {
+		return null;
 
 	}
 
-	public static void AnalyseRemoveAction(Annotation annotation) {
+	public static GenericActionModel AnalyseRenameAction(Annotation annotation) {
+		FeatureMap featureMap = annotation.getFeatures();
+		String content = (String) featureMap.get("content");
+		ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
+				featureMap, "fileName");
+		ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
+				featureMap, "directoryName");
+		ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
+				featureMap, "quotedObject");
+
+		boolean isRenameFile = (fileNamesList.size() == 2)
+				|| (quotedObjectNamesList.size() == 2)
+				|| (fileNamesList.size() + quotedObjectNamesList.size() == 2);
+		if (isRenameFile) {
+
+			log.info("");
+		} else {
+
+		}
+		return null;
 
 	}
 
-	public static void AnalyseRenameAction(Annotation annotation) {
+	public static GenericActionModel AnalyseReplaceAction(Annotation annotation) {
+		return null;
 
 	}
 
-	public static void AnalyseReplaceAction(Annotation annotation) {
-
-	}
-
-	public static void AnalyseStatsAction(Annotation annotation) {
+	public static GenericActionModel AnalyseStatsAction(Annotation annotation) {
+		return null;
 
 	}
 
@@ -141,43 +177,47 @@ public class FileActionUtils {
 		log.info("StatsAction action called");
 	}
 
-	public static void analyseAction(String actionType, Annotation annotation) {
+	public static GenericActionModel analyseAction(String actionType,
+			Annotation annotation) {
 		if (actionType == null)
-			return;
+			return null;
+		GenericActionModel returnModel = null;
+
 		switch (actionType) {
 		case "close":
 			// AnalyseCloseAction(annotation);
 			break;
 		case "create":
-			AnalyseCreateAction(annotation);
+			returnModel = AnalyseCreateAction(annotation);
 			break;
 		case "delete":
-			AnalyseDeleteAction(annotation);
+			returnModel = AnalyseDeleteAction(annotation);
 			break;
 		case "exists":
-			AnalyseExistsAction(annotation);
+			returnModel = AnalyseExistsAction(annotation);
 			break;
 		case "insert":
-			AnalyseInsertAction(annotation);
+			returnModel = AnalyseInsertAction(annotation);
 			break;
 		case "open":
-			AnalyseOpenAction(annotation);
+			returnModel = AnalyseOpenAction(annotation);
 			break;
 		case "remove":
-			AnalyseRemoveAction(annotation);
+			returnModel = AnalyseRemoveAction(annotation);
 			break;
 		case "rename":
-			AnalyseRenameAction(annotation);
+			returnModel = AnalyseRenameAction(annotation);
 			break;
 		case "replace":
-			AnalyseReplaceAction(annotation);
+			returnModel = AnalyseReplaceAction(annotation);
 			break;
 		case "stats":
-			AnalyseStatsAction(annotation);
+			returnModel = AnalyseStatsAction(annotation);
 			break;
 		default:
 			break;
 		}
+		return returnModel;
 
 	}
 
@@ -311,8 +351,8 @@ public class FileActionUtils {
 						if (directory.list().length == 0) {
 							directory.delete();
 							System.out
-							.println("directory deleted successfully "
-									+ directory.getAbsolutePath());
+									.println("directory deleted successfully "
+											+ directory.getAbsolutePath());
 						}
 					}
 
@@ -367,8 +407,8 @@ public class FileActionUtils {
 				return true;
 			} else if (OSDetector.isLinux() || OSDetector.isMac()) {
 				Runtime.getRuntime()
-				.exec(new String[] { "/usr/bin/open",
-						file.getAbsolutePath() });
+						.exec(new String[] { "/usr/bin/open",
+								file.getAbsolutePath() });
 				return true;
 			} else {
 				// Unknown OS, try with desktop
@@ -523,7 +563,7 @@ public class FileActionUtils {
 
 	}
 
-	private static void printSize(long b) {
+	public static void printSize(long b) {
 		long k = b / 1024;
 		long m = k / 1024;
 		long g = m / 1024;
@@ -538,7 +578,7 @@ public class FileActionUtils {
 		}
 	}
 
-	private static long sizeofDirectory(File f) {
+	public static long sizeofDirectory(File f) {
 		long size = 0;
 		File[] subFiles = f.listFiles();
 		for (File file : subFiles) {
@@ -588,4 +628,24 @@ public class FileActionUtils {
 			log.info("Number of files and folders: " + countAll);
 		}
 	}
+
+	public static ArrayList<String> getObjectNameFromAnnotation(
+			FeatureMap featureMap, String key) {
+		ArrayList<String> outputList = null;
+		if (featureMap.containsKey(key)) {
+			outputList = new ArrayList<String>();
+			AnnotationSet objectNames = (AnnotationSet) featureMap.get(key);
+			for (Annotation object : objectNames) {
+				FeatureMap featureMap2 = object.getFeatures();
+				String objectName = (String) featureMap2.get("string");
+				outputList.add(objectName);
+			}
+		} else {
+			return null;
+		}
+
+		return outputList.isEmpty() ? null : outputList;
+
+	}
+
 }
