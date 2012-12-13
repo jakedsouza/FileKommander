@@ -1,0 +1,7 @@
+Todo 
+
+1 > Insert replace  remove occurences  Jake/Neha
+2 > Stats function gui- Neha
+3 > Create  /delete  gui test- jake
+4 > Other actions gui / test- jake neha
+5 > more jape and testing 
