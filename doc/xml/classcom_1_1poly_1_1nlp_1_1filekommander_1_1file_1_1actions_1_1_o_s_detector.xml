@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::file::actions::OSDetector</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a79c0b2e4cc827207058a2bd69447964e" prot="private" static="yes" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.poly.nlp.filekommander.file.actions.OSDetector.isWindows</definition>
+        <argsstring></argsstring>
+        <name>isWindows</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" line="4" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a22ec143bd07db6e90565820d45099d16" prot="private" static="yes" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.poly.nlp.filekommander.file.actions.OSDetector.isLinux</definition>
+        <argsstring></argsstring>
+        <name>isLinux</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" line="5" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a1340febacdcad32dd61d018c21c6bb1f" prot="private" static="yes" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.poly.nlp.filekommander.file.actions.OSDetector.isMac</definition>
+        <argsstring></argsstring>
+        <name>isMac</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" line="6" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1ad1b4bb03ca503507acbe854a9beac23f" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.poly.nlp.filekommander.file.actions.OSDetector.[static initializer]</definition>
+        <argsstring></argsstring>
+        <name>[static initializer]</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" line="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1ac64c693bb806da889cf3eefc41a4294a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>static boolean com.poly.nlp.filekommander.file.actions.OSDetector.isWindows</definition>
+        <argsstring>()</argsstring>
+        <name>isWindows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" line="15" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a25112197d08a5d0db2cb9d24c7c43212" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>static boolean com.poly.nlp.filekommander.file.actions.OSDetector.isLinux</definition>
+        <argsstring>()</argsstring>
+        <name>isLinux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" line="19" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1af341d0aa020032a1e0646c1c589eaed3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>static boolean com.poly.nlp.filekommander.file.actions.OSDetector.isMac</definition>
+        <argsstring>()</argsstring>
+        <name>isMac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" line="23" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" bodystart="23" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" line="3" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/OSDetector.java" bodystart="3" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1ad1b4bb03ca503507acbe854a9beac23f" prot="package" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::OSDetector</scope><name>[static initializer]</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a22ec143bd07db6e90565820d45099d16" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::OSDetector</scope><name>isLinux</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a25112197d08a5d0db2cb9d24c7c43212" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::OSDetector</scope><name>isLinux</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a1340febacdcad32dd61d018c21c6bb1f" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::OSDetector</scope><name>isMac</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1af341d0aa020032a1e0646c1c589eaed3" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::OSDetector</scope><name>isMac</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a79c0b2e4cc827207058a2bd69447964e" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::OSDetector</scope><name>isWindows</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1ac64c693bb806da889cf3eefc41a4294a" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::OSDetector</scope><name>isWindows</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

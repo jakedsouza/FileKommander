@@ -1,0 +1,594 @@
+.TH "com.poly.nlp.filekommander.FileKommander" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.FileKommander \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Runnable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "String \fBgetGateHome\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetGateHome\fP (String \fBgateHome\fP)"
+.br
+.ti -1c
+.RI "String \fBgetGazetteerFilePath\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetGazetteerFilePath\fP (String \fBgazetteerFilePath\fP)"
+.br
+.ti -1c
+.RI "String \fBgetJapeFilePath\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetJapeFilePath\fP (String \fBjapeFilePath\fP)"
+.br
+.ti -1c
+.RI "\fBGateBuilder\fP \fBgetGateBuilder\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetGateBuilder\fP (\fBGateBuilder\fP \fBgateBuilder\fP)"
+.br
+.ti -1c
+.RI "SerialAnalyserController \fBgetAnnie\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAnnie\fP (SerialAnalyserController \fBannie\fP)"
+.br
+.ti -1c
+.RI "\fBGateBuilder\fP \fBinitGATE\fP ()  throws MalformedURLException, GateException "
+.br
+.ti -1c
+.RI "SerialAnalyserController \fBinitANNIE\fP ()  throws ResourceInstantiationException, MalformedURLException "
+.br
+.ti -1c
+.RI "String \fBgetUserInputText\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetUserInputText\fP (String \fBuserInputText\fP)"
+.br
+.ti -1c
+.RI "String \fBgetWorkingDirectory\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetWorkingDirectory\fP (String \fBworkingDirectory\fP)"
+.br
+.ti -1c
+.RI "AnnotationSet \fBanalyseText\fP (String text)"
+.br
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static String \fBgetContents\fP (File aFile)"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final int \fBFILE\fP = 0"
+.br
+.ti -1c
+.RI "static final int \fBDIRECTORY\fP = 1"
+.br
+.ti -1c
+.RI "static final int \fBCOUNT\fP = 2"
+.br
+.ti -1c
+.RI "static final int \fBSIZEOF\fP = 3"
+.br
+.ti -1c
+.RI "static final int \fBLAST_MODIFIED\fP = 4"
+.br
+.ti -1c
+.RI "static final int \fBLIST_FILES\fP = 5"
+.br
+.ti -1c
+.RI "static final int \fBCOUNT_WORD\fP = 6"
+.br
+.ti -1c
+.RI "static final int \fBINSERT\fP = 7"
+.br
+.ti -1c
+.RI "static final int \fBREPLACE\fP = 8"
+.br
+.ti -1c
+.RI "static final int \fBREMOVE\fP = 9"
+.br
+.ti -1c
+.RI "static String \fBnewline\fP = ('\\n')"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "String \fBgateHome\fP"
+.br
+.ti -1c
+.RI "String \fBworkingDirectory\fP"
+.br
+.ti -1c
+.RI "String \fBgazetteerFilePath\fP"
+.br
+.ti -1c
+.RI "String \fBjapeFilePath\fP"
+.br
+.ti -1c
+.RI "SerialAnalyserController \fBannie\fP"
+.br
+.ti -1c
+.RI "\fBGateBuilder\fP \fBgateBuilder\fP"
+.br
+.ti -1c
+.RI "String \fBuserInputText\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlog\fP = Logger\&.getLogger(FileKommander\&.class)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 24 of file FileKommander\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "AnnotationSet com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.analyseText (Stringtext)"
+
+.PP
+Definition at line 207 of file FileKommander\&.java\&.
+.PP
+.nf
+                                                  {
+        System\&.out\&.println(this\&.userInputText);
+        Document doc = null;
+        Corpus corpus = null;
+        try {
+            doc = Factory\&.newDocument(text);
+            corpus = Factory\&.newCorpus('BatchProcessApp Corpus');
+            ;
+
+        } catch (ResourceInstantiationException e) {
+            // TODO Auto-generated catch block
+            e\&.printStackTrace();
+        }
+
+        corpus\&.add(doc);
+        this\&.annie\&.setCorpus(corpus);
+        try {
+            this\&.annie\&.execute();
+        } catch (ExecutionException e) {
+            // TODO Auto-generated catch block
+            e\&.printStackTrace();
+        }
+        AnnotationSet defaultAnnotSet = doc\&.getAnnotations();
+        AnnotationSet all = defaultAnnotSet\&.get('all');
+        corpus\&.clear();
+        return all;
+    }
+.fi
+.SS "SerialAnalyserController com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.getAnnie ()"
+\fBReturns:\fP
+.RS 4
+the annie 
+.RE
+.PP
+
+.PP
+Definition at line 108 of file FileKommander\&.java\&.
+.PP
+.nf
+                                               {
+        return annie;
+    }
+.fi
+.SS "static String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.getContents (FileaFile)\fC [static]\fP"
+
+.PP
+Definition at line 139 of file FileKommander\&.java\&.
+.PP
+.nf
+                                                 {
+        // \&.\&.\&.checks on aFile are elided
+        StringBuffer contents = new StringBuffer();
+
+        // declared here only to make visible to finally clause
+        BufferedReader input = null;
+        try {
+            // use buffering, reading one line at a time
+            // FileReader always assumes default encoding is OK!
+            input = new BufferedReader(new FileReader(aFile));
+            String line = null; // not declared within while loop
+            /*
+             * readLine is a bit quirky : it returns the content of a line MINUS
+             * the newline\&. it returns null only for the END of the stream\&. it
+             * returns an empty String if two newlines appear in a row\&.
+             */
+            while ((line = input\&.readLine()) != null) {
+                contents\&.append(line);
+                contents\&.append(System\&.getProperty('line\&.separator'));
+            }
+        } catch (FileNotFoundException ex) {
+            ex\&.printStackTrace();
+        } catch (IOException ex) {
+            ex\&.printStackTrace();
+        } finally {
+            try {
+                if (input != null) {
+                    // flush and close both 'input' and its underlying
+                    // FileReader
+                    input\&.close();
+                }
+            } catch (IOException ex) {
+                ex\&.printStackTrace();
+            }
+        }
+        return contents\&.toString();
+    }
+.fi
+.SS "\fBGateBuilder\fP com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.getGateBuilder ()"
+\fBReturns:\fP
+.RS 4
+the gateBuilder 
+.RE
+.PP
+
+.PP
+Definition at line 93 of file FileKommander\&.java\&.
+.PP
+.nf
+                                        {
+        return gateBuilder;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.getGateHome ()"
+\fBReturns:\fP
+.RS 4
+the gateHome 
+.RE
+.PP
+
+.PP
+Definition at line 48 of file FileKommander\&.java\&.
+.PP
+.nf
+                                {
+        return gateHome;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.getGazetteerFilePath ()"
+\fBReturns:\fP
+.RS 4
+the gazetteerFilePath 
+.RE
+.PP
+
+.PP
+Definition at line 63 of file FileKommander\&.java\&.
+.PP
+.nf
+                                         {
+        return gazetteerFilePath;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.getJapeFilePath ()"
+\fBReturns:\fP
+.RS 4
+the japeFilePath 
+.RE
+.PP
+
+.PP
+Definition at line 78 of file FileKommander\&.java\&.
+.PP
+.nf
+                                    {
+        return japeFilePath;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.getUserInputText ()"
+\fBReturns:\fP
+.RS 4
+the userInputText 
+.RE
+.PP
+
+.PP
+Definition at line 180 of file FileKommander\&.java\&.
+.PP
+.nf
+                                     {
+        return userInputText;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.getWorkingDirectory ()"
+\fBReturns:\fP
+.RS 4
+the workingDirectory 
+.RE
+.PP
+
+.PP
+Definition at line 195 of file FileKommander\&.java\&.
+.PP
+.nf
+                                        {
+        return workingDirectory;
+    }
+.fi
+.SS "SerialAnalyserController com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.initANNIE ()  throws ResourceInstantiationException, MalformedURLException "
+
+.PP
+Definition at line 128 of file FileKommander\&.java\&.
+.PP
+.nf
+                                                                         {
+        if (this\&.getGateBuilder() == null) {
+            throw new RuntimeException('Gate must be initialised');
+        }
+        this\&.getGateBuilder()\&.loadANNIE();
+        this\&.getGateBuilder()\&.loadAllProcessingResources();
+        return this\&.getGateBuilder()\&.getAnnieController();
+
+    }
+.fi
+.SS "\fBGateBuilder\fP com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.initGATE ()  throws MalformedURLException, GateException "
+
+.PP
+Definition at line 120 of file FileKommander\&.java\&.
+.PP
+.nf
+                                                                              {
+        GateBuilder gateBuilder = new GateBuilder(this\&.gateHome,
+                this\&.gazetteerFilePath, this\&.japeFilePath);
+        gateBuilder\&.setup();
+        this\&.gateBuilder = gateBuilder;
+        return gateBuilder;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.run ()"
+
+.PP
+Definition at line 236 of file FileKommander\&.java\&.
+.PP
+.nf
+                      {
+
+        System\&.out\&.println(this\&.userInputText);
+        Document doc = null;
+        Corpus corpus = null;
+        try {
+            doc = Factory\&.newDocument(this\&.userInputText);
+            corpus = Factory\&.newCorpus('BatchProcessApp Corpus');
+            ;
+
+        } catch (ResourceInstantiationException e) {
+            // TODO Auto-generated catch block
+            e\&.printStackTrace();
+        }
+
+        corpus\&.add(doc);
+        this\&.annie\&.setCorpus(corpus);
+        try {
+            this\&.annie\&.execute();
+        } catch (ExecutionException e) {
+            // TODO Auto-generated catch block
+            e\&.printStackTrace();
+        }
+        AnnotationSet defaultAnnotSet = doc\&.getAnnotations();
+        AnnotationSet all = defaultAnnotSet\&.get('all');
+        for (Annotation annotation : all) {
+            FeatureMap featureMap = annotation\&.getFeatures();
+            AnnotationSet actionsAnnotation = (AnnotationSet) featureMap
+                    \&.get('actions');
+            for (Annotation annot2 : actionsAnnotation) {
+                FeatureMap featureMap2 = annot2\&.getFeatures();
+                String actionType = (String) featureMap2\&.get('minorType');
+                // FileActionUtils\&.callAction(actionType,annotation);
+            }
+
+        }
+        corpus\&.clear();
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.setAnnie (SerialAnalyserControllerannie)"
+\fBParameters:\fP
+.RS 4
+\fIannie\fP the annie to set 
+.RE
+.PP
+
+.PP
+Definition at line 116 of file FileKommander\&.java\&.
+.PP
+.nf
+                                                         {
+        this\&.annie = annie;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.setGateBuilder (\fBGateBuilder\fPgateBuilder)"
+\fBParameters:\fP
+.RS 4
+\fIgateBuilder\fP the gateBuilder to set 
+.RE
+.PP
+
+.PP
+Definition at line 101 of file FileKommander\&.java\&.
+.PP
+.nf
+                                                        {
+        this\&.gateBuilder = gateBuilder;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.setGateHome (StringgateHome)"
+\fBParameters:\fP
+.RS 4
+\fIgateHome\fP the gateHome to set 
+.RE
+.PP
+
+.PP
+Definition at line 56 of file FileKommander\&.java\&.
+.PP
+.nf
+                                             {
+        this\&.gateHome = gateHome;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.setGazetteerFilePath (StringgazetteerFilePath)"
+\fBParameters:\fP
+.RS 4
+\fIgazetteerFilePath\fP the gazetteerFilePath to set 
+.RE
+.PP
+
+.PP
+Definition at line 71 of file FileKommander\&.java\&.
+.PP
+.nf
+                                                               {
+        this\&.gazetteerFilePath = gazetteerFilePath;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.setJapeFilePath (StringjapeFilePath)"
+\fBParameters:\fP
+.RS 4
+\fIjapeFilePath\fP the japeFilePath to set 
+.RE
+.PP
+
+.PP
+Definition at line 86 of file FileKommander\&.java\&.
+.PP
+.nf
+                                                     {
+        this\&.japeFilePath = japeFilePath;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.setUserInputText (StringuserInputText)"
+\fBParameters:\fP
+.RS 4
+\fIuserInputText\fP the userInputText to set 
+.RE
+.PP
+
+.PP
+Definition at line 188 of file FileKommander\&.java\&.
+.PP
+.nf
+                                                       {
+        this\&.userInputText = userInputText;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.setWorkingDirectory (StringworkingDirectory)"
+\fBParameters:\fP
+.RS 4
+\fIworkingDirectory\fP the workingDirectory to set 
+.RE
+.PP
+
+.PP
+Definition at line 203 of file FileKommander\&.java\&.
+.PP
+.nf
+                                                             {
+        this\&.workingDirectory = workingDirectory;
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "SerialAnalyserController com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.annie\fC [private]\fP"
+
+.PP
+Definition at line 41 of file FileKommander\&.java\&.
+.SS "final int com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.COUNT = 2\fC [static]\fP"
+
+.PP
+Definition at line 28 of file FileKommander\&.java\&.
+.SS "final int com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.COUNT_WORD = 6\fC [static]\fP"
+
+.PP
+Definition at line 32 of file FileKommander\&.java\&.
+.SS "final int com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.DIRECTORY = 1\fC [static]\fP"
+
+.PP
+Definition at line 27 of file FileKommander\&.java\&.
+.SS "final int com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.FILE = 0\fC [static]\fP"
+
+.PP
+Definition at line 26 of file FileKommander\&.java\&.
+.SS "\fBGateBuilder\fP com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.gateBuilder\fC [private]\fP"
+
+.PP
+Definition at line 42 of file FileKommander\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.gateHome\fC [private]\fP"
+
+.PP
+Definition at line 37 of file FileKommander\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.gazetteerFilePath\fC [private]\fP"
+
+.PP
+Definition at line 39 of file FileKommander\&.java\&.
+.SS "final int com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.INSERT = 7\fC [static]\fP"
+
+.PP
+Definition at line 33 of file FileKommander\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.japeFilePath\fC [private]\fP"
+
+.PP
+Definition at line 40 of file FileKommander\&.java\&.
+.SS "final int com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.LAST_MODIFIED = 4\fC [static]\fP"
+
+.PP
+Definition at line 30 of file FileKommander\&.java\&.
+.SS "final int com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.LIST_FILES = 5\fC [static]\fP"
+
+.PP
+Definition at line 31 of file FileKommander\&.java\&.
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.log = Logger\&.getLogger(FileKommander\&.class)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 25 of file FileKommander\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.newline = ('\\n')\fC [static]\fP"
+
+.PP
+Definition at line 36 of file FileKommander\&.java\&.
+.SS "final int com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.REMOVE = 9\fC [static]\fP"
+
+.PP
+Definition at line 35 of file FileKommander\&.java\&.
+.SS "final int com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.REPLACE = 8\fC [static]\fP"
+
+.PP
+Definition at line 34 of file FileKommander\&.java\&.
+.SS "final int com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.SIZEOF = 3\fC [static]\fP"
+
+.PP
+Definition at line 29 of file FileKommander\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.userInputText\fC [private]\fP"
+
+.PP
+Definition at line 43 of file FileKommander\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.FileKommander\&.workingDirectory\fC [private]\fP"
+
+.PP
+Definition at line 38 of file FileKommander\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

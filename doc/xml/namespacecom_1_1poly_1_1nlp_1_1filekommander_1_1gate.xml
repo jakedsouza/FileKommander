@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1gate" kind="namespace">
+    <compoundname>com::poly::nlp::filekommander::gate</compoundname>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder" prot="public">com::poly::nlp::filekommander::gate::GateBuilder</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource" prot="public">com::poly::nlp::filekommander::gate::ProcessingResource</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/GateBuilder.java" line="4"/>
+  </compounddef>
+</doxygen>

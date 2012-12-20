@@ -10,39 +10,33 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JSeparator;
-import java.awt.Window.Type;
 import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import javax.swing.JTextField;
+import org.apache.log4j.Logger;
+
 import java.awt.Cursor;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class AboutFileKommander extends JDialog {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private static final Logger log = Logger.getLogger(AboutFileKommander.class);
 
 	private final JPanel contentPanel = new JPanel();
-
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		try {
-			AboutFileKommander dialog = new AboutFileKommander();
-			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-			dialog.setVisible(true);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 
 	/**
 	 * Create the dialog.
 	 */
 	public AboutFileKommander() {
+		log.info("AboutFileKommander constructor") ;
 		setTitle("About FileKommander");
 		setAlwaysOnTop(true);
 		setModal(true);
@@ -74,10 +68,10 @@ public class AboutFileKommander extends JDialog {
 				try {
 					Desktop.getDesktop().browse(new URI("http://goo.gl/1KDHI")) ;
 				} catch (IOException e1) {
-					// TODO Auto-generated catch block
+					log.error(e1);
 					e1.printStackTrace();
 				} catch (URISyntaxException e1) {
-					// TODO Auto-generated catch block
+					log.error(e1);
 					e1.printStackTrace();
 				}
 			}

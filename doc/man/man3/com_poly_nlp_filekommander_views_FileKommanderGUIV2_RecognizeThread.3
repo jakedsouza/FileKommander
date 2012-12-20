@@ -1,0 +1,50 @@
+.TH "com.poly.nlp.filekommander.views.FileKommanderGUIV2.RecognizeThread" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.FileKommanderGUIV2.RecognizeThread \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Runnable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 301 of file FileKommanderGUIV2\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.RecognizeThread\&.run ()"
+
+.PP
+Definition at line 304 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                          {
+            Recognizer recognizer = new Recognizer();
+            try {
+                GoogleResponse googleResponse = recognizer
+                        \&.getRecognizedDataForWave(file);
+                inputTextFld\&.setText(googleResponse\&.getResponse());
+                System\&.out\&.println('Confidence :'
+                        + googleResponse\&.getConfidence());
+                micBtn\&.setIcon(new ImageIcon(
+                        FileKommanderGUIV2\&.class
+                                \&.getResource('/com/poly/nlp/filekommander/views/icon/mic\&.png')));
+                // confidence\&.setText(googleResponse\&.getConfidence());
+            } catch (Exception ex) {
+                ex\&.printStackTrace();
+            }
+        }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

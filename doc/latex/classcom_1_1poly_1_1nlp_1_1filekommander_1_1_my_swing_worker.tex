@@ -1,0 +1,65 @@
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker}{\section{com.\-poly.\-nlp.\-filekommander.\-My\-Swing\-Worker Class Reference}
+\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker}\index{com.\-poly.\-nlp.\-filekommander.\-My\-Swing\-Worker@{com.\-poly.\-nlp.\-filekommander.\-My\-Swing\-Worker}}
+}
+Inheritance diagram for com.\-poly.\-nlp.\-filekommander.\-My\-Swing\-Worker\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Integer \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker_a1dba172a61803519edcdd6e034ac1d13}{do\-In\-Background} ()  throws Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{L208}{208} of file \hyperlink{}{File\-Kommander\-Run.\-java}.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker_a1dba172a61803519edcdd6e034ac1d13}{\index{com\-::poly\-::nlp\-::filekommander\-::\-My\-Swing\-Worker@{com\-::poly\-::nlp\-::filekommander\-::\-My\-Swing\-Worker}!do\-In\-Background@{do\-In\-Background}}
+\index{do\-In\-Background@{do\-In\-Background}!com::poly::nlp::filekommander::MySwingWorker@{com\-::poly\-::nlp\-::filekommander\-::\-My\-Swing\-Worker}}
+\subsubsection[{do\-In\-Background}]{\setlength{\rightskip}{0pt plus 5cm}Integer com.\-poly.\-nlp.\-filekommander.\-My\-Swing\-Worker.\-do\-In\-Background (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws Exception \hspace{0.3cm}{\ttfamily [protected]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker_a1dba172a61803519edcdd6e034ac1d13}
+
+
+Definition at line \hyperlink{L210}{210} of file \hyperlink{}{File\-Kommander\-Run.\-java}.
+
+
+\begin{DoxyCode}
+                                                        \{
+        JProgressBar progressBar = FileKommanderRun.getGuiv2().getProgressBar()
+      ;
+        \textcolor{comment}{// JLabel rejectActionButton = FileKommanderRun.getGuiv2()}
+        \textcolor{comment}{// .getRejectActionBtn();}
+        \textcolor{comment}{// JLabel acceptActionButton = FileKommanderRun.getGuiv2()}
+        \textcolor{comment}{// .getAcceptActionBtn();}
+        progressBar.setVisible(\textcolor{keyword}{true});
+        \textcolor{comment}{// rejectActionButton.setVisible(true);}
+        \textcolor{comment}{// acceptActionButton.setVisible(true);}
+
+        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i <= 100; i++) \{
+            progressBar.setValue(i);
+            Thread.sleep(50);
+        \}
+        progressBar.setVisible(\textcolor{keyword}{false});
+        \textcolor{comment}{// rejectActionButton.setVisible(false);}
+        \textcolor{comment}{// acceptActionButton.setVisible(false);}
+        progressBar.setValue(0);
+
+        \textcolor{keywordflow}{return} null;
+    \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+git/\-File\-Kommander/src/com/poly/nlp/filekommander/\hyperlink{_file_kommander_run_8java}{File\-Kommander\-Run.\-java}\end{DoxyCompactItemize}

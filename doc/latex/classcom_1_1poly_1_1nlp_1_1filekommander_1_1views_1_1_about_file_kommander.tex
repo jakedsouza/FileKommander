@@ -1,0 +1,178 @@
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander}{\section{com.\-poly.\-nlp.\-filekommander.\-views.\-About\-File\-Kommander Class Reference}
+\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander}\index{com.\-poly.\-nlp.\-filekommander.\-views.\-About\-File\-Kommander@{com.\-poly.\-nlp.\-filekommander.\-views.\-About\-File\-Kommander}}
+}
+Inheritance diagram for com.\-poly.\-nlp.\-filekommander.\-views.\-About\-File\-Kommander\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_a6c6d915be3b14f24908a482834ad6b7a}{About\-File\-Kommander} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final J\-Panel \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{content\-Panel} = new J\-Panel()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_a3d338ec3ae32777a71f45c76b80cb59d}{serial\-Version\-U\-I\-D} = 1\-L
+\item 
+static final Logger \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_af5cbf6e6423901be93a2a580049f3728}{log} = Logger.\-get\-Logger(About\-File\-Kommander.\-class)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{L25}{25} of file \hyperlink{}{About\-File\-Kommander.\-java}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_a6c6d915be3b14f24908a482834ad6b7a}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander}!About\-File\-Kommander@{About\-File\-Kommander}}
+\index{About\-File\-Kommander@{About\-File\-Kommander}!com::poly::nlp::filekommander::views::AboutFileKommander@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander}}
+\subsubsection[{About\-File\-Kommander}]{\setlength{\rightskip}{0pt plus 5cm}com.\-poly.\-nlp.\-filekommander.\-views.\-About\-File\-Kommander.\-About\-File\-Kommander (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_a6c6d915be3b14f24908a482834ad6b7a}
+Create the dialog. 
+
+Definition at line \hyperlink{L38}{38} of file \hyperlink{}{About\-File\-Kommander.\-java}.
+
+
+\begin{DoxyCode}
+                                \{
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_af5cbf6e6423901be93a2a580049f3728}{log}.info(\textcolor{stringliteral}{"AboutFileKommander constructor"}) ;
+        setTitle(\textcolor{stringliteral}{"About FileKommander"});
+        setAlwaysOnTop(\textcolor{keyword}{true});
+        setModal(\textcolor{keyword}{true});
+        setResizable(\textcolor{keyword}{false});
+        setBounds(100, 100, 450, 300);
+        getContentPane().setLayout(\textcolor{keyword}{new} BorderLayout());
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.setBorder(\textcolor{keyword}{new} EmptyBorder(5, 5, 5, 5));
+        getContentPane().add(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}, BorderLayout.CENTER);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.setLayout(null);
+        \{
+            JLabel lblNewLabel = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"FileKommander 0.1"});
+            lblNewLabel.setBounds(171, 11, 91, 14);
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(lblNewLabel);
+        \}
+        
+        JSeparator separator = \textcolor{keyword}{new} JSeparator();
+        separator.setBounds(0, 34, 434, 2);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(separator);
+        
+        JLabel lblSourceCode = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Source Code"});
+        lblSourceCode.setBounds(10, 47, 80, 14);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(lblSourceCode);
+        
+        JLabel lblNewLabel\_1 = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"http://goo.gl/1KDHI"});
+        lblNewLabel\_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND\_CURSOR))
+      ;
+        lblNewLabel\_1.addMouseListener(\textcolor{keyword}{new} MouseAdapter() \{
+            @Override
+            \textcolor{keyword}{public} \textcolor{keywordtype}{void} mouseClicked(MouseEvent e) \{
+                \textcolor{keywordflow}{try} \{
+                    Desktop.getDesktop().browse(\textcolor{keyword}{new} URI(\textcolor{stringliteral}{"http://goo.gl/1KDHI"}))
+       ;
+                \} \textcolor{keywordflow}{catch} (IOException e1) \{
+                    \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_af5cbf6e6423901be93a2a580049f3728}{log}.error(e1);
+                    e1.printStackTrace();
+                \} \textcolor{keywordflow}{catch} (URISyntaxException e1) \{
+                    \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_af5cbf6e6423901be93a2a580049f3728}{log}.error(e1);
+                    e1.printStackTrace();
+                \}
+            \}
+        \});
+        lblNewLabel\_1.setForeground(Color.BLUE);
+        lblNewLabel\_1.setBounds(100, 47, 162, 14);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(lblNewLabel\_1);
+        
+        JLabel lblDevelopers = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Developers"});
+        lblDevelopers.setBounds(10, 189, 67, 14);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(lblDevelopers);
+        
+        JSeparator separator\_1 = \textcolor{keyword}{new} JSeparator();
+        separator\_1.setBounds(0, 173, 434, 2);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(separator\_1);
+        
+        JLabel lblNehaMoharir = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Neha Moharir"});
+        lblNehaMoharir.setBounds(84, 189, 89, 14);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(lblNehaMoharir);
+        
+        JLabel lblNewLabel\_2 = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"nehadm[at]gmail[dot]com"});
+        lblNewLabel\_2.setBounds(183, 189, 150, 14);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(lblNewLabel\_2);
+        
+        JLabel lblJakeDsouza = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Jake Dsouza"});
+        lblJakeDsouza.setBounds(84, 214, 89, 14);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(lblJakeDsouza);
+        
+        JLabel lblJakedsouzaatgmaildotcom = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"
+      jakedsouza88[at]gmail[dot]com"});
+        lblJakedsouzaatgmaildotcom.setBounds(183, 214, 237, 14);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(lblJakedsouzaatgmaildotcom);
+        
+        JSeparator separator\_2 = \textcolor{keyword}{new} JSeparator();
+        separator\_2.setBounds(0, 72, 434, 2);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(separator\_2);
+        
+        JLabel lblNewLabel\_3 = \textcolor{keyword}{new} JLabel(\textcolor{stringliteral}{"Libraries used"});
+        lblNewLabel\_3.setBounds(10, 83, 146, 14);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{contentPanel}.add(lblNewLabel\_3);
+        \{
+            JPanel buttonPane = \textcolor{keyword}{new} JPanel();
+            buttonPane.setLayout(\textcolor{keyword}{new} FlowLayout(FlowLayout.CENTER));
+            getContentPane().add(buttonPane, BorderLayout.SOUTH);
+            \{
+                JButton okButton = \textcolor{keyword}{new} JButton(\textcolor{stringliteral}{"OK"});
+                okButton.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+                    \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+                    dispose();
+                    \}
+                \});
+                okButton.setActionCommand(\textcolor{stringliteral}{"OK"});
+                buttonPane.add(okButton);
+                \textcolor{comment}{// add(button);}
+                \textcolor{comment}{// pack();}
+                \textcolor{comment}{// setVisible(true);}
+                getRootPane().setDefaultButton(okButton);
+            \}
+        \}
+    \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander}!content\-Panel@{content\-Panel}}
+\index{content\-Panel@{content\-Panel}!com::poly::nlp::filekommander::views::AboutFileKommander@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander}}
+\subsubsection[{content\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}final J\-Panel com.\-poly.\-nlp.\-filekommander.\-views.\-About\-File\-Kommander.\-content\-Panel = new J\-Panel()\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_ad925c308e870c6d3789d72cdec139c93}
+
+
+Definition at line \hyperlink{L33}{33} of file \hyperlink{}{About\-File\-Kommander.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_af5cbf6e6423901be93a2a580049f3728}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander}!log@{log}}
+\index{log@{log}!com::poly::nlp::filekommander::views::AboutFileKommander@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}final Logger com.\-poly.\-nlp.\-filekommander.\-views.\-About\-File\-Kommander.\-log = Logger.\-get\-Logger(About\-File\-Kommander.\-class)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_af5cbf6e6423901be93a2a580049f3728}
+
+
+Definition at line \hyperlink{L31}{31} of file \hyperlink{}{About\-File\-Kommander.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_a3d338ec3ae32777a71f45c76b80cb59d}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander}!serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}}
+\index{serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}!com::poly::nlp::filekommander::views::AboutFileKommander@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-About\-File\-Kommander}}
+\subsubsection[{serial\-Version\-U\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}final long com.\-poly.\-nlp.\-filekommander.\-views.\-About\-File\-Kommander.\-serial\-Version\-U\-I\-D = 1\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_a3d338ec3ae32777a71f45c76b80cb59d}
+
+
+Definition at line \hyperlink{L29}{29} of file \hyperlink{}{About\-File\-Kommander.\-java}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+git/\-File\-Kommander/src/com/poly/nlp/filekommander/views/\hyperlink{_about_file_kommander_8java}{About\-File\-Kommander.\-java}\end{DoxyCompactItemize}

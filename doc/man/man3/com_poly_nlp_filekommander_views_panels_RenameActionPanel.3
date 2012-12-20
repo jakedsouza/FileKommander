@@ -1,0 +1,224 @@
+.TH "com.poly.nlp.filekommander.views.panels.RenameActionPanel" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.panels.RenameActionPanel \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBacceptButtonClickAction\fP (ActionEvent e)"
+.br
+.ti -1c
+.RI "void \fBupdatePanelData\fP (\fBGenericActionModel\fP \fBrenameModel\fP)"
+.br
+.ti -1c
+.RI "void \fBupdatePanelData\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdatePanelDataAfterAction\fP ()"
+.br
+.ti -1c
+.RI "\fBRenameModel\fP \fBgetRenameModel\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRenameModel\fP (\fBRenameModel\fP \fBrenameModel\fP)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBRenameModel\fP \fBrenameModel\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final long \fBserialVersionUID\fP = 1L"
+.br
+.ti -1c
+.RI "static final Logger \fBlog\fP = Logger\&.getLogger(CreateActionPanel\&.class)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 16 of file RenameActionPanel\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.acceptButtonClickAction (ActionEvente)\fC [virtual]\fP"
+
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP\&.
+.PP
+Definition at line 26 of file RenameActionPanel\&.java\&.
+.PP
+.nf
+                                                       {
+        renameModel = (RenameModel) CallAction\&.callAction(renameModel);
+        log\&.info('Updating panel after run');
+        updatePanelDataAfterAction();
+        log\&.info('Done updating panel after run');
+    }
+.fi
+.SS "\fBRenameModel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.getRenameModel ()"
+\fBReturns:\fP
+.RS 4
+the renameModel 
+.RE
+.PP
+
+.PP
+Definition at line 114 of file RenameActionPanel\&.java\&.
+.PP
+.nf
+                                        {
+        return renameModel;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.setRenameModel (\fBRenameModel\fPrenameModel)"
+\fBParameters:\fP
+.RS 4
+\fIrenameModel\fP the renameModel to set 
+.RE
+.PP
+
+.PP
+Definition at line 122 of file RenameActionPanel\&.java\&.
+.PP
+.nf
+                                                        {
+        this\&.renameModel = renameModel;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.updatePanelData (\fBGenericActionModel\fPactionModel)\fC [virtual]\fP"
+Update the panel before action is taken using the given action model
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionModel\fP 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP\&.
+.PP
+Definition at line 34 of file RenameActionPanel\&.java\&.
+.PP
+.nf
+                                                                {
+        if (renameModel instanceof RenameModel) {
+            this\&.renameModel = (RenameModel) renameModel;
+            updatePanelData();
+        } else {
+            log\&.error('Wrong class');
+        }
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.updatePanelData ()\fC [virtual]\fP"
+Update the panel before action is taken 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP\&.
+.PP
+Definition at line 44 of file RenameActionPanel\&.java\&.
+.PP
+.nf
+                                  {
+        setActionString('');
+        getFileListPanel()\&.removeAll();
+        String oldFileName = this\&.renameModel\&.getOldFileName();
+        String newFileName = this\&.renameModel\&.getNewFileName();
+        if (oldFileName\&.equals('') || newFileName\&.equals('')) {
+            getFilepanel()\&.setVisible(false);
+            log\&.error('Old or new Name is empty');
+        }
+        setActionString(oldFileName + ' will be renamed to ' + newFileName);
+        getActionLabelFile()\&.setText(getActionString());
+        if (this\&.renameModel\&.getType() == FileKommander\&.FILE) {
+            JLabel jLabel = createDefaultObjectLabel(oldFileName,
+                    FileKommander\&.FILE);
+            getFileListPanel()\&.add(jLabel);
+
+            JLabel jLabel2 = createDefaultObjectLabel(newFileName,
+                    FileKommander\&.FILE);
+            getFileListPanel()\&.add(jLabel2);
+
+        } else if (this\&.renameModel\&.getType() == FileKommander\&.DIRECTORY) {
+            JLabel jLabel = createDefaultObjectLabel(oldFileName,
+                    FileKommander\&.DIRECTORY);
+            getFileListPanel()\&.add(jLabel);
+
+            JLabel jLabel2 = createDefaultObjectLabel(newFileName,
+                    FileKommander\&.DIRECTORY);
+            getFileListPanel()\&.add(jLabel2);
+        }
+        this\&.paintAll(this\&.getGraphics());
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.updatePanelDataAfterAction ()\fC [virtual]\fP"
+updates the create panel after the action is run 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP\&.
+.PP
+Definition at line 77 of file RenameActionPanel\&.java\&.
+.PP
+.nf
+                                             {
+        if (!this\&.renameModel\&.isModelRun()) {
+            log\&.error('Action has not yet been run');
+        }
+        setActionString('');
+        getFileListPanel()\&.removeAll();
+        String oldFileName = this\&.renameModel\&.getOldFileName();
+        String newFileName = this\&.renameModel\&.getNewFileName();
+        if (this\&.renameModel\&.getErrorMessage()\&.equals('')) {
+            setActionString('Rename was successfull');
+            JLabel jLabel = createObjectLabelAfterAction(oldFileName,
+                    this\&.renameModel\&.getType(),
+                    this\&.renameModel\&.getErrorMessage());
+            fileListPanel\&.add(jLabel);
+            JLabel jLabel2 = createObjectLabelAfterAction(newFileName,
+                    this\&.renameModel\&.getType(),
+                    this\&.renameModel\&.getErrorMessage());
+            fileListPanel\&.add(jLabel2);
+        } else {
+            setActionString(this\&.renameModel\&.getErrorMessage());
+            JLabel jLabel = createObjectLabelAfterAction(oldFileName,
+                    this\&.renameModel\&.getType(),
+                    this\&.renameModel\&.getErrorMessage());
+            fileListPanel\&.add(jLabel);
+            JLabel jLabel2 = createObjectLabelAfterAction(newFileName,
+                    this\&.renameModel\&.getType(),
+                    this\&.renameModel\&.getErrorMessage());
+            fileListPanel\&.add(jLabel2);
+        }
+        getActionLabelFile()\&.setText(getActionString());
+
+        this\&.repaint();
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.log = Logger\&.getLogger(CreateActionPanel\&.class)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 23 of file RenameActionPanel\&.java\&.
+.SS "\fBRenameModel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.renameModel\fC [private]\fP"
+
+.PP
+Definition at line 22 of file RenameActionPanel\&.java\&.
+.SS "final long com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.serialVersionUID = 1L\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 21 of file RenameActionPanel\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

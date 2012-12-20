@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::file::actions::FileKommanderConfiguration</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1af384cf1346411acf76036936b6ad43d3" prot="private" static="yes" mutable="no">
+        <type>Configuration</type>
+        <definition>Configuration com.poly.nlp.filekommander.file.actions.FileKommanderConfiguration.configuration</definition>
+        <argsstring></argsstring>
+        <name>configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" line="10" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1ac737e4b5403a98e4922435bd38bedb2d" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.file.actions.FileKommanderConfiguration.configFileName</definition>
+        <argsstring></argsstring>
+        <name>configFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" line="11" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1ac100dbeed1c4a29d9be4b943d21dbb19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Configuration</type>
+        <definition>Configuration com.poly.nlp.filekommander.file.actions.FileKommanderConfiguration.getConfiguration</definition>
+        <argsstring>()</argsstring>
+        <name>getConfiguration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the configuration </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" line="15" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" bodystart="15" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a251c46b2eace39154ac126a18c8ee5af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.file.actions.FileKommanderConfiguration.setConfiguration</definition>
+        <argsstring>(Configuration configuration)</argsstring>
+        <name>setConfiguration</name>
+        <param>
+          <type>Configuration</type>
+          <declname>configuration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>configuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the configuration to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" line="24" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a99fb390b7ca5f81d09daf5ad25d42614" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.file.actions.FileKommanderConfiguration.getConfigFileName</definition>
+        <argsstring>()</argsstring>
+        <name>getConfigFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the configFileName </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" line="30" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a3911964f0612f2f33b6845e4094584c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.file.actions.FileKommanderConfiguration.setConfigFileName</definition>
+        <argsstring>(String configFileName)</argsstring>
+        <name>setConfigFileName</name>
+        <param>
+          <type>String</type>
+          <declname>configFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>configFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the configFileName to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" line="36" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" bodystart="36" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a1dbcc29a7f4788777b021ba88109d2d2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.FileKommanderConfiguration.LoadConfiguration</definition>
+        <argsstring>()</argsstring>
+        <name>LoadConfiguration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" line="40" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" bodystart="40" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="96">
+        <label>com.poly.nlp.filekommander.file.actions.FileKommanderConfiguration</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration"/>
+        <childnode refid="97" relation="usage">
+          <edgelabel>configuration</edgelabel>
+        </childnode>
+      </node>
+      <node id="97">
+        <label>Configuration</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" line="8" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileKommanderConfiguration.java" bodystart="8" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1ac737e4b5403a98e4922435bd38bedb2d" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileKommanderConfiguration</scope><name>configFileName</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1af384cf1346411acf76036936b6ad43d3" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileKommanderConfiguration</scope><name>configuration</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a99fb390b7ca5f81d09daf5ad25d42614" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileKommanderConfiguration</scope><name>getConfigFileName</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1ac100dbeed1c4a29d9be4b943d21dbb19" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileKommanderConfiguration</scope><name>getConfiguration</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a1dbcc29a7f4788777b021ba88109d2d2" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileKommanderConfiguration</scope><name>LoadConfiguration</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a3911964f0612f2f33b6845e4094584c7" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileKommanderConfiguration</scope><name>setConfigFileName</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a251c46b2eace39154ac126a18c8ee5af" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileKommanderConfiguration</scope><name>setConfiguration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

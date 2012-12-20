@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="dir_f8f6406263af909fcff5d9ad42ed0991" kind="dir">
+    <compoundname>git/FileKommander/src/com/poly/nlp</compoundname>
+    <innerdir refid="dir_bc284bc259c0a216a8f37f6dd481b764">git/FileKommander/src/com/poly/nlp/filekommander</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/"/>
+  </compounddef>
+</doxygen>

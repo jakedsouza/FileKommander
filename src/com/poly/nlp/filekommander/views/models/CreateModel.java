@@ -1,54 +1,89 @@
 package com.poly.nlp.filekommander.views.models;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 import com.poly.nlp.filekommander.FileKommander;
 
-public class CreateModel implements GenericActionModel{
+/**
+ * Model to hold information about create action . 
+ *  
+ * @author jake
+ *
+ */
+public class CreateModel implements GenericActionModel {
+	// Is create action run 
+	private boolean isModelRun;
 	
-	private ArrayList<String> fileListData;
-	private ArrayList<String> folderListData;
-	// private ArrayList<File> folderListData;
+	// list of files as key and error message if any as value
+	private HashMap<String, String> fileListData;
+	// list of folders as key and error message if any as value
+	private HashMap<String, String> folderListData;
 
-	public CreateModel(){
-		this.fileListData = new ArrayList<String>() ;
-		this.folderListData = new ArrayList<String>();
+	/**
+	 * Create an empty model
+	 */
+	public CreateModel() {
+		this.fileListData = new HashMap<String, String>();
+		this.folderListData = new HashMap<String, String>();
+		this.isModelRun = false ;
 	}
-	
+
+	/**
+	 * Add a new file/folder to the model
+	 * @param name
+	 * @param type
+	 */
 	public void add(String name, int type) {
-		if(type == FileKommander.DIRECTORY){
-			this.folderListData.add(name);			
-		}else if(type == FileKommander.FILE){
-			this.fileListData.add(name);
-		}		
+		if (type == FileKommander.DIRECTORY) {
+			this.folderListData.put(name, "");
+		} else if (type == FileKommander.FILE) {
+			this.fileListData.put(name, "");
+		}
 	}
 
 	/**
 	 * @return the fileListData
 	 */
-	public ArrayList<String> getFileListData() {
+	public HashMap<String, String> getFileListData() {
 		return fileListData;
 	}
 
 	/**
-	 * @param fileListData the fileListData to set
+	 * @param fileListData
+	 *            the fileListData to set
 	 */
-	public void setFileListData(ArrayList<String> fileListData) {
+	public void setFileListData(HashMap<String, String> fileListData) {
 		this.fileListData = fileListData;
 	}
 
 	/**
 	 * @return the folderListData
 	 */
-	public ArrayList<String> getFolderListData() {
+	public HashMap<String, String> getFolderListData() {
 		return folderListData;
 	}
 
 	/**
-	 * @param folderListData the folderListData to set
+	 * @param folderListData
+	 *            the folderListData to set
 	 */
-	public void setFolderListData(ArrayList<String> folderListData) {
+	public void setFolderListData(HashMap<String, String> folderListData) {
 		this.folderListData = folderListData;
+	}
+
+	/**
+	 * @return the isModelRun
+	 */
+	public boolean isModelRun() {
+		return isModelRun;
+	}
+
+	/**
+	 * @param isModelRun
+	 *            the isModelRun to set
+	 */
+	public void setModelRun(boolean isModelRun) {
+		this.isModelRun = isModelRun;
 	}
 
 }

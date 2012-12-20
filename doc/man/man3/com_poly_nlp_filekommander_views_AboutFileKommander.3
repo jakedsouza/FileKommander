@@ -1,0 +1,160 @@
+.TH "com.poly.nlp.filekommander.views.AboutFileKommander" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.AboutFileKommander \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits JDialog\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAboutFileKommander\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "final JPanel \fBcontentPanel\fP = new JPanel()"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final long \fBserialVersionUID\fP = 1L"
+.br
+.ti -1c
+.RI "static final Logger \fBlog\fP = Logger\&.getLogger(AboutFileKommander\&.class)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 25 of file AboutFileKommander\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.views\&.AboutFileKommander\&.AboutFileKommander ()"
+Create the dialog\&. 
+.PP
+Definition at line 38 of file AboutFileKommander\&.java\&.
+.PP
+.nf
+                                {
+        log\&.info('AboutFileKommander constructor') ;
+        setTitle('About FileKommander');
+        setAlwaysOnTop(true);
+        setModal(true);
+        setResizable(false);
+        setBounds(100, 100, 450, 300);
+        getContentPane()\&.setLayout(new BorderLayout());
+        contentPanel\&.setBorder(new EmptyBorder(5, 5, 5, 5));
+        getContentPane()\&.add(contentPanel, BorderLayout\&.CENTER);
+        contentPanel\&.setLayout(null);
+        {
+            JLabel lblNewLabel = new JLabel('FileKommander 0\&.1');
+            lblNewLabel\&.setBounds(171, 11, 91, 14);
+            contentPanel\&.add(lblNewLabel);
+        }
+        
+        JSeparator separator = new JSeparator();
+        separator\&.setBounds(0, 34, 434, 2);
+        contentPanel\&.add(separator);
+        
+        JLabel lblSourceCode = new JLabel('Source Code');
+        lblSourceCode\&.setBounds(10, 47, 80, 14);
+        contentPanel\&.add(lblSourceCode);
+        
+        JLabel lblNewLabel_1 = new JLabel('http://goo\&.gl/1KDHI');
+        lblNewLabel_1\&.setCursor(Cursor\&.getPredefinedCursor(Cursor\&.HAND_CURSOR));
+        lblNewLabel_1\&.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                try {
+                    Desktop\&.getDesktop()\&.browse(new URI('http://goo\&.gl/1KDHI')) ;
+                } catch (IOException e1) {
+                    log\&.error(e1);
+                    e1\&.printStackTrace();
+                } catch (URISyntaxException e1) {
+                    log\&.error(e1);
+                    e1\&.printStackTrace();
+                }
+            }
+        });
+        lblNewLabel_1\&.setForeground(Color\&.BLUE);
+        lblNewLabel_1\&.setBounds(100, 47, 162, 14);
+        contentPanel\&.add(lblNewLabel_1);
+        
+        JLabel lblDevelopers = new JLabel('Developers');
+        lblDevelopers\&.setBounds(10, 189, 67, 14);
+        contentPanel\&.add(lblDevelopers);
+        
+        JSeparator separator_1 = new JSeparator();
+        separator_1\&.setBounds(0, 173, 434, 2);
+        contentPanel\&.add(separator_1);
+        
+        JLabel lblNehaMoharir = new JLabel('Neha Moharir');
+        lblNehaMoharir\&.setBounds(84, 189, 89, 14);
+        contentPanel\&.add(lblNehaMoharir);
+        
+        JLabel lblNewLabel_2 = new JLabel('nehadm[at]gmail[dot]com');
+        lblNewLabel_2\&.setBounds(183, 189, 150, 14);
+        contentPanel\&.add(lblNewLabel_2);
+        
+        JLabel lblJakeDsouza = new JLabel('Jake Dsouza');
+        lblJakeDsouza\&.setBounds(84, 214, 89, 14);
+        contentPanel\&.add(lblJakeDsouza);
+        
+        JLabel lblJakedsouzaatgmaildotcom = new JLabel('jakedsouza88[at]gmail[dot]com');
+        lblJakedsouzaatgmaildotcom\&.setBounds(183, 214, 237, 14);
+        contentPanel\&.add(lblJakedsouzaatgmaildotcom);
+        
+        JSeparator separator_2 = new JSeparator();
+        separator_2\&.setBounds(0, 72, 434, 2);
+        contentPanel\&.add(separator_2);
+        
+        JLabel lblNewLabel_3 = new JLabel('Libraries used');
+        lblNewLabel_3\&.setBounds(10, 83, 146, 14);
+        contentPanel\&.add(lblNewLabel_3);
+        {
+            JPanel buttonPane = new JPanel();
+            buttonPane\&.setLayout(new FlowLayout(FlowLayout\&.CENTER));
+            getContentPane()\&.add(buttonPane, BorderLayout\&.SOUTH);
+            {
+                JButton okButton = new JButton('OK');
+                okButton\&.addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                    dispose();
+                    }
+                });
+                okButton\&.setActionCommand('OK');
+                buttonPane\&.add(okButton);
+                // add(button);
+                // pack();
+                // setVisible(true);
+                getRootPane()\&.setDefaultButton(okButton);
+            }
+        }
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "final JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.AboutFileKommander\&.contentPanel = new JPanel()\fC [private]\fP"
+
+.PP
+Definition at line 33 of file AboutFileKommander\&.java\&.
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.views\&.AboutFileKommander\&.log = Logger\&.getLogger(AboutFileKommander\&.class)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 31 of file AboutFileKommander\&.java\&.
+.SS "final long com\&.poly\&.nlp\&.filekommander\&.views\&.AboutFileKommander\&.serialVersionUID = 1L\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 29 of file AboutFileKommander\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

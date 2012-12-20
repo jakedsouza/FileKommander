@@ -1,0 +1,98 @@
+.TH "PolyMain" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PolyMain \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBmain\fP (String[] args)  throws Exception 	"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static SerialAnalyserController \fBpipelineController\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 18 of file PolyMain\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static void PolyMain\&.main (String[]args)  throws Exception 	\fC [static]\fP"
+
+.PP
+Definition at line 22 of file PolyMain\&.java\&.
+.PP
+.nf
+    {// jake new comment for neha
+        File gateHome = new File('C:/Users/MixPool/ws/GatePractice/');
+        if (Gate\&.getGateHome() == null)
+            Gate\&.setGateHome(gateHome);
+       //lll
+        // jakes comments 
+        // hahaha 
+        Gate\&.init();
+        Gate\&.getCreoleRegister()\&.registerDirectories(
+                        new File('C:/Users/MixPool/ws/GatePractice/' + 'plugins', 'ANNIE')
+                                \&.toURI()\&.toURL());
+        
+        //Only if you are using this plugin
+        Gate\&.getCreoleRegister()\&.registerDirectories(
+                new File('C:/Users/MixPool/ws/GatePractice/'+'plugins', 'Tools')
+                        \&.toURI()\&.toURL()); 
+        //Only if you are using this plugin\&.
+        Gate\&.getCreoleRegister()\&.registerDirectories(
+                new File('C:/Users/MixPool/ws/GatePractice/'+'plugins', 'Tagger_NP_Chunking')
+                        \&.toURI()\&.toURL()); 
+        
+        
+        gate\&.CorpusController c = ((gate\&.CorpusController)loadObjectFromFile(new java\&.io\&.File('C:/nlpCourseF11/gateExercises/PolyTest/poly\&.gapp')));
+        Corpus corpus = (Corpus) Factory\&.createResource('gate\&.corpora\&.CorpusImpl');
+        /****
+        URL dir = new File('C:/nlpCourseF11/gateExercises/PolyTest/docs')\&.toURI()\&.toURL();
+        corpus\&.populate(dir, null, 'UTF-8', false); //set the encoding to whatever is the encoding of your files
+        //c\&.getCorpus()\&.populate(dir, null, 'UTF-8', false);
+        *****/
+        //in your case the input string will come through the user interface
+        String docStr = 'Dr\&. Phyllis Frankl of the computer science department of NYU-Poly in New York City has been named provost\&. '+
+                        'She will be replacing Dr\&. Kurt Becker who will become the Vice-President for miracles\&.';
+        gate\&.Document doc = gate\&.Factory\&.newDocument(docStr);
+        
+        corpus\&.add(doc);
+        c\&.setCorpus(corpus);
+        c\&.execute();
+        
+        corpus\&.clear();
+        
+          ArrayList<gate\&.Annotation> annList = new ArrayList<gate\&.Annotation>();
+          //Add whatever annotations you are interested in processing further
+          //to annList--questions, requests, instructions, etc\&.
+          annList\&.addAll(doc\&.getAnnotations()\&.get('Question'));
+         
+        
+         
+//REALLY important to release doc and coprpus after processing each request, question, instruction, etc\&., or 
+//your program will quickly run out of heap space\&.        
+              Factory\&.deleteResource(doc);
+              Factory\&.deleteResource(corpus);
+              
+            //Do your further processing on the annotations in annList (in a different class file, please)   
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "SerialAnalyserController PolyMain\&.pipelineController\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 21 of file PolyMain\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

@@ -1,0 +1,404 @@
+.TH "com.poly.nlp.filekommander.gate.GateBuilder" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.gate.GateBuilder \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGateBuilder\fP ()"
+.br
+.ti -1c
+.RI "\fBGateBuilder\fP (String \fBgateHome\fP, String \fBgazetteerFilePath\fP, String \fBjapeFilePath\fP)"
+.br
+.ti -1c
+.RI "void \fBsetup\fP ()  throws GateException, MalformedURLException "
+.br
+.ti -1c
+.RI "void \fBloadANNIE\fP ()  throws ResourceInstantiationException "
+.br
+.ti -1c
+.RI "void \fBloadAllProcessingResources\fP ()  throws ResourceInstantiationException, MalformedURLException "
+.br
+.ti -1c
+.RI "String \fBgetGateHome\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetGateHome\fP (String \fBgateHome\fP)"
+.br
+.ti -1c
+.RI "String \fBgetJapeFilePath\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetJapeFilePath\fP (String \fBjapeFilePath\fP)"
+.br
+.ti -1c
+.RI "String \fBgetGazetteerFilePath\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetGazetteerFilePath\fP (String \fBgazetteerFilePath\fP)"
+.br
+.ti -1c
+.RI "SerialAnalyserController \fBgetAnnieController\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAnnieController\fP (SerialAnalyserController \fBannieController\fP)"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static String \fBnewline\fP = ('\\n')"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "final String \fBfileSeparator\fP = System\&.getProperty('file\&.separator')"
+.br
+.ti -1c
+.RI "String \fBgateHome\fP"
+.br
+.ti -1c
+.RI "URI \fBannieHome\fP"
+.br
+.ti -1c
+.RI "String \fBjapeFilePath\fP"
+.br
+.ti -1c
+.RI "String \fBgazetteerFilePath\fP"
+.br
+.ti -1c
+.RI "String \fBANNIE_CLASS\fP = 'gate\&.creole\&.SerialAnalyserController'"
+.br
+.ti -1c
+.RI "ArrayList< \fBProcessingResource\fP > \fBprList\fP"
+.br
+.ti -1c
+.RI "SerialAnalyserController \fBannieController\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlog\fP = Logger\&.getLogger(GateBuilder\&.class)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBAuthor:\fP
+.RS 4
+jake , neha 
+.RE
+.PP
+
+.PP
+Definition at line 28 of file GateBuilder\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.GateBuilder ()"
+
+.PP
+Definition at line 44 of file GateBuilder\&.java\&.
+.PP
+.nf
+                         {
+        
+    }
+.fi
+.SS "com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.GateBuilder (StringgateHome, StringgazetteerFilePath, StringjapeFilePath)"
+
+.PP
+Definition at line 48 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                 {
+        this\&.prList = new ArrayList<>();
+        this\&.gateHome = gateHome;
+        this\&.gazetteerFilePath = gazetteerFilePath;
+        this\&.japeFilePath = japeFilePath;
+
+        if (this\&.gateHome == null) {
+            log\&.warn('GATE_HOME is not set trying to find GATE_HOME in sysenv');
+            this\&.gateHome = System\&.getenv('GATE_HOME');
+            if (this\&.gateHome == null) {
+                log\&.error('GATE_HOME can not be found will exit ');
+                throw new RuntimeException('GATE_HOME not set');
+            }
+
+        }
+
+        this\&.annieHome = new File(this\&.gateHome + fileSeparator + 'plugins'
+                + fileSeparator + 'ANNIE')\&.toURI();
+        System\&.setProperty('gate\&.home', this\&.gateHome);
+        System\&.setProperty('gate\&.site\&.config', System\&.getProperty('gate\&.home')
+                + fileSeparator + 'gate\&.xml');
+        System\&.setProperty('gate\&.user\&.config',
+                System\&.getProperty('gate\&.site\&.config'));
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "SerialAnalyserController com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.getAnnieController ()"
+\fBReturns:\fP
+.RS 4
+the annieController 
+.RE
+.PP
+
+.PP
+Definition at line 195 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                                         {
+        return annieController;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.getGateHome ()"
+\fBReturns:\fP
+.RS 4
+the gateHome 
+.RE
+.PP
+
+.PP
+Definition at line 150 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                {
+        return gateHome;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.getGazetteerFilePath ()"
+\fBReturns:\fP
+.RS 4
+the gazetteerFilePath 
+.RE
+.PP
+
+.PP
+Definition at line 180 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                         {
+        return gazetteerFilePath;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.getJapeFilePath ()"
+\fBReturns:\fP
+.RS 4
+the japeFilePath 
+.RE
+.PP
+
+.PP
+Definition at line 165 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                    {
+        return japeFilePath;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.loadAllProcessingResources ()  throws ResourceInstantiationException, MalformedURLException "
+
+.PP
+Definition at line 92 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                                                         {
+
+        FeatureMap params = Factory\&.newFeatureMap();
+        params\&.put('keepOriginalMarkupsAS', true);
+        ProcessingResource documentReserPR = (ProcessingResource) Factory
+                \&.createResource('gate\&.creole\&.annotdelete\&.AnnotationDeletePR',
+                        params);
+        prList\&.add(documentReserPR);
+
+        params = Factory\&.newFeatureMap();
+        ProcessingResource simpleTokeniser = (ProcessingResource) Factory
+                \&.createResource('gate\&.creole\&.tokeniser\&.SimpleTokeniser', params);
+        prList\&.add(simpleTokeniser);
+
+        params = Factory\&.newFeatureMap();
+        ProcessingResource sentenceSplitter = (ProcessingResource) Factory
+                \&.createResource('gate\&.creole\&.splitter\&.SentenceSplitter', params);
+        prList\&.add(sentenceSplitter);
+
+        params = Factory\&.newFeatureMap();
+        params\&.put('baseSentenceAnnotationType', 'Sentence');
+        params\&.put('baseTokenAnnotationType', 'Token');
+        params\&.put('outputAnnotationType', 'Token');
+        ProcessingResource pos = (ProcessingResource) Factory\&.createResource(
+                'gate\&.creole\&.POSTagger', params);
+        prList\&.add(pos);
+
+        params = Factory\&.newFeatureMap();
+        // URL u=new
+        // File('ie/deri/nlp/LanguageResources/gazetteers/mylists\&.def')\&.toURL();
+        params\&.put('listsURL', new File(gazetteerFilePath)\&.toURI()\&.toURL());
+        params\&.put('caseSensitive',false);
+        DefaultGazetteer gazetteer = (DefaultGazetteer) Factory\&.createResource(
+                'gate\&.creole\&.gazetteer\&.DefaultGazetteer', params);
+        prList\&.add(gazetteer);
+
+        params = Factory\&.newFeatureMap();
+        params\&.put('grammarURL', new File(japeFilePath)\&.toURI()\&.toURL());
+        Transducer relationExtractionTransducer = (Transducer) Factory
+                \&.createResource('gate\&.creole\&.Transducer', params);
+        prList\&.add(relationExtractionTransducer);
+        if (annieController == null) {
+            log\&.warn('Annie is not loaded');
+        } else {
+            for (Iterator<ProcessingResource> iterator = prList\&.iterator(); iterator
+                    \&.hasNext();) {
+
+                annieController\&.add(iterator\&.next());
+
+            }
+        }
+
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.loadANNIE ()  throws ResourceInstantiationException "
+
+.PP
+Definition at line 84 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                                                  {
+        annieController = (SerialAnalyserController) Factory\&.createResource(
+                ANNIE_CLASS, Factory\&.newFeatureMap(), Factory\&.newFeatureMap(),
+                'ANNIE_' + Gate\&.genSym());
+
+        return;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.setAnnieController (SerialAnalyserControllerannieController)"
+\fBParameters:\fP
+.RS 4
+\fIannieController\fP the annieController to set 
+.RE
+.PP
+
+.PP
+Definition at line 203 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                                                             {
+        this\&.annieController = annieController;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.setGateHome (StringgateHome)"
+\fBParameters:\fP
+.RS 4
+\fIgateHome\fP the gateHome to set 
+.RE
+.PP
+
+.PP
+Definition at line 158 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                             {
+        this\&.gateHome = gateHome;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.setGazetteerFilePath (StringgazetteerFilePath)"
+\fBParameters:\fP
+.RS 4
+\fIgazetteerFilePath\fP the gazetteerFilePath to set 
+.RE
+.PP
+
+.PP
+Definition at line 188 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                                               {
+        this\&.gazetteerFilePath = gazetteerFilePath;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.setJapeFilePath (StringjapeFilePath)"
+\fBParameters:\fP
+.RS 4
+\fIjapeFilePath\fP the japeFilePath to set 
+.RE
+.PP
+
+.PP
+Definition at line 173 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                                     {
+        this\&.japeFilePath = japeFilePath;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.setup ()  throws GateException, MalformedURLException "
+
+.PP
+Definition at line 74 of file GateBuilder\&.java\&.
+.PP
+.nf
+                                                                    {
+        log\&.info('Initialising GATE');
+        Gate\&.init();
+        log\&.info('Done initialising GATE');
+
+        // register plugin directories
+        Gate\&.getCreoleRegister()\&.registerDirectories(annieHome\&.toURL());
+
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "String com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.ANNIE_CLASS = 'gate\&.creole\&.SerialAnalyserController'\fC [private]\fP"
+
+.PP
+Definition at line 39 of file GateBuilder\&.java\&.
+.SS "SerialAnalyserController com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.annieController\fC [private]\fP"
+
+.PP
+Definition at line 42 of file GateBuilder\&.java\&.
+.SS "URI com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.annieHome\fC [private]\fP"
+
+.PP
+Definition at line 35 of file GateBuilder\&.java\&.
+.SS "final String com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.fileSeparator = System\&.getProperty('file\&.separator')\fC [private]\fP"
+
+.PP
+Definition at line 30 of file GateBuilder\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.gateHome\fC [private]\fP"
+
+.PP
+Definition at line 34 of file GateBuilder\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.gazetteerFilePath\fC [private]\fP"
+
+.PP
+Definition at line 37 of file GateBuilder\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.japeFilePath\fC [private]\fP"
+
+.PP
+Definition at line 36 of file GateBuilder\&.java\&.
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.log = Logger\&.getLogger(GateBuilder\&.class)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 32 of file GateBuilder\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.newline = ('\\n')\fC [static]\fP"
+
+.PP
+Definition at line 31 of file GateBuilder\&.java\&.
+.SS "ArrayList<\fBProcessingResource\fP> com\&.poly\&.nlp\&.filekommander\&.gate\&.GateBuilder\&.prList\fC [private]\fP"
+
+.PP
+Definition at line 41 of file GateBuilder\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

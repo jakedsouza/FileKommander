@@ -1,0 +1,274 @@
+.TH "com.poly.nlp.filekommander.file.actions.CallAction" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.file.actions.CallAction \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBGenericActionModel\fP \fBcallAction\fP (\fBGenericActionModel\fP actionModel)"
+.br
+.ti -1c
+.RI "static void \fBexistsAction\fP ()"
+.br
+.ti -1c
+.RI "static void \fBinsertAction\fP ()"
+.br
+.ti -1c
+.RI "static void \fBopenAction\fP ()"
+.br
+.ti -1c
+.RI "static void \fBremoveAction\fP ()"
+.br
+.ti -1c
+.RI "static void \fBreplaceAction\fP ()"
+.br
+.ti -1c
+.RI "static \fBGenericActionModel\fP \fBstatsAction\fP (\fBStatsModel\fP statsModel)"
+.br
+.in -1c
+.SS "Static Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBGenericActionModel\fP \fBcreateAction\fP (\fBCreateModel\fP createModel)"
+.br
+.ti -1c
+.RI "static \fBDeleteModel\fP \fBdeleteAction\fP (\fBDeleteModel\fP deleteModel)"
+.br
+.ti -1c
+.RI "static \fBGenericActionModel\fP \fBrenameAction\fP (\fBRenameModel\fP renameModel)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlog\fP = Logger\&.getLogger(CallAction\&.class)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 15 of file CallAction\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.callAction (\fBGenericActionModel\fPactionModel)\fC [static]\fP"
+
+.PP
+Definition at line 18 of file CallAction\&.java\&.
+.PP
+.nf
+                                                                                {
+        log\&.info('Checking which action to call in callAction function ');
+        GenericActionModel newActionModel = null;
+        if (actionModel == null)
+            return null;
+
+        if (actionModel instanceof CreateModel) {
+            newActionModel = createAction((CreateModel) actionModel);
+        } else if (actionModel instanceof DeleteModel) {
+            newActionModel =    deleteAction((DeleteModel) actionModel);
+        }  else if (actionModel instanceof RenameModel) {
+            newActionModel =    renameAction((RenameModel) actionModel);
+        }else if(actionModel instanceof StatsModel){
+            newActionModel =    statsAction((StatsModel) actionModel);
+        }else {
+            existsAction();
+            insertAction();
+            openAction();
+            removeAction();
+        // renameAction();
+            replaceAction();
+        //  statsAction();
+
+        }
+        return newActionModel;
+    }
+.fi
+.SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.createAction (\fBCreateModel\fPcreateModel)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 45 of file CallAction\&.java\&.
+.PP
+.nf
+                                                                            {
+        log\&.info('CreateAction action called for model' + createModel);
+        HashMap<String, String> fileListData = createModel\&.getFileListData();
+        HashMap<String, String> folderListData = createModel
+                \&.getFolderListData();
+
+        for (String fileName : fileListData\&.keySet()) {
+            String message = FileActionUtils\&.createFile(fileName);
+            fileListData\&.put(fileName, message);
+        }
+        for (String folderName : folderListData\&.keySet()) {
+            String message = FileActionUtils\&.createFolder(folderName);
+            folderListData\&.put(folderName, message);
+        }
+        createModel\&.setModelRun(true);
+        createModel\&.setFileListData(fileListData);
+        createModel\&.setFolderListData(folderListData);
+        return createModel;
+    }
+.fi
+.SS "static \fBDeleteModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.deleteAction (\fBDeleteModel\fPdeleteModel)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 65 of file CallAction\&.java\&.
+.PP
+.nf
+                                                                     {
+        log\&.info('DeleteAction action called for model' + deleteModel);
+        HashMap<String, String> fileListData = deleteModel\&.getFileListData();
+        HashMap<String, String> folderListData = deleteModel
+                \&.getFolderListData();
+
+        for (String fileName : fileListData\&.keySet()) {
+            String message = FileActionUtils\&.deleteFile(fileName);
+            fileListData\&.put(fileName, message);
+        }
+        for (String folderName : folderListData\&.keySet()) {
+            String message = FileActionUtils\&.deleteFolder(folderName);
+            folderListData\&.put(folderName, message);
+        }
+        deleteModel\&.setModelRun(true);
+        deleteModel\&.setFileListData(fileListData);
+        deleteModel\&.setFolderListData(folderListData);
+        return deleteModel  ;
+    }
+.fi
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.existsAction ()\fC [static]\fP"
+
+.PP
+Definition at line 85 of file CallAction\&.java\&.
+.PP
+.nf
+                                      {
+        log\&.info('ExistsAction action called');
+    }
+.fi
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.insertAction ()\fC [static]\fP"
+
+.PP
+Definition at line 89 of file CallAction\&.java\&.
+.PP
+.nf
+                                      {
+        log\&.info('InsertAction action called');
+    }
+.fi
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.openAction ()\fC [static]\fP"
+
+.PP
+Definition at line 93 of file CallAction\&.java\&.
+.PP
+.nf
+                                    {
+        log\&.info('OpenAction action called');
+    }
+.fi
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.removeAction ()\fC [static]\fP"
+
+.PP
+Definition at line 97 of file CallAction\&.java\&.
+.PP
+.nf
+                                      {
+        log\&.info('RemoveAction action called');
+    }
+.fi
+.SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.renameAction (\fBRenameModel\fPrenameModel)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 101 of file CallAction\&.java\&.
+.PP
+.nf
+                                                                            {
+        log\&.info('RenameAction action called');
+        String oldFileName = renameModel\&.getOldFileName();
+        String newFileName = renameModel\&.getNewFileName();
+       String message = FileActionUtils\&.rename(oldFileName, newFileName);
+        renameModel\&.setErrorMessage(message);
+        renameModel\&.setModelRun(true);
+        return renameModel;
+    }
+.fi
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.replaceAction ()\fC [static]\fP"
+
+.PP
+Definition at line 111 of file CallAction\&.java\&.
+.PP
+.nf
+                                       {
+        log\&.info('ReplaceAction action called');
+    }
+.fi
+.SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.statsAction (\fBStatsModel\fPstatsModel)\fC [static]\fP"
+
+.PP
+Definition at line 115 of file CallAction\&.java\&.
+.PP
+.nf
+                                                                        {
+        log\&.info('StatsAction action called'); 
+        //iterate over every file/folder and find the stats type and call the corr\&. function 
+        HashMap<String, String> fileListData = statsModel\&.getFileListData();
+        HashMap<String, String> folderListData = statsModel\&.getFolderListData();
+
+        for (String fileName : fileListData\&.keySet()) {
+            if(statsModel\&.getStatsType() == FileKommander\&.COUNT){
+                int count = FileActionUtils\&.countWords(fileName);
+                String message = 'Count of all the words is'+count;
+                fileListData\&.put(fileName, message);
+            }else if(statsModel\&.getStatsType() == FileKommander\&.COUNT_WORD){
+        //      int count = countSpecificWord(fileName, word); //where is dis word passed from ?? how??
+        //      String message = 'The word '+word+' appears '+count+' times';
+        //      fileListData\&.put(fileName, message);
+            } else if(statsModel\&.getStatsType() == FileKommander\&.LAST_MODIFIED){
+                String message = FileActionUtils\&.lastModified(fileName);
+                fileListData\&.put(fileName, message);
+            } else if(statsModel\&.getStatsType() == FileKommander\&.SIZEOF){
+                String message = FileActionUtils\&.sizeOf(fileName);
+                fileListData\&.put(fileName, message);
+            }
+        }
+        for (String folderName : folderListData\&.keySet()) {
+            if(statsModel\&.getStatsType() == FileKommander\&.COUNT){
+                int count = FileActionUtils\&.countFiles(folderName);
+                String message = 'Count of all the files in the folder '+folderName+' is'+count;
+                fileListData\&.put(folderName, message);
+            } else if(statsModel\&.getStatsType() == FileKommander\&.LIST_FILES){
+                ArrayList<String> l = new ArrayList<String>();
+                ArrayList<String> list = FileActionUtils\&.listFiles(folderName, l);
+                java\&.util\&.ListIterator<String> ls = list\&.listIterator();
+                StringBuffer sb = new StringBuffer('');
+                while(ls\&.hasNext()){
+                    System\&.out\&.println(ls\&.next());
+                    sb\&.append(ls\&.next()+'</br>');
+                }
+                folderListData\&.put(folderName, sb\&.toString());
+            } else if(statsModel\&.getStatsType() == FileKommander\&.SIZEOF){
+                String message = FileActionUtils\&.sizeOf(folderName);
+                folderListData\&.put(folderName, message);
+            }
+        }
+        statsModel\&.setModelRun(true);
+        statsModel\&.setFileListData(fileListData);
+        statsModel\&.setFolderListData(folderListData);
+        return statsModel;
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.log = Logger\&.getLogger(CallAction\&.class)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 16 of file CallAction\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

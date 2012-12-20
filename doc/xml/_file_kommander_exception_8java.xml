@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_file_kommander_exception_8java" kind="file">
+    <compoundname>FileKommanderException.java</compoundname>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception" prot="public">com::poly::nlp::filekommander::FileKommanderException</innerclass>
+    <innernamespace refid="namespacecom_1_1poly_1_1nlp_1_1filekommander">com::poly::nlp::filekommander</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.poly.nlp.filekommander;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.apache.log4j.Logger;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>@author<sp/>neha<sp/>,<sp/>jake</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception" kindref="compound">FileKommanderException</ref><sp/></highlight><highlight class="keyword">extends</highlight><highlight class="normal"><sp/>RuntimeException<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception_1a19ff8f8a19fadb69b360aa6f211065c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception_1a19ff8f8a19fadb69b360aa6f211065c6" kindref="member">serialVersionUID</ref><sp/>=<sp/>1L;</highlight></codeline>
+<codeline lineno="19" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception_1ae1f8a429d874921e90fcf52f6996d18d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>Logger<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception_1ae1f8a429d874921e90fcf52f6996d18d" kindref="member">log</ref><sp/>=<sp/>Logger.getLogger(<ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception" kindref="compound">FileKommanderException</ref>.class);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception_1afc4cc23418eef9956f58ec8ba5ba2596" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception_1afc4cc23418eef9956f58ec8ba5ba2596" kindref="member">FileKommanderException</ref>(String<sp/>message){<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception_1ae1f8a429d874921e90fcf52f6996d18d" kindref="member">log</ref>.error(message);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderException.java"/>
+  </compounddef>
+</doxygen>

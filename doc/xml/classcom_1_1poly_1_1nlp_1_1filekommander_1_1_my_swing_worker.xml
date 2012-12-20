@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker" kind="class" prot="package">
+    <compoundname>com::poly::nlp::filekommander::MySwingWorker</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">javax::swing::SwingWorker&lt; Integer, String &gt;</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker_1a1dba172a61803519edcdd6e034ac1d13" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer com.poly.nlp.filekommander.MySwingWorker.doInBackground</definition>
+        <argsstring>()</argsstring>
+        <name>doInBackground</name>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="210" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="210" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="218">
+        <label>javax::swing::SwingWorker&lt; Integer, String &gt;</label>
+      </node>
+      <node id="217">
+        <label>com.poly.nlp.filekommander.MySwingWorker</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="220">
+        <label>javax::swing::SwingWorker&lt; Integer, String &gt;</label>
+      </node>
+      <node id="219">
+        <label>com.poly.nlp.filekommander.MySwingWorker</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="208" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="208" bodyend="231"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker_1a1dba172a61803519edcdd6e034ac1d13" prot="protected" virt="non-virtual"><scope>com::poly::nlp::filekommander::MySwingWorker</scope><name>doInBackground</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

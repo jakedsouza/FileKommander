@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="dir_bc284bc259c0a216a8f37f6dd481b764" kind="dir">
+    <compoundname>git/FileKommander/src/com/poly/nlp/filekommander</compoundname>
+    <innerdir refid="dir_009080984d706c5457c7ce799806ccfa">git/FileKommander/src/com/poly/nlp/filekommander/file</innerdir>
+    <innerdir refid="dir_8f0ed429963c7774b8675318969e1623">git/FileKommander/src/com/poly/nlp/filekommander/gate</innerdir>
+    <innerdir refid="dir_f5b33acb4b3756d1c6551353e4e31111">git/FileKommander/src/com/poly/nlp/filekommander/views</innerdir>
+    <innerfile refid="_file_kommander_8java">FileKommander.java</innerfile>
+    <innerfile refid="_file_kommander_exception_8java">FileKommanderException.java</innerfile>
+    <innerfile refid="_file_kommander_run_8java">FileKommanderRun.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/"/>
+  </compounddef>
+</doxygen>

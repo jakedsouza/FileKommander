@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread" kind="class" prot="protected">
+    <compoundname>com::poly::nlp::filekommander::views::FileKommanderGUIV2::RecognizeThread</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread_1a4be07d48ad5b312798cd85d092a56d5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.FileKommanderGUIV2.RecognizeThread.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderGUIV2.java" line="304" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderGUIV2.java" bodystart="304" bodyend="319"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="266">
+        <label>com.poly.nlp.filekommander.views.FileKommanderGUIV2.RecognizeThread</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread"/>
+        <childnode refid="267" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>Runnable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="268">
+        <label>com.poly.nlp.filekommander.views.FileKommanderGUIV2.RecognizeThread</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>Runnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderGUIV2.java" line="301" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderGUIV2.java" bodystart="301" bodyend="320"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread_1a4be07d48ad5b312798cd85d092a56d5f" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::FileKommanderGUIV2::RecognizeThread</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

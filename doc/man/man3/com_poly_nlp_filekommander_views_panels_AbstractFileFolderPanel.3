@@ -1,0 +1,422 @@
+.TH "com.poly.nlp.filekommander.views.panels.AbstractFileFolderPanel" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.panels.AbstractFileFolderPanel \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\fP\&.
+.PP
+Inherited by \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.CreateActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.DeleteActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAbstractFileFolderPanel\fP ()"
+.br
+.ti -1c
+.RI "abstract void \fBacceptButtonClickAction\fP (ActionEvent e)"
+.br
+.ti -1c
+.RI "abstract void \fBupdatePanelData\fP (\fBGenericActionModel\fP createModel)"
+.br
+.ti -1c
+.RI "abstract void \fBupdatePanelData\fP ()"
+.br
+.ti -1c
+.RI "abstract void \fBupdatePanelDataAfterAction\fP ()"
+.br
+.ti -1c
+.RI "void \fBresetPanel\fP ()"
+.br
+.ti -1c
+.RI "JLabel \fBgetActionLabelFile\fP ()"
+.br
+.ti -1c
+.RI "JPanel \fBgetFilepanel\fP ()"
+.br
+.ti -1c
+.RI "JPanel \fBgetFileListPanel\fP ()"
+.br
+.ti -1c
+.RI "JButton \fBgetBtnAccept\fP ()"
+.br
+.ti -1c
+.RI "JButton \fBgetBtnReject\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetActionString\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetActionString\fP (String \fBactionString\fP)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "JLabel \fBcreateObjectLabelAfterAction\fP (String labelText, int type, String error)"
+.br
+.ti -1c
+.RI "JLabel \fBcreateDefaultObjectLabel\fP (String labelText, int type)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "JPanel \fBfileListPanel\fP"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "String \fBactionString\fP"
+.br
+.ti -1c
+.RI "JLabel \fBactionLabelFile\fP"
+.br
+.ti -1c
+.RI "JPanel \fBfilepanel\fP"
+.br
+.ti -1c
+.RI "JPanel \fBcommandPanel\fP"
+.br
+.ti -1c
+.RI "JButton \fBbtnAccept\fP"
+.br
+.ti -1c
+.RI "JButton \fBbtnReject\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final long \fBserialVersionUID\fP = 1L"
+.br
+.ti -1c
+.RI "static final Logger \fBlog\fP = Logger\&.getLogger(AbstractFileFolderPanel\&.class)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 21 of file AbstractFileFolderPanel\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.AbstractFileFolderPanel ()"
+Create the panel\&. 
+.PP
+Definition at line 36 of file AbstractFileFolderPanel\&.java\&.
+.PP
+.nf
+                                     {
+        SpringLayout springLayout = new SpringLayout();
+        setLayout(springLayout);
+
+        filepanel = new JPanel();
+        springLayout\&.putConstraint(SpringLayout\&.NORTH, filepanel, 0, SpringLayout\&.NORTH, this);
+        filepanel\&.setAutoscrolls(true);
+        springLayout\&.putConstraint(SpringLayout\&.WEST, filepanel, 0,
+                SpringLayout\&.WEST, this);
+        springLayout\&.putConstraint(SpringLayout\&.EAST, filepanel, 0,
+                SpringLayout\&.EAST, this);
+        add(filepanel);
+        filepanel\&.setLayout(null);
+
+        actionLabelFile = new JLabel('');
+        actionLabelFile\&.setFont(new Font('Tahoma', Font\&.PLAIN, 16));
+        actionLabelFile\&.setBounds(10, 0, 440, 20);
+        springLayout\&.putConstraint(SpringLayout\&.NORTH, actionLabelFile, 0,
+                SpringLayout\&.NORTH, filepanel);
+        springLayout\&.putConstraint(SpringLayout\&.WEST, actionLabelFile, 20,
+                SpringLayout\&.EAST, filepanel);
+        springLayout\&.putConstraint(SpringLayout\&.EAST, actionLabelFile, 2432,
+                SpringLayout\&.WEST, this);
+        filepanel\&.add(actionLabelFile);
+        actionLabelFile\&.setForeground(Color\&.BLACK);
+
+        fileListPanel = new JPanel();
+        fileListPanel\&.setOpaque(false);
+        FlowLayout flowLayout = (FlowLayout) fileListPanel\&.getLayout();
+        flowLayout\&.setAlignment(FlowLayout\&.LEFT);
+        fileListPanel\&.setBackground(new Color(255, 255, 204));
+        fileListPanel\&.setAutoscrolls(true);
+        fileListPanel\&.setBounds(10, 29, 440, 133);
+        filepanel\&.add(fileListPanel);
+
+        commandPanel = new JPanel();
+        FlowLayout flowLayout_1 = (FlowLayout) commandPanel\&.getLayout();
+        flowLayout_1\&.setVgap(0);
+        flowLayout_1\&.setHgap(7);
+        springLayout\&.putConstraint(SpringLayout\&.SOUTH, filepanel, -6, SpringLayout\&.NORTH, commandPanel);
+        springLayout\&.putConstraint(SpringLayout\&.WEST, commandPanel, 0,
+                SpringLayout\&.WEST, this);
+        springLayout\&.putConstraint(SpringLayout\&.SOUTH, commandPanel, 0,
+                SpringLayout\&.SOUTH, this);
+        springLayout\&.putConstraint(SpringLayout\&.EAST, commandPanel, 0,
+                SpringLayout\&.EAST, this);
+        springLayout\&.putConstraint(SpringLayout\&.NORTH, commandPanel, -40,
+                SpringLayout\&.SOUTH, this);
+        add(commandPanel);
+
+        btnAccept = new JButton('');
+        btnAccept\&.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+             acceptButtonClickAction(e);
+            }
+        });
+        btnAccept\&.setFocusPainted(false);
+        btnAccept\&.setMargin(new Insets(0, 0, 0, 0));
+        btnAccept\&.setContentAreaFilled(false);
+        btnAccept\&.setBorderPainted(true);
+        btnAccept\&.setOpaque(true);
+        btnAccept
+        \&.setIcon(new ImageIcon(
+                AbstractFileFolderPanel\&.class
+                \&.getResource('/com/poly/nlp/filekommander/views/icon/accept\&.png')));
+        commandPanel\&.add(btnAccept);
+
+        btnReject = new JButton('');
+        btnReject\&.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                resetPanel();
+            }
+        });
+        btnReject\&.setFocusPainted(false);
+        btnReject\&.setMargin(new Insets(0, 0, 0, 0));
+        btnReject\&.setContentAreaFilled(false);
+        btnReject\&.setBorderPainted(true);
+        btnReject\&.setOpaque(true);
+        btnReject
+        \&.setIcon(new ImageIcon(
+                AbstractFileFolderPanel\&.class
+                \&.getResource('/com/poly/nlp/filekommander/views/icon/reject\&.png')));
+        commandPanel\&.add(btnReject);
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "abstract void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.acceptButtonClickAction (ActionEvente)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.DeleteActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.CreateActionPanel\fP\&.
+.SS "JLabel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.createDefaultObjectLabel (StringlabelText, inttype)\fC [protected]\fP"
+
+.PP
+Definition at line 158 of file AbstractFileFolderPanel\&.java\&.
+.PP
+.nf
+                                                                          {
+        JLabel lblNewLabel = new JLabel(labelText);
+        lblNewLabel\&.setForeground(new Color(0, 0, 0));
+
+        if (type == FileKommander\&.FILE) {
+            lblNewLabel
+            \&.setIcon(new ImageIcon(
+                    AbstractFileFolderPanel\&.class
+                    \&.getResource('/com/poly/nlp/filekommander/views/icon/file\&.png')));
+        } else if (type == FileKommander\&.DIRECTORY) {
+            lblNewLabel
+            \&.setIcon(new ImageIcon(
+                    AbstractFileFolderPanel\&.class
+                    \&.getResource('/com/poly/nlp/filekommander/views/icon/folder\&.png')));
+        }
+        return lblNewLabel;
+    }
+.fi
+.SS "JLabel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.createObjectLabelAfterAction (StringlabelText, inttype, Stringerror)\fC [protected]\fP"
+
+.PP
+Definition at line 132 of file AbstractFileFolderPanel\&.java\&.
+.PP
+.nf
+                                                                                           {
+        JLabel lblNewLabel = new JLabel(labelText);
+        lblNewLabel\&.setForeground(new Color(0, 0, 0));
+        if(error\&.equals('') || error == null){
+            lblNewLabel\&.setForeground(Color\&.GREEN);
+            lblNewLabel\&.setBorder(BorderFactory\&.createLineBorder(Color\&.GREEN,1));
+        }else{
+            lblNewLabel\&.setForeground(Color\&.RED);
+            lblNewLabel\&.setBorder(BorderFactory\&.createLineBorder(Color\&.RED,1));
+            lblNewLabel\&.setToolTipText(error);
+        }
+        
+        if (type == FileKommander\&.FILE) {
+            lblNewLabel
+            \&.setIcon(new ImageIcon(
+                    AbstractFileFolderPanel\&.class
+                    \&.getResource('/com/poly/nlp/filekommander/views/icon/file\&.png')));
+        } else if (type == FileKommander\&.DIRECTORY) {
+            lblNewLabel
+            \&.setIcon(new ImageIcon(
+                    AbstractFileFolderPanel\&.class
+                    \&.getResource('/com/poly/nlp/filekommander/views/icon/folder\&.png')));
+        }
+        return lblNewLabel;
+    }
+.fi
+.SS "JLabel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.getActionLabelFile ()"
+
+.PP
+Definition at line 180 of file AbstractFileFolderPanel\&.java\&.
+.PP
+.nf
+                                       {
+        return actionLabelFile;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.getActionString ()"
+\fBReturns:\fP
+.RS 4
+the actionString 
+.RE
+.PP
+
+.PP
+Definition at line 203 of file AbstractFileFolderPanel\&.java\&.
+.PP
+.nf
+                                    {
+        return actionString;
+    }
+.fi
+.SS "JButton com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.getBtnAccept ()"
+
+.PP
+Definition at line 192 of file AbstractFileFolderPanel\&.java\&.
+.PP
+.nf
+                                  {
+        return btnAccept;
+    }
+.fi
+.SS "JButton com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.getBtnReject ()"
+
+.PP
+Definition at line 196 of file AbstractFileFolderPanel\&.java\&.
+.PP
+.nf
+                                  {
+        return btnReject;
+    }
+.fi
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.getFileListPanel ()"
+
+.PP
+Definition at line 188 of file AbstractFileFolderPanel\&.java\&.
+.PP
+.nf
+                                     {
+        return fileListPanel;
+    }
+.fi
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.getFilepanel ()"
+
+.PP
+Definition at line 184 of file AbstractFileFolderPanel\&.java\&.
+.PP
+.nf
+                                 {
+        return filepanel;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.resetPanel ()\fC [virtual]\fP"
+Resets the panel to default state 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\fP\&.
+.PP
+Definition at line 176 of file AbstractFileFolderPanel\&.java\&.
+.PP
+.nf
+                            {        
+        this\&.updatePanelData();
+        FileKommanderRun\&.getGuiv2()\&.reset();
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.setActionString (StringactionString)"
+\fBParameters:\fP
+.RS 4
+\fIactionString\fP the actionString to set 
+.RE
+.PP
+
+.PP
+Definition at line 210 of file AbstractFileFolderPanel\&.java\&.
+.PP
+.nf
+                                                     {
+        this\&.actionString = actionString;
+    }
+.fi
+.SS "abstract void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.updatePanelData (\fBGenericActionModel\fPactionModel)\fC [pure virtual]\fP"
+Update the panel before action is taken using the given action model
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionModel\fP 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\fP\&.
+.PP
+Implemented in \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.CreateActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.DeleteActionPanel\fP\&.
+.SS "abstract void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.updatePanelData ()\fC [pure virtual]\fP"
+Update the panel before action is taken 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\fP\&.
+.PP
+Implemented in \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.CreateActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.DeleteActionPanel\fP\&.
+.SS "abstract void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.updatePanelDataAfterAction ()\fC [pure virtual]\fP"
+updates the create panel after the action is run 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\fP\&.
+.PP
+Implemented in \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.CreateActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.DeleteActionPanel\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "JLabel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.actionLabelFile\fC [private]\fP"
+
+.PP
+Definition at line 25 of file AbstractFileFolderPanel\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.actionString\fC [private]\fP"
+
+.PP
+Definition at line 24 of file AbstractFileFolderPanel\&.java\&.
+.SS "JButton com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.btnAccept\fC [private]\fP"
+
+.PP
+Definition at line 29 of file AbstractFileFolderPanel\&.java\&.
+.SS "JButton com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.btnReject\fC [private]\fP"
+
+.PP
+Definition at line 30 of file AbstractFileFolderPanel\&.java\&.
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.commandPanel\fC [private]\fP"
+
+.PP
+Definition at line 28 of file AbstractFileFolderPanel\&.java\&.
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.fileListPanel\fC [protected]\fP"
+
+.PP
+Definition at line 27 of file AbstractFileFolderPanel\&.java\&.
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.filepanel\fC [private]\fP"
+
+.PP
+Definition at line 26 of file AbstractFileFolderPanel\&.java\&.
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.log = Logger\&.getLogger(AbstractFileFolderPanel\&.class)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 31 of file AbstractFileFolderPanel\&.java\&.
+.SS "final long com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\&.serialVersionUID = 1L\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 23 of file AbstractFileFolderPanel\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.2">
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander" kind="class"><name>com::poly::nlp::filekommander::views::AboutFileKommander</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1a3d338ec3ae32777a71f45c76b80cb59d" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1af5cbf6e6423901be93a2a580049f3728" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1ad925c308e870c6d3789d72cdec139c93" kind="variable"><name>contentPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1a6c6d915be3b14f24908a482834ad6b7a" kind="function"><name>AboutFileKommander</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel" kind="class"><name>com::poly::nlp::filekommander::views::panels::AbstractFileFolderPanel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1ae889f90306f23cb850c4f6279309bb46" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1ac381bcdeb4de3de4b96846422b4db0c4" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a4aa17cf3129edfcd0246d4486f646987" kind="variable"><name>actionString</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a0edf5a396a146d218c4c1924636715d8" kind="variable"><name>actionLabelFile</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1abd069d68f414efb9497427f7df50e7f5" kind="variable"><name>filepanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a38866bb93300c6f6ce1597367f37510d" kind="variable"><name>commandPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a723f421b878bd4d7207a614376b03315" kind="variable"><name>btnAccept</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a3ae502ea80c38e1160cf63f3944638b2" kind="variable"><name>btnReject</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a689e61b3368ccffe664ce92aad547fb5" kind="variable"><name>fileListPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1aa6c3bb2b8c0c7e0a03d3869041136a36" kind="function"><name>AbstractFileFolderPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a26a9ad5640e6599d1df64ebf9b04041d" kind="function"><name>acceptButtonClickAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a0c413991b7c48758fec4d52d592065fb" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1acdf1d105f87dc13772870234aea299d4" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a2308ee0dc3eaea5b8b525fd02f60e000" kind="function"><name>updatePanelDataAfterAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1addfb93f97c8eee6dd6131042c13d680b" kind="function"><name>resetPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a5604a494d100a6d78750a985cfe0b340" kind="function"><name>getActionLabelFile</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1ab551ed106b53e4bfaddc438b918be406" kind="function"><name>getFilepanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a65b9fd5b80a3d0d19afa10cfbfa3304e" kind="function"><name>getFileListPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a4fc9eabf9e39bb20440c92c83837b8fb" kind="function"><name>getBtnAccept</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1af76ef5d7d4e3c50bb2f2b3050d7863ee" kind="function"><name>getBtnReject</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1aff16d223c2bdcd122ef6f74d1827f05f" kind="function"><name>getActionString</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a25ffb42f58f97066dce7fe2d7597817e" kind="function"><name>setActionString</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a4f5fea4f0c8b3aaf4e1387bed4886446" kind="function"><name>createObjectLabelAfterAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a20975a6589130de0b99c932b695f7ce5" kind="function"><name>createDefaultObjectLabel</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel" kind="class"><name>com::poly::nlp::filekommander::views::panels::AbstractMessagePanel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a865c3834ea52d557283acefd0d2c855c" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a8f8836218e523baaab4c65c0bc9b1f7e" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a295643f08d4ad315ef3fa316d304dd27" kind="variable"><name>actionString</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a5f778cbc2ed9dd8c37928dbe1412a0b0" kind="variable"><name>messagePanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1aa43af4d88699d2fe9fe0c52a8b1d250c" kind="variable"><name>commandPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1ab00e095308fb951695dc4fefe0d86cb3" kind="variable"><name>table</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1af85293e132ba96e5c707b39c418260c3" kind="variable"><name>btnClear</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a3d34321337c68753d8ca1c3cfb4cb37b" kind="function"><name>AbstractMessagePanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a28d7298227a165c9b3e64a7b9182d2b1" kind="function"><name>resetPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a565a70e35ba8533880099438337eea08" kind="function"><name>setActionString</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a657e69a7b792b6ad57846ecbebcb99e9" kind="function"><name>getActionString</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a2d8c613b03cb000425ae32a9a44dc805" kind="function"><name>getMessagePanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a037813b2459d23f7a0ad69c261629d3a" kind="function"><name>setMessagePanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a20b6fcda2f2cbd8aa5973d6c08b9690a" kind="function"><name>getCommandPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1ab3030d917dffd39a79418b3eeb0fbd83" kind="function"><name>setCommandPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1aab424ea4f0cf49aa1a619f21a996d6b5" kind="function"><name>getTable</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1ae66c31b95e8c1fe4d28565e7dcaf9a91" kind="function"><name>setTable</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1ab88a15cf8a7d5f3a3266342841b8ea13" kind="function"><name>getBtnClear</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1ad2c1bd073c20d8e9dfcd1bdf0b2f27ba" kind="function"><name>setBtnClear</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a9e5c061f76725ea2cbc6db991e1e4968" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a1c0fcce6b9a3e540c8985c69bea60cd3" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a305ad7e0b41448b92cfc567062fbb874" kind="function"><name>updatePanelDataAfterAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a623b9852884a79f9db920f3e3444ac47" kind="function"><name>createDefaultObjectLabel</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action" kind="class"><name>com::poly::nlp::filekommander::file::actions::AnalyseAction</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1ae99df52b353dd7b0d2014d581fcc8cff" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1aef5f93dbdd411587de327fc2c6913622" kind="function"><name>analyseAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a8652e1bba48585a8c416e6e212fe4766" kind="function"><name>getObjectNameFromAnnotation</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a62e07128db9a8df65417a02d84068e01" kind="function"><name>analyseCreateAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a9970d61dcf513507ed64217bd16838ab" kind="function"><name>analyseDeleteAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a683b8ce8891c552588d2247fbd9f4328" kind="function"><name>analyseExistsAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a75f845c14e6046304b2ad4ac56d0f56f" kind="function"><name>analyseInsertAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a4da9b25dc9bdae9570ef0459276548ad" kind="function"><name>analyseOpenAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1aea934abe03154ab654a156add6133093" kind="function"><name>analyseRemoveAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1aade5e40cbf6a964d4b95b81815cea68f" kind="function"><name>analyseRenameAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a55c78bdeee6905c8e95f3d8115a6c222" kind="function"><name>analyseReplaceAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a7bd195f986019e22721f048aec378f67" kind="function"><name>analyseStatsAction</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action" kind="class"><name>com::poly::nlp::filekommander::file::actions::CallAction</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a65b722d9482bd93c3ae2b31f51050a08" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a0e736328e4851dfb78f0578dd0414029" kind="function"><name>callAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1aa13dda5197a227b0ccd0a742668ec861" kind="function"><name>existsAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1ad1eda2fa13b7a6902c45e898cdee1e2f" kind="function"><name>insertAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a82b3550337442d231288438a479993b9" kind="function"><name>openAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a00509e9811e6faf029a136227ad9c4b6" kind="function"><name>removeAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1ac199f9c573025af0f871315ea997beaa" kind="function"><name>replaceAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a2668fbc0bf50bdf3b09853f2d88d8a9d" kind="function"><name>statsAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a9732d3e6e92378607607b7bd0bb91736" kind="function"><name>createAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1ae2b04b022b8ec6d18419cc14d747972c" kind="function"><name>deleteAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a11aae4f7ed1d404e8cd63c48ce91f427" kind="function"><name>renameAction</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel" kind="class"><name>com::poly::nlp::filekommander::views::panels::CreateActionPanel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a23448414807322c40b1b403229052539" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1af5dbfc85e283c5049b04b0bc4d066a97" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a7188ccd78e66b6a4fe3dd838fc1ae2f1" kind="variable"><name>createModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a641873952ae43e37c7957ff5e5c8fb5f" kind="function"><name>acceptButtonClickAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1ae3bcfdd7de3d71d751e56438567c2597" kind="function"><name>getCreateModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a249d557b8a8c1f96611efd035eb9df75" kind="function"><name>setCreateModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a342522581abfe5d434c868128faad479" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1aa8f5728e0f6a12bb07793fab933e673e" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a94e3d36d8b58ed6cabfc7f4e62ca7f4d" kind="function"><name>updatePanelDataAfterAction</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model" kind="class"><name>com::poly::nlp::filekommander::views::models::CreateModel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1ac8bed5b351f8c89a81528625298453a3" kind="variable"><name>isModelRun</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1ab7b2c78de5e244603bf942be06d1aa82" kind="variable"><name>fileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a4ffeca4b461f31e7024727e67ed4f0cf" kind="variable"><name>folderListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1ad9a1a4f4e1188aa85d3014ae81812356" kind="function"><name>CreateModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a9685c9d0f034bb7c4393e97df28fa575" kind="function"><name>add</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a9a772fafb3b314add60b903b8a594db0" kind="function"><name>getFileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1abf22e084ffc9a8c45371493effe4ab9c" kind="function"><name>setFileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a622712664c91b111696b19bce85c5c01" kind="function"><name>getFolderListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a76f23d7e1b08b6565b418f494fd9bfee" kind="function"><name>setFolderListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a33c5eea740be35144d1e6e18e536473b" kind="function"><name>isModelRun</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a59c2e198b45a63d3835e92cf2deae6ad" kind="function"><name>setModelRun</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel" kind="class"><name>com::poly::nlp::filekommander::views::panels::DeleteActionPanel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel_1a1f7b0dccb1eaac83b09874cb95feb7cc" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel_1a01ad2752427baebc7718fbea69537476" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel_1a17228ab26020f99bdef1f28e0d525d39" kind="variable"><name>deleteModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel_1a2049f5ac86d15967fade2ceb251e724f" kind="function"><name>acceptButtonClickAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel_1a98939dcae8c9ec0a27ab83ebfc6561bc" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel_1a6c96ac06a49ae5e6878ea779ddebb722" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel_1a8334eff673455509d9432646a4c49799" kind="function"><name>updatePanelDataAfterAction</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model" kind="class"><name>com::poly::nlp::filekommander::views::models::DeleteModel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a539d8d947cd5217ffb0ba4dfd1e7661d" kind="variable"><name>isModelRun</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a3ff23db5a93631b8e56d9797fad7a866" kind="variable"><name>fileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a4152e1b4fc47f32d0bcc2793da662ab9" kind="variable"><name>folderListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a3aa7255e76c7d45c498f27081c88771d" kind="function"><name>DeleteModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a47c3cea5a0d49c533cf5e11352941d5f" kind="function"><name>add</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1aad3938fe6c62b7113b7266f67e1882d5" kind="function"><name>getFileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a5cadddfa5dbd0921b7868298275e8880" kind="function"><name>setFileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a72036e220f6f039b1caba1354ef7aa9a" kind="function"><name>getFolderListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a07ac8800ed6531001f3a2929b08f32d1" kind="function"><name>setFolderListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a241ec31c33f6f7b1d00bc9011c702bb8" kind="function"><name>isModelRun</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a0c5593c30f48ee4afb38a0c9ab99a01d" kind="function"><name>setModelRun</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel" kind="class"><name>com::poly::nlp::filekommander::views::panels::EmptyActionPanel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1af3e816340607acb519bf84c35b7f2d04" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a2d7a56c5418f0e7077ead91183425dd7" kind="function"><name>EmptyActionPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a02f8291cb8e79ed8d522baceb3126d61" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a7cc048c6d5cad377fd871cec0747a6b8" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a3e1704fd567bd8b67851f6068035aad3" kind="function"><name>updatePanelDataAfterAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a24d911a685434b89e383275ffeca0f69" kind="function"><name>resetPanel</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils" kind="class"><name>com::poly::nlp::filekommander::file::actions::FileActionUtils</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a7af6d26171248a2e7253d9bce1b287cc" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ad54a8fdc9145d2f423c54cb1597f874a" kind="variable"><name>workingDirectory</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a322374face7f551b379f23ddb6a235b9" kind="function"><name>getWorkingDirectory</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ae355d7d7cf883ff39ffe96a1bde89576" kind="function"><name>setWorkingDirectory</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1aac7f019247f469c1ea84e1a9e158e161" kind="function"><name>createFile</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a8cba8b4dc29efed981108c8cbd09e40b" kind="function"><name>createFolder</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ac256836b0ce9fbf8c92a6315328e641f" kind="function"><name>deleteFile</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a061f74de68076705a673624a99d993c6" kind="function"><name>deleteFolder</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1af5404810d59392650661f3a3fb7f47ce" kind="function"><name>exists</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a127d6dea53d3df50906584a9dcd8394a" kind="function"><name>open</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a195173915a702daa3da1750b7a00bf8f" kind="function"><name>rename</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a0f8ca9726628c7fa3b4e191d9c688cba" kind="function"><name>insert</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ad8d655de0cba854b1c409ed450bbe636" kind="function"><name>stats</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a8ff2b8a44ef71bfb04fb320da780e4eb" kind="function"><name>stats</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a2df1aca8a703f77ff7ca700541d6fb6b" kind="function"><name>count</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1abda56bf0db7967ce2a92b8be5503150a" kind="function"><name>count</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ac7e7850c45017865b67e5ad1280d1970" kind="function"><name>remove</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a07c59ff019da6971e505960a04da604d" kind="function"><name>replace</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1aa776213b3cb78ddde6f89e4b982a8e18" kind="function"><name>countWords</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a1780994dac039e63b9b2c8971259d044" kind="function"><name>listFiles</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a68fa55cc4deac83ac2920da1dd442172" kind="function"><name>lastModified</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a06dfce7b70b23f97847c06172ddab4b6" kind="function"><name>countSpecificWord</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a1221ebf805c2cc881c40fad828f64861" kind="function"><name>sizeOf</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a5159f72af191d97005ade7a8b7a95ac1" kind="function"><name>countFiles</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a7c29f2257b29d8d10c39a87b351093fb" kind="function"><name>printSize</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a1e5c3dca1c8116ae57515c36edeae4d9" kind="function"><name>countSubFiles</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a4eb94d6fbf8aed90a068180e88b8e9cd" kind="function"><name>sizeofDirectory</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa" kind="class"><name>com::poly::nlp::filekommander::file::actions::FileActionUtilsaa</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_1a77b8f795458e1c7e9b013d6d06c6e97a" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_1af9adb01342997356115f0a50f1ec2087" kind="variable"><name>workingDirectory</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_1abe1c422d6b1901a7889fc6d8b6502c88" kind="function"><name>getObjectNameFromAnnotation</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander" kind="class"><name>com::poly::nlp::filekommander::FileKommander</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a5f984d5ddadc6bc7206d293382ee298e" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1abc599ad8072f7091b61322af4d8fb40e" kind="variable"><name>FILE</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a081a142e5d7bb0d0fe5cf38c2f4dc086" kind="variable"><name>DIRECTORY</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1ae3f898b3eba16a0ea7fde82bc1bb8352" kind="variable"><name>COUNT</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a6775052df5b5feaa10c69e1496e59f67" kind="variable"><name>SIZEOF</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a0e06efa81ab1100008a3131c6d92ceca" kind="variable"><name>LAST_MODIFIED</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a682faeb610efe2c1a1d8f9c20d972d82" kind="variable"><name>LIST_FILES</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a1c18ad75cdd0b8963695c1a8fd378b9c" kind="variable"><name>COUNT_WORD</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1aea640bc0ab06be33089d86d4847bcfbd" kind="variable"><name>INSERT</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a43509f431e53076b0419cd5560077132" kind="variable"><name>REPLACE</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1ae5cf939b72c1ec4e11127b45fdd5e637" kind="variable"><name>REMOVE</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a0076b66fb48530c9171b3c7294e17ce1" kind="variable"><name>newline</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a4bdc4a5222eda1d37838da216256504e" kind="variable"><name>gateHome</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a862ebb1796e89d0d83d348797e7c6472" kind="variable"><name>workingDirectory</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1addc44216b38536fd6b1ade38a6c2abdc" kind="variable"><name>gazetteerFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a2304e5f2732e0911893782dee866ee6d" kind="variable"><name>japeFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a5c3ff51dc7f068e9442618b7c2ab1810" kind="variable"><name>annie</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a49132471a5825278776bfb4a84d8caa0" kind="variable"><name>gateBuilder</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a499151b0f39dbce7b82a811c8cf21402" kind="variable"><name>userInputText</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1ad8f9cf866506553d345ec9abc8bd2d87" kind="function"><name>getGateHome</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a8481d268cb1ff04d24fd11e361ce0519" kind="function"><name>setGateHome</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a3ae2974328caa23267d68954fa14c817" kind="function"><name>getGazetteerFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a1a5a67f1f2fd6c50682861ae3a2c445c" kind="function"><name>setGazetteerFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1afab05cfab65d8962a2aac31e739a5fb0" kind="function"><name>getJapeFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a84ad78f1592cfb94ab5199aa4f7fa29b" kind="function"><name>setJapeFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a563b4c00019c0e56ffe7b1b081e3dc46" kind="function"><name>getGateBuilder</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a88ea9f175d806bf7ef4a0ed5e2fe3649" kind="function"><name>setGateBuilder</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1af3c32d49ecdde2b9ee91820a312005a0" kind="function"><name>getAnnie</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a806dc8c2cb8521b9d76fb9858ec65085" kind="function"><name>setAnnie</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a423e5f5fb6b4f6c36f04d1e91de943e6" kind="function"><name>initGATE</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1aab36d3608bc89c1e99b3db5483641415" kind="function"><name>initANNIE</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a89817ce8554641ad3cb7c003533a335d" kind="function"><name>getUserInputText</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1adf1a1371e27da05aa4f5125b6a3aa33c" kind="function"><name>setUserInputText</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1abc3cb01bcd0a28c9e690249a8caf816b" kind="function"><name>getWorkingDirectory</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a0b72ce095e3d98ae752e6ab9b0b8a1d5" kind="function"><name>setWorkingDirectory</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a1cf5ac4a3ebfd468ca38656a9d1bd0b9" kind="function"><name>analyseText</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a66c1bfa4914734730a4b47178244c280" kind="function"><name>run</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a7f90752955db628b0ece37e6355a44b6" kind="function"><name>getContents</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration" kind="class"><name>com::poly::nlp::filekommander::file::actions::FileKommanderConfiguration</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1af384cf1346411acf76036936b6ad43d3" kind="variable"><name>configuration</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1ac737e4b5403a98e4922435bd38bedb2d" kind="variable"><name>configFileName</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1ac100dbeed1c4a29d9be4b943d21dbb19" kind="function"><name>getConfiguration</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a251c46b2eace39154ac126a18c8ee5af" kind="function"><name>setConfiguration</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a99fb390b7ca5f81d09daf5ad25d42614" kind="function"><name>getConfigFileName</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a3911964f0612f2f33b6845e4094584c7" kind="function"><name>setConfigFileName</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration_1a1dbcc29a7f4788777b021ba88109d2d2" kind="function"><name>LoadConfiguration</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception" kind="class"><name>com::poly::nlp::filekommander::FileKommanderException</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception_1a19ff8f8a19fadb69b360aa6f211065c6" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception_1ae1f8a429d874921e90fcf52f6996d18d" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception_1afc4cc23418eef9956f58ec8ba5ba2596" kind="function"><name>FileKommanderException</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i" kind="class"><name>com::poly::nlp::filekommander::views::FileKommanderGUI</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1ab0ab424f45066afa9f00b5b45d2ddbcf" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1a7fdc3f53573570f3f345be50e76a0f53" kind="variable"><name>jButton1</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1abc00d454e82d9d65d52df7063d61fe99" kind="variable"><name>jLabel2</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1a50d44a9170d3b9fe79bd1f26aeaff9df" kind="variable"><name>jTextField1</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1a9366b4d7bb461245e298b21d0dd5e3a4" kind="variable"><name>jTextField2</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1a2bd0826d88caa357927705d7f14578f8" kind="function"><name>FileKommanderGUI</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1a4a070fcefc763249e6af8ed3c4db654b" kind="function"><name>initComponents</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1a01d394178f39508f4fed1735790ba590" kind="function"><name>jButton1ActionPerformed</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1aeaa83ab2594c30896c87c01f5678c8a4" kind="function"><name>jButton1MouseClicked</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1abb2bc73d0fd9224bc86a1fd76d9b3216" kind="function"><name>jTextField1ActionPerformed</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1a5b5a0a04cdb90cc03d34d3966b865994" kind="function"><name>jButton1KeyPressed</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1ae80581ca8844659251b69cfc615424aa" kind="function"><name>formKeyPressed</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1af647628975c199e876166b311c1c6d73" kind="function"><name>jTextField1KeyPressed</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_1acaf5e921301a8f0565f772db5acd6a2b" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2" kind="class"><name>com::poly::nlp::filekommander::views::FileKommanderGUIV2</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a98fff3b4c6caac91d624b07beab03af5" kind="variable"><name>frmFileKommander</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a43db9456e6f586e8a7d59c86dc90cdc8" kind="variable"><name>inputTextFld</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a610f5e81072e2d7e81ddd92bcd098295" kind="variable"><name>progressBar</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1af49b44fc577331b04d2b14c72b22f716" kind="variable"><name>runBtn</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1ac0e47bc8b5d4f38b43baae6b72778c1f" kind="variable"><name>informatinDisplayPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a66c6acbccbc6788ae6e22fe794336e7d" kind="variable"><name>CREATEPANEL</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1af0da2862825443e7a472a158906d355b" kind="variable"><name>DELETEPANEL</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a824c38073bb8503241bf71f231978a73" kind="variable"><name>RENAMEPANEL</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1aff9a87dc378944cb3ab200905c962ef8" kind="variable"><name>STATSPANEL</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a9fe52d973154e43c951c1c674845457d" kind="variable"><name>EMPTYPANEL</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a1838b8ff89c4457f8df1209e48f9e474" kind="variable"><name>createActionPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1ae2f69a147ba867f719ea6a7afbd59974" kind="variable"><name>deleteActionPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a048a142ae68dfe737d44afc703937678" kind="variable"><name>renameActionPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a4a8dcb03bd747de3c01531e30bfb5849" kind="variable"><name>statsActionPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a3b3ef122634b10d03fb5120422f5c782" kind="variable"><name>emptyActionPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a302b96f014cd6749805537c5ba00fe7b" kind="variable"><name>micBtn</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a0309006087341fa03072dc6b925b5581" kind="variable"><name>menuBar</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a292e43fb091ff0534a6fbf4291e0f58b" kind="variable"><name>errorMessageLabel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1aa4fb86851a7d16c0aed54ffa2a4d494a" kind="variable"><name>microphone</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a151b6936eccece1d1245219a3106d70f" kind="variable"><name>file</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a909ed6c8cf9b61f338669efb018aebcc" kind="function"><name>FileKommanderGUIV2</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a126562cb457bcbe6d535a855686ae5c2" kind="function"><name>micAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1ab9b5987afa8d8dca0e22c0010ae098b3" kind="function"><name>updateInformation</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a2109c6426970100fa2ce8f5cb4ae91a5" kind="function"><name>showLayout</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a5802448ae2926a341882f6919c25b767" kind="function"><name>displayErrorMessage</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a86255900a1c24746463406401904b846" kind="function"><name>clearErrorMessage</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a218d1052cb79ee763ef17322145ccff0" kind="function"><name>reset</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a472a223056b8a110dd3ca1d376d38e4b" kind="function"><name>getProgressBar</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1aed87552f95c1a57c9175d75a6b8d4de5" kind="function"><name>getInputTextFld</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1afa1a6e4ff00aac9b2e81db569ea399f5" kind="function"><name>getRunBtn</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a8935aa619a9b244658921c26466b772a" kind="function"><name>getFrmFileKommander</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a3a1224e74fee009bbfd7d0319657ab12" kind="function"><name>getInformatinDisplayPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1ac6b6c120c4d9f7c164cd678769d91b77" kind="function"><name>getCreateActionPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a7fa2fea7eb89bb77ca12e95e8b4b7b66" kind="function"><name>getDeleteActionPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1ad66f883dbcaa86db8960a9bb7da0c987" kind="function"><name>getMicBtn</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a6ce1322fa3b42f1e1e7d5e652d354ae5" kind="function"><name>getErrorMessageLabel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a500e5b53d9d8afe00084cc2a5b25df0d" kind="function"><name>getRenameActionPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a1e080fa83a2f013cff19e1aa29703d87" kind="function"><name>initialize</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1ae9828d55c286cc8eab2d17a749842502" kind="function"><name>recordSound</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1a295583a8fda103b47211ac51b03a37fb" kind="function"><name>recognizeSound</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu" kind="class"><name>com::poly::nlp::filekommander::views::FileKommanderMenu</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1ae9f2507a684bcf4de4a7196385e179c7" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1a003b2d89fc465db1befab3410121166d" kind="variable"><name>optionsFileKommander</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1a5d68fabb7e7f5cf7c94a3e29ef5631ee" kind="function"><name>FileKommanderMenu</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1a27842ee6e2731a5b9d459852dcdd5a4d" kind="function"><name>displayOptions</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1ac5a9651b87cfddaa37774622acbfa3b8" kind="function"><name>saveAndDispose</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1a478a27e7168e5045b9f4ee5ffe1523cc" kind="function"><name>displayAbout</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1a978d1a80fa281d2548206d86204b3616" kind="function"><name>loadOptionsFile</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1afcd1856362c78beb91904ec0976cbcf9" kind="function"><name>setLabelText</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run" kind="class"><name>com::poly::nlp::filekommander::FileKommanderRun</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a2dffc1b40df78c82faf9567da220dae2" kind="variable"><name>kommander</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1af105be529e7e9e9312aab57f6381b5ca" kind="variable"><name>guiv2</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a6bcf83454309db08057f32fde995ede8" kind="variable"><name>configuration</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1ae7643c914a5fa93d155faafc32529519" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a5927b17fe7f36dc411e57833ef2e9526" kind="function"><name>main</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1ab9503413d54c7d1880931d9ee03e021d" kind="function"><name>analyseTextInput</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1afd37283a20f7115abfd53064c2ad87a2" kind="function"><name>getKommander</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1aa8fe20066fea0bae38e0b0f3eb553713" kind="function"><name>setKommander</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a397a9a14b5802a79157fe7f90a9c49de" kind="function"><name>getGuiv2</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1acd6193926603bb658fd3a05d1477b4cf" kind="function"><name>setGuiv2</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a25c8c598e359f8cde6745af311b48daa" kind="function"><name>getConfiguration</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a426dc38c43b2cc64b35a3fa5a331a2ba" kind="function"><name>setConfiguration</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a459b20955a8772b8de02853c3fae3695" kind="function"><name>loadConfigurationFromFile</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a5e44a48af70a2685c5802345f2089c4c" kind="function"><name>writeConfigurationToFile</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a26e901fd6f8d168583fc6ef90cee71f3" kind="function"><name>showProgress</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder" kind="class"><name>com::poly::nlp::filekommander::gate::GateBuilder</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1aca691fb8ad715fd61ccf5845647c7bf2" kind="variable"><name>fileSeparator</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1abdefcfc6edae8b7edf26f0381ed9da34" kind="variable"><name>gateHome</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a4f34ff5f89a6a8a2ddcc72935cb6f51d" kind="variable"><name>annieHome</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a58783e8638545aa5ea65a89aa1061dde" kind="variable"><name>japeFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1adceaef80d20a83bd8c1cded83b90a692" kind="variable"><name>gazetteerFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a39a6c089a884f6318ae963e21b8fc3bf" kind="variable"><name>ANNIE_CLASS</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a4e56ddc3afefb48e751266e1e6449b7f" kind="variable"><name>prList</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a3801bc53fd7b7449a0aa714ad21bebea" kind="variable"><name>annieController</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a6a44fefbc1299f76aca84b037f79bd35" kind="variable"><name>newline</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1abbd1c14bf5a3ef4f39d4563dd498c467" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a288d8f16ba055b3e796a70ed0ed8880f" kind="function"><name>GateBuilder</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a7207b79e575a053f54b2bfdad78fa484" kind="function"><name>GateBuilder</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a8e881458a0b92c051232cff244561631" kind="function"><name>setup</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1af19109687b716d1cbcad8db3dc35873f" kind="function"><name>loadANNIE</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a7cec7e92b34ae41c3d8257b315bf6884" kind="function"><name>loadAllProcessingResources</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a455d08082f02c0d550c0a3b0e344a434" kind="function"><name>getGateHome</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a23ea43a49ea434ef84d3c793057dc899" kind="function"><name>setGateHome</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a2a7ba3b588ceeb7ef77519d399a67524" kind="function"><name>getJapeFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a460d6b7b5460ae3e538ca2e20094507e" kind="function"><name>setJapeFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1afa9ffdff61255633b3462963be7c7c3c" kind="function"><name>getGazetteerFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1ae278114910b1abd03a8a5c08b82e864e" kind="function"><name>setGazetteerFilePath</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a7b004de2eb7ca39b80dd547432c66a3f" kind="function"><name>getAnnieController</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_1a2e9909cef1b22cc5ce8096735b5142d3" kind="function"><name>setAnnieController</name></member>
+  </compound>
+  <compound refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kind="interface"><name>com::poly::nlp::filekommander::views::models::GenericActionModel</name>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel" kind="class"><name>com::poly::nlp::filekommander::views::panels::GenericPanel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel_1ac3f7f05bbdfeb29c6d8dd1eebfbda726" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel_1aec26b991510d51ae77eb19bf6e7855f7" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel_1aa001c8d88eccb61c64ad0d3b0d296648" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel_1aacbeeee52c7652d69d95879cb713936d" kind="function"><name>updatePanelDataAfterAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel_1ae70ee89c98b042bbe57cb45e9a79816f" kind="function"><name>resetPanel</name></member>
+  </compound>
+  <compound refid="class_h_l_t_tutorial" kind="class"><name>HLTTutorial</name>
+    <member refid="class_h_l_t_tutorial_1ac4f6995f0d67d0bfdd60d26dd7703db5" kind="variable"><name>fileSeparator</name></member>
+    <member refid="class_h_l_t_tutorial_1adb4199589eaaf5b9598cc2b2f7590659" kind="variable"><name>newline</name></member>
+    <member refid="class_h_l_t_tutorial_1a26ee4eae95ef93834a86936c107361b0" kind="variable"><name>NS</name></member>
+    <member refid="class_h_l_t_tutorial_1aa4a2bd88329f2c78cd648c7242be3086" kind="variable"><name>FID_DATA_ORG</name></member>
+    <member refid="class_h_l_t_tutorial_1a8f7520df09b1deb0b52f1cd2341d14dd" kind="variable"><name>contextID</name></member>
+    <member refid="class_h_l_t_tutorial_1af324de58fa0893753bf1d449a959be55" kind="variable"><name>contextData</name></member>
+    <member refid="class_h_l_t_tutorial_1a25e52e2c4a0580906443617dd11e5050" kind="variable"><name>hasURIContext</name></member>
+    <member refid="class_h_l_t_tutorial_1ab4c914d0fd25e0dfcb7fdeb677b26211" kind="variable"><name>filename</name></member>
+    <member refid="class_h_l_t_tutorial_1ae71fbcbcb26faf92a453dd4fad5a7a85" kind="variable"><name>context</name></member>
+    <member refid="class_h_l_t_tutorial_1adc313cb5e485ec03e21897d5c0132591" kind="variable"><name>doc</name></member>
+    <member refid="class_h_l_t_tutorial_1ae3ecde0fc3f5486e117de53e615058ca" kind="variable"><name>_annieController</name></member>
+    <member refid="class_h_l_t_tutorial_1aeca9a1b824beab58de7f27e639b6fc52" kind="variable"><name>firstFile</name></member>
+    <member refid="class_h_l_t_tutorial_1a140368203bdb4815acba0606719df6a7" kind="function"><name>HLTTutorial</name></member>
+    <member refid="class_h_l_t_tutorial_1a2df4fcba977cad0df60ff6dd6356dbb5" kind="function"><name>getContents</name></member>
+    <member refid="class_h_l_t_tutorial_1a1644de472a2045b79bb8810049b83a1d" kind="function"><name>initializeGate</name></member>
+    <member refid="class_h_l_t_tutorial_1ae9b6976cecdeefda137c1b3e2cb6636d" kind="function"><name>extractRelations</name></member>
+    <member refid="class_h_l_t_tutorial_1a5f66220b793be678dbd3d5e75bb017f0" kind="function"><name>toRDF</name></member>
+    <member refid="class_h_l_t_tutorial_1abf587005c096a97ec0c1d86d843aeb5c" kind="function"><name>main</name></member>
+    <member refid="class_h_l_t_tutorial_1a81baeb2bb51fe4720470dabfb269b102" kind="function"><name>getOrgNameSpace</name></member>
+    <member refid="class_h_l_t_tutorial_1a367a2190f2398ea406657d63fe2b4965" kind="function"><name>getPredNameSpace</name></member>
+    <member refid="class_h_l_t_tutorial_1ad316d0d41d51699ea6311cd4713a2b38" kind="function"><name>stripNonAlphanumeric</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker" kind="class"><name>com::poly::nlp::filekommander::MySwingWorker</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker_1a1dba172a61803519edcdd6e034ac1d13" kind="function"><name>doInBackground</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel" kind="class"><name>com::poly::nlp::filekommander::views::panels::OpenActionPanel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_1aba56569929488006bc879522f8d65da8" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_1a1e8521089a09fd734402e62d2352c275" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_1aa37ab18925690ab2ed3ba3f1071126b2" kind="function"><name>updatePanelDataAfterAction</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander" kind="class"><name>com::poly::nlp::filekommander::views::OptionsFileKommander</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander_1aa50f9fa645b0df5ee340104231031857" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander_1aaf488bac9983e9c54d0470f623d038a9" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander_1a566cf729d42553b326dc4eaaf52cd9d8" kind="variable"><name>contentPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander_1a0f8aef931bc85b51505210be4fbc87e1" kind="variable"><name>okButton</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander_1afff9327e0d62d1b57fb6e19299a1e203" kind="function"><name>OptionsFileKommander</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander_1a9620544d34bd81849c5883f30a84bab8" kind="function"><name>getContentPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander_1aac58d7d8c360a50897f4324322a918c7" kind="function"><name>getOkButton</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector" kind="class"><name>com::poly::nlp::filekommander::file::actions::OSDetector</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a79c0b2e4cc827207058a2bd69447964e" kind="variable"><name>isWindows</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a22ec143bd07db6e90565820d45099d16" kind="variable"><name>isLinux</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a1340febacdcad32dd61d018c21c6bb1f" kind="variable"><name>isMac</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1ad1b4bb03ca503507acbe854a9beac23f" kind="function"><name>[static initializer]</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1ac64c693bb806da889cf3eefc41a4294a" kind="function"><name>isWindows</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1a25112197d08a5d0db2cb9d24c7c43212" kind="function"><name>isLinux</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector_1af341d0aa020032a1e0646c1c589eaed3" kind="function"><name>isMac</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_phrase_operation_action_panel" kind="class"><name>com::poly::nlp::filekommander::views::panels::PhraseOperationActionPanel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_phrase_operation_action_panel_1a422015c9557a6c51405b4eab27b52452" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_phrase_operation_action_panel_1a7f7421f37f3cd27c33006cc3da85ec7a" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_phrase_operation_action_panel_1ac8380b5cb091933bcb138d4b7471d3c1" kind="variable"><name>model</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_phrase_operation_action_panel_1a2ab6b6a6d9e3bbe63370609483295c51" kind="function"><name>PhraseOperationActionPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_phrase_operation_action_panel_1a59320d2ae9d4c2cb7502792403341d2a" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_phrase_operation_action_panel_1a2abe1380c317051f30cb7d17fbeef324" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_phrase_operation_action_panel_1a602dc045881eb866cc9bebbb5b925a00" kind="function"><name>updatePanelDataAfterAction</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model" kind="class"><name>com::poly::nlp::filekommander::views::models::PhraseOperationModel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1afdc0b835818c55deb8ff7f22ec6b3d62" kind="variable"><name>fileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a3cc9f099059b9e5e2f53e450e78650f1" kind="variable"><name>operationType</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a0a3dec91dda5527a9e6b91d8fa0eba83" kind="function"><name>PhraseOperationModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ab5595eb942a1c0567dbc412af601ef7c" kind="function"><name>add</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a80fd6066949ef4eabf1a4c0749afc364" kind="function"><name>getFileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ace58d8b740d482171bccd637875661f7" kind="function"><name>setFileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ad8d071e0e95d8a5f8afe757e457ced11" kind="function"><name>getOperationType</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1aeda52758118855e19786c7bb399fd097" kind="function"><name>setOperationType</name></member>
+  </compound>
+  <compound refid="class_poly_main" kind="class"><name>PolyMain</name>
+    <member refid="class_poly_main_1a0c7824b053777ab5d9cb8ee2f3d8a276" kind="variable"><name>pipelineController</name></member>
+    <member refid="class_poly_main_1a1adb4ec0b3a2d51a36c2c05199c68436" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource" kind="class"><name>com::poly::nlp::filekommander::gate::ProcessingResource</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a018942d9b39afb00b7d92e874246f191" kind="variable"><name>prClass</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a9d38f54ab731c5b496b0583bd8dcce9b" kind="variable"><name>params</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a282db6a35844443df6cfaddce71e588f" kind="function"><name>ProcessingResource</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a33a54a56cbf52bbb61a67e8d33836956" kind="function"><name>ProcessingResource</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1ab13448d5922bfe4ab13f5b17abe0a04f" kind="function"><name>addParam</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a3017ede3560bc652656ec2519543b572" kind="function"><name>removeParam</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1aecbfe57e11798241a78466ac8a97811b" kind="function"><name>getPrClass</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a1edadf63e98f370d1a61c457ed433dbb" kind="function"><name>setPrClass</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1ac9133bcf39aaae347c94a4fd2c1a5bda" kind="function"><name>getParams</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a8dff2c1014fc6fbc88474a80905e97ee" kind="function"><name>setParams</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread" kind="class"><name>com::poly::nlp::filekommander::views::FileKommanderGUIV2::RecognizeThread</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread_1a4be07d48ad5b312798cd85d092a56d5f" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel" kind="class"><name>com::poly::nlp::filekommander::views::panels::RenameActionPanel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a2d285c84e4044412ee2587ff1b4f471b" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a4e84c4017b3461afab7a58319fca6dcc" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a6225fd2a8c41ace06f7cbf690ff1fa66" kind="variable"><name>renameModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a26c8743087944fc57a101d402e9bb95f" kind="function"><name>acceptButtonClickAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a2f33f44eac5a0bfada8bbc901a8ff57b" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1aaf4b583b76444aa394edf3fe64a37ae1" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a9defdeb4b3f825b7bd34081700b92e10" kind="function"><name>updatePanelDataAfterAction</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1ab2b8d0b3c213d7df75ffda2a5055fbe1" kind="function"><name>getRenameModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a0093d0870dbf68f86129a6350ba85b76" kind="function"><name>setRenameModel</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model" kind="class"><name>com::poly::nlp::filekommander::views::models::RenameModel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a39e62bba788d1742511a0cc6bed6f9ca" kind="variable"><name>isModelRun</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1af8d2e53c35dede94551d1f5a2564b5df" kind="variable"><name>oldFileName</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a36edac739e8a22593db90d3fa324694f" kind="variable"><name>newFileName</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a3dc034a375694317447630ef30f51d89" kind="variable"><name>errorMessage</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a0eee3a0c575de1b43577b438bf3b83e2" kind="variable"><name>type</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1aea5c975460ff780bc9aaaa5ee5041dcf" kind="function"><name>RenameModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a06cf62ffb83238b41dfd4d1df3e95943" kind="function"><name>isModelRun</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a9691de88be50d986edec0d0c54273329" kind="function"><name>setModelRun</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a5be9f73a2ddace081d26ba159bb1c415" kind="function"><name>getOldFileName</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a7c6c7cb4dc19244aee018bf7df2364bc" kind="function"><name>setOldFileName</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1aa95c21414668c1e1cc9558f6b319ad0b" kind="function"><name>getNewFileName</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a698f16a4a634954a6c445d74e0ca674a" kind="function"><name>setNewFileName</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a65538416cd95e769db9b5a99e08245b0" kind="function"><name>getErrorMessage</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a42b436d3ba343ebcb10b71da9ab7df2a" kind="function"><name>setErrorMessage</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a16fd29d812d927dd77e00864a8acf111" kind="function"><name>getType</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1ac338a4eddf57ed8bfc7e158ec24de468" kind="function"><name>setType</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel" kind="class"><name>com::poly::nlp::filekommander::views::panels::StatsActionPanel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1ae7f395a4db15fdb7194b11934cd0732a" kind="variable"><name>serialVersionUID</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1a9d905505e7514da823b65ce32d31d22e" kind="variable"><name>log</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1aaefc874fb6203949c9a759791eaf06b3" kind="variable"><name>statsModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1a2b841c6de0cfb7cd6520f01ef22e99c9" kind="function"><name>StatsActionPanel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1a3feebd3516f922f6dfb69a2b20dd49cc" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1ad76ec2decc6f9745da5af0b3389fe98a" kind="function"><name>updatePanelData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1a2c9b149207152e5d1570c62172fd8823" kind="function"><name>updatePanelDataAfterAction</name></member>
+  </compound>
+  <compound refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model" kind="class"><name>com::poly::nlp::filekommander::views::models::StatsModel</name>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a3ac8d8b82975c5631fc65f47121cbfe7" kind="variable"><name>isModelRun</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a7f136c002fe9865658d95f070a47fc10" kind="variable"><name>fileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1af8cefc08e228065ab54db3f1f9db7b9e" kind="variable"><name>folderListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1aa8aff56dba5f42c2f1f1b0452a461d0a" kind="variable"><name>statsType</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1ad9f68ae44bc497146b2a16739d8e813a" kind="function"><name>StatsModel</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a8a94771595dee19a6f1a74ff2f7483ea" kind="function"><name>add</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1abf285e0acda3ac3a582abda3bbf12987" kind="function"><name>getFileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a1d12652c69c4ee9be652f41398f40dfc" kind="function"><name>setFileListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1ae617bfa56a1ba5572ecb0740e78b75ad" kind="function"><name>getFolderListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a3bbe0d0970f83fde99a8b147d4f05194" kind="function"><name>setFolderListData</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1ace0a90bc15597c72e7280488a730f05a" kind="function"><name>isModelRun</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a4cad9a84d64d9fab3c3781f940a2bb99" kind="function"><name>setModelRun</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a6822c296eded108edbe0c34a71c3c97c" kind="function"><name>getStatsType</name></member>
+    <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a43a6e42897e03293403ffd1eaf9bad20" kind="function"><name>setStatsType</name></member>
+  </compound>
+  <compound refid="namespacecom" kind="namespace"><name>com</name>
+  </compound>
+  <compound refid="namespacecom_1_1poly" kind="namespace"><name>com::poly</name>
+  </compound>
+  <compound refid="namespacecom_1_1poly_1_1nlp" kind="namespace"><name>com::poly::nlp</name>
+  </compound>
+  <compound refid="namespacecom_1_1poly_1_1nlp_1_1filekommander" kind="namespace"><name>com::poly::nlp::filekommander</name>
+  </compound>
+  <compound refid="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1file" kind="namespace"><name>com::poly::nlp::filekommander::file</name>
+  </compound>
+  <compound refid="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions" kind="namespace"><name>com::poly::nlp::filekommander::file::actions</name>
+  </compound>
+  <compound refid="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1gate" kind="namespace"><name>com::poly::nlp::filekommander::gate</name>
+  </compound>
+  <compound refid="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1views" kind="namespace"><name>com::poly::nlp::filekommander::views</name>
+  </compound>
+  <compound refid="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models" kind="namespace"><name>com::poly::nlp::filekommander::views::models</name>
+  </compound>
+  <compound refid="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels" kind="namespace"><name>com::poly::nlp::filekommander::views::panels</name>
+  </compound>
+  <compound refid="_analyse_action_8java" kind="file"><name>AnalyseAction.java</name>
+  </compound>
+  <compound refid="_call_action_8java" kind="file"><name>CallAction.java</name>
+  </compound>
+  <compound refid="_file_action_utils_8java" kind="file"><name>FileActionUtils.java</name>
+  </compound>
+  <compound refid="_file_action_utilsaa_8java" kind="file"><name>FileActionUtilsaa.java</name>
+  </compound>
+  <compound refid="_file_kommander_configuration_8java" kind="file"><name>FileKommanderConfiguration.java</name>
+  </compound>
+  <compound refid="_o_s_detector_8java" kind="file"><name>OSDetector.java</name>
+  </compound>
+  <compound refid="_file_kommander_8java" kind="file"><name>FileKommander.java</name>
+  </compound>
+  <compound refid="_file_kommander_exception_8java" kind="file"><name>FileKommanderException.java</name>
+  </compound>
+  <compound refid="_file_kommander_run_8java" kind="file"><name>FileKommanderRun.java</name>
+  </compound>
+  <compound refid="_gate_builder_8java" kind="file"><name>GateBuilder.java</name>
+  </compound>
+  <compound refid="_processing_resource_8java" kind="file"><name>ProcessingResource.java</name>
+  </compound>
+  <compound refid="_about_file_kommander_8java" kind="file"><name>AboutFileKommander.java</name>
+  </compound>
+  <compound refid="_file_kommander_g_u_i_8java" kind="file"><name>FileKommanderGUI.java</name>
+  </compound>
+  <compound refid="_file_kommander_g_u_i_v2_8java" kind="file"><name>FileKommanderGUIV2.java</name>
+  </compound>
+  <compound refid="_file_kommander_menu_8java" kind="file"><name>FileKommanderMenu.java</name>
+  </compound>
+  <compound refid="_create_model_8java" kind="file"><name>CreateModel.java</name>
+  </compound>
+  <compound refid="_delete_model_8java" kind="file"><name>DeleteModel.java</name>
+  </compound>
+  <compound refid="_generic_action_model_8java" kind="file"><name>GenericActionModel.java</name>
+  </compound>
+  <compound refid="_phrase_operation_model_8java" kind="file"><name>PhraseOperationModel.java</name>
+  </compound>
+  <compound refid="_rename_model_8java" kind="file"><name>RenameModel.java</name>
+  </compound>
+  <compound refid="_stats_model_8java" kind="file"><name>StatsModel.java</name>
+  </compound>
+  <compound refid="_options_file_kommander_8java" kind="file"><name>OptionsFileKommander.java</name>
+  </compound>
+  <compound refid="_abstract_file_folder_panel_8java" kind="file"><name>AbstractFileFolderPanel.java</name>
+  </compound>
+  <compound refid="_abstract_message_panel_8java" kind="file"><name>AbstractMessagePanel.java</name>
+  </compound>
+  <compound refid="_create_action_panel_8java" kind="file"><name>CreateActionPanel.java</name>
+  </compound>
+  <compound refid="_delete_action_panel_8java" kind="file"><name>DeleteActionPanel.java</name>
+  </compound>
+  <compound refid="_empty_action_panel_8java" kind="file"><name>EmptyActionPanel.java</name>
+  </compound>
+  <compound refid="_generic_panel_8java" kind="file"><name>GenericPanel.java</name>
+  </compound>
+  <compound refid="_open_action_panel_8java" kind="file"><name>OpenActionPanel.java</name>
+  </compound>
+  <compound refid="_phrase_operation_action_panel_8java" kind="file"><name>PhraseOperationActionPanel.java</name>
+  </compound>
+  <compound refid="_rename_action_panel_8java" kind="file"><name>RenameActionPanel.java</name>
+  </compound>
+  <compound refid="_stats_action_panel_8java" kind="file"><name>StatsActionPanel.java</name>
+  </compound>
+  <compound refid="_swing_log_appender_8java" kind="file"><name>SwingLogAppender.java</name>
+  </compound>
+  <compound refid="_h_l_t_tutorial_8java" kind="file"><name>HLTTutorial.java</name>
+  </compound>
+  <compound refid="_poly_main_8java" kind="file"><name>PolyMain.java</name>
+  </compound>
+  <compound refid="dir_5087f98165a03cf7dc7a5d2e346495f9" kind="dir"><name>git/FileKommander/src/com/poly/nlp/filekommander/file/actions</name>
+  </compound>
+  <compound refid="dir_575c64d0e527c0383dc3eec53b486ae4" kind="dir"><name>git/FileKommander/src/com</name>
+  </compound>
+  <compound refid="dir_009080984d706c5457c7ce799806ccfa" kind="dir"><name>git/FileKommander/src/com/poly/nlp/filekommander/file</name>
+  </compound>
+  <compound refid="dir_bc284bc259c0a216a8f37f6dd481b764" kind="dir"><name>git/FileKommander/src/com/poly/nlp/filekommander</name>
+  </compound>
+  <compound refid="dir_af06d3c703212a42a0567b42f3e8a609" kind="dir"><name>git/FileKommander</name>
+  </compound>
+  <compound refid="dir_8f0ed429963c7774b8675318969e1623" kind="dir"><name>git/FileKommander/src/com/poly/nlp/filekommander/gate</name>
+  </compound>
+  <compound refid="dir_5c56c8ddc877003155731d154071122f" kind="dir"><name>git</name>
+  </compound>
+  <compound refid="dir_9c98486dfc064b2bdb8ede8f73eee68d" kind="dir"><name>git/FileKommander/src/com/poly/nlp/filekommander/views/models</name>
+  </compound>
+  <compound refid="dir_f8f6406263af909fcff5d9ad42ed0991" kind="dir"><name>git/FileKommander/src/com/poly/nlp</name>
+  </compound>
+  <compound refid="dir_f411553e038c0eb63137015bc7c66b71" kind="dir"><name>git/FileKommander/src/com/poly/nlp/filekommander/views/panels</name>
+  </compound>
+  <compound refid="dir_56271d56c9271086a3ca3f76926cd83b" kind="dir"><name>git/FileKommander/src/com/poly</name>
+  </compound>
+  <compound refid="dir_eb3ed54aff2e9ce146caa0e921fc7f6c" kind="dir"><name>git/FileKommander/src</name>
+  </compound>
+  <compound refid="dir_f5b33acb4b3756d1c6551353e4e31111" kind="dir"><name>git/FileKommander/src/com/poly/nlp/filekommander/views</name>
+  </compound>
+</doxygenindex>

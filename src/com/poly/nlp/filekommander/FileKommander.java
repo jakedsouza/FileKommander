@@ -17,32 +17,31 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import org.apache.commons.configuration.Configuration;
-import org.apache.commons.configuration.ConfigurationException;
-import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.log4j.Logger;
 
-import com.poly.nlp.filekommander.file.actions.FileActionUtils;
 import com.poly.nlp.filekommander.gate.GateBuilder;
 
-public class FileKommander implements Runnable{	
+public class FileKommander implements Runnable {
 	private static final Logger log = Logger.getLogger(FileKommander.class);
-	public static final int FILE= 0 ; 
-	public static final int DIRECTORY = 1 ;
-	
-	public static final int COUNT= 2 ; 
-	public static final int SIZEOF= 3 ;
-	
-	
-//	private final String fileSeparator = System.getProperty("file.separator");
-	public static String newline =("\n");	
-	private String gateHome ;
+	public static final int FILE = 0;
+	public static final int DIRECTORY = 1;
+	public static final int COUNT = 2;
+	public static final int SIZEOF = 3;
+	public static final int LAST_MODIFIED = 4;
+    public static final int LIST_FILES = 5;
+	public static final int COUNT_WORD = 6;
+	public static final int INSERT = 7;
+	public static final int REPLACE = 8;
+	public static final int REMOVE = 9;
+	public static String newline = ("\n");
+	private String gateHome;
 	private String workingDirectory;
-	private String gazetteerFilePath ;
-	private String japeFilePath ; 
-	private SerialAnalyserController annie; 
+	private String gazetteerFilePath;
+	private String japeFilePath;
+	private SerialAnalyserController annie;
 	private GateBuilder gateBuilder;
-	private String userInputText ;
+	private String userInputText;
+
 	/**
 	 * @return the gateHome
 	 */
@@ -51,7 +50,8 @@ public class FileKommander implements Runnable{
 	}
 
 	/**
-	 * @param gateHome the gateHome to set
+	 * @param gateHome
+	 *            the gateHome to set
 	 */
 	public void setGateHome(String gateHome) {
 		this.gateHome = gateHome;
@@ -65,7 +65,8 @@ public class FileKommander implements Runnable{
 	}
 
 	/**
-	 * @param gazetteerFilePath the gazetteerFilePath to set
+	 * @param gazetteerFilePath
+	 *            the gazetteerFilePath to set
 	 */
 	public void setGazetteerFilePath(String gazetteerFilePath) {
 		this.gazetteerFilePath = gazetteerFilePath;
@@ -79,7 +80,8 @@ public class FileKommander implements Runnable{
 	}
 
 	/**
-	 * @param japeFilePath the japeFilePath to set
+	 * @param japeFilePath
+	 *            the japeFilePath to set
 	 */
 	public void setJapeFilePath(String japeFilePath) {
 		this.japeFilePath = japeFilePath;
@@ -93,7 +95,8 @@ public class FileKommander implements Runnable{
 	}
 
 	/**
-	 * @param gateBuilder the gateBuilder to set
+	 * @param gateBuilder
+	 *            the gateBuilder to set
 	 */
 	public void setGateBuilder(GateBuilder gateBuilder) {
 		this.gateBuilder = gateBuilder;
@@ -107,76 +110,32 @@ public class FileKommander implements Runnable{
 	}
 
 	/**
-	 * @param annie the annie to set
+	 * @param annie
+	 *            the annie to set
 	 */
 	public void setAnnie(SerialAnalyserController annie) {
 		this.annie = annie;
 	}
 
-
-	
-	public void cliMode(){
-		
-	}	
-	public void guiMode(){
-		
-	}
-	
-	public  Configuration loadConfig(String configFileName) throws ConfigurationException{
-		if(configFileName == null || configFileName == ""){
-			throw new ConfigurationException("Config file name is empty");
-		}
-		log.info("Reading Properties File" + configFileName);		
-		Configuration config = null ;
-		try {
-			config = new PropertiesConfiguration(configFileName);
-		} catch (ConfigurationException e) {
-			log.error("Error reading properties file", e);
-		}
-		return config;
-	}
-	
-	public GateBuilder initGATE() throws MalformedURLException, GateException{
-		GateBuilder gateBuilder = new GateBuilder(this.gateHome,this.gazetteerFilePath,this.japeFilePath);
+	public GateBuilder initGATE() throws MalformedURLException, GateException {
+		GateBuilder gateBuilder = new GateBuilder(this.gateHome,
+				this.gazetteerFilePath, this.japeFilePath);
 		gateBuilder.setup();
 		this.gateBuilder = gateBuilder;
-		return gateBuilder; 
+		return gateBuilder;
 	}
-	
-	public SerialAnalyserController initANNIE() throws ResourceInstantiationException, MalformedURLException{
-		if(this.getGateBuilder() == null){
+
+	public SerialAnalyserController initANNIE()
+			throws ResourceInstantiationException, MalformedURLException {
+		if (this.getGateBuilder() == null) {
 			throw new RuntimeException("Gate must be initialised");
 		}
 		this.getGateBuilder().loadANNIE();
 		this.getGateBuilder().loadAllProcessingResources();
-		return  this.getGateBuilder().getAnnieController();
-		
+		return this.getGateBuilder().getAnnieController();
+
 	}
-	
-	public String getData(){
-		return null ;
-	}
-	
-	public String getDataMIC(){
-		return null ;
-	}
-	
-	public String getDataTextBox(){
-		return null;
-	}
-	
-	public String getDataCLI(){
-		return null;
-	}
-	
-	public void printMessage(){
-		// Print to log , gui , cli 
-	}
-	
-	public void executeAction(){
-		
-	}
-	
+
 	public static String getContents(File aFile) {
 		// ...checks on aFile are elided
 		StringBuffer contents = new StringBuffer();
@@ -223,7 +182,8 @@ public class FileKommander implements Runnable{
 	}
 
 	/**
-	 * @param userInputText the userInputText to set
+	 * @param userInputText
+	 *            the userInputText to set
 	 */
 	public void setUserInputText(String userInputText) {
 		this.userInputText = userInputText;
@@ -237,25 +197,27 @@ public class FileKommander implements Runnable{
 	}
 
 	/**
-	 * @param workingDirectory the workingDirectory to set
+	 * @param workingDirectory
+	 *            the workingDirectory to set
 	 */
 	public void setWorkingDirectory(String workingDirectory) {
 		this.workingDirectory = workingDirectory;
 	}
 
-	public AnnotationSet analyseText(String text){
+	public AnnotationSet analyseText(String text) {
 		System.out.println(this.userInputText);
-		Document doc = null ;
-		Corpus corpus = null ;
+		Document doc = null;
+		Corpus corpus = null;
 		try {
-			 doc = Factory.newDocument(text);
-				corpus=Factory.newCorpus("BatchProcessApp Corpus");;
+			doc = Factory.newDocument(text);
+			corpus = Factory.newCorpus("BatchProcessApp Corpus");
+			;
 
 		} catch (ResourceInstantiationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		corpus.add(doc);
 		this.annie.setCorpus(corpus);
 		try {
@@ -264,28 +226,28 @@ public class FileKommander implements Runnable{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		AnnotationSet defaultAnnotSet = doc.getAnnotations();	
+		AnnotationSet defaultAnnotSet = doc.getAnnotations();
 		AnnotationSet all = defaultAnnotSet.get("all");
-		corpus.clear(); 
-		return all ;
+		corpus.clear();
+		return all;
 	}
-	
+
 	@Override
 	public void run() {
-		
-	
+
 		System.out.println(this.userInputText);
-		Document doc = null ;
-		Corpus corpus = null ;
+		Document doc = null;
+		Corpus corpus = null;
 		try {
-			 doc = Factory.newDocument(this.userInputText);
-				corpus=Factory.newCorpus("BatchProcessApp Corpus");;
+			doc = Factory.newDocument(this.userInputText);
+			corpus = Factory.newCorpus("BatchProcessApp Corpus");
+			;
 
 		} catch (ResourceInstantiationException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		corpus.add(doc);
 		this.annie.setCorpus(corpus);
 		try {
@@ -294,23 +256,19 @@ public class FileKommander implements Runnable{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		AnnotationSet defaultAnnotSet = doc.getAnnotations();	
+		AnnotationSet defaultAnnotSet = doc.getAnnotations();
 		AnnotationSet all = defaultAnnotSet.get("all");
 		for (Annotation annotation : all) {
 			FeatureMap featureMap = annotation.getFeatures();
-			AnnotationSet actionsAnnotation =  (AnnotationSet)featureMap.get("actions");
-		for(Annotation annot2 : actionsAnnotation){
-			FeatureMap featureMap2 = annot2.getFeatures();
-			String actionType = (String)featureMap2.get("minorType");
-			FileActionUtils.callAction(actionType,annotation);			
-		}
-		
-		}
-		
-		
-		corpus.clear();  
+			AnnotationSet actionsAnnotation = (AnnotationSet) featureMap
+					.get("actions");
+			for (Annotation annot2 : actionsAnnotation) {
+				FeatureMap featureMap2 = annot2.getFeatures();
+				String actionType = (String) featureMap2.get("minorType");
+				// FileActionUtils.callAction(actionType,annotation);
+			}
 
-}
-
-	
+		}
+		corpus.clear();
+	}
 }

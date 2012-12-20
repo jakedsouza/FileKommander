@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="dir_f411553e038c0eb63137015bc7c66b71" kind="dir">
+    <compoundname>git/FileKommander/src/com/poly/nlp/filekommander/views/panels</compoundname>
+    <innerfile refid="_abstract_file_folder_panel_8java">AbstractFileFolderPanel.java</innerfile>
+    <innerfile refid="_abstract_message_panel_8java">AbstractMessagePanel.java</innerfile>
+    <innerfile refid="_create_action_panel_8java">CreateActionPanel.java</innerfile>
+    <innerfile refid="_delete_action_panel_8java">DeleteActionPanel.java</innerfile>
+    <innerfile refid="_empty_action_panel_8java">EmptyActionPanel.java</innerfile>
+    <innerfile refid="_generic_panel_8java">GenericPanel.java</innerfile>
+    <innerfile refid="_open_action_panel_8java">OpenActionPanel.java</innerfile>
+    <innerfile refid="_phrase_operation_action_panel_8java">PhraseOperationActionPanel.java</innerfile>
+    <innerfile refid="_rename_action_panel_8java">RenameActionPanel.java</innerfile>
+    <innerfile refid="_stats_action_panel_8java">StatsActionPanel.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/"/>
+  </compounddef>
+</doxygen>

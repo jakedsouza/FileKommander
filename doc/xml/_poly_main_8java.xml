@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_poly_main_8java" kind="file">
+    <compoundname>PolyMain.java</compoundname>
+    <innerclass refid="class_poly_main" prot="public">PolyMain</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>gate.Gate;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>gate.creole.SerialAnalyserController;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//import<sp/>gate.AnnotationSet;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>gate.Corpus;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>gate.Factory;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>gate.util.persistence.PersistenceManager.loadObjectFromFile;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.File;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//import<sp/>java.net.URL;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.ArrayList;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//import<sp/>java.util.List;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//import<sp/>java.util.Set;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//import<sp/>java.util.HashSet;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//import<sp/>java.util.Iterator;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_poly_main" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_poly_main" kindref="compound">PolyMain</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//private<sp/>static<sp/>Pipeline<sp/>pipeline;<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>@SuppressWarnings(</highlight><highlight class="stringliteral">&quot;unused&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21" refid="class_poly_main_1a0c7824b053777ab5d9cb8ee2f3d8a276" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>private<sp/>static<sp/>SerialAnalyserController<sp/><ref refid="class_poly_main_1a0c7824b053777ab5d9cb8ee2f3d8a276" kindref="member">pipelineController</ref>;</highlight></codeline>
+<codeline lineno="22" refid="class_poly_main_1a1adb4ec0b3a2d51a36c2c05199c68436" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>static<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_poly_main_1a1adb4ec0b3a2d51a36c2c05199c68436" kindref="member">main</ref>(String[]<sp/>args)throws<sp/>Exception</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="comment">//<sp/>jake<sp/>new<sp/>comment<sp/>for<sp/>neha</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>File<sp/>gateHome<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>File(</highlight><highlight class="stringliteral">&quot;C:/Users/MixPool/ws/GatePractice/&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Gate.getGateHome()<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gate.setGateHome(gateHome);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//lll</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>jakes<sp/>comments<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>hahaha<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gate.init();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gate.getCreoleRegister().registerDirectories(</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>File(</highlight><highlight class="stringliteral">&quot;C:/Users/MixPool/ws/GatePractice/&quot;</highlight><highlight class="normal"><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;plugins&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ANNIE&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.toURI().toURL());</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Only<sp/>if<sp/>you<sp/>are<sp/>using<sp/>this<sp/>plugin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gate.getCreoleRegister().registerDirectories(</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>File(</highlight><highlight class="stringliteral">&quot;C:/Users/MixPool/ws/GatePractice/&quot;</highlight><highlight class="normal">+</highlight><highlight class="stringliteral">&quot;plugins&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Tools&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.toURI().toURL());<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Only<sp/>if<sp/>you<sp/>are<sp/>using<sp/>this<sp/>plugin.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gate.getCreoleRegister().registerDirectories(</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>File(</highlight><highlight class="stringliteral">&quot;C:/Users/MixPool/ws/GatePractice/&quot;</highlight><highlight class="normal">+</highlight><highlight class="stringliteral">&quot;plugins&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Tagger_NP_Chunking&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.toURI().toURL());<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gate.CorpusController<sp/>c<sp/>=<sp/>((gate.CorpusController)loadObjectFromFile(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>java.io.File(</highlight><highlight class="stringliteral">&quot;C:/nlpCourseF11/gateExercises/PolyTest/poly.gapp&quot;</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Corpus<sp/>corpus<sp/>=<sp/>(Corpus)<sp/>Factory.createResource(</highlight><highlight class="stringliteral">&quot;gate.corpora.CorpusImpl&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>URL<sp/>dir<sp/>=<sp/>new<sp/>File(&quot;C:/nlpCourseF11/gateExercises/PolyTest/docs&quot;).toURI().toURL();</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>corpus.populate(dir,<sp/>null,<sp/>&quot;UTF-8&quot;,<sp/>false);<sp/>//set<sp/>the<sp/>encoding<sp/>to<sp/>whatever<sp/>is<sp/>the<sp/>encoding<sp/>of<sp/>your<sp/>files</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//c.getCorpus().populate(dir,<sp/>null,<sp/>&quot;UTF-8&quot;,<sp/>false);</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*****/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//in<sp/>your<sp/>case<sp/>the<sp/>input<sp/>string<sp/>will<sp/>come<sp/>through<sp/>the<sp/>user<sp/>interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>docStr<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Dr.<sp/>Phyllis<sp/>Frankl<sp/>of<sp/>the<sp/>computer<sp/>science<sp/>department<sp/>of<sp/>NYU-Poly<sp/>in<sp/>New<sp/>York<sp/>City<sp/>has<sp/>been<sp/>named<sp/>provost.<sp/>&quot;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;She<sp/>will<sp/>be<sp/>replacing<sp/>Dr.<sp/>Kurt<sp/>Becker<sp/>who<sp/>will<sp/>become<sp/>the<sp/>Vice-President<sp/>for<sp/>miracles.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gate.Document<sp/>doc<sp/>=<sp/>gate.Factory.newDocument(docStr);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>corpus.add(doc);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.setCorpus(corpus);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.execute();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>corpus.clear();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ArrayList&lt;gate.Annotation&gt;<sp/>annList<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ArrayList&lt;gate.Annotation&gt;();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Add<sp/>whatever<sp/>annotations<sp/>you<sp/>are<sp/>interested<sp/>in<sp/>processing<sp/>further</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//to<sp/>annList--questions,<sp/>requests,<sp/>instructions,<sp/>etc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>annList.addAll(doc.getAnnotations().get(</highlight><highlight class="stringliteral">&quot;Question&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//REALLY<sp/>important<sp/>to<sp/>release<sp/>doc<sp/>and<sp/>coprpus<sp/>after<sp/>processing<sp/>each<sp/>request,<sp/>question,<sp/>instruction,<sp/>etc.,<sp/>or<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//your<sp/>program<sp/>will<sp/>quickly<sp/>run<sp/>out<sp/>of<sp/>heap<sp/>space.<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Factory.deleteResource(doc);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Factory.deleteResource(corpus);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Do<sp/>your<sp/>further<sp/>processing<sp/>on<sp/>the<sp/>annotations<sp/>in<sp/>annList<sp/>(in<sp/>a<sp/>different<sp/>class<sp/>file,<sp/>please)<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jake/git/FileKommander/src/PolyMain.java"/>
+  </compounddef>
+</doxygen>

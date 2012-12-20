@@ -1,0 +1,76 @@
+.TH "com.poly.nlp.filekommander.file.actions.FileActionUtilsaa" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.file.actions.FileActionUtilsaa \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static ArrayList< String > \fBgetObjectNameFromAnnotation\fP (FeatureMap featureMap, String key)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final Logger \fBlog\fP = Logger\&.getLogger(FileActionUtils\&.class)"
+.br
+.ti -1c
+.RI "static String \fBworkingDirectory\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBAuthor:\fP
+.RS 4
+jake , neha 
+.RE
+.PP
+
+.PP
+Definition at line 35 of file FileActionUtilsaa\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static ArrayList<String> com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtilsaa\&.getObjectNameFromAnnotation (FeatureMapfeatureMap, Stringkey)\fC [static]\fP"
+
+.PP
+Definition at line 706 of file FileActionUtilsaa\&.java\&.
+.PP
+.nf
+                                               {
+        ArrayList<String> outputList = null;
+        if (featureMap\&.containsKey(key)) {
+            outputList = new ArrayList<String>();
+            AnnotationSet objectNames = (AnnotationSet) featureMap\&.get(key);
+            for (Annotation object : objectNames) {
+                FeatureMap featureMap2 = object\&.getFeatures();
+                String objectName = (String) featureMap2\&.get('string');
+                objectName = objectName\&.replaceAll('\'', '');
+                outputList\&.add(objectName);
+            }
+        } else {
+            return new ArrayList<String>();
+        }
+
+        return outputList\&.isEmpty() ? new ArrayList<String>() : outputList;
+
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtilsaa\&.log = Logger\&.getLogger(FileActionUtils\&.class)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 36 of file FileActionUtilsaa\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtilsaa\&.workingDirectory\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 37 of file FileActionUtilsaa\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

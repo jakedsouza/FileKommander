@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="class_poly_main" kind="class" prot="public">
+    <compoundname>PolyMain</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_poly_main_1a0c7824b053777ab5d9cb8ee2f3d8a276" prot="private" static="yes" mutable="no">
+        <type>SerialAnalyserController</type>
+        <definition>SerialAnalyserController PolyMain.pipelineController</definition>
+        <argsstring></argsstring>
+        <name>pipelineController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/PolyMain.java" line="21" bodyfile="C:/Users/jake/git/FileKommander/src/PolyMain.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_poly_main_1a1adb4ec0b3a2d51a36c2c05199c68436" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void PolyMain.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <exceptions> throws Exception 	</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/PolyMain.java" line="23" bodyfile="C:/Users/jake/git/FileKommander/src/PolyMain.java" bodystart="22" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="261">
+        <label>PolyMain</label>
+        <link refid="class_poly_main"/>
+        <childnode refid="262" relation="usage">
+          <edgelabel>pipelineController</edgelabel>
+        </childnode>
+      </node>
+      <node id="262">
+        <label>SerialAnalyserController</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/PolyMain.java" line="18" bodyfile="C:/Users/jake/git/FileKommander/src/PolyMain.java" bodystart="18" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_poly_main_1a1adb4ec0b3a2d51a36c2c05199c68436" prot="public" virt="non-virtual"><scope>PolyMain</scope><name>main</name></member>
+      <member refid="class_poly_main_1a0c7824b053777ab5d9cb8ee2f3d8a276" prot="private" virt="non-virtual"><scope>PolyMain</scope><name>pipelineController</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

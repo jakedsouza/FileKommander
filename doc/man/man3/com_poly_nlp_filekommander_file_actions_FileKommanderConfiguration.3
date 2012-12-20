@@ -1,0 +1,133 @@
+.TH "com.poly.nlp.filekommander.file.actions.FileKommanderConfiguration" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.file.actions.FileKommanderConfiguration \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "Configuration \fBgetConfiguration\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetConfiguration\fP (Configuration \fBconfiguration\fP)"
+.br
+.ti -1c
+.RI "String \fBgetConfigFileName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetConfigFileName\fP (String \fBconfigFileName\fP)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBLoadConfiguration\fP ()"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static Configuration \fBconfiguration\fP"
+.br
+.ti -1c
+.RI "static String \fBconfigFileName\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 8 of file FileKommanderConfiguration\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileKommanderConfiguration\&.getConfigFileName ()"
+\fBReturns:\fP
+.RS 4
+the configFileName 
+.RE
+.PP
+
+.PP
+Definition at line 30 of file FileKommanderConfiguration\&.java\&.
+.PP
+.nf
+                                      {
+        return configFileName;
+    }
+.fi
+.SS "Configuration com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileKommanderConfiguration\&.getConfiguration ()"
+\fBReturns:\fP
+.RS 4
+the configuration 
+.RE
+.PP
+
+.PP
+Definition at line 15 of file FileKommanderConfiguration\&.java\&.
+.PP
+.nf
+                                            {
+        Properties properties = new Properties();
+        ConfigurationBuilder builder = new ConfigurationBuilder();
+        //builder\&.
+        return configuration;
+    }
+.fi
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileKommanderConfiguration\&.LoadConfiguration ()\fC [static]\fP"
+
+.PP
+Definition at line 40 of file FileKommanderConfiguration\&.java\&.
+.PP
+.nf
+                                          {
+        
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileKommanderConfiguration\&.setConfigFileName (StringconfigFileName)"
+\fBParameters:\fP
+.RS 4
+\fIconfigFileName\fP the configFileName to set 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file FileKommanderConfiguration\&.java\&.
+.PP
+.nf
+                                                         {
+        this\&.configFileName = configFileName;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileKommanderConfiguration\&.setConfiguration (Configurationconfiguration)"
+\fBParameters:\fP
+.RS 4
+\fIconfiguration\fP the configuration to set 
+.RE
+.PP
+
+.PP
+Definition at line 24 of file FileKommanderConfiguration\&.java\&.
+.PP
+.nf
+                                                              {
+        this\&.configuration = configuration;
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileKommanderConfiguration\&.configFileName\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 11 of file FileKommanderConfiguration\&.java\&.
+.SS "Configuration com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileKommanderConfiguration\&.configuration\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 10 of file FileKommanderConfiguration\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

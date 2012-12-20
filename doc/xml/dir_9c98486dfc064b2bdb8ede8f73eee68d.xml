@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="dir_9c98486dfc064b2bdb8ede8f73eee68d" kind="dir">
+    <compoundname>git/FileKommander/src/com/poly/nlp/filekommander/views/models</compoundname>
+    <innerfile refid="_create_model_8java">CreateModel.java</innerfile>
+    <innerfile refid="_delete_model_8java">DeleteModel.java</innerfile>
+    <innerfile refid="_generic_action_model_8java">GenericActionModel.java</innerfile>
+    <innerfile refid="_phrase_operation_model_8java">PhraseOperationModel.java</innerfile>
+    <innerfile refid="_rename_model_8java">RenameModel.java</innerfile>
+    <innerfile refid="_stats_model_8java">StatsModel.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/"/>
+  </compounddef>
+</doxygen>

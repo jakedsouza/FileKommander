@@ -1,0 +1,615 @@
+.TH "HLTTutorial" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+HLTTutorial \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHLTTutorial\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetContents\fP (File aFile)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBmain\fP (String args[])"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "String \fBcontext\fP"
+.br
+.ti -1c
+.RI "Document \fBdoc\fP"
+.br
+.ti -1c
+.RI "SerialAnalyserController \fB_annieController\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static String \fBnewline\fP =('\\n')"
+.br
+.ti -1c
+.RI "static final String \fBNS\fP = 'http://sw\&.deri\&.org/2007/12/fin/spec#'"
+.br
+.ti -1c
+.RI "static final String \fBFID_DATA_ORG\fP = 'http://sw\&.deri\&.org/2007/12/fin/inst/organisations/'"
+.br
+.ti -1c
+.RI "static final String \fBcontextID\fP ='<http://sw\&.deri\&.org/2007/12/fin/sources/'"
+.br
+.ti -1c
+.RI "static String \fBcontextData\fP"
+.br
+.ti -1c
+.RI "static boolean \fBhasURIContext\fP =false"
+.br
+.ti -1c
+.RI "static String \fBfilename\fP"
+.br
+.in -1c
+.SS "Static Package Functions"
+
+.in +1c
+.ti -1c
+.RI "static String \fBgetOrgNameSpace\fP (String name)"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitializeGate\fP ()  throws GateException, MalformedURLException "
+.br
+.ti -1c
+.RI "void \fBextractRelations\fP (File[]files)  throws Exception "
+.br
+.ti -1c
+.RI "void \fBtoRDF\fP (AnnotationSet relationAnnotationSet, int code)"
+.br
+.in -1c
+.SS "Static Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static String \fBgetPredNameSpace\fP (String name)"
+.br
+.ti -1c
+.RI "static String \fBstripNonAlphanumeric\fP (String s)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "final String \fBfileSeparator\fP = System\&.getProperty('file\&.separator')"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static int \fBfirstFile\fP = 0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 41 of file HLTTutorial\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "HLTTutorial\&.HLTTutorial ()"
+
+.PP
+Definition at line 43 of file HLTTutorial\&.java\&.
+.PP
+.nf
+                         {
+        try {
+            initializeGate();
+        } catch (MalformedURLException ex) {
+            ex\&.printStackTrace();
+        } catch (GateException ex) {
+            ex\&.printStackTrace();
+        }
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void HLTTutorial\&.extractRelations (File[]files)  throws Exception \fC [private]\fP"
+**************************CLEANUP************************************* 
+.PP
+Definition at line 182 of file HLTTutorial\&.java\&.
+.PP
+.nf
+                                                                {
+        // set corpus
+
+        //CorpusController application(CorpusController)PersistenceManager\&.loadObjectFromFile(gappFile);
+        Corpus corpus = Factory\&.newCorpus('BatchProcessApp Corpus');
+        _annieController\&.setCorpus(corpus);
+
+
+
+        for(int i = firstFile; i < files\&.length; i++) {
+            // load the document (using the specified encoding if one was given)
+            File file = files[i];
+            filename=file\&.getName();
+            System\&.out\&.println('currentfile count is'+i);
+            if(file\&.isFile() && file\&.length()!=0)   
+            {
+                System\&.out\&.print('Processing document ' + file + '\&.\&.\&.');
+                doc = Factory\&.newDocument(getContents(file));
+
+
+
+
+                corpus\&.add(doc);
+                _annieController\&.execute();
+                corpus\&.clear();  
+                
+
+                AnnotationSet defaultAnnotSet = doc\&.getAnnotations();
+
+
+
+
+
+                AnnotationSet companytoCompany1 = defaultAnnotSet\&.get('companytoCompanyRelation1');
+
+
+                if(!companytoCompany1\&.isEmpty())
+                {toRDF(companytoCompany1,  1);}
+                AnnotationSet companytoCompany1a = defaultAnnotSet\&.get('companytoCompanyRelation1a');
+                if(!companytoCompany1a\&.isEmpty())
+                {toRDF(companytoCompany1a, 7);}
+                AnnotationSet companytoCompany2 = defaultAnnotSet\&.get('companytoCompanyRelation2');
+                if(!companytoCompany2\&.isEmpty())
+                {toRDF(companytoCompany2, 2);}
+
+
+                doc\&.cleanup();
+                if (doc!=null) Factory\&.deleteResource(doc);
+
+                System\&.gc();
+
+
+            }//endif
+
+            else{
+                System\&.out\&.print('Document ' + file + ' is empty! Will ignore and continue to next file!'); 
+            }
+        }//endfor
+
+
+
+        /** **************************CLEANUP************************************* */
+        
+        Factory\&.deleteResource(_annieController);
+        _annieController=null;
+        System\&.out\&.println('Processing Complete');
+        
+    }// execute
+.fi
+.SS "String HLTTutorial\&.getContents (FileaFile)"
+Depending on the performance of Gate we should maybe think about a hack
+.PP
+-big file: breaking into chunk of 1000 lines
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaFile\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line 420 of file HLTTutorial\&.java\&.
+.PP
+.nf
+                                          {
+        // \&.\&.\&.checks on aFile are elided
+        StringBuffer contents = new StringBuffer();
+
+        // declared here only to make visible to finally clause
+        BufferedReader input = null;
+        try {
+            // use buffering, reading one line at a time
+            // FileReader always assumes default encoding is OK!
+            input = new BufferedReader(new FileReader(aFile));
+            String line = null; // not declared within while loop
+            /*
+             * readLine is a bit quirky : it returns the content of a line MINUS
+             * the newline\&. it returns null only for the END of the stream\&. it
+             * returns an empty String if two newlines appear in a row\&.
+             */
+            while ((line = input\&.readLine()) != null) {
+                contents\&.append(line);
+                contents\&.append(System\&.getProperty('line\&.separator'));
+            }
+        } catch (FileNotFoundException ex) {
+            ex\&.printStackTrace();
+        } catch (IOException ex) {
+            ex\&.printStackTrace();
+        } finally {
+            try {
+                if (input != null) {
+                    // flush and close both 'input' and its underlying
+                    // FileReader
+                    input\&.close();
+                }
+            } catch (IOException ex) {
+                ex\&.printStackTrace();
+            }
+        }
+        return contents\&.toString();
+    }
+.fi
+.SS "static String HLTTutorial\&.getOrgNameSpace (Stringname)\fC [static]\fP, \fC [package]\fP"
+
+.PP
+Definition at line 372 of file HLTTutorial\&.java\&.
+.PP
+.nf
+                                              {
+
+
+        name = name\&.toLowerCase();
+
+        name = stripNonAlphanumeric(name);
+
+
+
+        return '<'+FID_DATA_ORG+ name+'>';
+
+    }
+.fi
+.SS "static String HLTTutorial\&.getPredNameSpace (Stringname)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 385 of file HLTTutorial\&.java\&.
+.PP
+.nf
+                                                       {
+
+        if (name\&.equals('ownerOfPassive'))
+        {name='ownerOf';}
+
+        name = name\&.toLowerCase();
+
+        name = stripNonAlphanumeric(name);
+
+        return '<'+NS+name+'>';
+
+    }
+.fi
+.SS "void HLTTutorial\&.initializeGate ()  throws GateException, MalformedURLException \fC [private]\fP"
+
+.PP
+Definition at line 70 of file HLTTutorial\&.java\&.
+.PP
+.nf
+                                                                              {
+
+        System\&.out\&.println('SYSENV: '+System\&.getenv('GATE_HOME'));
+
+        System\&.setProperty('gate\&.home', System\&.getenv('GATE_HOME'));
+        System\&.setProperty('gate\&.site\&.config', System\&.getProperty('gate\&.home')
+                + fileSeparator + 'gate\&.xml');
+        System\&.setProperty('gate\&.user\&.config', System\&.getProperty('gate\&.site\&.config'));
+
+        Gate\&.init();
+
+
+
+
+
+
+        // register plugin directories
+
+        Gate\&.getCreoleRegister()\&.registerDirectories(
+                new File(Gate\&.getGateHome()\&.toString() + fileSeparator
+                        + 'plugins' + fileSeparator + 'ANNIE')\&.toURL());
+        Gate\&.getCreoleRegister()\&.registerDirectories(
+                new File(Gate\&.getGateHome()\&.toString() + fileSeparator
+                        + 'plugins' + fileSeparator + 'Tools')\&.toURL());
+
+        //Gate\&.getCreoleRegister()\&.registerDirectories(
+        //  new File(Gate\&.getGateHome()\&.toString() + fileSeparator
+        //          + 'plugins' + fileSeparator + 'Jape_Compiler')\&.toURL());
+
+        _annieController = (SerialAnalyserController) Factory
+        \&.createResource('gate\&.creole\&.SerialAnalyserController', Factory
+                \&.newFeatureMap(), Factory\&.newFeatureMap(), 'ANNIE_'
+                + Gate\&.genSym());
+
+        FeatureMap params= Factory\&.newFeatureMap();
+        params\&.put('keepOriginalMarkupsAS',true);
+        ProcessingResource pr = (ProcessingResource) Factory\&.createResource('gate\&.creole\&.annotdelete\&.AnnotationDeletePR',
+                params);
+        _annieController\&.add(pr);
+        System\&.err\&.println('Loaded: Document Reset PR');
+
+
+        params = Factory\&.newFeatureMap();
+        pr = (ProcessingResource) Factory\&.createResource(
+                'gate\&.creole\&.tokeniser\&.SimpleTokeniser', params);
+
+        _annieController\&.add(pr);
+        System\&.err\&.println('Loaded: Tokeniser');
+
+        params = Factory\&.newFeatureMap();
+        pr = (ProcessingResource) Factory\&.createResource(
+                'gate\&.creole\&.splitter\&.SentenceSplitter', params);
+        _annieController\&.add(pr);
+        System\&.err\&.println('Loaded: Sentence Splitter');
+
+        params = Factory\&.newFeatureMap();
+        params\&.put('baseSentenceAnnotationType', 'Sentence');
+        params\&.put('baseTokenAnnotationType', 'Token');
+        params\&.put('outputAnnotationType', 'Token');
+        pr = (ProcessingResource) Factory\&.createResource(
+                'gate\&.creole\&.POSTagger', params);
+        _annieController\&.add(pr);
+        System\&.err\&.println('Loaded: POS tagger');
+
+
+
+
+        params = Factory\&.newFeatureMap();
+        URL u=new File('ie/deri/nlp/LanguageResources/gazetteers/mylists\&.def')\&.toURL();
+        params\&.put('listsURL', u);
+        DefaultGazetteer gazetteer = (DefaultGazetteer) Factory\&.createResource('gate\&.creole\&.gazetteer\&.DefaultGazetteer', params);
+        _annieController\&.add(gazetteer);
+
+        System\&.err\&.println('Loaded: Gazetteer');
+
+        u = new File('ie/deri/nlp/LanguageResources/JAPE/main\&.jape')\&.toURL();
+        params = Factory\&.newFeatureMap();
+        params\&.put('grammarURL', u);
+        Transducer relationExtractionTransducer = (Transducer)Factory
+        \&.createResource('gate\&.creole\&.Transducer',params);
+        _annieController\&.add(relationExtractionTransducer);
+
+        System\&.err\&.println('Loaded: Relation Extraction JAPE grammars, using JAPE Transducer');
+
+
+
+
+
+
+
+    }
+.fi
+.SS "static void HLTTutorial\&.main (Stringargs[])\fC [static]\fP"
+
+.PP
+Definition at line 164 of file HLTTutorial\&.java\&.
+.PP
+.nf
+                                           {
+
+        HLTTutorial _tutorial=new HLTTutorial();     
+        try{
+            //File contentDir = new File(args[0]);
+            File contentDir = new File('E:\\MS\\nlpworkspace\\GATE-Tutorial\\TestDocuments');
+            File[] list = contentDir\&.listFiles();
+            _tutorial\&.extractRelations(list);
+
+        } catch (Exception ex) {
+            ex\&.printStackTrace();
+        }
+
+    }
+.fi
+.SS "static String HLTTutorial\&.stripNonAlphanumeric (Strings)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 400 of file HLTTutorial\&.java\&.
+.PP
+.nf
+                                                         { 
+
+        return s\&.replaceAll('[^a-zA-Z0-9]', ''); 
+
+    }
+.fi
+.SS "void HLTTutorial\&.toRDF (AnnotationSetrelationAnnotationSet, intcode)\fC [private]\fP"
+Print to stdout the triple 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrelationAnnotationSet\fP 
+.br
+\fIcontent\fP 
+.RE
+.PP
+
+.PP
+Definition at line 257 of file HLTTutorial\&.java\&.
+.PP
+.nf
+                                                                      {        
+        //get the company
+
+        @SuppressWarnings('rawtypes')
+        Iterator annoIter = relationAnnotationSet\&.iterator();
+
+        //iterate over annotations
+        while(annoIter\&.hasNext()){
+            //get the annotation
+            Annotation a = (Annotation) annoIter\&.next();
+            //
+            //debug
+            //System\&.out\&.println(a\&.toString());
+
+            FeatureMap features = a\&.getFeatures();
+            //get subject
+            Annotation subjectAnn = (Annotation)features\&.get('Company1');
+            String subject='empty';
+            try {
+                subject = doc\&.getContent()\&.getContent(subjectAnn\&.getStartNode()\&.getOffset(),subjectAnn\&.getEndNode()\&.getOffset())\&.toString();
+            } catch (InvalidOffsetException e1) {
+                // TODO Auto-generated catch block
+                e1\&.printStackTrace();
+            }
+            Annotation predicateAnno=null;
+            String predicate='empty';
+            switch(code)
+            {
+            case 1:
+                predicateAnno = (Annotation)features\&.get('ownerOf');
+                if(predicateAnno!=null)
+                {predicate = predicateAnno\&.getType();}
+
+            case 2:
+                predicateAnno = (Annotation)features\&.get('customerOf');
+                if(predicateAnno!=null)
+                {predicate = predicateAnno\&.getType();}
+            case 3:
+                predicateAnno = (Annotation)features\&.get('supplierOf');        
+                if(predicateAnno!=null)
+                {predicate = predicateAnno\&.getType();}
+            case 4:
+                if(predicateAnno!=null)
+                {predicate = predicateAnno\&.getType();}
+                predicateAnno = (Annotation)features\&.get('lenderOf');
+            case 5:
+                predicateAnno = (Annotation)features\&.get('competitorOf');
+                if(predicateAnno!=null)
+                {predicate = predicateAnno\&.getType();}           
+            case 7:
+                predicateAnno = (Annotation)features\&.get('bidFor');
+                if(predicateAnno!=null)
+                {predicate = predicateAnno\&.getType();}           
+
+            }
+
+
+            //System\&.out\&.println('\n#'+predicateAnno+'\n');
+            //String predicate = predicateAnno\&.getType();
+
+            //get objectAnnoyation
+            Annotation objectAnn = (Annotation)features\&.get('Company2');
+            String object='empty';
+            try {
+                object = doc\&.getContent()\&.getContent(objectAnn\&.getStartNode()\&.getOffset(),objectAnn\&.getEndNode()\&.getOffset())\&.toString();
+            } catch (InvalidOffsetException e1) {
+                // TODO Auto-generated catch block
+                e1\&.printStackTrace();
+            }
+            if(subject\&.equals('empty')|| predicate\&.equals('empty')|| object\&.equals('empty'))
+            {
+                System\&.err\&.println('Null triples + '+subject+' '+predicate+' '+object );
+            }
+
+            if(subject\&.equals(object))
+            {
+                System\&.err\&.println('Duplicate triples + '+subject+' '+predicate+' '+object );
+            }
+            else
+            {   
+                String subjectID=getOrgNameSpace(subject);
+                String predicateID=getPredNameSpace(predicate);
+                String objectID=getOrgNameSpace(object);
+
+
+                if(subjectID\&.equals('empty'))
+
+                {System\&.err\&.println('Error:'+ subject);}
+
+                else if(objectID\&.equals('empty'))
+                {System\&.err\&.println(' Error could not find name:'+ object);}
+
+                else{
+
+                    System\&.out\&.print(subjectID+' '+predicateID+' '+objectID+' \&.'+newline);
+
+                    System\&.out\&.println('**********EndofTriple***********');
+
+                }   
+
+
+            }
+
+
+
+
+        }
+
+
+
+        
+
+
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "SerialAnalyserController HLTTutorial\&._annieController"
+
+.PP
+Definition at line 66 of file HLTTutorial\&.java\&.
+.SS "String HLTTutorial\&.context"
+
+.PP
+Definition at line 59 of file HLTTutorial\&.java\&.
+.SS "String HLTTutorial\&.contextData\fC [static]\fP"
+
+.PP
+Definition at line 61 of file HLTTutorial\&.java\&.
+.SS "final String HLTTutorial\&.contextID ='<http://sw\&.deri\&.org/2007/12/fin/sources/'\fC [static]\fP"
+
+.PP
+Definition at line 58 of file HLTTutorial\&.java\&.
+.SS "Document HLTTutorial\&.doc"
+
+.PP
+Definition at line 60 of file HLTTutorial\&.java\&.
+.SS "final String HLTTutorial\&.FID_DATA_ORG = 'http://sw\&.deri\&.org/2007/12/fin/inst/organisations/'\fC [static]\fP"
+
+.PP
+Definition at line 57 of file HLTTutorial\&.java\&.
+.SS "String HLTTutorial\&.filename\fC [static]\fP"
+
+.PP
+Definition at line 64 of file HLTTutorial\&.java\&.
+.SS "final String HLTTutorial\&.fileSeparator = System\&.getProperty('file\&.separator')\fC [private]\fP"
+
+.PP
+Definition at line 53 of file HLTTutorial\&.java\&.
+.SS "int HLTTutorial\&.firstFile = 0\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 63 of file HLTTutorial\&.java\&.
+.SS "boolean HLTTutorial\&.hasURIContext =false\fC [static]\fP"
+
+.PP
+Definition at line 62 of file HLTTutorial\&.java\&.
+.SS "String HLTTutorial\&.newline =('\\n')\fC [static]\fP"
+
+.PP
+Definition at line 54 of file HLTTutorial\&.java\&.
+.SS "final String HLTTutorial\&.NS = 'http://sw\&.deri\&.org/2007/12/fin/spec#'\fC [static]\fP"
+
+.PP
+Definition at line 56 of file HLTTutorial\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

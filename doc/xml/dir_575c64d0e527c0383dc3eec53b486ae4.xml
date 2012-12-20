@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="dir_575c64d0e527c0383dc3eec53b486ae4" kind="dir">
+    <compoundname>git/FileKommander/src/com</compoundname>
+    <innerdir refid="dir_56271d56c9271086a3ca3f76926cd83b">git/FileKommander/src/com/poly</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/com/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::views::panels::EmptyActionPanel</compoundname>
+    <basecompoundref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.panels.GenericPanel</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1af3e816340607acb519bf84c35b7f2d04" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.poly.nlp.filekommander.views.panels.EmptyActionPanel.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <initializer>= 1L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" line="7" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a2d7a56c5418f0e7077ead91183425dd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.poly.nlp.filekommander.views.panels.EmptyActionPanel.EmptyActionPanel</definition>
+        <argsstring>()</argsstring>
+        <name>EmptyActionPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create the panel. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" line="12" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" bodystart="12" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a02f8291cb8e79ed8d522baceb3126d61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.EmptyActionPanel.updatePanelData</definition>
+        <argsstring>(GenericActionModel actionModel)</argsstring>
+        <name>updatePanelData</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel_1aec26b991510d51ae77eb19bf6e7855f7">updatePanelData</reimplements>
+        <param>
+          <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+          <declname>actionModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the panel before action is taken using the given action model</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" line="16" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" bodystart="16" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a7cc048c6d5cad377fd871cec0747a6b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.EmptyActionPanel.updatePanelData</definition>
+        <argsstring>()</argsstring>
+        <name>updatePanelData</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel_1aa001c8d88eccb61c64ad0d3b0d296648">updatePanelData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the panel before action is taken </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" line="20" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" bodystart="20" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a3e1704fd567bd8b67851f6068035aad3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.EmptyActionPanel.updatePanelDataAfterAction</definition>
+        <argsstring>()</argsstring>
+        <name>updatePanelDataAfterAction</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel_1aacbeeee52c7652d69d95879cb713936d">updatePanelDataAfterAction</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>updates the create panel after the action is run </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" line="24" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a24d911a685434b89e383275ffeca0f69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.EmptyActionPanel.resetPanel</definition>
+        <argsstring>()</argsstring>
+        <name>resetPanel</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel_1ae70ee89c98b042bbe57cb45e9a79816f">resetPanel</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resets the panel to default state </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" line="28" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" bodystart="28" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="76">
+        <label>JPanel</label>
+      </node>
+      <node id="74">
+        <label>com.poly.nlp.filekommander.views.panels.EmptyActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="79">
+        <label>JPanel</label>
+      </node>
+      <node id="77">
+        <label>com.poly.nlp.filekommander.views.panels.EmptyActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" line="5" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/EmptyActionPanel.java" bodystart="5" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a2d7a56c5418f0e7077ead91183425dd7" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::EmptyActionPanel</scope><name>EmptyActionPanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a24d911a685434b89e383275ffeca0f69" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::EmptyActionPanel</scope><name>resetPanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1af3e816340607acb519bf84c35b7f2d04" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::EmptyActionPanel</scope><name>serialVersionUID</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a02f8291cb8e79ed8d522baceb3126d61" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::EmptyActionPanel</scope><name>updatePanelData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a7cc048c6d5cad377fd871cec0747a6b8" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::EmptyActionPanel</scope><name>updatePanelData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel_1a3e1704fd567bd8b67851f6068035aad3" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::EmptyActionPanel</scope><name>updatePanelDataAfterAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread}{\section{com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-G\-U\-I\-V2.\-Recognize\-Thread Class Reference}
+\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread}\index{com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-G\-U\-I\-V2.\-Recognize\-Thread@{com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-G\-U\-I\-V2.\-Recognize\-Thread}}
+}
+Inheritance diagram for com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-G\-U\-I\-V2.\-Recognize\-Thread\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread_a4be07d48ad5b312798cd85d092a56d5f}{run} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{L301}{301} of file \hyperlink{}{File\-Kommander\-G\-U\-I\-V2.\-java}.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread_a4be07d48ad5b312798cd85d092a56d5f}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-G\-U\-I\-V2\-::\-Recognize\-Thread@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-G\-U\-I\-V2\-::\-Recognize\-Thread}!run@{run}}
+\index{run@{run}!com::poly::nlp::filekommander::views::FileKommanderGUIV2::RecognizeThread@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-G\-U\-I\-V2\-::\-Recognize\-Thread}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-G\-U\-I\-V2.\-Recognize\-Thread.\-run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread_a4be07d48ad5b312798cd85d092a56d5f}
+
+
+Definition at line \hyperlink{L304}{304} of file \hyperlink{}{File\-Kommander\-G\-U\-I\-V2.\-java}.
+
+
+\begin{DoxyCode}
+                          \{
+            Recognizer recognizer = \textcolor{keyword}{new} Recognizer();
+            \textcolor{keywordflow}{try} \{
+                GoogleResponse googleResponse = recognizer
+                        .getRecognizedDataForWave(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_a151b6936eccece1d1245219a3106d70f}{file});
+                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_a43db9456e6f586e8a7d59c86dc90cdc8}{inputTextFld}.setText(googleResponse.getResponse());
+                System.out.println(\textcolor{stringliteral}{"Confidence :"}
+                        + googleResponse.getConfidence());
+                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_a302b96f014cd6749805537c5ba00fe7b}{micBtn}.setIcon(\textcolor{keyword}{new} ImageIcon(
+                        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_a909ed6c8cf9b61f338669efb018aebcc}{FileKommanderGUIV2}.class
+                                .getResource(\textcolor{stringliteral}{"
+      /com/poly/nlp/filekommander/views/icon/mic.png"})));
+                \textcolor{comment}{// confidence.setText(googleResponse.getConfidence());}
+            \} \textcolor{keywordflow}{catch} (Exception ex) \{
+                ex.printStackTrace();
+            \}
+        \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+git/\-File\-Kommander/src/com/poly/nlp/filekommander/views/\hyperlink{_file_kommander_g_u_i_v2_8java}{File\-Kommander\-G\-U\-I\-V2.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::views::models::RenameModel</compoundname>
+    <basecompoundref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.models.GenericActionModel</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a39e62bba788d1742511a0cc6bed6f9ca" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.poly.nlp.filekommander.views.models.RenameModel.isModelRun</definition>
+        <argsstring></argsstring>
+        <name>isModelRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="11" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1af8d2e53c35dede94551d1f5a2564b5df" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.RenameModel.oldFileName</definition>
+        <argsstring></argsstring>
+        <name>oldFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="12" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a36edac739e8a22593db90d3fa324694f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.RenameModel.newFileName</definition>
+        <argsstring></argsstring>
+        <name>newFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="13" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a3dc034a375694317447630ef30f51d89" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.RenameModel.errorMessage</definition>
+        <argsstring></argsstring>
+        <name>errorMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="14" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a0eee3a0c575de1b43577b438bf3b83e2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int com.poly.nlp.filekommander.views.models.RenameModel.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="15" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1aea5c975460ff780bc9aaaa5ee5041dcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.poly.nlp.filekommander.views.models.RenameModel.RenameModel</definition>
+        <argsstring>()</argsstring>
+        <name>RenameModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an empty model </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="20" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="20" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a06cf62ffb83238b41dfd4d1df3e95943" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.poly.nlp.filekommander.views.models.RenameModel.isModelRun</definition>
+        <argsstring>()</argsstring>
+        <name>isModelRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the isModelRun </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="30" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a9691de88be50d986edec0d0c54273329" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.RenameModel.setModelRun</definition>
+        <argsstring>(boolean isModelRun)</argsstring>
+        <name>setModelRun</name>
+        <param>
+          <type>boolean</type>
+          <declname>isModelRun</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isModelRun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the isModelRun to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="38" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a5be9f73a2ddace081d26ba159bb1c415" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.RenameModel.getOldFileName</definition>
+        <argsstring>()</argsstring>
+        <name>getOldFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the oldFileName </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="45" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a7c6c7cb4dc19244aee018bf7df2364bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.RenameModel.setOldFileName</definition>
+        <argsstring>(String oldFileName)</argsstring>
+        <name>setOldFileName</name>
+        <param>
+          <type>String</type>
+          <declname>oldFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>oldFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the oldFileName to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="53" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1aa95c21414668c1e1cc9558f6b319ad0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.RenameModel.getNewFileName</definition>
+        <argsstring>()</argsstring>
+        <name>getNewFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the newFileName </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="60" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a698f16a4a634954a6c445d74e0ca674a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.RenameModel.setNewFileName</definition>
+        <argsstring>(String newFileName)</argsstring>
+        <name>setNewFileName</name>
+        <param>
+          <type>String</type>
+          <declname>newFileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the newFileName to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="68" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a65538416cd95e769db9b5a99e08245b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.RenameModel.getErrorMessage</definition>
+        <argsstring>()</argsstring>
+        <name>getErrorMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the errorMessage </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="75" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a42b436d3ba343ebcb10b71da9ab7df2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.RenameModel.setErrorMessage</definition>
+        <argsstring>(String errorMessage)</argsstring>
+        <name>setErrorMessage</name>
+        <param>
+          <type>String</type>
+          <declname>errorMessage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>errorMessage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the errorMessage to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="83" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a16fd29d812d927dd77e00864a8acf111" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.poly.nlp.filekommander.views.models.RenameModel.getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the type </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="90" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1ac338a4eddf57ed8bfc7e158ec24de468" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.RenameModel.setType</definition>
+        <argsstring>(int type)</argsstring>
+        <name>setType</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="97" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="97" bodyend="99"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Model to hold information about create action .</para><para><simplesect kind="author"><para>jake </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="284">
+        <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
+        <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
+      </node>
+      <node id="283">
+        <label>com.poly.nlp.filekommander.views.models.RenameModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="286">
+        <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
+        <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
+      </node>
+      <node id="285">
+        <label>com.poly.nlp.filekommander.views.models.RenameModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model"/>
+        <childnode refid="286" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="9" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="9" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a3dc034a375694317447630ef30f51d89" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>errorMessage</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a65538416cd95e769db9b5a99e08245b0" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>getErrorMessage</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1aa95c21414668c1e1cc9558f6b319ad0b" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>getNewFileName</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a5be9f73a2ddace081d26ba159bb1c415" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>getOldFileName</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a16fd29d812d927dd77e00864a8acf111" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>getType</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a39e62bba788d1742511a0cc6bed6f9ca" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>isModelRun</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a06cf62ffb83238b41dfd4d1df3e95943" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>isModelRun</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a36edac739e8a22593db90d3fa324694f" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>newFileName</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1af8d2e53c35dede94551d1f5a2564b5df" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>oldFileName</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1aea5c975460ff780bc9aaaa5ee5041dcf" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>RenameModel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a42b436d3ba343ebcb10b71da9ab7df2a" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>setErrorMessage</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a9691de88be50d986edec0d0c54273329" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>setModelRun</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a698f16a4a634954a6c445d74e0ca674a" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>setNewFileName</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a7c6c7cb4dc19244aee018bf7df2364bc" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>setOldFileName</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1ac338a4eddf57ed8bfc7e158ec24de468" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>setType</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a0eee3a0c575de1b43577b438bf3b83e2" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

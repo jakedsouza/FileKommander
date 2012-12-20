@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels" kind="namespace">
+    <compoundname>com::poly::nlp::filekommander::views::panels</compoundname>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel" prot="public">com::poly::nlp::filekommander::views::panels::AbstractFileFolderPanel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel" prot="public">com::poly::nlp::filekommander::views::panels::AbstractMessagePanel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel" prot="public">com::poly::nlp::filekommander::views::panels::CreateActionPanel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel" prot="public">com::poly::nlp::filekommander::views::panels::DeleteActionPanel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel" prot="public">com::poly::nlp::filekommander::views::panels::EmptyActionPanel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel" prot="public">com::poly::nlp::filekommander::views::panels::GenericPanel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel" prot="public">com::poly::nlp::filekommander::views::panels::OpenActionPanel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_phrase_operation_action_panel" prot="public">com::poly::nlp::filekommander::views::panels::PhraseOperationActionPanel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel" prot="public">com::poly::nlp::filekommander::views::panels::RenameActionPanel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel" prot="public">com::poly::nlp::filekommander::views::panels::StatsActionPanel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="1"/>
+  </compounddef>
+</doxygen>

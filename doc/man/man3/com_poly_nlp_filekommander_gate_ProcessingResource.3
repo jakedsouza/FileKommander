@@ -1,0 +1,153 @@
+.TH "com.poly.nlp.filekommander.gate.ProcessingResource" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.gate.ProcessingResource \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProcessingResource\fP ()"
+.br
+.ti -1c
+.RI "\fBProcessingResource\fP (String \fBprClass\fP)"
+.br
+.ti -1c
+.RI "void \fBaddParam\fP (String key, String value)"
+.br
+.ti -1c
+.RI "void \fBremoveParam\fP (String key)"
+.br
+.ti -1c
+.RI "String \fBgetPrClass\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPrClass\fP (String \fBprClass\fP)"
+.br
+.ti -1c
+.RI "Map< String, String > \fBgetParams\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetParams\fP (Map< String, String > \fBparams\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "String \fBprClass\fP"
+.br
+.ti -1c
+.RI "Map< String, String > \fBparams\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBAuthor:\fP
+.RS 4
+neha , jake 
+.RE
+.PP
+
+.PP
+Definition at line 13 of file ProcessingResource\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.gate\&.ProcessingResource\&.ProcessingResource ()"
+
+.PP
+Definition at line 18 of file ProcessingResource\&.java\&.
+.PP
+.nf
+{}
+.fi
+.SS "com\&.poly\&.nlp\&.filekommander\&.gate\&.ProcessingResource\&.ProcessingResource (StringprClass)"
+
+.PP
+Definition at line 20 of file ProcessingResource\&.java\&.
+.PP
+.nf
+                                              {
+        this\&.setPrClass(prClass); 
+        this\&.params = new HashMap<String, String>();
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void com\&.poly\&.nlp\&.filekommander\&.gate\&.ProcessingResource\&.addParam (Stringkey, Stringvalue)"
+
+.PP
+Definition at line 25 of file ProcessingResource\&.java\&.
+.PP
+.nf
+                                                   {
+        this\&.params\&.put(key, value);      
+    }
+.fi
+.SS "Map<String, String> com\&.poly\&.nlp\&.filekommander\&.gate\&.ProcessingResource\&.getParams ()"
+
+.PP
+Definition at line 41 of file ProcessingResource\&.java\&.
+.PP
+.nf
+                                           {
+        return params;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.gate\&.ProcessingResource\&.getPrClass ()"
+
+.PP
+Definition at line 33 of file ProcessingResource\&.java\&.
+.PP
+.nf
+                               {
+        return prClass;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.gate\&.ProcessingResource\&.removeParam (Stringkey)"
+
+.PP
+Definition at line 29 of file ProcessingResource\&.java\&.
+.PP
+.nf
+                                       {
+        this\&.params\&.remove(key);      
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.gate\&.ProcessingResource\&.setParams (Map< String, String >params)"
+
+.PP
+Definition at line 45 of file ProcessingResource\&.java\&.
+.PP
+.nf
+                                                      {
+        this\&.params = params;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.gate\&.ProcessingResource\&.setPrClass (StringprClass)"
+
+.PP
+Definition at line 37 of file ProcessingResource\&.java\&.
+.PP
+.nf
+                                           {
+        this\&.prClass = prClass;
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "Map<String, String> com\&.poly\&.nlp\&.filekommander\&.gate\&.ProcessingResource\&.params"
+
+.PP
+Definition at line 16 of file ProcessingResource\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.gate\&.ProcessingResource\&.prClass"
+
+.PP
+Definition at line 15 of file ProcessingResource\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

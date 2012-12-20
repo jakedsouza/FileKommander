@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="dir_f5b33acb4b3756d1c6551353e4e31111" kind="dir">
+    <compoundname>git/FileKommander/src/com/poly/nlp/filekommander/views</compoundname>
+    <innerdir refid="dir_9c98486dfc064b2bdb8ede8f73eee68d">git/FileKommander/src/com/poly/nlp/filekommander/views/models</innerdir>
+    <innerdir refid="dir_f411553e038c0eb63137015bc7c66b71">git/FileKommander/src/com/poly/nlp/filekommander/views/panels</innerdir>
+    <innerfile refid="_about_file_kommander_8java">AboutFileKommander.java</innerfile>
+    <innerfile refid="_file_kommander_g_u_i_8java">FileKommanderGUI.java</innerfile>
+    <innerfile refid="_file_kommander_g_u_i_v2_8java">FileKommanderGUIV2.java</innerfile>
+    <innerfile refid="_file_kommander_menu_8java">FileKommanderMenu.java</innerfile>
+    <innerfile refid="_options_file_kommander_8java">OptionsFileKommander.java</innerfile>
+    <innerfile refid="_swing_log_appender_8java">SwingLogAppender.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/"/>
+  </compounddef>
+</doxygen>

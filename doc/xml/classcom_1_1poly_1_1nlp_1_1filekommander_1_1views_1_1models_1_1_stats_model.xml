@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::views::models::StatsModel</compoundname>
+    <basecompoundref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.models.GenericActionModel</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a3ac8d8b82975c5631fc65f47121cbfe7" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.poly.nlp.filekommander.views.models.StatsModel.isModelRun</definition>
+        <argsstring></argsstring>
+        <name>isModelRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="15" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a7f136c002fe9865658d95f070a47fc10" prot="private" static="no" mutable="no">
+        <type>HashMap&lt; String, String &gt;</type>
+        <definition>HashMap&lt;String, String&gt; com.poly.nlp.filekommander.views.models.StatsModel.fileListData</definition>
+        <argsstring></argsstring>
+        <name>fileListData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="18" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1af8cefc08e228065ab54db3f1f9db7b9e" prot="private" static="no" mutable="no">
+        <type>HashMap&lt; String, String &gt;</type>
+        <definition>HashMap&lt;String, String&gt; com.poly.nlp.filekommander.views.models.StatsModel.folderListData</definition>
+        <argsstring></argsstring>
+        <name>folderListData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="20" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1aa8aff56dba5f42c2f1f1b0452a461d0a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int com.poly.nlp.filekommander.views.models.StatsModel.statsType</definition>
+        <argsstring></argsstring>
+        <name>statsType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="21" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1ad9f68ae44bc497146b2a16739d8e813a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.poly.nlp.filekommander.views.models.StatsModel.StatsModel</definition>
+        <argsstring>()</argsstring>
+        <name>StatsModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an empty model </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="26" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a8a94771595dee19a6f1a74ff2f7483ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.StatsModel.add</definition>
+        <argsstring>(String name, int type)</argsstring>
+        <name>add</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new file/folder to the model <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="37" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="37" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1abf285e0acda3ac3a582abda3bbf12987" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HashMap&lt; String, String &gt;</type>
+        <definition>HashMap&lt;String, String&gt; com.poly.nlp.filekommander.views.models.StatsModel.getFileListData</definition>
+        <argsstring>()</argsstring>
+        <name>getFileListData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the fileListData </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="48" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a1d12652c69c4ee9be652f41398f40dfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.StatsModel.setFileListData</definition>
+        <argsstring>(HashMap&lt; String, String &gt; fileListData)</argsstring>
+        <name>setFileListData</name>
+        <param>
+          <type>HashMap&lt; String, String &gt;</type>
+          <declname>fileListData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileListData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fileListData to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="56" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1ae617bfa56a1ba5572ecb0740e78b75ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HashMap&lt; String, String &gt;</type>
+        <definition>HashMap&lt;String, String&gt; com.poly.nlp.filekommander.views.models.StatsModel.getFolderListData</definition>
+        <argsstring>()</argsstring>
+        <name>getFolderListData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the folderListData </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="63" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a3bbe0d0970f83fde99a8b147d4f05194" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.StatsModel.setFolderListData</definition>
+        <argsstring>(HashMap&lt; String, String &gt; folderListData)</argsstring>
+        <name>setFolderListData</name>
+        <param>
+          <type>HashMap&lt; String, String &gt;</type>
+          <declname>folderListData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>folderListData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the folderListData to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="71" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1ace0a90bc15597c72e7280488a730f05a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.poly.nlp.filekommander.views.models.StatsModel.isModelRun</definition>
+        <argsstring>()</argsstring>
+        <name>isModelRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the isModelRun </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="78" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a4cad9a84d64d9fab3c3781f940a2bb99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.StatsModel.setModelRun</definition>
+        <argsstring>(boolean isModelRun)</argsstring>
+        <name>setModelRun</name>
+        <param>
+          <type>boolean</type>
+          <declname>isModelRun</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isModelRun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the isModelRun to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="86" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a6822c296eded108edbe0c34a71c3c97c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int com.poly.nlp.filekommander.views.models.StatsModel.getStatsType</definition>
+        <argsstring>()</argsstring>
+        <name>getStatsType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="90" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a43a6e42897e03293403ffd1eaf9bad20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.StatsModel.setStatsType</definition>
+        <argsstring>(int statsType)</argsstring>
+        <name>setStatsType</name>
+        <param>
+          <type>int</type>
+          <declname>statsType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="94" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="94" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Model to hold information about stats action .</para><para><simplesect kind="author"><para>jake , neha </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="302">
+        <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
+        <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
+      </node>
+      <node id="301">
+        <label>com.poly.nlp.filekommander.views.models.StatsModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="305">
+        <label>HashMap&lt; String, String &gt;</label>
+      </node>
+      <node id="304">
+        <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
+        <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
+      </node>
+      <node id="303">
+        <label>com.poly.nlp.filekommander.views.models.StatsModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model"/>
+        <childnode refid="304" relation="public-inheritance">
+        </childnode>
+        <childnode refid="305" relation="usage">
+          <edgelabel>fileListData</edgelabel>
+          <edgelabel>folderListData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" line="13" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/StatsModel.java" bodystart="13" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a8a94771595dee19a6f1a74ff2f7483ea" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>add</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a7f136c002fe9865658d95f070a47fc10" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>fileListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1af8cefc08e228065ab54db3f1f9db7b9e" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>folderListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1abf285e0acda3ac3a582abda3bbf12987" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>getFileListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1ae617bfa56a1ba5572ecb0740e78b75ad" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>getFolderListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a6822c296eded108edbe0c34a71c3c97c" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>getStatsType</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a3ac8d8b82975c5631fc65f47121cbfe7" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>isModelRun</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1ace0a90bc15597c72e7280488a730f05a" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>isModelRun</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a1d12652c69c4ee9be652f41398f40dfc" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>setFileListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a3bbe0d0970f83fde99a8b147d4f05194" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>setFolderListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a4cad9a84d64d9fab3c3781f940a2bb99" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>setModelRun</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1a43a6e42897e03293403ffd1eaf9bad20" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>setStatsType</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1ad9f68ae44bc497146b2a16739d8e813a" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>StatsModel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_1aa8aff56dba5f42c2f1f1b0452a461d0a" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::StatsModel</scope><name>statsType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

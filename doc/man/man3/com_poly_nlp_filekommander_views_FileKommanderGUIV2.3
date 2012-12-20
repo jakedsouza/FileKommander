@@ -1,0 +1,582 @@
+.TH "com.poly.nlp.filekommander.views.FileKommanderGUIV2" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.FileKommanderGUIV2 \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBRecognizeThread\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFileKommanderGUIV2\fP ()"
+.br
+.ti -1c
+.RI "void \fBmicAction\fP (ActionEvent e)"
+.br
+.ti -1c
+.RI "void \fBupdateInformation\fP (\fBGenericActionModel\fP actionModel)"
+.br
+.ti -1c
+.RI "void \fBshowLayout\fP (String layoutName)"
+.br
+.ti -1c
+.RI "void \fBdisplayErrorMessage\fP (String message)"
+.br
+.ti -1c
+.RI "void \fBclearErrorMessage\fP ()"
+.br
+.ti -1c
+.RI "void \fBreset\fP ()"
+.br
+.ti -1c
+.RI "synchronized JProgressBar \fBgetProgressBar\fP ()"
+.br
+.ti -1c
+.RI "JTextField \fBgetInputTextFld\fP ()"
+.br
+.ti -1c
+.RI "JButton \fBgetRunBtn\fP ()"
+.br
+.ti -1c
+.RI "JFrame \fBgetFrmFileKommander\fP ()"
+.br
+.ti -1c
+.RI "JPanel \fBgetInformatinDisplayPanel\fP ()"
+.br
+.ti -1c
+.RI "\fBCreateActionPanel\fP \fBgetCreateActionPanel\fP ()"
+.br
+.ti -1c
+.RI "\fBDeleteActionPanel\fP \fBgetDeleteActionPanel\fP ()"
+.br
+.ti -1c
+.RI "JToggleButton \fBgetMicBtn\fP ()"
+.br
+.ti -1c
+.RI "JLabel \fBgetErrorMessageLabel\fP ()"
+.br
+.ti -1c
+.RI "\fBRenameActionPanel\fP \fBgetRenameActionPanel\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "Microphone \fBmicrophone\fP = new Microphone(AudioFileFormat\&.Type\&.WAVE)"
+.br
+.ti -1c
+.RI "String \fBfile\fP = 'tmp'"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitialize\fP ()"
+.br
+.ti -1c
+.RI "void \fBrecordSound\fP ()"
+.br
+.ti -1c
+.RI "void \fBrecognizeSound\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "JFrame \fBfrmFileKommander\fP"
+.br
+.ti -1c
+.RI "JTextField \fBinputTextFld\fP"
+.br
+.ti -1c
+.RI "JProgressBar \fBprogressBar\fP"
+.br
+.ti -1c
+.RI "JButton \fBrunBtn\fP"
+.br
+.ti -1c
+.RI "JPanel \fBinformatinDisplayPanel\fP"
+.br
+.ti -1c
+.RI "String \fBCREATEPANEL\fP = 'CREATEPANEL'"
+.br
+.ti -1c
+.RI "String \fBDELETEPANEL\fP = 'DELETEPANEL'"
+.br
+.ti -1c
+.RI "String \fBRENAMEPANEL\fP = 'RENAMEPANEL'"
+.br
+.ti -1c
+.RI "String \fBSTATSPANEL\fP = 'STATSPANEL'"
+.br
+.ti -1c
+.RI "String \fBEMPTYPANEL\fP = 'EMPTYPANEL'"
+.br
+.ti -1c
+.RI "\fBCreateActionPanel\fP \fBcreateActionPanel\fP"
+.br
+.ti -1c
+.RI "\fBDeleteActionPanel\fP \fBdeleteActionPanel\fP"
+.br
+.ti -1c
+.RI "\fBRenameActionPanel\fP \fBrenameActionPanel\fP"
+.br
+.ti -1c
+.RI "\fBStatsActionPanel\fP \fBstatsActionPanel\fP"
+.br
+.ti -1c
+.RI "\fBEmptyActionPanel\fP \fBemptyActionPanel\fP"
+.br
+.ti -1c
+.RI "JToggleButton \fBmicBtn\fP"
+.br
+.ti -1c
+.RI "\fBFileKommanderMenu\fP \fBmenuBar\fP"
+.br
+.ti -1c
+.RI "JLabel \fBerrorMessageLabel\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 43 of file FileKommanderGUIV2\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.FileKommanderGUIV2 ()"
+Launch the application\&. Create the application\&. 
+.PP
+Definition at line 90 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                {
+        initialize();
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.clearErrorMessage ()"
+
+.PP
+Definition at line 260 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                    {
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.displayErrorMessage (Stringmessage)"
+
+.PP
+Definition at line 255 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                                    {
+        this\&.errorMessageLabel\&.setText(message);
+        System\&.out\&.println(message);
+    }
+.fi
+.SS "\fBCreateActionPanel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.getCreateActionPanel ()"
+
+.PP
+Definition at line 289 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                                    {
+        return createActionPanel;
+    }
+.fi
+.SS "\fBDeleteActionPanel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.getDeleteActionPanel ()"
+
+.PP
+Definition at line 293 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                                    {
+        return deleteActionPanel;
+    }
+.fi
+.SS "JLabel com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.getErrorMessageLabel ()"
+
+.PP
+Definition at line 322 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                         {
+        return errorMessageLabel;
+    }
+.fi
+.SS "JFrame com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.getFrmFileKommander ()"
+
+.PP
+Definition at line 281 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                        {
+        return frmFileKommander;
+    }
+.fi
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.getInformatinDisplayPanel ()"
+
+.PP
+Definition at line 285 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                              {
+        return informatinDisplayPanel;
+    }
+.fi
+.SS "JTextField com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.getInputTextFld ()"
+
+.PP
+Definition at line 273 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                        {
+        return inputTextFld;
+    }
+.fi
+.SS "JToggleButton com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.getMicBtn ()"
+
+.PP
+Definition at line 297 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                     {
+        return micBtn;
+    }
+.fi
+.SS "synchronized JProgressBar com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.getProgressBar ()"
+
+.PP
+Definition at line 269 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                                      {
+        return progressBar;
+    }
+.fi
+.SS "\fBRenameActionPanel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.getRenameActionPanel ()"
+
+.PP
+Definition at line 325 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                                    {
+        return renameActionPanel;
+    }
+.fi
+.SS "JButton com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.getRunBtn ()"
+
+.PP
+Definition at line 277 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                               {
+        return runBtn;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.initialize ()\fC [private]\fP"
+Initialize the contents of the frame\&. 
+.PP
+Definition at line 97 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                              {
+        frmFileKommander = new JFrame();
+        frmFileKommander\&.setTitle('File Kommander');
+        frmFileKommander\&.setResizable(false);
+        frmFileKommander\&.setBounds(100, 100, 644, 467);
+        frmFileKommander\&.setDefaultCloseOperation(JFrame\&.EXIT_ON_CLOSE);
+        frmFileKommander\&.getContentPane()\&.setLayout(null);
+
+        inputTextFld = new JTextField();
+        inputTextFld\&.setFont(new Font('Tahoma', Font\&.PLAIN, 16));
+        inputTextFld\&.setBounds(6, 34, 500, 44);
+        inputTextFld\&.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                int key = e\&.getKeyCode();
+                if (key == java\&.awt\&.event\&.KeyEvent\&.VK_ENTER) {
+                    FileKommanderRun\&.analyseTextInput();
+                }
+
+            }
+        });
+        inputTextFld\&.setColumns(10);
+        frmFileKommander\&.getContentPane()\&.add(inputTextFld);
+
+        runBtn = new JButton('');
+        runBtn\&.setIcon(new ImageIcon(FileKommanderGUIV2\&.class
+                \&.getResource('/com/poly/nlp/filekommander/views/icon/run\&.png')));
+        runBtn\&.setBounds(516, 34, 51, 44);
+        runBtn\&.setFocusPainted(false);
+        runBtn\&.setMargin(new Insets(0, 0, 0, 0));
+        runBtn\&.setContentAreaFilled(false);
+        runBtn\&.setBorderPainted(true);
+        runBtn\&.setOpaque(true);
+        runBtn\&.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                FileKommanderRun\&.analyseTextInput();
+            }
+        });
+        frmFileKommander\&.getContentPane()\&.add(runBtn);
+
+        progressBar = new JProgressBar();
+        progressBar\&.setVisible(false);
+        progressBar\&.setValue(0);
+        progressBar\&.setBounds(6, 6, 622, 10);
+        frmFileKommander\&.getContentPane()\&.add(progressBar);
+        BorderFactory\&.createLineBorder(Color\&.BLUE);
+
+        informatinDisplayPanel = new JPanel();
+        informatinDisplayPanel\&.setBounds(6, 82, 618, 242);
+        frmFileKommander\&.getContentPane()\&.add(informatinDisplayPanel);
+        informatinDisplayPanel\&.setLayout(new CardLayout(0, 0));
+
+        emptyActionPanel = new EmptyActionPanel();
+        informatinDisplayPanel\&.add(emptyActionPanel, EMPTYPANEL);
+
+        createActionPanel = new CreateActionPanel();
+        informatinDisplayPanel\&.add(createActionPanel, CREATEPANEL);
+
+        deleteActionPanel = new DeleteActionPanel();
+        informatinDisplayPanel\&.add(deleteActionPanel, DELETEPANEL);
+
+        renameActionPanel = new RenameActionPanel();
+        informatinDisplayPanel\&.add(renameActionPanel, RENAMEPANEL);
+
+        statsActionPanel = new StatsActionPanel();
+        informatinDisplayPanel\&.add(statsActionPanel, STATSPANEL);
+
+        CardLayout layout = (CardLayout) informatinDisplayPanel\&.getLayout();
+        layout\&.show(informatinDisplayPanel, EMPTYPANEL);
+
+        micBtn = new JToggleButton('');
+        micBtn\&.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                micAction(e);
+            }
+        });
+        micBtn\&.setIcon(new ImageIcon(FileKommanderGUIV2\&.class
+                \&.getResource('/com/poly/nlp/filekommander/views/icon/mic\&.png')));
+        // micBtn\&.setBounds(516, 11, 51, 44);
+        micBtn\&.setFocusPainted(false);
+        micBtn\&.setMargin(new Insets(0, 0, 0, 0));
+        micBtn\&.setContentAreaFilled(false);
+        micBtn\&.setBorderPainted(true);
+        micBtn\&.setOpaque(true);
+        micBtn\&.setBounds(577, 34, 51, 44);
+        frmFileKommander\&.getContentPane()\&.add(micBtn);
+        
+        JPanel errorMessagePanel = new JPanel();
+        errorMessagePanel\&.setBounds(6, 343, 622, 67);
+        frmFileKommander\&.getContentPane()\&.add(errorMessagePanel);
+        errorMessagePanel\&.setLayout(null);
+        
+        errorMessageLabel = new JLabel('');
+        errorMessageLabel\&.setForeground(Color\&.RED);
+        errorMessageLabel\&.setBounds(6, 6, 610, 55);
+        errorMessagePanel\&.add(errorMessageLabel);
+
+        menuBar = new FileKommanderMenu();
+        frmFileKommander\&.setJMenuBar(menuBar);
+
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.micAction (ActionEvente)"
+
+.PP
+Definition at line 200 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                         {
+        if (micBtn\&.isSelected()) {
+            recordSound();
+        } else {
+            recognizeSound();
+        }
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.recognizeSound ()\fC [private]\fP"
+
+.PP
+Definition at line 219 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                  {
+        microphone\&.close();
+        micBtn\&.setIcon(new ImageIcon(
+                FileKommanderGUIV2\&.class
+                        \&.getResource('/com/poly/nlp/filekommander/views/icon/mic_waiting\&.png')));
+        new Thread(new RecognizeThread())\&.start();
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.recordSound ()\fC [private]\fP"
+
+.PP
+Definition at line 208 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                               {
+        try {
+            microphone\&.captureAudioToFile(file);
+            micBtn\&.setIcon(new ImageIcon(
+                    FileKommanderGUIV2\&.class
+                            \&.getResource('/com/poly/nlp/filekommander/views/icon/mic_recording\&.png')));
+        } catch (Exception ex) {
+            ex\&.printStackTrace();
+        }
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.reset ()"
+
+.PP
+Definition at line 263 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                        {
+        inputTextFld\&.setText('');
+        errorMessageLabel\&.setText('');
+        showLayout(EMPTYPANEL);
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.showLayout (StringlayoutName)"
+Displays a specific layout in the information panel
+.PP
+\fBParameters:\fP
+.RS 4
+\fIlayoutName\fP 
+.RE
+.PP
+
+.PP
+Definition at line 250 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                              {
+        CardLayout layout = (CardLayout) informatinDisplayPanel\&.getLayout();
+        layout\&.show(informatinDisplayPanel, layoutName);
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.updateInformation (\fBGenericActionModel\fPactionModel)"
+
+.PP
+Definition at line 227 of file FileKommanderGUIV2\&.java\&.
+.PP
+.nf
+                                                                  {
+        CardLayout layout = (CardLayout) informatinDisplayPanel\&.getLayout();
+        if (actionModel instanceof CreateModel) {
+            createActionPanel\&.updatePanelData((CreateModel) actionModel);
+            showLayout(CREATEPANEL);
+        } else if (actionModel instanceof DeleteModel) {
+            deleteActionPanel\&.updatePanelData((DeleteModel) actionModel);
+            showLayout(DELETEPANEL);
+        }else if (actionModel instanceof RenameModel) {
+            renameActionPanel\&.updatePanelData((RenameModel) actionModel);
+            showLayout(RENAMEPANEL);
+        }else if (actionModel instanceof StatsModel) {
+            statsActionPanel\&.updatePanelData((StatsModel) actionModel);
+            layout\&.show(informatinDisplayPanel, STATSPANEL);
+        }
+        informatinDisplayPanel\&.repaint();
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCreateActionPanel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.createActionPanel\fC [private]\fP"
+
+.PP
+Definition at line 58 of file FileKommanderGUIV2\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.CREATEPANEL = 'CREATEPANEL'\fC [private]\fP"
+
+.PP
+Definition at line 51 of file FileKommanderGUIV2\&.java\&.
+.SS "\fBDeleteActionPanel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.deleteActionPanel\fC [private]\fP"
+
+.PP
+Definition at line 59 of file FileKommanderGUIV2\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.DELETEPANEL = 'DELETEPANEL'\fC [private]\fP"
+
+.PP
+Definition at line 52 of file FileKommanderGUIV2\&.java\&.
+.SS "\fBEmptyActionPanel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.emptyActionPanel\fC [private]\fP"
+
+.PP
+Definition at line 62 of file FileKommanderGUIV2\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.EMPTYPANEL = 'EMPTYPANEL'\fC [private]\fP"
+
+.PP
+Definition at line 57 of file FileKommanderGUIV2\&.java\&.
+.SS "JLabel com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.errorMessageLabel\fC [private]\fP"
+
+.PP
+Definition at line 68 of file FileKommanderGUIV2\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.file = 'tmp'\fC [protected]\fP"
+
+.PP
+Definition at line 66 of file FileKommanderGUIV2\&.java\&.
+.SS "JFrame com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.frmFileKommander\fC [private]\fP"
+
+.PP
+Definition at line 45 of file FileKommanderGUIV2\&.java\&.
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.informatinDisplayPanel\fC [private]\fP"
+
+.PP
+Definition at line 49 of file FileKommanderGUIV2\&.java\&.
+.SS "JTextField com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.inputTextFld\fC [private]\fP"
+
+.PP
+Definition at line 46 of file FileKommanderGUIV2\&.java\&.
+.SS "\fBFileKommanderMenu\fP com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.menuBar\fC [private]\fP"
+
+.PP
+Definition at line 67 of file FileKommanderGUIV2\&.java\&.
+.SS "JToggleButton com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.micBtn\fC [private]\fP"
+
+.PP
+Definition at line 63 of file FileKommanderGUIV2\&.java\&.
+.SS "Microphone com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.microphone = new Microphone(AudioFileFormat\&.Type\&.WAVE)\fC [protected]\fP"
+
+.PP
+Definition at line 65 of file FileKommanderGUIV2\&.java\&.
+.SS "JProgressBar com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.progressBar\fC [private]\fP"
+
+.PP
+Definition at line 47 of file FileKommanderGUIV2\&.java\&.
+.SS "\fBRenameActionPanel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.renameActionPanel\fC [private]\fP"
+
+.PP
+Definition at line 60 of file FileKommanderGUIV2\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.RENAMEPANEL = 'RENAMEPANEL'\fC [private]\fP"
+
+.PP
+Definition at line 53 of file FileKommanderGUIV2\&.java\&.
+.SS "JButton com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.runBtn\fC [private]\fP"
+
+.PP
+Definition at line 48 of file FileKommanderGUIV2\&.java\&.
+.SS "\fBStatsActionPanel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.statsActionPanel\fC [private]\fP"
+
+.PP
+Definition at line 61 of file FileKommanderGUIV2\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderGUIV2\&.STATSPANEL = 'STATSPANEL'\fC [private]\fP"
+
+.PP
+Definition at line 54 of file FileKommanderGUIV2\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

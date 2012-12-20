@@ -1,0 +1,118 @@
+\hypertarget{class_poly_main}{\section{Poly\-Main Class Reference}
+\label{class_poly_main}\index{Poly\-Main@{Poly\-Main}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_poly_main_a1adb4ec0b3a2d51a36c2c05199c68436}{main} (String\mbox{[}$\,$\mbox{]} args)  throws Exception 	
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Serial\-Analyser\-Controller \hyperlink{class_poly_main_a0c7824b053777ab5d9cb8ee2f3d8a276}{pipeline\-Controller}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{L18}{18} of file \hyperlink{}{Poly\-Main.\-java}.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_poly_main_a1adb4ec0b3a2d51a36c2c05199c68436}{\index{Poly\-Main@{Poly\-Main}!main@{main}}
+\index{main@{main}!PolyMain@{Poly\-Main}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}static void Poly\-Main.\-main (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{args}
+\end{DoxyParamCaption}
+)  throws Exception 	\hspace{0.3cm}{\ttfamily [static]}}}\label{class_poly_main_a1adb4ec0b3a2d51a36c2c05199c68436}
+
+
+Definition at line \hyperlink{L22}{22} of file \hyperlink{}{Poly\-Main.\-java}.
+
+
+\begin{DoxyCode}
+    \{\textcolor{comment}{// jake new comment for neha}
+        File gateHome = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"C:/Users/MixPool/ws/GatePractice/"});
+        \textcolor{keywordflow}{if} (Gate.getGateHome() == null)
+            Gate.setGateHome(gateHome);
+       \textcolor{comment}{//lll}
+        \textcolor{comment}{// jakes comments }
+        \textcolor{comment}{// hahaha }
+        Gate.init();
+        Gate.getCreoleRegister().registerDirectories(
+                        \textcolor{keyword}{new} File(\textcolor{stringliteral}{"C:/Users/MixPool/ws/GatePractice/"} + \textcolor{stringliteral}{"plugins
+      "}, \textcolor{stringliteral}{"ANNIE"})
+                                .toURI().toURL());
+        
+        \textcolor{comment}{//Only if you are using this plugin}
+        Gate.getCreoleRegister().registerDirectories(
+                \textcolor{keyword}{new} File(\textcolor{stringliteral}{"C:/Users/MixPool/ws/GatePractice/"}+\textcolor{stringliteral}{"plugins"}, \textcolor{stringliteral}{"Tools"}
+      )
+                        .toURI().toURL()); 
+        \textcolor{comment}{//Only if you are using this plugin.}
+        Gate.getCreoleRegister().registerDirectories(
+                \textcolor{keyword}{new} File(\textcolor{stringliteral}{"C:/Users/MixPool/ws/GatePractice/"}+\textcolor{stringliteral}{"plugins"}, \textcolor{stringliteral}{"
+      Tagger\_NP\_Chunking"})
+                        .toURI().toURL()); 
+        
+        
+        gate.CorpusController c = ((gate.CorpusController)loadObjectFromFile(\textcolor{keyword}{
+      new} java.io.File(\textcolor{stringliteral}{"C:/nlpCourseF11/gateExercises/PolyTest/poly.gapp"})));
+        Corpus corpus = (Corpus) Factory.createResource(\textcolor{stringliteral}{"
+      gate.corpora.CorpusImpl"});
+        \textcolor{comment}{/****}
+\textcolor{comment}{        URL dir = new File("C:/nlpCourseF11/gateExercises/PolyTest/
+      docs").toURI().toURL();}
+\textcolor{comment}{        corpus.populate(dir, null, "UTF-8", false); //set the encoding to
+       whatever is the encoding of your files}
+\textcolor{comment}{        //c.getCorpus().populate(dir, null, "UTF-8", false);}
+\textcolor{comment}{        *****/}
+        \textcolor{comment}{//in your case the input string will come through the user interface}
+        String docStr = \textcolor{stringliteral}{"Dr. Phyllis Frankl of the computer science department
+       of NYU-Poly in New York City has been named provost. "}+
+                        \textcolor{stringliteral}{"She will be replacing Dr. Kurt Becker who will become
+       the Vice-President for miracles."};
+        gate.Document doc = gate.Factory.newDocument(docStr);
+        
+        corpus.add(doc);
+        c.setCorpus(corpus);
+        c.execute();
+        
+        corpus.clear();
+        
+          ArrayList<gate.Annotation> annList = \textcolor{keyword}{new} ArrayList<gate.Annotation>()
+      ;
+          \textcolor{comment}{//Add whatever annotations you are interested in processing further}
+          \textcolor{comment}{//to annList--questions, requests, instructions, etc.}
+          annList.addAll(doc.getAnnotations().get(\textcolor{stringliteral}{"Question"}));
+         
+        
+         
+\textcolor{comment}{//REALLY important to release doc and coprpus after processing each request,
+       question, instruction, etc., or }
+\textcolor{comment}{//your program will quickly run out of heap space.       }
+              Factory.deleteResource(doc);
+              Factory.deleteResource(corpus);
+              
+            \textcolor{comment}{//Do your further processing on the annotations in annList (in a
+       different class file, please)   }
+    \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_poly_main_a0c7824b053777ab5d9cb8ee2f3d8a276}{\index{Poly\-Main@{Poly\-Main}!pipeline\-Controller@{pipeline\-Controller}}
+\index{pipeline\-Controller@{pipeline\-Controller}!PolyMain@{Poly\-Main}}
+\subsubsection[{pipeline\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}Serial\-Analyser\-Controller Poly\-Main.\-pipeline\-Controller\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_poly_main_a0c7824b053777ab5d9cb8ee2f3d8a276}
+
+
+Definition at line \hyperlink{L21}{21} of file \hyperlink{}{Poly\-Main.\-java}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+git/\-File\-Kommander/src/\hyperlink{_poly_main_8java}{Poly\-Main.\-java}\end{DoxyCompactItemize}

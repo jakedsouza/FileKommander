@@ -1,0 +1,55 @@
+.TH "com.poly.nlp.filekommander.MySwingWorker" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.MySwingWorker \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits SwingWorker< Integer, String >\&.
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "Integer \fBdoInBackground\fP ()  throws Exception "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 208 of file FileKommanderRun\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "Integer com\&.poly\&.nlp\&.filekommander\&.MySwingWorker\&.doInBackground ()  throws Exception \fC [protected]\fP"
+
+.PP
+Definition at line 210 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                                        {
+        JProgressBar progressBar = FileKommanderRun\&.getGuiv2()\&.getProgressBar();
+        // JLabel rejectActionButton = FileKommanderRun\&.getGuiv2()
+        // \&.getRejectActionBtn();
+        // JLabel acceptActionButton = FileKommanderRun\&.getGuiv2()
+        // \&.getAcceptActionBtn();
+        progressBar\&.setVisible(true);
+        // rejectActionButton\&.setVisible(true);
+        // acceptActionButton\&.setVisible(true);
+
+        for (int i = 0; i <= 100; i++) {
+            progressBar\&.setValue(i);
+            Thread\&.sleep(50);
+        }
+        progressBar\&.setVisible(false);
+        // rejectActionButton\&.setVisible(false);
+        // acceptActionButton\&.setVisible(false);
+        progressBar\&.setValue(0);
+
+        return null;
+    }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

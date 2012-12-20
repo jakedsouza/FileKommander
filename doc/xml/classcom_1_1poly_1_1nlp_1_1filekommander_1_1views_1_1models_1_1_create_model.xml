@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::views::models::CreateModel</compoundname>
+    <basecompoundref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.models.GenericActionModel</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1ac8bed5b351f8c89a81528625298453a3" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean com.poly.nlp.filekommander.views.models.CreateModel.isModelRun</definition>
+        <argsstring></argsstring>
+        <name>isModelRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="15" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1ab7b2c78de5e244603bf942be06d1aa82" prot="private" static="no" mutable="no">
+        <type>HashMap&lt; String, String &gt;</type>
+        <definition>HashMap&lt;String, String&gt; com.poly.nlp.filekommander.views.models.CreateModel.fileListData</definition>
+        <argsstring></argsstring>
+        <name>fileListData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="18" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a4ffeca4b461f31e7024727e67ed4f0cf" prot="private" static="no" mutable="no">
+        <type>HashMap&lt; String, String &gt;</type>
+        <definition>HashMap&lt;String, String&gt; com.poly.nlp.filekommander.views.models.CreateModel.folderListData</definition>
+        <argsstring></argsstring>
+        <name>folderListData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="20" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1ad9a1a4f4e1188aa85d3014ae81812356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.poly.nlp.filekommander.views.models.CreateModel.CreateModel</definition>
+        <argsstring>()</argsstring>
+        <name>CreateModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an empty model </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="25" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="25" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a9685c9d0f034bb7c4393e97df28fa575" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.CreateModel.add</definition>
+        <argsstring>(String name, int type)</argsstring>
+        <name>add</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a new file/folder to the model <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="36" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a9a772fafb3b314add60b903b8a594db0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HashMap&lt; String, String &gt;</type>
+        <definition>HashMap&lt;String, String&gt; com.poly.nlp.filekommander.views.models.CreateModel.getFileListData</definition>
+        <argsstring>()</argsstring>
+        <name>getFileListData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the fileListData </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="47" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1abf22e084ffc9a8c45371493effe4ab9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.CreateModel.setFileListData</definition>
+        <argsstring>(HashMap&lt; String, String &gt; fileListData)</argsstring>
+        <name>setFileListData</name>
+        <param>
+          <type>HashMap&lt; String, String &gt;</type>
+          <declname>fileListData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileListData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fileListData to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="55" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a622712664c91b111696b19bce85c5c01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>HashMap&lt; String, String &gt;</type>
+        <definition>HashMap&lt;String, String&gt; com.poly.nlp.filekommander.views.models.CreateModel.getFolderListData</definition>
+        <argsstring>()</argsstring>
+        <name>getFolderListData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the folderListData </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="62" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a76f23d7e1b08b6565b418f494fd9bfee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.CreateModel.setFolderListData</definition>
+        <argsstring>(HashMap&lt; String, String &gt; folderListData)</argsstring>
+        <name>setFolderListData</name>
+        <param>
+          <type>HashMap&lt; String, String &gt;</type>
+          <declname>folderListData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>folderListData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the folderListData to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="70" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a33c5eea740be35144d1e6e18e536473b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean com.poly.nlp.filekommander.views.models.CreateModel.isModelRun</definition>
+        <argsstring>()</argsstring>
+        <name>isModelRun</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the isModelRun </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="77" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a59c2e198b45a63d3835e92cf2deae6ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.CreateModel.setModelRun</definition>
+        <argsstring>(boolean isModelRun)</argsstring>
+        <name>setModelRun</name>
+        <param>
+          <type>boolean</type>
+          <declname>isModelRun</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>isModelRun</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the isModelRun to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="85" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="85" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Model to hold information about create action .</para><para><simplesect kind="author"><para>jake </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="51">
+        <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
+        <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
+      </node>
+      <node id="50">
+        <label>com.poly.nlp.filekommander.views.models.CreateModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="54">
+        <label>HashMap&lt; String, String &gt;</label>
+      </node>
+      <node id="53">
+        <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
+        <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
+      </node>
+      <node id="52">
+        <label>com.poly.nlp.filekommander.views.models.CreateModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>fileListData</edgelabel>
+          <edgelabel>folderListData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="13" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" bodystart="13" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a9685c9d0f034bb7c4393e97df28fa575" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::CreateModel</scope><name>add</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1ad9a1a4f4e1188aa85d3014ae81812356" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::CreateModel</scope><name>CreateModel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1ab7b2c78de5e244603bf942be06d1aa82" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::CreateModel</scope><name>fileListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a4ffeca4b461f31e7024727e67ed4f0cf" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::CreateModel</scope><name>folderListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a9a772fafb3b314add60b903b8a594db0" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::CreateModel</scope><name>getFileListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a622712664c91b111696b19bce85c5c01" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::CreateModel</scope><name>getFolderListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1ac8bed5b351f8c89a81528625298453a3" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::CreateModel</scope><name>isModelRun</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a33c5eea740be35144d1e6e18e536473b" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::CreateModel</scope><name>isModelRun</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1abf22e084ffc9a8c45371493effe4ab9c" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::CreateModel</scope><name>setFileListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a76f23d7e1b08b6565b418f494fd9bfee" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::CreateModel</scope><name>setFolderListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model_1a59c2e198b45a63d3835e92cf2deae6ad" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::CreateModel</scope><name>setModelRun</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

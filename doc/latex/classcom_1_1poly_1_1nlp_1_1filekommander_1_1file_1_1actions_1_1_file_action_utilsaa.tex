@@ -1,0 +1,83 @@
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa}{\section{com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utilsaa Class Reference}
+\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa}\index{com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utilsaa@{com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utilsaa}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Array\-List$<$ String $>$ \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_abe1c422d6b1901a7889fc6d8b6502c88}{get\-Object\-Name\-From\-Annotation} (Feature\-Map feature\-Map, String key)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final Logger \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_a77b8f795458e1c7e9b013d6d06c6e97a}{log} = Logger.\-get\-Logger(File\-Action\-Utils.\-class)
+\item 
+static String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_af9adb01342997356115f0a50f1ec2087}{working\-Directory}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+jake , neha 
+\end{DoxyAuthor}
+
+
+Definition at line \hyperlink{L35}{35} of file \hyperlink{}{File\-Action\-Utilsaa.\-java}.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_abe1c422d6b1901a7889fc6d8b6502c88}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utilsaa@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utilsaa}!get\-Object\-Name\-From\-Annotation@{get\-Object\-Name\-From\-Annotation}}
+\index{get\-Object\-Name\-From\-Annotation@{get\-Object\-Name\-From\-Annotation}!com::poly::nlp::filekommander::file::actions::FileActionUtilsaa@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utilsaa}}
+\subsubsection[{get\-Object\-Name\-From\-Annotation}]{\setlength{\rightskip}{0pt plus 5cm}static Array\-List$<$String$>$ com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utilsaa.\-get\-Object\-Name\-From\-Annotation (
+\begin{DoxyParamCaption}
+\item[{Feature\-Map}]{feature\-Map, }
+\item[{String}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_abe1c422d6b1901a7889fc6d8b6502c88}
+
+
+Definition at line \hyperlink{L706}{706} of file \hyperlink{}{File\-Action\-Utilsaa.\-java}.
+
+
+\begin{DoxyCode}
+                                               \{
+        ArrayList<String> outputList = null;
+        \textcolor{keywordflow}{if} (featureMap.containsKey(key)) \{
+            outputList = \textcolor{keyword}{new} ArrayList<String>();
+            AnnotationSet objectNames = (AnnotationSet) featureMap.get(key);
+            \textcolor{keywordflow}{for} (Annotation \textcolor{keywordtype}{object} : objectNames) \{
+                FeatureMap featureMap2 = \textcolor{keywordtype}{object}.getFeatures();
+                String objectName = (String) featureMap2.get(\textcolor{stringliteral}{"string"});
+                objectName = objectName.replaceAll(\textcolor{stringliteral}{"\(\backslash\)""}, \textcolor{stringliteral}{""});
+                outputList.add(objectName);
+            \}
+        \} \textcolor{keywordflow}{else} \{
+            \textcolor{keywordflow}{return} \textcolor{keyword}{new} ArrayList<String>();
+        \}
+
+        \textcolor{keywordflow}{return} outputList.isEmpty() ? \textcolor{keyword}{new} ArrayList<String>() : outputList;
+
+    \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_a77b8f795458e1c7e9b013d6d06c6e97a}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utilsaa@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utilsaa}!log@{log}}
+\index{log@{log}!com::poly::nlp::filekommander::file::actions::FileActionUtilsaa@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utilsaa}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}final Logger com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utilsaa.\-log = Logger.\-get\-Logger(File\-Action\-Utils.\-class)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_a77b8f795458e1c7e9b013d6d06c6e97a}
+
+
+Definition at line \hyperlink{L36}{36} of file \hyperlink{}{File\-Action\-Utilsaa.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_af9adb01342997356115f0a50f1ec2087}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utilsaa@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utilsaa}!working\-Directory@{working\-Directory}}
+\index{working\-Directory@{working\-Directory}!com::poly::nlp::filekommander::file::actions::FileActionUtilsaa@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utilsaa}}
+\subsubsection[{working\-Directory}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utilsaa.\-working\-Directory\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_af9adb01342997356115f0a50f1ec2087}
+
+
+Definition at line \hyperlink{L37}{37} of file \hyperlink{}{File\-Action\-Utilsaa.\-java}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+git/\-File\-Kommander/src/com/poly/nlp/filekommander/file/actions/\hyperlink{_file_action_utilsaa_8java}{File\-Action\-Utilsaa.\-java}\end{DoxyCompactItemize}

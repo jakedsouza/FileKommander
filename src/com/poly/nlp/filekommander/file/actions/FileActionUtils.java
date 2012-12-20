@@ -1,368 +1,235 @@
-/**
- * 
- */
 package com.poly.nlp.filekommander.file.actions;
 
 import java.awt.Desktop;
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.StreamTokenizer;
+import java.nio.file.FileSystem;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.apache.commons.io.FileSystemUtils;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
+
 import com.poly.nlp.filekommander.FileKommander;
 import com.poly.nlp.filekommander.FileKommanderRun;
-import com.poly.nlp.filekommander.views.models.CreateModel;
-import com.poly.nlp.filekommander.views.models.DeleteModel;
-import com.poly.nlp.filekommander.views.models.GenericActionModel;
 
-import gate.Annotation;
-import gate.AnnotationSet;
-import gate.FeatureMap;
-
-/**
- * @author jake , neha
- * 
- */
 public class FileActionUtils {
 	private static final Logger log = Logger.getLogger(FileActionUtils.class);
+	private static String workingDirectory;
 
-	public static GenericActionModel AnalyseCreateAction(Annotation annotation) {
-		FeatureMap featureMap = annotation.getFeatures();
-		ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
-				featureMap, "fileName");
-		ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
-				featureMap, "directoryName");
-		ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
-				featureMap, "quotedObject");
-		CreateModel createModel = new CreateModel();
-		if (fileNamesList != null) {
-			for (String fileName : fileNamesList) {
-				createModel.add(fileName, FileKommander.FILE);
-			}
-		}
-		if (directoryNamesList != null) {
-			for (String folderName : directoryNamesList) {
-				createModel.add(folderName, FileKommander.DIRECTORY);
-			}
-		}
-		if (quotedObjectNamesList != null) {
-			for (String quotedName : quotedObjectNamesList) {
-				if(!fileNamesList.contains(quotedName) && !directoryNamesList.contains(quotedName))
-				createModel.add(quotedName, FileKommander.DIRECTORY);
-			}
-		}
-		log.info("Files to be Created : " + fileNamesList);
-		log.info("Directories to be Created : " + directoryNamesList);
-		log.info("Files to be Created : " + quotedObjectNamesList);
-		return createModel;
+	/**
+	 * @return the workingDirectory
+	 */
+	public static String getWorkingDirectory() {
+		return workingDirectory;
 	}
 
-	public static GenericActionModel AnalyseDeleteAction(Annotation annotation) {
-		DeleteModel deleteModel = new DeleteModel();
-		FeatureMap featureMap = annotation.getFeatures();
-		String content = (String) featureMap.get("content");
-		ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
-				featureMap, "fileName");
-		ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
-				featureMap, "directoryName");
-		ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
-				featureMap, "quotedObject");
-		for (String fileName : quotedObjectNamesList) {
-			deleteModel.add(fileName, FileKommander.FILE);
-		}
-		for (String fileName : fileNamesList) {
-			deleteModel.add(fileName, FileKommander.FILE);
-		}
-		for (String folderName : directoryNamesList) {
-			deleteModel.add(folderName, FileKommander.DIRECTORY);
-		}
-		log.info("Files to be Deleted : " + fileNamesList);
-		log.info("Directories to be Deleted : " + directoryNamesList);
-		log.info("Files to be Deleted : " + quotedObjectNamesList);
-		return deleteModel;
+	/**
+	 * @param workingDirectory
+	 *            the workingDirectory to set
+	 */
+	public static void setWorkingDirectory(String workingDirectory) {
+		FileActionUtils.workingDirectory = workingDirectory;
 	}
 
-	public static GenericActionModel AnalyseExistsAction(Annotation annotation) {
-		return null;
-
-	}
-
-	public static GenericActionModel AnalyseInsertAction(Annotation annotation) {
-		return null;
-
-	}
-
-	public static GenericActionModel AnalyseOpenAction(Annotation annotation) {
-		return null;
-
-	}
-
-	public static GenericActionModel AnalyseRemoveAction(Annotation annotation) {
-		return null;
-
-	}
-
-	public static GenericActionModel AnalyseRenameAction(Annotation annotation) {
-		FeatureMap featureMap = annotation.getFeatures();
-		String content = (String) featureMap.get("content");
-		ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
-				featureMap, "fileName");
-		ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
-				featureMap, "directoryName");
-		ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
-				featureMap, "quotedObject");
-
-		boolean isRenameFile = (fileNamesList.size() == 2)
-				|| (quotedObjectNamesList.size() == 2)
-				|| (fileNamesList.size() + quotedObjectNamesList.size() == 2);
-		if (isRenameFile) {
-
-			log.info("");
+	/**
+	 * Creates a new File and returns the error message
+	 * 
+	 * @param name
+	 * @return
+	 */
+	public static String createFile(String name) {
+		String errorMsg = "";
+		name = name.replaceAll("^[.\\\\/:*?\"<>|]?[\\\\/:*?\"<>|]*", "");
+		if (name.length() == 0) {
+			errorMsg = "File named " + name
+					+ " is of zero length after removing special characters";
 		} else {
-
-		}
-		return null;
-
-	}
-
-	public static GenericActionModel AnalyseReplaceAction(Annotation annotation) {
-		return null;
-
-	}
-
-	public static GenericActionModel AnalyseStatsAction(Annotation annotation) {
-		return null;
-
-	}
-
-	public static void CreateAction(Annotation annotation) {
-		log.info("CreateAction action called");
-	}
-
-	public static void DeleteAction() {
-		log.info("DeleteAction action called");
-	}
-
-	public static void ExistsAction() {
-		log.info("ExistsAction action called");
-	}
-
-	public static void InsertAction() {
-		log.info("InsertAction action called");
-	}
-
-	public static void OpenAction() {
-		log.info("OpenAction action called");
-	}
-
-	public static void RemoveAction() {
-		log.info("RemoveAction action called");
-	}
-
-	public static void RenameAction() {
-		log.info("RenameAction action called");
-	}
-
-	public static void ReplaceAction() {
-		log.info("ReplaceAction action called");
-	}
-
-	public static void StatsAction() {
-		log.info("StatsAction action called");
-	}
-
-	public static GenericActionModel analyseAction(String actionType,
-			Annotation annotation) {
-		if (actionType == null)
-			return null;
-		GenericActionModel returnModel = null;
-
-		switch (actionType) {
-		case "close":
-			// AnalyseCloseAction(annotation);
-			break;
-		case "create":
-			returnModel = AnalyseCreateAction(annotation);
-			break;
-		case "delete":
-			returnModel = AnalyseDeleteAction(annotation);
-			break;
-		case "exists":
-			returnModel = AnalyseExistsAction(annotation);
-			break;
-		case "insert":
-			returnModel = AnalyseInsertAction(annotation);
-			break;
-		case "open":
-			returnModel = AnalyseOpenAction(annotation);
-			break;
-		case "remove":
-			returnModel = AnalyseRemoveAction(annotation);
-			break;
-		case "rename":
-			returnModel = AnalyseRenameAction(annotation);
-			break;
-		case "replace":
-			returnModel = AnalyseReplaceAction(annotation);
-			break;
-		case "stats":
-			returnModel = AnalyseStatsAction(annotation);
-			break;
-		default:
-			break;
-		}
-		return returnModel;
-
-	}
-
-	public static void callAction(String actionType, Annotation annotation) {
-		if (actionType == null)
-			return;
-		FeatureMap featureMap = annotation.getFeatures();
-		AnnotationSet directoryName = (AnnotationSet) featureMap
-				.get("directoryName");
-		AnnotationSet fileName = (AnnotationSet) featureMap.get("fileName");
-		AnnotationSet phraseName = (AnnotationSet) featureMap.get("phraseName");
-		AnnotationSet quotedObject = (AnnotationSet) featureMap
-				.get("quotedObject");
-		String content = (String) featureMap.get("content");
-
-		switch (actionType) {
-		case "close":
-			// CloseAction();
-			break;
-		case "create":
-			CreateAction(annotation);
-			break;
-		case "delete":
-			DeleteAction();
-			break;
-		case "exists":
-			ExistsAction();
-			break;
-		case "insert":
-			InsertAction();
-			break;
-		case "open":
-			OpenAction();
-			break;
-		case "remove":
-			RemoveAction();
-			break;
-		case "rename":
-			RenameAction();
-			break;
-		case "replace":
-			ReplaceAction();
-			break;
-		case "stats":
-			StatsAction();
-			break;
-		default:
-			break;
-		}
-
-	}
-
-	public static void create(String name, int type) {
-		// if type == directory create directory else create file , if file name
-		// is null
-		// or has illegal characters , display error message working directory
-		// in FileKommander.getWotkingdir
-		// TODO get type from FileKommander.FILE/DIRECTORY ;
-		String errorMsg = "";
-
-		System.out.println("name of object is" + name);
-		System.out.println("type of object is" + type);
-		try {
-			if (type == FileKommander.FILE) {
-				File file = new File("testDir/" + name);
-				if (file.exists()) {
-					errorMsg = "File named " + name
-							+ " already exists. Do you want to continue ?";
-					System.out.println(errorMsg);
-				} else {
+			File file = new File(workingDirectory + name);
+			if (file.exists()) {
+				errorMsg = "File : " + name + " already exists";
+				log.error(errorMsg);
+			} else {
+				try {
+					File parent = file.getParentFile();
+					if (!parent.exists()) {
+						try {
+							FileUtils.forceMkdir(parent);
+						} catch (Exception e) {
+							errorMsg = "Could not create the parent folder for the file";
+							e.printStackTrace();
+							return errorMsg;
+						}
+					}
 					file.createNewFile();
-					System.out.println("file created successfully.");
-				}
-
-			} else if (type == FileKommander.DIRECTORY) {
-				Boolean success = new File("testDir/" + name).mkdirs();
-				if (!success) {
-					errorMsg = "Could not create folder" + name;
-					System.out.println(errorMsg);
-				} else {
-					System.out.println("folder");
+					log.info("file created successfully.");
+				} catch (IOException e) {
+					errorMsg = "Error creating File " + e.getMessage();
+					e.printStackTrace();
 				}
 			}
-			// System.out.println("error is .."+errorMsg);
-		} catch (Exception e) {
-			e.printStackTrace();
 		}
-
+		return errorMsg;
 	}
 
-	public static void delete(String name, int type) {
+	/**
+	 * Creates a new Folder and returns the error message
+	 * 
+	 * @param name
+	 * @return
+	 */
+	public static String createFolder(String name) {
 		String errorMsg = "";
-
-		System.out.println("name of object is" + name);
-		System.out.println("type of object is" + type);
+		name = name.replaceAll("^[.\\\\/:*?\"<>|]?[\\\\/:*?\"<>|]*", "");
 		try {
-			if (type == FileKommander.FILE) {
-				File file = new File("testDir/" + name);
-				if (file.exists()) {
-					Boolean success = file.delete();
-					if (!success) {
-						errorMsg = "Could not delete the file " + name;
-						System.out.println(errorMsg);
-					} else {
-						System.out.println("deleted file successfully");
-					}
-				} else {
-					errorMsg = "This file doesn't exist. Hence can't be deleted";
-					System.out.println(errorMsg);
-				}
-
-			} else if (type == FileKommander.DIRECTORY) {
-				File directory = new File("testDir/" + name);
-
-				if (directory.isDirectory()) {
-					// if directory is empty
-					if (directory.list().length == 0) {
-						directory.delete();
-						System.out.println("directory deleted successfully");
-					} else {
-						String files[] = directory.list();
-						for (String temp : files) {
-							// construct the file structure
-							File fileDelete = new File(directory, temp);
-
-							// recursive delete
-							fileDelete.delete();
-						}
-
-						// check the directory again, if empty then delete it
-						if (directory.list().length == 0) {
-							directory.delete();
-							System.out
-									.println("directory deleted successfully "
-											+ directory.getAbsolutePath());
-						}
-					}
-
-				}
+			Boolean success = new File(workingDirectory + name).mkdirs();
+			if (!success) {
+				errorMsg = "Could not create folder : " + name;
+				log.error(errorMsg);
+			} else {
+				log.info("Folder created successfully");
 			}
-			// System.out.println("error is .."+errorMsg);
 		} catch (Exception e) {
+			errorMsg = "Could not create folder : " + e.getMessage();
 			e.printStackTrace();
 		}
+		return errorMsg;
 	}
+
+	// private static String create(String name, int type) {
+	// String errorMsg = "";
+	// name.replaceAll("^[.\\\\/:*?\"<>|]?[\\\\/:*?\"<>|]*", "");
+	// try {
+	// if (name.length() == 0) {
+	// errorMsg = "File named "
+	// + name
+	// + " is of zero length after removing special characters";
+	// }else if (type == FileKommander.FILE) {
+	// File file = new File(workingDirectory + name);
+	// if (file.exists()) {
+	// errorMsg = "File : " + name + " already exists";
+	// log.error(errorMsg);
+	// } else {
+	// file.createNewFile();
+	// log.info("file created successfully.");
+	// }
+	// } else if (type == FileKommander.DIRECTORY) {
+	// Boolean success = new File(workingDirectory+ name).mkdirs();
+	// if (!success) {
+	// errorMsg = "Could not create folder : " + name;
+	// log.error(errorMsg);
+	// } else {
+	// log.info("Folder created successfully");
+	// }
+	// }
+	//
+	// } catch (Exception e) {
+	// log.error(e);
+	// }
+	// return errorMsg;
+	// }
+
+	public static String deleteFile(String fileName) {
+		String errorMsg = "";
+		File file = new File(workingDirectory + fileName);
+		if (!file.exists()) {
+			errorMsg = "File " + fileName
+					+ " does not exist so can not delete ";
+		} else {
+			try {
+				FileUtils.forceDelete(file);
+			} catch (IOException e) {
+				errorMsg = "Could not delete file " + e.getMessage();
+				e.printStackTrace();
+			}
+		}
+		return errorMsg;
+	}
+
+	public static String deleteFolder(String folderName) {
+		String errorMsg = "";
+		File file = new File(workingDirectory + folderName);
+		if (!file.exists()) {
+			errorMsg = "Folder " + folderName
+					+ " does not exist so can not delete ";
+		} else {
+			try {
+				FileUtils.forceDelete(file);
+			} catch (IOException e) {
+				errorMsg = "Could not delete folder " + e.getMessage();
+				e.printStackTrace();
+			}
+		}
+		return errorMsg;
+	}
+
+	// private static String delete(String name, int type) {
+	// String errorMsg = "";
+	//
+	// log.info("name of object is" + name);
+	// log.info("type of object is" + type);
+	// try {
+	// if (type == FileKommander.FILE) {
+	// File file = new File(workingDirectory + name);
+	// if (file.exists()) {
+	// Boolean success = file.delete();
+	// if (!success) {
+	// errorMsg = "Could not delete the file " + name;
+	// log.info(errorMsg);
+	// } else {
+	// log.info("deleted file successfully");
+	// }
+	// } else {
+	// errorMsg = "This file " + name +" doesn't exist. Hence can't be deleted";
+	// log.info(errorMsg);
+	// }
+	//
+	// } else if (type == FileKommander.DIRECTORY) {
+	// File directory = new File(workingDirectory+ name);
+	//
+	// if (directory.isDirectory()) {
+	// // if directory is empty
+	// if (directory.list().length == 0) {
+	// directory.delete();
+	// System.out.println("directory deleted successfully");
+	// } else {
+	// String files[] = directory.list();
+	// for (String temp : files) {
+	// // construct the file structure
+	// File fileDelete = new File(directory, temp);
+	//
+	// // recursive delete
+	// fileDelete.delete();
+	// }
+	//
+	// // check the directory again, if empty then delete it
+	// if (directory.list().length == 0) {
+	// directory.delete();
+	// System.out
+	// .println("directory deleted successfully "
+	// + directory.getAbsolutePath());
+	// }
+	// }
+	//
+	// }
+	// }
+	// // System.out.println("error is .."+errorMsg);
+	// } catch (Exception e) {
+	// errorMsg = e.getLocalizedMessage();
+	// e.printStackTrace();
+	// }
+	// return errorMsg;
+	// }
 
 	public static void exists(String name) {
 		String errorMsg = "";
@@ -390,7 +257,7 @@ public class FileActionUtils {
 		}
 		// String workingDirectory =
 		// FileKommanderRun.getKommander().getWorkingDirectory();
-		String workingDirectory = "testDir/";
+	//	String workingDirectory = "testDir/";
 		File file = new File(name);
 		if (!file.exists()) {
 			errorMsg = "File " + name + " doesnot exist in the directory ";
@@ -425,24 +292,23 @@ public class FileActionUtils {
 		}
 	}
 
-	public static void rename(String oldName, String newName) {
+	public static String rename(String oldName, String newName) {
 		String errorMsg = "";
 		if (oldName.equals(null) || oldName.equals("") || newName.equals(null)
 				|| newName.equals("")) {
 			errorMsg = "Rename action failed as the new or old names were empty";
-			FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
-			return;
+			// FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
+			return errorMsg;
 		}
 		// String workingDirectory =
 		// FileKommanderRun.getKommander().getWorkingDirectory();
-		String workingDirectory = "testDir/";
 		// File (or directory) with old name
 		File file = new File(workingDirectory + oldName);
 
 		if (!file.exists()) {
 			errorMsg = "File " + oldName + "doesnot exist in the directory ";
-			FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
-			return;
+			// FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
+			return errorMsg;
 		}
 
 		// File (or directory) with new name
@@ -450,64 +316,113 @@ public class FileActionUtils {
 		if (file2.exists()) {
 			errorMsg = "File " + newName + " exists in the directory ";
 			FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
-			return;
+			return errorMsg;
 		}
 		// Rename file (or directory)
 		boolean success = file.renameTo(file2);
 		if (!success) {
 			errorMsg = "Error renaming file";
-			FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
+			return errorMsg;
+			// FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
 		} else {
 			System.out.println("Rename successful");
 		}
+		return errorMsg;
 
 	}
 
-	public static void insert(String phraseToBeInserted, String existingPhrase,
-			String position, String fileName) throws IOException {
-		String errorMsg = "";
-		File file = new File("testDir/" + fileName);
-		if (file.exists()) {
-			BufferedReader reader = new BufferedReader(new FileReader(file));
-			// new BufferedReader(new FileReader(file))/;
-			String line = "";
-			while ((line = reader.readLine()) != null) {
-				Pattern pattern = Pattern.compile(existingPhrase,
-						Pattern.CASE_INSENSITIVE);
-				// pattern.
-				Matcher matcher = pattern.matcher(line);
-				// Check all occurrences
-				while (matcher.find()) {
-					/*
-					 * switch(location){
-					 * 
-					 * case "before": break; case "after": break; case "":
-					 * break; default break; }
-					 */
-					System.out.print("Start index: " + matcher.start());
-					System.out.print(" End index: " + matcher.end() + " ");
-					System.out.println(matcher.group());
-				}
-
+//	public static void insert(String phraseToBeInserted, String existingPhrase,
+//			String position, String fileName) throws IOException {
+//		String errorMsg = "";
+//		File file = new File("testDir/" + fileName);
+//		if (file.exists()) {
+//			BufferedReader reader = new BufferedReader(new FileReader(file));
+//			// new BufferedReader(new FileReader(file))/;
+//			String line = "";
+//			while ((line = reader.readLine()) != null) {
+//				Pattern pattern = Pattern.compile(existingPhrase,
+//						Pattern.CASE_INSENSITIVE);
+//				// pattern.
+//				Matcher matcher = pattern.matcher(line);
+//				// Check all occurrences
+//				while (matcher.find()) {
+//					/*
+//					 * switch(location){
+//					 * 
+//					 * case "before": break; case "after": break; case "":
+//					 * break; default break; }
+//					 */
+//					System.out.print("Start index: " + matcher.start());
+//					System.out.print(" End index: " + matcher.end() + " ");
+//					System.out.println(matcher.group());
+//				}
+//
+//			}
+//
+//		} else {
+//			errorMsg = "File named " + fileName
+//					+ " doesn't exist. Do you want to continue ?";
+//			System.out.println(errorMsg);
+//		}
+//	}
+//
+//	public static void remove(String phraseToBeRemoved, String position,
+//			String fileName) {
+//
+//	}
+//
+//	public static void replace(String phraseToBeInserted,
+//			String existingPhrase, String position, String fileName) {
+//
+//	}
+	public static String insert(String phraseToBeInserted, String existingPhrase,
+			String position, String repetition, String fileName) throws IOException {
+		File file = new File("testDir/"+fileName);
+		String message = "";
+		
+		if(file.exists()){
+		String contents = FileUtils.readFileToString(file);
+		String newString = "";
+		Pattern p = Pattern.compile(existingPhrase);
+		Matcher m = p.matcher(contents);
+		if(m.find()){
+		if(position.equalsIgnoreCase("before")){
+			newString = phraseToBeInserted + " " +existingPhrase;
+			if(repetition.equalsIgnoreCase("every") || repetition.equalsIgnoreCase("all"))
+				contents = contents.replace(existingPhrase, newString);
+			if(repetition.equalsIgnoreCase("first"))
+				contents = contents.replaceFirst(existingPhrase, newString);
+			if(repetition.equalsIgnoreCase("last"))
+				//contents = contents.replaceFirst(existingPhrase, newString);	
+				contents = contents.substring(0, contents.lastIndexOf(existingPhrase) + 1) + newString;
+		} else if(position.equalsIgnoreCase("after")){
+			newString = existingPhrase+" "+phraseToBeInserted;
+			if(repetition.equalsIgnoreCase("every") || repetition.equalsIgnoreCase("all"))
+				contents = contents.replace(existingPhrase, newString);
+			if(repetition.equalsIgnoreCase("first"))
+				contents = contents.replaceFirst(existingPhrase, newString);
+			if(repetition.equalsIgnoreCase("last")){
+				//contents = contents.substring(0, contents.lastIndexOf(existingPhrase)) + newString;
+				
 			}
-
-		} else {
-			errorMsg = "File named " + fileName
-					+ " doesn't exist. Do you want to continue ?";
-			System.out.println(errorMsg);
+		} else if(position.equalsIgnoreCase("beginning") || position.equalsIgnoreCase("start")){
+			contents = phraseToBeInserted + " " + contents;
+		} else if(position.equalsIgnoreCase("end")){
+			contents = contents +" "+ phraseToBeInserted;
 		}
+		//log.info(contents);
+		FileUtils.writeStringToFile(file, contents);
+		message = "Inserted phrase "+phraseToBeInserted + position  + repetition + " of word "+existingPhrase;
+		}else{
+			message = "The phrase "+existingPhrase+ "cant be found in the file";
+		}
+		}else{
+			message = "This file doesnt exists";
+		}
+		return message;
 	}
-
-	public static void remove(String phraseToBeRemoved, String position,
-			String fileName) {
-
-	}
-
-	public static void replace(String phraseToBeInserted,
-			String existingPhrase, String position, String fileName) {
-
-	}
-
+	
+	
 	// parentObjectName = name of the file/folder
 	// parentObjectType = file or folder- 0,1
 	public static void stats(String parentObjectName, int statsType,
@@ -536,7 +451,7 @@ public class FileActionUtils {
 
 	public static void count(String parentObjectName, String wordToBeCounted)
 			throws IOException {
-		File f = new File("testDir/" + parentObjectName);
+		File f = new File(workingDirectory + parentObjectName);
 		String line = "";
 		int count = 0;
 		if (f.exists()) {
@@ -545,51 +460,12 @@ public class FileActionUtils {
 			while ((line = br.readLine()) != null) {
 				count += StringUtils.countMatches(line, wordToBeCounted);
 			}
+			br.close();
 		}
 	}
 
-	private static void sizeOf(String parentObjectName) {
-		File f = new File("testDir/" + parentObjectName);
-		if (f.exists()) {
-			long b = f.length();
-			printSize(b);
-			if (f.isDirectory()) {
-				long bd = sizeofDirectory(f);
-				printSize(bd);
-			}
-		} else {
-			log.info("File doesn't exists.");
-		}
+	
 
-	}
-
-	public static void printSize(long b) {
-		long k = b / 1024;
-		long m = k / 1024;
-		long g = m / 1024;
-		if (b < 1024) {
-			log.info("The size of the file is " + b + " Bytes");
-		} else if (k < 1024) {
-			log.info("The size of the file is " + k + " KB");
-		} else if (m < 1024) {
-			log.info("The size of the file is " + m + " MB");
-		} else {
-			log.info("The size of the file is " + g + " GB");
-		}
-	}
-
-	public static long sizeofDirectory(File f) {
-		long size = 0;
-		File[] subFiles = f.listFiles();
-		for (File file : subFiles) {
-			if (file.isFile()) {
-				size += file.length();
-			} else {
-				size += sizeofDirectory(file);
-			}
-		}
-		return size;
-	}
 
 	public static void count(String parentObjectName, int parentObjectType,
 			String type) throws IOException {
@@ -629,23 +505,228 @@ public class FileActionUtils {
 		}
 	}
 
-	public static ArrayList<String> getObjectNameFromAnnotation(
-			FeatureMap featureMap, String key) {
-		ArrayList<String> outputList = null;
-		if (featureMap.containsKey(key)) {
-			outputList = new ArrayList<String>();
-			AnnotationSet objectNames = (AnnotationSet) featureMap.get(key);
-			for (Annotation object : objectNames) {
-				FeatureMap featureMap2 = object.getFeatures();
-				String objectName = (String) featureMap2.get("string");
-				outputList.add(objectName);
-			}
-		} else {
-			return null;
+	
+	
+	
+	
+	
+	
+	public static void remove(String phraseToBeRemoved,	String fileName) throws IOException {
+		File file = new File("testDir/"+fileName);
+		if(file.exists()){
+			String contents = FileUtils.readFileToString(file);
+			contents = contents.replace(phraseToBeRemoved, "");
+			log.info(contents);
+			FileUtils.writeStringToFile(file, contents);
+		}else{
+			log.info("this file doesnt exists");
 		}
+	}
 
-		return outputList.isEmpty() ? null : outputList;
+	public static void replace(String phraseToBeInserted,
+			String existingPhrase, String fileName) throws IOException {
+		File file = new File("testDir/"+fileName);
+		if(file.exists()){
+			String contents = FileUtils.readFileToString(file);
+			contents = contents.replace(existingPhrase, phraseToBeInserted);
+			log.info(contents);
+			FileUtils.writeStringToFile(file, contents);
+		}else{
+			log.info("this file doesnt exists");
+		}
+	}
+
+
+	public static int countWords(String fileName){
+		File f = new File("testDir/" + fileName);
+		int numWords = 0;
+		if (f.exists()) {
+			try{
+				FileReader fr;
+				fr = new FileReader(f);
+				
+				BufferedReader br = new BufferedReader(fr);
+				StreamTokenizer stz = new StreamTokenizer(br);
+				int index = 0;
+				
+				while (index != StreamTokenizer.TT_EOF) {
+					index = stz.nextToken();
+					numWords++;
+				}
+
+				log.info("no. of words in file = " + numWords); 
+			
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} finally{
+				log.info("Some error reading the file");
+			}
+		}else {
+				log.info("This file doesn't exists."); 
+			}
+		return numWords;
+	}
+
+	public static ArrayList<String> listFiles(String folderName, ArrayList<String> list) {
+		//f = new File("testDir/"+f);
+		File f = new File(folderName);
+		if(f.isDirectory()){
+			File[] subFiles = f.listFiles();
+			for (File file : subFiles) {
+				if (file.isFile()) {
+					list.add(file.getName());
+				} else {
+					list = listFiles(file.getName(), list);
+				}
+			}
+		}else{
+			log.info("only files in the folder can be listed.");
+		}
+		return list;
+	}
+
+	public static String lastModified(String parentObjectName) {
+		File f = new File("testDir/"+parentObjectName);
+		String dateString = "";
+		if(f.isFile()){
+			long datetime = f.lastModified();
+			Date d = new Date(datetime);
+			SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
+			dateString = sdf.format(d);
+			log.info("The file "+parentObjectName+" was last modified on: " + dateString);
+		}
+		return "The file "+parentObjectName+" was last modified on: " + dateString;
+	}
+
+	// to count a specific word
+	public static int countSpecificWord(String parentObjectName, String wordToBeCounted)
+			 {
+		File f = new File("testDir/" + parentObjectName); 
+		String line = ""; 
+		int count = 0;
+	
+		try {
+			if (f.exists()) {
+				FileReader fr = new FileReader(f);
+				BufferedReader br = new BufferedReader(fr);
+				while ((line = br.readLine()) != null) {
+					count += StringUtils.countMatches(line, wordToBeCounted);
+				}
+				br.close();
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		log.info("the no of times the word "+wordToBeCounted+" appears is "+count);
+		return count;
+	}
+
+//	public static void sizeOf(String parentObjectName) {
+//		File f = new File(workingDirectory + parentObjectName);
+//		if (f.exists()) {
+//			long b = f.length();
+//			printSize(b);
+//			if (f.isDirectory()) {
+//				long bd = sizeofDirectory(f);
+//				printSize(bd);
+//			}
+//		} else {
+//			log.info("File doesn't exists.");
+//		}
+//
+//	}
+	// finds the size of the file or folder
+	public static String sizeOf(String parentObjectName) {
+		File f;
+		long b,bd;
+		if(parentObjectName.equals(workingDirectory))
+			f = new File(parentObjectName);
+		else
+			f = new File(workingDirectory + parentObjectName); 
+		if (f.exists()) {
+			if (f.isDirectory()) {
+				bd = sizeofDirectory(f);
+				return printSize(bd);
+			}else{
+				b = f.length();
+				return printSize(b);
+			}
+
+		} else {
+			return ("File doesn't exists."); 
+		}
+//		return printSize(bd);
 
 	}
 
+	// function to print the size of the file either in bytes, KB, MB or GB
+	private static String printSize(long b) {
+		long k = b / 1024;
+		long m = k / 1024;
+		long g = m / 1024;
+		if (b < 1024) {
+			return ("The size of the file is " + b + " Bytes");  
+		} else if (k < 1024) {
+			return("The size of the file is " + k + " KB");  
+		} else if (m < 1024) {
+			return ("The size of the file is " + m + " MB");  
+		} else {
+			return ("The size of the file is " + g + " GB");  
+		}
+	}
+
+	// find the size of the folder.
+	static long sizeofDirectory(File f) {
+		long size = 0;
+		File[] subFiles = f.listFiles();
+		for (File file : subFiles) {
+			if (file.isFile()) {
+				size += file.length();
+			} else {
+				size += sizeofDirectory(file);
+			}
+		}
+		return size;
+	}
+
+	// count
+	public static int countFiles(String parentObjectName){
+		File f;
+		if(parentObjectName.equals("testDir")){
+			f = new File(parentObjectName); 
+		}else{
+			f = new File("testDir/" + parentObjectName);
+		}
+		int c = countSubFiles(f);
+		log.info("count is"+c);
+		return c;
+	}
+
+
+	private static int countSubFiles(File f) {
+		int count = 0;
+		int countDirectory = 0;
+		int countAll = 0;
+		for (File file : f.listFiles()) {
+			if (file.isFile()) {
+				count++;
+			} else if (file.isDirectory()) {
+				countDirectory += countSubFiles(file);
+			}
+		}
+		return count++;
+
+	}
+	
+	
+	
+	
+	
+	
 }

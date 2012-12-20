@@ -1,0 +1,271 @@
+.TH "com.poly.nlp.filekommander.views.models.RenameModel" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.models.RenameModel \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.models\&.GenericActionModel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRenameModel\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBisModelRun\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetModelRun\fP (boolean \fBisModelRun\fP)"
+.br
+.ti -1c
+.RI "String \fBgetOldFileName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetOldFileName\fP (String \fBoldFileName\fP)"
+.br
+.ti -1c
+.RI "String \fBgetNewFileName\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNewFileName\fP (String \fBnewFileName\fP)"
+.br
+.ti -1c
+.RI "String \fBgetErrorMessage\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetErrorMessage\fP (String \fBerrorMessage\fP)"
+.br
+.ti -1c
+.RI "int \fBgetType\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetType\fP (int \fBtype\fP)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBisModelRun\fP"
+.br
+.ti -1c
+.RI "String \fBoldFileName\fP"
+.br
+.ti -1c
+.RI "String \fBnewFileName\fP"
+.br
+.ti -1c
+.RI "String \fBerrorMessage\fP"
+.br
+.ti -1c
+.RI "int \fBtype\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Model to hold information about create action \&.
+.PP
+\fBAuthor:\fP
+.RS 4
+jake 
+.RE
+.PP
+
+.PP
+Definition at line 9 of file RenameModel\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.RenameModel ()"
+Create an empty model 
+.PP
+Definition at line 20 of file RenameModel\&.java\&.
+.PP
+.nf
+                         {
+        oldFileName = '';
+        newFileName = '';
+        errorMessage = '';
+        this\&.isModelRun = false;
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.getErrorMessage ()"
+\fBReturns:\fP
+.RS 4
+the errorMessage 
+.RE
+.PP
+
+.PP
+Definition at line 75 of file RenameModel\&.java\&.
+.PP
+.nf
+                                    {
+        return errorMessage;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.getNewFileName ()"
+\fBReturns:\fP
+.RS 4
+the newFileName 
+.RE
+.PP
+
+.PP
+Definition at line 60 of file RenameModel\&.java\&.
+.PP
+.nf
+                                   {
+        return newFileName;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.getOldFileName ()"
+\fBReturns:\fP
+.RS 4
+the oldFileName 
+.RE
+.PP
+
+.PP
+Definition at line 45 of file RenameModel\&.java\&.
+.PP
+.nf
+                                   {
+        return oldFileName;
+    }
+.fi
+.SS "int com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.getType ()"
+\fBReturns:\fP
+.RS 4
+the type 
+.RE
+.PP
+
+.PP
+Definition at line 90 of file RenameModel\&.java\&.
+.PP
+.nf
+                         {
+        return type;
+    }
+.fi
+.SS "boolean com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.isModelRun ()"
+\fBReturns:\fP
+.RS 4
+the isModelRun 
+.RE
+.PP
+
+.PP
+Definition at line 30 of file RenameModel\&.java\&.
+.PP
+.nf
+                                {
+        return isModelRun;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.setErrorMessage (StringerrorMessage)"
+\fBParameters:\fP
+.RS 4
+\fIerrorMessage\fP the errorMessage to set 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file RenameModel\&.java\&.
+.PP
+.nf
+                                                     {
+        this\&.errorMessage = errorMessage;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.setModelRun (booleanisModelRun)"
+\fBParameters:\fP
+.RS 4
+\fIisModelRun\fP the isModelRun to set 
+.RE
+.PP
+
+.PP
+Definition at line 38 of file RenameModel\&.java\&.
+.PP
+.nf
+                                                {
+        this\&.isModelRun = isModelRun;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.setNewFileName (StringnewFileName)"
+\fBParameters:\fP
+.RS 4
+\fInewFileName\fP the newFileName to set 
+.RE
+.PP
+
+.PP
+Definition at line 68 of file RenameModel\&.java\&.
+.PP
+.nf
+                                                   {
+        this\&.newFileName = newFileName;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.setOldFileName (StringoldFileName)"
+\fBParameters:\fP
+.RS 4
+\fIoldFileName\fP the oldFileName to set 
+.RE
+.PP
+
+.PP
+Definition at line 53 of file RenameModel\&.java\&.
+.PP
+.nf
+                                                   {
+        this\&.oldFileName = oldFileName;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.setType (inttype)"
+\fBParameters:\fP
+.RS 4
+\fItype\fP the type to set 
+.RE
+.PP
+
+.PP
+Definition at line 97 of file RenameModel\&.java\&.
+.PP
+.nf
+                                  {
+        this\&.type = type;
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.errorMessage\fC [private]\fP"
+
+.PP
+Definition at line 14 of file RenameModel\&.java\&.
+.SS "boolean com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.isModelRun\fC [private]\fP"
+
+.PP
+Definition at line 11 of file RenameModel\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.newFileName\fC [private]\fP"
+
+.PP
+Definition at line 13 of file RenameModel\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.oldFileName\fC [private]\fP"
+
+.PP
+Definition at line 12 of file RenameModel\&.java\&.
+.SS "int com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.RenameModel\&.type\fC [private]\fP"
+
+.PP
+Definition at line 15 of file RenameModel\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

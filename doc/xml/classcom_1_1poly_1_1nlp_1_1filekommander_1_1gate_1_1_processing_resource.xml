@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::gate::ProcessingResource</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a018942d9b39afb00b7d92e874246f191" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.gate.ProcessingResource.prClass</definition>
+        <argsstring></argsstring>
+        <name>prClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="15" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a9d38f54ab731c5b496b0583bd8dcce9b" prot="public" static="no" mutable="no">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt;String, String&gt; com.poly.nlp.filekommander.gate.ProcessingResource.params</definition>
+        <argsstring></argsstring>
+        <name>params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="16" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a282db6a35844443df6cfaddce71e588f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.poly.nlp.filekommander.gate.ProcessingResource.ProcessingResource</definition>
+        <argsstring>()</argsstring>
+        <name>ProcessingResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="18" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a33a54a56cbf52bbb61a67e8d33836956" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.poly.nlp.filekommander.gate.ProcessingResource.ProcessingResource</definition>
+        <argsstring>(String prClass)</argsstring>
+        <name>ProcessingResource</name>
+        <param>
+          <type>String</type>
+          <declname>prClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="20" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1ab13448d5922bfe4ab13f5b17abe0a04f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.gate.ProcessingResource.addParam</definition>
+        <argsstring>(String key, String value)</argsstring>
+        <name>addParam</name>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="25" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a3017ede3560bc652656ec2519543b572" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.gate.ProcessingResource.removeParam</definition>
+        <argsstring>(String key)</argsstring>
+        <name>removeParam</name>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="29" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1aecbfe57e11798241a78466ac8a97811b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.gate.ProcessingResource.getPrClass</definition>
+        <argsstring>()</argsstring>
+        <name>getPrClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="33" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a1edadf63e98f370d1a61c457ed433dbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.gate.ProcessingResource.setPrClass</definition>
+        <argsstring>(String prClass)</argsstring>
+        <name>setPrClass</name>
+        <param>
+          <type>String</type>
+          <declname>prClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="37" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1ac9133bcf39aaae347c94a4fd2c1a5bda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt;String, String&gt; com.poly.nlp.filekommander.gate.ProcessingResource.getParams</definition>
+        <argsstring>()</argsstring>
+        <name>getParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="41" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a8dff2c1014fc6fbc88474a80905e97ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.gate.ProcessingResource.setParams</definition>
+        <argsstring>(Map&lt; String, String &gt; params)</argsstring>
+        <name>setParams</name>
+        <param>
+          <type>Map&lt; String, String &gt;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="45" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="45" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>neha , jake </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="264">
+        <label>com.poly.nlp.filekommander.gate.ProcessingResource</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource"/>
+        <childnode refid="265" relation="usage">
+          <edgelabel>params</edgelabel>
+        </childnode>
+      </node>
+      <node id="265">
+        <label>Map&lt; String, String &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="13" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="13" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1ab13448d5922bfe4ab13f5b17abe0a04f" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>addParam</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1ac9133bcf39aaae347c94a4fd2c1a5bda" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>getParams</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1aecbfe57e11798241a78466ac8a97811b" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>getPrClass</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a9d38f54ab731c5b496b0583bd8dcce9b" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>params</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a018942d9b39afb00b7d92e874246f191" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>prClass</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a282db6a35844443df6cfaddce71e588f" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>ProcessingResource</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a33a54a56cbf52bbb61a67e8d33836956" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>ProcessingResource</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a3017ede3560bc652656ec2519543b572" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>removeParam</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a8dff2c1014fc6fbc88474a80905e97ee" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>setParams</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a1edadf63e98f370d1a61c457ed433dbb" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>setPrClass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

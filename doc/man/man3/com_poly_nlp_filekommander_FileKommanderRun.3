@@ -1,0 +1,343 @@
+.TH "com.poly.nlp.filekommander.FileKommanderRun" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.FileKommanderRun \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static void \fBmain\fP (String[] args)  throws ConfigurationException, 			MalformedURLException, GateException "
+.br
+.ti -1c
+.RI "static void \fBanalyseTextInput\fP ()"
+.br
+.ti -1c
+.RI "static \fBFileKommander\fP \fBgetKommander\fP ()"
+.br
+.ti -1c
+.RI "static void \fBsetKommander\fP (\fBFileKommander\fP \fBkommander\fP)"
+.br
+.ti -1c
+.RI "static \fBFileKommanderGUIV2\fP \fBgetGuiv2\fP ()"
+.br
+.ti -1c
+.RI "static void \fBsetGuiv2\fP (\fBFileKommanderGUIV2\fP \fBguiv2\fP)"
+.br
+.ti -1c
+.RI "static PropertiesConfiguration \fBgetConfiguration\fP ()"
+.br
+.ti -1c
+.RI "static void \fBsetConfiguration\fP (PropertiesConfiguration \fBconfiguration\fP)"
+.br
+.ti -1c
+.RI "static PropertiesConfiguration \fBloadConfigurationFromFile\fP (String configFileName)  throws ConfigurationException "
+.br
+.ti -1c
+.RI "static void \fBwriteConfigurationToFile\fP (PropertiesConfiguration \fBconfiguration\fP)"
+.br
+.ti -1c
+.RI "static synchronized void \fBshowProgress\fP ()"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static \fBFileKommander\fP \fBkommander\fP"
+.br
+.ti -1c
+.RI "static \fBFileKommanderGUIV2\fP \fBguiv2\fP"
+.br
+.ti -1c
+.RI "static PropertiesConfiguration \fBconfiguration\fP"
+.br
+.ti -1c
+.RI "static final Logger \fBlog\fP = Logger\&.getLogger(FileKommanderRun\&.class)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBAuthor:\fP
+.RS 4
+jake 
+.RE
+.PP
+
+.PP
+Definition at line 29 of file FileKommanderRun\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.analyseTextInput ()\fC [static]\fP"
+
+.PP
+Definition at line 88 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                          {
+        // showProgress();
+        String text = guiv2\&.getInputTextFld()\&.getText();
+        // guiv2\&.getOutputLbl()\&.setText('You Pressed - ' + text);
+        kommander\&.setUserInputText(text);
+        AnnotationSet allAnnotations = kommander\&.analyseText(text);
+        // kommander\&.run();
+        if (allAnnotations == null || allAnnotations\&.isEmpty()) {
+            log\&.warn('NO data received');
+            return;
+        }
+        for (Annotation annotation : allAnnotations) {
+            FeatureMap featureMap = annotation\&.getFeatures();
+            AnnotationSet actionsAnnotation = (AnnotationSet) featureMap
+                    \&.get('actions');
+            if (actionsAnnotation == null || actionsAnnotation\&.isEmpty()) {
+                log\&.warn('NO actions received');
+                return;
+            }
+            for (Annotation annot2 : actionsAnnotation) {
+                FeatureMap featureMap2 = annot2\&.getFeatures();
+                String actionType = (String) featureMap2\&.get('minorType');
+
+                // For each action analyse the annotatin to get the annotation
+                // model
+                GenericActionModel actionModel = AnalyseAction\&.analyseAction(
+                        actionType, annotation);
+                if (actionModel == null) {
+                    return;
+                } else {
+                    guiv2\&.updateInformation(actionModel);
+                }
+            }
+
+        }
+    }
+.fi
+.SS "static PropertiesConfiguration com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.getConfiguration ()\fC [static]\fP"
+\fBReturns:\fP
+.RS 4
+the configuration 
+.RE
+.PP
+
+.PP
+Definition at line 158 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                                             {
+        return configuration;
+    }
+.fi
+.SS "static \fBFileKommanderGUIV2\fP com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.getGuiv2 ()\fC [static]\fP"
+\fBReturns:\fP
+.RS 4
+the guiv2 
+.RE
+.PP
+
+.PP
+Definition at line 143 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                                {
+        return guiv2;
+    }
+.fi
+.SS "static \fBFileKommander\fP com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.getKommander ()\fC [static]\fP"
+\fBReturns:\fP
+.RS 4
+the kommander 
+.RE
+.PP
+
+.PP
+Definition at line 128 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                               {
+        return kommander;
+    }
+.fi
+.SS "static PropertiesConfiguration com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.loadConfigurationFromFile (StringconfigFileName)  throws ConfigurationException \fC [static]\fP"
+
+.PP
+Definition at line 170 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                                                 {
+        if (configFileName == null || configFileName == '') {
+            throw new ConfigurationException('Config file name is empty');
+        }
+        log\&.info('Reading Properties File' + configFileName);
+        PropertiesConfiguration config = null;
+        try {
+            URL configurl = FileKommanderRun\&.class\&.getResource(configFileName);
+            // File file = new File('/filekommander\&.properties');
+            // if(file\&.exists()){
+            config = new PropertiesConfiguration(configurl);
+            // }else{
+            // config = new PropertiesConfiguration(configurl);
+            // config\&.save(file);
+            // config\&.setFile(file);
+
+            // }
+
+            // config\&.setAutoSave(true);
+        } catch (ConfigurationException e) {
+            log\&.error('Error reading properties file', e);
+        }
+        return config;
+    }
+.fi
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.main (String[]args)  throws ConfigurationException, 			MalformedURLException, GateException \fC [static]\fP"
+\fBParameters:\fP
+.RS 4
+\fIargs\fP 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIConfigurationException\fP 
+.br
+\fIGateException\fP 
+.br
+\fIMalformedURLException\fP 
+.RE
+.PP
+
+.PP
+Definition at line 41 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                                 {
+        // create a new commander object
+        kommander = new FileKommander();
+        // configuration = new Con
+        configuration = loadConfigurationFromFile('/com/poly/nlp/filekommander/resources/FileKommander\&.properties');
+        kommander\&.setGateHome(configuration\&.getString('gateHome'));
+        kommander\&.setGazetteerFilePath(configuration
+                \&.getString('gazetteerFilePath'));
+        kommander\&.setJapeFilePath(configuration\&.getString('japeFilePath'));
+        kommander\&.setWorkingDirectory(configuration
+                \&.getString('workingDirectory'));
+        FileActionUtils\&.setWorkingDirectory(configuration
+                \&.getString('workingDirectory'));
+        kommander\&.initGATE();
+        kommander\&.setAnnie(kommander\&.initANNIE());
+        File workingDir = new File(kommander\&.getWorkingDirectory());
+        boolean success = false;
+        if (!workingDir\&.exists()) {
+            success = workingDir\&.mkdirs();
+        }
+        if (!success) {
+            log\&.error('Working dir is not set correctly');
+            // System\&.exit(-1);
+        }
+        // SwingLogAppender swingLogAppender =
+        // new SwingLogAppender(
+        // new PatternLayout('[%d{HH:mm:ss,SSS}][%p][%t] %l %m%n'));
+        // swingLogAppender\&.setThreshold(Level\&.ALL);
+        // Logger\&.getRootLogger()\&.addAppender(swingLogAppender);
+
+        EventQueue\&.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    guiv2 = new FileKommanderGUIV2();
+                    guiv2\&.getFrmFileKommander()\&.setVisible(true);
+                } catch (Exception e) {
+                    e\&.printStackTrace();
+                }
+            }
+        });
+
+    }
+.fi
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.setConfiguration (PropertiesConfigurationconfiguration)\fC [static]\fP"
+\fBParameters:\fP
+.RS 4
+\fIconfiguration\fP the configuration to set 
+.RE
+.PP
+
+.PP
+Definition at line 166 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                                                               {
+        FileKommanderRun\&.configuration = configuration;
+    }
+.fi
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.setGuiv2 (\fBFileKommanderGUIV2\fPguiv2)\fC [static]\fP"
+\fBParameters:\fP
+.RS 4
+\fIguiv2\fP the guiv2 to set 
+.RE
+.PP
+
+.PP
+Definition at line 151 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                                          {
+        FileKommanderRun\&.guiv2 = guiv2;
+    }
+.fi
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.setKommander (\fBFileKommander\fPkommander)\fC [static]\fP"
+\fBParameters:\fP
+.RS 4
+\fIkommander\fP the kommander to set 
+.RE
+.PP
+
+.PP
+Definition at line 136 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                                             {
+        FileKommanderRun\&.kommander = kommander;
+    }
+.fi
+.SS "static synchronized void com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.showProgress ()\fC [static]\fP"
+
+.PP
+Definition at line 201 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                                   {
+        MySwingWorker worker = new MySwingWorker();
+        worker\&.execute();
+    }
+.fi
+.SS "static void com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.writeConfigurationToFile (PropertiesConfigurationconfiguration)\fC [static]\fP"
+
+.PP
+Definition at line 196 of file FileKommanderRun\&.java\&.
+.PP
+.nf
+                                                   {
+
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "PropertiesConfiguration com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.configuration\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 32 of file FileKommanderRun\&.java\&.
+.SS "\fBFileKommanderGUIV2\fP com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.guiv2\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 31 of file FileKommanderRun\&.java\&.
+.SS "\fBFileKommander\fP com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.kommander\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 30 of file FileKommanderRun\&.java\&.
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.FileKommanderRun\&.log = Logger\&.getLogger(FileKommanderRun\&.class)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 33 of file FileKommanderRun\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

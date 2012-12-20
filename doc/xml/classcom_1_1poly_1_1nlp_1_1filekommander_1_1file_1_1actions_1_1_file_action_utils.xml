@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::file::actions::FileActionUtils</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a7af6d26171248a2e7253d9bce1b287cc" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.poly.nlp.filekommander.file.actions.FileActionUtils.log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>= Logger.getLogger(FileActionUtils.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="27" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ad54a8fdc9145d2f423c54cb1597f874a" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.file.actions.FileActionUtils.workingDirectory</definition>
+        <argsstring></argsstring>
+        <name>workingDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="28" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a322374face7f551b379f23ddb6a235b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.poly.nlp.filekommander.file.actions.FileActionUtils.getWorkingDirectory</definition>
+        <argsstring>()</argsstring>
+        <name>getWorkingDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the workingDirectory </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="33" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ae355d7d7cf883ff39ffe96a1bde89576" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.FileActionUtils.setWorkingDirectory</definition>
+        <argsstring>(String workingDirectory)</argsstring>
+        <name>setWorkingDirectory</name>
+        <param>
+          <type>String</type>
+          <declname>workingDirectory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>workingDirectory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the workingDirectory to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="41" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1aac7f019247f469c1ea84e1a9e158e161" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.poly.nlp.filekommander.file.actions.FileActionUtils.createFile</definition>
+        <argsstring>(String name)</argsstring>
+        <name>createFile</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new File and returns the error message</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="51" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="51" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a8cba8b4dc29efed981108c8cbd09e40b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.poly.nlp.filekommander.file.actions.FileActionUtils.createFolder</definition>
+        <argsstring>(String name)</argsstring>
+        <name>createFolder</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a new Folder and returns the error message</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="91" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="91" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ac256836b0ce9fbf8c92a6315328e641f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.poly.nlp.filekommander.file.actions.FileActionUtils.deleteFile</definition>
+        <argsstring>(String fileName)</argsstring>
+        <name>deleteFile</name>
+        <param>
+          <type>String</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="142" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="142" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a061f74de68076705a673624a99d993c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.poly.nlp.filekommander.file.actions.FileActionUtils.deleteFolder</definition>
+        <argsstring>(String folderName)</argsstring>
+        <name>deleteFolder</name>
+        <param>
+          <type>String</type>
+          <declname>folderName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="159" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="159" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1af5404810d59392650661f3a3fb7f47ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.FileActionUtils.exists</definition>
+        <argsstring>(String name)</argsstring>
+        <name>exists</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="234" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="234" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a127d6dea53d3df50906584a9dcd8394a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>static boolean com.poly.nlp.filekommander.file.actions.FileActionUtils.open</definition>
+        <argsstring>(String name)</argsstring>
+        <name>open</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="252" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="252" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a195173915a702daa3da1750b7a00bf8f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.poly.nlp.filekommander.file.actions.FileActionUtils.rename</definition>
+        <argsstring>(String oldName, String newName)</argsstring>
+        <name>rename</name>
+        <param>
+          <type>String</type>
+          <declname>oldName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>newName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="295" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="295" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a0f8ca9726628c7fa3b4e191d9c688cba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.poly.nlp.filekommander.file.actions.FileActionUtils.insert</definition>
+        <argsstring>(String phraseToBeInserted, String existingPhrase, String position, String repetition, String fileName)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>String</type>
+          <declname>phraseToBeInserted</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>existingPhrase</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>repetition</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>fileName</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="379" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="378" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ad8d655de0cba854b1c409ed450bbe636" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.FileActionUtils.stats</definition>
+        <argsstring>(String parentObjectName, int statsType, int parentObjectType)</argsstring>
+        <name>stats</name>
+        <param>
+          <type>String</type>
+          <declname>parentObjectName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>statsType</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parentObjectType</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="429" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="428" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a8ff2b8a44ef71bfb04fb320da780e4eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.FileActionUtils.stats</definition>
+        <argsstring>(String parentObjectName, String wordToBeCounted)</argsstring>
+        <name>stats</name>
+        <param>
+          <type>String</type>
+          <declname>parentObjectName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wordToBeCounted</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="446" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="445" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a2df1aca8a703f77ff7ca700541d6fb6b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.FileActionUtils.count</definition>
+        <argsstring>(String parentObjectName, String wordToBeCounted)</argsstring>
+        <name>count</name>
+        <param>
+          <type>String</type>
+          <declname>parentObjectName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wordToBeCounted</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="453" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="452" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1abda56bf0db7967ce2a92b8be5503150a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.FileActionUtils.count</definition>
+        <argsstring>(String parentObjectName, int parentObjectType, String type)</argsstring>
+        <name>count</name>
+        <param>
+          <type>String</type>
+          <declname>parentObjectName</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parentObjectType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>type</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="471" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="470" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ac7e7850c45017865b67e5ad1280d1970" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.FileActionUtils.remove</definition>
+        <argsstring>(String phraseToBeRemoved, String fileName)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>String</type>
+          <declname>phraseToBeRemoved</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>fileName</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="514" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="514" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a07c59ff019da6971e505960a04da604d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.FileActionUtils.replace</definition>
+        <argsstring>(String phraseToBeInserted, String existingPhrase, String fileName)</argsstring>
+        <name>replace</name>
+        <param>
+          <type>String</type>
+          <declname>phraseToBeInserted</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>existingPhrase</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>fileName</declname>
+        </param>
+        <exceptions> throws IOException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="527" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="526" bodyend="537"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1aa776213b3cb78ddde6f89e4b982a8e18" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int com.poly.nlp.filekommander.file.actions.FileActionUtils.countWords</definition>
+        <argsstring>(String fileName)</argsstring>
+        <name>countWords</name>
+        <param>
+          <type>String</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="540" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="540" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a1780994dac039e63b9b2c8971259d044" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; String &gt;</type>
+        <definition>static ArrayList&lt;String&gt; com.poly.nlp.filekommander.file.actions.FileActionUtils.listFiles</definition>
+        <argsstring>(String folderName, ArrayList&lt; String &gt; list)</argsstring>
+        <name>listFiles</name>
+        <param>
+          <type>String</type>
+          <declname>folderName</declname>
+        </param>
+        <param>
+          <type>ArrayList&lt; String &gt;</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="572" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="572" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a68fa55cc4deac83ac2920da1dd442172" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.poly.nlp.filekommander.file.actions.FileActionUtils.lastModified</definition>
+        <argsstring>(String parentObjectName)</argsstring>
+        <name>lastModified</name>
+        <param>
+          <type>String</type>
+          <declname>parentObjectName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="590" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="590" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a06dfce7b70b23f97847c06172ddab4b6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int com.poly.nlp.filekommander.file.actions.FileActionUtils.countSpecificWord</definition>
+        <argsstring>(String parentObjectName, String wordToBeCounted)</argsstring>
+        <name>countSpecificWord</name>
+        <param>
+          <type>String</type>
+          <declname>parentObjectName</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>wordToBeCounted</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="605" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="604" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a1221ebf805c2cc881c40fad828f64861" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.poly.nlp.filekommander.file.actions.FileActionUtils.sizeOf</definition>
+        <argsstring>(String parentObjectName)</argsstring>
+        <name>sizeOf</name>
+        <param>
+          <type>String</type>
+          <declname>parentObjectName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="645" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="645" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a5159f72af191d97005ade7a8b7a95ac1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int com.poly.nlp.filekommander.file.actions.FileActionUtils.countFiles</definition>
+        <argsstring>(String parentObjectName)</argsstring>
+        <name>countFiles</name>
+        <param>
+          <type>String</type>
+          <declname>parentObjectName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="699" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="699" bodyend="709"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a7c29f2257b29d8d10c39a87b351093fb" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>static String com.poly.nlp.filekommander.file.actions.FileActionUtils.printSize</definition>
+        <argsstring>(long b)</argsstring>
+        <name>printSize</name>
+        <param>
+          <type>long</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="669" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="669" bodyend="682"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a1e5c3dca1c8116ae57515c36edeae4d9" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int com.poly.nlp.filekommander.file.actions.FileActionUtils.countSubFiles</definition>
+        <argsstring>(File f)</argsstring>
+        <name>countSubFiles</name>
+        <param>
+          <type>File</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="712" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="712" bodyend="725"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a4eb94d6fbf8aed90a068180e88b8e9cd" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>static long com.poly.nlp.filekommander.file.actions.FileActionUtils.sizeofDirectory</definition>
+        <argsstring>(File f)</argsstring>
+        <name>sizeofDirectory</name>
+        <param>
+          <type>File</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="685" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="685" bodyend="696"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="81">
+        <label>com.poly.nlp.filekommander.file.actions.FileActionUtils</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils"/>
+        <childnode refid="82" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+      </node>
+      <node id="82">
+        <label>Logger</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" line="26" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtils.java" bodystart="26" bodyend="732"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a2df1aca8a703f77ff7ca700541d6fb6b" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>count</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1abda56bf0db7967ce2a92b8be5503150a" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>count</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a5159f72af191d97005ade7a8b7a95ac1" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>countFiles</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a06dfce7b70b23f97847c06172ddab4b6" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>countSpecificWord</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a1e5c3dca1c8116ae57515c36edeae4d9" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>countSubFiles</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1aa776213b3cb78ddde6f89e4b982a8e18" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>countWords</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1aac7f019247f469c1ea84e1a9e158e161" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>createFile</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a8cba8b4dc29efed981108c8cbd09e40b" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>createFolder</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ac256836b0ce9fbf8c92a6315328e641f" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>deleteFile</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a061f74de68076705a673624a99d993c6" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>deleteFolder</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1af5404810d59392650661f3a3fb7f47ce" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>exists</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a322374face7f551b379f23ddb6a235b9" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>getWorkingDirectory</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a0f8ca9726628c7fa3b4e191d9c688cba" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>insert</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a68fa55cc4deac83ac2920da1dd442172" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>lastModified</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a1780994dac039e63b9b2c8971259d044" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>listFiles</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a7af6d26171248a2e7253d9bce1b287cc" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>log</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a127d6dea53d3df50906584a9dcd8394a" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>open</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a7c29f2257b29d8d10c39a87b351093fb" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>printSize</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ac7e7850c45017865b67e5ad1280d1970" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>remove</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a195173915a702daa3da1750b7a00bf8f" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>rename</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a07c59ff019da6971e505960a04da604d" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>replace</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ae355d7d7cf883ff39ffe96a1bde89576" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>setWorkingDirectory</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a1221ebf805c2cc881c40fad828f64861" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>sizeOf</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a4eb94d6fbf8aed90a068180e88b8e9cd" prot="package" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>sizeofDirectory</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ad8d655de0cba854b1c409ed450bbe636" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>stats</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1a8ff2b8a44ef71bfb04fb320da780e4eb" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>stats</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_1ad54a8fdc9145d2f423c54cb1597f874a" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtils</scope><name>workingDirectory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

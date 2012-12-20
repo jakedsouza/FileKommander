@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions" kind="namespace">
+    <compoundname>com::poly::nlp::filekommander::file::actions</compoundname>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action" prot="public">com::poly::nlp::filekommander::file::actions::AnalyseAction</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action" prot="public">com::poly::nlp::filekommander::file::actions::CallAction</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils" prot="public">com::poly::nlp::filekommander::file::actions::FileActionUtils</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa" prot="public">com::poly::nlp::filekommander::file::actions::FileActionUtilsaa</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration" prot="public">com::poly::nlp::filekommander::file::actions::FileKommanderConfiguration</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_o_s_detector" prot="public">com::poly::nlp::filekommander::file::actions::OSDetector</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="1"/>
+  </compounddef>
+</doxygen>

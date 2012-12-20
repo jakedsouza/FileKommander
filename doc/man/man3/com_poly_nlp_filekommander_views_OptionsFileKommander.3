@@ -1,0 +1,128 @@
+.TH "com.poly.nlp.filekommander.views.OptionsFileKommander" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.OptionsFileKommander \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits JDialog\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOptionsFileKommander\fP ()"
+.br
+.ti -1c
+.RI "JPanel \fBgetContentPanel\fP ()"
+.br
+.ti -1c
+.RI "JButton \fBgetOkButton\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "final JPanel \fBcontentPanel\fP = new JPanel()"
+.br
+.ti -1c
+.RI "JButton \fBokButton\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final long \fBserialVersionUID\fP = 1L"
+.br
+.ti -1c
+.RI "static final Logger \fBlog\fP = Logger\&.getLogger(OptionsFileKommander\&.class)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 13 of file OptionsFileKommander\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.views\&.OptionsFileKommander\&.OptionsFileKommander ()"
+Create the dialog\&. 
+.PP
+Definition at line 27 of file OptionsFileKommander\&.java\&.
+.PP
+.nf
+                                  {
+        log\&.info('AboutFileKommander constructor') ;
+        setTitle('FileKommander Options');
+        setAlwaysOnTop(true);
+        setModal(true);
+        setResizable(false);
+        setBounds(100, 100, 450, 300);
+        getContentPane()\&.setLayout(null);
+        contentPanel\&.setBounds(0, 0, 444, 238);
+        contentPanel\&.setBorder(new EmptyBorder(5, 5, 5, 5));
+        getContentPane()\&.add(contentPanel);
+        contentPanel\&.setLayout(new GridLayout(10, 10, 0, 0));
+        {
+            JPanel buttonPane = new JPanel();
+            buttonPane\&.setBounds(0, 239, 444, 33);
+            buttonPane\&.setLayout(new FlowLayout(FlowLayout\&.CENTER));
+            getContentPane()\&.add(buttonPane);
+            {
+                okButton = new JButton('Save');
+                
+                okButton\&.setActionCommand('OK');
+                buttonPane\&.add(okButton);
+                // add(button);
+                // pack();
+                // setVisible(true);
+                getRootPane()\&.setDefaultButton(okButton);
+            }
+        }
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.OptionsFileKommander\&.getContentPanel ()"
+
+.PP
+Definition at line 56 of file OptionsFileKommander\&.java\&.
+.PP
+.nf
+                                    {
+        return contentPanel;
+    }
+.fi
+.SS "JButton com\&.poly\&.nlp\&.filekommander\&.views\&.OptionsFileKommander\&.getOkButton ()"
+
+.PP
+Definition at line 59 of file OptionsFileKommander\&.java\&.
+.PP
+.nf
+                                 {
+        return okButton;
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "final JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.OptionsFileKommander\&.contentPanel = new JPanel()\fC [private]\fP"
+
+.PP
+Definition at line 21 of file OptionsFileKommander\&.java\&.
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.views\&.OptionsFileKommander\&.log = Logger\&.getLogger(OptionsFileKommander\&.class)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 19 of file OptionsFileKommander\&.java\&.
+.SS "JButton com\&.poly\&.nlp\&.filekommander\&.views\&.OptionsFileKommander\&.okButton\fC [private]\fP"
+
+.PP
+Definition at line 22 of file OptionsFileKommander\&.java\&.
+.SS "final long com\&.poly\&.nlp\&.filekommander\&.views\&.OptionsFileKommander\&.serialVersionUID = 1L\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 17 of file OptionsFileKommander\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

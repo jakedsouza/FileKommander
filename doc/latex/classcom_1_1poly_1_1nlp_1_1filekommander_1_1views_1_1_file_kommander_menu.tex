@@ -1,0 +1,256 @@
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu}{\section{com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu Class Reference}
+\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu}\index{com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu@{com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu}}
+}
+Inheritance diagram for com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a5d68fabb7e7f5cf7c94a3e29ef5631ee}{File\-Kommander\-Menu} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a27842ee6e2731a5b9d459852dcdd5a4d}{display\-Options} (Action\-Event e)
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_ac5a9651b87cfddaa37774622acbfa3b8}{save\-And\-Dispose} ()
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a478a27e7168e5045b9f4ee5ffe1523cc}{display\-About} (Action\-Event e)
+\end{DoxyCompactItemize}
+\subsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander}{Options\-File\-Kommander} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}{options\-File\-Kommander}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a978d1a80fa281d2548206d86204b3616}{load\-Options\-File} ()
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_afcd1856362c78beb91904ec0976cbcf9}{set\-Label\-Text} (String key, String value)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_ae9f2507a684bcf4de4a7196385e179c7}{serial\-Version\-U\-I\-D} = 1\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{L19}{19} of file \hyperlink{}{File\-Kommander\-Menu.\-java}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a5d68fabb7e7f5cf7c94a3e29ef5631ee}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}!File\-Kommander\-Menu@{File\-Kommander\-Menu}}
+\index{File\-Kommander\-Menu@{File\-Kommander\-Menu}!com::poly::nlp::filekommander::views::FileKommanderMenu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}}
+\subsubsection[{File\-Kommander\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu.\-File\-Kommander\-Menu (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a5d68fabb7e7f5cf7c94a3e29ef5631ee}
+Create the panel. 
+
+Definition at line \hyperlink{L30}{30} of file \hyperlink{}{File\-Kommander\-Menu.\-java}.
+
+
+\begin{DoxyCode}
+                               \{
+        
+        JMenu fileMenu = \textcolor{keyword}{new} JMenu(\textcolor{stringliteral}{"File"});
+        add(fileMenu);
+        
+        JMenuItem aboutMenuItem = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"About"});
+        aboutMenuItem.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+            \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a478a27e7168e5045b9f4ee5ffe1523cc}{displayAbout}(e);
+            \}
+        \});
+        JMenuItem optionsMenuItem = \textcolor{keyword}{new} JMenuItem(\textcolor{stringliteral}{"Options"});
+        optionsMenuItem.setBorderPainted(\textcolor{keyword}{true});
+        optionsMenuItem.addActionListener(\textcolor{keyword}{new} ActionListener() \{
+            \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a27842ee6e2731a5b9d459852dcdd5a4d}{displayOptions}(e);        
+            \}
+        \});
+        fileMenu.add(optionsMenuItem);
+        fileMenu.add(aboutMenuItem);        
+    \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a478a27e7168e5045b9f4ee5ffe1523cc}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}!display\-About@{display\-About}}
+\index{display\-About@{display\-About}!com::poly::nlp::filekommander::views::FileKommanderMenu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}}
+\subsubsection[{display\-About}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu.\-display\-About (
+\begin{DoxyParamCaption}
+\item[{Action\-Event}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a478a27e7168e5045b9f4ee5ffe1523cc}
+
+
+Definition at line \hyperlink{L118}{118} of file \hyperlink{}{File\-Kommander\-Menu.\-java}.
+
+
+\begin{DoxyCode}
+                                               \{
+        AboutFileKommander aboutFileKommander = \textcolor{keyword}{new} AboutFileKommander();
+        aboutFileKommander.setLocationRelativeTo(null);
+        aboutFileKommander.setVisible(\textcolor{keyword}{true});        
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a27842ee6e2731a5b9d459852dcdd5a4d}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}!display\-Options@{display\-Options}}
+\index{display\-Options@{display\-Options}!com::poly::nlp::filekommander::views::FileKommanderMenu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}}
+\subsubsection[{display\-Options}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu.\-display\-Options (
+\begin{DoxyParamCaption}
+\item[{Action\-Event}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a27842ee6e2731a5b9d459852dcdd5a4d}
+
+
+Definition at line \hyperlink{L52}{52} of file \hyperlink{}{File\-Kommander\-Menu.\-java}.
+
+
+\begin{DoxyCode}
+                                                \{
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}{optionsFileKommander} = \textcolor{keyword}{new} OptionsFileKommander();
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}{optionsFileKommander}.setLocationRelativeTo(null);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a978d1a80fa281d2548206d86204b3616}{loadOptionsFile}();
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}{optionsFileKommander}.setVisible(\textcolor{keyword}{true});      
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a978d1a80fa281d2548206d86204b3616}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}!load\-Options\-File@{load\-Options\-File}}
+\index{load\-Options\-File@{load\-Options\-File}!com::poly::nlp::filekommander::views::FileKommanderMenu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}}
+\subsubsection[{load\-Options\-File}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu.\-load\-Options\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a978d1a80fa281d2548206d86204b3616}
+
+
+Definition at line \hyperlink{L59}{59} of file \hyperlink{}{File\-Kommander\-Menu.\-java}.
+
+
+\begin{DoxyCode}
+                                  \{
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}{optionsFileKommander}.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander_aac58d7d8c360a50897f4324322a918c7}{getOkButton}().
+      addActionListener(\textcolor{keyword}{new} ActionListener() \{
+            \textcolor{keyword}{public} \textcolor{keywordtype}{void} actionPerformed(ActionEvent e) \{
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_ac5a9651b87cfddaa37774622acbfa3b8}{saveAndDispose}();
+            \}
+        \});
+        PropertiesConfiguration configuration = FileKommanderRun.
+      getConfiguration();
+        Iterator<String> keys = configuration.getKeys();
+        \textcolor{keywordflow}{while} (keys.hasNext()) \{
+            String key = (String) keys.next();
+            String value = configuration.getString(key);
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_afcd1856362c78beb91904ec0976cbcf9}{setLabelText}(key, value);
+        \}
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}{optionsFileKommander}.paintAll(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}{optionsFileKommander}
+      .getGraphics());
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_ac5a9651b87cfddaa37774622acbfa3b8}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}!save\-And\-Dispose@{save\-And\-Dispose}}
+\index{save\-And\-Dispose@{save\-And\-Dispose}!com::poly::nlp::filekommander::views::FileKommanderMenu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}}
+\subsubsection[{save\-And\-Dispose}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu.\-save\-And\-Dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_ac5a9651b87cfddaa37774622acbfa3b8}
+
+
+Definition at line \hyperlink{L75}{75} of file \hyperlink{}{File\-Kommander\-Menu.\-java}.
+
+
+\begin{DoxyCode}
+                                    \{
+        PropertiesConfiguration configuration = FileKommanderRun.
+      getConfiguration() ;
+        
+        Component[] components = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}{optionsFileKommander}.
+      \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander_a9620544d34bd81849c5883f30a84bab8}{getContentPanel}().getComponents() ;
+        
+        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < components.length; i++) \{
+        \textcolor{comment}{//  if(//components[i].)}
+            String key =\textcolor{stringliteral}{""};
+            String value = \textcolor{stringliteral}{""};
+            \textcolor{keywordflow}{if}(components[i] instanceof JLabel)\{
+                JLabel jLabel = (JLabel) components[i];
+                key = jLabel.getText();
+            \}
+            \textcolor{keywordflow}{if}(components[i] instanceof JTextField)\{
+                JTextField jTextField= (JTextField) components[i];
+                value = jTextField.getText();
+            \}
+            configuration.addProperty(key, value);
+            System.out.println(components[i]);
+        \}
+        \textcolor{keywordflow}{try} \{
+            configuration.save();
+        \} \textcolor{keywordflow}{catch} (ConfigurationException e) \{
+            \textcolor{comment}{// TODO Auto-generated catch block}
+            e.printStackTrace();
+        \}
+        FileKommanderRun.setConfiguration(configuration);
+        \textcolor{keywordflow}{try} \{
+            FileKommanderRun.loadConfigurationFromFile(\textcolor{stringliteral}{"
+      /filekommander.properties"});
+        \} \textcolor{keywordflow}{catch} (ConfigurationException e) \{
+            \textcolor{comment}{// TODO Auto-generated catch block}
+            e.printStackTrace();
+        \}
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_afcd1856362c78beb91904ec0976cbcf9}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}!set\-Label\-Text@{set\-Label\-Text}}
+\index{set\-Label\-Text@{set\-Label\-Text}!com::poly::nlp::filekommander::views::FileKommanderMenu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}}
+\subsubsection[{set\-Label\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu.\-set\-Label\-Text (
+\begin{DoxyParamCaption}
+\item[{String}]{key, }
+\item[{String}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_afcd1856362c78beb91904ec0976cbcf9}
+
+
+Definition at line \hyperlink{L110}{110} of file \hyperlink{}{File\-Kommander\-Menu.\-java}.
+
+
+\begin{DoxyCode}
+                                                        \{
+        JLabel jLabel = \textcolor{keyword}{new} JLabel(key);
+        JTextField textField = \textcolor{keyword}{new} JTextField(value);
+        jLabel.setLabelFor(textField);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}{optionsFileKommander}.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander_a9620544d34bd81849c5883f30a84bab8}{getContentPanel}
+      ().add(jLabel);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}{optionsFileKommander}.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander_a9620544d34bd81849c5883f30a84bab8}{getContentPanel}
+      ().add(textField);
+    \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}!options\-File\-Kommander@{options\-File\-Kommander}}
+\index{options\-File\-Kommander@{options\-File\-Kommander}!com::poly::nlp::filekommander::views::FileKommanderMenu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}}
+\subsubsection[{options\-File\-Kommander}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Options\-File\-Kommander} com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu.\-options\-File\-Kommander\hspace{0.3cm}{\ttfamily [package]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_a003b2d89fc465db1befab3410121166d}
+
+
+Definition at line \hyperlink{L25}{25} of file \hyperlink{}{File\-Kommander\-Menu.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_ae9f2507a684bcf4de4a7196385e179c7}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}!serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}}
+\index{serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}!com::poly::nlp::filekommander::views::FileKommanderMenu@{com\-::poly\-::nlp\-::filekommander\-::views\-::\-File\-Kommander\-Menu}}
+\subsubsection[{serial\-Version\-U\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}final long com.\-poly.\-nlp.\-filekommander.\-views.\-File\-Kommander\-Menu.\-serial\-Version\-U\-I\-D = 1\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_ae9f2507a684bcf4de4a7196385e179c7}
+
+
+Definition at line \hyperlink{L24}{24} of file \hyperlink{}{File\-Kommander\-Menu.\-java}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+git/\-File\-Kommander/src/com/poly/nlp/filekommander/views/\hyperlink{_file_kommander_menu_8java}{File\-Kommander\-Menu.\-java}\end{DoxyCompactItemize}

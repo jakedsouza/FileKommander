@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::file::actions::FileActionUtilsaa</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_1a77b8f795458e1c7e9b013d6d06c6e97a" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.poly.nlp.filekommander.file.actions.FileActionUtilsaa.log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>= Logger.getLogger(FileActionUtils.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtilsaa.java" line="36" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtilsaa.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_1af9adb01342997356115f0a50f1ec2087" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.file.actions.FileActionUtilsaa.workingDirectory</definition>
+        <argsstring></argsstring>
+        <name>workingDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtilsaa.java" line="37" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtilsaa.java" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_1abe1c422d6b1901a7889fc6d8b6502c88" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; String &gt;</type>
+        <definition>static ArrayList&lt;String&gt; com.poly.nlp.filekommander.file.actions.FileActionUtilsaa.getObjectNameFromAnnotation</definition>
+        <argsstring>(FeatureMap featureMap, String key)</argsstring>
+        <name>getObjectNameFromAnnotation</name>
+        <param>
+          <type>FeatureMap</type>
+          <declname>featureMap</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtilsaa.java" line="707" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtilsaa.java" bodystart="706" bodyend="724"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>jake , neha </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="84">
+        <label>com.poly.nlp.filekommander.file.actions.FileActionUtilsaa</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa"/>
+        <childnode refid="85" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+      </node>
+      <node id="85">
+        <label>Logger</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtilsaa.java" line="35" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/FileActionUtilsaa.java" bodystart="35" bodyend="727"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_1abe1c422d6b1901a7889fc6d8b6502c88" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtilsaa</scope><name>getObjectNameFromAnnotation</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_1a77b8f795458e1c7e9b013d6d06c6e97a" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtilsaa</scope><name>log</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utilsaa_1af9adb01342997356115f0a50f1ec2087" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::FileActionUtilsaa</scope><name>workingDirectory</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,382 @@
+.TH "com.poly.nlp.filekommander.views.panels.AbstractMessagePanel" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.panels.AbstractMessagePanel \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\fP\&.
+.PP
+Inherited by \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.OpenActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAbstractMessagePanel\fP ()"
+.br
+.ti -1c
+.RI "void \fBresetPanel\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetActionString\fP (String \fBactionString\fP)"
+.br
+.ti -1c
+.RI "String \fBgetActionString\fP ()"
+.br
+.ti -1c
+.RI "JPanel \fBgetMessagePanel\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetMessagePanel\fP (JPanel \fBmessagePanel\fP)"
+.br
+.ti -1c
+.RI "JPanel \fBgetCommandPanel\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCommandPanel\fP (JPanel \fBcommandPanel\fP)"
+.br
+.ti -1c
+.RI "JTable \fBgetTable\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetTable\fP (JTable \fBtable\fP)"
+.br
+.ti -1c
+.RI "JButton \fBgetBtnClear\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetBtnClear\fP (JButton \fBbtnClear\fP)"
+.br
+.ti -1c
+.RI "abstract void \fBupdatePanelData\fP (\fBGenericActionModel\fP model)"
+.br
+.ti -1c
+.RI "abstract void \fBupdatePanelData\fP ()"
+.br
+.ti -1c
+.RI "abstract void \fBupdatePanelDataAfterAction\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "JLabel \fBcreateDefaultObjectLabel\fP (String labelText, int type)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "String \fBactionString\fP"
+.br
+.ti -1c
+.RI "JPanel \fBmessagePanel\fP"
+.br
+.ti -1c
+.RI "JPanel \fBcommandPanel\fP"
+.br
+.ti -1c
+.RI "JTable \fBtable\fP"
+.br
+.ti -1c
+.RI "JButton \fBbtnClear\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final long \fBserialVersionUID\fP = 1L"
+.br
+.ti -1c
+.RI "static final Logger \fBlog\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 16 of file AbstractMessagePanel\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.AbstractMessagePanel ()"
+Create the panel\&. 
+.PP
+Definition at line 30 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                                  {
+        SpringLayout springLayout = new SpringLayout();
+        setLayout(springLayout);
+
+        setMessagePanel(new JPanel());
+        springLayout\&.putConstraint(SpringLayout\&.NORTH, getMessagePanel(), 0,
+                SpringLayout\&.NORTH, this);
+        springLayout\&.putConstraint(SpringLayout\&.EAST, getMessagePanel(), 0,
+                SpringLayout\&.EAST, this);
+        getMessagePanel()\&.setAutoscrolls(true);
+        add(getMessagePanel());
+        getMessagePanel()\&.setLayout(null);
+        setCommandPanel(new JPanel());
+        springLayout\&.putConstraint(SpringLayout\&.SOUTH, getMessagePanel(), -6,
+                SpringLayout\&.NORTH, this);
+        springLayout\&.putConstraint(SpringLayout\&.WEST, getCommandPanel(), 0,
+                SpringLayout\&.WEST, this);
+        springLayout\&.putConstraint(SpringLayout\&.SOUTH, getCommandPanel(), 0,
+                SpringLayout\&.SOUTH, this);
+        springLayout\&.putConstraint(SpringLayout\&.EAST, getCommandPanel(), 0,
+                SpringLayout\&.EAST, this);
+        springLayout\&.putConstraint(SpringLayout\&.NORTH, getCommandPanel(), -40,
+                SpringLayout\&.SOUTH, this);
+        add(getCommandPanel());
+        {
+            setBtnClear(new JButton('Clear'));
+            commandPanel\&.add(getBtnClear());
+        }
+
+        setTable(new JTable());
+        getTable()\&.setBorder(new BevelBorder(BevelBorder\&.RAISED, null, null, null,
+                null));
+        getTable()\&.setBounds(386, 217, -324, -173);
+        getMessagePanel()\&.add(getTable());
+
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "JLabel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.createDefaultObjectLabel (StringlabelText, inttype)\fC [private]\fP"
+
+.PP
+Definition at line 67 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                                                                        {
+        JLabel lblNewLabel = new JLabel(labelText);
+        lblNewLabel\&.setForeground(new Color(0, 0, 0));
+        if (type == FileKommander\&.FILE) {
+            lblNewLabel
+                    \&.setIcon(new ImageIcon(
+                            CreateActionPanel\&.class
+                                    \&.getResource('/com/poly/nlp/filekommander/views/icon/file\&.png')));
+        } else if (type == FileKommander\&.DIRECTORY) {
+            lblNewLabel
+                    \&.setIcon(new ImageIcon(
+                            CreateActionPanel\&.class
+                                    \&.getResource('/com/poly/nlp/filekommander/views/icon/folder\&.png')));
+        }
+        return lblNewLabel;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.getActionString ()"
+\fBReturns:\fP
+.RS 4
+the actionString 
+.RE
+.PP
+
+.PP
+Definition at line 100 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                                    {
+        return actionString;
+    }
+.fi
+.SS "JButton com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.getBtnClear ()"
+\fBReturns:\fP
+.RS 4
+the btnClear 
+.RE
+.PP
+
+.PP
+Definition at line 139 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                                 {
+        return btnClear;
+    }
+.fi
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.getCommandPanel ()"
+
+.PP
+Definition at line 114 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                                    {
+        return commandPanel;
+    }
+.fi
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.getMessagePanel ()"
+
+.PP
+Definition at line 104 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                                    {
+        return messagePanel;
+    }
+.fi
+.SS "JTable com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.getTable ()"
+
+.PP
+Definition at line 125 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                             {
+        return table;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.resetPanel ()\fC [virtual]\fP"
+Resets the panel to default state 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\fP\&.
+.PP
+Definition at line 84 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                             {
+        this\&.updatePanelData();
+        FileKommanderRun\&.getGuiv2()\&.reset();
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.setActionString (StringactionString)"
+\fBParameters:\fP
+.RS 4
+\fIactionString\fP the actionString to set 
+.RE
+.PP
+
+.PP
+Definition at line 93 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                                                     {
+        this\&.actionString = actionString;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.setBtnClear (JButtonbtnClear)"
+\fBParameters:\fP
+.RS 4
+\fIbtnClear\fP the btnClear to set 
+.RE
+.PP
+
+.PP
+Definition at line 146 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                                              {
+        this\&.btnClear = btnClear;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.setCommandPanel (JPanelcommandPanel)"
+\fBParameters:\fP
+.RS 4
+\fIcommandPanel\fP the commandPanel to set 
+.RE
+.PP
+
+.PP
+Definition at line 121 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                                                     {
+        this\&.commandPanel = commandPanel;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.setMessagePanel (JPanelmessagePanel)"
+\fBParameters:\fP
+.RS 4
+\fImessagePanel\fP the messagePanel to set 
+.RE
+.PP
+
+.PP
+Definition at line 110 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                                                     {
+        this\&.messagePanel = messagePanel;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.setTable (JTabletable)"
+\fBParameters:\fP
+.RS 4
+\fItable\fP the table to set 
+.RE
+.PP
+
+.PP
+Definition at line 132 of file AbstractMessagePanel\&.java\&.
+.PP
+.nf
+                                       {
+        this\&.table = table;
+    }
+.fi
+.SS "abstract void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.updatePanelData (\fBGenericActionModel\fPactionModel)\fC [pure virtual]\fP"
+Update the panel before action is taken using the given action model
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionModel\fP 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\fP\&.
+.PP
+Implemented in \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.OpenActionPanel\fP\&.
+.SS "abstract void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.updatePanelData ()\fC [pure virtual]\fP"
+Update the panel before action is taken 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\fP\&.
+.PP
+Implemented in \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.OpenActionPanel\fP\&.
+.SS "abstract void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.updatePanelDataAfterAction ()\fC [pure virtual]\fP"
+updates the create panel after the action is run 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\fP\&.
+.PP
+Implemented in \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.OpenActionPanel\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.actionString\fC [private]\fP"
+
+.PP
+Definition at line 19 of file AbstractMessagePanel\&.java\&.
+.SS "JButton com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.btnClear\fC [private]\fP"
+
+.PP
+Definition at line 25 of file AbstractMessagePanel\&.java\&.
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.commandPanel\fC [private]\fP"
+
+.PP
+Definition at line 21 of file AbstractMessagePanel\&.java\&.
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.log\fC [static]\fP, \fC [private]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+= Logger
+            \&.getLogger(AbstractMessagePanel\&.class)
+.fi
+.PP
+Definition at line 22 of file AbstractMessagePanel\&.java\&.
+.SS "JPanel com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.messagePanel\fC [private]\fP"
+
+.PP
+Definition at line 20 of file AbstractMessagePanel\&.java\&.
+.SS "final long com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.serialVersionUID = 1L\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 18 of file AbstractMessagePanel\&.java\&.
+.SS "JTable com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\&.table\fC [private]\fP"
+
+.PP
+Definition at line 24 of file AbstractMessagePanel\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

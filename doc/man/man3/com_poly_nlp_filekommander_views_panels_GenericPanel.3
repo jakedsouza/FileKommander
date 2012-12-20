@@ -1,0 +1,73 @@
+.TH "com.poly.nlp.filekommander.views.panels.GenericPanel" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.panels.GenericPanel \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits JPanel\&.
+.PP
+Inherited by \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.EmptyActionPanel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "abstract void \fBupdatePanelData\fP (\fBGenericActionModel\fP actionModel)"
+.br
+.ti -1c
+.RI "abstract void \fBupdatePanelData\fP ()"
+.br
+.ti -1c
+.RI "abstract void \fBupdatePanelDataAfterAction\fP ()"
+.br
+.ti -1c
+.RI "abstract void \fBresetPanel\fP ()"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final long \fBserialVersionUID\fP = 1L"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 7 of file GenericPanel\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "abstract void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\&.resetPanel ()\fC [pure virtual]\fP"
+Resets the panel to default state 
+.PP
+Implemented in \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.EmptyActionPanel\fP\&.
+.SS "abstract void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\&.updatePanelData (\fBGenericActionModel\fPactionModel)\fC [pure virtual]\fP"
+Update the panel before action is taken using the given action model
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionModel\fP 
+.RE
+.PP
+
+.PP
+Implemented in \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.CreateActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.DeleteActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.EmptyActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.OpenActionPanel\fP\&.
+.SS "abstract void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\&.updatePanelData ()\fC [pure virtual]\fP"
+Update the panel before action is taken 
+.PP
+Implemented in \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.CreateActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.DeleteActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.EmptyActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.OpenActionPanel\fP\&.
+.SS "abstract void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\&.updatePanelDataAfterAction ()\fC [pure virtual]\fP"
+updates the create panel after the action is run 
+.PP
+Implemented in \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.CreateActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.DeleteActionPanel\fP, \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.EmptyActionPanel\fP, and \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.OpenActionPanel\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "final long com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.GenericPanel\&.serialVersionUID = 1L\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 11 of file GenericPanel\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

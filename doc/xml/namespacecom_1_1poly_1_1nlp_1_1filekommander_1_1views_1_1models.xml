@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models" kind="namespace">
+    <compoundname>com::poly::nlp::filekommander::views::models</compoundname>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model" prot="public">com::poly::nlp::filekommander::views::models::CreateModel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model" prot="public">com::poly::nlp::filekommander::views::models::DeleteModel</innerclass>
+    <innerclass refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" prot="public">com::poly::nlp::filekommander::views::models::GenericActionModel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model" prot="public">com::poly::nlp::filekommander::views::models::PhraseOperationModel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model" prot="public">com::poly::nlp::filekommander::views::models::RenameModel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model" prot="public">com::poly::nlp::filekommander::views::models::StatsModel</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/CreateModel.java" line="1"/>
+  </compounddef>
+</doxygen>

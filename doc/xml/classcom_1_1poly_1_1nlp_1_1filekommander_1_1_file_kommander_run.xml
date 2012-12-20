@@ -1,0 +1,625 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::FileKommanderRun</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a2dffc1b40df78c82faf9567da220dae2" prot="private" static="yes" mutable="no">
+        <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander" kindref="compound">FileKommander</ref></type>
+        <definition>FileKommander com.poly.nlp.filekommander.FileKommanderRun.kommander</definition>
+        <argsstring></argsstring>
+        <name>kommander</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="30" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1af105be529e7e9e9312aab57f6381b5ca" prot="private" static="yes" mutable="no">
+        <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2" kindref="compound">FileKommanderGUIV2</ref></type>
+        <definition>FileKommanderGUIV2 com.poly.nlp.filekommander.FileKommanderRun.guiv2</definition>
+        <argsstring></argsstring>
+        <name>guiv2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="31" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a6bcf83454309db08057f32fde995ede8" prot="private" static="yes" mutable="no">
+        <type>PropertiesConfiguration</type>
+        <definition>PropertiesConfiguration com.poly.nlp.filekommander.FileKommanderRun.configuration</definition>
+        <argsstring></argsstring>
+        <name>configuration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="32" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1ae7643c914a5fa93d155faafc32529519" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.poly.nlp.filekommander.FileKommanderRun.log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>= Logger.getLogger(FileKommanderRun.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="33" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a5927b17fe7f36dc411e57833ef2e9526" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.FileKommanderRun.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <exceptions> throws ConfigurationException, 			MalformedURLException, GateException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ConfigurationException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GateException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MalformedURLException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="42" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="41" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1ab9503413d54c7d1880931d9ee03e021d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.FileKommanderRun.analyseTextInput</definition>
+        <argsstring>()</argsstring>
+        <name>analyseTextInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="88" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="88" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1afd37283a20f7115abfd53064c2ad87a2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander" kindref="compound">FileKommander</ref></type>
+        <definition>static FileKommander com.poly.nlp.filekommander.FileKommanderRun.getKommander</definition>
+        <argsstring>()</argsstring>
+        <name>getKommander</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the kommander </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="128" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1aa8fe20066fea0bae38e0b0f3eb553713" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.FileKommanderRun.setKommander</definition>
+        <argsstring>(FileKommander kommander)</argsstring>
+        <name>setKommander</name>
+        <param>
+          <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander" kindref="compound">FileKommander</ref></type>
+          <declname>kommander</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kommander</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the kommander to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="136" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="136" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a397a9a14b5802a79157fe7f90a9c49de" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2" kindref="compound">FileKommanderGUIV2</ref></type>
+        <definition>static FileKommanderGUIV2 com.poly.nlp.filekommander.FileKommanderRun.getGuiv2</definition>
+        <argsstring>()</argsstring>
+        <name>getGuiv2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the guiv2 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="143" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1acd6193926603bb658fd3a05d1477b4cf" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.FileKommanderRun.setGuiv2</definition>
+        <argsstring>(FileKommanderGUIV2 guiv2)</argsstring>
+        <name>setGuiv2</name>
+        <param>
+          <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2" kindref="compound">FileKommanderGUIV2</ref></type>
+          <declname>guiv2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>guiv2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the guiv2 to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="151" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a25c8c598e359f8cde6745af311b48daa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>PropertiesConfiguration</type>
+        <definition>static PropertiesConfiguration com.poly.nlp.filekommander.FileKommanderRun.getConfiguration</definition>
+        <argsstring>()</argsstring>
+        <name>getConfiguration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the configuration </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="158" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a426dc38c43b2cc64b35a3fa5a331a2ba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.FileKommanderRun.setConfiguration</definition>
+        <argsstring>(PropertiesConfiguration configuration)</argsstring>
+        <name>setConfiguration</name>
+        <param>
+          <type>PropertiesConfiguration</type>
+          <declname>configuration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>configuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the configuration to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="166" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="166" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a459b20955a8772b8de02853c3fae3695" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>PropertiesConfiguration</type>
+        <definition>static PropertiesConfiguration com.poly.nlp.filekommander.FileKommanderRun.loadConfigurationFromFile</definition>
+        <argsstring>(String configFileName)</argsstring>
+        <name>loadConfigurationFromFile</name>
+        <param>
+          <type>String</type>
+          <declname>configFileName</declname>
+        </param>
+        <exceptions> throws ConfigurationException </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="171" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="170" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a5e44a48af70a2685c5802345f2089c4c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.FileKommanderRun.writeConfigurationToFile</definition>
+        <argsstring>(PropertiesConfiguration configuration)</argsstring>
+        <name>writeConfigurationToFile</name>
+        <param>
+          <type>PropertiesConfiguration</type>
+          <declname>configuration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="197" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="196" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a26e901fd6f8d168583fc6ef90cee71f3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized void</type>
+        <definition>static synchronized void com.poly.nlp.filekommander.FileKommanderRun.showProgress</definition>
+        <argsstring>()</argsstring>
+        <name>showProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="201" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="201" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>jake </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="163">
+        <label>JPanel</label>
+      </node>
+      <node id="170">
+        <label>com.poly.nlp.filekommander.views.panels.AbstractFileFolderPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel"/>
+        <childnode refid="162" relation="public-inheritance">
+        </childnode>
+        <childnode refid="151" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="164" relation="usage">
+          <edgelabel>btnAccept</edgelabel>
+          <edgelabel>btnReject</edgelabel>
+        </childnode>
+        <childnode refid="171" relation="usage">
+          <edgelabel>actionLabelFile</edgelabel>
+        </childnode>
+        <childnode refid="163" relation="usage">
+          <edgelabel>filepanel</edgelabel>
+          <edgelabel>commandPanel</edgelabel>
+          <edgelabel>fileListPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="152">
+        <label>PropertiesConfiguration</label>
+      </node>
+      <node id="186">
+        <label>JProgressBar</label>
+      </node>
+      <node id="178">
+        <label>com.poly.nlp.filekommander.views.panels.CreateActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel"/>
+        <childnode refid="170" relation="public-inheritance">
+        </childnode>
+        <childnode refid="151" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="179" relation="usage">
+          <edgelabel>createModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="181">
+        <label>JToggleButton</label>
+      </node>
+      <node id="161">
+        <label>com.poly.nlp.filekommander.views.panels.AbstractMessagePanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel"/>
+        <childnode refid="162" relation="public-inheritance">
+        </childnode>
+        <childnode refid="151" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="164" relation="usage">
+          <edgelabel>btnClear</edgelabel>
+        </childnode>
+        <childnode refid="165" relation="usage">
+          <edgelabel>table</edgelabel>
+        </childnode>
+        <childnode refid="163" relation="usage">
+          <edgelabel>messagePanel</edgelabel>
+          <edgelabel>commandPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="160">
+        <label>com.poly.nlp.filekommander.views.panels.StatsActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel"/>
+        <childnode refid="161" relation="public-inheritance">
+        </childnode>
+        <childnode refid="151" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="166" relation="usage">
+          <edgelabel>statsModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="155">
+        <label>com.poly.nlp.filekommander.gate.GateBuilder</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder"/>
+        <childnode refid="151" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="156" relation="usage">
+          <edgelabel>prList</edgelabel>
+        </childnode>
+        <childnode refid="157" relation="usage">
+          <edgelabel>annieHome</edgelabel>
+        </childnode>
+        <childnode refid="158" relation="usage">
+          <edgelabel>annieController</edgelabel>
+        </childnode>
+      </node>
+      <node id="171">
+        <label>JLabel</label>
+      </node>
+      <node id="185">
+        <label>Microphone</label>
+      </node>
+      <node id="159">
+        <label>com.poly.nlp.filekommander.views.FileKommanderGUIV2</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2"/>
+        <childnode refid="160" relation="usage">
+          <edgelabel>statsActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="169" relation="usage">
+          <edgelabel>deleteActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="173" relation="usage">
+          <edgelabel>menuBar</edgelabel>
+        </childnode>
+        <childnode refid="164" relation="usage">
+          <edgelabel>runBtn</edgelabel>
+        </childnode>
+        <childnode refid="177" relation="usage">
+          <edgelabel>emptyActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="178" relation="usage">
+          <edgelabel>createActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="180" relation="usage">
+          <edgelabel>inputTextFld</edgelabel>
+        </childnode>
+        <childnode refid="181" relation="usage">
+          <edgelabel>micBtn</edgelabel>
+        </childnode>
+        <childnode refid="182" relation="usage">
+          <edgelabel>frmFileKommander</edgelabel>
+        </childnode>
+        <childnode refid="171" relation="usage">
+          <edgelabel>errorMessageLabel</edgelabel>
+        </childnode>
+        <childnode refid="183" relation="usage">
+          <edgelabel>renameActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="185" relation="usage">
+          <edgelabel>microphone</edgelabel>
+        </childnode>
+        <childnode refid="163" relation="usage">
+          <edgelabel>informatinDisplayPanel</edgelabel>
+        </childnode>
+        <childnode refid="186" relation="usage">
+          <edgelabel>progressBar</edgelabel>
+        </childnode>
+      </node>
+      <node id="168">
+        <label>HashMap&lt; String, String &gt;</label>
+      </node>
+      <node id="153">
+        <label>com.poly.nlp.filekommander.FileKommander</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander"/>
+        <childnode refid="154" relation="public-inheritance">
+        </childnode>
+        <childnode refid="151" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="155" relation="usage">
+          <edgelabel>gateBuilder</edgelabel>
+        </childnode>
+        <childnode refid="158" relation="usage">
+          <edgelabel>annie</edgelabel>
+        </childnode>
+      </node>
+      <node id="175">
+        <label>com.poly.nlp.filekommander.views.OptionsFileKommander</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+        <childnode refid="151" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="164" relation="usage">
+          <edgelabel>okButton</edgelabel>
+        </childnode>
+        <childnode refid="163" relation="usage">
+          <edgelabel>contentPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="182">
+        <label>JFrame</label>
+      </node>
+      <node id="177">
+        <label>com.poly.nlp.filekommander.views.panels.EmptyActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel"/>
+        <childnode refid="162" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="167">
+        <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
+        <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
+      </node>
+      <node id="179">
+        <label>com.poly.nlp.filekommander.views.models.CreateModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+        <childnode refid="168" relation="usage">
+          <edgelabel>fileListData</edgelabel>
+          <edgelabel>folderListData</edgelabel>
+        </childnode>
+      </node>
+      <node id="156">
+        <label>ArrayList&lt; ProcessingResource &gt;</label>
+      </node>
+      <node id="150">
+        <label>com.poly.nlp.filekommander.FileKommanderRun</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run"/>
+        <childnode refid="151" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="152" relation="usage">
+          <edgelabel>configuration</edgelabel>
+        </childnode>
+        <childnode refid="153" relation="usage">
+          <edgelabel>kommander</edgelabel>
+        </childnode>
+        <childnode refid="159" relation="usage">
+          <edgelabel>guiv2</edgelabel>
+        </childnode>
+      </node>
+      <node id="158">
+        <label>SerialAnalyserController</label>
+      </node>
+      <node id="151">
+        <label>Logger</label>
+      </node>
+      <node id="184">
+        <label>com.poly.nlp.filekommander.views.models.RenameModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="172">
+        <label>com.poly.nlp.filekommander.views.models.DeleteModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+        <childnode refid="168" relation="usage">
+          <edgelabel>fileListData</edgelabel>
+          <edgelabel>folderListData</edgelabel>
+        </childnode>
+      </node>
+      <node id="173">
+        <label>com.poly.nlp.filekommander.views.FileKommanderMenu</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu"/>
+        <childnode refid="174" relation="public-inheritance">
+        </childnode>
+        <childnode refid="175" relation="usage">
+          <edgelabel>optionsFileKommander</edgelabel>
+        </childnode>
+      </node>
+      <node id="180">
+        <label>JTextField</label>
+      </node>
+      <node id="169">
+        <label>com.poly.nlp.filekommander.views.panels.DeleteActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel"/>
+        <childnode refid="170" relation="public-inheritance">
+        </childnode>
+        <childnode refid="151" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="172" relation="usage">
+          <edgelabel>deleteModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="176">
+        <label>JDialog</label>
+      </node>
+      <node id="162">
+        <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
+        <childnode refid="163" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="174">
+        <label>JMenuBar</label>
+      </node>
+      <node id="183">
+        <label>com.poly.nlp.filekommander.views.panels.RenameActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel"/>
+        <childnode refid="170" relation="public-inheritance">
+        </childnode>
+        <childnode refid="151" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="184" relation="usage">
+          <edgelabel>renameModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="164">
+        <label>JButton</label>
+      </node>
+      <node id="165">
+        <label>JTable</label>
+      </node>
+      <node id="166">
+        <label>com.poly.nlp.filekommander.views.models.StatsModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+        <childnode refid="168" relation="usage">
+          <edgelabel>fileListData</edgelabel>
+          <edgelabel>folderListData</edgelabel>
+        </childnode>
+      </node>
+      <node id="154">
+        <label>Runnable</label>
+      </node>
+      <node id="157">
+        <label>URI</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" line="29" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommanderRun.java" bodystart="29" bodyend="206"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1ab9503413d54c7d1880931d9ee03e021d" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>analyseTextInput</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a6bcf83454309db08057f32fde995ede8" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>configuration</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a25c8c598e359f8cde6745af311b48daa" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>getConfiguration</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a397a9a14b5802a79157fe7f90a9c49de" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>getGuiv2</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1afd37283a20f7115abfd53064c2ad87a2" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>getKommander</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1af105be529e7e9e9312aab57f6381b5ca" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>guiv2</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a2dffc1b40df78c82faf9567da220dae2" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>kommander</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a459b20955a8772b8de02853c3fae3695" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>loadConfigurationFromFile</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1ae7643c914a5fa93d155faafc32529519" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>log</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a5927b17fe7f36dc411e57833ef2e9526" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>main</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a426dc38c43b2cc64b35a3fa5a331a2ba" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>setConfiguration</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1acd6193926603bb658fd3a05d1477b4cf" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>setGuiv2</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1aa8fe20066fea0bae38e0b0f3eb553713" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>setKommander</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a26e901fd6f8d168583fc6ef90cee71f3" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>showProgress</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run_1a5e44a48af70a2685c5802345f2089c4c" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommanderRun</scope><name>writeConfigurationToFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

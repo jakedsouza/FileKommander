@@ -1,0 +1,504 @@
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder}{\section{com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder Class Reference}
+\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder}\index{com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder@{com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a288d8f16ba055b3e796a70ed0ed8880f}{Gate\-Builder} ()
+\item 
+\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a7207b79e575a053f54b2bfdad78fa484}{Gate\-Builder} (String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abdefcfc6edae8b7edf26f0381ed9da34}{gate\-Home}, String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_adceaef80d20a83bd8c1cded83b90a692}{gazetteer\-File\-Path}, String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a58783e8638545aa5ea65a89aa1061dde}{jape\-File\-Path})
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a8e881458a0b92c051232cff244561631}{setup} ()  throws Gate\-Exception, Malformed\-U\-R\-L\-Exception 
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_af19109687b716d1cbcad8db3dc35873f}{load\-A\-N\-N\-I\-E} ()  throws Resource\-Instantiation\-Exception 
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a7cec7e92b34ae41c3d8257b315bf6884}{load\-All\-Processing\-Resources} ()  throws Resource\-Instantiation\-Exception, Malformed\-U\-R\-L\-Exception 
+\item 
+String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a455d08082f02c0d550c0a3b0e344a434}{get\-Gate\-Home} ()
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a23ea43a49ea434ef84d3c793057dc899}{set\-Gate\-Home} (String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abdefcfc6edae8b7edf26f0381ed9da34}{gate\-Home})
+\item 
+String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a2a7ba3b588ceeb7ef77519d399a67524}{get\-Jape\-File\-Path} ()
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a460d6b7b5460ae3e538ca2e20094507e}{set\-Jape\-File\-Path} (String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a58783e8638545aa5ea65a89aa1061dde}{jape\-File\-Path})
+\item 
+String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_afa9ffdff61255633b3462963be7c7c3c}{get\-Gazetteer\-File\-Path} ()
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_ae278114910b1abd03a8a5c08b82e864e}{set\-Gazetteer\-File\-Path} (String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_adceaef80d20a83bd8c1cded83b90a692}{gazetteer\-File\-Path})
+\item 
+Serial\-Analyser\-Controller \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a7b004de2eb7ca39b80dd547432c66a3f}{get\-Annie\-Controller} ()
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a2e9909cef1b22cc5ce8096735b5142d3}{set\-Annie\-Controller} (Serial\-Analyser\-Controller \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a3801bc53fd7b7449a0aa714ad21bebea}{annie\-Controller})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a6a44fefbc1299f76aca84b037f79bd35}{newline} = (\char`\"{}\textbackslash{}n\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_aca691fb8ad715fd61ccf5845647c7bf2}{file\-Separator} = System.\-get\-Property(\char`\"{}file.\-separator\char`\"{})
+\item 
+String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abdefcfc6edae8b7edf26f0381ed9da34}{gate\-Home}
+\item 
+U\-R\-I \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4f34ff5f89a6a8a2ddcc72935cb6f51d}{annie\-Home}
+\item 
+String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a58783e8638545aa5ea65a89aa1061dde}{jape\-File\-Path}
+\item 
+String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_adceaef80d20a83bd8c1cded83b90a692}{gazetteer\-File\-Path}
+\item 
+String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a39a6c089a884f6318ae963e21b8fc3bf}{A\-N\-N\-I\-E\-\_\-\-C\-L\-A\-S\-S} = \char`\"{}gate.\-creole.\-Serial\-Analyser\-Controller\char`\"{}
+\item 
+Array\-List$<$ \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource}{Processing\-Resource} $>$ \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4e56ddc3afefb48e751266e1e6449b7f}{pr\-List}
+\item 
+Serial\-Analyser\-Controller \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a3801bc53fd7b7449a0aa714ad21bebea}{annie\-Controller}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final Logger \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abbd1c14bf5a3ef4f39d4563dd498c467}{log} = Logger.\-get\-Logger(Gate\-Builder.\-class)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+jake , neha 
+\end{DoxyAuthor}
+
+
+Definition at line \hyperlink{L28}{28} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a288d8f16ba055b3e796a70ed0ed8880f}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!Gate\-Builder@{Gate\-Builder}}
+\index{Gate\-Builder@{Gate\-Builder}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{Gate\-Builder}]{\setlength{\rightskip}{0pt plus 5cm}com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-Gate\-Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a288d8f16ba055b3e796a70ed0ed8880f}
+
+
+Definition at line \hyperlink{L44}{44} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                         \{
+        
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a7207b79e575a053f54b2bfdad78fa484}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!Gate\-Builder@{Gate\-Builder}}
+\index{Gate\-Builder@{Gate\-Builder}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{Gate\-Builder}]{\setlength{\rightskip}{0pt plus 5cm}com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-Gate\-Builder (
+\begin{DoxyParamCaption}
+\item[{String}]{gate\-Home, }
+\item[{String}]{gazetteer\-File\-Path, }
+\item[{String}]{jape\-File\-Path}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a7207b79e575a053f54b2bfdad78fa484}
+
+
+Definition at line \hyperlink{L48}{48} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                 \{
+        this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4e56ddc3afefb48e751266e1e6449b7f}{prList} = \textcolor{keyword}{new} ArrayList<>();
+        this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abdefcfc6edae8b7edf26f0381ed9da34}{gateHome} = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abdefcfc6edae8b7edf26f0381ed9da34}{gateHome};
+        this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_adceaef80d20a83bd8c1cded83b90a692}{gazetteerFilePath} = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_adceaef80d20a83bd8c1cded83b90a692}{gazetteerFilePath}
+      ;
+        this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a58783e8638545aa5ea65a89aa1061dde}{japeFilePath} = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a58783e8638545aa5ea65a89aa1061dde}{japeFilePath};
+
+        \textcolor{keywordflow}{if} (this.gateHome == null) \{
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abbd1c14bf5a3ef4f39d4563dd498c467}{log}.warn(\textcolor{stringliteral}{"GATE\_HOME is not set trying to find GATE\_HOME in
+       sysenv"});
+            this.gateHome = System.getenv(\textcolor{stringliteral}{"GATE\_HOME"});
+            \textcolor{keywordflow}{if} (this.gateHome == null) \{
+                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abbd1c14bf5a3ef4f39d4563dd498c467}{log}.error(\textcolor{stringliteral}{"GATE\_HOME can not be found will exit "});
+                \textcolor{keywordflow}{throw} \textcolor{keyword}{new} RuntimeException(\textcolor{stringliteral}{"GATE\_HOME not set"});
+            \}
+
+        \}
+
+        this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4f34ff5f89a6a8a2ddcc72935cb6f51d}{annieHome} = \textcolor{keyword}{new} File(this.gateHome + \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_aca691fb8ad715fd61ccf5845647c7bf2}{fileSeparator}
+       + \textcolor{stringliteral}{"plugins"}
+                + \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_aca691fb8ad715fd61ccf5845647c7bf2}{fileSeparator} + \textcolor{stringliteral}{"ANNIE"}).toURI();
+        System.setProperty(\textcolor{stringliteral}{"gate.home"}, this.gateHome);
+        System.setProperty(\textcolor{stringliteral}{"gate.site.config"}, System.getProperty(\textcolor{stringliteral}{"gate.home"})
+                + \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_aca691fb8ad715fd61ccf5845647c7bf2}{fileSeparator} + \textcolor{stringliteral}{"gate.xml"});
+        System.setProperty(\textcolor{stringliteral}{"gate.user.config"},
+                System.getProperty(\textcolor{stringliteral}{"gate.site.config"}));
+    \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a7b004de2eb7ca39b80dd547432c66a3f}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!get\-Annie\-Controller@{get\-Annie\-Controller}}
+\index{get\-Annie\-Controller@{get\-Annie\-Controller}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{get\-Annie\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}Serial\-Analyser\-Controller com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-get\-Annie\-Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a7b004de2eb7ca39b80dd547432c66a3f}
+\begin{DoxyReturn}{Returns}
+the annie\-Controller 
+\end{DoxyReturn}
+
+
+Definition at line \hyperlink{L195}{195} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                                         \{
+        \textcolor{keywordflow}{return} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a3801bc53fd7b7449a0aa714ad21bebea}{annieController};
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a455d08082f02c0d550c0a3b0e344a434}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!get\-Gate\-Home@{get\-Gate\-Home}}
+\index{get\-Gate\-Home@{get\-Gate\-Home}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{get\-Gate\-Home}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-get\-Gate\-Home (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a455d08082f02c0d550c0a3b0e344a434}
+\begin{DoxyReturn}{Returns}
+the gate\-Home 
+\end{DoxyReturn}
+
+
+Definition at line \hyperlink{L150}{150} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                \{
+        \textcolor{keywordflow}{return} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abdefcfc6edae8b7edf26f0381ed9da34}{gateHome};
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_afa9ffdff61255633b3462963be7c7c3c}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!get\-Gazetteer\-File\-Path@{get\-Gazetteer\-File\-Path}}
+\index{get\-Gazetteer\-File\-Path@{get\-Gazetteer\-File\-Path}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{get\-Gazetteer\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-get\-Gazetteer\-File\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_afa9ffdff61255633b3462963be7c7c3c}
+\begin{DoxyReturn}{Returns}
+the gazetteer\-File\-Path 
+\end{DoxyReturn}
+
+
+Definition at line \hyperlink{L180}{180} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                         \{
+        \textcolor{keywordflow}{return} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_adceaef80d20a83bd8c1cded83b90a692}{gazetteerFilePath};
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a2a7ba3b588ceeb7ef77519d399a67524}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!get\-Jape\-File\-Path@{get\-Jape\-File\-Path}}
+\index{get\-Jape\-File\-Path@{get\-Jape\-File\-Path}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{get\-Jape\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-get\-Jape\-File\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a2a7ba3b588ceeb7ef77519d399a67524}
+\begin{DoxyReturn}{Returns}
+the jape\-File\-Path 
+\end{DoxyReturn}
+
+
+Definition at line \hyperlink{L165}{165} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                    \{
+        \textcolor{keywordflow}{return} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a58783e8638545aa5ea65a89aa1061dde}{japeFilePath};
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a7cec7e92b34ae41c3d8257b315bf6884}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!load\-All\-Processing\-Resources@{load\-All\-Processing\-Resources}}
+\index{load\-All\-Processing\-Resources@{load\-All\-Processing\-Resources}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{load\-All\-Processing\-Resources}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-load\-All\-Processing\-Resources (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws Resource\-Instantiation\-Exception, Malformed\-U\-R\-L\-Exception }}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a7cec7e92b34ae41c3d8257b315bf6884}
+
+
+Definition at line \hyperlink{L92}{92} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                                                         \{
+
+        FeatureMap params = Factory.newFeatureMap();
+        params.put(\textcolor{stringliteral}{"keepOriginalMarkupsAS"}, \textcolor{keyword}{true});
+        ProcessingResource documentReserPR = (ProcessingResource) Factory
+                .createResource(\textcolor{stringliteral}{"gate.creole.annotdelete.AnnotationDeletePR"},
+                        params);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4e56ddc3afefb48e751266e1e6449b7f}{prList}.add(documentReserPR);
+
+        params = Factory.newFeatureMap();
+        ProcessingResource simpleTokeniser = (ProcessingResource) Factory
+                .createResource(\textcolor{stringliteral}{"gate.creole.tokeniser.SimpleTokeniser"}, params
+      );
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4e56ddc3afefb48e751266e1e6449b7f}{prList}.add(simpleTokeniser);
+
+        params = Factory.newFeatureMap();
+        ProcessingResource sentenceSplitter = (ProcessingResource) Factory
+                .createResource(\textcolor{stringliteral}{"gate.creole.splitter.SentenceSplitter"}, params
+      );
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4e56ddc3afefb48e751266e1e6449b7f}{prList}.add(sentenceSplitter);
+
+        params = Factory.newFeatureMap();
+        params.put(\textcolor{stringliteral}{"baseSentenceAnnotationType"}, \textcolor{stringliteral}{"Sentence"});
+        params.put(\textcolor{stringliteral}{"baseTokenAnnotationType"}, \textcolor{stringliteral}{"Token"});
+        params.put(\textcolor{stringliteral}{"outputAnnotationType"}, \textcolor{stringliteral}{"Token"});
+        ProcessingResource pos = (ProcessingResource) Factory.createResource(
+                \textcolor{stringliteral}{"gate.creole.POSTagger"}, params);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4e56ddc3afefb48e751266e1e6449b7f}{prList}.add(pos);
+
+        params = Factory.newFeatureMap();
+        \textcolor{comment}{// URL u=new}
+        \textcolor{comment}{//
+       File("ie/deri/nlp/LanguageResources/gazetteers/mylists.def").toURL();}
+        params.put(\textcolor{stringliteral}{"listsURL"}, \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_adceaef80d20a83bd8c1cded83b90a692}{gazetteerFilePath}).
+      toURI().toURL());
+        params.put(\textcolor{stringliteral}{"caseSensitive"},\textcolor{keyword}{false});
+        DefaultGazetteer gazetteer = (DefaultGazetteer) Factory.createResource(
+                \textcolor{stringliteral}{"gate.creole.gazetteer.DefaultGazetteer"}, params);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4e56ddc3afefb48e751266e1e6449b7f}{prList}.add(gazetteer);
+
+        params = Factory.newFeatureMap();
+        params.put(\textcolor{stringliteral}{"grammarURL"}, \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a58783e8638545aa5ea65a89aa1061dde}{japeFilePath}).toURI().
+      toURL());
+        Transducer relationExtractionTransducer = (Transducer) Factory
+                .createResource(\textcolor{stringliteral}{"gate.creole.Transducer"}, params);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4e56ddc3afefb48e751266e1e6449b7f}{prList}.add(relationExtractionTransducer);
+        \textcolor{keywordflow}{if} (\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a3801bc53fd7b7449a0aa714ad21bebea}{annieController} == null) \{
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abbd1c14bf5a3ef4f39d4563dd498c467}{log}.warn(\textcolor{stringliteral}{"Annie is not loaded"});
+        \} \textcolor{keywordflow}{else} \{
+            \textcolor{keywordflow}{for} (Iterator<ProcessingResource> iterator = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4e56ddc3afefb48e751266e1e6449b7f}{prList}.iterator(
+      ); iterator
+                    .hasNext();) \{
+
+                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a3801bc53fd7b7449a0aa714ad21bebea}{annieController}.add(iterator.next());
+
+            \}
+        \}
+
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_af19109687b716d1cbcad8db3dc35873f}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!load\-A\-N\-N\-I\-E@{load\-A\-N\-N\-I\-E}}
+\index{load\-A\-N\-N\-I\-E@{load\-A\-N\-N\-I\-E}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{load\-A\-N\-N\-I\-E}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-load\-A\-N\-N\-I\-E (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws Resource\-Instantiation\-Exception }}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_af19109687b716d1cbcad8db3dc35873f}
+
+
+Definition at line \hyperlink{L84}{84} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                                                  \{
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a3801bc53fd7b7449a0aa714ad21bebea}{annieController} = (SerialAnalyserController) Factory.
+      createResource(
+                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a39a6c089a884f6318ae963e21b8fc3bf}{ANNIE\_CLASS}, Factory.newFeatureMap(), Factory.
+      newFeatureMap(),
+                \textcolor{stringliteral}{"ANNIE\_"} + Gate.genSym());
+
+        \textcolor{keywordflow}{return};
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a2e9909cef1b22cc5ce8096735b5142d3}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!set\-Annie\-Controller@{set\-Annie\-Controller}}
+\index{set\-Annie\-Controller@{set\-Annie\-Controller}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{set\-Annie\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-set\-Annie\-Controller (
+\begin{DoxyParamCaption}
+\item[{Serial\-Analyser\-Controller}]{annie\-Controller}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a2e9909cef1b22cc5ce8096735b5142d3}
+
+\begin{DoxyParams}{Parameters}
+{\em annie\-Controller} & the annie\-Controller to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{L203}{203} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                                                             \{
+        this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a3801bc53fd7b7449a0aa714ad21bebea}{annieController} = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a3801bc53fd7b7449a0aa714ad21bebea}{annieController};
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a23ea43a49ea434ef84d3c793057dc899}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!set\-Gate\-Home@{set\-Gate\-Home}}
+\index{set\-Gate\-Home@{set\-Gate\-Home}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{set\-Gate\-Home}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-set\-Gate\-Home (
+\begin{DoxyParamCaption}
+\item[{String}]{gate\-Home}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a23ea43a49ea434ef84d3c793057dc899}
+
+\begin{DoxyParams}{Parameters}
+{\em gate\-Home} & the gate\-Home to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{L158}{158} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                             \{
+        this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abdefcfc6edae8b7edf26f0381ed9da34}{gateHome} = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abdefcfc6edae8b7edf26f0381ed9da34}{gateHome};
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_ae278114910b1abd03a8a5c08b82e864e}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!set\-Gazetteer\-File\-Path@{set\-Gazetteer\-File\-Path}}
+\index{set\-Gazetteer\-File\-Path@{set\-Gazetteer\-File\-Path}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{set\-Gazetteer\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-set\-Gazetteer\-File\-Path (
+\begin{DoxyParamCaption}
+\item[{String}]{gazetteer\-File\-Path}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_ae278114910b1abd03a8a5c08b82e864e}
+
+\begin{DoxyParams}{Parameters}
+{\em gazetteer\-File\-Path} & the gazetteer\-File\-Path to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{L188}{188} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                                               \{
+        this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_adceaef80d20a83bd8c1cded83b90a692}{gazetteerFilePath} = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_adceaef80d20a83bd8c1cded83b90a692}{gazetteerFilePath}
+      ;
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a460d6b7b5460ae3e538ca2e20094507e}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!set\-Jape\-File\-Path@{set\-Jape\-File\-Path}}
+\index{set\-Jape\-File\-Path@{set\-Jape\-File\-Path}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{set\-Jape\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-set\-Jape\-File\-Path (
+\begin{DoxyParamCaption}
+\item[{String}]{jape\-File\-Path}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a460d6b7b5460ae3e538ca2e20094507e}
+
+\begin{DoxyParams}{Parameters}
+{\em jape\-File\-Path} & the jape\-File\-Path to set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{L173}{173} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                                     \{
+        this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a58783e8638545aa5ea65a89aa1061dde}{japeFilePath} = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a58783e8638545aa5ea65a89aa1061dde}{japeFilePath};
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a8e881458a0b92c051232cff244561631}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!setup@{setup}}
+\index{setup@{setup}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{setup}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws Gate\-Exception, Malformed\-U\-R\-L\-Exception }}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a8e881458a0b92c051232cff244561631}
+
+
+Definition at line \hyperlink{L74}{74} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+\begin{DoxyCode}
+                                                                    \{
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abbd1c14bf5a3ef4f39d4563dd498c467}{log}.info(\textcolor{stringliteral}{"Initialising GATE"});
+        Gate.init();
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abbd1c14bf5a3ef4f39d4563dd498c467}{log}.info(\textcolor{stringliteral}{"Done initialising GATE"});
+
+        \textcolor{comment}{// register plugin directories}
+        Gate.getCreoleRegister().registerDirectories(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4f34ff5f89a6a8a2ddcc72935cb6f51d}{annieHome}.toURL()
+      );
+
+    \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a39a6c089a884f6318ae963e21b8fc3bf}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!A\-N\-N\-I\-E\-\_\-\-C\-L\-A\-S\-S@{A\-N\-N\-I\-E\-\_\-\-C\-L\-A\-S\-S}}
+\index{A\-N\-N\-I\-E\-\_\-\-C\-L\-A\-S\-S@{A\-N\-N\-I\-E\-\_\-\-C\-L\-A\-S\-S}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{A\-N\-N\-I\-E\-\_\-\-C\-L\-A\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-A\-N\-N\-I\-E\-\_\-\-C\-L\-A\-S\-S = \char`\"{}gate.\-creole.\-Serial\-Analyser\-Controller\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a39a6c089a884f6318ae963e21b8fc3bf}
+
+
+Definition at line \hyperlink{L39}{39} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a3801bc53fd7b7449a0aa714ad21bebea}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!annie\-Controller@{annie\-Controller}}
+\index{annie\-Controller@{annie\-Controller}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{annie\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}Serial\-Analyser\-Controller com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-annie\-Controller\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a3801bc53fd7b7449a0aa714ad21bebea}
+
+
+Definition at line \hyperlink{L42}{42} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4f34ff5f89a6a8a2ddcc72935cb6f51d}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!annie\-Home@{annie\-Home}}
+\index{annie\-Home@{annie\-Home}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{annie\-Home}]{\setlength{\rightskip}{0pt plus 5cm}U\-R\-I com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-annie\-Home\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4f34ff5f89a6a8a2ddcc72935cb6f51d}
+
+
+Definition at line \hyperlink{L35}{35} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_aca691fb8ad715fd61ccf5845647c7bf2}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!file\-Separator@{file\-Separator}}
+\index{file\-Separator@{file\-Separator}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{file\-Separator}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-file\-Separator = System.\-get\-Property(\char`\"{}file.\-separator\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_aca691fb8ad715fd61ccf5845647c7bf2}
+
+
+Definition at line \hyperlink{L30}{30} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abdefcfc6edae8b7edf26f0381ed9da34}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!gate\-Home@{gate\-Home}}
+\index{gate\-Home@{gate\-Home}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{gate\-Home}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-gate\-Home\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abdefcfc6edae8b7edf26f0381ed9da34}
+
+
+Definition at line \hyperlink{L34}{34} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_adceaef80d20a83bd8c1cded83b90a692}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!gazetteer\-File\-Path@{gazetteer\-File\-Path}}
+\index{gazetteer\-File\-Path@{gazetteer\-File\-Path}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{gazetteer\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-gazetteer\-File\-Path\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_adceaef80d20a83bd8c1cded83b90a692}
+
+
+Definition at line \hyperlink{L37}{37} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a58783e8638545aa5ea65a89aa1061dde}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!jape\-File\-Path@{jape\-File\-Path}}
+\index{jape\-File\-Path@{jape\-File\-Path}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{jape\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-jape\-File\-Path\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a58783e8638545aa5ea65a89aa1061dde}
+
+
+Definition at line \hyperlink{L36}{36} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abbd1c14bf5a3ef4f39d4563dd498c467}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!log@{log}}
+\index{log@{log}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}final Logger com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-log = Logger.\-get\-Logger(Gate\-Builder.\-class)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_abbd1c14bf5a3ef4f39d4563dd498c467}
+
+
+Definition at line \hyperlink{L32}{32} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a6a44fefbc1299f76aca84b037f79bd35}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!newline@{newline}}
+\index{newline@{newline}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{newline}]{\setlength{\rightskip}{0pt plus 5cm}String com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-newline = (\char`\"{}\textbackslash{}n\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a6a44fefbc1299f76aca84b037f79bd35}
+
+
+Definition at line \hyperlink{L31}{31} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4e56ddc3afefb48e751266e1e6449b7f}{\index{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}!pr\-List@{pr\-List}}
+\index{pr\-List@{pr\-List}!com::poly::nlp::filekommander::gate::GateBuilder@{com\-::poly\-::nlp\-::filekommander\-::gate\-::\-Gate\-Builder}}
+\subsubsection[{pr\-List}]{\setlength{\rightskip}{0pt plus 5cm}Array\-List$<${\bf Processing\-Resource}$>$ com.\-poly.\-nlp.\-filekommander.\-gate.\-Gate\-Builder.\-pr\-List\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder_a4e56ddc3afefb48e751266e1e6449b7f}
+
+
+Definition at line \hyperlink{L41}{41} of file \hyperlink{}{Gate\-Builder.\-java}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+git/\-File\-Kommander/src/com/poly/nlp/filekommander/gate/\hyperlink{_gate_builder_8java}{Gate\-Builder.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,207 @@
+.TH "com.poly.nlp.filekommander.views.panels.StatsActionPanel" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.panels.StatsActionPanel \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStatsActionPanel\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdatePanelData\fP (\fBGenericActionModel\fP \fBstatsModel\fP)"
+.br
+.ti -1c
+.RI "void \fBupdatePanelData\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdatePanelDataAfterAction\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBStatsModel\fP \fBstatsModel\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final long \fBserialVersionUID\fP = 1L"
+.br
+.ti -1c
+.RI "static final Logger \fBlog\fP = Logger\&.getLogger(StatsActionPanel\&.class)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 26 of file StatsActionPanel\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\&.StatsActionPanel ()"
+Create the panel\&. 
+.PP
+Definition at line 35 of file StatsActionPanel\&.java\&.
+.PP
+.nf
+                              {
+        super();
+//      SpringLayout springLayout = new SpringLayout();
+//      setLayout(springLayout);
+//
+//      messagePanel = new JPanel();
+//      springLayout\&.putConstraint(SpringLayout\&.NORTH, messagePanel, 0, SpringLayout\&.NORTH, this);
+//      springLayout\&.putConstraint(SpringLayout\&.EAST, messagePanel, 0,
+//              SpringLayout\&.EAST, this);
+//      messagePanel\&.setAutoscrolls(true);
+//      add(messagePanel);
+//      messagePanel\&.setLayout(null);
+//          commandPanel = new JPanel();
+//          springLayout\&.putConstraint(SpringLayout\&.WEST, messagePanel, 0, SpringLayout\&.WEST, commandPanel);
+//          springLayout\&.putConstraint(SpringLayout\&.SOUTH, messagePanel, -6, SpringLayout\&.NORTH, commandPanel);
+//              
+//              table = new JTable();
+//              table\&.setBorder(new BevelBorder(BevelBorder\&.RAISED, null, null, null, null));
+//              table\&.setBounds(386, 217, -324, -173);
+//              messagePanel\&.add(table);
+//              springLayout\&.putConstraint(SpringLayout\&.WEST, commandPanel, 0, SpringLayout\&.WEST, this);
+//              springLayout\&.putConstraint(SpringLayout\&.SOUTH, commandPanel, 0, SpringLayout\&.SOUTH, this);
+//              springLayout\&.putConstraint(SpringLayout\&.EAST, commandPanel, 0, SpringLayout\&.EAST, this);
+//              springLayout\&.putConstraint(SpringLayout\&.NORTH, commandPanel, -40, SpringLayout\&.SOUTH, this);
+//              add(commandPanel);
+//              
+//              btnReject = new JButton('');
+//              btnReject\&.setFocusPainted(false);
+//              btnReject\&.setMargin(new Insets(0, 0, 0, 0));
+//              btnReject\&.setContentAreaFilled(false);
+//              btnReject\&.setBorderPainted(true);
+//              btnReject\&.setOpaque(true);
+//              btnReject\&.setIcon(new ImageIcon(CreateActionPanel\&.class\&.getResource('/com/poly/nlp/filekommander/views/icon/reject\&.png')));
+//              commandPanel\&.add(btnReject);
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\&.updatePanelData (\fBGenericActionModel\fPactionModel)\fC [virtual]\fP"
+Update the panel before action is taken using the given action model
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionModel\fP 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP\&.
+.PP
+Definition at line 71 of file StatsActionPanel\&.java\&.
+.PP
+.nf
+                                                               {
+        if(statsModel instanceof StatsModel){
+        this\&.statsModel = (StatsModel)statsModel;    
+        updatePanelData();
+        }else{
+            log\&.error('Wrong class');
+        }
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\&.updatePanelData ()\fC [virtual]\fP"
+Update the panel before action is taken 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP\&.
+.PP
+Definition at line 80 of file StatsActionPanel\&.java\&.
+.PP
+.nf
+                                  {
+        getMessagePanel()\&.removeAll();
+        HashMap<String, String> fileListData = this\&.statsModel\&.getFileListData();
+        HashMap<String, String> folderListData= this\&.statsModel\&.getFolderListData();
+        
+        if (fileListData\&.size() > 1) {
+            setActionString('The details for the following files/folders will be shown');
+        } else if (fileListData\&.size() == 0) {
+            setActionString('');
+        } else {
+            setActionString('The details for the following file/folder will be shown');
+        }
+        
+        DefaultTableModel model = new DefaultTableModel();     
+        setTable(new javax\&.swing\&.JTable(model));     
+        getTable()\&.setModel(new DefaultTableModel());    
+        
+        Set<String> col = fileListData\&.keySet();
+        Iterator<String> iterator = col\&.iterator();
+        
+        while(iterator\&.hasNext())
+        {   
+            Object key = iterator\&.next();
+            Object value= fileListData\&.get(key);
+            
+            Object [] data = new Object[2];
+            data[0] = key;
+            data[1]= value;
+            model\&.addRow(data); //Adds Row to JTable
+        }       
+        
+        Set<String> folder = folderListData\&.keySet();
+        Iterator<String> iterator2 = folder\&.iterator();
+        
+        while(iterator2\&.hasNext())
+        {   
+            Object key = iterator2\&.next();
+            Object value= folderListData\&.get(key);
+            
+            Object [] data = new Object[2];
+            data[0] = key;
+            data[1]= value;
+            model\&.addRow(data); //Adds Row to JTable
+        }
+
+        if(fileListData == null && fileListData\&.size() == 0 || folderListData == null && folderListData\&.size() == 0 ){
+            getMessagePanel()\&.setVisible(false);
+        }else{
+            getMessagePanel()\&.setVisible(true);
+        }
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\&.updatePanelDataAfterAction ()\fC [virtual]\fP"
+updates the create panel after the action is run 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP\&.
+.PP
+Definition at line 133 of file StatsActionPanel\&.java\&.
+.PP
+.nf
+                                             {
+        // TODO Auto-generated method stub
+        
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\&.log = Logger\&.getLogger(StatsActionPanel\&.class)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 30 of file StatsActionPanel\&.java\&.
+.SS "final long com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\&.serialVersionUID = 1L\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 28 of file StatsActionPanel\&.java\&.
+.SS "\fBStatsModel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.StatsActionPanel\&.statsModel\fC [private]\fP"
+
+.PP
+Definition at line 29 of file StatsActionPanel\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

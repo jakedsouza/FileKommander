@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::views::AboutFileKommander</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JDialog</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1a3d338ec3ae32777a71f45c76b80cb59d" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.poly.nlp.filekommander.views.AboutFileKommander.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <initializer>= 1L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" line="29" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1af5cbf6e6423901be93a2a580049f3728" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.poly.nlp.filekommander.views.AboutFileKommander.log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>= Logger.getLogger(AboutFileKommander.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" line="31" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1ad925c308e870c6d3789d72cdec139c93" prot="private" static="no" mutable="no">
+        <type>final JPanel</type>
+        <definition>final JPanel com.poly.nlp.filekommander.views.AboutFileKommander.contentPanel</definition>
+        <argsstring></argsstring>
+        <name>contentPanel</name>
+        <initializer>= new JPanel()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" line="33" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1a6c6d915be3b14f24908a482834ad6b7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>com.poly.nlp.filekommander.views.AboutFileKommander.AboutFileKommander</definition>
+        <argsstring>()</argsstring>
+        <name>AboutFileKommander</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create the dialog. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" line="38" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" bodystart="38" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>com.poly.nlp.filekommander.views.AboutFileKommander</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>JDialog</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>JPanel</label>
+      </node>
+      <node id="2">
+        <label>com.poly.nlp.filekommander.views.AboutFileKommander</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>contentPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Logger</label>
+      </node>
+      <node id="3">
+        <label>JDialog</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" line="25" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" bodystart="25" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1a6c6d915be3b14f24908a482834ad6b7a" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::AboutFileKommander</scope><name>AboutFileKommander</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1ad925c308e870c6d3789d72cdec139c93" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::AboutFileKommander</scope><name>contentPanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1af5cbf6e6423901be93a2a580049f3728" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::AboutFileKommander</scope><name>log</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1a3d338ec3ae32777a71f45c76b80cb59d" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::AboutFileKommander</scope><name>serialVersionUID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

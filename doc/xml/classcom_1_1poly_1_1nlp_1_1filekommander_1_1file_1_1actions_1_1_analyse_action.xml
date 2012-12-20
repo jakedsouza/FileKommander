@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::file::actions::AnalyseAction</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1ae99df52b353dd7b0d2014d581fcc8cff" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.poly.nlp.filekommander.file.actions.AnalyseAction.log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>= Logger.getLogger(AnalyseAction.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="21" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1aef5f93dbdd411587de327fc2c6913622" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.AnalyseAction.analyseAction</definition>
+        <argsstring>(String actionType, Annotation annotation)</argsstring>
+        <name>analyseAction</name>
+        <param>
+          <type>String</type>
+          <declname>actionType</declname>
+        </param>
+        <param>
+          <type>Annotation</type>
+          <declname>annotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="24" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="23" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a8652e1bba48585a8c416e6e212fe4766" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; String &gt;</type>
+        <definition>static ArrayList&lt;String&gt; com.poly.nlp.filekommander.file.actions.AnalyseAction.getObjectNameFromAnnotation</definition>
+        <argsstring>(FeatureMap featureMap, String key)</argsstring>
+        <name>getObjectNameFromAnnotation</name>
+        <param>
+          <type>FeatureMap</type>
+          <declname>featureMap</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="290" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="289" bodyend="307"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a62e07128db9a8df65417a02d84068e01" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.AnalyseAction.analyseCreateAction</definition>
+        <argsstring>(Annotation annotation)</argsstring>
+        <name>analyseCreateAction</name>
+        <param>
+          <type>Annotation</type>
+          <declname>annotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="69" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="69" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a9970d61dcf513507ed64217bd16838ab" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.AnalyseAction.analyseDeleteAction</definition>
+        <argsstring>(Annotation annotation)</argsstring>
+        <name>analyseDeleteAction</name>
+        <param>
+          <type>Annotation</type>
+          <declname>annotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="101" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="101" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a683b8ce8891c552588d2247fbd9f4328" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.AnalyseAction.analyseExistsAction</definition>
+        <argsstring>(Annotation annotation)</argsstring>
+        <name>analyseExistsAction</name>
+        <param>
+          <type>Annotation</type>
+          <declname>annotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="133" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="133" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a75f845c14e6046304b2ad4ac56d0f56f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.AnalyseAction.analyseInsertAction</definition>
+        <argsstring>(Annotation annotation)</argsstring>
+        <name>analyseInsertAction</name>
+        <param>
+          <type>Annotation</type>
+          <declname>annotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="139" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="139" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a4da9b25dc9bdae9570ef0459276548ad" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.AnalyseAction.analyseOpenAction</definition>
+        <argsstring>(Annotation annotation)</argsstring>
+        <name>analyseOpenAction</name>
+        <param>
+          <type>Annotation</type>
+          <declname>annotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="145" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="145" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1aea934abe03154ab654a156add6133093" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.AnalyseAction.analyseRemoveAction</definition>
+        <argsstring>(Annotation annotation)</argsstring>
+        <name>analyseRemoveAction</name>
+        <param>
+          <type>Annotation</type>
+          <declname>annotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="151" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="151" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1aade5e40cbf6a964d4b95b81815cea68f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.AnalyseAction.analyseRenameAction</definition>
+        <argsstring>(Annotation annotation)</argsstring>
+        <name>analyseRenameAction</name>
+        <param>
+          <type>Annotation</type>
+          <declname>annotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="157" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="157" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a55c78bdeee6905c8e95f3d8115a6c222" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.AnalyseAction.analyseReplaceAction</definition>
+        <argsstring>(Annotation annotation)</argsstring>
+        <name>analyseReplaceAction</name>
+        <param>
+          <type>Annotation</type>
+          <declname>annotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="184" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="184" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a7bd195f986019e22721f048aec378f67" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.AnalyseAction.analyseStatsAction</definition>
+        <argsstring>(Annotation annotation, String actionType)</argsstring>
+        <name>analyseStatsAction</name>
+        <param>
+          <type>Annotation</type>
+          <declname>annotation</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>actionType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="190" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="190" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="31">
+        <label>com.poly.nlp.filekommander.file.actions.AnalyseAction</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Logger</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" line="20" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/AnalyseAction.java" bodystart="20" bodyend="310"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1aef5f93dbdd411587de327fc2c6913622" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>analyseAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a62e07128db9a8df65417a02d84068e01" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>analyseCreateAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a9970d61dcf513507ed64217bd16838ab" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>analyseDeleteAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a683b8ce8891c552588d2247fbd9f4328" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>analyseExistsAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a75f845c14e6046304b2ad4ac56d0f56f" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>analyseInsertAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a4da9b25dc9bdae9570ef0459276548ad" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>analyseOpenAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1aea934abe03154ab654a156add6133093" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>analyseRemoveAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1aade5e40cbf6a964d4b95b81815cea68f" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>analyseRenameAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a55c78bdeee6905c8e95f3d8115a6c222" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>analyseReplaceAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a7bd195f986019e22721f048aec378f67" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>analyseStatsAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1a8652e1bba48585a8c416e6e212fe4766" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>getObjectNameFromAnnotation</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_1ae99df52b353dd7b0d2014d581fcc8cff" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::AnalyseAction</scope><name>log</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

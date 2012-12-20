@@ -1,7 +1,5 @@
 package com.poly.nlp.filekommander.views;
 
-import java.awt.EventQueue;
-
 import javax.sound.sampled.AudioFileFormat;
 import javax.swing.BorderFactory;
 import javax.swing.JFrame;
@@ -9,9 +7,6 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JProgressBar;
 import javax.swing.JPanel;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
-
 import java.awt.CardLayout;
 import java.awt.Insets;
 import java.awt.Color;
@@ -24,6 +19,14 @@ import com.poly.nlp.filekommander.FileKommanderRun;
 import com.poly.nlp.filekommander.views.models.CreateModel;
 import com.poly.nlp.filekommander.views.models.DeleteModel;
 import com.poly.nlp.filekommander.views.models.GenericActionModel;
+import com.poly.nlp.filekommander.views.models.RenameModel;
+import com.poly.nlp.filekommander.views.models.StatsModel;
+import com.poly.nlp.filekommander.views.panels.CreateActionPanel;
+import com.poly.nlp.filekommander.views.panels.DeleteActionPanel;
+import com.poly.nlp.filekommander.views.panels.EmptyActionPanel;
+import com.poly.nlp.filekommander.views.panels.RenameActionPanel;
+import com.poly.nlp.filekommander.views.panels.StatsActionPanel;
+
 import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -32,12 +35,10 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-import javax.swing.JLabel;
 import javax.swing.JToggleButton;
-
-import sun.util.logging.resources.logging;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
+import javax.swing.JTextArea;
+import javax.swing.JScrollPane;
+import javax.swing.JLabel;
 
 public class FileKommanderGUIV2 {
 
@@ -49,32 +50,39 @@ public class FileKommanderGUIV2 {
 
 	private String CREATEPANEL = "CREATEPANEL";
 	private String DELETEPANEL = "DELETEPANEL";
+	private String RENAMEPANEL = "RENAMEPANEL";
+	private String STATSPANEL = "STATSPANEL";
+
+
 	private String EMPTYPANEL = "EMPTYPANEL";
 	private CreateActionPanel createActionPanel;
 	private DeleteActionPanel deleteActionPanel;
+	private RenameActionPanel renameActionPanel;
+	private StatsActionPanel statsActionPanel;
 	private EmptyActionPanel emptyActionPanel;
 	private JToggleButton micBtn;
 
 	protected Microphone microphone = new Microphone(AudioFileFormat.Type.WAVE);
 	protected String file = "tmp";
 	private FileKommanderMenu menuBar;
+	private JLabel errorMessageLabel;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					FileKommanderGUIV2 window = new FileKommanderGUIV2();
-					window.frmFileKommander.setVisible(true);
-
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+	// /**
+	// * Launch the application.
+	// */
+	// public static void main(String[] args) {
+	// EventQueue.invokeLater(new Runnable() {
+	// public void run() {
+	// try {
+	// FileKommanderGUIV2 window = new FileKommanderGUIV2();
+	// window.frmFileKommander.setVisible(true);
+	//
+	// } catch (Exception e) {
+	// e.printStackTrace();
+	// }
+	// }
+	// });
+	// }
 
 	/**
 	 * Create the application.
@@ -87,18 +95,10 @@ public class FileKommanderGUIV2 {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
-		try {
-			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		} catch (ClassNotFoundException | InstantiationException
-				| IllegalAccessException | UnsupportedLookAndFeelException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-
 		frmFileKommander = new JFrame();
 		frmFileKommander.setTitle("File Kommander");
 		frmFileKommander.setResizable(false);
-		frmFileKommander.setBounds(100, 100, 644, 407);
+		frmFileKommander.setBounds(100, 100, 644, 467);
 		frmFileKommander.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmFileKommander.getContentPane().setLayout(null);
 
@@ -138,12 +138,12 @@ public class FileKommanderGUIV2 {
 		progressBar = new JProgressBar();
 		progressBar.setVisible(false);
 		progressBar.setValue(0);
-		progressBar.setBounds(6, 105, 622, 10);
+		progressBar.setBounds(6, 6, 622, 10);
 		frmFileKommander.getContentPane().add(progressBar);
 		BorderFactory.createLineBorder(Color.BLUE);
 
 		informatinDisplayPanel = new JPanel();
-		informatinDisplayPanel.setBounds(10, 126, 618, 242);
+		informatinDisplayPanel.setBounds(6, 82, 618, 242);
 		frmFileKommander.getContentPane().add(informatinDisplayPanel);
 		informatinDisplayPanel.setLayout(new CardLayout(0, 0));
 
@@ -155,6 +155,12 @@ public class FileKommanderGUIV2 {
 
 		deleteActionPanel = new DeleteActionPanel();
 		informatinDisplayPanel.add(deleteActionPanel, DELETEPANEL);
+
+		renameActionPanel = new RenameActionPanel();
+		informatinDisplayPanel.add(renameActionPanel, RENAMEPANEL);
+
+		statsActionPanel = new StatsActionPanel();
+		informatinDisplayPanel.add(statsActionPanel, STATSPANEL);
 
 		CardLayout layout = (CardLayout) informatinDisplayPanel.getLayout();
 		layout.show(informatinDisplayPanel, EMPTYPANEL);
@@ -175,6 +181,16 @@ public class FileKommanderGUIV2 {
 		micBtn.setOpaque(true);
 		micBtn.setBounds(577, 34, 51, 44);
 		frmFileKommander.getContentPane().add(micBtn);
+		
+		JPanel errorMessagePanel = new JPanel();
+		errorMessagePanel.setBounds(6, 343, 622, 67);
+		frmFileKommander.getContentPane().add(errorMessagePanel);
+		errorMessagePanel.setLayout(null);
+		
+		errorMessageLabel = new JLabel("");
+		errorMessageLabel.setForeground(Color.RED);
+		errorMessageLabel.setBounds(6, 6, 610, 55);
+		errorMessagePanel.add(errorMessageLabel);
 
 		menuBar = new FileKommanderMenu();
 		frmFileKommander.setJMenuBar(menuBar);
@@ -194,7 +210,7 @@ public class FileKommanderGUIV2 {
 			microphone.captureAudioToFile(file);
 			micBtn.setIcon(new ImageIcon(
 					FileKommanderGUIV2.class
-					.getResource("/com/poly/nlp/filekommander/views/icon/mic_recording.png")));
+							.getResource("/com/poly/nlp/filekommander/views/icon/mic_recording.png")));
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
@@ -204,7 +220,7 @@ public class FileKommanderGUIV2 {
 		microphone.close();
 		micBtn.setIcon(new ImageIcon(
 				FileKommanderGUIV2.class
-				.getResource("/com/poly/nlp/filekommander/views/icon/mic_waiting.png")));
+						.getResource("/com/poly/nlp/filekommander/views/icon/mic_waiting.png")));
 		new Thread(new RecognizeThread()).start();
 	}
 
@@ -212,20 +228,42 @@ public class FileKommanderGUIV2 {
 		CardLayout layout = (CardLayout) informatinDisplayPanel.getLayout();
 		if (actionModel instanceof CreateModel) {
 			createActionPanel.updatePanelData((CreateModel) actionModel);
-			layout.show(informatinDisplayPanel, CREATEPANEL);
-
+			showLayout(CREATEPANEL);
 		} else if (actionModel instanceof DeleteModel) {
 			deleteActionPanel.updatePanelData((DeleteModel) actionModel);
-			layout.show(informatinDisplayPanel, CREATEPANEL);
+			showLayout(DELETEPANEL);
+		}else if (actionModel instanceof RenameModel) {
+			renameActionPanel.updatePanelData((RenameModel) actionModel);
+			showLayout(RENAMEPANEL);
+		}else if (actionModel instanceof StatsModel) {
+			statsActionPanel.updatePanelData((StatsModel) actionModel);
+			layout.show(informatinDisplayPanel, STATSPANEL);
 		}
-		// informatinDisplayPanel.repaint();
+		informatinDisplayPanel.repaint();
+	}
+
+	/**
+	 * Displays a specific layout in the information panel
+	 * 
+	 * @param layoutName
+	 */
+	public void showLayout(String layoutName) {
+		CardLayout layout = (CardLayout) informatinDisplayPanel.getLayout();
+		layout.show(informatinDisplayPanel, layoutName);
 	}
 
 	public void displayErrorMessage(String message) {
+		this.errorMessageLabel.setText(message);
 		System.out.println(message);
 	}
 
 	public void clearErrorMessage() {
+	}
+	
+	public void reset() {
+		inputTextFld.setText("");
+		errorMessageLabel.setText("");
+		showLayout(EMPTYPANEL);
 	}
 
 	public synchronized JProgressBar getProgressBar() {
@@ -273,11 +311,18 @@ public class FileKommanderGUIV2 {
 						+ googleResponse.getConfidence());
 				micBtn.setIcon(new ImageIcon(
 						FileKommanderGUIV2.class
-						.getResource("/com/poly/nlp/filekommander/views/icon/mic.png")));
+								.getResource("/com/poly/nlp/filekommander/views/icon/mic.png")));
 				// confidence.setText(googleResponse.getConfidence());
 			} catch (Exception ex) {
 				ex.printStackTrace();
 			}
 		}
+	}
+	
+	public JLabel getErrorMessageLabel() {
+		return errorMessageLabel;
+	}
+	public RenameActionPanel getRenameActionPanel() {
+		return renameActionPanel;
 	}
 }

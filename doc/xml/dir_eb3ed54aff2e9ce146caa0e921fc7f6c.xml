@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="dir_eb3ed54aff2e9ce146caa0e921fc7f6c" kind="dir">
+    <compoundname>git/FileKommander/src</compoundname>
+    <innerdir refid="dir_575c64d0e527c0383dc3eec53b486ae4">git/FileKommander/src/com</innerdir>
+    <innerfile refid="_h_l_t_tutorial_8java">HLTTutorial.java</innerfile>
+    <innerfile refid="_poly_main_8java">PolyMain.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/jake/git/FileKommander/src/"/>
+  </compounddef>
+</doxygen>

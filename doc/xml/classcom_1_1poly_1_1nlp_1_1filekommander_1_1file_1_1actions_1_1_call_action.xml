@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::file::actions::CallAction</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a65b722d9482bd93c3ae2b31f51050a08" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.poly.nlp.filekommander.file.actions.CallAction.log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>= Logger.getLogger(CallAction.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="16" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a0e736328e4851dfb78f0578dd0414029" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.CallAction.callAction</definition>
+        <argsstring>(GenericActionModel actionModel)</argsstring>
+        <name>callAction</name>
+        <param>
+          <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+          <declname>actionModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="18" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="18" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1aa13dda5197a227b0ccd0a742668ec861" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.CallAction.existsAction</definition>
+        <argsstring>()</argsstring>
+        <name>existsAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="85" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1ad1eda2fa13b7a6902c45e898cdee1e2f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.CallAction.insertAction</definition>
+        <argsstring>()</argsstring>
+        <name>insertAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="89" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a82b3550337442d231288438a479993b9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.CallAction.openAction</definition>
+        <argsstring>()</argsstring>
+        <name>openAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="93" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a00509e9811e6faf029a136227ad9c4b6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.CallAction.removeAction</definition>
+        <argsstring>()</argsstring>
+        <name>removeAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="97" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1ac199f9c573025af0f871315ea997beaa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void com.poly.nlp.filekommander.file.actions.CallAction.replaceAction</definition>
+        <argsstring>()</argsstring>
+        <name>replaceAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="111" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a2668fbc0bf50bdf3b09853f2d88d8a9d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.CallAction.statsAction</definition>
+        <argsstring>(StatsModel statsModel)</argsstring>
+        <name>statsAction</name>
+        <param>
+          <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model" kindref="compound">StatsModel</ref></type>
+          <declname>statsModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="115" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="115" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a9732d3e6e92378607607b7bd0bb91736" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.CallAction.createAction</definition>
+        <argsstring>(CreateModel createModel)</argsstring>
+        <name>createAction</name>
+        <param>
+          <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model" kindref="compound">CreateModel</ref></type>
+          <declname>createModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="45" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="45" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1ae2b04b022b8ec6d18419cc14d747972c" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model" kindref="compound">DeleteModel</ref></type>
+        <definition>static DeleteModel com.poly.nlp.filekommander.file.actions.CallAction.deleteAction</definition>
+        <argsstring>(DeleteModel deleteModel)</argsstring>
+        <name>deleteAction</name>
+        <param>
+          <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model" kindref="compound">DeleteModel</ref></type>
+          <declname>deleteModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="65" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="65" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a11aae4f7ed1d404e8cd63c48ce91f427" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+        <definition>static GenericActionModel com.poly.nlp.filekommander.file.actions.CallAction.renameAction</definition>
+        <argsstring>(RenameModel renameModel)</argsstring>
+        <name>renameAction</name>
+        <param>
+          <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model" kindref="compound">RenameModel</ref></type>
+          <declname>renameModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="101" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="101" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="34">
+        <label>com.poly.nlp.filekommander.file.actions.CallAction</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action"/>
+        <childnode refid="35" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Logger</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" line="15" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/file/actions/CallAction.java" bodystart="15" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a0e736328e4851dfb78f0578dd0414029" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::CallAction</scope><name>callAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a9732d3e6e92378607607b7bd0bb91736" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::CallAction</scope><name>createAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1ae2b04b022b8ec6d18419cc14d747972c" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::CallAction</scope><name>deleteAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1aa13dda5197a227b0ccd0a742668ec861" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::CallAction</scope><name>existsAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1ad1eda2fa13b7a6902c45e898cdee1e2f" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::CallAction</scope><name>insertAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a65b722d9482bd93c3ae2b31f51050a08" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::CallAction</scope><name>log</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a82b3550337442d231288438a479993b9" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::CallAction</scope><name>openAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a00509e9811e6faf029a136227ad9c4b6" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::CallAction</scope><name>removeAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a11aae4f7ed1d404e8cd63c48ce91f427" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::CallAction</scope><name>renameAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1ac199f9c573025af0f871315ea997beaa" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::CallAction</scope><name>replaceAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action_1a2668fbc0bf50bdf3b09853f2d88d8a9d" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::file::actions::CallAction</scope><name>statsAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+var classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread =
+[
+    [ "run", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2_1_1_recognize_thread.html#a4be07d48ad5b312798cd85d092a56d5f", null ]
+];

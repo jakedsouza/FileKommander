@@ -1,0 +1,205 @@
+.TH "com.poly.nlp.filekommander.views.FileKommanderMenu" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.FileKommanderMenu \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits JMenuBar\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFileKommanderMenu\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdisplayOptions\fP (ActionEvent e)"
+.br
+.ti -1c
+.RI "void \fBsaveAndDispose\fP ()"
+.br
+.ti -1c
+.RI "void \fBdisplayAbout\fP (ActionEvent e)"
+.br
+.in -1c
+.SS "Package Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBOptionsFileKommander\fP \fBoptionsFileKommander\fP"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBloadOptionsFile\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetLabelText\fP (String key, String value)"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final long \fBserialVersionUID\fP = 1L"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 19 of file FileKommanderMenu\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderMenu\&.FileKommanderMenu ()"
+Create the panel\&. 
+.PP
+Definition at line 30 of file FileKommanderMenu\&.java\&.
+.PP
+.nf
+                               {
+        
+        JMenu fileMenu = new JMenu('File');
+        add(fileMenu);
+        
+        JMenuItem aboutMenuItem = new JMenuItem('About');
+        aboutMenuItem\&.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                displayAbout(e);
+            }
+        });
+        JMenuItem optionsMenuItem = new JMenuItem('Options');
+        optionsMenuItem\&.setBorderPainted(true);
+        optionsMenuItem\&.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                displayOptions(e);      
+            }
+        });
+        fileMenu\&.add(optionsMenuItem);
+        fileMenu\&.add(aboutMenuItem);     
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderMenu\&.displayAbout (ActionEvente)\fC [protected]\fP"
+
+.PP
+Definition at line 118 of file FileKommanderMenu\&.java\&.
+.PP
+.nf
+                                               {
+        AboutFileKommander aboutFileKommander = new AboutFileKommander();
+        aboutFileKommander\&.setLocationRelativeTo(null);
+        aboutFileKommander\&.setVisible(true);     
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderMenu\&.displayOptions (ActionEvente)\fC [protected]\fP"
+
+.PP
+Definition at line 52 of file FileKommanderMenu\&.java\&.
+.PP
+.nf
+                                                {
+        optionsFileKommander = new OptionsFileKommander();
+        optionsFileKommander\&.setLocationRelativeTo(null);
+        loadOptionsFile();
+        optionsFileKommander\&.setVisible(true);       
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderMenu\&.loadOptionsFile ()\fC [private]\fP"
+
+.PP
+Definition at line 59 of file FileKommanderMenu\&.java\&.
+.PP
+.nf
+                                  {
+        optionsFileKommander\&.getOkButton()\&.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            saveAndDispose();
+            }
+        });
+        PropertiesConfiguration configuration = FileKommanderRun\&.getConfiguration();
+        Iterator<String> keys = configuration\&.getKeys();
+        while (keys\&.hasNext()) {
+            String key = (String) keys\&.next();
+            String value = configuration\&.getString(key);
+            setLabelText(key, value);
+        }
+        optionsFileKommander\&.paintAll(optionsFileKommander\&.getGraphics());
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderMenu\&.saveAndDispose ()\fC [protected]\fP"
+
+.PP
+Definition at line 75 of file FileKommanderMenu\&.java\&.
+.PP
+.nf
+                                    {
+        PropertiesConfiguration configuration = FileKommanderRun\&.getConfiguration() ;
+        
+        Component[] components = optionsFileKommander\&.getContentPanel()\&.getComponents() ;
+        
+        for (int i = 0; i < components\&.length; i++) {
+        //  if(//components[i]\&.)
+            String key ='';
+            String value = '';
+            if(components[i] instanceof JLabel){
+                JLabel jLabel = (JLabel) components[i];
+                key = jLabel\&.getText();
+            }
+            if(components[i] instanceof JTextField){
+                JTextField jTextField= (JTextField) components[i];
+                value = jTextField\&.getText();
+            }
+            configuration\&.addProperty(key, value);
+            System\&.out\&.println(components[i]);
+        }
+        try {
+            configuration\&.save();
+        } catch (ConfigurationException e) {
+            // TODO Auto-generated catch block
+            e\&.printStackTrace();
+        }
+        FileKommanderRun\&.setConfiguration(configuration);
+        try {
+            FileKommanderRun\&.loadConfigurationFromFile('/filekommander\&.properties');
+        } catch (ConfigurationException e) {
+            // TODO Auto-generated catch block
+            e\&.printStackTrace();
+        }
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderMenu\&.setLabelText (Stringkey, Stringvalue)\fC [private]\fP"
+
+.PP
+Definition at line 110 of file FileKommanderMenu\&.java\&.
+.PP
+.nf
+                                                        {
+        JLabel jLabel = new JLabel(key);
+        JTextField textField = new JTextField(value);
+        jLabel\&.setLabelFor(textField);
+        optionsFileKommander\&.getContentPanel()\&.add(jLabel);
+        optionsFileKommander\&.getContentPanel()\&.add(textField);
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBOptionsFileKommander\fP com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderMenu\&.optionsFileKommander\fC [package]\fP"
+
+.PP
+Definition at line 25 of file FileKommanderMenu\&.java\&.
+.SS "final long com\&.poly\&.nlp\&.filekommander\&.views\&.FileKommanderMenu\&.serialVersionUID = 1L\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 24 of file FileKommanderMenu\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

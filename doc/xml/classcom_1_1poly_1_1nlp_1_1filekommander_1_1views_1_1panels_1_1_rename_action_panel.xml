@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::views::panels::RenameActionPanel</compoundname>
+    <basecompoundref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.panels.AbstractFileFolderPanel</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a2d285c84e4044412ee2587ff1b4f471b" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.poly.nlp.filekommander.views.panels.RenameActionPanel.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <initializer>= 1L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" line="21" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a4e84c4017b3461afab7a58319fca6dcc" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.poly.nlp.filekommander.views.panels.RenameActionPanel.log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>= Logger.getLogger(CreateActionPanel.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" line="23" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a6225fd2a8c41ace06f7cbf690ff1fa66" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model" kindref="compound">RenameModel</ref></type>
+        <definition>RenameModel com.poly.nlp.filekommander.views.panels.RenameActionPanel.renameModel</definition>
+        <argsstring></argsstring>
+        <name>renameModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" line="22" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a26c8743087944fc57a101d402e9bb95f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.RenameActionPanel.acceptButtonClickAction</definition>
+        <argsstring>(ActionEvent e)</argsstring>
+        <name>acceptButtonClickAction</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a26a9ad5640e6599d1df64ebf9b04041d">acceptButtonClickAction</reimplements>
+        <param>
+          <type>ActionEvent</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" line="26" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a2f33f44eac5a0bfada8bbc901a8ff57b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.RenameActionPanel.updatePanelData</definition>
+        <argsstring>(GenericActionModel renameModel)</argsstring>
+        <name>updatePanelData</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a0c413991b7c48758fec4d52d592065fb">updatePanelData</reimplements>
+        <param>
+          <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+          <declname>actionModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the panel before action is taken using the given action model</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" line="34" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" bodystart="34" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1aaf4b583b76444aa394edf3fe64a37ae1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.RenameActionPanel.updatePanelData</definition>
+        <argsstring>()</argsstring>
+        <name>updatePanelData</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1acdf1d105f87dc13772870234aea299d4">updatePanelData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the panel before action is taken </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" line="44" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" bodystart="44" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a9defdeb4b3f825b7bd34081700b92e10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.RenameActionPanel.updatePanelDataAfterAction</definition>
+        <argsstring>()</argsstring>
+        <name>updatePanelDataAfterAction</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a2308ee0dc3eaea5b8b525fd02f60e000">updatePanelDataAfterAction</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>updates the create panel after the action is run </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" line="77" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" bodystart="77" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1ab2b8d0b3c213d7df75ffda2a5055fbe1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model" kindref="compound">RenameModel</ref></type>
+        <definition>RenameModel com.poly.nlp.filekommander.views.panels.RenameActionPanel.getRenameModel</definition>
+        <argsstring>()</argsstring>
+        <name>getRenameModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the renameModel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" line="114" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a0093d0870dbf68f86129a6350ba85b76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.RenameActionPanel.setRenameModel</definition>
+        <argsstring>(RenameModel renameModel)</argsstring>
+        <name>setRenameModel</name>
+        <param>
+          <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model" kindref="compound">RenameModel</ref></type>
+          <declname>renameModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>renameModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the renameModel to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" line="122" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" bodystart="122" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="273">
+        <label>JPanel</label>
+      </node>
+      <node id="271">
+        <label>com.poly.nlp.filekommander.views.panels.AbstractFileFolderPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel"/>
+        <childnode refid="272" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
+        <childnode refid="273" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>com.poly.nlp.filekommander.views.panels.RenameActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel"/>
+        <childnode refid="271" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="277">
+        <label>JPanel</label>
+      </node>
+      <node id="275">
+        <label>com.poly.nlp.filekommander.views.panels.AbstractFileFolderPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel"/>
+        <childnode refid="276" relation="public-inheritance">
+        </childnode>
+        <childnode refid="278" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="279" relation="usage">
+          <edgelabel>btnAccept</edgelabel>
+          <edgelabel>btnReject</edgelabel>
+        </childnode>
+        <childnode refid="280" relation="usage">
+          <edgelabel>actionLabelFile</edgelabel>
+        </childnode>
+        <childnode refid="277" relation="usage">
+          <edgelabel>filepanel</edgelabel>
+          <edgelabel>commandPanel</edgelabel>
+          <edgelabel>fileListPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="280">
+        <label>JLabel</label>
+      </node>
+      <node id="282">
+        <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
+        <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
+      </node>
+      <node id="278">
+        <label>Logger</label>
+      </node>
+      <node id="281">
+        <label>com.poly.nlp.filekommander.views.models.RenameModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model"/>
+        <childnode refid="282" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>com.poly.nlp.filekommander.views.panels.RenameActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel"/>
+        <childnode refid="275" relation="public-inheritance">
+        </childnode>
+        <childnode refid="278" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="281" relation="usage">
+          <edgelabel>renameModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="279">
+        <label>JButton</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" line="16" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/RenameActionPanel.java" bodystart="16" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1aa6c3bb2b8c0c7e0a03d3869041136a36" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>AbstractFileFolderPanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a26c8743087944fc57a101d402e9bb95f" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>acceptButtonClickAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a20975a6589130de0b99c932b695f7ce5" prot="protected" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>createDefaultObjectLabel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a4f5fea4f0c8b3aaf4e1387bed4886446" prot="protected" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>createObjectLabelAfterAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a689e61b3368ccffe664ce92aad547fb5" prot="protected" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>fileListPanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a5604a494d100a6d78750a985cfe0b340" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>getActionLabelFile</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1aff16d223c2bdcd122ef6f74d1827f05f" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>getActionString</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a4fc9eabf9e39bb20440c92c83837b8fb" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>getBtnAccept</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1af76ef5d7d4e3c50bb2f2b3050d7863ee" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>getBtnReject</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a65b9fd5b80a3d0d19afa10cfbfa3304e" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>getFileListPanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1ab551ed106b53e4bfaddc438b918be406" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>getFilepanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1ab2b8d0b3c213d7df75ffda2a5055fbe1" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>getRenameModel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a4e84c4017b3461afab7a58319fca6dcc" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>log</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a6225fd2a8c41ace06f7cbf690ff1fa66" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>renameModel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1addfb93f97c8eee6dd6131042c13d680b" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>resetPanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a2d285c84e4044412ee2587ff1b4f471b" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>serialVersionUID</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a25ffb42f58f97066dce7fe2d7597817e" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>setActionString</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a0093d0870dbf68f86129a6350ba85b76" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>setRenameModel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a2f33f44eac5a0bfada8bbc901a8ff57b" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>updatePanelData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1aaf4b583b76444aa394edf3fe64a37ae1" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>updatePanelData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel_1a9defdeb4b3f825b7bd34081700b92e10" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::RenameActionPanel</scope><name>updatePanelDataAfterAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

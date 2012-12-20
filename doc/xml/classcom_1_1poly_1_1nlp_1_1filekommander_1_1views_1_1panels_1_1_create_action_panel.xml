@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel" kind="class" prot="public">
+    <compoundname>com::poly::nlp::filekommander::views::panels::CreateActionPanel</compoundname>
+    <basecompoundref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.panels.AbstractFileFolderPanel</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a23448414807322c40b1b403229052539" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long com.poly.nlp.filekommander.views.panels.CreateActionPanel.serialVersionUID</definition>
+        <argsstring></argsstring>
+        <name>serialVersionUID</name>
+        <initializer>= 1L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" line="17" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1af5dbfc85e283c5049b04b0bc4d066a97" prot="private" static="yes" mutable="no">
+        <type>final Logger</type>
+        <definition>final Logger com.poly.nlp.filekommander.views.panels.CreateActionPanel.log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <initializer>= Logger.getLogger(CreateActionPanel.class)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" line="19" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a7188ccd78e66b6a4fe3dd838fc1ae2f1" prot="private" static="no" mutable="no">
+        <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model" kindref="compound">CreateModel</ref></type>
+        <definition>CreateModel com.poly.nlp.filekommander.views.panels.CreateActionPanel.createModel</definition>
+        <argsstring></argsstring>
+        <name>createModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" line="18" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a641873952ae43e37c7957ff5e5c8fb5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.CreateActionPanel.acceptButtonClickAction</definition>
+        <argsstring>(ActionEvent e)</argsstring>
+        <name>acceptButtonClickAction</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a26a9ad5640e6599d1df64ebf9b04041d">acceptButtonClickAction</reimplements>
+        <param>
+          <type>ActionEvent</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" line="22" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" bodystart="22" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1ae3bcfdd7de3d71d751e56438567c2597" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model" kindref="compound">CreateModel</ref></type>
+        <definition>CreateModel com.poly.nlp.filekommander.views.panels.CreateActionPanel.getCreateModel</definition>
+        <argsstring>()</argsstring>
+        <name>getCreateModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the createModel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" line="33" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a249d557b8a8c1f96611efd035eb9df75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.CreateActionPanel.setCreateModel</definition>
+        <argsstring>(CreateModel createModel)</argsstring>
+        <name>setCreateModel</name>
+        <param>
+          <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model" kindref="compound">CreateModel</ref></type>
+          <declname>createModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>createModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the createModel to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" line="40" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a342522581abfe5d434c868128faad479" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.CreateActionPanel.updatePanelData</definition>
+        <argsstring>(GenericActionModel createModel)</argsstring>
+        <name>updatePanelData</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a0c413991b7c48758fec4d52d592065fb">updatePanelData</reimplements>
+        <param>
+          <type><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref></type>
+          <declname>actionModel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the panel before action is taken using the given action model</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>actionModel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" line="45" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" bodystart="45" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1aa8f5728e0f6a12bb07793fab933e673e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.CreateActionPanel.updatePanelData</definition>
+        <argsstring>()</argsstring>
+        <name>updatePanelData</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1acdf1d105f87dc13772870234aea299d4">updatePanelData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the panel before action is taken </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" line="55" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" bodystart="55" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a94e3d36d8b58ed6cabfc7f4e62ca7f4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.panels.CreateActionPanel.updatePanelDataAfterAction</definition>
+        <argsstring>()</argsstring>
+        <name>updatePanelDataAfterAction</name>
+        <reimplements refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a2308ee0dc3eaea5b8b525fd02f60e000">updatePanelDataAfterAction</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>updates the create panel after the action is run </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" line="88" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" bodystart="88" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="39">
+        <label>JPanel</label>
+      </node>
+      <node id="37">
+        <label>com.poly.nlp.filekommander.views.panels.AbstractFileFolderPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>com.poly.nlp.filekommander.views.panels.CreateActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="43">
+        <label>JPanel</label>
+      </node>
+      <node id="41">
+        <label>com.poly.nlp.filekommander.views.panels.AbstractFileFolderPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>btnAccept</edgelabel>
+          <edgelabel>btnReject</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>actionLabelFile</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>filepanel</edgelabel>
+          <edgelabel>commandPanel</edgelabel>
+          <edgelabel>fileListPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>com.poly.nlp.filekommander.views.panels.CreateActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>createModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>JLabel</label>
+      </node>
+      <node id="49">
+        <label>HashMap&lt; String, String &gt;</label>
+      </node>
+      <node id="48">
+        <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
+        <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
+      </node>
+      <node id="47">
+        <label>com.poly.nlp.filekommander.views.models.CreateModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>fileListData</edgelabel>
+          <edgelabel>folderListData</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>Logger</label>
+      </node>
+      <node id="42">
+        <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>JButton</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" line="12" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/CreateActionPanel.java" bodystart="12" bodyend="118"/>
+    <listofallmembers>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1aa6c3bb2b8c0c7e0a03d3869041136a36" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>AbstractFileFolderPanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a641873952ae43e37c7957ff5e5c8fb5f" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>acceptButtonClickAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a20975a6589130de0b99c932b695f7ce5" prot="protected" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>createDefaultObjectLabel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a7188ccd78e66b6a4fe3dd838fc1ae2f1" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>createModel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a4f5fea4f0c8b3aaf4e1387bed4886446" prot="protected" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>createObjectLabelAfterAction</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a689e61b3368ccffe664ce92aad547fb5" prot="protected" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>fileListPanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a5604a494d100a6d78750a985cfe0b340" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>getActionLabelFile</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1aff16d223c2bdcd122ef6f74d1827f05f" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>getActionString</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a4fc9eabf9e39bb20440c92c83837b8fb" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>getBtnAccept</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1af76ef5d7d4e3c50bb2f2b3050d7863ee" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>getBtnReject</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1ae3bcfdd7de3d71d751e56438567c2597" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>getCreateModel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a65b9fd5b80a3d0d19afa10cfbfa3304e" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>getFileListPanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1ab551ed106b53e4bfaddc438b918be406" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>getFilepanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1af5dbfc85e283c5049b04b0bc4d066a97" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>log</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1addfb93f97c8eee6dd6131042c13d680b" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>resetPanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a23448414807322c40b1b403229052539" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>serialVersionUID</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a25ffb42f58f97066dce7fe2d7597817e" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>setActionString</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a249d557b8a8c1f96611efd035eb9df75" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>setCreateModel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a342522581abfe5d434c868128faad479" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>updatePanelData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1aa8f5728e0f6a12bb07793fab933e673e" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>updatePanelData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel_1a94e3d36d8b58ed6cabfc7f4e62ca7f4d" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::CreateActionPanel</scope><name>updatePanelDataAfterAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

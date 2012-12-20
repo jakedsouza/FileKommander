@@ -1,0 +1,707 @@
+\hypertarget{class_h_l_t_tutorial}{\section{H\-L\-T\-Tutorial Class Reference}
+\label{class_h_l_t_tutorial}\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_h_l_t_tutorial_a140368203bdb4815acba0606719df6a7}{H\-L\-T\-Tutorial} ()
+\item 
+String \hyperlink{class_h_l_t_tutorial_a2df4fcba977cad0df60ff6dd6356dbb5}{get\-Contents} (File a\-File)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_h_l_t_tutorial_abf587005c096a97ec0c1d86d843aeb5c}{main} (String args\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{class_h_l_t_tutorial_ae71fbcbcb26faf92a453dd4fad5a7a85}{context}
+\item 
+Document \hyperlink{class_h_l_t_tutorial_adc313cb5e485ec03e21897d5c0132591}{doc}
+\item 
+Serial\-Analyser\-Controller \hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\-\_\-annie\-Controller}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{class_h_l_t_tutorial_adb4199589eaaf5b9598cc2b2f7590659}{newline} =(\char`\"{}\textbackslash{}n\char`\"{})
+\item 
+static final String \hyperlink{class_h_l_t_tutorial_a26ee4eae95ef93834a86936c107361b0}{N\-S} = \char`\"{}http\-://sw.\-deri.\-org/2007/12/fin/spec\#\char`\"{}
+\item 
+static final String \hyperlink{class_h_l_t_tutorial_aa4a2bd88329f2c78cd648c7242be3086}{F\-I\-D\-\_\-\-D\-A\-T\-A\-\_\-\-O\-R\-G} = \char`\"{}http\-://sw.\-deri.\-org/2007/12/fin/inst/organisations/\char`\"{}
+\item 
+static final String \hyperlink{class_h_l_t_tutorial_a8f7520df09b1deb0b52f1cd2341d14dd}{context\-I\-D} =\char`\"{}$<$http\-://sw.\-deri.\-org/2007/12/fin/sources/\char`\"{}
+\item 
+static String \hyperlink{class_h_l_t_tutorial_af324de58fa0893753bf1d449a959be55}{context\-Data}
+\item 
+static boolean \hyperlink{class_h_l_t_tutorial_a25e52e2c4a0580906443617dd11e5050}{has\-U\-R\-I\-Context} =false
+\item 
+static String \hyperlink{class_h_l_t_tutorial_ab4c914d0fd25e0dfcb7fdeb677b26211}{filename}
+\end{DoxyCompactItemize}
+\subsection*{Static Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{class_h_l_t_tutorial_a81baeb2bb51fe4720470dabfb269b102}{get\-Org\-Name\-Space} (String name)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_h_l_t_tutorial_a1644de472a2045b79bb8810049b83a1d}{initialize\-Gate} ()  throws Gate\-Exception, Malformed\-U\-R\-L\-Exception 
+\item 
+void \hyperlink{class_h_l_t_tutorial_ae9b6976cecdeefda137c1b3e2cb6636d}{extract\-Relations} (File\mbox{[}$\,$\mbox{]}files)  throws Exception 
+\item 
+void \hyperlink{class_h_l_t_tutorial_a5f66220b793be678dbd3d5e75bb017f0}{to\-R\-D\-F} (Annotation\-Set relation\-Annotation\-Set, int code)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{class_h_l_t_tutorial_a367a2190f2398ea406657d63fe2b4965}{get\-Pred\-Name\-Space} (String name)
+\item 
+static String \hyperlink{class_h_l_t_tutorial_ad316d0d41d51699ea6311cd4713a2b38}{strip\-Non\-Alphanumeric} (String s)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final String \hyperlink{class_h_l_t_tutorial_ac4f6995f0d67d0bfdd60d26dd7703db5}{file\-Separator} = System.\-get\-Property(\char`\"{}file.\-separator\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_h_l_t_tutorial_aeca9a1b824beab58de7f27e639b6fc52}{first\-File} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line \hyperlink{L41}{41} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_h_l_t_tutorial_a140368203bdb4815acba0606719df6a7}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}}
+\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{H\-L\-T\-Tutorial}]{\setlength{\rightskip}{0pt plus 5cm}H\-L\-T\-Tutorial.\-H\-L\-T\-Tutorial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_h_l_t_tutorial_a140368203bdb4815acba0606719df6a7}
+
+
+Definition at line \hyperlink{L43}{43} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+
+\begin{DoxyCode}
+                         \{
+        \textcolor{keywordflow}{try} \{
+            \hyperlink{class_h_l_t_tutorial_a1644de472a2045b79bb8810049b83a1d}{initializeGate}();
+        \} \textcolor{keywordflow}{catch} (MalformedURLException ex) \{
+            ex.printStackTrace();
+        \} \textcolor{keywordflow}{catch} (GateException ex) \{
+            ex.printStackTrace();
+        \}
+    \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_h_l_t_tutorial_ae9b6976cecdeefda137c1b3e2cb6636d}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!extract\-Relations@{extract\-Relations}}
+\index{extract\-Relations@{extract\-Relations}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{extract\-Relations}]{\setlength{\rightskip}{0pt plus 5cm}void H\-L\-T\-Tutorial.\-extract\-Relations (
+\begin{DoxyParamCaption}
+\item[{File\mbox{[}$\,$\mbox{]}}]{files}
+\end{DoxyParamCaption}
+)  throws Exception \hspace{0.3cm}{\ttfamily [private]}}}\label{class_h_l_t_tutorial_ae9b6976cecdeefda137c1b3e2cb6636d}
+$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$\-C\-L\-E\-A\-N\-U\-P$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$ 
+
+Definition at line \hyperlink{L182}{182} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+
+\begin{DoxyCode}
+                                                                \{
+        \textcolor{comment}{// set corpus}
+
+        \textcolor{comment}{//CorpusController
+       application(CorpusController)PersistenceManager.loadObjectFromFile(gappFile);}
+        Corpus corpus = Factory.newCorpus(\textcolor{stringliteral}{"BatchProcessApp Corpus"});
+        \hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\_annieController}.setCorpus(corpus);
+
+
+
+        \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = \hyperlink{class_h_l_t_tutorial_aeca9a1b824beab58de7f27e639b6fc52}{firstFile}; i < files.length; i++) \{
+            \textcolor{comment}{// load the document (using the specified encoding if one was
+       given)}
+            File file = files[i];
+            \hyperlink{class_h_l_t_tutorial_ab4c914d0fd25e0dfcb7fdeb677b26211}{filename}=file.getName();
+            System.out.println(\textcolor{stringliteral}{"currentfile count is"}+i);
+            \textcolor{keywordflow}{if}(file.isFile() && file.length()!=0)   
+            \{
+                System.out.print(\textcolor{stringliteral}{"Processing document "} + file + \textcolor{stringliteral}{"..."});
+                \hyperlink{class_h_l_t_tutorial_adc313cb5e485ec03e21897d5c0132591}{doc} = Factory.newDocument(\hyperlink{class_h_l_t_tutorial_a2df4fcba977cad0df60ff6dd6356dbb5}{getContents}(file));
+
+
+
+
+                corpus.add(\hyperlink{class_h_l_t_tutorial_adc313cb5e485ec03e21897d5c0132591}{doc});
+                \hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\_annieController}.execute();
+                corpus.clear();  
+                
+
+                AnnotationSet defaultAnnotSet = \hyperlink{class_h_l_t_tutorial_adc313cb5e485ec03e21897d5c0132591}{doc}.getAnnotations();
+
+
+
+
+
+                AnnotationSet companytoCompany1 = defaultAnnotSet.get(\textcolor{stringliteral}{"
+      companytoCompanyRelation1"});
+
+
+                \textcolor{keywordflow}{if}(!companytoCompany1.isEmpty())
+                \{\hyperlink{class_h_l_t_tutorial_a5f66220b793be678dbd3d5e75bb017f0}{toRDF}(companytoCompany1,  1);\}
+                AnnotationSet companytoCompany1a = defaultAnnotSet.get(\textcolor{stringliteral}{"
+      companytoCompanyRelation1a"});
+                \textcolor{keywordflow}{if}(!companytoCompany1a.isEmpty())
+                \{\hyperlink{class_h_l_t_tutorial_a5f66220b793be678dbd3d5e75bb017f0}{toRDF}(companytoCompany1a, 7);\}
+                AnnotationSet companytoCompany2 = defaultAnnotSet.get(\textcolor{stringliteral}{"
+      companytoCompanyRelation2"});
+                \textcolor{keywordflow}{if}(!companytoCompany2.isEmpty())
+                \{\hyperlink{class_h_l_t_tutorial_a5f66220b793be678dbd3d5e75bb017f0}{toRDF}(companytoCompany2, 2);\}
+
+
+                \hyperlink{class_h_l_t_tutorial_adc313cb5e485ec03e21897d5c0132591}{doc}.cleanup();
+                \textcolor{keywordflow}{if} (\hyperlink{class_h_l_t_tutorial_adc313cb5e485ec03e21897d5c0132591}{doc}!=null) Factory.deleteResource(\hyperlink{class_h_l_t_tutorial_adc313cb5e485ec03e21897d5c0132591}{doc});
+
+                System.gc();
+
+
+            \}\textcolor{comment}{//endif}
+
+            \textcolor{keywordflow}{else}\{
+                System.out.print(\textcolor{stringliteral}{"Document "} + file + \textcolor{stringliteral}{" is empty! Will ignore
+       and continue to next file!"}); 
+            \}
+        \}\textcolor{comment}{//endfor}
+
+
+\textcolor{comment}{}
+\textcolor{comment}{        /** **************************CLEANUP**********************************
+      *** */}
+        
+        Factory.deleteResource(\hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\_annieController});
+        \hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\_annieController}=null;
+        System.out.println(\textcolor{stringliteral}{"Processing Complete"});
+        
+    \}\textcolor{comment}{// execute}
+\end{DoxyCode}
+\hypertarget{class_h_l_t_tutorial_a2df4fcba977cad0df60ff6dd6356dbb5}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!get\-Contents@{get\-Contents}}
+\index{get\-Contents@{get\-Contents}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{get\-Contents}]{\setlength{\rightskip}{0pt plus 5cm}String H\-L\-T\-Tutorial.\-get\-Contents (
+\begin{DoxyParamCaption}
+\item[{File}]{a\-File}
+\end{DoxyParamCaption}
+)}}\label{class_h_l_t_tutorial_a2df4fcba977cad0df60ff6dd6356dbb5}
+Depending on the performance of Gate we should maybe think about a hack
+
+-\/big file\-: breaking into chunk of 1000 lines
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\-File} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \hyperlink{L420}{420} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+
+\begin{DoxyCode}
+                                          \{
+        \textcolor{comment}{// ...checks on aFile are elided}
+        StringBuffer contents = \textcolor{keyword}{new} StringBuffer();
+
+        \textcolor{comment}{// declared here only to make visible to finally clause}
+        BufferedReader input = null;
+        \textcolor{keywordflow}{try} \{
+            \textcolor{comment}{// use buffering, reading one line at a time}
+            \textcolor{comment}{// FileReader always assumes default encoding is OK!}
+            input = \textcolor{keyword}{new} BufferedReader(\textcolor{keyword}{new} FileReader(aFile));
+            String line = null; \textcolor{comment}{// not declared within while loop}
+            \textcolor{comment}{/*}
+\textcolor{comment}{             * readLine is a bit quirky : it returns the content of a line
+       MINUS}
+\textcolor{comment}{             * the newline. it returns null only for the END of the stream. it}
+\textcolor{comment}{             * returns an empty String if two newlines appear in a row.}
+\textcolor{comment}{             */}
+            \textcolor{keywordflow}{while} ((line = input.readLine()) != null) \{
+                contents.append(line);
+                contents.append(System.getProperty(\textcolor{stringliteral}{"line.separator"}));
+            \}
+        \} \textcolor{keywordflow}{catch} (FileNotFoundException ex) \{
+            ex.printStackTrace();
+        \} \textcolor{keywordflow}{catch} (IOException ex) \{
+            ex.printStackTrace();
+        \} \textcolor{keywordflow}{finally} \{
+            \textcolor{keywordflow}{try} \{
+                \textcolor{keywordflow}{if} (input != null) \{
+                    \textcolor{comment}{// flush and close both "input" and its underlying}
+                    \textcolor{comment}{// FileReader}
+                    input.close();
+                \}
+            \} \textcolor{keywordflow}{catch} (IOException ex) \{
+                ex.printStackTrace();
+            \}
+        \}
+        \textcolor{keywordflow}{return} contents.toString();
+    \}
+\end{DoxyCode}
+\hypertarget{class_h_l_t_tutorial_a81baeb2bb51fe4720470dabfb269b102}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!get\-Org\-Name\-Space@{get\-Org\-Name\-Space}}
+\index{get\-Org\-Name\-Space@{get\-Org\-Name\-Space}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{get\-Org\-Name\-Space}]{\setlength{\rightskip}{0pt plus 5cm}static String H\-L\-T\-Tutorial.\-get\-Org\-Name\-Space (
+\begin{DoxyParamCaption}
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}}\label{class_h_l_t_tutorial_a81baeb2bb51fe4720470dabfb269b102}
+
+
+Definition at line \hyperlink{L372}{372} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+
+\begin{DoxyCode}
+                                              \{
+
+
+        name = name.toLowerCase();
+
+        name = \hyperlink{class_h_l_t_tutorial_ad316d0d41d51699ea6311cd4713a2b38}{stripNonAlphanumeric}(name);
+
+
+
+        \textcolor{keywordflow}{return} \textcolor{stringliteral}{"<"}+\hyperlink{class_h_l_t_tutorial_aa4a2bd88329f2c78cd648c7242be3086}{FID\_DATA\_ORG}+ name+\textcolor{stringliteral}{">"};
+
+    \}
+\end{DoxyCode}
+\hypertarget{class_h_l_t_tutorial_a367a2190f2398ea406657d63fe2b4965}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!get\-Pred\-Name\-Space@{get\-Pred\-Name\-Space}}
+\index{get\-Pred\-Name\-Space@{get\-Pred\-Name\-Space}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{get\-Pred\-Name\-Space}]{\setlength{\rightskip}{0pt plus 5cm}static String H\-L\-T\-Tutorial.\-get\-Pred\-Name\-Space (
+\begin{DoxyParamCaption}
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_h_l_t_tutorial_a367a2190f2398ea406657d63fe2b4965}
+
+
+Definition at line \hyperlink{L385}{385} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+
+\begin{DoxyCode}
+                                                       \{
+
+        \textcolor{keywordflow}{if} (name.equals(\textcolor{stringliteral}{"ownerOfPassive"}))
+        \{name=\textcolor{stringliteral}{"ownerOf"};\}
+
+        name = name.toLowerCase();
+
+        name = \hyperlink{class_h_l_t_tutorial_ad316d0d41d51699ea6311cd4713a2b38}{stripNonAlphanumeric}(name);
+
+        \textcolor{keywordflow}{return} \textcolor{stringliteral}{"<"}+\hyperlink{class_h_l_t_tutorial_a26ee4eae95ef93834a86936c107361b0}{NS}+name+\textcolor{stringliteral}{">"};
+
+    \}
+\end{DoxyCode}
+\hypertarget{class_h_l_t_tutorial_a1644de472a2045b79bb8810049b83a1d}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!initialize\-Gate@{initialize\-Gate}}
+\index{initialize\-Gate@{initialize\-Gate}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{initialize\-Gate}]{\setlength{\rightskip}{0pt plus 5cm}void H\-L\-T\-Tutorial.\-initialize\-Gate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)  throws Gate\-Exception, Malformed\-U\-R\-L\-Exception \hspace{0.3cm}{\ttfamily [private]}}}\label{class_h_l_t_tutorial_a1644de472a2045b79bb8810049b83a1d}
+
+
+Definition at line \hyperlink{L70}{70} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+
+\begin{DoxyCode}
+                                                                              \{
+
+        System.out.println(\textcolor{stringliteral}{"SYSENV: "}+System.getenv(\textcolor{stringliteral}{"GATE\_HOME"}));
+
+        System.setProperty(\textcolor{stringliteral}{"gate.home"}, System.getenv(\textcolor{stringliteral}{"GATE\_HOME"}));
+        System.setProperty(\textcolor{stringliteral}{"gate.site.config"}, System.getProperty(\textcolor{stringliteral}{"gate.home"})
+                + \hyperlink{class_h_l_t_tutorial_ac4f6995f0d67d0bfdd60d26dd7703db5}{fileSeparator} + \textcolor{stringliteral}{"gate.xml"});
+        System.setProperty(\textcolor{stringliteral}{"gate.user.config"}, System.getProperty(\textcolor{stringliteral}{"
+      gate.site.config"}));
+
+        Gate.init();
+
+
+
+
+
+
+        \textcolor{comment}{// register plugin directories}
+
+        Gate.getCreoleRegister().registerDirectories(
+                \textcolor{keyword}{new} File(Gate.getGateHome().toString() + \hyperlink{class_h_l_t_tutorial_ac4f6995f0d67d0bfdd60d26dd7703db5}{fileSeparator}
+                        + \textcolor{stringliteral}{"plugins"} + \hyperlink{class_h_l_t_tutorial_ac4f6995f0d67d0bfdd60d26dd7703db5}{fileSeparator} + \textcolor{stringliteral}{"ANNIE"}).
+      toURL());
+        Gate.getCreoleRegister().registerDirectories(
+                \textcolor{keyword}{new} File(Gate.getGateHome().toString() + \hyperlink{class_h_l_t_tutorial_ac4f6995f0d67d0bfdd60d26dd7703db5}{fileSeparator}
+                        + \textcolor{stringliteral}{"plugins"} + \hyperlink{class_h_l_t_tutorial_ac4f6995f0d67d0bfdd60d26dd7703db5}{fileSeparator} + \textcolor{stringliteral}{"Tools"}).
+      toURL());
+
+        \textcolor{comment}{//Gate.getCreoleRegister().registerDirectories(}
+        \textcolor{comment}{//  new File(Gate.getGateHome().toString() + fileSeparator}
+        \textcolor{comment}{//          + "plugins" + fileSeparator + "Jape\_Compiler").toURL());}
+
+        \hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\_annieController} = (SerialAnalyserController) Factory
+        .createResource(\textcolor{stringliteral}{"gate.creole.SerialAnalyserController"}, Factory
+                .newFeatureMap(), Factory.newFeatureMap(), \textcolor{stringliteral}{"ANNIE\_"}
+                + Gate.genSym());
+
+        FeatureMap params= Factory.newFeatureMap();
+        params.put(\textcolor{stringliteral}{"keepOriginalMarkupsAS"},\textcolor{keyword}{true});
+        ProcessingResource pr = (ProcessingResource) Factory.createResource(\textcolor{stringliteral}{"
+      gate.creole.annotdelete.AnnotationDeletePR"},
+                params);
+        \hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\_annieController}.add(pr);
+        System.err.println(\textcolor{stringliteral}{"Loaded: Document Reset PR"});
+
+
+        params = Factory.newFeatureMap();
+        pr = (ProcessingResource) Factory.createResource(
+                \textcolor{stringliteral}{"gate.creole.tokeniser.SimpleTokeniser"}, params);
+
+        \hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\_annieController}.add(pr);
+        System.err.println(\textcolor{stringliteral}{"Loaded: Tokeniser"});
+
+        params = Factory.newFeatureMap();
+        pr = (ProcessingResource) Factory.createResource(
+                \textcolor{stringliteral}{"gate.creole.splitter.SentenceSplitter"}, params);
+        \hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\_annieController}.add(pr);
+        System.err.println(\textcolor{stringliteral}{"Loaded: Sentence Splitter"});
+
+        params = Factory.newFeatureMap();
+        params.put(\textcolor{stringliteral}{"baseSentenceAnnotationType"}, \textcolor{stringliteral}{"Sentence"});
+        params.put(\textcolor{stringliteral}{"baseTokenAnnotationType"}, \textcolor{stringliteral}{"Token"});
+        params.put(\textcolor{stringliteral}{"outputAnnotationType"}, \textcolor{stringliteral}{"Token"});
+        pr = (ProcessingResource) Factory.createResource(
+                \textcolor{stringliteral}{"gate.creole.POSTagger"}, params);
+        \hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\_annieController}.add(pr);
+        System.err.println(\textcolor{stringliteral}{"Loaded: POS tagger"});
+
+
+
+
+        params = Factory.newFeatureMap();
+        URL u=\textcolor{keyword}{new} File(\textcolor{stringliteral}{"ie/deri/nlp/LanguageResources/gazetteers/mylists.def"}).
+      toURL();
+        params.put(\textcolor{stringliteral}{"listsURL"}, u);
+        DefaultGazetteer gazetteer = (DefaultGazetteer) Factory.createResource(\textcolor{stringliteral}{
+      "gate.creole.gazetteer.DefaultGazetteer"}, params);
+        \hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\_annieController}.add(gazetteer);
+
+        System.err.println(\textcolor{stringliteral}{"Loaded: Gazetteer"});
+
+        u = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"ie/deri/nlp/LanguageResources/JAPE/main.jape"}).toURL();
+        params = Factory.newFeatureMap();
+        params.put(\textcolor{stringliteral}{"grammarURL"}, u);
+        Transducer relationExtractionTransducer = (Transducer)Factory
+        .createResource(\textcolor{stringliteral}{"gate.creole.Transducer"},params);
+        \hyperlink{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\_annieController}.add(relationExtractionTransducer);
+
+        System.err.println(\textcolor{stringliteral}{"Loaded: Relation Extraction JAPE grammars, using
+       JAPE Transducer"});
+
+
+
+
+
+
+
+    \}
+\end{DoxyCode}
+\hypertarget{class_h_l_t_tutorial_abf587005c096a97ec0c1d86d843aeb5c}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!main@{main}}
+\index{main@{main}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}static void H\-L\-T\-Tutorial.\-main (
+\begin{DoxyParamCaption}
+\item[{String}]{args\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_l_t_tutorial_abf587005c096a97ec0c1d86d843aeb5c}
+
+
+Definition at line \hyperlink{L164}{164} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+
+\begin{DoxyCode}
+                                           \{
+
+        \hyperlink{class_h_l_t_tutorial}{HLTTutorial} \_tutorial=\textcolor{keyword}{new} \hyperlink{class_h_l_t_tutorial_a140368203bdb4815acba0606719df6a7}{HLTTutorial}();   
+        \textcolor{keywordflow}{try}\{
+            \textcolor{comment}{//File contentDir = new File(args[0]);}
+            File contentDir = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"E:\(\backslash\)\(\backslash\)MS\(\backslash\)\(\backslash\)nlpworkspace\(\backslash\)\(\backslash\)GATE-Tutorial\(\backslash\)\(\backslash\)
+      TestDocuments"});
+            File[] list = contentDir.listFiles();
+            \_tutorial.\hyperlink{class_h_l_t_tutorial_ae9b6976cecdeefda137c1b3e2cb6636d}{extractRelations}(list);
+
+        \} \textcolor{keywordflow}{catch} (Exception ex) \{
+            ex.printStackTrace();
+        \}
+
+    \}
+\end{DoxyCode}
+\hypertarget{class_h_l_t_tutorial_ad316d0d41d51699ea6311cd4713a2b38}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!strip\-Non\-Alphanumeric@{strip\-Non\-Alphanumeric}}
+\index{strip\-Non\-Alphanumeric@{strip\-Non\-Alphanumeric}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{strip\-Non\-Alphanumeric}]{\setlength{\rightskip}{0pt plus 5cm}static String H\-L\-T\-Tutorial.\-strip\-Non\-Alphanumeric (
+\begin{DoxyParamCaption}
+\item[{String}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_h_l_t_tutorial_ad316d0d41d51699ea6311cd4713a2b38}
+
+
+Definition at line \hyperlink{L400}{400} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+
+\begin{DoxyCode}
+                                                         \{ 
+
+        \textcolor{keywordflow}{return} s.replaceAll(\textcolor{stringliteral}{"[^a-zA-Z0-9]"}, \textcolor{stringliteral}{""}); 
+
+    \}
+\end{DoxyCode}
+\hypertarget{class_h_l_t_tutorial_a5f66220b793be678dbd3d5e75bb017f0}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!to\-R\-D\-F@{to\-R\-D\-F}}
+\index{to\-R\-D\-F@{to\-R\-D\-F}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{to\-R\-D\-F}]{\setlength{\rightskip}{0pt plus 5cm}void H\-L\-T\-Tutorial.\-to\-R\-D\-F (
+\begin{DoxyParamCaption}
+\item[{Annotation\-Set}]{relation\-Annotation\-Set, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_h_l_t_tutorial_a5f66220b793be678dbd3d5e75bb017f0}
+Print to stdout the triple 
+\begin{DoxyParams}{Parameters}
+{\em relation\-Annotation\-Set} & \\
+\hline
+{\em content} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{L257}{257} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+
+\begin{DoxyCode}
+                                                                      \{     
+        \textcolor{comment}{//get the company}
+
+        @SuppressWarnings(\textcolor{stringliteral}{"rawtypes"})
+        Iterator annoIter = relationAnnotationSet.iterator();
+
+        \textcolor{comment}{//iterate over annotations}
+        while(annoIter.hasNext())\{
+            \textcolor{comment}{//get the annotation}
+            Annotation a = (Annotation) annoIter.next();
+            \textcolor{comment}{//}
+            \textcolor{comment}{//debug}
+            \textcolor{comment}{//System.out.println(a.toString());}
+
+            FeatureMap features = a.getFeatures();
+            \textcolor{comment}{//get subject}
+            Annotation subjectAnn = (Annotation)features.get(\textcolor{stringliteral}{"Company1"});
+            String subject=\textcolor{stringliteral}{"empty"};
+            \textcolor{keywordflow}{try} \{
+                subject = \hyperlink{class_h_l_t_tutorial_adc313cb5e485ec03e21897d5c0132591}{doc}.getContent().getContent(subjectAnn.
+      getStartNode().getOffset(),subjectAnn.getEndNode().getOffset()).toString();
+            \} \textcolor{keywordflow}{catch} (InvalidOffsetException e1) \{
+                \textcolor{comment}{// TODO Auto-generated catch block}
+                e1.printStackTrace();
+            \}
+            Annotation predicateAnno=null;
+            String predicate=\textcolor{stringliteral}{"empty"};
+            \textcolor{keywordflow}{switch}(code)
+            \{
+            \textcolor{keywordflow}{case} 1:
+                predicateAnno = (Annotation)features.get(\textcolor{stringliteral}{"ownerOf"});
+                \textcolor{keywordflow}{if}(predicateAnno!=null)
+                \{predicate = predicateAnno.getType();\}
+
+            \textcolor{keywordflow}{case} 2:
+                predicateAnno = (Annotation)features.get(\textcolor{stringliteral}{"customerOf"});
+                \textcolor{keywordflow}{if}(predicateAnno!=null)
+                \{predicate = predicateAnno.getType();\}
+            \textcolor{keywordflow}{case} 3:
+                predicateAnno = (Annotation)features.get(\textcolor{stringliteral}{"supplierOf"});        
+                \textcolor{keywordflow}{if}(predicateAnno!=null)
+                \{predicate = predicateAnno.getType();\}
+            \textcolor{keywordflow}{case} 4:
+                \textcolor{keywordflow}{if}(predicateAnno!=null)
+                \{predicate = predicateAnno.getType();\}
+                predicateAnno = (Annotation)features.get(\textcolor{stringliteral}{"lenderOf"});
+            \textcolor{keywordflow}{case} 5:
+                predicateAnno = (Annotation)features.get(\textcolor{stringliteral}{"competitorOf"});
+                \textcolor{keywordflow}{if}(predicateAnno!=null)
+                \{predicate = predicateAnno.getType();\}          
+            \textcolor{keywordflow}{case} 7:
+                predicateAnno = (Annotation)features.get(\textcolor{stringliteral}{"bidFor"});
+                \textcolor{keywordflow}{if}(predicateAnno!=null)
+                \{predicate = predicateAnno.getType();\}          
+
+            \}
+
+
+            \textcolor{comment}{//System.out.println("\(\backslash\)n#"+predicateAnno+"\(\backslash\)n");}
+            \textcolor{comment}{//String predicate = predicateAnno.getType();}
+
+            \textcolor{comment}{//get objectAnnoyation}
+            Annotation objectAnn = (Annotation)features.get(\textcolor{stringliteral}{"Company2"});
+            String \textcolor{keywordtype}{object}=\textcolor{stringliteral}{"empty"};
+            \textcolor{keywordflow}{try} \{
+                \textcolor{keywordtype}{object} = \hyperlink{class_h_l_t_tutorial_adc313cb5e485ec03e21897d5c0132591}{doc}.getContent().getContent(objectAnn.getStartNode(
+      ).getOffset(),objectAnn.getEndNode().getOffset()).toString();
+            \} \textcolor{keywordflow}{catch} (InvalidOffsetException e1) \{
+                \textcolor{comment}{// TODO Auto-generated catch block}
+                e1.printStackTrace();
+            \}
+            \textcolor{keywordflow}{if}(subject.equals(\textcolor{stringliteral}{"empty"})|| predicate.equals(\textcolor{stringliteral}{"empty"})|| \textcolor{keywordtype}{object}.
+      equals(\textcolor{stringliteral}{"empty"}))
+            \{
+                System.err.println(\textcolor{stringliteral}{"Null triples + "}+subject+\textcolor{stringliteral}{" "}+predicate+\textcolor{stringliteral}{" "}+\textcolor{keywordtype}{
+      object} );
+            \}
+
+            \textcolor{keywordflow}{if}(subject.equals(\textcolor{keywordtype}{object}))
+            \{
+                System.err.println(\textcolor{stringliteral}{"Duplicate triples + "}+subject+\textcolor{stringliteral}{" "}+predicate
+      +\textcolor{stringliteral}{" "}+\textcolor{keywordtype}{object} );
+            \}
+            \textcolor{keywordflow}{else}
+            \{   
+                String subjectID=\hyperlink{class_h_l_t_tutorial_a81baeb2bb51fe4720470dabfb269b102}{getOrgNameSpace}(subject);
+                String predicateID=\hyperlink{class_h_l_t_tutorial_a367a2190f2398ea406657d63fe2b4965}{getPredNameSpace}(predicate);
+                String objectID=\hyperlink{class_h_l_t_tutorial_a81baeb2bb51fe4720470dabfb269b102}{getOrgNameSpace}(\textcolor{keywordtype}{object});
+
+
+                \textcolor{keywordflow}{if}(subjectID.equals(\textcolor{stringliteral}{"empty"}))
+
+                \{System.err.println(\textcolor{stringliteral}{"Error:"}+ subject);\}
+
+                \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(objectID.equals(\textcolor{stringliteral}{"empty"}))
+                \{System.err.println(\textcolor{stringliteral}{" Error could not find name:"}+ \textcolor{keywordtype}{object});\}
+
+                \textcolor{keywordflow}{else}\{
+
+                    System.out.print(subjectID+\textcolor{stringliteral}{" "}+predicateID+\textcolor{stringliteral}{" "}+objectID+\textcolor{stringliteral}{" .
+      "}+\hyperlink{class_h_l_t_tutorial_adb4199589eaaf5b9598cc2b2f7590659}{newline});
+
+                    System.out.println(\textcolor{stringliteral}{"**********EndofTriple***********"});
+
+                \}   
+
+
+            \}
+
+
+
+
+        \}
+
+
+
+        
+
+
+    \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!\-\_\-annie\-Controller@{\-\_\-annie\-Controller}}
+\index{\-\_\-annie\-Controller@{\-\_\-annie\-Controller}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{\-\_\-annie\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}Serial\-Analyser\-Controller H\-L\-T\-Tutorial.\-\_\-annie\-Controller}}\label{class_h_l_t_tutorial_ae3ecde0fc3f5486e117de53e615058ca}
+
+
+Definition at line \hyperlink{L66}{66} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+\hypertarget{class_h_l_t_tutorial_ae71fbcbcb26faf92a453dd4fad5a7a85}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!context@{context}}
+\index{context@{context}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{context}]{\setlength{\rightskip}{0pt plus 5cm}String H\-L\-T\-Tutorial.\-context}}\label{class_h_l_t_tutorial_ae71fbcbcb26faf92a453dd4fad5a7a85}
+
+
+Definition at line \hyperlink{L59}{59} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+\hypertarget{class_h_l_t_tutorial_af324de58fa0893753bf1d449a959be55}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!context\-Data@{context\-Data}}
+\index{context\-Data@{context\-Data}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{context\-Data}]{\setlength{\rightskip}{0pt plus 5cm}String H\-L\-T\-Tutorial.\-context\-Data\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_l_t_tutorial_af324de58fa0893753bf1d449a959be55}
+
+
+Definition at line \hyperlink{L61}{61} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+\hypertarget{class_h_l_t_tutorial_a8f7520df09b1deb0b52f1cd2341d14dd}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!context\-I\-D@{context\-I\-D}}
+\index{context\-I\-D@{context\-I\-D}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{context\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}final String H\-L\-T\-Tutorial.\-context\-I\-D =\char`\"{}$<$http\-://sw.\-deri.\-org/2007/12/fin/sources/\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_l_t_tutorial_a8f7520df09b1deb0b52f1cd2341d14dd}
+
+
+Definition at line \hyperlink{L58}{58} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+\hypertarget{class_h_l_t_tutorial_adc313cb5e485ec03e21897d5c0132591}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!doc@{doc}}
+\index{doc@{doc}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{doc}]{\setlength{\rightskip}{0pt plus 5cm}Document H\-L\-T\-Tutorial.\-doc}}\label{class_h_l_t_tutorial_adc313cb5e485ec03e21897d5c0132591}
+
+
+Definition at line \hyperlink{L60}{60} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+\hypertarget{class_h_l_t_tutorial_aa4a2bd88329f2c78cd648c7242be3086}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!F\-I\-D\-\_\-\-D\-A\-T\-A\-\_\-\-O\-R\-G@{F\-I\-D\-\_\-\-D\-A\-T\-A\-\_\-\-O\-R\-G}}
+\index{F\-I\-D\-\_\-\-D\-A\-T\-A\-\_\-\-O\-R\-G@{F\-I\-D\-\_\-\-D\-A\-T\-A\-\_\-\-O\-R\-G}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{F\-I\-D\-\_\-\-D\-A\-T\-A\-\_\-\-O\-R\-G}]{\setlength{\rightskip}{0pt plus 5cm}final String H\-L\-T\-Tutorial.\-F\-I\-D\-\_\-\-D\-A\-T\-A\-\_\-\-O\-R\-G = \char`\"{}http\-://sw.\-deri.\-org/2007/12/fin/inst/organisations/\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_l_t_tutorial_aa4a2bd88329f2c78cd648c7242be3086}
+
+
+Definition at line \hyperlink{L57}{57} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+\hypertarget{class_h_l_t_tutorial_ab4c914d0fd25e0dfcb7fdeb677b26211}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!filename@{filename}}
+\index{filename@{filename}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{filename}]{\setlength{\rightskip}{0pt plus 5cm}String H\-L\-T\-Tutorial.\-filename\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_l_t_tutorial_ab4c914d0fd25e0dfcb7fdeb677b26211}
+
+
+Definition at line \hyperlink{L64}{64} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+\hypertarget{class_h_l_t_tutorial_ac4f6995f0d67d0bfdd60d26dd7703db5}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!file\-Separator@{file\-Separator}}
+\index{file\-Separator@{file\-Separator}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{file\-Separator}]{\setlength{\rightskip}{0pt plus 5cm}final String H\-L\-T\-Tutorial.\-file\-Separator = System.\-get\-Property(\char`\"{}file.\-separator\char`\"{})\hspace{0.3cm}{\ttfamily [private]}}}\label{class_h_l_t_tutorial_ac4f6995f0d67d0bfdd60d26dd7703db5}
+
+
+Definition at line \hyperlink{L53}{53} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+\hypertarget{class_h_l_t_tutorial_aeca9a1b824beab58de7f27e639b6fc52}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!first\-File@{first\-File}}
+\index{first\-File@{first\-File}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{first\-File}]{\setlength{\rightskip}{0pt plus 5cm}int H\-L\-T\-Tutorial.\-first\-File = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_h_l_t_tutorial_aeca9a1b824beab58de7f27e639b6fc52}
+
+
+Definition at line \hyperlink{L63}{63} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+\hypertarget{class_h_l_t_tutorial_a25e52e2c4a0580906443617dd11e5050}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!has\-U\-R\-I\-Context@{has\-U\-R\-I\-Context}}
+\index{has\-U\-R\-I\-Context@{has\-U\-R\-I\-Context}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{has\-U\-R\-I\-Context}]{\setlength{\rightskip}{0pt plus 5cm}boolean H\-L\-T\-Tutorial.\-has\-U\-R\-I\-Context =false\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_l_t_tutorial_a25e52e2c4a0580906443617dd11e5050}
+
+
+Definition at line \hyperlink{L62}{62} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+\hypertarget{class_h_l_t_tutorial_adb4199589eaaf5b9598cc2b2f7590659}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!newline@{newline}}
+\index{newline@{newline}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{newline}]{\setlength{\rightskip}{0pt plus 5cm}String H\-L\-T\-Tutorial.\-newline =(\char`\"{}\textbackslash{}n\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_l_t_tutorial_adb4199589eaaf5b9598cc2b2f7590659}
+
+
+Definition at line \hyperlink{L54}{54} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+\hypertarget{class_h_l_t_tutorial_a26ee4eae95ef93834a86936c107361b0}{\index{H\-L\-T\-Tutorial@{H\-L\-T\-Tutorial}!N\-S@{N\-S}}
+\index{N\-S@{N\-S}!HLTTutorial@{H\-L\-T\-Tutorial}}
+\subsubsection[{N\-S}]{\setlength{\rightskip}{0pt plus 5cm}final String H\-L\-T\-Tutorial.\-N\-S = \char`\"{}http\-://sw.\-deri.\-org/2007/12/fin/spec\#\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{class_h_l_t_tutorial_a26ee4eae95ef93834a86936c107361b0}
+
+
+Definition at line \hyperlink{L56}{56} of file \hyperlink{}{H\-L\-T\-Tutorial.\-java}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+git/\-File\-Kommander/src/\hyperlink{_h_l_t_tutorial_8java}{H\-L\-T\-Tutorial.\-java}\end{DoxyCompactItemize}
