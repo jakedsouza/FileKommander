@@ -33,6 +33,9 @@ public class FileKommander implements Runnable {
 	public static final int INSERT = 7;
 	public static final int REPLACE = 8;
 	public static final int REMOVE = 9;
+	
+	
+	
 	public static String newline = ("\n");
 	private String gateHome;
 	private String workingDirectory;

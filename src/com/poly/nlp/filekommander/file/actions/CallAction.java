@@ -13,6 +13,7 @@ import com.poly.nlp.filekommander.views.models.DeleteModel;
 import com.poly.nlp.filekommander.views.models.ExistsModel;
 import com.poly.nlp.filekommander.views.models.GenericActionModel;
 import com.poly.nlp.filekommander.views.models.OpenModel;
+import com.poly.nlp.filekommander.views.models.PhraseOperationModel;
 import com.poly.nlp.filekommander.views.models.RenameModel;
 import com.poly.nlp.filekommander.views.models.StatsModel;
 import com.sun.xml.internal.bind.v2.runtime.reflect.ListIterator;
@@ -38,6 +39,8 @@ public class CallAction {
 			newActionModel =	existsAction((ExistsModel) actionModel);
 		}else if(actionModel instanceof OpenModel){
 			newActionModel =	openAction((OpenModel) actionModel);
+		}else if(actionModel instanceof PhraseOperationModel){
+			newActionModel =	phraseAction((PhraseOperationModel) actionModel);
 		}else {
 			//existsAction();
 			insertAction();
@@ -205,5 +208,13 @@ public class CallAction {
 		statsModel.setFolderListData(folderListData);
 		return statsModel;
 	}
-
+// TODO
+	public static GenericActionModel phraseAction(PhraseOperationModel phraseModel) {
+		HashMap<String, String> fileListData = phraseModel.getFileListData();
+		String phrase = phraseModel.getPhrase();
+		return phraseModel;
+		
+	}
+ 
+	
 }

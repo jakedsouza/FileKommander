@@ -263,7 +263,7 @@ public class FileActionUtils {
 	//	String workingDirectory = "testDir/";
 		File file = new File(workingDirectory + name);
 		if (!file.exists()) {
-			message = "File " + name + " doesnot exist in the directory ";
+			message = "File " + name + " does not exist in the directory ";
 		//	FileKommanderRun.getGuiv2().displayErrorMessage(message);
 			return message;
 		}
@@ -274,7 +274,7 @@ public class FileActionUtils {
 						"url.dll,FileProtocolHandler", file.getAbsolutePath() };
 				System.out.println(Arrays.toString(command));
 				Process process = Runtime.getRuntime().exec(command);
-				message = "Opened successfully";
+				message = "File " + name +" opened successfully";
 				return message;
 			} else if (OSDetector.isLinux() || OSDetector.isMac()) {
 				Runtime.getRuntime()

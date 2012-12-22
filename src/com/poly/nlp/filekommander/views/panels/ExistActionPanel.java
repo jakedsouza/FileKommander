@@ -37,6 +37,7 @@ public class ExistActionPanel extends AbstractMessagePanel {
 	 */
 	public ExistActionPanel() {
 		super();	
+		this.model = new ExistsModel();
 	}
 
 	public void updatePanelData(GenericActionModel model) {
@@ -91,7 +92,8 @@ public class ExistActionPanel extends AbstractMessagePanel {
 			data[0]= value;
 			getMessagePanel().add(createDefaultMessageRow(data));
 		}
-this.paint(this.getGraphics());
+		this.paintAll(this.getGraphics());		
+
 	}
 
 	@Override

@@ -243,7 +243,8 @@ public class FileKommanderGUIV2 {
 			openActionPanel.updatePanelData((OpenModel) actionModel);
 			layout.show(informatinDisplayPanel, OPENPANEL);
 		}
-		informatinDisplayPanel.repaint();
+		informatinDisplayPanel.paint(informatinDisplayPanel.getGraphics());
+		informatinDisplayPanel.paintImmediately(frmFileKommander.getBounds());
 	}
 
 	/**

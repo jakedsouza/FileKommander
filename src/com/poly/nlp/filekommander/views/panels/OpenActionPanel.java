@@ -92,7 +92,7 @@ public class OpenActionPanel extends AbstractMessagePanel {
 			data[0]= value;
 			getMessagePanel().add(createDefaultMessageRow(data));
 		}
-this.paint(this.getGraphics());
+		this.paintAll(this.getGraphics());		
 	}
 
 	@Override

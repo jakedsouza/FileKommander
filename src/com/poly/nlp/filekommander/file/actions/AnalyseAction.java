@@ -18,7 +18,11 @@ import com.poly.nlp.filekommander.views.models.GenericActionModel;
 import com.poly.nlp.filekommander.views.models.OpenModel;
 import com.poly.nlp.filekommander.views.models.RenameModel;
 import com.poly.nlp.filekommander.views.models.StatsModel;
-
+/**
+ * 
+ * @author neha , jake
+ *
+ */
 public class AnalyseAction {
 	private static final Logger log = Logger.getLogger(AnalyseAction.class);
 	

@@ -104,8 +104,7 @@ public class RenameActionPanel extends AbstractFileFolderPanel {
 			fileListPanel.add(jLabel2);
 		}
 		getActionLabelFile().setText(getActionString());
-
-		this.repaint();
+		this.paintAll(this.getGraphics());		
 	}
 
 	/**

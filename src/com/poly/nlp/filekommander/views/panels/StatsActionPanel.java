@@ -90,7 +90,7 @@ public class StatsActionPanel extends AbstractMessagePanel {
 			data[1]= value;
 			getMessagePanel().add(createDefaultMessageRow(data));
 		}
-this.paint(this.getGraphics());
+		this.paintAll(this.getGraphics());		
 	}
 
 	@Override

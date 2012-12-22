@@ -16,6 +16,7 @@ import javax.swing.SpringLayout;
 import org.apache.log4j.Logger;
 
 import com.poly.nlp.filekommander.FileKommander;
+import com.poly.nlp.filekommander.file.actions.CallAction;
 import com.poly.nlp.filekommander.views.models.GenericActionModel;
 import com.poly.nlp.filekommander.views.models.PhraseOperationModel;
 import javax.swing.JTable;
@@ -33,38 +34,6 @@ public class PhraseOperationActionPanel extends AbstractMessagePanel {
 	 */
 	public PhraseOperationActionPanel() {
 		super();
-//		SpringLayout springLayout = new SpringLayout();
-//		setLayout(springLayout);
-//
-//		setMessagePanel(new JPanel());
-//		springLayout.putConstraint(SpringLayout.NORTH, getMessagePanel(), 0, SpringLayout.NORTH, this);
-//		springLayout.putConstraint(SpringLayout.EAST, getMessagePanel(), 0,
-//				SpringLayout.EAST, this);
-//		getMessagePanel().setAutoscrolls(true);
-//		add(getMessagePanel());
-//		getMessagePanel().setLayout(null);
-//			setCommandPanel(new JPanel());
-//			springLayout.putConstraint(SpringLayout.WEST, getMessagePanel(), 0, SpringLayout.WEST, getCommandPanel());
-//			springLayout.putConstraint(SpringLayout.SOUTH, getMessagePanel(), -6, SpringLayout.NORTH, getCommandPanel());
-//				
-//				setTable(new JTable());
-//				getTable().setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
-//				getTable().setBounds(386, 217, -324, -173);
-//				getMessagePanel().add(getTable());
-//				springLayout.putConstraint(SpringLayout.WEST, getCommandPanel(), 0, SpringLayout.WEST, this);
-//				springLayout.putConstraint(SpringLayout.SOUTH, getCommandPanel(), 0, SpringLayout.SOUTH, this);
-//				springLayout.putConstraint(SpringLayout.EAST, getCommandPanel(), 0, SpringLayout.EAST, this);
-//				springLayout.putConstraint(SpringLayout.NORTH, getCommandPanel(), -40, SpringLayout.SOUTH, this);
-//				add(getCommandPanel());
-//				
-//				setBtnClear(new JButton(""));
-//				getBtnClear().setFocusPainted(false);
-//				getBtnClear().setMargin(new Insets(0, 0, 0, 0));
-//				getBtnClear().setContentAreaFilled(false);
-//				getBtnClear().setBorderPainted(true);
-//				getBtnClear().setOpaque(true);
-//				getBtnClear().setIcon(new ImageIcon(CreateActionPanel.class.getResource("/com/poly/nlp/filekommander/views/icon/reject.png")));
-//				getCommandPanel().add(getBtnClear());
 	}
 
 	public void updatePanelData(GenericActionModel model) {
@@ -78,6 +47,7 @@ public class PhraseOperationActionPanel extends AbstractMessagePanel {
 
 	public void updatePanelData() {
 		getMessagePanel().removeAll();
+		model = (PhraseOperationModel) CallAction.callAction(model);
 		HashMap<String, String> fileListData = this.model.getFileListData();
 		
 		if (fileListData.size() > 1) {
@@ -87,10 +57,6 @@ public class PhraseOperationActionPanel extends AbstractMessagePanel {
 		} else {
 			setActionString("The details for the following file/folder will be shown");
 		}
-		// model done twice TODO remove 
-		DefaultTableModel model = new DefaultTableModel();     
-		setTable(new JTable(model));     
-		//getTable().setModel(new DefaultTableModel());    
 		
 		Set<String> keySet = fileListData.keySet();
 		Iterator<String> iterator = keySet.iterator();
@@ -103,7 +69,7 @@ public class PhraseOperationActionPanel extends AbstractMessagePanel {
 			String [] data = new String[2];
 			data[0] = key;
 			data[1]= value;
-			model.addRow(data); //Adds Row to JTable
+			createDefaultMessageRow(data);
 		}
 		getMessagePanel().setVisible(true);
 	}
