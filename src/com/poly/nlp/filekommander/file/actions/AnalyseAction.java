@@ -188,63 +188,17 @@ public class AnalyseAction {
 	}
 
 	private static GenericActionModel analyseStatsAction(Annotation annotation, String actionType) {
-//		StatsModel statsModel = new StatsModel();
-//        FeatureMap featureMap = annotation.getFeatures();
-//        AnnotationSet actions = (AnnotationSet) featureMap.get("actions");
-//        Annotation action  = null ;
-//        Iterator iterator = actions.iterator() ;
-//        String statType = "" ; 
-//        while(iterator.hasNext()){
-//        	action = (Annotation) iterator.next() ; 
-//        	FeatureMap featureMap2 = action.getFeatures() ;
-//        	if(featureMap2.get("minorType").equals("stats")){
-//        		statType  = ((String) featureMap2.get("string")).toLowerCase(); 
-//        	}
-//        }
-////        String action = ((String)((Annotation)featureMap.get("actions")).getFeatures().get("string")).toLowerCase();
-//        ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
-//                        featureMap, "fileName");
-//        ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
-//                        featureMap, "directoryName");
-//        ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
-//                        featureMap, "quotedObject");
-//        if (fileNamesList != null) {
-//                for (String fileName : fileNamesList) {
-//                        statsModel.add(fileName, FileKommander.FILE);
-//                }
-//        }
-//        if (directoryNamesList != null) {
-//                for (String folderName : directoryNamesList) {
-//                        statsModel.add(folderName, FileKommander.DIRECTORY);
-//                }
-//        }
-//        if (quotedObjectNamesList != null) {
-//                for (String quotedName : quotedObjectNamesList) {
-//                        if (!fileNamesList.contains(quotedName)
-//                                        && !directoryNamesList.contains(quotedName))
-//                                statsModel.add(quotedName, FileKommander.DIRECTORY);
-//                }
-//        }
-//        log.info("Files to be analysed : " + fileNamesList);
-//        log.info("Directories to be analysed: " + directoryNamesList);
-//        log.info("Files to be abalysed : " + quotedObjectNamesList);
-//
-//
-//        if(statType.equals("count") || statType.contains("count") ){
-//                statsModel.setStatsType(FileKommander.COUNT);
-//               
-//        }else if(statType.equals("size") || statType.contains("size") ){
-//                statsModel.setStatsType(FileKommander.SIZEOF);
-//        }else if(statType.equals("list") || statType.contains("list") ){
-//                statsModel.setStatsType(FileKommander.LIST_FILES);
-//        }else if(statType.equals("modified") || statType.contains("modified") ){
-//                statsModel.setStatsType(FileKommander.LAST_MODIFIED);
-//        }
-//        return statsModel;
-
 		StatsModel statsModel = new StatsModel();
 		FeatureMap featureMap = annotation.getFeatures();
-		String action = ((String)((Annotation)featureMap.get("action")).getFeatures().get("string")).toLowerCase();
+		ArrayList<String> actionList = getObjectNameFromAnnotation(
+				featureMap, "actions");
+		String action = "";
+		if(!actionList.isEmpty()){
+		action = actionList.get(0);
+		}else{
+			log.error("No stat action found");
+		}
+		
 		ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
 				featureMap, "fileName");
 		ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
@@ -271,8 +225,6 @@ public class AnalyseAction {
 		log.info("Files to be Created : " + fileNamesList);
 		log.info("Directories to be Created : " + directoryNamesList);
 		log.info("Files to be Created : " + quotedObjectNamesList);
-	//	String actionType= ((String)action.getFeatures().get("string")).toLowerCase();
-
 		if(action.equals("count") || action.contains("count") ){
 			statsModel.setStatsType(FileKommander.COUNT);
 			

@@ -12,17 +12,23 @@ import com.poly.nlp.filekommander.views.models.GenericActionModel;
 import javax.swing.JTable;
 import javax.swing.border.BevelBorder;
 import javax.swing.JButton;
+import javax.swing.border.LineBorder;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
+import java.awt.GridLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public abstract class AbstractMessagePanel extends GenericPanel {
 
 	private static final long serialVersionUID = 1L;
 	private String actionString;
-	private JPanel messagePanel;
 	private JPanel commandPanel;
 	private static final Logger log = Logger
 			.getLogger(AbstractMessagePanel.class);
-	private JTable table;
 	private JButton btnClear;
+	private JLabel actionLabel;
+	private JPanel messagePanel;
 
 	/**
 	 * Create the panel.
@@ -30,18 +36,7 @@ public abstract class AbstractMessagePanel extends GenericPanel {
 	public AbstractMessagePanel() {
 		SpringLayout springLayout = new SpringLayout();
 		setLayout(springLayout);
-
-		setMessagePanel(new JPanel());
-		springLayout.putConstraint(SpringLayout.NORTH, getMessagePanel(), 0,
-				SpringLayout.NORTH, this);
-		springLayout.putConstraint(SpringLayout.EAST, getMessagePanel(), 0,
-				SpringLayout.EAST, this);
-		getMessagePanel().setAutoscrolls(true);
-		add(getMessagePanel());
-		getMessagePanel().setLayout(null);
 		setCommandPanel(new JPanel());
-		springLayout.putConstraint(SpringLayout.SOUTH, getMessagePanel(), -6,
-				SpringLayout.NORTH, this);
 		springLayout.putConstraint(SpringLayout.WEST, getCommandPanel(), 0,
 				SpringLayout.WEST, this);
 		springLayout.putConstraint(SpringLayout.SOUTH, getCommandPanel(), 0,
@@ -55,15 +50,43 @@ public abstract class AbstractMessagePanel extends GenericPanel {
 			setBtnClear(new JButton("Clear"));
 			commandPanel.add(getBtnClear());
 		}
-
-		setTable(new JTable());
-		getTable().setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null,
-				null));
-		getTable().setBounds(386, 217, -324, -173);
-		getMessagePanel().add(getTable());
-
+		
+		setActionLabel(new JLabel(""));
+		springLayout.putConstraint(SpringLayout.NORTH, actionLabel, 10, SpringLayout.NORTH, this);
+		springLayout.putConstraint(SpringLayout.WEST, actionLabel, 0, SpringLayout.WEST, this);
+		springLayout.putConstraint(SpringLayout.EAST, actionLabel, 0, SpringLayout.EAST, commandPanel);
+		add(getActionLabel());
+				
+		messagePanel = new JPanel();
+		messagePanel.setAutoscrolls(true);
+				springLayout.putConstraint(SpringLayout.SOUTH, actionLabel, -15, SpringLayout.NORTH, messagePanel);
+				springLayout.putConstraint(SpringLayout.NORTH, messagePanel, 39, SpringLayout.NORTH, this);
+				springLayout.putConstraint(SpringLayout.WEST, messagePanel, 0, SpringLayout.WEST, commandPanel);
+				springLayout.putConstraint(SpringLayout.SOUTH, messagePanel, -6, SpringLayout.NORTH, commandPanel);
+				springLayout.putConstraint(SpringLayout.EAST, messagePanel, 440, SpringLayout.WEST, this);
+				add(messagePanel);
+				messagePanel.setLayout(new GridLayout(1, 0, 0, 0));
+				btnClear.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						resetPanel();
+					}
+				});					
 	}
 
+	protected JPanel createDefaultMessageRow(String [] row){
+		JPanel jPanel = new JPanel();
+		
+		for (String data : row) {
+			JLabel jLabel = new JLabel(data);
+		
+			jPanel.add(jLabel);
+		}
+		//jPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
+
+		return jPanel;
+		
+	}
+	
 	private JLabel createDefaultObjectLabel(String labelText, int type) {
 		JLabel lblNewLabel = new JLabel(labelText);
 		lblNewLabel.setForeground(new Color(0, 0, 0));
@@ -108,7 +131,7 @@ public abstract class AbstractMessagePanel extends GenericPanel {
 	 * @param messagePanel the messagePanel to set
 	 */
 	public void setMessagePanel(JPanel messagePanel) {
-		this.messagePanel = messagePanel;
+		this.messagePanel = messagePanel ;
 	}
 
 	public JPanel getCommandPanel() {
@@ -122,15 +145,12 @@ public abstract class AbstractMessagePanel extends GenericPanel {
 		this.commandPanel = commandPanel;
 	}
 
-	public JTable getTable() {
-		return table;
-	}
-
 	/**
 	 * @param table the table to set
 	 */
 	public void setTable(JTable table) {
-		this.table = table;
+		messagePanel.setLayout(null);
+
 	}
 
 	/**
@@ -145,6 +165,7 @@ public abstract class AbstractMessagePanel extends GenericPanel {
 	 */
 	public void setBtnClear(JButton btnClear) {
 		this.btnClear = btnClear;
+
 	}
 
 	public abstract void updatePanelData(GenericActionModel model);
@@ -152,7 +173,15 @@ public abstract class AbstractMessagePanel extends GenericPanel {
 	public abstract void updatePanelData();
 
 	public abstract void updatePanelDataAfterAction();
+	public JLabel getActionLabel() {
+		return actionLabel;
+	}
 
-
-
+	/**
+	 * @param actionLabel the actionLabel to set
+	 */
+	public void setActionLabel(JLabel actionLabel) {
+		this.actionLabel = actionLabel;
+	}
+	
 }

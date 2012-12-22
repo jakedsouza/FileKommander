@@ -15,6 +15,8 @@ import javax.swing.JPanel;
 import javax.swing.SpringLayout;
 
 import org.apache.log4j.Logger;
+import org.bouncycastle.asn1.cmp.CAKeyUpdAnnContent;import com.poly.nlp.filekommander.file.actions.CallAction;
+
 
 import com.poly.nlp.filekommander.FileKommander;
 import com.poly.nlp.filekommander.views.models.GenericActionModel;
@@ -34,6 +36,7 @@ public class StatsActionPanel extends AbstractMessagePanel {
 	 */
 	public StatsActionPanel() {
 		super();
+	//	getTable().setBounds(0, 0, 430, 204);
 //		SpringLayout springLayout = new SpringLayout();
 //		setLayout(springLayout);
 //
@@ -79,6 +82,7 @@ public class StatsActionPanel extends AbstractMessagePanel {
 
 	public void updatePanelData() {
 		getMessagePanel().removeAll();
+		statsModel = (StatsModel) CallAction.callAction(statsModel);
 		HashMap<String, String> fileListData = this.statsModel.getFileListData();
 		HashMap<String, String> folderListData= this.statsModel.getFolderListData();
 		
@@ -89,23 +93,27 @@ public class StatsActionPanel extends AbstractMessagePanel {
 		} else {
 			setActionString("The details for the following file/folder will be shown");
 		}
-		
-		DefaultTableModel model = new DefaultTableModel();     
-		setTable(new javax.swing.JTable(model));     
-		getTable().setModel(new DefaultTableModel());    
+		getActionLabel().setText(getActionString());
+		//getActionLabel().setText("");
+	 //  DefaultTableModel model = getTableModel();    
+	    //getTable().setModel(model);
+		//setTable(new javax.swing.JTable(model));     
+		//getTable().setModel(new DefaultTableModel());    
+		//model.setRowCount(2);
 		
 		Set<String> col = fileListData.keySet();
 		Iterator<String> iterator = col.iterator();
 		
 		while(iterator.hasNext())
 		{	
-			Object key = iterator.next();
-			Object value= fileListData.get(key);
+			String key = iterator.next();
+			String value= fileListData.get(key);
 			
-			Object [] data = new Object[2];
+			String [] data = new String[2];
 			data[0] = key;
 			data[1]= value;
-			model.addRow(data); //Adds Row to JTable
+			getMessagePanel().add(createDefaultMessageRow(data));
+		//	model.addRow(data); //Adds Row to JTable
 		}		
 		
 		Set<String> folder = folderListData.keySet();
@@ -113,20 +121,24 @@ public class StatsActionPanel extends AbstractMessagePanel {
 		
 		while(iterator2.hasNext())
 		{	
-			Object key = iterator2.next();
-			Object value= folderListData.get(key);
+			String key = iterator2.next();
+			String value= folderListData.get(key);
 			
-			Object [] data = new Object[2];
+			String [] data = new String[2];
 			data[0] = key;
 			data[1]= value;
-			model.addRow(data); //Adds Row to JTable
+			getMessagePanel().add(createDefaultMessageRow(data));
+		//	model.addRow(data); //Adds Row to JTable
 		}
-
-		if(fileListData == null && fileListData.size() == 0 || folderListData == null && folderListData.size() == 0 ){
-			getMessagePanel().setVisible(false);
-		}else{
-			getMessagePanel().setVisible(true);
-		}
+		//setTableModel(model);
+	//	getTable().paint(getTable().getGraphics());
+// getTable().setModel(model);
+//		if(fileListData == null && fileListData.size() == 0 || folderListData == null && folderListData.size() == 0 ){
+//			getMessagePanel().setVisible(false);
+//		}else{
+//			getMessagePanel().setVisible(true);
+//		}
+this.paint(this.getGraphics());
 	}
 
 	@Override

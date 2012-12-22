@@ -90,7 +90,7 @@ public class PhraseOperationActionPanel extends AbstractMessagePanel {
 		// model done twice TODO remove 
 		DefaultTableModel model = new DefaultTableModel();     
 		setTable(new JTable(model));     
-		getTable().setModel(new DefaultTableModel());    
+		//getTable().setModel(new DefaultTableModel());    
 		
 		Set<String> keySet = fileListData.keySet();
 		Iterator<String> iterator = keySet.iterator();
