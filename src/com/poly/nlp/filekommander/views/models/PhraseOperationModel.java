@@ -7,7 +7,8 @@ public class PhraseOperationModel implements GenericActionModel{
 	private HashMap<String, String> fileListData;
 	private int operationType;
 	private String repetition ; 
-	private String phrase ; 
+	private String newPhrase ;
+	private String oldPhrase ;
 	
 	public PhraseOperationModel(){
 		this.fileListData = new HashMap<String, String>() ;
@@ -39,18 +40,20 @@ public class PhraseOperationModel implements GenericActionModel{
 		this.operationType = operationType;
 	}
 
-	/**
-	 * @return the phrase
-	 */
-	public String getPhrase() {
-		return phrase;
+	public String getNewPhrase() {
+		return newPhrase;
 	}
 
-	/**
-	 * @param phrase the phrase to set
-	 */
-	public void setPhrase(String phrase) {
-		this.phrase = phrase;
+	public void setNewPhrase(String newPhrase) {
+		this.newPhrase = newPhrase;
+	}
+
+	public String getOldPhrase() {
+		return oldPhrase;
+	}
+
+	public void setOldPhrase(String oldPhrase) {
+		this.oldPhrase = oldPhrase;
 	}
 
 	/**
