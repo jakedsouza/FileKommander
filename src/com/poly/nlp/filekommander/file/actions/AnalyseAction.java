@@ -3,8 +3,12 @@ package com.poly.nlp.filekommander.file.actions;
 import gate.Annotation;
 import gate.AnnotationSet;
 import gate.FeatureMap;
+import gate.util.OffsetComparator;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 
 import org.apache.log4j.Logger;
@@ -16,6 +20,7 @@ import com.poly.nlp.filekommander.views.models.DeleteModel;
 import com.poly.nlp.filekommander.views.models.ExistsModel;
 import com.poly.nlp.filekommander.views.models.GenericActionModel;
 import com.poly.nlp.filekommander.views.models.OpenModel;
+import com.poly.nlp.filekommander.views.models.PhraseOperationModel;
 import com.poly.nlp.filekommander.views.models.RenameModel;
 import com.poly.nlp.filekommander.views.models.StatsModel;
 /**
@@ -46,19 +51,19 @@ public class AnalyseAction {
 			returnModel = analyseExistsAction(annotation);
 			break;
 		case "insert":
-			returnModel = analyseInsertAction(annotation);
+			returnModel = analysePhraseAction(annotation, actionType);
 			break;
 		case "open":
 			returnModel = analyseOpenAction(annotation);
 			break;
 		case "remove":
-			returnModel = analyseRemoveAction(annotation);
+			returnModel = analysePhraseAction(annotation, actionType);
 			break;
 		case "rename":
 			returnModel = analyseRenameAction(annotation);
 			break;
 		case "replace":
-			returnModel = analyseReplaceAction(annotation);
+			returnModel = analysePhraseAction(annotation, actionType);
 			break;
 		case "stats":
 			returnModel = analyseStatsAction(annotation,actionType);
@@ -167,9 +172,80 @@ public class AnalyseAction {
 
 	}
 
+	private static GenericActionModel analysePhraseAction(Annotation annotation, String actionType){
+		
+		FeatureMap featureMap = annotation.getFeatures();
+		ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
+				featureMap, "fileName");
+		ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
+				featureMap, "quotedObject");
+		ArrayList<String> phraseList = getObjectNameFromAnnotation(
+				featureMap, "phraseName");
+		PhraseOperationModel phraseOperationModel = new PhraseOperationModel();
+		if(actionType.equalsIgnoreCase("insert"))
+			phraseOperationModel.setOperationType(FileKommander.INSERT);
+		else if(actionType.equalsIgnoreCase("replace"))
+			phraseOperationModel.setOperationType(FileKommander.REPLACE);
+		else if(actionType.equalsIgnoreCase("remove"))
+			phraseOperationModel.setOperationType(FileKommander.REMOVE);
+		
+		phraseOperationModel.setRepetition(getObjectNameFromAnnotation(featureMap, "position").get(0));
+		//phraseOperationModel.set
+		String position = phraseOperationModel.getRepetition();
+		//String newPhrase = "";
+		//String oldPhrase = "";
+		
+		//phraseOperationModel.setRepetition(repetition)
+		
+		ArrayList<String> phrases = getObjectNameFromAnnotation(featureMap, "quotedObject");
+		if(phrases.size() <= 2){
+			phraseOperationModel.setNewPhrase(phrases.get(0));
+			phraseOperationModel.setOldPhrase(phrases.get(1));
+		}else{
+			FileKommanderRun.getGuiv2().displayErrorMessage("Multiple phrases found. Not sure what to do.");
+			return null;
+		}
+		if (quotedObjectNamesList != null) {
+			for (String quotedName : quotedObjectNamesList) {
+				if (phraseList.contains(quotedName))
+					phraseOperationModel.setNewPhrase(quotedName);
+				else
+					phraseOperationModel.setOldPhrase(quotedName);
+			}
+		}
+		return phraseOperationModel;
+	}
+	
 	private static GenericActionModel analyseInsertAction(Annotation annotation) {
-		//TODO
-		return null;
+		
+		FeatureMap featureMap = annotation.getFeatures();
+		ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
+				featureMap, "fileName");
+		ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
+				featureMap, "quotedObject");
+		ArrayList<String> phraseList = getObjectNameFromAnnotation(
+				featureMap, "phraseName");
+		PhraseOperationModel phraseOperationModel = new PhraseOperationModel();
+		phraseOperationModel.setOperationType(FileKommander.INSERT);
+		
+		phraseOperationModel.setRepetition(getObjectNameFromAnnotation(featureMap, "position").get(0));
+		//phraseOperationModel.set
+		String position = phraseOperationModel.getRepetition();
+		//String newPhrase = "";
+		//String oldPhrase = "";
+		
+		//phraseOperationModel.setRepetition(repetition)
+		
+		if (quotedObjectNamesList != null) {
+			for (String quotedName : quotedObjectNamesList) {
+				if (phraseList.contains(quotedName))
+					phraseOperationModel.setNewPhrase(quotedName);
+				else
+					phraseOperationModel.setOldPhrase(quotedName);
+			}
+		}
+		
+		return phraseOperationModel;
 
 	}
 
@@ -295,24 +371,39 @@ public class AnalyseAction {
 	}
 
 	public static ArrayList<String> getObjectNameFromAnnotation(
-			FeatureMap featureMap, String key) {
-		ArrayList<String> outputList = null;
-		if (featureMap.containsKey(key)) {
-			outputList = new ArrayList<String>();
-			AnnotationSet objectNames = (AnnotationSet) featureMap.get(key);
-			for (Annotation object : objectNames) {
-				FeatureMap featureMap2 = object.getFeatures();
-				String objectName = (String) featureMap2.get("string");
-				objectName = objectName.replaceAll("\"", "");
-				outputList.add(objectName);
-			}
-		} else {
-			return new ArrayList<String>();
-		}
+            FeatureMap featureMap, String key) {
+    ArrayList<String> outputList = null;
+    if (featureMap.containsKey(key)) {
+            outputList = new ArrayList<String>();
+            AnnotationSet objectNames = (AnnotationSet) featureMap.get(key);
+            ArrayList<Annotation> objectList = new ArrayList<Annotation>(objectNames);
+            Collections.sort(objectList, new OffsetComparator());
+            Iterator<Annotation> iterator = objectList.iterator();
+            while(iterator.hasNext()){
+                    Annotation object = iterator.next();
+                    if(object == null ){
+                            //node =objectNames.nextNode(node) ;
+                    }else{
+                    FeatureMap featureMap2 = object.getFeatures();
+                    String objectName = (String) featureMap2.get("string");
+                    objectName = objectName.replaceAll("\"", "");
+                    outputList.add(objectName);
+                    //node =objectNames.nextNode(node) ;
+                    }
+            }
+           
+//          for (Annotation object : objectNames) {
+//                  FeatureMap featureMap2 = object.getFeatures();
+//                  String objectName = (String) featureMap2.get("string");
+//                  objectName = objectName.replaceAll("\"", "");
+//                  outputList.add(objectName);
+//          }
+    } else {
+            return new ArrayList<String>();
+    }
 
-		return outputList.isEmpty() ? new ArrayList<String>() : outputList;
+    return outputList.isEmpty() ? new ArrayList<String>() : outputList;
 
-	}
-
+	}	
 
 }
