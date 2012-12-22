@@ -383,45 +383,58 @@ public class FileActionUtils {
 //
 //	}
 	public static String insert(String phraseToBeInserted, String existingPhrase,
-			String position, String repetition, String fileName) throws IOException {
-		File file = new File("testDir/"+fileName);
+			String position, String repetition, String fileName)  {
+		File file = new File(workingDirectory+fileName);
 		String message = "";
-		
+		int count = 0 ; // TODO 
 		if(file.exists()){
-		String contents = FileUtils.readFileToString(file);
+			
+		String contents;
+		try {
+			contents = FileUtils.readFileToString(file);
+		} catch (Exception e) {
+			message = "Error reading the file "; 
+			e.printStackTrace();
+			return message;
+		}
 		String newString = "";
 		Pattern p = Pattern.compile(existingPhrase);
 		Matcher m = p.matcher(contents);
 		if(m.find()){
-		if(position.equalsIgnoreCase("before")){
+		if(position.contains("before")){
 			newString = phraseToBeInserted + " " +existingPhrase;
-			if(repetition.equalsIgnoreCase("every") || repetition.equalsIgnoreCase("all"))
+			if(repetition.contains("every") || repetition.contains("all"))
 				contents = contents.replace(existingPhrase, newString);
-			if(repetition.equalsIgnoreCase("first"))
+			if(repetition.contains("first"))
 				contents = contents.replaceFirst(existingPhrase, newString);
-			if(repetition.equalsIgnoreCase("last"))
+			if(repetition.contains("last"))
 				//contents = contents.replaceFirst(existingPhrase, newString);	
 				contents = contents.substring(0, contents.lastIndexOf(existingPhrase) + 1) + newString;
-		} else if(position.equalsIgnoreCase("after")){
+		} else if(position.contains("after")){
 			newString = existingPhrase+" "+phraseToBeInserted;
-			if(repetition.equalsIgnoreCase("every") || repetition.equalsIgnoreCase("all"))
+			if(repetition.contains("every") || repetition.contains("all"))
 				contents = contents.replace(existingPhrase, newString);
-			if(repetition.equalsIgnoreCase("first"))
+			if(repetition.contains("first"))
 				contents = contents.replaceFirst(existingPhrase, newString);
-			if(repetition.equalsIgnoreCase("last")){
+			if(repetition.contains("last")){
 				//contents = contents.substring(0, contents.lastIndexOf(existingPhrase)) + newString;
 				
 			}
-		} else if(position.equalsIgnoreCase("beginning") || position.equalsIgnoreCase("start")){
+		} else if(position.contains("beginning") || position.contains("start")){
 			contents = phraseToBeInserted + " " + contents;
-		} else if(position.equalsIgnoreCase("end")){
+		} else if(position.contains("end")){
 			contents = contents +" "+ phraseToBeInserted;
 		}
 		//log.info(contents);
-		FileUtils.writeStringToFile(file, contents);
-		message = "Inserted phrase "+phraseToBeInserted + position  + repetition + " of word "+existingPhrase;
+		try {
+			FileUtils.writeStringToFile(file, contents);
+		} catch (IOException e) {
+			message = " Error writing to file " ;
+			e.printStackTrace();
+		}
+		message = "Inserted phrase "+phraseToBeInserted + repetition + " of word "+existingPhrase;
 		}else{
-			message = "The phrase "+existingPhrase+ "cant be found in the file";
+			message = "The phrase "+existingPhrase+ " cant be found in the file";
 		}
 		}else{
 			message = "This file doesnt exists";

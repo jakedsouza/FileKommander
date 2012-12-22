@@ -334,6 +334,7 @@ public class HLTTutorial {
 			}
 			else
 			{	
+				
 				String subjectID=getOrgNameSpace(subject);
 				String predicateID=getPredNameSpace(predicate);
 				String objectID=getOrgNameSpace(object);

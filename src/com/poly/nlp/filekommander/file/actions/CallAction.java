@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
 
+import javax.crypto.spec.PSource;
+
 import org.apache.log4j.Logger;
 
 import com.poly.nlp.filekommander.FileKommander;
@@ -43,11 +45,11 @@ public class CallAction {
 			newActionModel =	phraseAction((PhraseOperationModel) actionModel);
 		}else {
 			//existsAction();
-			insertAction();
+	//		insertAction();
 		//	openAction();
-			removeAction();
+		//	removeAction();
 		// renameAction();
-			replaceAction();
+		//	replaceAction();
 		//	statsAction();
 
 		}
@@ -116,8 +118,21 @@ public class CallAction {
 		return existsModel;
 	}
 
-	public static void insertAction() {
+	public static PhraseOperationModel insertAction(PhraseOperationModel phraseModel) {
 		log.info("InsertAction action called");
+		String oldPhrase = phraseModel.getOldPhrase();
+		String newPhrase = phraseModel.getNewPhrase();
+		String position = phraseModel.getRepetition() ;
+		String repetition = phraseModel.getRepetition();
+		HashMap<String, String> fileListData = phraseModel.getFileListData();
+		
+		Set<String> keySet = fileListData.keySet();
+		for (String fileName : keySet) {
+		String message = FileActionUtils.insert(newPhrase, oldPhrase, position, repetition, fileName) ;	
+		fileListData.put(fileName, message);
+		}
+		
+		return phraseModel;
 	}
 
 	public static OpenModel openAction(OpenModel openModel) {
@@ -142,8 +157,21 @@ public class CallAction {
 		return openModel;
 	}
 
-	public static void removeAction() {
+	public static PhraseOperationModel removeAction(PhraseOperationModel phraseModel) {
 		log.info("RemoveAction action called");
+		String oldPhrase = phraseModel.getOldPhrase();
+		String newPhrase = phraseModel.getNewPhrase();
+		String position = phraseModel.getRepetition() ;
+		String repetition = phraseModel.getRepetition();
+		HashMap<String, String> fileListData = phraseModel.getFileListData();
+		
+		Set<String> keySet = fileListData.keySet();
+		for (String fileName : keySet) {
+		String message = FileActionUtils.insert(newPhrase, oldPhrase, position, repetition, fileName) ;	
+		fileListData.put(fileName, message);
+		}
+		
+		return phraseModel;
 	}
 
 	private static GenericActionModel renameAction(RenameModel renameModel) {
@@ -156,8 +184,21 @@ public class CallAction {
 		return renameModel;
 	}
 
-	public static void replaceAction() {
+	public static PhraseOperationModel replaceAction(PhraseOperationModel phraseModel) {
 		log.info("ReplaceAction action called");
+		String oldPhrase = phraseModel.getOldPhrase();
+		String newPhrase = phraseModel.getNewPhrase();
+		String position = phraseModel.getRepetition() ;
+		String repetition = phraseModel.getRepetition();
+		HashMap<String, String> fileListData = phraseModel.getFileListData();
+		
+		Set<String> keySet = fileListData.keySet();
+		for (String fileName : keySet) {
+		String message = FileActionUtils.insert(newPhrase, oldPhrase, position, repetition, fileName) ;	
+		fileListData.put(fileName, message);
+		}
+		
+		return phraseModel;
 	}
 
 	public static GenericActionModel statsAction(StatsModel statsModel) {
@@ -210,10 +251,35 @@ public class CallAction {
 	}
 // TODO
 	public static GenericActionModel phraseAction(PhraseOperationModel phraseModel) {
+		log.info("PhraseAction action called");
+
+		int action = phraseModel.getOperationType() ;
+		String oldPhrase = phraseModel.getOldPhrase();
+		String newPhrase = phraseModel.getNewPhrase();
+		String position = phraseModel.getRepetition() ;
+		String repetition = phraseModel.getRepetition();
 		HashMap<String, String> fileListData = phraseModel.getFileListData();
-		String phrase = phraseModel.getPhrase();
-		return phraseModel;
 		
+		Set<String> keySet = fileListData.keySet();
+		for (String fileName : keySet) {
+		String message = FileActionUtils.insert(newPhrase, oldPhrase, position, repetition, fileName) ;	
+		fileListData.put(fileName, message);
+		}
+		
+		switch (action) {
+		case 7:
+			phraseModel = insertAction(phraseModel);
+			break;
+		case 8:
+			phraseModel = replaceAction(phraseModel);
+			break;
+		case 9:
+			phraseModel = removeAction(phraseModel);
+			break;
+		default:
+			break;
+		}
+		return phraseModel;		
 	}
  
 	

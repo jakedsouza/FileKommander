@@ -21,6 +21,7 @@ import com.poly.nlp.filekommander.views.models.DeleteModel;
 import com.poly.nlp.filekommander.views.models.ExistsModel;
 import com.poly.nlp.filekommander.views.models.GenericActionModel;
 import com.poly.nlp.filekommander.views.models.OpenModel;
+import com.poly.nlp.filekommander.views.models.PhraseOperationModel;
 import com.poly.nlp.filekommander.views.models.RenameModel;
 import com.poly.nlp.filekommander.views.models.StatsModel;
 import com.poly.nlp.filekommander.views.panels.CreateActionPanel;
@@ -28,6 +29,7 @@ import com.poly.nlp.filekommander.views.panels.DeleteActionPanel;
 import com.poly.nlp.filekommander.views.panels.EmptyActionPanel;
 import com.poly.nlp.filekommander.views.panels.ExistActionPanel;
 import com.poly.nlp.filekommander.views.panels.OpenActionPanel;
+import com.poly.nlp.filekommander.views.panels.PhraseOperationActionPanel;
 import com.poly.nlp.filekommander.views.panels.RenameActionPanel;
 import com.poly.nlp.filekommander.views.panels.StatsActionPanel;
 
@@ -58,6 +60,8 @@ public class FileKommanderGUIV2 {
 	private String STATSPANEL = "STATSPANEL";
 	private String EXISTSPANEL = "EXISTSPANEL";
 	private String OPENPANEL = "OPENPANEL";
+	private String PHRASEPANEL= "PHRASEPANEL";
+
 
 	private String EMPTYPANEL = "EMPTYPANEL";
 	private CreateActionPanel createActionPanel;
@@ -66,7 +70,7 @@ public class FileKommanderGUIV2 {
 	private StatsActionPanel statsActionPanel;
 	private ExistActionPanel existActionPanel ;
 	private OpenActionPanel openActionPanel ;
-
+	private PhraseOperationActionPanel phraseActionPanel;
 	private EmptyActionPanel emptyActionPanel;
 	
 	private JToggleButton micBtn;
@@ -159,7 +163,10 @@ public class FileKommanderGUIV2 {
 		
 		existActionPanel = new ExistActionPanel();
 		informatinDisplayPanel.add(existActionPanel, EXISTSPANEL);
-
+	
+		phraseActionPanel = new PhraseOperationActionPanel();
+		informatinDisplayPanel.add(phraseActionPanel, PHRASEPANEL);
+		
 		CardLayout layout = (CardLayout) informatinDisplayPanel.getLayout();
 		layout.show(informatinDisplayPanel, EMPTYPANEL);
 
@@ -242,6 +249,9 @@ public class FileKommanderGUIV2 {
 		}else if (actionModel instanceof OpenModel) {
 			openActionPanel.updatePanelData((OpenModel) actionModel);
 			layout.show(informatinDisplayPanel, OPENPANEL);
+		}else if (actionModel instanceof PhraseOperationModel) {
+			phraseActionPanel.updatePanelData((PhraseOperationModel) actionModel);
+			layout.show(informatinDisplayPanel, PHRASEPANEL);
 		}
 		informatinDisplayPanel.paint(informatinDisplayPanel.getGraphics());
 		informatinDisplayPanel.paintImmediately(frmFileKommander.getBounds());
