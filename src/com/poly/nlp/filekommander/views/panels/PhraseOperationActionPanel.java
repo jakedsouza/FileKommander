@@ -69,9 +69,11 @@ public class PhraseOperationActionPanel extends AbstractMessagePanel {
 			String [] data = new String[2];
 			data[0] = key;
 			data[1]= value;
-			createDefaultMessageRow(data);
+			getMessagePanel().add(createDefaultMessageRow(data));
 		}
 		getMessagePanel().setVisible(true);
+		this.paintAll(this.getGraphics());		
+
 	}
 	
 //	private JLabel createDefaultObjectLabel(String labelText,int type){

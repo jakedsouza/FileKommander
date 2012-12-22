@@ -413,9 +413,14 @@ public class FileActionUtils {
 					} else if (repetition.contains("last")) { // contents =
 																// contents.replaceFirst(existingPhrase,
 																// newString);
-						contents = contents.substring(0,
-								contents.lastIndexOf(existingPhrase) + 1)
-								+ newString;
+						newString = existingPhrase + " " + phraseToBeInserted;
+						String contentsRev = StringUtils.reverse(contents);
+						contentsRev = StringUtils.replaceOnce(contentsRev,
+								existingPhrase, newString);
+						contents = StringUtils.reverse(contentsRev);
+						// contents = contents.substring(0,
+						// contents.lastIndexOf(existingPhrase) + 1)
+						// +" " + newString;
 					} else if (repetition.contains("every")
 							|| repetition.contains("all")) {
 						contents = contents.replace(existingPhrase, newString);
@@ -433,7 +438,11 @@ public class FileActionUtils {
 					if (repetition.contains("last")) {
 						// contents = contents.substring(0,
 						// contents.lastIndexOf(existingPhrase)) + newString;
-
+						newString = phraseToBeInserted + " " + existingPhrase;
+						String contentsRev = StringUtils.reverse(contents);
+						contentsRev = StringUtils.replaceOnce(contentsRev,
+								existingPhrase, newString);
+						contents = StringUtils.reverse(contentsRev);
 					}
 				} else if (position.contains("beginning")
 						|| position.contains("start")) {
@@ -448,8 +457,9 @@ public class FileActionUtils {
 					message = " Error writing to file ";
 					e.printStackTrace();
 				}
-				message = "Inserted phrase " + phraseToBeInserted + repetition
-						+ " of word " + existingPhrase;
+				message = "Inserted phrase " + phraseToBeInserted + " "
+						+ position + " " + repetition + " occurence of word "
+						+ existingPhrase;
 			} else {
 				message = "The phrase " + existingPhrase
 						+ " cant be found in the file";
@@ -503,7 +513,7 @@ public class FileActionUtils {
 
 	public static void count(String parentObjectName, int parentObjectType,
 			String type) throws IOException {
-		File f = new File("testDir/" + parentObjectName);
+		File f = new File(workingDirectory + parentObjectName);
 		if (type.equals("words")) {
 			if (f.exists()) {
 				FileReader fr = new FileReader(f);
@@ -539,95 +549,121 @@ public class FileActionUtils {
 		}
 	}
 
-	public static String remove(String phraseToBeRemoved, String repetition, String fileName) throws IOException {
-		String message="";
-		File file = new File("testDir/"+fileName);
-		String contents ="";
-		
-		if(file.exists()){
-		try {
-			contents = FileUtils.readFileToString(file);
-		} catch (Exception e) {
-			message = "Error reading the file "; 
-			e.printStackTrace();
-			return message;
-		}
-		Pattern p = Pattern.compile(phraseToBeRemoved);
-		Matcher m = p.matcher(contents);
-		String newString = "";
-		if(m.find()){
-			if(repetition.contains("first"))
-				contents = contents.replaceFirst(phraseToBeRemoved, "");
-			else if(repetition.contains("last"))
-				//contents = contents.replaceFirst(existingPhrase, newString);	
-				contents = contents.substring(0, contents.lastIndexOf(phraseToBeRemoved) + 1) + "";
-			else if(repetition.contains("every") || repetition.contains("all"))
-					contents = contents.replace(phraseToBeRemoved, "");
-		}else{
-			message = "The phrase "+phraseToBeRemoved+ " cant be found in the file "+fileName;
-		}
-		
-		}else{
-			message =  "File "+fileName+" does not exists";					
-		}
-	
-			//log.info(contents);
+	public static String remove(String phraseToBeRemoved, String repetition,
+			String fileName) {
+		String message = "";
+		File file = new File(workingDirectory + fileName);
+		String contents = "";
+
+		if (file.exists()) {
 			try {
-				FileUtils.writeStringToFile(file, contents);
-			} catch (IOException e) {
-				message = " Error writing to file " ;
+				contents = FileUtils.readFileToString(file);
+			} catch (Exception e) {
+				message = "Error reading the file ";
 				e.printStackTrace();
+				return message;
 			}
-				
-			return message;
+			Pattern p = Pattern.compile(phraseToBeRemoved);
+			Matcher m = p.matcher(contents);
+			String newString = "";
+			if (m.find()) {
+				if (repetition.contains("first")) {
+					contents = contents.replaceFirst(phraseToBeRemoved, "");
+				} else if (repetition.contains("last")) {
+					String contentsRev = StringUtils.reverse(contents);
+					contentsRev = contentsRev.replaceFirst(phraseToBeRemoved,
+							"");
+					contents = StringUtils.reverse(contentsRev);
+//					contents = contents.substring(0,
+//							contents.lastIndexOf(phraseToBeRemoved) + 1)
+//							+ "";
+				} else if (repetition.contains("every")
+						|| repetition.contains("all")) {
+					contents = contents.replace(phraseToBeRemoved, "");
+				}
+				message = "Removed " + repetition + " string " + phraseToBeRemoved + " successfully " ;
+
+			} else {
+				message = "The phrase " + phraseToBeRemoved
+						+ " cant be found in the file " + fileName;
+			}
+
+		} else {
+			message = "File " + fileName + " does not exists";
+		}
+
+		// log.info(contents);
+		try {
+			FileUtils.writeStringToFile(file, contents);
+		} catch (IOException e) {
+			message = " Error writing to file ";
+			e.printStackTrace();
+		}
+
+		return message;
 	}
 
-public static String replace(String phraseToBeInserted, String existingPhrase, String repetition, String fileName) throws IOException {
-		
-		String message="";
-		File file = new File("testDir/"+fileName);
-		String contents ="";
-		
-		if(file.exists()){
-		try {
-			contents = FileUtils.readFileToString(file);
-		} catch (Exception e) {
-			message = "Error reading the file "; 
-			e.printStackTrace();
-			return message;
-		}
-		Pattern p = Pattern.compile(existingPhrase);
-		Matcher m = p.matcher(contents);
-		String newString = "";
-		if(m.find()){
-			if(repetition.contains("first"))
-				contents = contents.replaceFirst(existingPhrase, phraseToBeInserted);
-			else if(repetition.contains("last"))
-				//contents = contents.replaceFirst(existingPhrase, newString);	
-				contents = contents.substring(0, contents.lastIndexOf(existingPhrase) + 1) + phraseToBeInserted;
-			else if(repetition.contains("every") || repetition.contains("all"))
-					contents = contents.replace(existingPhrase, phraseToBeInserted);
-		}else{
-			message = "The phrase "+phraseToBeInserted+ " cant be found in the file "+fileName;
-		}
-		
-		}else{
-			message =  "File "+fileName+" does not exists";					
-		}
-	
-			//log.info(contents);
+	public static String replace(String phraseToBeInserted,
+			String existingPhrase, String repetition, String fileName) {
+
+		String message = "";
+		File file = new File(workingDirectory + fileName);
+		String contents = "";
+
+		if (file.exists()) {
 			try {
-				FileUtils.writeStringToFile(file, contents);
-			} catch (IOException e) {
-				message = " Error writing to file " ;
+				contents = FileUtils.readFileToString(file);
+			} catch (Exception e) {
+				message = "Error reading the file ";
 				e.printStackTrace();
+				return message;
 			}
-				
-			return message;
+			Pattern p = Pattern.compile(existingPhrase);
+			Matcher m = p.matcher(contents);
+			String newString = "";
+			if (m.find()) {
+				if (repetition.contains("first"))
+					contents = contents.replaceFirst(existingPhrase,
+							phraseToBeInserted);
+				else if (repetition.contains("last"))
+				// contents = contents.replaceFirst(existingPhrase, newString);
+				{
+					String contentsRev = StringUtils.reverse(contents);
+					contentsRev = contentsRev.replaceFirst(existingPhrase,
+							phraseToBeInserted);
+					contents = StringUtils.reverse(contentsRev);
+					// contents = contents.substring(0,
+					// contents.lastIndexOf(existingPhrase) + 1) +
+					// phraseToBeInserted;
+				} else if (repetition.contains("every")
+						|| repetition.contains("all"))
+					contents = contents.replace(existingPhrase,
+							phraseToBeInserted);
+				message = "Replaced " + repetition + " string "
+						+ existingPhrase + " with " + phraseToBeInserted
+						+ " successfully ";
+			} else {
+				message = "The phrase " + phraseToBeInserted
+						+ " cant be found in the file " + fileName;
+			}
+
+		} else {
+			message = "File " + fileName + " does not exists";
+		}
+
+		// log.info(contents);
+		try {
+			FileUtils.writeStringToFile(file, contents);
+		} catch (IOException e) {
+			message = " Error writing to file ";
+			e.printStackTrace();
+		}
+
+		return message;
 	}
 
 	public static int countWords(String fileName) {
-		File f = new File("testDir/" + fileName);
+		File f = new File(workingDirectory + fileName);
 		int numWords = 0;
 		if (f.exists()) {
 			try {
@@ -661,7 +697,7 @@ public static String replace(String phraseToBeInserted, String existingPhrase, S
 	public static ArrayList<String> listFiles(String folderName,
 			ArrayList<String> list) {
 		// f = new File("testDir/"+f);
-		File f = new File(folderName);
+		File f = new File(workingDirectory + folderName);
 		if (f.isDirectory()) {
 			File[] subFiles = f.listFiles();
 			for (File file : subFiles) {
@@ -678,7 +714,7 @@ public static String replace(String phraseToBeInserted, String existingPhrase, S
 	}
 
 	public static String lastModified(String parentObjectName) {
-		File f = new File("testDir/" + parentObjectName);
+		File f = new File(workingDirectory + parentObjectName);
 		String dateString = "";
 		if (f.isFile()) {
 			long datetime = f.lastModified();
@@ -695,7 +731,7 @@ public static String replace(String phraseToBeInserted, String existingPhrase, S
 	// to count a specific word
 	public static int countSpecificWord(String parentObjectName,
 			String wordToBeCounted) {
-		File f = new File("testDir/" + parentObjectName);
+		File f = new File(workingDirectory + parentObjectName);
 		String line = "";
 		int count = 0;
 
@@ -791,10 +827,10 @@ public static String replace(String phraseToBeInserted, String existingPhrase, S
 	// count
 	public static int countFiles(String parentObjectName) {
 		File f;
-		if (parentObjectName.equals("testDir")) {
+		if (parentObjectName.equals(workingDirectory)) {
 			f = new File(parentObjectName);
 		} else {
-			f = new File("testDir/" + parentObjectName);
+			f = new File(workingDirectory + parentObjectName);
 		}
 		int c = countSubFiles(f);
 		log.info("count is" + c);

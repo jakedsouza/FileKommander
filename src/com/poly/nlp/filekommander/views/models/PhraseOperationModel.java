@@ -14,6 +14,8 @@ public class PhraseOperationModel implements GenericActionModel{
 	
 	public PhraseOperationModel(){
 		this.fileListData = new HashMap<String, String>() ;
+		newPhrase = "";
+		oldPhrase = "";
 	}
 	
 	public void add(String name) {

@@ -1,6 +1,7 @@
 package com.poly.nlp.filekommander.file.actions;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Set;
@@ -122,7 +123,7 @@ public class CallAction {
 		log.info("InsertAction action called");
 		String oldPhrase = phraseModel.getOldPhrase();
 		String newPhrase = phraseModel.getNewPhrase();
-		String position = phraseModel.getRepetition() ;
+		String position = phraseModel.getPosition() ;
 		String repetition = phraseModel.getRepetition();
 		HashMap<String, String> fileListData = phraseModel.getFileListData();
 		
@@ -161,13 +162,13 @@ public class CallAction {
 		log.info("RemoveAction action called");
 		String oldPhrase = phraseModel.getOldPhrase();
 		String newPhrase = phraseModel.getNewPhrase();
-		String position = phraseModel.getRepetition() ;
+		String position = phraseModel.getPosition() ;
 		String repetition = phraseModel.getRepetition();
 		HashMap<String, String> fileListData = phraseModel.getFileListData();
 		
 		Set<String> keySet = fileListData.keySet();
 		for (String fileName : keySet) {
-		String message = FileActionUtils.insert(newPhrase, oldPhrase, position, repetition, fileName) ;	
+		String message = FileActionUtils.remove(oldPhrase, repetition, fileName) ;	
 		fileListData.put(fileName, message);
 		}
 		
@@ -188,13 +189,14 @@ public class CallAction {
 		log.info("ReplaceAction action called");
 		String oldPhrase = phraseModel.getOldPhrase();
 		String newPhrase = phraseModel.getNewPhrase();
-		String position = phraseModel.getRepetition() ;
+		String position = phraseModel.getPosition() ;
 		String repetition = phraseModel.getRepetition();
 		HashMap<String, String> fileListData = phraseModel.getFileListData();
 		
 		Set<String> keySet = fileListData.keySet();
 		for (String fileName : keySet) {
-		String message = FileActionUtils.insert(newPhrase, oldPhrase, position, repetition, fileName) ;	
+			String message = FileActionUtils.replace(newPhrase, oldPhrase, repetition, fileName);
+		//String message = FileActionUtils.replace(newPhrase, oldPhrase, position, repetition, fileName) ;	
 		fileListData.put(fileName, message);
 		}
 		
@@ -232,13 +234,8 @@ public class CallAction {
 			} else if(statsModel.getStatsType() == FileKommander.LIST_FILES){
 				ArrayList<String> l = new ArrayList<String>();
 				ArrayList<String> list = FileActionUtils.listFiles(folderName, l);
-				java.util.ListIterator<String> ls = list.listIterator();
-				StringBuffer sb = new StringBuffer("");
-				while(ls.hasNext()){
-					System.out.println(ls.next());
-					sb.append(ls.next()+"</br>");
-				}
-				folderListData.put(folderName, sb.toString());
+			
+				folderListData.put(folderName, "List of files :" + list.toString());
 			} else if(statsModel.getStatsType() == FileKommander.SIZEOF){
 				String message = FileActionUtils.sizeOf(folderName);
 				folderListData.put(folderName, message);
