@@ -21,28 +21,27 @@ import org.bouncycastle.asn1.cmp.CAKeyUpdAnnContent;import com.poly.nlp.filekomm
 import com.poly.nlp.filekommander.FileKommander;
 import com.poly.nlp.filekommander.views.models.ExistsModel;
 import com.poly.nlp.filekommander.views.models.GenericActionModel;
-import com.poly.nlp.filekommander.views.models.OpenModel;
 import com.poly.nlp.filekommander.views.models.StatsModel;
 import javax.swing.JTable;
 import javax.swing.border.BevelBorder;
 import javax.swing.table.DefaultTableModel;
 
-public class OpenActionPanel extends AbstractMessagePanel {
+public class ExistActionPanel extends AbstractMessagePanel {
 
 	private static final long serialVersionUID = 1L;
-    private OpenModel model ;
-	private static final Logger log = Logger.getLogger(OpenActionPanel.class);
+    private ExistsModel model ;
+	private static final Logger log = Logger.getLogger(ExistActionPanel.class);
 
 	/**
 	 * Create the panel.
 	 */
-	public OpenActionPanel() {
+	public ExistActionPanel() {
 		super();	
 	}
 
 	public void updatePanelData(GenericActionModel model) {
-		if(model instanceof OpenModel){
-		this.model = (OpenModel)model;	
+		if(model instanceof ExistsModel){
+		this.model = (ExistsModel)model;	
 		updatePanelData();
 		}else{
 			log.error("Wrong class");
@@ -51,7 +50,7 @@ public class OpenActionPanel extends AbstractMessagePanel {
 
 	public void updatePanelData() {
 		getMessagePanel().removeAll();
-		model = (OpenModel) CallAction.callAction(model);
+		model = (ExistsModel) CallAction.callAction(model);
 		HashMap<String, String> fileListData = this.model.getFileListData();
 		HashMap<String, String> folderListData= this.model.getFolderListData();
 		

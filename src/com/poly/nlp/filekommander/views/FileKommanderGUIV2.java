@@ -18,12 +18,16 @@ import com.darkprograms.speech.recognizer.Recognizer;
 import com.poly.nlp.filekommander.FileKommanderRun;
 import com.poly.nlp.filekommander.views.models.CreateModel;
 import com.poly.nlp.filekommander.views.models.DeleteModel;
+import com.poly.nlp.filekommander.views.models.ExistsModel;
 import com.poly.nlp.filekommander.views.models.GenericActionModel;
+import com.poly.nlp.filekommander.views.models.OpenModel;
 import com.poly.nlp.filekommander.views.models.RenameModel;
 import com.poly.nlp.filekommander.views.models.StatsModel;
 import com.poly.nlp.filekommander.views.panels.CreateActionPanel;
 import com.poly.nlp.filekommander.views.panels.DeleteActionPanel;
 import com.poly.nlp.filekommander.views.panels.EmptyActionPanel;
+import com.poly.nlp.filekommander.views.panels.ExistActionPanel;
+import com.poly.nlp.filekommander.views.panels.OpenActionPanel;
 import com.poly.nlp.filekommander.views.panels.RenameActionPanel;
 import com.poly.nlp.filekommander.views.panels.StatsActionPanel;
 
@@ -52,37 +56,25 @@ public class FileKommanderGUIV2 {
 	private String DELETEPANEL = "DELETEPANEL";
 	private String RENAMEPANEL = "RENAMEPANEL";
 	private String STATSPANEL = "STATSPANEL";
-
+	private String EXISTSPANEL = "EXISTSPANEL";
+	private String OPENPANEL = "OPENPANEL";
 
 	private String EMPTYPANEL = "EMPTYPANEL";
 	private CreateActionPanel createActionPanel;
 	private DeleteActionPanel deleteActionPanel;
 	private RenameActionPanel renameActionPanel;
 	private StatsActionPanel statsActionPanel;
+	private ExistActionPanel existActionPanel ;
+	private OpenActionPanel openActionPanel ;
+
 	private EmptyActionPanel emptyActionPanel;
+	
 	private JToggleButton micBtn;
 
 	protected Microphone microphone = new Microphone(AudioFileFormat.Type.WAVE);
 	protected String file = "tmp";
 	private FileKommanderMenu menuBar;
 	private JLabel errorMessageLabel;
-
-	// /**
-	// * Launch the application.
-	// */
-	// public static void main(String[] args) {
-	// EventQueue.invokeLater(new Runnable() {
-	// public void run() {
-	// try {
-	// FileKommanderGUIV2 window = new FileKommanderGUIV2();
-	// window.frmFileKommander.setVisible(true);
-	//
-	// } catch (Exception e) {
-	// e.printStackTrace();
-	// }
-	// }
-	// });
-	// }
 
 	/**
 	 * Create the application.
@@ -161,6 +153,12 @@ public class FileKommanderGUIV2 {
 
 		statsActionPanel = new StatsActionPanel();
 		informatinDisplayPanel.add(statsActionPanel, STATSPANEL);
+		
+		openActionPanel = new OpenActionPanel();
+		informatinDisplayPanel.add(openActionPanel, OPENPANEL);
+		
+		existActionPanel = new ExistActionPanel();
+		informatinDisplayPanel.add(existActionPanel, EXISTSPANEL);
 
 		CardLayout layout = (CardLayout) informatinDisplayPanel.getLayout();
 		layout.show(informatinDisplayPanel, EMPTYPANEL);
@@ -238,6 +236,12 @@ public class FileKommanderGUIV2 {
 		}else if (actionModel instanceof StatsModel) {
 			statsActionPanel.updatePanelData((StatsModel) actionModel);
 			layout.show(informatinDisplayPanel, STATSPANEL);
+		}else if (actionModel instanceof ExistsModel) {
+			existActionPanel.updatePanelData((ExistsModel) actionModel);
+			layout.show(informatinDisplayPanel, EXISTSPANEL);
+		}else if (actionModel instanceof OpenModel) {
+			openActionPanel.updatePanelData((OpenModel) actionModel);
+			layout.show(informatinDisplayPanel, OPENPANEL);
 		}
 		informatinDisplayPanel.repaint();
 	}

@@ -18,6 +18,7 @@ import javax.swing.table.TableModel;
 import java.awt.GridLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.FlowLayout;
 
 public abstract class AbstractMessagePanel extends GenericPanel {
 
@@ -58,14 +59,14 @@ public abstract class AbstractMessagePanel extends GenericPanel {
 		add(getActionLabel());
 				
 		messagePanel = new JPanel();
+		springLayout.putConstraint(SpringLayout.SOUTH, actionLabel, -15, SpringLayout.NORTH, messagePanel);
+		springLayout.putConstraint(SpringLayout.WEST, messagePanel, 10, SpringLayout.WEST, commandPanel);
 		messagePanel.setAutoscrolls(true);
-				springLayout.putConstraint(SpringLayout.SOUTH, actionLabel, -15, SpringLayout.NORTH, messagePanel);
 				springLayout.putConstraint(SpringLayout.NORTH, messagePanel, 39, SpringLayout.NORTH, this);
-				springLayout.putConstraint(SpringLayout.WEST, messagePanel, 0, SpringLayout.WEST, commandPanel);
 				springLayout.putConstraint(SpringLayout.SOUTH, messagePanel, -6, SpringLayout.NORTH, commandPanel);
 				springLayout.putConstraint(SpringLayout.EAST, messagePanel, 440, SpringLayout.WEST, this);
 				add(messagePanel);
-				messagePanel.setLayout(new GridLayout(1, 0, 0, 0));
+				messagePanel.setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
 				btnClear.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						resetPanel();
@@ -75,7 +76,7 @@ public abstract class AbstractMessagePanel extends GenericPanel {
 
 	protected JPanel createDefaultMessageRow(String [] row){
 		JPanel jPanel = new JPanel();
-		
+		jPanel.setAutoscrolls(true);
 		for (String data : row) {
 			JLabel jLabel = new JLabel(data);
 		

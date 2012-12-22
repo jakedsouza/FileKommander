@@ -13,7 +13,9 @@ import com.poly.nlp.filekommander.FileKommander;
 import com.poly.nlp.filekommander.FileKommanderRun;
 import com.poly.nlp.filekommander.views.models.CreateModel;
 import com.poly.nlp.filekommander.views.models.DeleteModel;
+import com.poly.nlp.filekommander.views.models.ExistsModel;
 import com.poly.nlp.filekommander.views.models.GenericActionModel;
+import com.poly.nlp.filekommander.views.models.OpenModel;
 import com.poly.nlp.filekommander.views.models.RenameModel;
 import com.poly.nlp.filekommander.views.models.StatsModel;
 
@@ -36,7 +38,7 @@ public class AnalyseAction {
 		case "delete":
 			returnModel = analyseDeleteAction(annotation);
 			break;
-		case "exists":
+		case "exist":
 			returnModel = analyseExistsAction(annotation);
 			break;
 		case "insert":
@@ -131,8 +133,33 @@ public class AnalyseAction {
 	}
 
 	private static GenericActionModel analyseExistsAction(Annotation annotation) {
-		//TODO
-		return null;
+		FeatureMap featureMap = annotation.getFeatures();
+		ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
+				featureMap, "fileName");
+		ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
+				featureMap, "directoryName");
+		ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
+				featureMap, "quotedObject");
+		ExistsModel existsModel = new ExistsModel();
+		if (fileNamesList != null) {
+			for (String fileName : fileNamesList) {
+				existsModel.add(fileName, FileKommander.FILE);
+			}
+		}
+		if (directoryNamesList != null) {
+			for (String folderName : directoryNamesList) {
+				existsModel.add(folderName, FileKommander.DIRECTORY);
+			}
+		}
+		if (quotedObjectNamesList != null) {
+			for (String quotedName : quotedObjectNamesList) {
+				if (!fileNamesList.contains(quotedName)
+						&& !directoryNamesList.contains(quotedName))
+					existsModel.add(quotedName, FileKommander.DIRECTORY);
+			}
+		}
+	
+		return existsModel;
 
 	}
 
@@ -143,8 +170,33 @@ public class AnalyseAction {
 	}
 
 	private static GenericActionModel analyseOpenAction(Annotation annotation) {
-		//TODO
-		return null;
+		FeatureMap featureMap = annotation.getFeatures();
+		ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
+				featureMap, "fileName");
+		ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
+				featureMap, "directoryName");
+		ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
+				featureMap, "quotedObject");
+		OpenModel openModel = new OpenModel();
+		if (fileNamesList != null) {
+			for (String fileName : fileNamesList) {
+				openModel.add(fileName, FileKommander.FILE);
+			}
+		}
+		if (directoryNamesList != null) {
+			for (String folderName : directoryNamesList) {
+				openModel.add(folderName, FileKommander.DIRECTORY);
+			}
+		}
+		if (quotedObjectNamesList != null) {
+			for (String quotedName : quotedObjectNamesList) {
+				if (!fileNamesList.contains(quotedName)
+						&& !directoryNamesList.contains(quotedName))
+					openModel.add(quotedName, FileKommander.DIRECTORY);
+			}
+		}
+	
+		return openModel;
 
 	}
 

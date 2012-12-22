@@ -2,12 +2,17 @@ package com.poly.nlp.filekommander.file.actions;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
 import org.apache.log4j.Logger;
 
 import com.poly.nlp.filekommander.FileKommander;
 import com.poly.nlp.filekommander.views.models.CreateModel;
 import com.poly.nlp.filekommander.views.models.DeleteModel;
+import com.poly.nlp.filekommander.views.models.ExistsModel;
 import com.poly.nlp.filekommander.views.models.GenericActionModel;
+import com.poly.nlp.filekommander.views.models.OpenModel;
 import com.poly.nlp.filekommander.views.models.RenameModel;
 import com.poly.nlp.filekommander.views.models.StatsModel;
 import com.sun.xml.internal.bind.v2.runtime.reflect.ListIterator;
@@ -29,10 +34,14 @@ public class CallAction {
 			newActionModel =	renameAction((RenameModel) actionModel);
 		}else if(actionModel instanceof StatsModel){
 			newActionModel =	statsAction((StatsModel) actionModel);
+		}else if(actionModel instanceof ExistsModel){
+			newActionModel =	existsAction((ExistsModel) actionModel);
+		}else if(actionModel instanceof OpenModel){
+			newActionModel =	openAction((OpenModel) actionModel);
 		}else {
-			existsAction();
+			//existsAction();
 			insertAction();
-			openAction();
+		//	openAction();
 			removeAction();
 		// renameAction();
 			replaceAction();
@@ -82,16 +91,52 @@ public class CallAction {
 		return deleteModel	;
 	}
 
-	public static void existsAction() {
+	private static ExistsModel existsAction(ExistsModel existsModel) {
 		log.info("ExistsAction action called");
+
+		HashMap<String, String> fileListData = existsModel.getFileListData();
+		HashMap<String, String> folderListData = existsModel.getFolderListData();
+		
+		Set<String> keySet = fileListData.keySet();
+		for (String fileName : keySet) {
+			String message = FileActionUtils.exists(fileName);
+			fileListData.put(fileName, message);
+		}
+		keySet = folderListData.keySet();
+		for (String folderName : keySet) {
+			String message = FileActionUtils.exists(folderName);
+			fileListData.put(folderName, message);
+		}
+		existsModel.setFileListData(fileListData);
+		existsModel.setFolderListData(folderListData);
+		existsModel.setModelRun(true);
+		return existsModel;
 	}
 
 	public static void insertAction() {
 		log.info("InsertAction action called");
 	}
 
-	public static void openAction() {
-		log.info("OpenAction action called");
+	public static OpenModel openAction(OpenModel openModel) {
+		log.info("ExistsAction action called");
+
+		HashMap<String, String> fileListData = openModel.getFileListData();
+		HashMap<String, String> folderListData = openModel.getFolderListData();
+		
+		Set<String> keySet = fileListData.keySet();
+		for (String fileName : keySet) {
+			String message = FileActionUtils.open(fileName);
+			fileListData.put(fileName, message);
+		}
+		keySet = folderListData.keySet();
+		for (String folderName : keySet) {
+			String message = FileActionUtils.open(folderName);
+			fileListData.put(folderName, message);
+		}
+		openModel.setFileListData(fileListData);
+		openModel.setFolderListData(folderListData);
+		openModel.setModelRun(true);
+		return openModel;
 	}
 
 	public static void removeAction() {

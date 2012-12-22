@@ -231,38 +231,41 @@ public class FileActionUtils {
 	// return errorMsg;
 	// }
 
-	public static void exists(String name) {
-		String errorMsg = "";
-
+	public static String exists(String name) {
+		String message = "";
+		
 		System.out.println("name of object is" + name);
 		try {
-			File file = new File("testDir/" + name);
+			File file = new File(workingDirectory + name);
 			if (file.exists()) {
+				message = "<html>"+ name + " exists at <u>" + file.getAbsolutePath()+ "</u></html>" ;
 				System.out.println("File/Folder exists!");
 			} else {
-				errorMsg = "File/Folder " + name + " doesn't exist!";
-				System.out.println(errorMsg);
+				message = "File/Folder " + name + " doesn't exist!";
+				System.out.println(message);
 			}
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	
+		return message;
 	}
 
-	public static boolean open(String name) {
-		String errorMsg = "";
+	public static String open(String name) {
+		String message = "";
 		if (name.equals("") || name.equals("")) {
-			errorMsg = "File Name is empty";
-			return false;
+			message = "File Name is empty";
+			return message;
 		}
 		// String workingDirectory =
 		// FileKommanderRun.getKommander().getWorkingDirectory();
 	//	String workingDirectory = "testDir/";
-		File file = new File(name);
+		File file = new File(workingDirectory + name);
 		if (!file.exists()) {
-			errorMsg = "File " + name + " doesnot exist in the directory ";
-			FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
-			return false;
+			message = "File " + name + " doesnot exist in the directory ";
+		//	FileKommanderRun.getGuiv2().displayErrorMessage(message);
+			return message;
 		}
 		try {
 			if (OSDetector.isWindows()) {
@@ -270,26 +273,30 @@ public class FileActionUtils {
 				String[] command = new String[] { "rundll32.exe",
 						"url.dll,FileProtocolHandler", file.getAbsolutePath() };
 				System.out.println(Arrays.toString(command));
-				Runtime.getRuntime().exec(command);
-				return true;
+				Process process = Runtime.getRuntime().exec(command);
+				message = "Opened successfully";
+				return message;
 			} else if (OSDetector.isLinux() || OSDetector.isMac()) {
 				Runtime.getRuntime()
 						.exec(new String[] { "/usr/bin/open",
 								file.getAbsolutePath() });
-				return true;
-			} else {
+				message = "Opened successfully";
+				return message;
+				} else {
 				// Unknown OS, try with desktop
 				if (Desktop.isDesktopSupported()) {
 					Desktop.getDesktop().open(file);
-					return true;
+					message = "Opened successfully";
+					return message;
 				} else {
-					return false;
+					message = "Unsuccessfull open";
+					return message;
 				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace(System.err);
-			return false;
-		}
+			message = "Unable to open";
+			return message;		}
 	}
 
 	public static String rename(String oldName, String newName) {
