@@ -256,16 +256,16 @@ public class CallAction {
 		int action = phraseModel.getOperationType() ;
 		String oldPhrase = phraseModel.getOldPhrase();
 		String newPhrase = phraseModel.getNewPhrase();
-		String position = phraseModel.getRepetition() ;
+		String position = phraseModel.getPosition();
 		String repetition = phraseModel.getRepetition();
 		HashMap<String, String> fileListData = phraseModel.getFileListData();
 		
 		Set<String> keySet = fileListData.keySet();
-		for (String fileName : keySet) {
-		String message = FileActionUtils.insert(newPhrase, oldPhrase, position, repetition, fileName) ;	
-		fileListData.put(fileName, message);
-		}
-		
+//		for (String fileName : keySet) {
+//		String message = FileActionUtils.insert(newPhrase, oldPhrase, position, repetition, fileName) ;	
+//		fileListData.put(fileName, message);
+//		}
+//		
 		switch (action) {
 		case 7:
 			phraseModel = insertAction(phraseModel);

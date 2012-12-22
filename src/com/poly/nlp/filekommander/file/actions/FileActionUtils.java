@@ -233,12 +233,13 @@ public class FileActionUtils {
 
 	public static String exists(String name) {
 		String message = "";
-		
+
 		System.out.println("name of object is" + name);
 		try {
 			File file = new File(workingDirectory + name);
 			if (file.exists()) {
-				message = "<html>"+ name + " exists at <u>" + file.getAbsolutePath()+ "</u></html>" ;
+				message = "<html>" + name + " exists at <u>"
+						+ file.getAbsolutePath() + "</u></html>";
 				System.out.println("File/Folder exists!");
 			} else {
 				message = "File/Folder " + name + " doesn't exist!";
@@ -248,7 +249,7 @@ public class FileActionUtils {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	
+
 		return message;
 	}
 
@@ -260,11 +261,11 @@ public class FileActionUtils {
 		}
 		// String workingDirectory =
 		// FileKommanderRun.getKommander().getWorkingDirectory();
-	//	String workingDirectory = "testDir/";
+		// String workingDirectory = "testDir/";
 		File file = new File(workingDirectory + name);
 		if (!file.exists()) {
 			message = "File " + name + " does not exist in the directory ";
-		//	FileKommanderRun.getGuiv2().displayErrorMessage(message);
+			// FileKommanderRun.getGuiv2().displayErrorMessage(message);
 			return message;
 		}
 		try {
@@ -274,7 +275,7 @@ public class FileActionUtils {
 						"url.dll,FileProtocolHandler", file.getAbsolutePath() };
 				System.out.println(Arrays.toString(command));
 				Process process = Runtime.getRuntime().exec(command);
-				message = "File " + name +" opened successfully";
+				message = "File " + name + " opened successfully";
 				return message;
 			} else if (OSDetector.isLinux() || OSDetector.isMac()) {
 				Runtime.getRuntime()
@@ -282,7 +283,7 @@ public class FileActionUtils {
 								file.getAbsolutePath() });
 				message = "Opened successfully";
 				return message;
-				} else {
+			} else {
 				// Unknown OS, try with desktop
 				if (Desktop.isDesktopSupported()) {
 					Desktop.getDesktop().open(file);
@@ -296,7 +297,8 @@ public class FileActionUtils {
 		} catch (Exception e) {
 			e.printStackTrace(System.err);
 			message = "Unable to open";
-			return message;		}
+			return message;
+		}
 	}
 
 	public static String rename(String oldName, String newName) {
@@ -338,111 +340,126 @@ public class FileActionUtils {
 
 	}
 
-//	public static void insert(String phraseToBeInserted, String existingPhrase,
-//			String position, String fileName) throws IOException {
-//		String errorMsg = "";
-//		File file = new File("testDir/" + fileName);
-//		if (file.exists()) {
-//			BufferedReader reader = new BufferedReader(new FileReader(file));
-//			// new BufferedReader(new FileReader(file))/;
-//			String line = "";
-//			while ((line = reader.readLine()) != null) {
-//				Pattern pattern = Pattern.compile(existingPhrase,
-//						Pattern.CASE_INSENSITIVE);
-//				// pattern.
-//				Matcher matcher = pattern.matcher(line);
-//				// Check all occurrences
-//				while (matcher.find()) {
-//					/*
-//					 * switch(location){
-//					 * 
-//					 * case "before": break; case "after": break; case "":
-//					 * break; default break; }
-//					 */
-//					System.out.print("Start index: " + matcher.start());
-//					System.out.print(" End index: " + matcher.end() + " ");
-//					System.out.println(matcher.group());
-//				}
-//
-//			}
-//
-//		} else {
-//			errorMsg = "File named " + fileName
-//					+ " doesn't exist. Do you want to continue ?";
-//			System.out.println(errorMsg);
-//		}
-//	}
-//
-//	public static void remove(String phraseToBeRemoved, String position,
-//			String fileName) {
-//
-//	}
-//
-//	public static void replace(String phraseToBeInserted,
-//			String existingPhrase, String position, String fileName) {
-//
-//	}
-	public static String insert(String phraseToBeInserted, String existingPhrase,
-			String position, String repetition, String fileName)  {
-		File file = new File(workingDirectory+fileName);
+	// public static void insert(String phraseToBeInserted, String
+	// existingPhrase,
+	// String position, String fileName) throws IOException {
+	// String errorMsg = "";
+	// File file = new File("testDir/" + fileName);
+	// if (file.exists()) {
+	// BufferedReader reader = new BufferedReader(new FileReader(file));
+	// // new BufferedReader(new FileReader(file))/;
+	// String line = "";
+	// while ((line = reader.readLine()) != null) {
+	// Pattern pattern = Pattern.compile(existingPhrase,
+	// Pattern.CASE_INSENSITIVE);
+	// // pattern.
+	// Matcher matcher = pattern.matcher(line);
+	// // Check all occurrences
+	// while (matcher.find()) {
+	// /*
+	// * switch(location){
+	// *
+	// * case "before": break; case "after": break; case "":
+	// * break; default break; }
+	// */
+	// System.out.print("Start index: " + matcher.start());
+	// System.out.print(" End index: " + matcher.end() + " ");
+	// System.out.println(matcher.group());
+	// }
+	//
+	// }
+	//
+	// } else {
+	// errorMsg = "File named " + fileName
+	// + " doesn't exist. Do you want to continue ?";
+	// System.out.println(errorMsg);
+	// }
+	// }
+	//
+	// public static void remove(String phraseToBeRemoved, String position,
+	// String fileName) {
+	//
+	// }
+	//
+	// public static void replace(String phraseToBeInserted,
+	// String existingPhrase, String position, String fileName) {
+	//
+	// }
+	public static String insert(String phraseToBeInserted,
+			String existingPhrase, String position, String repetition,
+			String fileName) {
+		File file = new File(workingDirectory + fileName);
 		String message = "";
-		int count = 0 ; // TODO 
-		if(file.exists()){
-			
-		String contents;
-		try {
-			contents = FileUtils.readFileToString(file);
-		} catch (Exception e) {
-			message = "Error reading the file "; 
-			e.printStackTrace();
-			return message;
-		}
-		String newString = "";
-		Pattern p = Pattern.compile(existingPhrase);
-		Matcher m = p.matcher(contents);
-		if(m.find()){
-		if(position.contains("before")){
-			newString = phraseToBeInserted + " " +existingPhrase;
-			if(repetition.contains("every") || repetition.contains("all"))
-				contents = contents.replace(existingPhrase, newString);
-			if(repetition.contains("first"))
-				contents = contents.replaceFirst(existingPhrase, newString);
-			if(repetition.contains("last"))
-				//contents = contents.replaceFirst(existingPhrase, newString);	
-				contents = contents.substring(0, contents.lastIndexOf(existingPhrase) + 1) + newString;
-		} else if(position.contains("after")){
-			newString = existingPhrase+" "+phraseToBeInserted;
-			if(repetition.contains("every") || repetition.contains("all"))
-				contents = contents.replace(existingPhrase, newString);
-			if(repetition.contains("first"))
-				contents = contents.replaceFirst(existingPhrase, newString);
-			if(repetition.contains("last")){
-				//contents = contents.substring(0, contents.lastIndexOf(existingPhrase)) + newString;
-				
+		int count = 0; // TODO
+		if (file.exists()) {
+
+			String contents;
+			try {
+				contents = FileUtils.readFileToString(file);
+			} catch (Exception e) {
+				message = "Error reading the file ";
+				e.printStackTrace();
+				return message;
 			}
-		} else if(position.contains("beginning") || position.contains("start")){
-			contents = phraseToBeInserted + " " + contents;
-		} else if(position.contains("end")){
-			contents = contents +" "+ phraseToBeInserted;
-		}
-		//log.info(contents);
-		try {
-			FileUtils.writeStringToFile(file, contents);
-		} catch (IOException e) {
-			message = " Error writing to file " ;
-			e.printStackTrace();
-		}
-		message = "Inserted phrase "+phraseToBeInserted + repetition + " of word "+existingPhrase;
-		}else{
-			message = "The phrase "+existingPhrase+ " cant be found in the file";
-		}
-		}else{
+			String newString = "";
+			Pattern p = Pattern.compile(existingPhrase);
+			Matcher m = p.matcher(contents);
+			if (m.find()) {
+				if (position.contains("before")) {
+					newString = phraseToBeInserted + " " + existingPhrase;
+					if (repetition.contains("first")) {
+						contents = contents.replaceFirst(existingPhrase,
+								newString);
+					} else if (repetition.contains("last")) { // contents =
+																// contents.replaceFirst(existingPhrase,
+																// newString);
+						contents = contents.substring(0,
+								contents.lastIndexOf(existingPhrase) + 1)
+								+ newString;
+					} else if (repetition.contains("every")
+							|| repetition.contains("all")) {
+						contents = contents.replace(existingPhrase, newString);
+					} else {
+						contents = contents.replace(existingPhrase, newString);
+					}
+				} else if (position.contains("after")) {
+					newString = existingPhrase + " " + phraseToBeInserted;
+					if (repetition.contains("every")
+							|| repetition.contains("all"))
+						contents = contents.replace(existingPhrase, newString);
+					if (repetition.contains("first"))
+						contents = contents.replaceFirst(existingPhrase,
+								newString);
+					if (repetition.contains("last")) {
+						// contents = contents.substring(0,
+						// contents.lastIndexOf(existingPhrase)) + newString;
+
+					}
+				} else if (position.contains("beginning")
+						|| position.contains("start")) {
+					contents = phraseToBeInserted + " " + contents;
+				} else if (position.contains("end")) {
+					contents = contents + " " + phraseToBeInserted;
+				}
+				// log.info(contents);
+				try {
+					FileUtils.writeStringToFile(file, contents);
+				} catch (IOException e) {
+					message = " Error writing to file ";
+					e.printStackTrace();
+				}
+				message = "Inserted phrase " + phraseToBeInserted + repetition
+						+ " of word " + existingPhrase;
+			} else {
+				message = "The phrase " + existingPhrase
+						+ " cant be found in the file";
+			}
+		} else {
 			message = "This file doesnt exists";
 		}
 		return message;
 	}
-	
-	
+
 	// parentObjectName = name of the file/folder
 	// parentObjectType = file or folder- 0,1
 	public static void stats(String parentObjectName, int statsType,
@@ -484,9 +501,6 @@ public class FileActionUtils {
 		}
 	}
 
-	
-
-
 	public static void count(String parentObjectName, int parentObjectType,
 			String type) throws IOException {
 		File f = new File("testDir/" + parentObjectName);
@@ -525,74 +539,130 @@ public class FileActionUtils {
 		}
 	}
 
-	
-	
-	
-	
-	
-	
-	public static void remove(String phraseToBeRemoved,	String fileName) throws IOException {
+	public static String remove(String phraseToBeRemoved, String repetition, String fileName) throws IOException {
+		String message="";
 		File file = new File("testDir/"+fileName);
+		String contents ="";
+		
 		if(file.exists()){
-			String contents = FileUtils.readFileToString(file);
-			contents = contents.replace(phraseToBeRemoved, "");
-			log.info(contents);
-			FileUtils.writeStringToFile(file, contents);
-		}else{
-			log.info("this file doesnt exists");
+		try {
+			contents = FileUtils.readFileToString(file);
+		} catch (Exception e) {
+			message = "Error reading the file "; 
+			e.printStackTrace();
+			return message;
 		}
+		Pattern p = Pattern.compile(phraseToBeRemoved);
+		Matcher m = p.matcher(contents);
+		String newString = "";
+		if(m.find()){
+			if(repetition.contains("first"))
+				contents = contents.replaceFirst(phraseToBeRemoved, "");
+			else if(repetition.contains("last"))
+				//contents = contents.replaceFirst(existingPhrase, newString);	
+				contents = contents.substring(0, contents.lastIndexOf(phraseToBeRemoved) + 1) + "";
+			else if(repetition.contains("every") || repetition.contains("all"))
+					contents = contents.replace(phraseToBeRemoved, "");
+		}else{
+			message = "The phrase "+phraseToBeRemoved+ " cant be found in the file "+fileName;
+		}
+		
+		}else{
+			message =  "File "+fileName+" does not exists";					
+		}
+	
+			//log.info(contents);
+			try {
+				FileUtils.writeStringToFile(file, contents);
+			} catch (IOException e) {
+				message = " Error writing to file " ;
+				e.printStackTrace();
+			}
+				
+			return message;
 	}
 
-	public static void replace(String phraseToBeInserted,
-			String existingPhrase, String fileName) throws IOException {
+public static String replace(String phraseToBeInserted, String existingPhrase, String repetition, String fileName) throws IOException {
+		
+		String message="";
 		File file = new File("testDir/"+fileName);
+		String contents ="";
+		
 		if(file.exists()){
-			String contents = FileUtils.readFileToString(file);
-			contents = contents.replace(existingPhrase, phraseToBeInserted);
-			log.info(contents);
-			FileUtils.writeStringToFile(file, contents);
-		}else{
-			log.info("this file doesnt exists");
+		try {
+			contents = FileUtils.readFileToString(file);
+		} catch (Exception e) {
+			message = "Error reading the file "; 
+			e.printStackTrace();
+			return message;
 		}
+		Pattern p = Pattern.compile(existingPhrase);
+		Matcher m = p.matcher(contents);
+		String newString = "";
+		if(m.find()){
+			if(repetition.contains("first"))
+				contents = contents.replaceFirst(existingPhrase, phraseToBeInserted);
+			else if(repetition.contains("last"))
+				//contents = contents.replaceFirst(existingPhrase, newString);	
+				contents = contents.substring(0, contents.lastIndexOf(existingPhrase) + 1) + phraseToBeInserted;
+			else if(repetition.contains("every") || repetition.contains("all"))
+					contents = contents.replace(existingPhrase, phraseToBeInserted);
+		}else{
+			message = "The phrase "+phraseToBeInserted+ " cant be found in the file "+fileName;
+		}
+		
+		}else{
+			message =  "File "+fileName+" does not exists";					
+		}
+	
+			//log.info(contents);
+			try {
+				FileUtils.writeStringToFile(file, contents);
+			} catch (IOException e) {
+				message = " Error writing to file " ;
+				e.printStackTrace();
+			}
+				
+			return message;
 	}
 
-
-	public static int countWords(String fileName){
+	public static int countWords(String fileName) {
 		File f = new File("testDir/" + fileName);
 		int numWords = 0;
 		if (f.exists()) {
-			try{
+			try {
 				FileReader fr;
 				fr = new FileReader(f);
-				
+
 				BufferedReader br = new BufferedReader(fr);
 				StreamTokenizer stz = new StreamTokenizer(br);
 				int index = 0;
-				
+
 				while (index != StreamTokenizer.TT_EOF) {
 					index = stz.nextToken();
 					numWords++;
 				}
 
-				log.info("no. of words in file = " + numWords); 
-			
+				log.info("no. of words in file = " + numWords);
+
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			} catch (IOException e) {
 				e.printStackTrace();
-			} finally{
+			} finally {
 				log.info("Some error reading the file");
 			}
-		}else {
-				log.info("This file doesn't exists."); 
-			}
+		} else {
+			log.info("This file doesn't exists.");
+		}
 		return numWords;
 	}
 
-	public static ArrayList<String> listFiles(String folderName, ArrayList<String> list) {
-		//f = new File("testDir/"+f);
+	public static ArrayList<String> listFiles(String folderName,
+			ArrayList<String> list) {
+		// f = new File("testDir/"+f);
 		File f = new File(folderName);
-		if(f.isDirectory()){
+		if (f.isDirectory()) {
 			File[] subFiles = f.listFiles();
 			for (File file : subFiles) {
 				if (file.isFile()) {
@@ -601,32 +671,34 @@ public class FileActionUtils {
 					list = listFiles(file.getName(), list);
 				}
 			}
-		}else{
+		} else {
 			log.info("only files in the folder can be listed.");
 		}
 		return list;
 	}
 
 	public static String lastModified(String parentObjectName) {
-		File f = new File("testDir/"+parentObjectName);
+		File f = new File("testDir/" + parentObjectName);
 		String dateString = "";
-		if(f.isFile()){
+		if (f.isFile()) {
 			long datetime = f.lastModified();
 			Date d = new Date(datetime);
 			SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
 			dateString = sdf.format(d);
-			log.info("The file "+parentObjectName+" was last modified on: " + dateString);
+			log.info("The file " + parentObjectName + " was last modified on: "
+					+ dateString);
 		}
-		return "The file "+parentObjectName+" was last modified on: " + dateString;
+		return "The file " + parentObjectName + " was last modified on: "
+				+ dateString;
 	}
 
 	// to count a specific word
-	public static int countSpecificWord(String parentObjectName, String wordToBeCounted)
-			 {
-		File f = new File("testDir/" + parentObjectName); 
-		String line = ""; 
+	public static int countSpecificWord(String parentObjectName,
+			String wordToBeCounted) {
+		File f = new File("testDir/" + parentObjectName);
+		String line = "";
 		int count = 0;
-	
+
 		try {
 			if (f.exists()) {
 				FileReader fr = new FileReader(f);
@@ -643,45 +715,46 @@ public class FileActionUtils {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		log.info("the no of times the word "+wordToBeCounted+" appears is "+count);
+		log.info("the no of times the word " + wordToBeCounted + " appears is "
+				+ count);
 		return count;
 	}
 
-//	public static void sizeOf(String parentObjectName) {
-//		File f = new File(workingDirectory + parentObjectName);
-//		if (f.exists()) {
-//			long b = f.length();
-//			printSize(b);
-//			if (f.isDirectory()) {
-//				long bd = sizeofDirectory(f);
-//				printSize(bd);
-//			}
-//		} else {
-//			log.info("File doesn't exists.");
-//		}
-//
-//	}
+	// public static void sizeOf(String parentObjectName) {
+	// File f = new File(workingDirectory + parentObjectName);
+	// if (f.exists()) {
+	// long b = f.length();
+	// printSize(b);
+	// if (f.isDirectory()) {
+	// long bd = sizeofDirectory(f);
+	// printSize(bd);
+	// }
+	// } else {
+	// log.info("File doesn't exists.");
+	// }
+	//
+	// }
 	// finds the size of the file or folder
 	public static String sizeOf(String parentObjectName) {
 		File f;
-		long b,bd;
-		if(parentObjectName.equals(workingDirectory))
+		long b, bd;
+		if (parentObjectName.equals(workingDirectory))
 			f = new File(parentObjectName);
 		else
-			f = new File(workingDirectory + parentObjectName); 
+			f = new File(workingDirectory + parentObjectName);
 		if (f.exists()) {
 			if (f.isDirectory()) {
 				bd = sizeofDirectory(f);
 				return printSize(bd);
-			}else{
+			} else {
 				b = f.length();
 				return printSize(b);
 			}
 
 		} else {
-			return ("File doesn't exists."); 
+			return ("File doesn't exists.");
 		}
-//		return printSize(bd);
+		// return printSize(bd);
 
 	}
 
@@ -691,13 +764,13 @@ public class FileActionUtils {
 		long m = k / 1024;
 		long g = m / 1024;
 		if (b < 1024) {
-			return ("The size of the file is " + b + " Bytes");  
+			return ("The size of the file is " + b + " Bytes");
 		} else if (k < 1024) {
-			return("The size of the file is " + k + " KB");  
+			return ("The size of the file is " + k + " KB");
 		} else if (m < 1024) {
-			return ("The size of the file is " + m + " MB");  
+			return ("The size of the file is " + m + " MB");
 		} else {
-			return ("The size of the file is " + g + " GB");  
+			return ("The size of the file is " + g + " GB");
 		}
 	}
 
@@ -716,18 +789,17 @@ public class FileActionUtils {
 	}
 
 	// count
-	public static int countFiles(String parentObjectName){
+	public static int countFiles(String parentObjectName) {
 		File f;
-		if(parentObjectName.equals("testDir")){
-			f = new File(parentObjectName); 
-		}else{
+		if (parentObjectName.equals("testDir")) {
+			f = new File(parentObjectName);
+		} else {
 			f = new File("testDir/" + parentObjectName);
 		}
 		int c = countSubFiles(f);
-		log.info("count is"+c);
+		log.info("count is" + c);
 		return c;
 	}
-
 
 	private static int countSubFiles(File f) {
 		int count = 0;
@@ -743,10 +815,5 @@ public class FileActionUtils {
 		return count++;
 
 	}
-	
-	
-	
-	
-	
-	
+
 }

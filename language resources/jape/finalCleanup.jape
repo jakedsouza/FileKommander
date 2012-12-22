@@ -18,6 +18,7 @@ Rule: FinalCleanup
 			AnnotationSet phraseName = inputAS.get("phraseName", acq.firstNode().getOffset(), acq.lastNode().getOffset());
 			AnnotationSet quotedObject = inputAS.get("quotedObject", acq.firstNode().getOffset(), acq.lastNode().getOffset());
 			AnnotationSet positions = inputAS.get("position", acq.firstNode().getOffset(), acq.lastNode().getOffset());
+			AnnotationSet repitition = inputAS.get("repitition", acq.firstNode().getOffset(), acq.lastNode().getOffset());
 
 			String content = null ;
 			try{
@@ -43,6 +44,8 @@ Rule: FinalCleanup
 				newFeatures.put("content",content);
 			if(!positions.isEmpty())
 				newFeatures.put("position",positions);
+				if(!repitition.isEmpty())
+				newFeatures.put("repitition",repitition);
 			//annotations.add(matchedAnns.firstNode(),matchedAnns.lastNode(),"fileObjectRef", newFeatures);
 			outputAS.add(acq.firstNode(),acq.lastNode(),"all", newFeatures);
 			outputAS.removeAll(actions);
@@ -51,4 +54,5 @@ Rule: FinalCleanup
 			outputAS.removeAll(phraseName);
 			outputAS.removeAll(quotedObject);
 			outputAS.removeAll(positions);
+			outputAS.removeAll(repitition);
 		}

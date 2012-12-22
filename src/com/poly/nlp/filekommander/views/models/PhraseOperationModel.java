@@ -7,6 +7,8 @@ public class PhraseOperationModel implements GenericActionModel{
 	private HashMap<String, String> fileListData;
 	private int operationType;
 	private String repetition ; 
+	private String position; 
+
 	private String newPhrase ;
 	private String oldPhrase ;
 	
@@ -68,6 +70,20 @@ public class PhraseOperationModel implements GenericActionModel{
 	 */
 	public void setRepetition(String repetition) {
 		this.repetition = repetition;
+	}
+
+	/**
+	 * @return the position
+	 */
+	public String getPosition() {
+		return position;
+	}
+
+	/**
+	 * @param position the position to set
+	 */
+	public void setPosition(String position) {
+		this.position = position;
 	}
 	
 }

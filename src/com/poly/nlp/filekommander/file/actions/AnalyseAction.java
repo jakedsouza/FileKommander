@@ -188,10 +188,15 @@ public class AnalyseAction {
 			phraseOperationModel.setOperationType(FileKommander.REPLACE);
 		else if(actionType.equalsIgnoreCase("remove"))
 			phraseOperationModel.setOperationType(FileKommander.REMOVE);
-		
-		phraseOperationModel.setRepetition(getObjectNameFromAnnotation(featureMap, "position").get(0));
+		for (String fileName : fileNamesList) {
+			phraseOperationModel.add(fileName);
+		}
+	//	phraseOperationModel.setFileListData(fileNamesList);
+		phraseOperationModel.setRepetition(getObjectNameFromAnnotation(featureMap, "repitition").get(0));
 		//phraseOperationModel.set
-		String position = phraseOperationModel.getRepetition();
+		
+		String position = getObjectNameFromAnnotation(featureMap, "position").get(0);
+		phraseOperationModel.setPosition(position);
 		//String newPhrase = "";
 		//String oldPhrase = "";
 		
