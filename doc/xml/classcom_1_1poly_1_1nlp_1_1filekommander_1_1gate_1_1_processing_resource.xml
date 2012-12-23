@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="15" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="15" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="17" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a9d38f54ab731c5b496b0583bd8dcce9b" prot="public" static="no" mutable="no">
         <type>Map&lt; String, String &gt;</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="16" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="16" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="20" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="18" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="18" bodyend="18"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="22" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="22" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a33a54a56cbf52bbb61a67e8d33836956" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="20" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="20" bodyend="23"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="24" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="24" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1ab13448d5922bfe4ab13f5b17abe0a04f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="25" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="25" bodyend="27"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="29" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="29" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a3017ede3560bc652656ec2519543b572" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="29" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="29" bodyend="31"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="33" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="33" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1aecbfe57e11798241a78466ac8a97811b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -107,10 +107,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="33" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="33" bodyend="35"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="40" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="40" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a1edadf63e98f370d1a61c457ed433dbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -124,10 +125,18 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prClass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="37" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="37" bodyend="39"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="47" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="47" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1ac9133bcf39aaae347c94a4fd2c1a5bda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Map&lt; String, String &gt;</type>
@@ -140,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="41" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="41" bodyend="43"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="51" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="51" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1a8dff2c1014fc6fbc88474a80905e97ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -157,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="45" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="45" bodyend="47"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="55" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="55" bodyend="57"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -166,18 +175,18 @@
 <para><simplesect kind="author"><para>neha , jake </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="264">
+      <node id="293">
         <label>com.poly.nlp.filekommander.gate.ProcessingResource</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource"/>
-        <childnode refid="265" relation="usage">
+        <childnode refid="294" relation="usage">
           <edgelabel>params</edgelabel>
         </childnode>
       </node>
-      <node id="265">
+      <node id="294">
         <label>Map&lt; String, String &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="13" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="13" bodyend="51"/>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" line="13" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/gate/ProcessingResource.java" bodystart="13" bodyend="61"/>
     <listofallmembers>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1ab13448d5922bfe4ab13f5b17abe0a04f" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>addParam</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_processing_resource_1ac9133bcf39aaae347c94a4fd2c1a5bda" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::gate::ProcessingResource</scope><name>getParams</name></member>

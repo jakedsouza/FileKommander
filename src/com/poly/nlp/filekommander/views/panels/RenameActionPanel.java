@@ -19,6 +19,8 @@ public class RenameActionPanel extends AbstractFileFolderPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	/**
+	 */
 	private RenameModel renameModel;
 	private static final Logger log = Logger.getLogger(CreateActionPanel.class);
 
@@ -108,15 +110,14 @@ public class RenameActionPanel extends AbstractFileFolderPanel {
 	}
 
 	/**
-	 * @return the renameModel
+	 * @return  the renameModel
 	 */
 	public RenameModel getRenameModel() {
 		return renameModel;
 	}
 
 	/**
-	 * @param renameModel
-	 *            the renameModel to set
+	 * @param renameModel  the renameModel to set
 	 */
 	public void setRenameModel(RenameModel renameModel) {
 		this.renameModel = renameModel;

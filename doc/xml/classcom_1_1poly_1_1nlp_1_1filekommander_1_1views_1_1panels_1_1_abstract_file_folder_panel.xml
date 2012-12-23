@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="31" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="31" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="45" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="45" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="24" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="24" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="26" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a0edf5a396a146d218c4c1924636715d8" prot="private" static="no" mutable="no">
         <type>JLabel</type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="25" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="25" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="29" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1abd069d68f414efb9497427f7df50e7f5" prot="private" static="no" mutable="no">
         <type>JPanel</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="26" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="26" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="32" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a38866bb93300c6f6ce1597367f37510d" prot="private" static="no" mutable="no">
         <type>JPanel</type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="28" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="28" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="38" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a723f421b878bd4d7207a614376b03315" prot="private" static="no" mutable="no">
         <type>JButton</type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="29" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="29" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="41" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a3ae502ea80c38e1160cf63f3944638b2" prot="private" static="no" mutable="no">
         <type>JButton</type>
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="30" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="30" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="44" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="44" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="27" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="27" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="35" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="35" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -143,7 +143,7 @@
 <para>Create the panel. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="36" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="36" bodyend="119"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="50" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="50" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a26a9ad5640e6599d1df64ebf9b04041d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>abstract void</type>
@@ -163,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="121"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="135"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a0c413991b7c48758fec4d52d592065fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>abstract void</type>
@@ -192,7 +192,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="123"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="137"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1acdf1d105f87dc13772870234aea299d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>abstract void</type>
@@ -209,7 +209,7 @@
 <para>Update the panel before action is taken </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="125"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="139"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a2308ee0dc3eaea5b8b525fd02f60e000" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>abstract void</type>
@@ -226,7 +226,7 @@
 <para>updates the create panel after the action is run </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="130"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="144"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1addfb93f97c8eee6dd6131042c13d680b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -240,7 +240,7 @@
 <para>Resets the panel to default state </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="176" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="176" bodyend="179"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="190" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="190" bodyend="193"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a5604a494d100a6d78750a985cfe0b340" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>JLabel</type>
@@ -250,10 +250,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="180" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="180" bodyend="182"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="197" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="197" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1ab551ed106b53e4bfaddc438b918be406" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>JPanel</type>
@@ -263,10 +264,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="184" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="184" bodyend="186"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="204" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="204" bodyend="206"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a65b9fd5b80a3d0d19afa10cfbfa3304e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>JPanel</type>
@@ -276,10 +278,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="188" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="188" bodyend="190"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="211" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="211" bodyend="213"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a4fc9eabf9e39bb20440c92c83837b8fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>JButton</type>
@@ -289,10 +292,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="192" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="192" bodyend="194"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="218" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="218" bodyend="220"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1af76ef5d7d4e3c50bb2f2b3050d7863ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>JButton</type>
@@ -302,10 +306,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="196" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="196" bodyend="198"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="225" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="225" bodyend="227"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1aff16d223c2bdcd122ef6f74d1827f05f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -319,7 +324,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="203" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="203" bodyend="205"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="232" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="232" bodyend="234"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a25ffb42f58f97066dce7fe2d7597817e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -344,7 +349,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="210" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="210" bodyend="212"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="239" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="239" bodyend="241"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -371,7 +376,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="132" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="132" bodyend="156"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="146" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="146" bodyend="170"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a20975a6589130de0b99c932b695f7ce5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>JLabel</type>
@@ -392,7 +397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="158" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="158" bodyend="174"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="172" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="172" bodyend="188"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -475,7 +480,7 @@
         <label>JButton</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="21" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="21" bodyend="213"/>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" line="21" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/AbstractFileFolderPanel.java" bodystart="21" bodyend="242"/>
     <listofallmembers>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1aa6c3bb2b8c0c7e0a03d3869041136a36" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::AbstractFileFolderPanel</scope><name>AbstractFileFolderPanel</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel_1a26a9ad5640e6599d1df64ebf9b04041d" prot="public" virt="pure-virtual"><scope>com::poly::nlp::filekommander::views::panels::AbstractFileFolderPanel</scope><name>acceptButtonClickAction</name></member>

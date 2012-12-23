@@ -1,4 +1,4 @@
-.TH "com.poly.nlp.filekommander.views.models.PhraseOperationModel" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.TH "com.poly.nlp.filekommander.views.models.PhraseOperationModel" 3 "Sat Dec 22 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -29,6 +29,30 @@ Inherits \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.models\&.GenericActionMod
 .ti -1c
 .RI "void \fBsetOperationType\fP (int \fBoperationType\fP)"
 .br
+.ti -1c
+.RI "String \fBgetNewPhrase\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNewPhrase\fP (String \fBnewPhrase\fP)"
+.br
+.ti -1c
+.RI "String \fBgetOldPhrase\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetOldPhrase\fP (String \fBoldPhrase\fP)"
+.br
+.ti -1c
+.RI "String \fBgetRepetition\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRepetition\fP (String \fBrepetition\fP)"
+.br
+.ti -1c
+.RI "String \fBgetPosition\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPosition\fP (String \fBposition\fP)"
+.br
 .in -1c
 .SS "Private Attributes"
 
@@ -39,6 +63,18 @@ Inherits \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.models\&.GenericActionMod
 .ti -1c
 .RI "int \fBoperationType\fP"
 .br
+.ti -1c
+.RI "String \fBrepetition\fP"
+.br
+.ti -1c
+.RI "String \fBposition\fP"
+.br
+.ti -1c
+.RI "String \fBnewPhrase\fP"
+.br
+.ti -1c
+.RI "String \fBoldPhrase\fP"
+.br
 .in -1c
 .SH "Detailed Description"
 .PP 
@@ -48,11 +84,13 @@ Definition at line 5 of file PhraseOperationModel\&.java\&.
 .SS "com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.PhraseOperationModel ()"
 
 .PP
-Definition at line 10 of file PhraseOperationModel\&.java\&.
+Definition at line 27 of file PhraseOperationModel\&.java\&.
 .PP
 .nf
                                  {
         this\&.fileListData = new HashMap<String, String>() ;
+        newPhrase = '';
+        oldPhrase = '';
     }
 .fi
 .SH "Member Function Documentation"
@@ -60,7 +98,7 @@ Definition at line 10 of file PhraseOperationModel\&.java\&.
 .SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.add (Stringname)"
 
 .PP
-Definition at line 14 of file PhraseOperationModel\&.java\&.
+Definition at line 33 of file PhraseOperationModel\&.java\&.
 .PP
 .nf
                                  {
@@ -75,21 +113,83 @@ the fileListData
 .PP
 
 .PP
-Definition at line 21 of file PhraseOperationModel\&.java\&.
+Definition at line 40 of file PhraseOperationModel\&.java\&.
 .PP
 .nf
                                                      {
         return fileListData;
     }
 .fi
-.SS "int com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.getOperationType ()"
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.getNewPhrase ()"
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
 
 .PP
-Definition at line 32 of file PhraseOperationModel\&.java\&.
+Definition at line 68 of file PhraseOperationModel\&.java\&.
+.PP
+.nf
+                                 {
+        return newPhrase;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.getOldPhrase ()"
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line 82 of file PhraseOperationModel\&.java\&.
+.PP
+.nf
+                                 {
+        return oldPhrase;
+    }
+.fi
+.SS "int com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.getOperationType ()"
+\fBReturns:\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line 54 of file PhraseOperationModel\&.java\&.
 .PP
 .nf
                                   {
         return operationType;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.getPosition ()"
+\fBReturns:\fP
+.RS 4
+the position 
+.RE
+.PP
+
+.PP
+Definition at line 110 of file PhraseOperationModel\&.java\&.
+.PP
+.nf
+                                {
+        return position;
+    }
+.fi
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.getRepetition ()"
+\fBReturns:\fP
+.RS 4
+the repetition 
+.RE
+.PP
+
+.PP
+Definition at line 96 of file PhraseOperationModel\&.java\&.
+.PP
+.nf
+                                  {
+        return repetition;
     }
 .fi
 .SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.setFileListData (HashMap< String, String >fileListData)"
@@ -100,21 +200,86 @@ Definition at line 32 of file PhraseOperationModel\&.java\&.
 .PP
 
 .PP
-Definition at line 28 of file PhraseOperationModel\&.java\&.
+Definition at line 47 of file PhraseOperationModel\&.java\&.
 .PP
 .nf
                                                                       {
         this\&.fileListData = fileListData;
     }
 .fi
-.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.setOperationType (intoperationType)"
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.setNewPhrase (StringnewPhrase)"
+\fBParameters:\fP
+.RS 4
+\fInewPhrase\fP 
+.RE
+.PP
 
 .PP
-Definition at line 36 of file PhraseOperationModel\&.java\&.
+Definition at line 75 of file PhraseOperationModel\&.java\&.
+.PP
+.nf
+                                               {
+        this\&.newPhrase = newPhrase;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.setOldPhrase (StringoldPhrase)"
+\fBParameters:\fP
+.RS 4
+\fIoldPhrase\fP 
+.RE
+.PP
+
+.PP
+Definition at line 89 of file PhraseOperationModel\&.java\&.
+.PP
+.nf
+                                               {
+        this\&.oldPhrase = oldPhrase;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.setOperationType (intoperationType)"
+\fBParameters:\fP
+.RS 4
+\fIoperationType\fP 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file PhraseOperationModel\&.java\&.
 .PP
 .nf
                                                     {
         this\&.operationType = operationType;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.setPosition (Stringposition)"
+\fBParameters:\fP
+.RS 4
+\fIposition\fP the position to set 
+.RE
+.PP
+
+.PP
+Definition at line 117 of file PhraseOperationModel\&.java\&.
+.PP
+.nf
+                                             {
+        this\&.position = position;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.setRepetition (Stringrepetition)"
+\fBParameters:\fP
+.RS 4
+\fIrepetition\fP the repetition to set 
+.RE
+.PP
+
+.PP
+Definition at line 103 of file PhraseOperationModel\&.java\&.
+.PP
+.nf
+                                                 {
+        this\&.repetition = repetition;
     }
 .fi
 .SH "Member Data Documentation"
@@ -122,11 +287,27 @@ Definition at line 36 of file PhraseOperationModel\&.java\&.
 .SS "HashMap<String, String> com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.fileListData\fC [private]\fP"
 
 .PP
-Definition at line 7 of file PhraseOperationModel\&.java\&.
+Definition at line 9 of file PhraseOperationModel\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.newPhrase\fC [private]\fP"
+
+.PP
+Definition at line 22 of file PhraseOperationModel\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.oldPhrase\fC [private]\fP"
+
+.PP
+Definition at line 25 of file PhraseOperationModel\&.java\&.
 .SS "int com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.operationType\fC [private]\fP"
 
 .PP
-Definition at line 8 of file PhraseOperationModel\&.java\&.
+Definition at line 12 of file PhraseOperationModel\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.position\fC [private]\fP"
+
+.PP
+Definition at line 18 of file PhraseOperationModel\&.java\&.
+.SS "String com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.PhraseOperationModel\&.repetition\fC [private]\fP"
+
+.PP
+Definition at line 15 of file PhraseOperationModel\&.java\&.
 
 .SH "Author"
 .PP 

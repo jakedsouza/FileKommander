@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="36" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="36" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="39" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -187,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="37" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="37" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="42" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a862ebb1796e89d0d83d348797e7c6472" prot="private" static="no" mutable="no">
         <type>String</type>
@@ -200,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="38" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="38" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="45" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1addc44216b38536fd6b1ade38a6c2abdc" prot="private" static="no" mutable="no">
         <type>String</type>
@@ -213,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="39" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="39" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="48" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a2304e5f2732e0911893782dee866ee6d" prot="private" static="no" mutable="no">
         <type>String</type>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="40" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="40" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="51" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a5c3ff51dc7f068e9442618b7c2ab1810" prot="private" static="no" mutable="no">
         <type>SerialAnalyserController</type>
@@ -239,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="41" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="41" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="54" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a49132471a5825278776bfb4a84d8caa0" prot="private" static="no" mutable="no">
         <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder" kindref="compound">GateBuilder</ref></type>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="42" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="42" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="57" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a499151b0f39dbce7b82a811c8cf21402" prot="private" static="no" mutable="no">
         <type>String</type>
@@ -265,7 +265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="43" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="43" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="60" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="60" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -281,7 +281,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="48" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="48" bodyend="50"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="65" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="65" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a8481d268cb1ff04d24fd11e361ce0519" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -306,7 +306,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="56" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="56" bodyend="58"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="72" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="72" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a3ae2974328caa23267d68954fa14c817" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -320,7 +320,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="63" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="63" bodyend="65"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="79" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="79" bodyend="81"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a1a5a67f1f2fd6c50682861ae3a2c445c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -345,7 +345,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="71" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="71" bodyend="73"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="86" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="86" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1afab05cfab65d8962a2aac31e739a5fb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -359,7 +359,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="78" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="78" bodyend="80"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="93" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="93" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a84ad78f1592cfb94ab5199aa4f7fa29b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -384,7 +384,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="86" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="86" bodyend="88"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="100" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="100" bodyend="102"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a563b4c00019c0e56ffe7b1b081e3dc46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder" kindref="compound">GateBuilder</ref></type>
@@ -398,7 +398,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="93" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="93" bodyend="95"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="107" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="107" bodyend="109"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a88ea9f175d806bf7ef4a0ed5e2fe3649" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -423,7 +423,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="101" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="101" bodyend="103"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="114" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="114" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1af3c32d49ecdde2b9ee91820a312005a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>SerialAnalyserController</type>
@@ -437,7 +437,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="108" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="108" bodyend="110"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="121" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="121" bodyend="123"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a806dc8c2cb8521b9d76fb9858ec65085" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -462,7 +462,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="116" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="116" bodyend="118"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="128" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="128" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a423e5f5fb6b4f6c36f04d1e91de943e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder" kindref="compound">GateBuilder</ref></type>
@@ -476,7 +476,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="120" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="120" bodyend="126"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="132" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="132" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1aab36d3608bc89c1e99b3db5483641415" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>SerialAnalyserController</type>
@@ -490,7 +490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="129" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="128" bodyend="137"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="141" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="140" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a89817ce8554641ad3cb7c003533a335d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -504,7 +504,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="180" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="180" bodyend="182"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="192" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="192" bodyend="194"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1adf1a1371e27da05aa4f5125b6a3aa33c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -529,7 +529,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="188" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="188" bodyend="190"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="199" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="199" bodyend="201"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1abc3cb01bcd0a28c9e690249a8caf816b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -543,7 +543,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="195" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="195" bodyend="197"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="206" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="206" bodyend="208"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a0b72ce095e3d98ae752e6ab9b0b8a1d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -568,7 +568,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="203" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="203" bodyend="205"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="213" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="213" bodyend="215"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a1cf5ac4a3ebfd468ca38656a9d1bd0b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>AnnotationSet</type>
@@ -585,7 +585,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="207" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="207" bodyend="233"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="217" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="217" bodyend="243"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a66c1bfa4914734730a4b47178244c280" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -598,7 +598,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="236" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="236" bodyend="273"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="246" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="246" bodyend="283"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -617,7 +617,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="139" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="139" bodyend="175"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="151" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="151" bodyend="187"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -625,65 +625,65 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="86">
+      <node id="106">
         <label>com.poly.nlp.filekommander.FileKommander</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander"/>
-        <childnode refid="87" relation="public-inheritance">
+        <childnode refid="107" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="87">
+      <node id="107">
         <label>Runnable</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="91">
+      <node id="111">
         <label>com.poly.nlp.filekommander.gate.GateBuilder</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder"/>
-        <childnode refid="90" relation="usage">
+        <childnode refid="110" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
-        <childnode refid="92" relation="usage">
+        <childnode refid="112" relation="usage">
           <edgelabel>prList</edgelabel>
         </childnode>
-        <childnode refid="93" relation="usage">
+        <childnode refid="113" relation="usage">
           <edgelabel>annieHome</edgelabel>
         </childnode>
-        <childnode refid="94" relation="usage">
+        <childnode refid="114" relation="usage">
           <edgelabel>annieController</edgelabel>
         </childnode>
       </node>
-      <node id="88">
+      <node id="108">
         <label>com.poly.nlp.filekommander.FileKommander</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander"/>
-        <childnode refid="89" relation="public-inheritance">
+        <childnode refid="109" relation="public-inheritance">
         </childnode>
-        <childnode refid="90" relation="usage">
+        <childnode refid="110" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
-        <childnode refid="91" relation="usage">
+        <childnode refid="111" relation="usage">
           <edgelabel>gateBuilder</edgelabel>
         </childnode>
-        <childnode refid="94" relation="usage">
+        <childnode refid="114" relation="usage">
           <edgelabel>annie</edgelabel>
         </childnode>
       </node>
-      <node id="92">
+      <node id="112">
         <label>ArrayList&lt; ProcessingResource &gt;</label>
       </node>
-      <node id="94">
+      <node id="114">
         <label>SerialAnalyserController</label>
       </node>
-      <node id="90">
+      <node id="110">
         <label>Logger</label>
       </node>
-      <node id="89">
+      <node id="109">
         <label>Runnable</label>
       </node>
-      <node id="93">
+      <node id="113">
         <label>URI</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="24" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="24" bodyend="274"/>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" line="24" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/FileKommander.java" bodystart="24" bodyend="284"/>
     <listofallmembers>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a1cf5ac4a3ebfd468ca38656a9d1bd0b9" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommander</scope><name>analyseText</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a5c3ff51dc7f068e9442618b7c2ab1810" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::FileKommander</scope><name>annie</name></member>

@@ -107,36 +107,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="76">
+      <node id="77">
         <label>JPanel</label>
       </node>
-      <node id="74">
+      <node id="75">
         <label>com.poly.nlp.filekommander.views.panels.EmptyActionPanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel"/>
-        <childnode refid="75" relation="public-inheritance">
+        <childnode refid="76" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="75">
+      <node id="76">
         <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
-        <childnode refid="76" relation="public-inheritance">
+        <childnode refid="77" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="79">
+      <node id="80">
         <label>JPanel</label>
       </node>
-      <node id="77">
+      <node id="78">
         <label>com.poly.nlp.filekommander.views.panels.EmptyActionPanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel"/>
-        <childnode refid="78" relation="public-inheritance">
+        <childnode refid="79" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="78">
+      <node id="79">
         <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
-        <childnode refid="79" relation="public-inheritance">
+        <childnode refid="80" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

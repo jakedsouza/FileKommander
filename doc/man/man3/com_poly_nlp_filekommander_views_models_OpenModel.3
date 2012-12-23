@@ -1,0 +1,210 @@
+.TH "com.poly.nlp.filekommander.views.models.OpenModel" 3 "Sat Dec 22 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.models.OpenModel \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.models\&.GenericActionModel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOpenModel\fP ()"
+.br
+.ti -1c
+.RI "void \fBadd\fP (String name, int type)"
+.br
+.ti -1c
+.RI "HashMap< String, String > \fBgetFileListData\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFileListData\fP (HashMap< String, String > \fBfileListData\fP)"
+.br
+.ti -1c
+.RI "HashMap< String, String > \fBgetFolderListData\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFolderListData\fP (HashMap< String, String > \fBfolderListData\fP)"
+.br
+.ti -1c
+.RI "boolean \fBisModelRun\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetModelRun\fP (boolean \fBisModelRun\fP)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "boolean \fBisModelRun\fP"
+.br
+.ti -1c
+.RI "HashMap< String, String > \fBfileListData\fP"
+.br
+.ti -1c
+.RI "HashMap< String, String > \fBfolderListData\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Model to hold information about create action \&.
+.PP
+\fBAuthor:\fP
+.RS 4
+jake 
+.RE
+.PP
+
+.PP
+Definition at line 13 of file OpenModel\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.OpenModel\&.OpenModel ()"
+Create an empty model 
+.PP
+Definition at line 31 of file OpenModel\&.java\&.
+.PP
+.nf
+                       {
+        this\&.fileListData = new HashMap<String, String>();
+        this\&.folderListData = new HashMap<String, String>();
+        this\&.isModelRun = false ;
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.OpenModel\&.add (Stringname, inttype)"
+Add a new file/folder to the model 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIname\fP 
+.br
+\fItype\fP 
+.RE
+.PP
+
+.PP
+Definition at line 42 of file OpenModel\&.java\&.
+.PP
+.nf
+                                           {
+        if (type == FileKommander\&.DIRECTORY) {
+            this\&.folderListData\&.put(name, '');
+        } else if (type == FileKommander\&.FILE) {
+            this\&.fileListData\&.put(name, '');
+        }
+    }
+.fi
+.SS "HashMap<String, String> com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.OpenModel\&.getFileListData ()"
+\fBReturns:\fP
+.RS 4
+the fileListData 
+.RE
+.PP
+
+.PP
+Definition at line 53 of file OpenModel\&.java\&.
+.PP
+.nf
+                                                     {
+        return fileListData;
+    }
+.fi
+.SS "HashMap<String, String> com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.OpenModel\&.getFolderListData ()"
+\fBReturns:\fP
+.RS 4
+the folderListData 
+.RE
+.PP
+
+.PP
+Definition at line 68 of file OpenModel\&.java\&.
+.PP
+.nf
+                                                       {
+        return folderListData;
+    }
+.fi
+.SS "boolean com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.OpenModel\&.isModelRun ()"
+\fBReturns:\fP
+.RS 4
+the isModelRun 
+.RE
+.PP
+
+.PP
+Definition at line 83 of file OpenModel\&.java\&.
+.PP
+.nf
+                                {
+        return isModelRun;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.OpenModel\&.setFileListData (HashMap< String, String >fileListData)"
+\fBParameters:\fP
+.RS 4
+\fIfileListData\fP the fileListData to set 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file OpenModel\&.java\&.
+.PP
+.nf
+                                                                      {
+        this\&.fileListData = fileListData;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.OpenModel\&.setFolderListData (HashMap< String, String >folderListData)"
+\fBParameters:\fP
+.RS 4
+\fIfolderListData\fP the folderListData to set 
+.RE
+.PP
+
+.PP
+Definition at line 76 of file OpenModel\&.java\&.
+.PP
+.nf
+                                                                          {
+        this\&.folderListData = folderListData;
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.OpenModel\&.setModelRun (booleanisModelRun)"
+\fBParameters:\fP
+.RS 4
+\fIisModelRun\fP the isModelRun to set 
+.RE
+.PP
+
+.PP
+Definition at line 91 of file OpenModel\&.java\&.
+.PP
+.nf
+                                                {
+        this\&.isModelRun = isModelRun;
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "HashMap<String, String> com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.OpenModel\&.fileListData\fC [private]\fP"
+
+.PP
+Definition at line 22 of file OpenModel\&.java\&.
+.SS "HashMap<String, String> com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.OpenModel\&.folderListData\fC [private]\fP"
+
+.PP
+Definition at line 26 of file OpenModel\&.java\&.
+.SS "boolean com\&.poly\&.nlp\&.filekommander\&.views\&.models\&.OpenModel\&.isModelRun\fC [private]\fP"
+
+.PP
+Definition at line 17 of file OpenModel\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

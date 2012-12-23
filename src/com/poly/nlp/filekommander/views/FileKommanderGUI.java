@@ -188,9 +188,17 @@ public class FileKommanderGUI extends javax.swing.JFrame {
         
     }
     // Variables declaration - do not modify
+    /**
+	 */
     private javax.swing.JButton jButton1;
+    /**
+	 */
     private javax.swing.JLabel jLabel2;
+    /**
+	 */
     private javax.swing.JTextField jTextField1;
+    /**
+	 */
     private javax.swing.JTextField jTextField2;
     // End of variables declaration
 }

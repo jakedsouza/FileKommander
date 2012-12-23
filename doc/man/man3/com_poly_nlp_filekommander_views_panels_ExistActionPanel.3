@@ -1,0 +1,172 @@
+.TH "com.poly.nlp.filekommander.views.panels.ExistActionPanel" 3 "Sat Dec 22 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.poly.nlp.filekommander.views.panels.ExistActionPanel \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBExistActionPanel\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdatePanelData\fP (\fBGenericActionModel\fP \fBmodel\fP)"
+.br
+.ti -1c
+.RI "void \fBupdatePanelData\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdatePanelDataAfterAction\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBExistsModel\fP \fBmodel\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final long \fBserialVersionUID\fP = 1L"
+.br
+.ti -1c
+.RI "static final Logger \fBlog\fP = Logger\&.getLogger(ExistActionPanel\&.class)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line 29 of file ExistActionPanel\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.ExistActionPanel\&.ExistActionPanel ()"
+Create the panel\&. 
+.PP
+Definition at line 40 of file ExistActionPanel\&.java\&.
+.PP
+.nf
+                              {
+        super();    
+        this\&.model = new ExistsModel();
+    }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.ExistActionPanel\&.updatePanelData (\fBGenericActionModel\fPactionModel)\fC [virtual]\fP"
+Update the panel before action is taken using the given action model
+.PP
+\fBParameters:\fP
+.RS 4
+\fIactionModel\fP 
+.RE
+.PP
+
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP\&.
+.PP
+Definition at line 45 of file ExistActionPanel\&.java\&.
+.PP
+.nf
+                                                          {
+        if(model instanceof ExistsModel){
+        this\&.model = (ExistsModel)model; 
+        updatePanelData();
+        }else{
+            log\&.error('Wrong class');
+        }
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.ExistActionPanel\&.updatePanelData ()\fC [virtual]\fP"
+Update the panel before action is taken 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP\&.
+.PP
+Definition at line 54 of file ExistActionPanel\&.java\&.
+.PP
+.nf
+                                  {
+        getMessagePanel()\&.removeAll();
+        model = (ExistsModel) CallAction\&.callAction(model);
+        HashMap<String, String> fileListData = this\&.model\&.getFileListData();
+        HashMap<String, String> folderListData= this\&.model\&.getFolderListData();
+        
+        if (fileListData\&.size() > 1) {
+            setActionString('The details for the following files/folders will be shown');
+        } else if (fileListData\&.size() == 0) {
+            setActionString('');
+        } else {
+            setActionString('The details for the following file/folder will be shown');
+        }
+        getActionLabel()\&.setText(getActionString());
+
+        
+        Set<String> col = fileListData\&.keySet();
+        Iterator<String> iterator = col\&.iterator();
+        
+        while(iterator\&.hasNext())
+        {   
+            String key = iterator\&.next();
+            String value= fileListData\&.get(key);
+            
+            String [] data = new String[2];
+            data[0] = key;
+            data[0]= value;
+            getMessagePanel()\&.add(createDefaultMessageRow(data));
+        }       
+        
+        Set<String> folder = folderListData\&.keySet();
+        Iterator<String> iterator2 = folder\&.iterator();
+        
+        while(iterator2\&.hasNext())
+        {   
+            String key = iterator2\&.next();
+            String value= folderListData\&.get(key);
+            
+            String [] data = new String[2];
+            data[0] = key;
+            data[0]= value;
+            getMessagePanel()\&.add(createDefaultMessageRow(data));
+        }
+        this\&.paintAll(this\&.getGraphics());        
+
+    }
+.fi
+.SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.ExistActionPanel\&.updatePanelDataAfterAction ()\fC [virtual]\fP"
+updates the create panel after the action is run 
+.PP
+Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP\&.
+.PP
+Definition at line 102 of file ExistActionPanel\&.java\&.
+.PP
+.nf
+                                             {
+        // TODO Auto-generated method stub
+        
+    }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "final Logger com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.ExistActionPanel\&.log = Logger\&.getLogger(ExistActionPanel\&.class)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 35 of file ExistActionPanel\&.java\&.
+.SS "\fBExistsModel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.ExistActionPanel\&.model\fC [private]\fP"
+
+.PP
+Definition at line 34 of file ExistActionPanel\&.java\&.
+.SS "final long com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.ExistActionPanel\&.serialVersionUID = 1L\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 31 of file ExistActionPanel\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for FileKommander from the source code\&.

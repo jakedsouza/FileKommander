@@ -1,4 +1,4 @@
-.TH "com.poly.nlp.filekommander.views.panels.PhraseOperationActionPanel" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.TH "com.poly.nlp.filekommander.views.panels.PhraseOperationActionPanel" 3 "Sat Dec 22 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -41,51 +41,20 @@ Inherits \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessageP
 .RI "static final Logger \fBlog\fP = Logger\&.getLogger(PhraseOperationActionPanel\&.class)"
 .br
 .in -1c
+.SS "Additional Inherited Members"
 .SH "Detailed Description"
 .PP 
-Definition at line 25 of file PhraseOperationActionPanel\&.java\&.
+Definition at line 26 of file PhraseOperationActionPanel\&.java\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\&.PhraseOperationActionPanel ()"
 Create the panel\&. 
 .PP
-Definition at line 34 of file PhraseOperationActionPanel\&.java\&.
+Definition at line 37 of file PhraseOperationActionPanel\&.java\&.
 .PP
 .nf
                                         {
         super();
-//      SpringLayout springLayout = new SpringLayout();
-//      setLayout(springLayout);
-//
-//      setMessagePanel(new JPanel());
-//      springLayout\&.putConstraint(SpringLayout\&.NORTH, getMessagePanel(), 0, SpringLayout\&.NORTH, this);
-//      springLayout\&.putConstraint(SpringLayout\&.EAST, getMessagePanel(), 0,
-//              SpringLayout\&.EAST, this);
-//      getMessagePanel()\&.setAutoscrolls(true);
-//      add(getMessagePanel());
-//      getMessagePanel()\&.setLayout(null);
-//          setCommandPanel(new JPanel());
-//          springLayout\&.putConstraint(SpringLayout\&.WEST, getMessagePanel(), 0, SpringLayout\&.WEST, getCommandPanel());
-//          springLayout\&.putConstraint(SpringLayout\&.SOUTH, getMessagePanel(), -6, SpringLayout\&.NORTH, getCommandPanel());
-//              
-//              setTable(new JTable());
-//              getTable()\&.setBorder(new BevelBorder(BevelBorder\&.RAISED, null, null, null, null));
-//              getTable()\&.setBounds(386, 217, -324, -173);
-//              getMessagePanel()\&.add(getTable());
-//              springLayout\&.putConstraint(SpringLayout\&.WEST, getCommandPanel(), 0, SpringLayout\&.WEST, this);
-//              springLayout\&.putConstraint(SpringLayout\&.SOUTH, getCommandPanel(), 0, SpringLayout\&.SOUTH, this);
-//              springLayout\&.putConstraint(SpringLayout\&.EAST, getCommandPanel(), 0, SpringLayout\&.EAST, this);
-//              springLayout\&.putConstraint(SpringLayout\&.NORTH, getCommandPanel(), -40, SpringLayout\&.SOUTH, this);
-//              add(getCommandPanel());
-//              
-//              setBtnClear(new JButton(''));
-//              getBtnClear()\&.setFocusPainted(false);
-//              getBtnClear()\&.setMargin(new Insets(0, 0, 0, 0));
-//              getBtnClear()\&.setContentAreaFilled(false);
-//              getBtnClear()\&.setBorderPainted(true);
-//              getBtnClear()\&.setOpaque(true);
-//              getBtnClear()\&.setIcon(new ImageIcon(CreateActionPanel\&.class\&.getResource('/com/poly/nlp/filekommander/views/icon/reject\&.png')));
-//              getCommandPanel()\&.add(getBtnClear());
     }
 .fi
 .SH "Member Function Documentation"
@@ -102,7 +71,7 @@ Update the panel before action is taken using the given action model
 .PP
 Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP\&.
 .PP
-Definition at line 70 of file PhraseOperationActionPanel\&.java\&.
+Definition at line 41 of file PhraseOperationActionPanel\&.java\&.
 .PP
 .nf
                                                           {
@@ -119,11 +88,12 @@ Update the panel before action is taken
 .PP
 Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP\&.
 .PP
-Definition at line 79 of file PhraseOperationActionPanel\&.java\&.
+Definition at line 50 of file PhraseOperationActionPanel\&.java\&.
 .PP
 .nf
                                   {
         getMessagePanel()\&.removeAll();
+        model = (PhraseOperationModel) CallAction\&.callAction(model);
         HashMap<String, String> fileListData = this\&.model\&.getFileListData();
         
         if (fileListData\&.size() > 1) {
@@ -133,10 +103,6 @@ Definition at line 79 of file PhraseOperationActionPanel\&.java\&.
         } else {
             setActionString('The details for the following file/folder will be shown');
         }
-        // model done twice TODO remove 
-        DefaultTableModel model = new DefaultTableModel();     
-        setTable(new JTable(model));     
-        getTable()\&.setModel(new DefaultTableModel());    
         
         Set<String> keySet = fileListData\&.keySet();
         Iterator<String> iterator = keySet\&.iterator();
@@ -149,9 +115,11 @@ Definition at line 79 of file PhraseOperationActionPanel\&.java\&.
             String [] data = new String[2];
             data[0] = key;
             data[1]= value;
-            model\&.addRow(data); //Adds Row to JTable
+            getMessagePanel()\&.add(createDefaultMessageRow(data));
         }
         getMessagePanel()\&.setVisible(true);
+        this\&.paintAll(this\&.getGraphics());        
+
     }
 .fi
 .SS "void com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\&.updatePanelDataAfterAction ()\fC [virtual]\fP"
@@ -159,7 +127,7 @@ updates the create panel after the action is run
 .PP
 Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractMessagePanel\fP\&.
 .PP
-Definition at line 120 of file PhraseOperationActionPanel\&.java\&.
+Definition at line 90 of file PhraseOperationActionPanel\&.java\&.
 .PP
 .nf
                                              {
@@ -172,15 +140,15 @@ Definition at line 120 of file PhraseOperationActionPanel\&.java\&.
 .SS "final Logger com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\&.log = Logger\&.getLogger(PhraseOperationActionPanel\&.class)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 29 of file PhraseOperationActionPanel\&.java\&.
+Definition at line 32 of file PhraseOperationActionPanel\&.java\&.
 .SS "\fBPhraseOperationModel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\&.model\fC [private]\fP"
 
 .PP
-Definition at line 28 of file PhraseOperationActionPanel\&.java\&.
+Definition at line 31 of file PhraseOperationActionPanel\&.java\&.
 .SS "final long com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.PhraseOperationActionPanel\&.serialVersionUID = 1L\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 27 of file PhraseOperationActionPanel\&.java\&.
+Definition at line 28 of file PhraseOperationActionPanel\&.java\&.
 
 .SH "Author"
 .PP 

@@ -37,84 +37,93 @@ public class FileKommander implements Runnable {
 	
 	
 	public static String newline = ("\n");
+	/**
+	 */
 	private String gateHome;
+	/**
+	 */
 	private String workingDirectory;
+	/**
+	 */
 	private String gazetteerFilePath;
+	/**
+	 */
 	private String japeFilePath;
+	/**
+	 */
 	private SerialAnalyserController annie;
+	/**
+	 */
 	private GateBuilder gateBuilder;
+	/**
+	 */
 	private String userInputText;
 
 	/**
-	 * @return the gateHome
+	 * @return  the gateHome
 	 */
 	public String getGateHome() {
 		return gateHome;
 	}
 
 	/**
-	 * @param gateHome
-	 *            the gateHome to set
+	 * @param gateHome  the gateHome to set
 	 */
 	public void setGateHome(String gateHome) {
 		this.gateHome = gateHome;
 	}
 
 	/**
-	 * @return the gazetteerFilePath
+	 * @return  the gazetteerFilePath
 	 */
 	public String getGazetteerFilePath() {
 		return gazetteerFilePath;
 	}
 
 	/**
-	 * @param gazetteerFilePath
-	 *            the gazetteerFilePath to set
+	 * @param gazetteerFilePath  the gazetteerFilePath to set
 	 */
 	public void setGazetteerFilePath(String gazetteerFilePath) {
 		this.gazetteerFilePath = gazetteerFilePath;
 	}
 
 	/**
-	 * @return the japeFilePath
+	 * @return  the japeFilePath
 	 */
 	public String getJapeFilePath() {
 		return japeFilePath;
 	}
 
 	/**
-	 * @param japeFilePath
-	 *            the japeFilePath to set
+	 * @param japeFilePath  the japeFilePath to set
 	 */
 	public void setJapeFilePath(String japeFilePath) {
 		this.japeFilePath = japeFilePath;
 	}
 
 	/**
-	 * @return the gateBuilder
+	 * @return  the gateBuilder
 	 */
 	public GateBuilder getGateBuilder() {
 		return gateBuilder;
 	}
 
 	/**
-	 * @param gateBuilder
-	 *            the gateBuilder to set
+	 * @param gateBuilder  the gateBuilder to set
 	 */
 	public void setGateBuilder(GateBuilder gateBuilder) {
 		this.gateBuilder = gateBuilder;
 	}
 
 	/**
-	 * @return the annie
+	 * @return  the annie
 	 */
 	public SerialAnalyserController getAnnie() {
 		return annie;
 	}
 
 	/**
-	 * @param annie
-	 *            the annie to set
+	 * @param annie  the annie to set
 	 */
 	public void setAnnie(SerialAnalyserController annie) {
 		this.annie = annie;
@@ -178,30 +187,28 @@ public class FileKommander implements Runnable {
 	}
 
 	/**
-	 * @return the userInputText
+	 * @return  the userInputText
 	 */
 	public String getUserInputText() {
 		return userInputText;
 	}
 
 	/**
-	 * @param userInputText
-	 *            the userInputText to set
+	 * @param userInputText  the userInputText to set
 	 */
 	public void setUserInputText(String userInputText) {
 		this.userInputText = userInputText;
 	}
 
 	/**
-	 * @return the workingDirectory
+	 * @return  the workingDirectory
 	 */
 	public String getWorkingDirectory() {
 		return workingDirectory;
 	}
 
 	/**
-	 * @param workingDirectory
-	 *            the workingDirectory to set
+	 * @param workingDirectory  the workingDirectory to set
 	 */
 	public void setWorkingDirectory(String workingDirectory) {
 		this.workingDirectory = workingDirectory;

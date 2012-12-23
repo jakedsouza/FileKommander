@@ -30,6 +30,8 @@ import javax.swing.table.DefaultTableModel;
 public class OpenActionPanel extends AbstractMessagePanel {
 
 	private static final long serialVersionUID = 1L;
+    /**
+	 */
     private OpenModel model ;
 	private static final Logger log = Logger.getLogger(OpenActionPanel.class);
 

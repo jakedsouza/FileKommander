@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" line="33" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" bodystart="33" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" line="35" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" bodystart="35" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -61,7 +61,7 @@
 <para>Create the dialog. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" line="38" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" bodystart="38" bodyend="133"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" line="40" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" bodystart="40" bodyend="135"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -102,7 +102,7 @@
         <label>JDialog</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" line="25" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" bodystart="25" bodyend="134"/>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" line="25" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/AboutFileKommander.java" bodystart="25" bodyend="136"/>
     <listofallmembers>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1a6c6d915be3b14f24908a482834ad6b7a" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::AboutFileKommander</scope><name>AboutFileKommander</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_about_file_kommander_1ad925c308e870c6d3789d72cdec139c93" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::AboutFileKommander</scope><name>contentPanel</name></member>

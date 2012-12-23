@@ -4,6 +4,8 @@
     <compoundname>com::poly::nlp::filekommander::views::models::GenericActionModel</compoundname>
     <derivedcompoundref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.models.CreateModel</derivedcompoundref>
     <derivedcompoundref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.models.DeleteModel</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_exists_model" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.models.ExistsModel</derivedcompoundref>
+    <derivedcompoundref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.models.OpenModel</derivedcompoundref>
     <derivedcompoundref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.models.PhraseOperationModel</derivedcompoundref>
     <derivedcompoundref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.models.RenameModel</derivedcompoundref>
     <derivedcompoundref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model" prot="public" virt="non-virtual">com.poly.nlp.filekommander.views.models.StatsModel</derivedcompoundref>
@@ -12,38 +14,50 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="193">
+      <node id="221">
+        <label>com.poly.nlp.filekommander.views.models.ExistsModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_exists_model"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>com.poly.nlp.filekommander.views.models.OpenModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="218">
         <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
         <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
       </node>
-      <node id="194">
+      <node id="219">
         <label>com.poly.nlp.filekommander.views.models.CreateModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model"/>
-        <childnode refid="193" relation="public-inheritance">
+        <childnode refid="218" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="197">
+      <node id="224">
         <label>com.poly.nlp.filekommander.views.models.RenameModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model"/>
-        <childnode refid="193" relation="public-inheritance">
+        <childnode refid="218" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="195">
+      <node id="220">
         <label>com.poly.nlp.filekommander.views.models.DeleteModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model"/>
-        <childnode refid="193" relation="public-inheritance">
+        <childnode refid="218" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="196">
+      <node id="223">
         <label>com.poly.nlp.filekommander.views.models.PhraseOperationModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model"/>
-        <childnode refid="193" relation="public-inheritance">
+        <childnode refid="218" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="198">
+      <node id="225">
         <label>com.poly.nlp.filekommander.views.models.StatsModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model"/>
-        <childnode refid="193" relation="public-inheritance">
+        <childnode refid="218" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

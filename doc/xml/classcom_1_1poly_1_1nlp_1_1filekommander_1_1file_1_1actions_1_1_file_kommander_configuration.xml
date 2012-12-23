@@ -130,14 +130,14 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="96">
+      <node id="116">
         <label>com.poly.nlp.filekommander.file.actions.FileKommanderConfiguration</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_kommander_configuration"/>
-        <childnode refid="97" relation="usage">
+        <childnode refid="117" relation="usage">
           <edgelabel>configuration</edgelabel>
         </childnode>
       </node>
-      <node id="97">
+      <node id="117">
         <label>Configuration</label>
       </node>
     </collaborationgraph>

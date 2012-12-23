@@ -48,36 +48,88 @@ import javax.swing.JLabel;
 
 public class FileKommanderGUIV2 {
 
+	/**
+	 */
 	private JFrame frmFileKommander;
+	/**
+	 */
 	private JTextField inputTextFld;
+	/**
+	 */
 	private JProgressBar progressBar;
+	/**
+	 */
 	private JButton runBtn;
+	/**
+	 */
 	private JPanel informatinDisplayPanel;
 
+	/**
+	 */
 	private String CREATEPANEL = "CREATEPANEL";
+	/**
+	 */
 	private String DELETEPANEL = "DELETEPANEL";
+	/**
+	 */
 	private String RENAMEPANEL = "RENAMEPANEL";
+	/**
+	 */
 	private String STATSPANEL = "STATSPANEL";
+	/**
+	 */
 	private String EXISTSPANEL = "EXISTSPANEL";
+	/**
+	 */
 	private String OPENPANEL = "OPENPANEL";
+	/**
+	 */
 	private String PHRASEPANEL= "PHRASEPANEL";
 
 
+	/**
+	 */
 	private String EMPTYPANEL = "EMPTYPANEL";
+	/**
+	 */
 	private CreateActionPanel createActionPanel;
+	/**
+	 */
 	private DeleteActionPanel deleteActionPanel;
+	/**
+	 */
 	private RenameActionPanel renameActionPanel;
+	/**
+	 */
 	private StatsActionPanel statsActionPanel;
+	/**
+	 */
 	private ExistActionPanel existActionPanel ;
+	/**
+	 */
 	private OpenActionPanel openActionPanel ;
+	/**
+	 */
 	private PhraseOperationActionPanel phraseActionPanel;
+	/**
+	 */
 	private EmptyActionPanel emptyActionPanel;
 	
+	/**
+	 */
 	private JToggleButton micBtn;
 
+	/**
+	 */
 	protected Microphone microphone = new Microphone(AudioFileFormat.Type.WAVE);
+	/**
+	 */
 	protected String file = "tmp";
+	/**
+	 */
 	private FileKommanderMenu menuBar;
+	/**
+	 */
 	private JLabel errorMessageLabel;
 
 	/**
@@ -92,6 +144,7 @@ public class FileKommanderGUIV2 {
 	 */
 	private void initialize() {
 		frmFileKommander = new JFrame();
+		frmFileKommander.setAlwaysOnTop(true);
 		frmFileKommander.setTitle("File Kommander");
 		frmFileKommander.setResizable(false);
 		frmFileKommander.setBounds(100, 100, 644, 467);
@@ -281,34 +334,58 @@ public class FileKommanderGUIV2 {
 		showLayout(EMPTYPANEL);
 	}
 
+	/**
+	 * @return
+	 */
 	public synchronized JProgressBar getProgressBar() {
 		return progressBar;
 	}
 
+	/**
+	 * @return
+	 */
 	public JTextField getInputTextFld() {
 		return inputTextFld;
 	}
 
+	/**
+	 * @return
+	 */
 	public JButton getRunBtn() {
 		return runBtn;
 	}
 
+	/**
+	 * @return
+	 */
 	public JFrame getFrmFileKommander() {
 		return frmFileKommander;
 	}
 
+	/**
+	 * @return
+	 */
 	public JPanel getInformatinDisplayPanel() {
 		return informatinDisplayPanel;
 	}
 
+	/**
+	 * @return
+	 */
 	public CreateActionPanel getCreateActionPanel() {
 		return createActionPanel;
 	}
 
+	/**
+	 * @return
+	 */
 	public DeleteActionPanel getDeleteActionPanel() {
 		return deleteActionPanel;
 	}
 
+	/**
+	 * @return
+	 */
 	public JToggleButton getMicBtn() {
 		return micBtn;
 	}
@@ -334,9 +411,15 @@ public class FileKommanderGUIV2 {
 		}
 	}
 	
+	/**
+	 * @return
+	 */
 	public JLabel getErrorMessageLabel() {
 		return errorMessageLabel;
 	}
+	/**
+	 * @return
+	 */
 	public RenameActionPanel getRenameActionPanel() {
 		return renameActionPanel;
 	}

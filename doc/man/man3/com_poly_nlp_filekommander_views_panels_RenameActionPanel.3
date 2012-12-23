@@ -1,4 +1,4 @@
-.TH "com.poly.nlp.filekommander.views.panels.RenameActionPanel" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.TH "com.poly.nlp.filekommander.views.panels.RenameActionPanel" 3 "Sat Dec 22 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -58,7 +58,7 @@ Definition at line 16 of file RenameActionPanel\&.java\&.
 .PP
 Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP\&.
 .PP
-Definition at line 26 of file RenameActionPanel\&.java\&.
+Definition at line 28 of file RenameActionPanel\&.java\&.
 .PP
 .nf
                                                        {
@@ -76,7 +76,7 @@ the renameModel
 .PP
 
 .PP
-Definition at line 114 of file RenameActionPanel\&.java\&.
+Definition at line 115 of file RenameActionPanel\&.java\&.
 .PP
 .nf
                                         {
@@ -110,7 +110,7 @@ Update the panel before action is taken using the given action model
 .PP
 Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP\&.
 .PP
-Definition at line 34 of file RenameActionPanel\&.java\&.
+Definition at line 36 of file RenameActionPanel\&.java\&.
 .PP
 .nf
                                                                 {
@@ -127,7 +127,7 @@ Update the panel before action is taken
 .PP
 Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP\&.
 .PP
-Definition at line 44 of file RenameActionPanel\&.java\&.
+Definition at line 46 of file RenameActionPanel\&.java\&.
 .PP
 .nf
                                   {
@@ -167,7 +167,7 @@ updates the create panel after the action is run
 .PP
 Implements \fBcom\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.AbstractFileFolderPanel\fP\&.
 .PP
-Definition at line 77 of file RenameActionPanel\&.java\&.
+Definition at line 79 of file RenameActionPanel\&.java\&.
 .PP
 .nf
                                              {
@@ -200,8 +200,7 @@ Definition at line 77 of file RenameActionPanel\&.java\&.
             fileListPanel\&.add(jLabel2);
         }
         getActionLabelFile()\&.setText(getActionString());
-
-        this\&.repaint();
+        this\&.paintAll(this\&.getGraphics());        
     }
 .fi
 .SH "Member Data Documentation"
@@ -209,11 +208,11 @@ Definition at line 77 of file RenameActionPanel\&.java\&.
 .SS "final Logger com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.log = Logger\&.getLogger(CreateActionPanel\&.class)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 23 of file RenameActionPanel\&.java\&.
+Definition at line 25 of file RenameActionPanel\&.java\&.
 .SS "\fBRenameModel\fP com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.renameModel\fC [private]\fP"
 
 .PP
-Definition at line 22 of file RenameActionPanel\&.java\&.
+Definition at line 24 of file RenameActionPanel\&.java\&.
 .SS "final long com\&.poly\&.nlp\&.filekommander\&.views\&.panels\&.RenameActionPanel\&.serialVersionUID = 1L\fC [static]\fP, \fC [private]\fP"
 
 .PP

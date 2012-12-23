@@ -15,6 +15,9 @@ var dir_f411553e038c0eb63137015bc7c66b71 =
     [ "EmptyActionPanel.java", "_empty_action_panel_8java.html", [
       [ "EmptyActionPanel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel.html", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel" ]
     ] ],
+    [ "ExistActionPanel.java", "_exist_action_panel_8java.html", [
+      [ "ExistActionPanel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_exist_action_panel.html", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_exist_action_panel" ]
+    ] ],
     [ "GenericPanel.java", "_generic_panel_8java.html", [
       [ "GenericPanel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel.html", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel" ]
     ] ],

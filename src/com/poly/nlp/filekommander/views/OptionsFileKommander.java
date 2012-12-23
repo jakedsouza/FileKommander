@@ -18,7 +18,11 @@ public class OptionsFileKommander extends JDialog {
 
 	private static final Logger log = Logger.getLogger(OptionsFileKommander.class);
 
+	/**
+	 */
 	private final JPanel contentPanel = new JPanel();
+	/**
+	 */
 	private JButton okButton;
 
 	/**
@@ -53,9 +57,15 @@ public class OptionsFileKommander extends JDialog {
 			}
 		}
 	}
+	/**
+	 * @return
+	 */
 	public JPanel getContentPanel() {
 		return contentPanel;
 	}
+	/**
+	 * @return
+	 */
 	public JButton getOkButton() {
 		return okButton;
 	}

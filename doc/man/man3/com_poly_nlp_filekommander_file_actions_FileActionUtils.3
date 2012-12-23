@@ -1,4 +1,4 @@
-.TH "com.poly.nlp.filekommander.file.actions.FileActionUtils" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.TH "com.poly.nlp.filekommander.file.actions.FileActionUtils" 3 "Sat Dec 22 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -28,16 +28,16 @@ com.poly.nlp.filekommander.file.actions.FileActionUtils \-
 .RI "static String \fBdeleteFolder\fP (String folderName)"
 .br
 .ti -1c
-.RI "static void \fBexists\fP (String name)"
+.RI "static String \fBexists\fP (String name)"
 .br
 .ti -1c
-.RI "static boolean \fBopen\fP (String name)"
+.RI "static String \fBopen\fP (String name)"
 .br
 .ti -1c
 .RI "static String \fBrename\fP (String oldName, String newName)"
 .br
 .ti -1c
-.RI "static String \fBinsert\fP (String phraseToBeInserted, String existingPhrase, String position, String repetition, String fileName)  throws IOException "
+.RI "static String \fBinsert\fP (String phraseToBeInserted, String existingPhrase, String position, String repetition, String fileName)"
 .br
 .ti -1c
 .RI "static void \fBstats\fP (String parentObjectName, int statsType, int parentObjectType)  throws IOException "
@@ -52,10 +52,10 @@ com.poly.nlp.filekommander.file.actions.FileActionUtils \-
 .RI "static void \fBcount\fP (String parentObjectName, int parentObjectType, String type)  throws IOException "
 .br
 .ti -1c
-.RI "static void \fBremove\fP (String phraseToBeRemoved, String fileName)  throws IOException "
+.RI "static String \fBremove\fP (String phraseToBeRemoved, String repetition, String fileName)"
 .br
 .ti -1c
-.RI "static void \fBreplace\fP (String phraseToBeInserted, String existingPhrase, String fileName)  throws IOException "
+.RI "static String \fBreplace\fP (String phraseToBeInserted, String existingPhrase, String repetition, String fileName)"
 .br
 .ti -1c
 .RI "static int \fBcountWords\fP (String fileName)"
@@ -111,7 +111,7 @@ Definition at line 26 of file FileActionUtils\&.java\&.
 .SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.count (StringparentObjectName, StringwordToBeCounted)  throws IOException \fC [static]\fP"
 
 .PP
-Definition at line 452 of file FileActionUtils\&.java\&.
+Definition at line 499 of file FileActionUtils\&.java\&.
 .PP
 .nf
                                {
@@ -131,11 +131,11 @@ Definition at line 452 of file FileActionUtils\&.java\&.
 .SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.count (StringparentObjectName, intparentObjectType, Stringtype)  throws IOException \fC [static]\fP"
 
 .PP
-Definition at line 470 of file FileActionUtils\&.java\&.
+Definition at line 514 of file FileActionUtils\&.java\&.
 .PP
 .nf
                                             {
-        File f = new File('testDir/' + parentObjectName);
+        File f = new File(workingDirectory + parentObjectName);
         if (type\&.equals('words')) {
             if (f\&.exists()) {
                 FileReader fr = new FileReader(f);
@@ -149,7 +149,7 @@ Definition at line 470 of file FileActionUtils\&.java\&.
                     numWords++;
                 }
 
-                log\&.info('no\&. of words in file = ' + numWords);
+                log\&.info(' No \&. of words in file = ' + numWords +' ');
             } else {
                 log\&.info('This file doesn't exists\&.');
             }
@@ -174,32 +174,32 @@ Definition at line 470 of file FileActionUtils\&.java\&.
 .SS "static int com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.countFiles (StringparentObjectName)\fC [static]\fP"
 
 .PP
-Definition at line 699 of file FileActionUtils\&.java\&.
+Definition at line 828 of file FileActionUtils\&.java\&.
 .PP
 .nf
-                                                         {
+                                                          {
         File f;
-        if(parentObjectName\&.equals('testDir')){
-            f = new File(parentObjectName); 
-        }else{
-            f = new File('testDir/' + parentObjectName);
+        if (parentObjectName\&.equals(workingDirectory)) {
+            f = new File(parentObjectName);
+        } else {
+            f = new File(workingDirectory + parentObjectName);
         }
         int c = countSubFiles(f);
-        log\&.info('count is'+c);
+        log\&.info('count is' + c);
         return c;
     }
 .fi
 .SS "static int com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.countSpecificWord (StringparentObjectName, StringwordToBeCounted)\fC [static]\fP"
 
 .PP
-Definition at line 604 of file FileActionUtils\&.java\&.
+Definition at line 732 of file FileActionUtils\&.java\&.
 .PP
 .nf
-             {
-        File f = new File('testDir/' + parentObjectName); 
-        String line = ''; 
+                                    {
+        File f = new File(workingDirectory + parentObjectName);
+        String line = '';
         int count = 0;
-    
+
         try {
             if (f\&.exists()) {
                 FileReader fr = new FileReader(f);
@@ -216,14 +216,15 @@ Definition at line 604 of file FileActionUtils\&.java\&.
             // TODO Auto-generated catch block
             e\&.printStackTrace();
         }
-        log\&.info('the no of times the word '+wordToBeCounted+' appears is '+count);
+        log\&.info('the no of times the word ' + wordToBeCounted + ' appears is '
+                + count);
         return count;
     }
 .fi
 .SS "static int com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.countSubFiles (Filef)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 712 of file FileActionUtils\&.java\&.
+Definition at line 840 of file FileActionUtils\&.java\&.
 .PP
 .nf
                                              {
@@ -244,38 +245,38 @@ Definition at line 712 of file FileActionUtils\&.java\&.
 .SS "static int com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.countWords (StringfileName)\fC [static]\fP"
 
 .PP
-Definition at line 540 of file FileActionUtils\&.java\&.
+Definition at line 665 of file FileActionUtils\&.java\&.
 .PP
 .nf
-                                                 {
-        File f = new File('testDir/' + fileName);
+                                                  {
+        File f = new File(workingDirectory + fileName);
         int numWords = 0;
         if (f\&.exists()) {
-            try{
+            try {
                 FileReader fr;
                 fr = new FileReader(f);
-                
+
                 BufferedReader br = new BufferedReader(fr);
                 StreamTokenizer stz = new StreamTokenizer(br);
                 int index = 0;
-                
+
                 while (index != StreamTokenizer\&.TT_EOF) {
                     index = stz\&.nextToken();
                     numWords++;
                 }
 
-                log\&.info('no\&. of words in file = ' + numWords); 
-            
+                log\&.info('no\&. of words in file = ' + numWords);
+
             } catch (FileNotFoundException e) {
                 e\&.printStackTrace();
             } catch (IOException e) {
                 e\&.printStackTrace();
-            } finally{
+            } finally {
                 log\&.info('Some error reading the file');
             }
-        }else {
-                log\&.info('This file doesn't exists\&.'); 
-            }
+        } else {
+            log\&.info('This file doesn't exists\&.');
+        }
         return numWords;
     }
 .fi
@@ -411,28 +412,32 @@ Definition at line 159 of file FileActionUtils\&.java\&.
         return errorMsg;
     }
 .fi
-.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.exists (Stringname)\fC [static]\fP"
+.SS "static String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.exists (Stringname)\fC [static]\fP"
 
 .PP
 Definition at line 234 of file FileActionUtils\&.java\&.
 .PP
 .nf
-                                           {
-        String errorMsg = '';
+                                             {
+        String message = '';
 
         System\&.out\&.println('name of object is' + name);
         try {
-            File file = new File('testDir/' + name);
+            File file = new File(workingDirectory + name);
             if (file\&.exists()) {
+                message = '<html>' + name + ' exists at <u>'
+                        + file\&.getAbsolutePath() + '</u></html>';
                 System\&.out\&.println('File/Folder exists!');
             } else {
-                errorMsg = 'File/Folder ' + name + ' doesn't exist!';
-                System\&.out\&.println(errorMsg);
+                message = 'File/Folder ' + name + ' doesn't exist!';
+                System\&.out\&.println(message);
             }
 
         } catch (Exception e) {
             e\&.printStackTrace();
         }
+
+        return message;
     }
 .fi
 .SS "static String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.getWorkingDirectory ()\fC [static]\fP"
@@ -450,53 +455,90 @@ Definition at line 33 of file FileActionUtils\&.java\&.
         return workingDirectory;
     }
 .fi
-.SS "static String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.insert (StringphraseToBeInserted, StringexistingPhrase, Stringposition, Stringrepetition, StringfileName)  throws IOException \fC [static]\fP"
+.SS "static String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.insert (StringphraseToBeInserted, StringexistingPhrase, Stringposition, Stringrepetition, StringfileName)\fC [static]\fP"
 
 .PP
-Definition at line 378 of file FileActionUtils\&.java\&.
+Definition at line 388 of file FileActionUtils\&.java\&.
 .PP
 .nf
-                                                                                    {
-        File file = new File('testDir/'+fileName);
+                             {
+        File file = new File(workingDirectory + fileName);
         String message = '';
-        
-        if(file\&.exists()){
-        String contents = FileUtils\&.readFileToString(file);
-        String newString = '';
-        Pattern p = Pattern\&.compile(existingPhrase);
-        Matcher m = p\&.matcher(contents);
-        if(m\&.find()){
-        if(position\&.equalsIgnoreCase('before')){
-            newString = phraseToBeInserted + ' ' +existingPhrase;
-            if(repetition\&.equalsIgnoreCase('every') || repetition\&.equalsIgnoreCase('all'))
-                contents = contents\&.replace(existingPhrase, newString);
-            if(repetition\&.equalsIgnoreCase('first'))
-                contents = contents\&.replaceFirst(existingPhrase, newString);
-            if(repetition\&.equalsIgnoreCase('last'))
-                //contents = contents\&.replaceFirst(existingPhrase, newString);   
-                contents = contents\&.substring(0, contents\&.lastIndexOf(existingPhrase) + 1) + newString;
-        } else if(position\&.equalsIgnoreCase('after')){
-            newString = existingPhrase+' '+phraseToBeInserted;
-            if(repetition\&.equalsIgnoreCase('every') || repetition\&.equalsIgnoreCase('all'))
-                contents = contents\&.replace(existingPhrase, newString);
-            if(repetition\&.equalsIgnoreCase('first'))
-                contents = contents\&.replaceFirst(existingPhrase, newString);
-            if(repetition\&.equalsIgnoreCase('last')){
-                //contents = contents\&.substring(0, contents\&.lastIndexOf(existingPhrase)) + newString;
-                
+        int count = 0; // TODO
+        if (file\&.exists()) {
+
+            String contents;
+            try {
+                contents = FileUtils\&.readFileToString(file);
+            } catch (Exception e) {
+                message = 'Error reading the file ';
+                e\&.printStackTrace();
+                return message;
             }
-        } else if(position\&.equalsIgnoreCase('beginning') || position\&.equalsIgnoreCase('start')){
-            contents = phraseToBeInserted + ' ' + contents;
-        } else if(position\&.equalsIgnoreCase('end')){
-            contents = contents +' '+ phraseToBeInserted;
-        }
-        //log\&.info(contents);
-        FileUtils\&.writeStringToFile(file, contents);
-        message = 'Inserted phrase '+phraseToBeInserted + position  + repetition + ' of word '+existingPhrase;
-        }else{
-            message = 'The phrase '+existingPhrase+ 'cant be found in the file';
-        }
-        }else{
+            String newString = '';
+            Pattern p = Pattern\&.compile(existingPhrase);
+            Matcher m = p\&.matcher(contents);
+            if (m\&.find()) {
+                if (position\&.contains('before')) {
+                    newString = phraseToBeInserted + ' ' + existingPhrase;
+                    if (repetition\&.contains('first')) {
+                        contents = contents\&.replaceFirst(existingPhrase,
+                                newString);
+                    } else if (repetition\&.contains('last')) { // contents =
+                                                                // contents\&.replaceFirst(existingPhrase,
+                                                                // newString);
+                        newString = existingPhrase + ' ' + phraseToBeInserted;
+                        String contentsRev = StringUtils\&.reverse(contents);
+                        contentsRev = StringUtils\&.replaceOnce(contentsRev,
+                                existingPhrase, newString);
+                        contents = StringUtils\&.reverse(contentsRev);
+                        // contents = contents\&.substring(0,
+                        // contents\&.lastIndexOf(existingPhrase) + 1)
+                        // +' ' + newString;
+                    } else if (repetition\&.contains('every')
+                            || repetition\&.contains('all')) {
+                        contents = contents\&.replace(existingPhrase, newString);
+                    } else {
+                        contents = contents\&.replace(existingPhrase, newString);
+                    }
+                } else if (position\&.contains('after')) {
+                    newString = existingPhrase + ' ' + phraseToBeInserted;
+                    if (repetition\&.contains('every')
+                            || repetition\&.contains('all'))
+                        contents = contents\&.replace(existingPhrase, newString);
+                    if (repetition\&.contains('first'))
+                        contents = contents\&.replaceFirst(existingPhrase,
+                                newString);
+                    if (repetition\&.contains('last')) {
+                        // contents = contents\&.substring(0,
+                        // contents\&.lastIndexOf(existingPhrase)) + newString;
+                        newString = phraseToBeInserted + ' ' + existingPhrase;
+                        String contentsRev = StringUtils\&.reverse(contents);
+                        contentsRev = StringUtils\&.replaceOnce(contentsRev,
+                                existingPhrase, newString);
+                        contents = StringUtils\&.reverse(contentsRev);
+                    }
+                } else if (position\&.contains('beginning')
+                        || position\&.contains('start')) {
+                    contents = phraseToBeInserted + ' ' + contents;
+                } else if (position\&.contains('end')) {
+                    contents = contents + ' ' + phraseToBeInserted;
+                }
+                // log\&.info(contents);
+                try {
+                    FileUtils\&.writeStringToFile(file, contents);
+                } catch (IOException e) {
+                    message = ' Error writing to file ';
+                    e\&.printStackTrace();
+                }
+                message = 'Inserted phrase ' + phraseToBeInserted + ' '
+                        + position + ' ' + repetition + ' occurence of word '
+                        + existingPhrase;
+            } else {
+                message = 'The phrase ' + existingPhrase
+                        + ' cant be found in the file';
+            }
+        } else {
             message = 'This file doesnt exists';
         }
         return message;
@@ -505,32 +547,34 @@ Definition at line 378 of file FileActionUtils\&.java\&.
 .SS "static String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.lastModified (StringparentObjectName)\fC [static]\fP"
 
 .PP
-Definition at line 590 of file FileActionUtils\&.java\&.
+Definition at line 716 of file FileActionUtils\&.java\&.
 .PP
 .nf
                                                                {
-        File f = new File('testDir/'+parentObjectName);
+        File f = new File(workingDirectory + parentObjectName);
         String dateString = '';
-        if(f\&.isFile()){
+        if (f\&.isFile()) {
             long datetime = f\&.lastModified();
             Date d = new Date(datetime);
             SimpleDateFormat sdf = new SimpleDateFormat('dd-MM-yyyy hh:mm:ss');
             dateString = sdf\&.format(d);
-            log\&.info('The file '+parentObjectName+' was last modified on: ' + dateString);
+            log\&.info('The file ' + parentObjectName + ' was last modified on: '
+                    + dateString);
         }
-        return 'The file '+parentObjectName+' was last modified on: ' + dateString;
+        return 'The file ' + parentObjectName + ' was last modified on: '
+                + dateString;
     }
 .fi
 .SS "static ArrayList<String> com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.listFiles (StringfolderName, ArrayList< String >list)\fC [static]\fP"
 
 .PP
-Definition at line 572 of file FileActionUtils\&.java\&.
+Definition at line 697 of file FileActionUtils\&.java\&.
 .PP
 .nf
-                                                                                         {
-        //f = new File('testDir/'+f);
-        File f = new File(folderName);
-        if(f\&.isDirectory()){
+                                    {
+        // f = new File('testDir/'+f);
+        File f = new File(workingDirectory + folderName);
+        if (f\&.isDirectory()) {
             File[] subFiles = f\&.listFiles();
             for (File file : subFiles) {
                 if (file\&.isFile()) {
@@ -539,32 +583,32 @@ Definition at line 572 of file FileActionUtils\&.java\&.
                     list = listFiles(file\&.getName(), list);
                 }
             }
-        }else{
+        } else {
             log\&.info('only files in the folder can be listed\&.');
         }
         return list;
     }
 .fi
-.SS "static boolean com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.open (Stringname)\fC [static]\fP"
+.SS "static String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.open (Stringname)\fC [static]\fP"
 
 .PP
-Definition at line 252 of file FileActionUtils\&.java\&.
+Definition at line 256 of file FileActionUtils\&.java\&.
 .PP
 .nf
-                                            {
-        String errorMsg = '';
+                                           {
+        String message = '';
         if (name\&.equals('') || name\&.equals('')) {
-            errorMsg = 'File Name is empty';
-            return false;
+            message = 'File Name is empty';
+            return message;
         }
         // String workingDirectory =
         // FileKommanderRun\&.getKommander()\&.getWorkingDirectory();
-    //  String workingDirectory = 'testDir/';
-        File file = new File(name);
+        // String workingDirectory = 'testDir/';
+        File file = new File(workingDirectory + name);
         if (!file\&.exists()) {
-            errorMsg = 'File ' + name + ' doesnot exist in the directory ';
-            FileKommanderRun\&.getGuiv2()\&.displayErrorMessage(errorMsg);
-            return false;
+            message = 'File ' + name + ' does not exist in the directory ';
+            // FileKommanderRun\&.getGuiv2()\&.displayErrorMessage(message);
+            return message;
         }
         try {
             if (OSDetector\&.isWindows()) {
@@ -572,32 +616,37 @@ Definition at line 252 of file FileActionUtils\&.java\&.
                 String[] command = new String[] { 'rundll32\&.exe',
                         'url\&.dll,FileProtocolHandler', file\&.getAbsolutePath() };
                 System\&.out\&.println(Arrays\&.toString(command));
-                Runtime\&.getRuntime()\&.exec(command);
-                return true;
+                Process process = Runtime\&.getRuntime()\&.exec(command);
+                message = 'File ' + name + ' opened successfully';
+                return message;
             } else if (OSDetector\&.isLinux() || OSDetector\&.isMac()) {
                 Runtime\&.getRuntime()
                         \&.exec(new String[] { '/usr/bin/open',
                                 file\&.getAbsolutePath() });
-                return true;
+                message = 'Opened successfully';
+                return message;
             } else {
                 // Unknown OS, try with desktop
                 if (Desktop\&.isDesktopSupported()) {
                     Desktop\&.getDesktop()\&.open(file);
-                    return true;
+                    message = 'Opened successfully';
+                    return message;
                 } else {
-                    return false;
+                    message = 'Unsuccessfull open';
+                    return message;
                 }
             }
         } catch (Exception e) {
             e\&.printStackTrace(System\&.err);
-            return false;
+            message = 'Unable to open';
+            return message;
         }
     }
 .fi
 .SS "static String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.printSize (longb)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 669 of file FileActionUtils\&.java\&.
+Definition at line 798 of file FileActionUtils\&.java\&.
 .PP
 .nf
                                             {
@@ -605,38 +654,79 @@ Definition at line 669 of file FileActionUtils\&.java\&.
         long m = k / 1024;
         long g = m / 1024;
         if (b < 1024) {
-            return ('The size of the file is ' + b + ' Bytes');  
+            return ('The size of the file is ' + b + ' Bytes');
         } else if (k < 1024) {
-            return('The size of the file is ' + k + ' KB');  
+            return ('The size of the file is ' + k + ' KB');
         } else if (m < 1024) {
-            return ('The size of the file is ' + m + ' MB');  
+            return ('The size of the file is ' + m + ' MB');
         } else {
-            return ('The size of the file is ' + g + ' GB');  
+            return ('The size of the file is ' + g + ' GB');
         }
     }
 .fi
-.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.remove (StringphraseToBeRemoved, StringfileName)  throws IOException \fC [static]\fP"
+.SS "static String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.remove (StringphraseToBeRemoved, Stringrepetition, StringfileName)\fC [static]\fP"
 
 .PP
-Definition at line 514 of file FileActionUtils\&.java\&.
+Definition at line 552 of file FileActionUtils\&.java\&.
 .PP
 .nf
-                                                                                            {
-        File file = new File('testDir/'+fileName);
-        if(file\&.exists()){
-            String contents = FileUtils\&.readFileToString(file);
-            contents = contents\&.replace(phraseToBeRemoved, '');
-            log\&.info(contents);
-            FileUtils\&.writeStringToFile(file, contents);
-        }else{
-            log\&.info('this file doesnt exists');
+                             {
+        String message = '';
+        File file = new File(workingDirectory + fileName);
+        String contents = '';
+
+        if (file\&.exists()) {
+            try {
+                contents = FileUtils\&.readFileToString(file);
+            } catch (Exception e) {
+                message = 'Error reading the file ';
+                e\&.printStackTrace();
+                return message;
+            }
+            Pattern p = Pattern\&.compile(phraseToBeRemoved);
+            Matcher m = p\&.matcher(contents);
+            String newString = '';
+            if (m\&.find()) {
+                if (repetition\&.contains('first')) {
+                    contents = contents\&.replaceFirst(phraseToBeRemoved, '');
+                } else if (repetition\&.contains('last')) {
+                    String contentsRev = StringUtils\&.reverse(contents);
+                    contentsRev = contentsRev\&.replaceFirst(phraseToBeRemoved,
+                            '');
+                    contents = StringUtils\&.reverse(contentsRev);
+//                  contents = contents\&.substring(0,
+//                          contents\&.lastIndexOf(phraseToBeRemoved) + 1)
+//                          + '';
+                } else if (repetition\&.contains('every')
+                        || repetition\&.contains('all')) {
+                    contents = contents\&.replace(phraseToBeRemoved, '');
+                }
+                message = 'Removed ' + repetition + ' string ' + phraseToBeRemoved + ' successfully ' ;
+
+            } else {
+                message = 'The phrase ' + phraseToBeRemoved
+                        + ' cant be found in the file ' + fileName;
+            }
+
+        } else {
+            message = 'File ' + fileName + ' does not exists';
         }
+
+        // log\&.info(contents);
+        try {
+            FileUtils\&.writeStringToFile(file, contents);
+        } catch (IOException e) {
+            message = ' Error writing to file ';
+            e\&.printStackTrace();
+        }
+
+        return message;
     }
 .fi
 .SS "static String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.rename (StringoldName, StringnewName)\fC [static]\fP"
 
 .PP
-Definition at line 295 of file FileActionUtils\&.java\&.
+Definition at line 304 of file FileActionUtils\&.java\&.
 .PP
 .nf
                                                                 {
@@ -678,22 +768,68 @@ Definition at line 295 of file FileActionUtils\&.java\&.
 
     }
 .fi
-.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.replace (StringphraseToBeInserted, StringexistingPhrase, StringfileName)  throws IOException \fC [static]\fP"
+.SS "static String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.replace (StringphraseToBeInserted, StringexistingPhrase, Stringrepetition, StringfileName)\fC [static]\fP"
 
 .PP
-Definition at line 526 of file FileActionUtils\&.java\&.
+Definition at line 606 of file FileActionUtils\&.java\&.
 .PP
 .nf
                                                                        {
-        File file = new File('testDir/'+fileName);
-        if(file\&.exists()){
-            String contents = FileUtils\&.readFileToString(file);
-            contents = contents\&.replace(existingPhrase, phraseToBeInserted);
-            log\&.info(contents);
-            FileUtils\&.writeStringToFile(file, contents);
-        }else{
-            log\&.info('this file doesnt exists');
+
+        String message = '';
+        File file = new File(workingDirectory + fileName);
+        String contents = '';
+
+        if (file\&.exists()) {
+            try {
+                contents = FileUtils\&.readFileToString(file);
+            } catch (Exception e) {
+                message = 'Error reading the file ';
+                e\&.printStackTrace();
+                return message;
+            }
+            Pattern p = Pattern\&.compile(existingPhrase);
+            Matcher m = p\&.matcher(contents);
+            String newString = '';
+            if (m\&.find()) {
+                if (repetition\&.contains('first'))
+                    contents = contents\&.replaceFirst(existingPhrase,
+                            phraseToBeInserted);
+                else if (repetition\&.contains('last'))
+                // contents = contents\&.replaceFirst(existingPhrase, newString);
+                {
+                    String contentsRev = StringUtils\&.reverse(contents);
+                    contentsRev = contentsRev\&.replaceFirst(existingPhrase,
+                            phraseToBeInserted);
+                    contents = StringUtils\&.reverse(contentsRev);
+                    // contents = contents\&.substring(0,
+                    // contents\&.lastIndexOf(existingPhrase) + 1) +
+                    // phraseToBeInserted;
+                } else if (repetition\&.contains('every')
+                        || repetition\&.contains('all'))
+                    contents = contents\&.replace(existingPhrase,
+                            phraseToBeInserted);
+                message = 'Replaced ' + repetition + ' string '
+                        + existingPhrase + ' with ' + phraseToBeInserted
+                        + ' successfully ';
+            } else {
+                message = 'The phrase ' + phraseToBeInserted
+                        + ' cant be found in the file ' + fileName;
+            }
+
+        } else {
+            message = 'File ' + fileName + ' does not exists';
         }
+
+        // log\&.info(contents);
+        try {
+            FileUtils\&.writeStringToFile(file, contents);
+        } catch (IOException e) {
+            message = ' Error writing to file ';
+            e\&.printStackTrace();
+        }
+
+        return message;
     }
 .fi
 .SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.setWorkingDirectory (StringworkingDirectory)\fC [static]\fP"
@@ -714,36 +850,36 @@ Definition at line 41 of file FileActionUtils\&.java\&.
 .SS "static String com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.sizeOf (StringparentObjectName)\fC [static]\fP"
 
 .PP
-Definition at line 645 of file FileActionUtils\&.java\&.
+Definition at line 774 of file FileActionUtils\&.java\&.
 .PP
 .nf
                                                          {
         File f;
-        long b,bd;
-        if(parentObjectName\&.equals(workingDirectory))
+        long b, bd;
+        if (parentObjectName\&.equals(workingDirectory))
             f = new File(parentObjectName);
         else
-            f = new File(workingDirectory + parentObjectName); 
+            f = new File(workingDirectory + parentObjectName);
         if (f\&.exists()) {
             if (f\&.isDirectory()) {
                 bd = sizeofDirectory(f);
                 return printSize(bd);
-            }else{
+            } else {
                 b = f\&.length();
                 return printSize(b);
             }
 
         } else {
-            return ('File doesn't exists\&.'); 
+            return ('File doesn't exists\&.');
         }
-//      return printSize(bd);
+        // return printSize(bd);
 
     }
 .fi
 .SS "static long com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.sizeofDirectory (Filef)\fC [static]\fP, \fC [package]\fP"
 
 .PP
-Definition at line 685 of file FileActionUtils\&.java\&.
+Definition at line 814 of file FileActionUtils\&.java\&.
 .PP
 .nf
                                         {
@@ -762,7 +898,7 @@ Definition at line 685 of file FileActionUtils\&.java\&.
 .SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.stats (StringparentObjectName, intstatsType, intparentObjectType)  throws IOException \fC [static]\fP"
 
 .PP
-Definition at line 428 of file FileActionUtils\&.java\&.
+Definition at line 475 of file FileActionUtils\&.java\&.
 .PP
 .nf
                                                      {
@@ -783,7 +919,7 @@ Definition at line 428 of file FileActionUtils\&.java\&.
 .SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.FileActionUtils\&.stats (StringparentObjectName, StringwordToBeCounted)  throws IOException \fC [static]\fP"
 
 .PP
-Definition at line 445 of file FileActionUtils\&.java\&.
+Definition at line 492 of file FileActionUtils\&.java\&.
 .PP
 .nf
                                {

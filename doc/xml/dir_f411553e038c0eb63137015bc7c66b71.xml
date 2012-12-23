@@ -7,6 +7,7 @@
     <innerfile refid="_create_action_panel_8java">CreateActionPanel.java</innerfile>
     <innerfile refid="_delete_action_panel_8java">DeleteActionPanel.java</innerfile>
     <innerfile refid="_empty_action_panel_8java">EmptyActionPanel.java</innerfile>
+    <innerfile refid="_exist_action_panel_8java">ExistActionPanel.java</innerfile>
     <innerfile refid="_generic_panel_8java">GenericPanel.java</innerfile>
     <innerfile refid="_open_action_panel_8java">OpenActionPanel.java</innerfile>
     <innerfile refid="_phrase_operation_action_panel_8java">PhraseOperationActionPanel.java</innerfile>

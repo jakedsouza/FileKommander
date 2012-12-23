@@ -3,7 +3,6 @@
   <compounddef id="namespacecom_1_1poly_1_1nlp_1_1filekommander" kind="namespace">
     <compoundname>com::poly::nlp::filekommander</compoundname>
     <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander" prot="public">com::poly::nlp::filekommander::FileKommander</innerclass>
-    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_exception" prot="public">com::poly::nlp::filekommander::FileKommanderException</innerclass>
     <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run" prot="public">com::poly::nlp::filekommander::FileKommanderRun</innerclass>
     <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker" prot="package">com::poly::nlp::filekommander::MySwingWorker</innerclass>
     <innernamespace refid="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1file">com::poly::nlp::filekommander::file</innernamespace>

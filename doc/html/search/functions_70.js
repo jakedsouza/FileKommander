@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['phraseaction',['phraseAction',['../classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_call_action.html#af69262a5d997b87d5996f9818f13cf13',1,'com::poly::nlp::filekommander::file::actions::CallAction']]],
   ['phraseoperationactionpanel',['PhraseOperationActionPanel',['../classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_phrase_operation_action_panel.html#a2ab6b6a6d9e3bbe63370609483295c51',1,'com::poly::nlp::filekommander::views::panels::PhraseOperationActionPanel']]],
   ['phraseoperationmodel',['PhraseOperationModel',['../classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model.html#a0a3dec91dda5527a9e6b91d8fa0eba83',1,'com::poly::nlp::filekommander::views::models::PhraseOperationModel']]],
   ['printsize',['printSize',['../classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils.html#a7c29f2257b29d8d10c39a87b351093fb',1,'com::poly::nlp::filekommander::file::actions::FileActionUtils']]],

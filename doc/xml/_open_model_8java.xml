@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.2">
+  <compounddef id="_open_model_8java" kind="file">
+    <compoundname>OpenModel.java</compoundname>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model" prot="public">com::poly::nlp::filekommander::views::models::OpenModel</innerclass>
+    <innernamespace refid="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models">com::poly::nlp::filekommander::views::models</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.poly.nlp.filekommander.views.models;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.HashMap;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>com.poly.nlp.filekommander.FileKommander;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Model<sp/>to<sp/>hold<sp/>information<sp/>about<sp/>create<sp/>action<sp/>.<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>@author<sp/>jake</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model" kindref="compound">OpenModel</ref><sp/></highlight><highlight class="keyword">implements</highlight><highlight class="normal"><sp/><ref refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" kindref="compound">GenericActionModel</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Is<sp/>create<sp/>action<sp/>run<sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a103a22e09cd8bbe1a6ddbdf92b27bc11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a103a22e09cd8bbe1a6ddbdf92b27bc11" kindref="member">isModelRun</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>list<sp/>of<sp/>files<sp/>as<sp/>key<sp/>and<sp/>error<sp/>message<sp/>if<sp/>any<sp/>as<sp/>value</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a1d7cf2afcf4a96977f34712a356662c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>HashMap&lt;String,<sp/>String&gt;<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a1d7cf2afcf4a96977f34712a356662c6" kindref="member">fileListData</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>list<sp/>of<sp/>folders<sp/>as<sp/>key<sp/>and<sp/>error<sp/>message<sp/>if<sp/>any<sp/>as<sp/>value</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a57caf879510112ad16fbe357014d38e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>HashMap&lt;String,<sp/>String&gt;<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a57caf879510112ad16fbe357014d38e8" kindref="member">folderListData</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Create<sp/>an<sp/>empty<sp/>model</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a9624aa59e2e9a77a6a09f2ec0fb20b34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a9624aa59e2e9a77a6a09f2ec0fb20b34" kindref="member">OpenModel</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.<ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a1d7cf2afcf4a96977f34712a356662c6" kindref="member">fileListData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HashMap&lt;String,<sp/>String&gt;();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.<ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a57caf879510112ad16fbe357014d38e8" kindref="member">folderListData</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>HashMap&lt;String,<sp/>String&gt;();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.<ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a7637685b17f9097f35cb73d335746e3a" kindref="member">isModelRun</ref><sp/>=<sp/>false<sp/>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Add<sp/>a<sp/>new<sp/>file/folder<sp/>to<sp/>the<sp/>model</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>name</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>type</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a602735148358250e49a86583517b58a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a602735148358250e49a86583517b58a2" kindref="member">add</ref>(String<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander" kindref="compound">FileKommander</ref>.<ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1a081a142e5d7bb0d0fe5cf38c2f4dc086" kindref="member">DIRECTORY</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.<ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a57caf879510112ad16fbe357014d38e8" kindref="member">folderListData</ref>.put(name,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander" kindref="compound">FileKommander</ref>.<ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_1abc599ad8072f7091b61322af4d8fb40e" kindref="member">FILE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.<ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a1d7cf2afcf4a96977f34712a356662c6" kindref="member">fileListData</ref>.put(name,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>the<sp/>fileListData</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a188833367eaa0547760c2eb156f83a93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>HashMap&lt;String,<sp/>String&gt;<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a188833367eaa0547760c2eb156f83a93" kindref="member">getFileListData</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a1d7cf2afcf4a96977f34712a356662c6" kindref="member">fileListData</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>fileListData</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>fileListData<sp/>to<sp/>set</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1af1dca02c1129cc14a4b77489aed147c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1af1dca02c1129cc14a4b77489aed147c0" kindref="member">setFileListData</ref>(HashMap&lt;String,<sp/>String&gt;<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a1d7cf2afcf4a96977f34712a356662c6" kindref="member">fileListData</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.fileListData<sp/>=<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a1d7cf2afcf4a96977f34712a356662c6" kindref="member">fileListData</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>the<sp/>folderListData</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1aa91a0f55a062cec0e4ba825482847fe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>HashMap&lt;String,<sp/>String&gt;<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1aa91a0f55a062cec0e4ba825482847fe4" kindref="member">getFolderListData</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a57caf879510112ad16fbe357014d38e8" kindref="member">folderListData</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>folderListData</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>folderListData<sp/>to<sp/>set</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1ab4cc45df6ad2ed8b606272820cd36a1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1ab4cc45df6ad2ed8b606272820cd36a1b" kindref="member">setFolderListData</ref>(HashMap&lt;String,<sp/>String&gt;<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a57caf879510112ad16fbe357014d38e8" kindref="member">folderListData</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.folderListData<sp/>=<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a57caf879510112ad16fbe357014d38e8" kindref="member">folderListData</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/><sp/>the<sp/>isModelRun</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a7637685b17f9097f35cb73d335746e3a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a7637685b17f9097f35cb73d335746e3a" kindref="member">isModelRun</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a7637685b17f9097f35cb73d335746e3a" kindref="member">isModelRun</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>isModelRun</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>the<sp/>isModelRun<sp/>to<sp/>set</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a04ac5d70d33cbd2483c6c46bfa7c889d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a04ac5d70d33cbd2483c6c46bfa7c889d" kindref="member">setModelRun</ref>(</highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a7637685b17f9097f35cb73d335746e3a" kindref="member">isModelRun</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.isModelRun<sp/>=<sp/><ref refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_1a7637685b17f9097f35cb73d335746e3a" kindref="member">isModelRun</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/OpenModel.java"/>
+  </compounddef>
+</doxygen>

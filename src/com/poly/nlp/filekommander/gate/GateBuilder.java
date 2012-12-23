@@ -27,18 +27,34 @@ import org.apache.log4j.Logger;
  */
 public class GateBuilder {
 
+	/**
+	 */
 	private final String fileSeparator = System.getProperty("file.separator");
 	public static String newline = ("\n");
 	private static final Logger log = Logger.getLogger(GateBuilder.class);
 
+	/**
+	 */
 	private String gateHome;
+	/**
+	 */
 	private URI annieHome;
+	/**
+	 */
 	private String japeFilePath;
+	/**
+	 */
 	private String gazetteerFilePath;
 
+	/**
+	 */
 	private String ANNIE_CLASS = "gate.creole.SerialAnalyserController";
 
+	/**
+	 */
 	private ArrayList<ProcessingResource> prList;
+	/**
+	 */
 	private SerialAnalyserController annieController;
 
 	public GateBuilder() {
@@ -145,60 +161,56 @@ public class GateBuilder {
 	}
 
 	/**
-	 * @return the gateHome
+	 * @return  the gateHome
 	 */
 	public String getGateHome() {
 		return gateHome;
 	}
 
 	/**
-	 * @param gateHome
-	 *            the gateHome to set
+	 * @param gateHome  the gateHome to set
 	 */
 	public void setGateHome(String gateHome) {
 		this.gateHome = gateHome;
 	}
 
 	/**
-	 * @return the japeFilePath
+	 * @return  the japeFilePath
 	 */
 	public String getJapeFilePath() {
 		return japeFilePath;
 	}
 
 	/**
-	 * @param japeFilePath
-	 *            the japeFilePath to set
+	 * @param japeFilePath  the japeFilePath to set
 	 */
 	public void setJapeFilePath(String japeFilePath) {
 		this.japeFilePath = japeFilePath;
 	}
 
 	/**
-	 * @return the gazetteerFilePath
+	 * @return  the gazetteerFilePath
 	 */
 	public String getGazetteerFilePath() {
 		return gazetteerFilePath;
 	}
 
 	/**
-	 * @param gazetteerFilePath
-	 *            the gazetteerFilePath to set
+	 * @param gazetteerFilePath  the gazetteerFilePath to set
 	 */
 	public void setGazetteerFilePath(String gazetteerFilePath) {
 		this.gazetteerFilePath = gazetteerFilePath;
 	}
 
 	/**
-	 * @return the annieController
+	 * @return  the annieController
 	 */
 	public SerialAnalyserController getAnnieController() {
 		return annieController;
 	}
 
 	/**
-	 * @param annieController
-	 *            the annieController to set
+	 * @param annieController  the annieController to set
 	 */
 	public void setAnnieController(SerialAnalyserController annieController) {
 		this.annieController = annieController;

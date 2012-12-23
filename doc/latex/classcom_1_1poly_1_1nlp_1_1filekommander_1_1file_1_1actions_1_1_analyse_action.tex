@@ -17,6 +17,8 @@ static \hyperlink{interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1model
 \item 
 static \hyperlink{interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model}{Generic\-Action\-Model} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a683b8ce8891c552588d2247fbd9f4328}{analyse\-Exists\-Action} (Annotation annotation)
 \item 
+static \hyperlink{interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model}{Generic\-Action\-Model} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aa9896688bb8b9d517ff050315835804b}{analyse\-Phrase\-Action} (Annotation annotation, String action\-Type)
+\item 
 static \hyperlink{interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model}{Generic\-Action\-Model} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a75f845c14e6046304b2ad4ac56d0f56f}{analyse\-Insert\-Action} (Annotation annotation)
 \item 
 static \hyperlink{interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model}{Generic\-Action\-Model} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a4da9b25dc9bdae9570ef0459276548ad}{analyse\-Open\-Action} (Annotation annotation)
@@ -37,9 +39,12 @@ static final Logger \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_
 
 
 \subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+neha , jake 
+\end{DoxyAuthor}
 
 
-Definition at line \hyperlink{L20}{20} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L32}{32} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 
@@ -54,7 +59,7 @@ Definition at line \hyperlink{L20}{20} of file \hyperlink{}{Analyse\-Action.\-ja
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aef5f93dbdd411587de327fc2c6913622}
 
 
-Definition at line \hyperlink{L23}{23} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L35}{35} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 \begin{DoxyCode}
@@ -73,26 +78,29 @@ Definition at line \hyperlink{L23}{23} of file \hyperlink{}{Analyse\-Action.\-ja
         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"delete"}:
             returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a9970d61dcf513507ed64217bd16838ab}{analyseDeleteAction}(annotation);
             \textcolor{keywordflow}{break};
-        \textcolor{keywordflow}{case} \textcolor{stringliteral}{"exists"}:
+        \textcolor{keywordflow}{case} \textcolor{stringliteral}{"exist"}:
             returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a683b8ce8891c552588d2247fbd9f4328}{analyseExistsAction}(annotation);
             \textcolor{keywordflow}{break};
         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"insert"}:
-            returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a75f845c14e6046304b2ad4ac56d0f56f}{analyseInsertAction}(annotation);
+            returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aa9896688bb8b9d517ff050315835804b}{analysePhraseAction}(annotation, 
+      actionType);
             \textcolor{keywordflow}{break};
         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"open"}:
             returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a4da9b25dc9bdae9570ef0459276548ad}{analyseOpenAction}(annotation);
             \textcolor{keywordflow}{break};
         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"remove"}:
-            returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aea934abe03154ab654a156add6133093}{analyseRemoveAction}(annotation);
+            returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aa9896688bb8b9d517ff050315835804b}{analysePhraseAction}(annotation, 
+      actionType);
             \textcolor{keywordflow}{break};
         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"rename"}:
             returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aade5e40cbf6a964d4b95b81815cea68f}{analyseRenameAction}(annotation);
             \textcolor{keywordflow}{break};
         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"replace"}:
-            returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a55c78bdeee6905c8e95f3d8115a6c222}{analyseReplaceAction}(annotation);
+            returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aa9896688bb8b9d517ff050315835804b}{analysePhraseAction}(annotation, 
+      actionType);
             \textcolor{keywordflow}{break};
         \textcolor{keywordflow}{case} \textcolor{stringliteral}{"stats"}:
-            returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a7bd195f986019e22721f048aec378f67}{analyseStatsAction}(annotation,
+            returnModel = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a7bd195f986019e22721f048aec378f67}{analyseStatsAction}(annotation, 
       actionType);
             \textcolor{keywordflow}{break};
         \textcolor{keywordflow}{default}:
@@ -111,7 +119,7 @@ Definition at line \hyperlink{L23}{23} of file \hyperlink{}{Analyse\-Action.\-ja
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a62e07128db9a8df65417a02d84068e01}
 
 
-Definition at line \hyperlink{L69}{69} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L79}{79} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 \begin{DoxyCode}
@@ -160,7 +168,7 @@ Definition at line \hyperlink{L69}{69} of file \hyperlink{}{Analyse\-Action.\-ja
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a9970d61dcf513507ed64217bd16838ab}
 
 
-Definition at line \hyperlink{L101}{101} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L111}{111} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 \begin{DoxyCode}
@@ -209,14 +217,42 @@ Definition at line \hyperlink{L101}{101} of file \hyperlink{}{Analyse\-Action.\-
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a683b8ce8891c552588d2247fbd9f4328}
 
 
-Definition at line \hyperlink{L133}{133} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L143}{143} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 \begin{DoxyCode}
                                                                                
         \{
-        \textcolor{comment}{//TODO}
-        \textcolor{keywordflow}{return} null;
+        FeatureMap featureMap = annotation.getFeatures();
+        ArrayList<String> fileNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (
+                featureMap, \textcolor{stringliteral}{"fileName"});
+        ArrayList<String> directoryNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (
+                featureMap, \textcolor{stringliteral}{"directoryName"});
+        ArrayList<String> quotedObjectNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (
+                featureMap, \textcolor{stringliteral}{"quotedObject"});
+        ExistsModel existsModel = \textcolor{keyword}{new} ExistsModel();
+        \textcolor{keywordflow}{if} (fileNamesList != null) \{
+            \textcolor{keywordflow}{for} (String fileName : fileNamesList) \{
+                existsModel.add(fileName, FileKommander.FILE);
+            \}
+        \}
+        \textcolor{keywordflow}{if} (directoryNamesList != null) \{
+            \textcolor{keywordflow}{for} (String folderName : directoryNamesList) \{
+                existsModel.add(folderName, FileKommander.DIRECTORY);
+            \}
+        \}
+        \textcolor{keywordflow}{if} (quotedObjectNamesList != null) \{
+            \textcolor{keywordflow}{for} (String quotedName : quotedObjectNamesList) \{
+                \textcolor{keywordflow}{if} (!fileNamesList.contains(quotedName)
+                        && !directoryNamesList.contains(quotedName))
+                    existsModel.add(quotedName, FileKommander.DIRECTORY);
+            \}
+        \}
+
+        \textcolor{keywordflow}{return} existsModel;
 
     \}
 \end{DoxyCode}
@@ -229,14 +265,46 @@ Definition at line \hyperlink{L133}{133} of file \hyperlink{}{Analyse\-Action.\-
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a75f845c14e6046304b2ad4ac56d0f56f}
 
 
-Definition at line \hyperlink{L139}{139} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L255}{255} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 \begin{DoxyCode}
                                                                                
         \{
-        \textcolor{comment}{//TODO}
-        \textcolor{keywordflow}{return} null;
+
+        FeatureMap featureMap = annotation.getFeatures();
+        ArrayList<String> fileNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (
+                featureMap, \textcolor{stringliteral}{"fileName"});
+        ArrayList<String> quotedObjectNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (
+                featureMap, \textcolor{stringliteral}{"quotedObject"});
+        ArrayList<String> phraseList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (featureMap,
+                \textcolor{stringliteral}{"phraseName"});
+        PhraseOperationModel phraseOperationModel = \textcolor{keyword}{new} PhraseOperationModel();
+        phraseOperationModel.setOperationType(FileKommander.INSERT);
+
+        phraseOperationModel.setRepetition(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (
+                featureMap, \textcolor{stringliteral}{"position"}).\textcolor{keyword}{get}(0));
+        \textcolor{comment}{// phraseOperationModel.set}
+        String position = phraseOperationModel.getRepetition();
+        \textcolor{comment}{// String newPhrase = "";}
+        \textcolor{comment}{// String oldPhrase = "";}
+
+        \textcolor{comment}{// phraseOperationModel.setRepetition(repetition)}
+
+        \textcolor{keywordflow}{if} (quotedObjectNamesList != null) \{
+            \textcolor{keywordflow}{for} (String quotedName : quotedObjectNamesList) \{
+                \textcolor{keywordflow}{if} (phraseList.contains(quotedName))
+                    phraseOperationModel.setNewPhrase(quotedName);
+                \textcolor{keywordflow}{else}
+                    phraseOperationModel.setOldPhrase(quotedName);
+            \}
+        \}
+
+        \textcolor{keywordflow}{return} phraseOperationModel;
 
     \}
 \end{DoxyCode}
@@ -249,15 +317,146 @@ Definition at line \hyperlink{L139}{139} of file \hyperlink{}{Analyse\-Action.\-
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a4da9b25dc9bdae9570ef0459276548ad}
 
 
-Definition at line \hyperlink{L145}{145} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L289}{289} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 \begin{DoxyCode}
                                                                                
       \{
-        \textcolor{comment}{//TODO}
-        \textcolor{keywordflow}{return} null;
+        FeatureMap featureMap = annotation.getFeatures();
+        ArrayList<String> fileNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (
+                featureMap, \textcolor{stringliteral}{"fileName"});
+        ArrayList<String> directoryNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (
+                featureMap, \textcolor{stringliteral}{"directoryName"});
+        ArrayList<String> quotedObjectNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (
+                featureMap, \textcolor{stringliteral}{"quotedObject"});
+        OpenModel openModel = \textcolor{keyword}{new} OpenModel();
+        \textcolor{keywordflow}{if} (fileNamesList != null) \{
+            \textcolor{keywordflow}{for} (String fileName : fileNamesList) \{
+                openModel.add(fileName, FileKommander.FILE);
+            \}
+        \}
+        \textcolor{keywordflow}{if} (directoryNamesList != null) \{
+            \textcolor{keywordflow}{for} (String folderName : directoryNamesList) \{
+                openModel.add(folderName, FileKommander.DIRECTORY);
+            \}
+        \}
+        \textcolor{keywordflow}{if} (quotedObjectNamesList != null) \{
+            \textcolor{keywordflow}{for} (String quotedName : quotedObjectNamesList) \{
+                \textcolor{keywordflow}{if} (!fileNamesList.contains(quotedName)
+                        && !directoryNamesList.contains(quotedName))
+                    openModel.add(quotedName, FileKommander.DIRECTORY);
+            \}
+        \}
 
+        \textcolor{keywordflow}{return} openModel;
+
+    \}
+\end{DoxyCode}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aa9896688bb8b9d517ff050315835804b}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-Analyse\-Action@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-Analyse\-Action}!analyse\-Phrase\-Action@{analyse\-Phrase\-Action}}
+\index{analyse\-Phrase\-Action@{analyse\-Phrase\-Action}!com::poly::nlp::filekommander::file::actions::AnalyseAction@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-Analyse\-Action}}
+\subsubsection[{analyse\-Phrase\-Action}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Generic\-Action\-Model} com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-Analyse\-Action.\-analyse\-Phrase\-Action (
+\begin{DoxyParamCaption}
+\item[{Annotation}]{annotation, }
+\item[{String}]{action\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aa9896688bb8b9d517ff050315835804b}
+
+
+Definition at line \hyperlink{L174}{174} of file \hyperlink{}{Analyse\-Action.\-java}.
+
+
+\begin{DoxyCode}
+                                                      \{
+
+        FeatureMap featureMap = annotation.getFeatures();
+        ArrayList<String> fileNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (
+                featureMap, \textcolor{stringliteral}{"fileName"});
+        ArrayList<String> quotedObjectNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (
+                featureMap, \textcolor{stringliteral}{"quotedObject"});
+        ArrayList<String> phraseList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (featureMap,
+                \textcolor{stringliteral}{"phraseName"});
+        PhraseOperationModel phraseOperationModel = \textcolor{keyword}{new} PhraseOperationModel();
+        \textcolor{keywordflow}{if} (actionType.equalsIgnoreCase(\textcolor{stringliteral}{"insert"}))
+            phraseOperationModel.setOperationType(FileKommander.INSERT);
+        \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (actionType.equalsIgnoreCase(\textcolor{stringliteral}{"replace"}))
+            phraseOperationModel.setOperationType(FileKommander.REPLACE);
+        \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (actionType.equalsIgnoreCase(\textcolor{stringliteral}{"remove"}))
+            phraseOperationModel.setOperationType(FileKommander.REMOVE);
+        \textcolor{keywordflow}{for} (String fileName : fileNamesList) \{
+            phraseOperationModel.add(fileName);
+        \}
+        \textcolor{comment}{// phraseOperationModel.setFileListData(fileNamesList);}
+        ArrayList<String> repList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (featureMap,
+                \textcolor{stringliteral}{"repitition"});
+        \textcolor{keywordflow}{if} (!repList.isEmpty()) \{
+            phraseOperationModel.setRepetition(repList.get(0));
+        \} \textcolor{keywordflow}{else} \{
+            phraseOperationModel.setRepetition(\textcolor{stringliteral}{"every"});
+        \}
+
+        \textcolor{comment}{// phraseOperationModel.set}
+        ArrayList<String> posList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (featureMap,
+                \textcolor{stringliteral}{"position"});
+        \textcolor{keywordflow}{if} (!posList.isEmpty()) \{
+            phraseOperationModel.setPosition(posList.get(0));
+        \} \textcolor{keywordflow}{else} \{
+            phraseOperationModel.setPosition(\textcolor{stringliteral}{"after"});
+        \}
+        \textcolor{comment}{// String newPhrase = "";}
+        \textcolor{comment}{// String oldPhrase = "";}
+
+        \textcolor{comment}{// phraseOperationModel.setRepetition(repetition)}
+
+        ArrayList<String> phrases = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (featureMap,
+                \textcolor{stringliteral}{"quotedObject"});
+        \textcolor{keywordflow}{if} (phrases.size() <= 2) \{
+            \textcolor{keywordflow}{if}(phraseOperationModel.getOperationType() == FileKommander.INSERT 
+      ) \{
+            phraseOperationModel.setNewPhrase(phrases.get(0));
+            phraseOperationModel.setOldPhrase(phrases.get(1));
+            \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(phraseOperationModel.getOperationType() == FileKommander.
+      REMOVE)\{
+            \textcolor{comment}{//  phraseOperationModel.setNewPhrase(phrases.get(1));}
+                phraseOperationModel.setOldPhrase(phrases.get(0));
+            \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(phraseOperationModel.getOperationType() == FileKommander.
+      REPLACE)\{
+                phraseOperationModel.setNewPhrase(phrases.get(1));
+                phraseOperationModel.setOldPhrase(phrases.get(0));
+            \}
+        \} 
+\textcolor{comment}{//      else if (phrases.size() == 1) \{}
+\textcolor{comment}{//          phraseOperationModel.setNewPhrase(phrases.get(0));}
+\textcolor{comment}{//          phraseOperationModel.setOldPhrase("\(\backslash\)\(\backslash\)w");}
+\textcolor{comment}{//      \}}
+        \textcolor{keywordflow}{else} \{
+            FileKommanderRun.getGuiv2().displayErrorMessage(
+                    \textcolor{stringliteral}{"Multiple phrases found. Not sure what to do."});
+            \textcolor{keywordflow}{return} null;
+        \}
+        \textcolor{keywordflow}{if} (quotedObjectNamesList != null) \{
+            \textcolor{keywordflow}{for} (String quotedName : quotedObjectNamesList) \{
+                \textcolor{keywordflow}{if} (phraseList.contains(quotedName)) \{
+                    \textcolor{keywordflow}{if} (phraseOperationModel.getNewPhrase().equals(\textcolor{stringliteral}{""})) \{
+                        phraseOperationModel.setNewPhrase(quotedName);
+                    \}
+                \} \textcolor{keywordflow}{else} \{
+                    \textcolor{keywordflow}{if} (phraseOperationModel.getOldPhrase().equals(\textcolor{stringliteral}{""})) \{
+                        phraseOperationModel.setOldPhrase(quotedName);
+                    \}
+                \}
+            \}
+        \}
+        \textcolor{keywordflow}{return} phraseOperationModel;
     \}
 \end{DoxyCode}
 \hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aea934abe03154ab654a156add6133093}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-Analyse\-Action@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-Analyse\-Action}!analyse\-Remove\-Action@{analyse\-Remove\-Action}}
@@ -269,13 +468,13 @@ Definition at line \hyperlink{L145}{145} of file \hyperlink{}{Analyse\-Action.\-
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aea934abe03154ab654a156add6133093}
 
 
-Definition at line \hyperlink{L151}{151} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L320}{320} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 \begin{DoxyCode}
                                                                                
         \{
-        \textcolor{comment}{//TODO}
+        \textcolor{comment}{// TODO}
         \textcolor{keywordflow}{return} null;
 
     \}
@@ -289,7 +488,7 @@ Definition at line \hyperlink{L151}{151} of file \hyperlink{}{Analyse\-Action.\-
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_aade5e40cbf6a964d4b95b81815cea68f}
 
 
-Definition at line \hyperlink{L157}{157} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L326}{326} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 \begin{DoxyCode}
@@ -297,30 +496,34 @@ Definition at line \hyperlink{L157}{157} of file \hyperlink{}{Analyse\-Action.\-
         \{
         FeatureMap featureMap = annotation.getFeatures();
         String content = (String) featureMap.get(\textcolor{stringliteral}{"content"});
-        
+
         ArrayList<String> fileNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
       (
                 featureMap, \textcolor{stringliteral}{"fileName"});
         fileNamesList.addAll(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
-      (
-                featureMap, \textcolor{stringliteral}{"directoryName"}));
+      (featureMap,
+                \textcolor{stringliteral}{"directoryName"}));
         fileNamesList.addAll(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
-      (
-                featureMap, \textcolor{stringliteral}{"quotedObject"}));
-\textcolor{comment}{//      ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(}
-\textcolor{comment}{//              featureMap, "directoryName");}
-\textcolor{comment}{//      ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(}
-\textcolor{comment}{//              featureMap, "quotedObject");}
+      (featureMap,
+                \textcolor{stringliteral}{"quotedObject"}));
+        \textcolor{comment}{// ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(}
+        \textcolor{comment}{// featureMap, "directoryName");}
+        \textcolor{comment}{// ArrayList<String> quotedObjectNamesList =}
+        \textcolor{comment}{// getObjectNameFromAnnotation(}
+        \textcolor{comment}{// featureMap, "quotedObject");}
         RenameModel renameModel = \textcolor{keyword}{new} RenameModel();
-        \textcolor{keywordflow}{if}(fileNamesList.size() == 2)\{
+        \textcolor{keywordflow}{if} (fileNamesList.size() == 2) \{
             renameModel.setOldFileName(fileNamesList.get(0));
             renameModel.setNewFileName(fileNamesList.get(1));
             renameModel.setType(0);
             renameModel.setModelRun(\textcolor{keyword}{false});
-        \}\textcolor{keywordflow}{else}\{
-            FileKommanderRun.getGuiv2().displayErrorMessage(\textcolor{stringliteral}{"Multiple
-       file/folder names found , unsure which to rename to which"});
-            \textcolor{keywordflow}{return} null ;
+        \} \textcolor{keywordflow}{else} \{
+            FileKommanderRun
+                    .getGuiv2()
+                    .displayErrorMessage(
+                            \textcolor{stringliteral}{"Multiple file/folder names found , unsure which to
+       rename to which"});
+            \textcolor{keywordflow}{return} null;
         \}
         \textcolor{keywordflow}{return} renameModel;
     \}
@@ -334,13 +537,13 @@ Definition at line \hyperlink{L157}{157} of file \hyperlink{}{Analyse\-Action.\-
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a55c78bdeee6905c8e95f3d8115a6c222}
 
 
-Definition at line \hyperlink{L184}{184} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L357}{357} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 \begin{DoxyCode}
                                                                                
          \{
-        \textcolor{comment}{//TODO}
+        \textcolor{comment}{// TODO}
         \textcolor{keywordflow}{return} null;
 
     \}
@@ -355,76 +558,23 @@ Definition at line \hyperlink{L184}{184} of file \hyperlink{}{Analyse\-Action.\-
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a7bd195f986019e22721f048aec378f67}
 
 
-Definition at line \hyperlink{L190}{190} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L363}{363} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 \begin{DoxyCode}
-                                                                               
-                          \{
-\textcolor{comment}{//      StatsModel statsModel = new StatsModel();}
-\textcolor{comment}{//        FeatureMap featureMap = annotation.getFeatures();}
-\textcolor{comment}{//        AnnotationSet actions = (AnnotationSet) featureMap.get("actions");}
-\textcolor{comment}{//        Annotation action  = null ;}
-\textcolor{comment}{//        Iterator iterator = actions.iterator() ;}
-\textcolor{comment}{//        String statType = "" ; }
-\textcolor{comment}{//        while(iterator.hasNext())\{}
-\textcolor{comment}{//          action = (Annotation) iterator.next() ; }
-\textcolor{comment}{//          FeatureMap featureMap2 = action.getFeatures() ;}
-\textcolor{comment}{//          if(featureMap2.get("minorType").equals("stats"))\{}
-\textcolor{comment}{//              statType  = ((String) featureMap2.get("string")).toLowerCase();
-       }
-\textcolor{comment}{//          \}}
-\textcolor{comment}{//        \}}\textcolor{comment}{}
-\textcolor{comment}{////        String action =
-       ((String)((Annotation)featureMap.get("actions")).getFeatures().get("string")).toLowerCase();}
-\textcolor{comment}{}\textcolor{comment}{//        ArrayList<String> fileNamesList = getObjectNameFromAnnotation(}
-\textcolor{comment}{//                        featureMap, "fileName");}
-\textcolor{comment}{//        ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(}
-\textcolor{comment}{//                        featureMap, "directoryName");}
-\textcolor{comment}{//        ArrayList<String> quotedObjectNamesList =
-       getObjectNameFromAnnotation(}
-\textcolor{comment}{//                        featureMap, "quotedObject");}
-\textcolor{comment}{//        if (fileNamesList != null) \{}
-\textcolor{comment}{//                for (String fileName : fileNamesList) \{}
-\textcolor{comment}{//                        statsModel.add(fileName, FileKommander.FILE);}
-\textcolor{comment}{//                \}}
-\textcolor{comment}{//        \}}
-\textcolor{comment}{//        if (directoryNamesList != null) \{}
-\textcolor{comment}{//                for (String folderName : directoryNamesList) \{}
-\textcolor{comment}{//                        statsModel.add(folderName, FileKommander.DIRECTORY);}
-\textcolor{comment}{//                \}}
-\textcolor{comment}{//        \}}
-\textcolor{comment}{//        if (quotedObjectNamesList != null) \{}
-\textcolor{comment}{//                for (String quotedName : quotedObjectNamesList) \{}
-\textcolor{comment}{//                        if (!fileNamesList.contains(quotedName)}
-\textcolor{comment}{//                                        &&
-       !directoryNamesList.contains(quotedName))}
-\textcolor{comment}{//                                statsModel.add(quotedName,
-       FileKommander.DIRECTORY);}
-\textcolor{comment}{//                \}}
-\textcolor{comment}{//        \}}
-\textcolor{comment}{//        log.info("Files to be analysed : " + fileNamesList);}
-\textcolor{comment}{//        log.info("Directories to be analysed: " + directoryNamesList);}
-\textcolor{comment}{//        log.info("Files to be abalysed : " + quotedObjectNamesList);}
-\textcolor{comment}{//}
-\textcolor{comment}{//}
-\textcolor{comment}{//        if(statType.equals("count") || statType.contains("count") )\{}
-\textcolor{comment}{//                statsModel.setStatsType(FileKommander.COUNT);}
-\textcolor{comment}{//               }
-\textcolor{comment}{//        \}else if(statType.equals("size") || statType.contains("size") )\{}
-\textcolor{comment}{//                statsModel.setStatsType(FileKommander.SIZEOF);}
-\textcolor{comment}{//        \}else if(statType.equals("list") || statType.contains("list") )\{}
-\textcolor{comment}{//                statsModel.setStatsType(FileKommander.LIST\_FILES);}
-\textcolor{comment}{//        \}else if(statType.equals("modified") || statType.contains("modified")
-       )\{}
-\textcolor{comment}{//                statsModel.setStatsType(FileKommander.LAST\_MODIFIED);}
-\textcolor{comment}{//        \}}
-\textcolor{comment}{//        return statsModel;}
-
+                               \{
         StatsModel statsModel = \textcolor{keyword}{new} StatsModel();
         FeatureMap featureMap = annotation.getFeatures();
-        String action = ((String)((Annotation)featureMap.get(\textcolor{stringliteral}{"action"})).
-      getFeatures().get(\textcolor{stringliteral}{"string"})).toLowerCase();
+        ArrayList<String> actionList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
+      (featureMap,
+                \textcolor{stringliteral}{"actions"});
+        String action = \textcolor{stringliteral}{""};
+        \textcolor{keywordflow}{if} (!actionList.isEmpty()) \{
+            action = actionList.get(0);
+        \} \textcolor{keywordflow}{else} \{
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_ae99df52b353dd7b0d2014d581fcc8cff}{log}.error(\textcolor{stringliteral}{"No stat action found"});
+        \}
+
         ArrayList<String> fileNamesList = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}{getObjectNameFromAnnotation}
       (
                 featureMap, \textcolor{stringliteral}{"fileName"});
@@ -454,18 +604,17 @@ Definition at line \hyperlink{L190}{190} of file \hyperlink{}{Analyse\-Action.\-
         \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_ae99df52b353dd7b0d2014d581fcc8cff}{log}.info(\textcolor{stringliteral}{"Files to be Created : "} + fileNamesList);
         \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_ae99df52b353dd7b0d2014d581fcc8cff}{log}.info(\textcolor{stringliteral}{"Directories to be Created : "} + directoryNamesList);
         \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_ae99df52b353dd7b0d2014d581fcc8cff}{log}.info(\textcolor{stringliteral}{"Files to be Created : "} + quotedObjectNamesList);
-    \textcolor{comment}{//  String actionType=
-       ((String)action.getFeatures().get("string")).toLowerCase();}
-
-        \textcolor{keywordflow}{if}(action.equals(\textcolor{stringliteral}{"count"}) || action.contains(\textcolor{stringliteral}{"count"}) )\{
+        \textcolor{keywordflow}{if} (action.equals(\textcolor{stringliteral}{"count"}) || action.contains(\textcolor{stringliteral}{"count"})) \{
             statsModel.setStatsType(FileKommander.COUNT);
-            
-        \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(action.equals(\textcolor{stringliteral}{"size"}) || action.contains(\textcolor{stringliteral}{"size"}) )\{
+
+        \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (action.equals(\textcolor{stringliteral}{"size"}) || action.contains(\textcolor{stringliteral}{"size"})) \{
             statsModel.setStatsType(FileKommander.SIZEOF);
-        \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(action.equals(\textcolor{stringliteral}{"list"}) || action.contains(\textcolor{stringliteral}{"list"}) )\{
+        \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (action.equals(\textcolor{stringliteral}{"list"}) || action.contains(\textcolor{stringliteral}{"list"})) \{
             statsModel.setStatsType(FileKommander.LIST\_FILES);
-        \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(action.equals(\textcolor{stringliteral}{"modified"}) || action.contains(\textcolor{stringliteral}{"modified"}) )\{
+        \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (action.equals(\textcolor{stringliteral}{"modified"}) || action.contains(\textcolor{stringliteral}{"modified"})) \{
             statsModel.setStatsType(FileKommander.LAST\_MODIFIED);
+        \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (action.equals(\textcolor{stringliteral}{"list"}) || action.contains(\textcolor{stringliteral}{"list"})) \{
+            statsModel.setStatsType(FileKommander.LIST\_FILES);
         \}
         \textcolor{keywordflow}{return} statsModel;
     \}
@@ -480,7 +629,7 @@ Definition at line \hyperlink{L190}{190} of file \hyperlink{}{Analyse\-Action.\-
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_a8652e1bba48585a8c416e6e212fe4766}
 
 
-Definition at line \hyperlink{L289}{289} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L417}{417} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 \begin{DoxyCode}
@@ -489,12 +638,29 @@ Definition at line \hyperlink{L289}{289} of file \hyperlink{}{Analyse\-Action.\-
         \textcolor{keywordflow}{if} (featureMap.containsKey(key)) \{
             outputList = \textcolor{keyword}{new} ArrayList<String>();
             AnnotationSet objectNames = (AnnotationSet) featureMap.get(key);
-            \textcolor{keywordflow}{for} (Annotation \textcolor{keywordtype}{object} : objectNames) \{
-                FeatureMap featureMap2 = \textcolor{keywordtype}{object}.getFeatures();
-                String objectName = (String) featureMap2.get(\textcolor{stringliteral}{"string"});
-                objectName = objectName.replaceAll(\textcolor{stringliteral}{"\(\backslash\)""}, \textcolor{stringliteral}{""});
-                outputList.add(objectName);
+            ArrayList<Annotation> objectList = \textcolor{keyword}{new} ArrayList<Annotation>(
+                    objectNames);
+            Collections.sort(objectList, \textcolor{keyword}{new} OffsetComparator());
+            Iterator<Annotation> iterator = objectList.iterator();
+            \textcolor{keywordflow}{while} (iterator.hasNext()) \{
+                Annotation \textcolor{keywordtype}{object} = iterator.next();
+                \textcolor{keywordflow}{if} (\textcolor{keywordtype}{object} == null) \{
+                    \textcolor{comment}{// node =objectNames.nextNode(node) ;}
+                \} \textcolor{keywordflow}{else} \{
+                    FeatureMap featureMap2 = \textcolor{keywordtype}{object}.getFeatures();
+                    String objectName = (String) featureMap2.get(\textcolor{stringliteral}{"string"});
+                    objectName = objectName.replaceAll(\textcolor{stringliteral}{"\(\backslash\)""}, \textcolor{stringliteral}{""});
+                    outputList.add(objectName);
+                    \textcolor{comment}{// node =objectNames.nextNode(node) ;}
+                \}
             \}
+
+            \textcolor{comment}{// for (Annotation object : objectNames) \{}
+            \textcolor{comment}{// FeatureMap featureMap2 = object.getFeatures();}
+            \textcolor{comment}{// String objectName = (String) featureMap2.get("string");}
+            \textcolor{comment}{// objectName = objectName.replaceAll("\(\backslash\)"", "");}
+            \textcolor{comment}{// outputList.add(objectName);}
+            \textcolor{comment}{// \}}
         \} \textcolor{keywordflow}{else} \{
             \textcolor{keywordflow}{return} \textcolor{keyword}{new} ArrayList<String>();
         \}
@@ -511,7 +677,7 @@ Definition at line \hyperlink{L289}{289} of file \hyperlink{}{Analyse\-Action.\-
 \subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}final Logger com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-Analyse\-Action.\-log = Logger.\-get\-Logger(Analyse\-Action.\-class)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action_ae99df52b353dd7b0d2014d581fcc8cff}
 
 
-Definition at line \hyperlink{L21}{21} of file \hyperlink{}{Analyse\-Action.\-java}.
+Definition at line \hyperlink{L33}{33} of file \hyperlink{}{Analyse\-Action.\-java}.
 
 
 

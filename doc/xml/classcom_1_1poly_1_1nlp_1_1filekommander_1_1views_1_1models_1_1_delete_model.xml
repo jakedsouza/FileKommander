@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="15" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="15" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="17" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a3ff23db5a93631b8e56d9797fad7a866" prot="private" static="no" mutable="no">
         <type>HashMap&lt; String, String &gt;</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="18" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="18" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="22" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a4152e1b4fc47f32d0bcc2793da662ab9" prot="private" static="no" mutable="no">
         <type>HashMap&lt; String, String &gt;</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="20" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="20" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="26" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="26" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -56,7 +56,7 @@
 <para>Create an empty model </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="25" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="25" bodyend="29"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="31" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="31" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a47c3cea5a0d49c533cf5e11352941d5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -92,7 +92,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="37" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="37" bodyend="43"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="43" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="43" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1aad3938fe6c62b7113b7266f67e1882d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>HashMap&lt; String, String &gt;</type>
@@ -106,7 +106,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="48" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="48" bodyend="50"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="54" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="54" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a5cadddfa5dbd0921b7868298275e8880" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -131,7 +131,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="56" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="56" bodyend="58"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="62" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="62" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a72036e220f6f039b1caba1354ef7aa9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>HashMap&lt; String, String &gt;</type>
@@ -145,7 +145,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="63" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="63" bodyend="65"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="69" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="69" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a07ac8800ed6531001f3a2929b08f32d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -170,7 +170,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="71" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="71" bodyend="73"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="77" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="77" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a241ec31c33f6f7b1d00bc9011c702bb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>boolean</type>
@@ -184,7 +184,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="78" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="78" bodyend="80"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="84" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="84" bodyend="86"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a0c5593c30f48ee4afb38a0c9ab99a01d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -209,7 +209,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="86" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="86" bodyend="88"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="92" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="92" bodyend="94"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -218,37 +218,37 @@
 <para>Model to hold information about delete action .</para><para><simplesect kind="author"><para>jake </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="70">
+      <node id="71">
         <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
         <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
       </node>
-      <node id="69">
+      <node id="70">
         <label>com.poly.nlp.filekommander.views.models.DeleteModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model"/>
-        <childnode refid="70" relation="public-inheritance">
+        <childnode refid="71" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="73">
+      <node id="74">
         <label>HashMap&lt; String, String &gt;</label>
       </node>
-      <node id="72">
+      <node id="73">
         <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
         <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
       </node>
-      <node id="71">
+      <node id="72">
         <label>com.poly.nlp.filekommander.views.models.DeleteModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model"/>
-        <childnode refid="72" relation="public-inheritance">
+        <childnode refid="73" relation="public-inheritance">
         </childnode>
-        <childnode refid="73" relation="usage">
+        <childnode refid="74" relation="usage">
           <edgelabel>fileListData</edgelabel>
           <edgelabel>folderListData</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="13" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="13" bodyend="90"/>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" line="13" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/DeleteModel.java" bodystart="13" bodyend="96"/>
     <listofallmembers>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a47c3cea5a0d49c533cf5e11352941d5f" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::DeleteModel</scope><name>add</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model_1a3aa7255e76c7d45c498f27081c88771d" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::DeleteModel</scope><name>DeleteModel</name></member>

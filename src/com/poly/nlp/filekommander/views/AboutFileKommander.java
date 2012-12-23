@@ -30,6 +30,8 @@ public class AboutFileKommander extends JDialog {
 
 	private static final Logger log = Logger.getLogger(AboutFileKommander.class);
 
+	/**
+	 */
 	private final JPanel contentPanel = new JPanel();
 
 	/**

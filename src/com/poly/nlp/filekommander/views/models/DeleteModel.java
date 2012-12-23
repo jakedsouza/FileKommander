@@ -12,11 +12,17 @@ import com.poly.nlp.filekommander.FileKommander;
  */
 public class DeleteModel implements GenericActionModel {
 	// Is delete action run
+	/**
+	 */
 	private boolean isModelRun;
 
 	// list of files as key and error message if any as value
+	/**
+	 */
 	private HashMap<String, String> fileListData;
 	// list of folders as key and error message if any as value
+	/**
+	 */
 	private HashMap<String, String> folderListData;
 
 	/**
@@ -73,7 +79,7 @@ public class DeleteModel implements GenericActionModel {
 	}
 
 	/**
-	 * @return the isModelRun
+	 * @return  the isModelRun
 	 */
 	public boolean isModelRun() {
 		return isModelRun;

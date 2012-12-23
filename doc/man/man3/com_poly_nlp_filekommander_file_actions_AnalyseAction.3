@@ -1,4 +1,4 @@
-.TH "com.poly.nlp.filekommander.file.actions.AnalyseAction" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.TH "com.poly.nlp.filekommander.file.actions.AnalyseAction" 3 "Sat Dec 22 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -29,6 +29,9 @@ com.poly.nlp.filekommander.file.actions.AnalyseAction \-
 .RI "static \fBGenericActionModel\fP \fBanalyseExistsAction\fP (Annotation annotation)"
 .br
 .ti -1c
+.RI "static \fBGenericActionModel\fP \fBanalysePhraseAction\fP (Annotation annotation, String actionType)"
+.br
+.ti -1c
 .RI "static \fBGenericActionModel\fP \fBanalyseInsertAction\fP (Annotation annotation)"
 .br
 .ti -1c
@@ -56,13 +59,20 @@ com.poly.nlp.filekommander.file.actions.AnalyseAction \-
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 20 of file AnalyseAction\&.java\&.
+\fBAuthor:\fP
+.RS 4
+neha , jake 
+.RE
+.PP
+
+.PP
+Definition at line 32 of file AnalyseAction\&.java\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.analyseAction (StringactionType, Annotationannotation)\fC [static]\fP"
 
 .PP
-Definition at line 23 of file AnalyseAction\&.java\&.
+Definition at line 35 of file AnalyseAction\&.java\&.
 .PP
 .nf
                                    {
@@ -80,26 +90,26 @@ Definition at line 23 of file AnalyseAction\&.java\&.
         case 'delete':
             returnModel = analyseDeleteAction(annotation);
             break;
-        case 'exists':
+        case 'exist':
             returnModel = analyseExistsAction(annotation);
             break;
         case 'insert':
-            returnModel = analyseInsertAction(annotation);
+            returnModel = analysePhraseAction(annotation, actionType);
             break;
         case 'open':
             returnModel = analyseOpenAction(annotation);
             break;
         case 'remove':
-            returnModel = analyseRemoveAction(annotation);
+            returnModel = analysePhraseAction(annotation, actionType);
             break;
         case 'rename':
             returnModel = analyseRenameAction(annotation);
             break;
         case 'replace':
-            returnModel = analyseReplaceAction(annotation);
+            returnModel = analysePhraseAction(annotation, actionType);
             break;
         case 'stats':
-            returnModel = analyseStatsAction(annotation,actionType);
+            returnModel = analyseStatsAction(annotation, actionType);
             break;
         default:
             break;
@@ -111,7 +121,7 @@ Definition at line 23 of file AnalyseAction\&.java\&.
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.analyseCreateAction (Annotationannotation)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 69 of file AnalyseAction\&.java\&.
+Definition at line 79 of file AnalyseAction\&.java\&.
 .PP
 .nf
                                                                                  {
@@ -149,7 +159,7 @@ Definition at line 69 of file AnalyseAction\&.java\&.
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.analyseDeleteAction (Annotationannotation)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 101 of file AnalyseAction\&.java\&.
+Definition at line 111 of file AnalyseAction\&.java\&.
 .PP
 .nf
                                                                                  {
@@ -187,47 +197,211 @@ Definition at line 101 of file AnalyseAction\&.java\&.
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.analyseExistsAction (Annotationannotation)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 133 of file AnalyseAction\&.java\&.
+Definition at line 143 of file AnalyseAction\&.java\&.
 .PP
 .nf
                                                                                  {
-        //TODO
-        return null;
+        FeatureMap featureMap = annotation\&.getFeatures();
+        ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
+                featureMap, 'fileName');
+        ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
+                featureMap, 'directoryName');
+        ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
+                featureMap, 'quotedObject');
+        ExistsModel existsModel = new ExistsModel();
+        if (fileNamesList != null) {
+            for (String fileName : fileNamesList) {
+                existsModel\&.add(fileName, FileKommander\&.FILE);
+            }
+        }
+        if (directoryNamesList != null) {
+            for (String folderName : directoryNamesList) {
+                existsModel\&.add(folderName, FileKommander\&.DIRECTORY);
+            }
+        }
+        if (quotedObjectNamesList != null) {
+            for (String quotedName : quotedObjectNamesList) {
+                if (!fileNamesList\&.contains(quotedName)
+                        && !directoryNamesList\&.contains(quotedName))
+                    existsModel\&.add(quotedName, FileKommander\&.DIRECTORY);
+            }
+        }
+
+        return existsModel;
 
     }
 .fi
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.analyseInsertAction (Annotationannotation)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 139 of file AnalyseAction\&.java\&.
+Definition at line 255 of file AnalyseAction\&.java\&.
 .PP
 .nf
                                                                                  {
-        //TODO
-        return null;
+
+        FeatureMap featureMap = annotation\&.getFeatures();
+        ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
+                featureMap, 'fileName');
+        ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
+                featureMap, 'quotedObject');
+        ArrayList<String> phraseList = getObjectNameFromAnnotation(featureMap,
+                'phraseName');
+        PhraseOperationModel phraseOperationModel = new PhraseOperationModel();
+        phraseOperationModel\&.setOperationType(FileKommander\&.INSERT);
+
+        phraseOperationModel\&.setRepetition(getObjectNameFromAnnotation(
+                featureMap, 'position')\&.get(0));
+        // phraseOperationModel\&.set
+        String position = phraseOperationModel\&.getRepetition();
+        // String newPhrase = '';
+        // String oldPhrase = '';
+
+        // phraseOperationModel\&.setRepetition(repetition)
+
+        if (quotedObjectNamesList != null) {
+            for (String quotedName : quotedObjectNamesList) {
+                if (phraseList\&.contains(quotedName))
+                    phraseOperationModel\&.setNewPhrase(quotedName);
+                else
+                    phraseOperationModel\&.setOldPhrase(quotedName);
+            }
+        }
+
+        return phraseOperationModel;
 
     }
 .fi
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.analyseOpenAction (Annotationannotation)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 145 of file AnalyseAction\&.java\&.
+Definition at line 289 of file AnalyseAction\&.java\&.
 .PP
 .nf
                                                                                {
-        //TODO
-        return null;
+        FeatureMap featureMap = annotation\&.getFeatures();
+        ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
+                featureMap, 'fileName');
+        ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
+                featureMap, 'directoryName');
+        ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
+                featureMap, 'quotedObject');
+        OpenModel openModel = new OpenModel();
+        if (fileNamesList != null) {
+            for (String fileName : fileNamesList) {
+                openModel\&.add(fileName, FileKommander\&.FILE);
+            }
+        }
+        if (directoryNamesList != null) {
+            for (String folderName : directoryNamesList) {
+                openModel\&.add(folderName, FileKommander\&.DIRECTORY);
+            }
+        }
+        if (quotedObjectNamesList != null) {
+            for (String quotedName : quotedObjectNamesList) {
+                if (!fileNamesList\&.contains(quotedName)
+                        && !directoryNamesList\&.contains(quotedName))
+                    openModel\&.add(quotedName, FileKommander\&.DIRECTORY);
+            }
+        }
 
+        return openModel;
+
+    }
+.fi
+.SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.analysePhraseAction (Annotationannotation, StringactionType)\fC [static]\fP, \fC [private]\fP"
+
+.PP
+Definition at line 174 of file AnalyseAction\&.java\&.
+.PP
+.nf
+                                                      {
+
+        FeatureMap featureMap = annotation\&.getFeatures();
+        ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
+                featureMap, 'fileName');
+        ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
+                featureMap, 'quotedObject');
+        ArrayList<String> phraseList = getObjectNameFromAnnotation(featureMap,
+                'phraseName');
+        PhraseOperationModel phraseOperationModel = new PhraseOperationModel();
+        if (actionType\&.equalsIgnoreCase('insert'))
+            phraseOperationModel\&.setOperationType(FileKommander\&.INSERT);
+        else if (actionType\&.equalsIgnoreCase('replace'))
+            phraseOperationModel\&.setOperationType(FileKommander\&.REPLACE);
+        else if (actionType\&.equalsIgnoreCase('remove'))
+            phraseOperationModel\&.setOperationType(FileKommander\&.REMOVE);
+        for (String fileName : fileNamesList) {
+            phraseOperationModel\&.add(fileName);
+        }
+        // phraseOperationModel\&.setFileListData(fileNamesList);
+        ArrayList<String> repList = getObjectNameFromAnnotation(featureMap,
+                'repitition');
+        if (!repList\&.isEmpty()) {
+            phraseOperationModel\&.setRepetition(repList\&.get(0));
+        } else {
+            phraseOperationModel\&.setRepetition('every');
+        }
+
+        // phraseOperationModel\&.set
+        ArrayList<String> posList = getObjectNameFromAnnotation(featureMap,
+                'position');
+        if (!posList\&.isEmpty()) {
+            phraseOperationModel\&.setPosition(posList\&.get(0));
+        } else {
+            phraseOperationModel\&.setPosition('after');
+        }
+        // String newPhrase = '';
+        // String oldPhrase = '';
+
+        // phraseOperationModel\&.setRepetition(repetition)
+
+        ArrayList<String> phrases = getObjectNameFromAnnotation(featureMap,
+                'quotedObject');
+        if (phrases\&.size() <= 2) {
+            if(phraseOperationModel\&.getOperationType() == FileKommander\&.INSERT ) {
+            phraseOperationModel\&.setNewPhrase(phrases\&.get(0));
+            phraseOperationModel\&.setOldPhrase(phrases\&.get(1));
+            }else if(phraseOperationModel\&.getOperationType() == FileKommander\&.REMOVE){
+            //  phraseOperationModel\&.setNewPhrase(phrases\&.get(1));
+                phraseOperationModel\&.setOldPhrase(phrases\&.get(0));
+            }else if(phraseOperationModel\&.getOperationType() == FileKommander\&.REPLACE){
+                phraseOperationModel\&.setNewPhrase(phrases\&.get(1));
+                phraseOperationModel\&.setOldPhrase(phrases\&.get(0));
+            }
+        } 
+//      else if (phrases\&.size() == 1) {
+//          phraseOperationModel\&.setNewPhrase(phrases\&.get(0));
+//          phraseOperationModel\&.setOldPhrase('\\w');
+//      }
+        else {
+            FileKommanderRun\&.getGuiv2()\&.displayErrorMessage(
+                    'Multiple phrases found\&. Not sure what to do\&.');
+            return null;
+        }
+        if (quotedObjectNamesList != null) {
+            for (String quotedName : quotedObjectNamesList) {
+                if (phraseList\&.contains(quotedName)) {
+                    if (phraseOperationModel\&.getNewPhrase()\&.equals('')) {
+                        phraseOperationModel\&.setNewPhrase(quotedName);
+                    }
+                } else {
+                    if (phraseOperationModel\&.getOldPhrase()\&.equals('')) {
+                        phraseOperationModel\&.setOldPhrase(quotedName);
+                    }
+                }
+            }
+        }
+        return phraseOperationModel;
     }
 .fi
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.analyseRemoveAction (Annotationannotation)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 151 of file AnalyseAction\&.java\&.
+Definition at line 320 of file AnalyseAction\&.java\&.
 .PP
 .nf
                                                                                  {
-        //TODO
+        // TODO
         return null;
 
     }
@@ -235,32 +409,36 @@ Definition at line 151 of file AnalyseAction\&.java\&.
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.analyseRenameAction (Annotationannotation)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 157 of file AnalyseAction\&.java\&.
+Definition at line 326 of file AnalyseAction\&.java\&.
 .PP
 .nf
                                                                                  {
         FeatureMap featureMap = annotation\&.getFeatures();
         String content = (String) featureMap\&.get('content');
-        
+
         ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
                 featureMap, 'fileName');
-        fileNamesList\&.addAll(getObjectNameFromAnnotation(
-                featureMap, 'directoryName'));
-        fileNamesList\&.addAll(getObjectNameFromAnnotation(
-                featureMap, 'quotedObject'));
-//      ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
-//              featureMap, 'directoryName');
-//      ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
-//              featureMap, 'quotedObject');
+        fileNamesList\&.addAll(getObjectNameFromAnnotation(featureMap,
+                'directoryName'));
+        fileNamesList\&.addAll(getObjectNameFromAnnotation(featureMap,
+                'quotedObject'));
+        // ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
+        // featureMap, 'directoryName');
+        // ArrayList<String> quotedObjectNamesList =
+        // getObjectNameFromAnnotation(
+        // featureMap, 'quotedObject');
         RenameModel renameModel = new RenameModel();
-        if(fileNamesList\&.size() == 2){
+        if (fileNamesList\&.size() == 2) {
             renameModel\&.setOldFileName(fileNamesList\&.get(0));
             renameModel\&.setNewFileName(fileNamesList\&.get(1));
             renameModel\&.setType(0);
             renameModel\&.setModelRun(false);
-        }else{
-            FileKommanderRun\&.getGuiv2()\&.displayErrorMessage('Multiple file/folder names found , unsure which to rename to which');
-            return null ;
+        } else {
+            FileKommanderRun
+                    \&.getGuiv2()
+                    \&.displayErrorMessage(
+                            'Multiple file/folder names found , unsure which to rename to which');
+            return null;
         }
         return renameModel;
     }
@@ -268,11 +446,11 @@ Definition at line 157 of file AnalyseAction\&.java\&.
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.analyseReplaceAction (Annotationannotation)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 184 of file AnalyseAction\&.java\&.
+Definition at line 357 of file AnalyseAction\&.java\&.
 .PP
 .nf
                                                                                   {
-        //TODO
+        // TODO
         return null;
 
     }
@@ -280,67 +458,21 @@ Definition at line 184 of file AnalyseAction\&.java\&.
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.analyseStatsAction (Annotationannotation, StringactionType)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 190 of file AnalyseAction\&.java\&.
+Definition at line 363 of file AnalyseAction\&.java\&.
 .PP
 .nf
-                                                                                                   {
-//      StatsModel statsModel = new StatsModel();
-//        FeatureMap featureMap = annotation\&.getFeatures();
-//        AnnotationSet actions = (AnnotationSet) featureMap\&.get('actions');
-//        Annotation action  = null ;
-//        Iterator iterator = actions\&.iterator() ;
-//        String statType = '' ; 
-//        while(iterator\&.hasNext()){
-//          action = (Annotation) iterator\&.next() ; 
-//          FeatureMap featureMap2 = action\&.getFeatures() ;
-//          if(featureMap2\&.get('minorType')\&.equals('stats')){
-//              statType  = ((String) featureMap2\&.get('string'))\&.toLowerCase(); 
-//          }
-//        }
-////        String action = ((String)((Annotation)featureMap\&.get('actions'))\&.getFeatures()\&.get('string'))\&.toLowerCase();
-//        ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
-//                        featureMap, 'fileName');
-//        ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
-//                        featureMap, 'directoryName');
-//        ArrayList<String> quotedObjectNamesList = getObjectNameFromAnnotation(
-//                        featureMap, 'quotedObject');
-//        if (fileNamesList != null) {
-//                for (String fileName : fileNamesList) {
-//                        statsModel\&.add(fileName, FileKommander\&.FILE);
-//                }
-//        }
-//        if (directoryNamesList != null) {
-//                for (String folderName : directoryNamesList) {
-//                        statsModel\&.add(folderName, FileKommander\&.DIRECTORY);
-//                }
-//        }
-//        if (quotedObjectNamesList != null) {
-//                for (String quotedName : quotedObjectNamesList) {
-//                        if (!fileNamesList\&.contains(quotedName)
-//                                        && !directoryNamesList\&.contains(quotedName))
-//                                statsModel\&.add(quotedName, FileKommander\&.DIRECTORY);
-//                }
-//        }
-//        log\&.info('Files to be analysed : ' + fileNamesList);
-//        log\&.info('Directories to be analysed: ' + directoryNamesList);
-//        log\&.info('Files to be abalysed : ' + quotedObjectNamesList);
-//
-//
-//        if(statType\&.equals('count') || statType\&.contains('count') ){
-//                statsModel\&.setStatsType(FileKommander\&.COUNT);
-//               
-//        }else if(statType\&.equals('size') || statType\&.contains('size') ){
-//                statsModel\&.setStatsType(FileKommander\&.SIZEOF);
-//        }else if(statType\&.equals('list') || statType\&.contains('list') ){
-//                statsModel\&.setStatsType(FileKommander\&.LIST_FILES);
-//        }else if(statType\&.equals('modified') || statType\&.contains('modified') ){
-//                statsModel\&.setStatsType(FileKommander\&.LAST_MODIFIED);
-//        }
-//        return statsModel;
-
+                               {
         StatsModel statsModel = new StatsModel();
         FeatureMap featureMap = annotation\&.getFeatures();
-        String action = ((String)((Annotation)featureMap\&.get('action'))\&.getFeatures()\&.get('string'))\&.toLowerCase();
+        ArrayList<String> actionList = getObjectNameFromAnnotation(featureMap,
+                'actions');
+        String action = '';
+        if (!actionList\&.isEmpty()) {
+            action = actionList\&.get(0);
+        } else {
+            log\&.error('No stat action found');
+        }
+
         ArrayList<String> fileNamesList = getObjectNameFromAnnotation(
                 featureMap, 'fileName');
         ArrayList<String> directoryNamesList = getObjectNameFromAnnotation(
@@ -367,17 +499,17 @@ Definition at line 190 of file AnalyseAction\&.java\&.
         log\&.info('Files to be Created : ' + fileNamesList);
         log\&.info('Directories to be Created : ' + directoryNamesList);
         log\&.info('Files to be Created : ' + quotedObjectNamesList);
-    //  String actionType= ((String)action\&.getFeatures()\&.get('string'))\&.toLowerCase();
-
-        if(action\&.equals('count') || action\&.contains('count') ){
+        if (action\&.equals('count') || action\&.contains('count')) {
             statsModel\&.setStatsType(FileKommander\&.COUNT);
-            
-        }else if(action\&.equals('size') || action\&.contains('size') ){
+
+        } else if (action\&.equals('size') || action\&.contains('size')) {
             statsModel\&.setStatsType(FileKommander\&.SIZEOF);
-        }else if(action\&.equals('list') || action\&.contains('list') ){
+        } else if (action\&.equals('list') || action\&.contains('list')) {
             statsModel\&.setStatsType(FileKommander\&.LIST_FILES);
-        }else if(action\&.equals('modified') || action\&.contains('modified') ){
+        } else if (action\&.equals('modified') || action\&.contains('modified')) {
             statsModel\&.setStatsType(FileKommander\&.LAST_MODIFIED);
+        }else if (action\&.equals('list') || action\&.contains('list')) {
+            statsModel\&.setStatsType(FileKommander\&.LIST_FILES);
         }
         return statsModel;
     }
@@ -385,7 +517,7 @@ Definition at line 190 of file AnalyseAction\&.java\&.
 .SS "static ArrayList<String> com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.getObjectNameFromAnnotation (FeatureMapfeatureMap, Stringkey)\fC [static]\fP"
 
 .PP
-Definition at line 289 of file AnalyseAction\&.java\&.
+Definition at line 417 of file AnalyseAction\&.java\&.
 .PP
 .nf
                                                {
@@ -393,12 +525,29 @@ Definition at line 289 of file AnalyseAction\&.java\&.
         if (featureMap\&.containsKey(key)) {
             outputList = new ArrayList<String>();
             AnnotationSet objectNames = (AnnotationSet) featureMap\&.get(key);
-            for (Annotation object : objectNames) {
-                FeatureMap featureMap2 = object\&.getFeatures();
-                String objectName = (String) featureMap2\&.get('string');
-                objectName = objectName\&.replaceAll('\'', '');
-                outputList\&.add(objectName);
+            ArrayList<Annotation> objectList = new ArrayList<Annotation>(
+                    objectNames);
+            Collections\&.sort(objectList, new OffsetComparator());
+            Iterator<Annotation> iterator = objectList\&.iterator();
+            while (iterator\&.hasNext()) {
+                Annotation object = iterator\&.next();
+                if (object == null) {
+                    // node =objectNames\&.nextNode(node) ;
+                } else {
+                    FeatureMap featureMap2 = object\&.getFeatures();
+                    String objectName = (String) featureMap2\&.get('string');
+                    objectName = objectName\&.replaceAll('\'', '');
+                    outputList\&.add(objectName);
+                    // node =objectNames\&.nextNode(node) ;
+                }
             }
+
+            // for (Annotation object : objectNames) {
+            // FeatureMap featureMap2 = object\&.getFeatures();
+            // String objectName = (String) featureMap2\&.get('string');
+            // objectName = objectName\&.replaceAll('\'', '');
+            // outputList\&.add(objectName);
+            // }
         } else {
             return new ArrayList<String>();
         }
@@ -412,7 +561,7 @@ Definition at line 289 of file AnalyseAction\&.java\&.
 .SS "final Logger com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.AnalyseAction\&.log = Logger\&.getLogger(AnalyseAction\&.class)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 21 of file AnalyseAction\&.java\&.
+Definition at line 33 of file AnalyseAction\&.java\&.
 
 .SH "Author"
 .PP 

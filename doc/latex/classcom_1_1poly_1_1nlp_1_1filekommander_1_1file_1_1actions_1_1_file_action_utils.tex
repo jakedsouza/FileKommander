@@ -16,13 +16,13 @@ static String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1act
 \item 
 static String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a061f74de68076705a673624a99d993c6}{delete\-Folder} (String folder\-Name)
 \item 
-static void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_af5404810d59392650661f3a3fb7f47ce}{exists} (String name)
+static String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_af2aa2e6f0a35f71130a23a1ad9d3e206}{exists} (String name)
 \item 
-static boolean \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a127d6dea53d3df50906584a9dcd8394a}{open} (String name)
+static String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7da795595fa0d29e2e237aea97f1840b}{open} (String name)
 \item 
 static String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a195173915a702daa3da1750b7a00bf8f}{rename} (String old\-Name, String new\-Name)
 \item 
-static String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a0f8ca9726628c7fa3b4e191d9c688cba}{insert} (String phrase\-To\-Be\-Inserted, String existing\-Phrase, String position, String repetition, String file\-Name)  throws I\-O\-Exception 
+static String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a0f8ca9726628c7fa3b4e191d9c688cba}{insert} (String phrase\-To\-Be\-Inserted, String existing\-Phrase, String position, String repetition, String file\-Name)
 \item 
 static void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad8d655de0cba854b1c409ed450bbe636}{stats} (String parent\-Object\-Name, int stats\-Type, int parent\-Object\-Type)  throws I\-O\-Exception 
 \item 
@@ -32,9 +32,9 @@ static void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actio
 \item 
 static void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_abda56bf0db7967ce2a92b8be5503150a}{count} (String parent\-Object\-Name, int parent\-Object\-Type, String type)  throws I\-O\-Exception 
 \item 
-static void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ac7e7850c45017865b67e5ad1280d1970}{remove} (String phrase\-To\-Be\-Removed, String file\-Name)  throws I\-O\-Exception 
+static String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_abb9025e6066ff691e171546b92c0d04b}{remove} (String phrase\-To\-Be\-Removed, String repetition, String file\-Name)
 \item 
-static void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a07c59ff019da6971e505960a04da604d}{replace} (String phrase\-To\-Be\-Inserted, String existing\-Phrase, String file\-Name)  throws I\-O\-Exception 
+static String \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7974bd083dd0b112eee6a253c94f281c}{replace} (String phrase\-To\-Be\-Inserted, String existing\-Phrase, String repetition, String file\-Name)
 \item 
 static int \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_aa776213b3cb78ddde6f89e4b982a8e18}{count\-Words} (String file\-Name)
 \item 
@@ -87,7 +87,7 @@ Definition at line \hyperlink{L26}{26} of file \hyperlink{}{File\-Action\-Utils.
 )  throws I\-O\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a2df1aca8a703f77ff7ca700541d6fb6b}
 
 
-Definition at line \hyperlink{L452}{452} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L499}{499} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
@@ -116,12 +116,12 @@ Definition at line \hyperlink{L452}{452} of file \hyperlink{}{File\-Action\-Util
 )  throws I\-O\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_abda56bf0db7967ce2a92b8be5503150a}
 
 
-Definition at line \hyperlink{L470}{470} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L514}{514} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
                                             \{
-        File f = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"testDir/"} + parentObjectName);
+        File f = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + parentObjectName);
         \textcolor{keywordflow}{if} (type.equals(\textcolor{stringliteral}{"words"})) \{
             \textcolor{keywordflow}{if} (f.exists()) \{
                 FileReader fr = \textcolor{keyword}{new} FileReader(f);
@@ -135,7 +135,7 @@ Definition at line \hyperlink{L470}{470} of file \hyperlink{}{File\-Action\-Util
                     numWords++;
                 \}
 
-                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"no. of words in file = "} + numWords);
+                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{" No . of words in file = "} + numWords +\textcolor{stringliteral}{" "});
             \} \textcolor{keywordflow}{else} \{
                 \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"This file doesn't exists."});
             \}
@@ -166,19 +166,19 @@ Definition at line \hyperlink{L470}{470} of file \hyperlink{}{File\-Action\-Util
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a5159f72af191d97005ade7a8b7a95ac1}
 
 
-Definition at line \hyperlink{L699}{699} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L828}{828} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
-                                                         \{
+                                                          \{
         File f;
-        \textcolor{keywordflow}{if}(parentObjectName.equals(\textcolor{stringliteral}{"testDir"}))\{
-            f = \textcolor{keyword}{new} File(parentObjectName); 
-        \}\textcolor{keywordflow}{else}\{
-            f = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"testDir/"} + parentObjectName);
+        \textcolor{keywordflow}{if} (parentObjectName.equals(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory})) \{
+            f = \textcolor{keyword}{new} File(parentObjectName);
+        \} \textcolor{keywordflow}{else} \{
+            f = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + parentObjectName);
         \}
         \textcolor{keywordtype}{int} c = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a1e5c3dca1c8116ae57515c36edeae4d9}{countSubFiles}(f);
-        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"count is"}+c);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"count is"} + c);
         \textcolor{keywordflow}{return} c;
     \}
 \end{DoxyCode}
@@ -192,15 +192,15 @@ Definition at line \hyperlink{L699}{699} of file \hyperlink{}{File\-Action\-Util
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a06dfce7b70b23f97847c06172ddab4b6}
 
 
-Definition at line \hyperlink{L604}{604} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L732}{732} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
-             \{
-        File f = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"testDir/"} + parentObjectName); 
-        String line = \textcolor{stringliteral}{""}; 
+                                    \{
+        File f = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + parentObjectName);
+        String line = \textcolor{stringliteral}{""};
         \textcolor{keywordtype}{int} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a2df1aca8a703f77ff7ca700541d6fb6b}{count} = 0;
-    
+
         \textcolor{keywordflow}{try} \{
             \textcolor{keywordflow}{if} (f.exists()) \{
                 FileReader fr = \textcolor{keyword}{new} FileReader(f);
@@ -217,8 +217,9 @@ Definition at line \hyperlink{L604}{604} of file \hyperlink{}{File\-Action\-Util
             \textcolor{comment}{// TODO Auto-generated catch block}
             e.printStackTrace();
         \}
-        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"the no of times the word "}+wordToBeCounted+\textcolor{stringliteral}{" appears is "}+
-      count);
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"the no of times the word "} + wordToBeCounted + \textcolor{stringliteral}{" appears
+       is "}
+                + count);
         \textcolor{keywordflow}{return} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a2df1aca8a703f77ff7ca700541d6fb6b}{count};
     \}
 \end{DoxyCode}
@@ -231,7 +232,7 @@ Definition at line \hyperlink{L604}{604} of file \hyperlink{}{File\-Action\-Util
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a1e5c3dca1c8116ae57515c36edeae4d9}
 
 
-Definition at line \hyperlink{L712}{712} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L840}{840} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
@@ -259,39 +260,39 @@ Definition at line \hyperlink{L712}{712} of file \hyperlink{}{File\-Action\-Util
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_aa776213b3cb78ddde6f89e4b982a8e18}
 
 
-Definition at line \hyperlink{L540}{540} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L665}{665} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
-                                                 \{
-        File f = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"testDir/"} + fileName);
+                                                  \{
+        File f = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + fileName);
         \textcolor{keywordtype}{int} numWords = 0;
         \textcolor{keywordflow}{if} (f.exists()) \{
-            \textcolor{keywordflow}{try}\{
+            \textcolor{keywordflow}{try} \{
                 FileReader fr;
                 fr = \textcolor{keyword}{new} FileReader(f);
-                
+
                 BufferedReader br = \textcolor{keyword}{new} BufferedReader(fr);
                 StreamTokenizer stz = \textcolor{keyword}{new} StreamTokenizer(br);
                 \textcolor{keywordtype}{int} index = 0;
-                
+
                 \textcolor{keywordflow}{while} (index != StreamTokenizer.TT\_EOF) \{
                     index = stz.nextToken();
                     numWords++;
                 \}
 
-                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"no. of words in file = "} + numWords); 
-            
+                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"no. of words in file = "} + numWords);
+
             \} \textcolor{keywordflow}{catch} (FileNotFoundException e) \{
                 e.printStackTrace();
             \} \textcolor{keywordflow}{catch} (IOException e) \{
                 e.printStackTrace();
-            \} \textcolor{keywordflow}{finally}\{
+            \} \textcolor{keywordflow}{finally} \{
                 \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"Some error reading the file"});
             \}
-        \}\textcolor{keywordflow}{else} \{
-                \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"This file doesn't exists."}); 
-            \}
+        \} \textcolor{keywordflow}{else} \{
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"This file doesn't exists."});
+        \}
         \textcolor{keywordflow}{return} numWords;
     \}
 \end{DoxyCode}
@@ -455,35 +456,39 @@ Definition at line \hyperlink{L159}{159} of file \hyperlink{}{File\-Action\-Util
         \textcolor{keywordflow}{return} errorMsg;
     \}
 \end{DoxyCode}
-\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_af5404810d59392650661f3a3fb7f47ce}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!exists@{exists}}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_af2aa2e6f0a35f71130a23a1ad9d3e206}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!exists@{exists}}
 \index{exists@{exists}!com::poly::nlp::filekommander::file::actions::FileActionUtils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}}
-\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utils.\-exists (
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}static String com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utils.\-exists (
 \begin{DoxyParamCaption}
 \item[{String}]{name}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_af5404810d59392650661f3a3fb7f47ce}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_af2aa2e6f0a35f71130a23a1ad9d3e206}
 
 
 Definition at line \hyperlink{L234}{234} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
-                                           \{
-        String errorMsg = \textcolor{stringliteral}{""};
+                                             \{
+        String message = \textcolor{stringliteral}{""};
 
         System.out.println(\textcolor{stringliteral}{"name of object is"} + name);
         \textcolor{keywordflow}{try} \{
-            File file = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"testDir/"} + name);
+            File file = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + name);
             \textcolor{keywordflow}{if} (file.exists()) \{
+                message = \textcolor{stringliteral}{"<html>"} + name + \textcolor{stringliteral}{" exists at <u>"}
+                        + file.getAbsolutePath() + \textcolor{stringliteral}{"</u></html>"};
                 System.out.println(\textcolor{stringliteral}{"File/Folder exists!"});
             \} \textcolor{keywordflow}{else} \{
-                errorMsg = \textcolor{stringliteral}{"File/Folder "} + name + \textcolor{stringliteral}{" doesn't exist!"};
-                System.out.println(errorMsg);
+                message = \textcolor{stringliteral}{"File/Folder "} + name + \textcolor{stringliteral}{" doesn't exist!"};
+                System.out.println(message);
             \}
 
         \} \textcolor{keywordflow}{catch} (Exception e) \{
             e.printStackTrace();
         \}
+
+        \textcolor{keywordflow}{return} message;
     \}
 \end{DoxyCode}
 \hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a322374face7f551b379f23ddb6a235b9}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!get\-Working\-Directory@{get\-Working\-Directory}}
@@ -516,62 +521,92 @@ Definition at line \hyperlink{L33}{33} of file \hyperlink{}{File\-Action\-Utils.
 \item[{String}]{repetition, }
 \item[{String}]{file\-Name}
 \end{DoxyParamCaption}
-)  throws I\-O\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a0f8ca9726628c7fa3b4e191d9c688cba}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a0f8ca9726628c7fa3b4e191d9c688cba}
 
 
-Definition at line \hyperlink{L378}{378} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L388}{388} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
-                                                                               
-           \{
-        File file = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"testDir/"}+fileName);
+                             \{
+        File file = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + fileName);
         String message = \textcolor{stringliteral}{""};
-        
-        \textcolor{keywordflow}{if}(file.exists())\{
-        String contents = FileUtils.readFileToString(file);
-        String newString = \textcolor{stringliteral}{""};
-        Pattern p = Pattern.compile(existingPhrase);
-        Matcher m = p.matcher(contents);
-        \textcolor{keywordflow}{if}(m.find())\{
-        \textcolor{keywordflow}{if}(position.equalsIgnoreCase(\textcolor{stringliteral}{"before"}))\{
-            newString = phraseToBeInserted + \textcolor{stringliteral}{" "} +existingPhrase;
-            \textcolor{keywordflow}{if}(repetition.equalsIgnoreCase(\textcolor{stringliteral}{"every"}) || repetition.
-      equalsIgnoreCase(\textcolor{stringliteral}{"all"}))
-                contents = contents.replace(existingPhrase, newString);
-            \textcolor{keywordflow}{if}(repetition.equalsIgnoreCase(\textcolor{stringliteral}{"first"}))
-                contents = contents.replaceFirst(existingPhrase, newString);
-            \textcolor{keywordflow}{if}(repetition.equalsIgnoreCase(\textcolor{stringliteral}{"last"}))
-                \textcolor{comment}{//contents = contents.replaceFirst(existingPhrase, newString);  }
-                contents = contents.substring(0, contents.lastIndexOf(
-      existingPhrase) + 1) + newString;
-        \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(position.equalsIgnoreCase(\textcolor{stringliteral}{"after"}))\{
-            newString = existingPhrase+\textcolor{stringliteral}{" "}+phraseToBeInserted;
-            \textcolor{keywordflow}{if}(repetition.equalsIgnoreCase(\textcolor{stringliteral}{"every"}) || repetition.
-      equalsIgnoreCase(\textcolor{stringliteral}{"all"}))
-                contents = contents.replace(existingPhrase, newString);
-            \textcolor{keywordflow}{if}(repetition.equalsIgnoreCase(\textcolor{stringliteral}{"first"}))
-                contents = contents.replaceFirst(existingPhrase, newString);
-            \textcolor{keywordflow}{if}(repetition.equalsIgnoreCase(\textcolor{stringliteral}{"last"}))\{
-                \textcolor{comment}{//contents = contents.substring(0,
-       contents.lastIndexOf(existingPhrase)) + newString;}
-                
+        \textcolor{keywordtype}{int} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a2df1aca8a703f77ff7ca700541d6fb6b}{count} = 0; \textcolor{comment}{// TODO}
+        \textcolor{keywordflow}{if} (file.exists()) \{
+
+            String contents;
+            \textcolor{keywordflow}{try} \{
+                contents = FileUtils.readFileToString(file);
+            \} \textcolor{keywordflow}{catch} (Exception e) \{
+                message = \textcolor{stringliteral}{"Error reading the file "};
+                e.printStackTrace();
+                \textcolor{keywordflow}{return} message;
             \}
-        \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(position.equalsIgnoreCase(\textcolor{stringliteral}{"beginning"}) || position.
-      equalsIgnoreCase(\textcolor{stringliteral}{"start"}))\{
-            contents = phraseToBeInserted + \textcolor{stringliteral}{" "} + contents;
-        \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(position.equalsIgnoreCase(\textcolor{stringliteral}{"end"}))\{
-            contents = contents +\textcolor{stringliteral}{" "}+ phraseToBeInserted;
-        \}
-        \textcolor{comment}{//log.info(contents);}
-        FileUtils.writeStringToFile(file, contents);
-        message = \textcolor{stringliteral}{"Inserted phrase "}+phraseToBeInserted + position  + 
-      repetition + \textcolor{stringliteral}{" of word "}+existingPhrase;
-        \}\textcolor{keywordflow}{else}\{
-            message = \textcolor{stringliteral}{"The phrase "}+existingPhrase+ \textcolor{stringliteral}{"cant be found in the file"}
-      ;
-        \}
-        \}\textcolor{keywordflow}{else}\{
+            String newString = \textcolor{stringliteral}{""};
+            Pattern p = Pattern.compile(existingPhrase);
+            Matcher m = p.matcher(contents);
+            \textcolor{keywordflow}{if} (m.find()) \{
+                \textcolor{keywordflow}{if} (position.contains(\textcolor{stringliteral}{"before"})) \{
+                    newString = phraseToBeInserted + \textcolor{stringliteral}{" "} + existingPhrase;
+                    \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"first"})) \{
+                        contents = contents.replaceFirst(existingPhrase,
+                                newString);
+                    \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"last"})) \{ \textcolor{comment}{// contents =}
+                                                                \textcolor{comment}{//
+       contents.replaceFirst(existingPhrase,}
+                                                                \textcolor{comment}{// newString);}
+                        newString = existingPhrase + \textcolor{stringliteral}{" "} + phraseToBeInserted;
+                        String contentsRev = StringUtils.reverse(contents);
+                        contentsRev = StringUtils.replaceOnce(contentsRev,
+                                existingPhrase, newString);
+                        contents = StringUtils.reverse(contentsRev);
+                        \textcolor{comment}{// contents = contents.substring(0,}
+                        \textcolor{comment}{// contents.lastIndexOf(existingPhrase) + 1)}
+                        \textcolor{comment}{// +" " + newString;}
+                    \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"every"})
+                            || repetition.contains(\textcolor{stringliteral}{"all"})) \{
+                        contents = contents.replace(existingPhrase, newString);
+                    \} \textcolor{keywordflow}{else} \{
+                        contents = contents.replace(existingPhrase, newString);
+                    \}
+                \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (position.contains(\textcolor{stringliteral}{"after"})) \{
+                    newString = existingPhrase + \textcolor{stringliteral}{" "} + phraseToBeInserted;
+                    \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"every"})
+                            || repetition.contains(\textcolor{stringliteral}{"all"}))
+                        contents = contents.replace(existingPhrase, newString);
+                    \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"first"}))
+                        contents = contents.replaceFirst(existingPhrase,
+                                newString);
+                    \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"last"})) \{
+                        \textcolor{comment}{// contents = contents.substring(0,}
+                        \textcolor{comment}{// contents.lastIndexOf(existingPhrase)) + newString;}
+                        newString = phraseToBeInserted + \textcolor{stringliteral}{" "} + existingPhrase;
+                        String contentsRev = StringUtils.reverse(contents);
+                        contentsRev = StringUtils.replaceOnce(contentsRev,
+                                existingPhrase, newString);
+                        contents = StringUtils.reverse(contentsRev);
+                    \}
+                \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (position.contains(\textcolor{stringliteral}{"beginning"})
+                        || position.contains(\textcolor{stringliteral}{"start"})) \{
+                    contents = phraseToBeInserted + \textcolor{stringliteral}{" "} + contents;
+                \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (position.contains(\textcolor{stringliteral}{"end"})) \{
+                    contents = contents + \textcolor{stringliteral}{" "} + phraseToBeInserted;
+                \}
+                \textcolor{comment}{// log.info(contents);}
+                \textcolor{keywordflow}{try} \{
+                    FileUtils.writeStringToFile(file, contents);
+                \} \textcolor{keywordflow}{catch} (IOException e) \{
+                    message = \textcolor{stringliteral}{" Error writing to file "};
+                    e.printStackTrace();
+                \}
+                message = \textcolor{stringliteral}{"Inserted phrase "} + phraseToBeInserted + \textcolor{stringliteral}{" "}
+                        + position + \textcolor{stringliteral}{" "} + repetition + \textcolor{stringliteral}{" occurence of word "}
+                        + existingPhrase;
+            \} \textcolor{keywordflow}{else} \{
+                message = \textcolor{stringliteral}{"The phrase "} + existingPhrase
+                        + \textcolor{stringliteral}{" cant be found in the file"};
+            \}
+        \} \textcolor{keywordflow}{else} \{
             message = \textcolor{stringliteral}{"This file doesnt exists"};
         \}
         \textcolor{keywordflow}{return} message;
@@ -586,23 +621,24 @@ Definition at line \hyperlink{L378}{378} of file \hyperlink{}{File\-Action\-Util
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a68fa55cc4deac83ac2920da1dd442172}
 
 
-Definition at line \hyperlink{L590}{590} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L716}{716} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
                                                                \{
-        File f = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"testDir/"}+parentObjectName);
+        File f = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + parentObjectName);
         String dateString = \textcolor{stringliteral}{""};
-        \textcolor{keywordflow}{if}(f.isFile())\{
+        \textcolor{keywordflow}{if} (f.isFile()) \{
             \textcolor{keywordtype}{long} datetime = f.lastModified();
             Date d = \textcolor{keyword}{new} Date(datetime);
             SimpleDateFormat sdf = \textcolor{keyword}{new} SimpleDateFormat(\textcolor{stringliteral}{"dd-MM-yyyy hh:mm:ss"});
             dateString = sdf.format(d);
-            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"The file "}+parentObjectName+\textcolor{stringliteral}{" was last modified on: "} 
-      + dateString);
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"The file "} + parentObjectName + \textcolor{stringliteral}{" was last modified
+       on: "}
+                    + dateString);
         \}
-        \textcolor{keywordflow}{return} \textcolor{stringliteral}{"The file "}+parentObjectName+\textcolor{stringliteral}{" was last modified on: "} + 
-      dateString;
+        \textcolor{keywordflow}{return} \textcolor{stringliteral}{"The file "} + parentObjectName + \textcolor{stringliteral}{" was last modified on: "}
+                + dateString;
     \}
 \end{DoxyCode}
 \hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a1780994dac039e63b9b2c8971259d044}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!list\-Files@{list\-Files}}
@@ -615,15 +651,14 @@ Definition at line \hyperlink{L590}{590} of file \hyperlink{}{File\-Action\-Util
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a1780994dac039e63b9b2c8971259d044}
 
 
-Definition at line \hyperlink{L572}{572} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L697}{697} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
-                                                                               
-                \{
-        \textcolor{comment}{//f = new File("testDir/"+f);}
-        File f = \textcolor{keyword}{new} File(folderName);
-        \textcolor{keywordflow}{if}(f.isDirectory())\{
+                                    \{
+        \textcolor{comment}{// f = new File("testDir/"+f);}
+        File f = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + folderName);
+        \textcolor{keywordflow}{if} (f.isDirectory()) \{
             File[] subFiles = f.listFiles();
             \textcolor{keywordflow}{for} (File file : subFiles) \{
                 \textcolor{keywordflow}{if} (file.isFile()) \{
@@ -632,39 +667,39 @@ Definition at line \hyperlink{L572}{572} of file \hyperlink{}{File\-Action\-Util
                     list = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a1780994dac039e63b9b2c8971259d044}{listFiles}(file.getName(), list);
                 \}
             \}
-        \}\textcolor{keywordflow}{else}\{
+        \} \textcolor{keywordflow}{else} \{
             \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"only files in the folder can be listed."});
         \}
         \textcolor{keywordflow}{return} list;
     \}
 \end{DoxyCode}
-\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a127d6dea53d3df50906584a9dcd8394a}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!open@{open}}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7da795595fa0d29e2e237aea97f1840b}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!open@{open}}
 \index{open@{open}!com::poly::nlp::filekommander::file::actions::FileActionUtils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}}
-\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}static boolean com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utils.\-open (
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}static String com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utils.\-open (
 \begin{DoxyParamCaption}
 \item[{String}]{name}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a127d6dea53d3df50906584a9dcd8394a}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7da795595fa0d29e2e237aea97f1840b}
 
 
-Definition at line \hyperlink{L252}{252} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L256}{256} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
-                                            \{
-        String errorMsg = \textcolor{stringliteral}{""};
+                                           \{
+        String message = \textcolor{stringliteral}{""};
         \textcolor{keywordflow}{if} (name.equals(\textcolor{stringliteral}{""}) || name.equals(\textcolor{stringliteral}{""})) \{
-            errorMsg = \textcolor{stringliteral}{"File Name is empty"};
-            \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+            message = \textcolor{stringliteral}{"File Name is empty"};
+            \textcolor{keywordflow}{return} message;
         \}
         \textcolor{comment}{// String workingDirectory =}
         \textcolor{comment}{// FileKommanderRun.getKommander().getWorkingDirectory();}
-    \textcolor{comment}{//  String workingDirectory = "testDir/";}
-        File file = \textcolor{keyword}{new} File(name);
+        \textcolor{comment}{// String workingDirectory = "testDir/";}
+        File file = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + name);
         \textcolor{keywordflow}{if} (!file.exists()) \{
-            errorMsg = \textcolor{stringliteral}{"File "} + name + \textcolor{stringliteral}{" doesnot exist in the directory "};
-            FileKommanderRun.getGuiv2().displayErrorMessage(errorMsg);
-            \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+            message = \textcolor{stringliteral}{"File "} + name + \textcolor{stringliteral}{" does not exist in the directory "};
+            \textcolor{comment}{// FileKommanderRun.getGuiv2().displayErrorMessage(message);}
+            \textcolor{keywordflow}{return} message;
         \}
         \textcolor{keywordflow}{try} \{
             \textcolor{keywordflow}{if} (OSDetector.isWindows()) \{
@@ -673,25 +708,30 @@ Definition at line \hyperlink{L252}{252} of file \hyperlink{}{File\-Action\-Util
                         \textcolor{stringliteral}{"url.dll,FileProtocolHandler"}, file.getAbsolutePath() \}
       ;
                 System.out.println(Arrays.toString(command));
-                Runtime.getRuntime().exec(command);
-                \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+                Process process = Runtime.getRuntime().exec(command);
+                message = \textcolor{stringliteral}{"File "} + name + \textcolor{stringliteral}{" opened successfully"};
+                \textcolor{keywordflow}{return} message;
             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (OSDetector.isLinux() || OSDetector.isMac()) \{
                 Runtime.getRuntime()
                         .exec(\textcolor{keyword}{new} String[] \{ \textcolor{stringliteral}{"/usr/bin/open"},
                                 file.getAbsolutePath() \});
-                \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+                message = \textcolor{stringliteral}{"Opened successfully"};
+                \textcolor{keywordflow}{return} message;
             \} \textcolor{keywordflow}{else} \{
                 \textcolor{comment}{// Unknown OS, try with desktop}
                 \textcolor{keywordflow}{if} (Desktop.isDesktopSupported()) \{
                     Desktop.getDesktop().open(file);
-                    \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+                    message = \textcolor{stringliteral}{"Opened successfully"};
+                    \textcolor{keywordflow}{return} message;
                 \} \textcolor{keywordflow}{else} \{
-                    \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+                    message = \textcolor{stringliteral}{"Unsuccessfull open"};
+                    \textcolor{keywordflow}{return} message;
                 \}
             \}
         \} \textcolor{keywordflow}{catch} (Exception e) \{
             e.printStackTrace(System.err);
-            \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+            message = \textcolor{stringliteral}{"Unable to open"};
+            \textcolor{keywordflow}{return} message;
         \}
     \}
 \end{DoxyCode}
@@ -704,7 +744,7 @@ Definition at line \hyperlink{L252}{252} of file \hyperlink{}{File\-Action\-Util
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7c29f2257b29d8d10c39a87b351093fb}
 
 
-Definition at line \hyperlink{L669}{669} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L798}{798} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
@@ -713,41 +753,83 @@ Definition at line \hyperlink{L669}{669} of file \hyperlink{}{File\-Action\-Util
         \textcolor{keywordtype}{long} m = k / 1024;
         \textcolor{keywordtype}{long} g = m / 1024;
         \textcolor{keywordflow}{if} (b < 1024) \{
-            \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"The size of the file is "} + b + \textcolor{stringliteral}{" Bytes"});  
+            \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"The size of the file is "} + b + \textcolor{stringliteral}{" Bytes"});
         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (k < 1024) \{
-            \textcolor{keywordflow}{return}(\textcolor{stringliteral}{"The size of the file is "} + k + \textcolor{stringliteral}{" KB"});  
+            \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"The size of the file is "} + k + \textcolor{stringliteral}{" KB"});
         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (m < 1024) \{
-            \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"The size of the file is "} + m + \textcolor{stringliteral}{" MB"});  
+            \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"The size of the file is "} + m + \textcolor{stringliteral}{" MB"});
         \} \textcolor{keywordflow}{else} \{
-            \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"The size of the file is "} + g + \textcolor{stringliteral}{" GB"});  
+            \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"The size of the file is "} + g + \textcolor{stringliteral}{" GB"});
         \}
     \}
 \end{DoxyCode}
-\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ac7e7850c45017865b67e5ad1280d1970}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!remove@{remove}}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_abb9025e6066ff691e171546b92c0d04b}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!remove@{remove}}
 \index{remove@{remove}!com::poly::nlp::filekommander::file::actions::FileActionUtils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}}
-\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utils.\-remove (
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}static String com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utils.\-remove (
 \begin{DoxyParamCaption}
 \item[{String}]{phrase\-To\-Be\-Removed, }
+\item[{String}]{repetition, }
 \item[{String}]{file\-Name}
 \end{DoxyParamCaption}
-)  throws I\-O\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ac7e7850c45017865b67e5ad1280d1970}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_abb9025e6066ff691e171546b92c0d04b}
 
 
-Definition at line \hyperlink{L514}{514} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L552}{552} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
-                                                                               
-                   \{
-        File file = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"testDir/"}+fileName);
-        \textcolor{keywordflow}{if}(file.exists())\{
-            String contents = FileUtils.readFileToString(file);
-            contents = contents.replace(phraseToBeRemoved, \textcolor{stringliteral}{""});
-            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(contents);
-            FileUtils.writeStringToFile(file, contents);
-        \}\textcolor{keywordflow}{else}\{
-            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"this file doesnt exists"});
+                             \{
+        String message = \textcolor{stringliteral}{""};
+        File file = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + fileName);
+        String contents = \textcolor{stringliteral}{""};
+
+        \textcolor{keywordflow}{if} (file.exists()) \{
+            \textcolor{keywordflow}{try} \{
+                contents = FileUtils.readFileToString(file);
+            \} \textcolor{keywordflow}{catch} (Exception e) \{
+                message = \textcolor{stringliteral}{"Error reading the file "};
+                e.printStackTrace();
+                \textcolor{keywordflow}{return} message;
+            \}
+            Pattern p = Pattern.compile(phraseToBeRemoved);
+            Matcher m = p.matcher(contents);
+            String newString = \textcolor{stringliteral}{""};
+            \textcolor{keywordflow}{if} (m.find()) \{
+                \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"first"})) \{
+                    contents = contents.replaceFirst(phraseToBeRemoved, \textcolor{stringliteral}{""});
+                \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"last"})) \{
+                    String contentsRev = StringUtils.reverse(contents);
+                    contentsRev = contentsRev.replaceFirst(phraseToBeRemoved,
+                            \textcolor{stringliteral}{""});
+                    contents = StringUtils.reverse(contentsRev);
+\textcolor{comment}{//                  contents = contents.substring(0,}
+\textcolor{comment}{//                          contents.lastIndexOf(phraseToBeRemoved) + 1)}
+\textcolor{comment}{//                          + "";}
+                \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"every"})
+                        || repetition.contains(\textcolor{stringliteral}{"all"})) \{
+                    contents = contents.replace(phraseToBeRemoved, \textcolor{stringliteral}{""});
+                \}
+                message = \textcolor{stringliteral}{"Removed "} + repetition + \textcolor{stringliteral}{" string "} + 
+      phraseToBeRemoved + \textcolor{stringliteral}{" successfully "} ;
+
+            \} \textcolor{keywordflow}{else} \{
+                message = \textcolor{stringliteral}{"The phrase "} + phraseToBeRemoved
+                        + \textcolor{stringliteral}{" cant be found in the file "} + fileName;
+            \}
+
+        \} \textcolor{keywordflow}{else} \{
+            message = \textcolor{stringliteral}{"File "} + fileName + \textcolor{stringliteral}{" does not exists"};
         \}
+
+        \textcolor{comment}{// log.info(contents);}
+        \textcolor{keywordflow}{try} \{
+            FileUtils.writeStringToFile(file, contents);
+        \} \textcolor{keywordflow}{catch} (IOException e) \{
+            message = \textcolor{stringliteral}{" Error writing to file "};
+            e.printStackTrace();
+        \}
+
+        \textcolor{keywordflow}{return} message;
     \}
 \end{DoxyCode}
 \hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a195173915a702daa3da1750b7a00bf8f}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!rename@{rename}}
@@ -760,7 +842,7 @@ Definition at line \hyperlink{L514}{514} of file \hyperlink{}{File\-Action\-Util
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a195173915a702daa3da1750b7a00bf8f}
 
 
-Definition at line \hyperlink{L295}{295} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L304}{304} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
@@ -804,31 +886,78 @@ Definition at line \hyperlink{L295}{295} of file \hyperlink{}{File\-Action\-Util
 
     \}
 \end{DoxyCode}
-\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a07c59ff019da6971e505960a04da604d}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!replace@{replace}}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7974bd083dd0b112eee6a253c94f281c}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!replace@{replace}}
 \index{replace@{replace}!com::poly::nlp::filekommander::file::actions::FileActionUtils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}}
-\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}static void com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utils.\-replace (
+\subsubsection[{replace}]{\setlength{\rightskip}{0pt plus 5cm}static String com.\-poly.\-nlp.\-filekommander.\-file.\-actions.\-File\-Action\-Utils.\-replace (
 \begin{DoxyParamCaption}
 \item[{String}]{phrase\-To\-Be\-Inserted, }
 \item[{String}]{existing\-Phrase, }
+\item[{String}]{repetition, }
 \item[{String}]{file\-Name}
 \end{DoxyParamCaption}
-)  throws I\-O\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a07c59ff019da6971e505960a04da604d}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7974bd083dd0b112eee6a253c94f281c}
 
 
-Definition at line \hyperlink{L526}{526} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L606}{606} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
                                                                        \{
-        File file = \textcolor{keyword}{new} File(\textcolor{stringliteral}{"testDir/"}+fileName);
-        \textcolor{keywordflow}{if}(file.exists())\{
-            String contents = FileUtils.readFileToString(file);
-            contents = contents.replace(existingPhrase, phraseToBeInserted);
-            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(contents);
-            FileUtils.writeStringToFile(file, contents);
-        \}\textcolor{keywordflow}{else}\{
-            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7af6d26171248a2e7253d9bce1b287cc}{log}.info(\textcolor{stringliteral}{"this file doesnt exists"});
+
+        String message = \textcolor{stringliteral}{""};
+        File file = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + fileName);
+        String contents = \textcolor{stringliteral}{""};
+
+        \textcolor{keywordflow}{if} (file.exists()) \{
+            \textcolor{keywordflow}{try} \{
+                contents = FileUtils.readFileToString(file);
+            \} \textcolor{keywordflow}{catch} (Exception e) \{
+                message = \textcolor{stringliteral}{"Error reading the file "};
+                e.printStackTrace();
+                \textcolor{keywordflow}{return} message;
+            \}
+            Pattern p = Pattern.compile(existingPhrase);
+            Matcher m = p.matcher(contents);
+            String newString = \textcolor{stringliteral}{""};
+            \textcolor{keywordflow}{if} (m.find()) \{
+                \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"first"}))
+                    contents = contents.replaceFirst(existingPhrase,
+                            phraseToBeInserted);
+                \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"last"}))
+                \textcolor{comment}{// contents = contents.replaceFirst(existingPhrase, newString);}
+                \{
+                    String contentsRev = StringUtils.reverse(contents);
+                    contentsRev = contentsRev.replaceFirst(existingPhrase,
+                            phraseToBeInserted);
+                    contents = StringUtils.reverse(contentsRev);
+                    \textcolor{comment}{// contents = contents.substring(0,}
+                    \textcolor{comment}{// contents.lastIndexOf(existingPhrase) + 1) +}
+                    \textcolor{comment}{// phraseToBeInserted;}
+                \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (repetition.contains(\textcolor{stringliteral}{"every"})
+                        || repetition.contains(\textcolor{stringliteral}{"all"}))
+                    contents = contents.replace(existingPhrase,
+                            phraseToBeInserted);
+                message = \textcolor{stringliteral}{"Replaced "} + repetition + \textcolor{stringliteral}{" string "}
+                        + existingPhrase + \textcolor{stringliteral}{" with "} + phraseToBeInserted
+                        + \textcolor{stringliteral}{" successfully "};
+            \} \textcolor{keywordflow}{else} \{
+                message = \textcolor{stringliteral}{"The phrase "} + phraseToBeInserted
+                        + \textcolor{stringliteral}{" cant be found in the file "} + fileName;
+            \}
+
+        \} \textcolor{keywordflow}{else} \{
+            message = \textcolor{stringliteral}{"File "} + fileName + \textcolor{stringliteral}{" does not exists"};
         \}
+
+        \textcolor{comment}{// log.info(contents);}
+        \textcolor{keywordflow}{try} \{
+            FileUtils.writeStringToFile(file, contents);
+        \} \textcolor{keywordflow}{catch} (IOException e) \{
+            message = \textcolor{stringliteral}{" Error writing to file "};
+            e.printStackTrace();
+        \}
+
+        \textcolor{keywordflow}{return} message;
     \}
 \end{DoxyCode}
 \hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ae355d7d7cf883ff39ffe96a1bde89576}{\index{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils@{com\-::poly\-::nlp\-::filekommander\-::file\-::actions\-::\-File\-Action\-Utils}!set\-Working\-Directory@{set\-Working\-Directory}}
@@ -862,30 +991,30 @@ Definition at line \hyperlink{L41}{41} of file \hyperlink{}{File\-Action\-Utils.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a1221ebf805c2cc881c40fad828f64861}
 
 
-Definition at line \hyperlink{L645}{645} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L774}{774} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
                                                          \{
         File f;
-        \textcolor{keywordtype}{long} b,bd;
-        \textcolor{keywordflow}{if}(parentObjectName.equals(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory}))
+        \textcolor{keywordtype}{long} b, bd;
+        \textcolor{keywordflow}{if} (parentObjectName.equals(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory}))
             f = \textcolor{keyword}{new} File(parentObjectName);
         \textcolor{keywordflow}{else}
-            f = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + parentObjectName); 
+            f = \textcolor{keyword}{new} File(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad54a8fdc9145d2f423c54cb1597f874a}{workingDirectory} + parentObjectName);
         \textcolor{keywordflow}{if} (f.exists()) \{
             \textcolor{keywordflow}{if} (f.isDirectory()) \{
                 bd = \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a4eb94d6fbf8aed90a068180e88b8e9cd}{sizeofDirectory}(f);
                 \textcolor{keywordflow}{return} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7c29f2257b29d8d10c39a87b351093fb}{printSize}(bd);
-            \}\textcolor{keywordflow}{else}\{
+            \} \textcolor{keywordflow}{else} \{
                 b = f.length();
                 \textcolor{keywordflow}{return} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a7c29f2257b29d8d10c39a87b351093fb}{printSize}(b);
             \}
 
         \} \textcolor{keywordflow}{else} \{
-            \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"File doesn't exists."}); 
+            \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"File doesn't exists."});
         \}
-\textcolor{comment}{//      return printSize(bd);}
+        \textcolor{comment}{// return printSize(bd);}
 
     \}
 \end{DoxyCode}
@@ -898,7 +1027,7 @@ Definition at line \hyperlink{L645}{645} of file \hyperlink{}{File\-Action\-Util
 )\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [package]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a4eb94d6fbf8aed90a068180e88b8e9cd}
 
 
-Definition at line \hyperlink{L685}{685} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L814}{814} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
@@ -926,7 +1055,7 @@ Definition at line \hyperlink{L685}{685} of file \hyperlink{}{File\-Action\-Util
 )  throws I\-O\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_ad8d655de0cba854b1c409ed450bbe636}
 
 
-Definition at line \hyperlink{L428}{428} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L475}{475} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}
@@ -955,7 +1084,7 @@ Definition at line \hyperlink{L428}{428} of file \hyperlink{}{File\-Action\-Util
 )  throws I\-O\-Exception \hspace{0.3cm}{\ttfamily [static]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_file_action_utils_a8ff2b8a44ef71bfb04fb320da780e4eb}
 
 
-Definition at line \hyperlink{L445}{445} of file \hyperlink{}{File\-Action\-Utils.\-java}.
+Definition at line \hyperlink{L492}{492} of file \hyperlink{}{File\-Action\-Utils.\-java}.
 
 
 \begin{DoxyCode}

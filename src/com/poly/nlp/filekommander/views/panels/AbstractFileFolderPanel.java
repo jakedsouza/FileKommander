@@ -21,12 +21,26 @@ import java.awt.event.ActionEvent;
 public abstract class AbstractFileFolderPanel extends GenericPanel {
 
 	private static final long serialVersionUID = 1L;
+	/**
+	 */
 	private String actionString;
+	/**
+	 */
 	private JLabel actionLabelFile;
+	/**
+	 */
 	private JPanel filepanel;
+	/**
+	 */
 	protected JPanel fileListPanel;
+	/**
+	 */
 	private JPanel commandPanel;
+	/**
+	 */
 	private JButton btnAccept;
+	/**
+	 */
 	private JButton btnReject;
 	private static final Logger log = Logger.getLogger(AbstractFileFolderPanel.class);
 
@@ -177,35 +191,50 @@ public abstract class AbstractFileFolderPanel extends GenericPanel {
 		this.updatePanelData();
 		FileKommanderRun.getGuiv2().reset();
 	}
+	/**
+	 * @return
+	 */
 	public JLabel getActionLabelFile() {
 		return actionLabelFile;
 	}
 
+	/**
+	 * @return
+	 */
 	public JPanel getFilepanel() {
 		return filepanel;
 	}
 
+	/**
+	 * @return
+	 */
 	public JPanel getFileListPanel() {
 		return fileListPanel;
 	}
 
+	/**
+	 * @return
+	 */
 	public JButton getBtnAccept() {
 		return btnAccept;
 	}
 
+	/**
+	 * @return
+	 */
 	public JButton getBtnReject() {
 		return btnReject;
 	}
 
 	/**
-	 * @return the actionString
+	 * @return  the actionString
 	 */
 	public String getActionString() {
 		return actionString;
 	}
 
 	/**
-	 * @param actionString the actionString to set
+	 * @param actionString  the actionString to set
 	 */
 	public void setActionString(String actionString) {
 		this.actionString = actionString;

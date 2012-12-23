@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="28" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="28" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="30" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1a9d905505e7514da823b65ce32d31d22e" prot="private" static="yes" mutable="no">
         <type>final Logger</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="30" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="30" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="34" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="34" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="29" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="29" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="33" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="33" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -60,7 +60,7 @@
 <para>Create the panel. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="35" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="35" bodyend="69"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="39" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="39" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1a3feebd3516f922f6dfb69a2b20dd49cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -86,7 +86,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="71" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="71" bodyend="78"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="43" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="43" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1ad76ec2decc6f9745da5af0b3389fe98a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -100,7 +100,7 @@
 <para>Update the panel before action is taken </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="80" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="80" bodyend="130"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="52" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="52" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1a2c9b149207152e5d1570c62172fd8823" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -114,7 +114,7 @@
 <para>updates the create panel after the action is run </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="133" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="133" bodyend="136"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="99" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="99" bodyend="102"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -122,107 +122,109 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="290">
+      <node id="319">
         <label>JPanel</label>
       </node>
-      <node id="288">
+      <node id="317">
         <label>com.poly.nlp.filekommander.views.panels.AbstractMessagePanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel"/>
-        <childnode refid="289" relation="public-inheritance">
+        <childnode refid="318" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="287">
+      <node id="316">
         <label>com.poly.nlp.filekommander.views.panels.StatsActionPanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel"/>
-        <childnode refid="288" relation="public-inheritance">
+        <childnode refid="317" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="289">
+      <node id="318">
         <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
-        <childnode refid="290" relation="public-inheritance">
+        <childnode refid="319" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="294">
+      <node id="323">
         <label>JPanel</label>
       </node>
-      <node id="292">
+      <node id="321">
         <label>com.poly.nlp.filekommander.views.panels.AbstractMessagePanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel"/>
-        <childnode refid="293" relation="public-inheritance">
+        <childnode refid="322" relation="public-inheritance">
         </childnode>
-        <childnode refid="295" relation="usage">
+        <childnode refid="324" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
-        <childnode refid="296" relation="usage">
+        <childnode refid="325" relation="usage">
           <edgelabel>btnClear</edgelabel>
         </childnode>
-        <childnode refid="297" relation="usage">
-          <edgelabel>table</edgelabel>
+        <childnode refid="326" relation="usage">
+          <edgelabel>actionLabel</edgelabel>
         </childnode>
-        <childnode refid="294" relation="usage">
+        <childnode refid="323" relation="usage">
           <edgelabel>messagePanel</edgelabel>
           <edgelabel>commandPanel</edgelabel>
         </childnode>
       </node>
-      <node id="291">
+      <node id="320">
         <label>com.poly.nlp.filekommander.views.panels.StatsActionPanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel"/>
-        <childnode refid="292" relation="public-inheritance">
+        <childnode refid="321" relation="public-inheritance">
         </childnode>
-        <childnode refid="295" relation="usage">
+        <childnode refid="324" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
-        <childnode refid="298" relation="usage">
+        <childnode refid="327" relation="usage">
           <edgelabel>statsModel</edgelabel>
         </childnode>
       </node>
-      <node id="300">
+      <node id="326">
+        <label>JLabel</label>
+      </node>
+      <node id="329">
         <label>HashMap&lt; String, String &gt;</label>
       </node>
-      <node id="299">
+      <node id="328">
         <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
         <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
       </node>
-      <node id="295">
+      <node id="324">
         <label>Logger</label>
       </node>
-      <node id="293">
+      <node id="322">
         <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
-        <childnode refid="294" relation="public-inheritance">
+        <childnode refid="323" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="296">
+      <node id="325">
         <label>JButton</label>
       </node>
-      <node id="297">
-        <label>JTable</label>
-      </node>
-      <node id="298">
+      <node id="327">
         <label>com.poly.nlp.filekommander.views.models.StatsModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model"/>
-        <childnode refid="299" relation="public-inheritance">
+        <childnode refid="328" relation="public-inheritance">
         </childnode>
-        <childnode refid="300" relation="usage">
+        <childnode refid="329" relation="usage">
           <edgelabel>fileListData</edgelabel>
           <edgelabel>folderListData</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="26" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="26" bodyend="161"/>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" line="28" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/panels/StatsActionPanel.java" bodystart="28" bodyend="106"/>
     <listofallmembers>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a3d34321337c68753d8ca1c3cfb4cb37b" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>AbstractMessagePanel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1aa28d1e99f183f68a2e9ecc75d9292981" prot="protected" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>createDefaultMessageRow</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a0b449a096a5bd31e4eb1bb90daa6bf77" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>getActionLabel</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a657e69a7b792b6ad57846ecbebcb99e9" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>getActionString</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1ab88a15cf8a7d5f3a3266342841b8ea13" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>getBtnClear</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a20b6fcda2f2cbd8aa5973d6c08b9690a" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>getCommandPanel</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a2d8c613b03cb000425ae32a9a44dc805" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>getMessagePanel</name></member>
-      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1aab424ea4f0cf49aa1a619f21a996d6b5" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>getTable</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1a9d905505e7514da823b65ce32d31d22e" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>log</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a28d7298227a165c9b3e64a7b9182d2b1" prot="public" virt="virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>resetPanel</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_1ae7f395a4db15fdb7194b11934cd0732a" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>serialVersionUID</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a51f97279213dbc80136b483082f5ac56" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>setActionLabel</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1a565a70e35ba8533880099438337eea08" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>setActionString</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1ad2c1bd073c20d8e9dfcd1bdf0b2f27ba" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>setBtnClear</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_1ab3030d917dffd39a79418b3eeb0fbd83" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::panels::StatsActionPanel</scope><name>setCommandPanel</name></member>

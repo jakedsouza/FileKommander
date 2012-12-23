@@ -14,6 +14,5 @@ var searchData=
   ['displayabout',['displayAbout',['../classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu.html#a478a27e7168e5045b9f4ee5ffe1523cc',1,'com::poly::nlp::filekommander::views::FileKommanderMenu']]],
   ['displayerrormessage',['displayErrorMessage',['../classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2.html#a5802448ae2926a341882f6919c25b767',1,'com::poly::nlp::filekommander::views::FileKommanderGUIV2']]],
   ['displayoptions',['displayOptions',['../classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu.html#a27842ee6e2731a5b9d459852dcdd5a4d',1,'com::poly::nlp::filekommander::views::FileKommanderMenu']]],
-  ['doc',['doc',['../class_h_l_t_tutorial.html#adc313cb5e485ec03e21897d5c0132591',1,'HLTTutorial']]],
   ['doinbackground',['doInBackground',['../classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker.html#a1dba172a61803519edcdd6e034ac1d13',1,'com::poly::nlp::filekommander::MySwingWorker']]]
 ];

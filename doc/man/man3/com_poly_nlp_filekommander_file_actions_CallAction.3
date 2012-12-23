@@ -1,4 +1,4 @@
-.TH "com.poly.nlp.filekommander.file.actions.CallAction" 3 "Thu Dec 20 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
+.TH "com.poly.nlp.filekommander.file.actions.CallAction" 3 "Sat Dec 22 2012" "Version 0.001" "FileKommander" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -13,22 +13,22 @@ com.poly.nlp.filekommander.file.actions.CallAction \-
 .RI "static \fBGenericActionModel\fP \fBcallAction\fP (\fBGenericActionModel\fP actionModel)"
 .br
 .ti -1c
-.RI "static void \fBexistsAction\fP ()"
+.RI "static \fBPhraseOperationModel\fP \fBinsertAction\fP (\fBPhraseOperationModel\fP phraseModel)"
 .br
 .ti -1c
-.RI "static void \fBinsertAction\fP ()"
+.RI "static \fBOpenModel\fP \fBopenAction\fP (\fBOpenModel\fP openModel)"
 .br
 .ti -1c
-.RI "static void \fBopenAction\fP ()"
+.RI "static \fBPhraseOperationModel\fP \fBremoveAction\fP (\fBPhraseOperationModel\fP phraseModel)"
 .br
 .ti -1c
-.RI "static void \fBremoveAction\fP ()"
-.br
-.ti -1c
-.RI "static void \fBreplaceAction\fP ()"
+.RI "static \fBPhraseOperationModel\fP \fBreplaceAction\fP (\fBPhraseOperationModel\fP phraseModel)"
 .br
 .ti -1c
 .RI "static \fBGenericActionModel\fP \fBstatsAction\fP (\fBStatsModel\fP statsModel)"
+.br
+.ti -1c
+.RI "static \fBGenericActionModel\fP \fBphraseAction\fP (\fBPhraseOperationModel\fP phraseModel)"
 .br
 .in -1c
 .SS "Static Private Member Functions"
@@ -39,6 +39,9 @@ com.poly.nlp.filekommander.file.actions.CallAction \-
 .br
 .ti -1c
 .RI "static \fBDeleteModel\fP \fBdeleteAction\fP (\fBDeleteModel\fP deleteModel)"
+.br
+.ti -1c
+.RI "static \fBExistsModel\fP \fBexistsAction\fP (\fBExistsModel\fP existsModel)"
 .br
 .ti -1c
 .RI "static \fBGenericActionModel\fP \fBrenameAction\fP (\fBRenameModel\fP renameModel)"
@@ -53,13 +56,13 @@ com.poly.nlp.filekommander.file.actions.CallAction \-
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 15 of file CallAction\&.java\&.
+Definition at line 24 of file CallAction\&.java\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.callAction (\fBGenericActionModel\fPactionModel)\fC [static]\fP"
 
 .PP
-Definition at line 18 of file CallAction\&.java\&.
+Definition at line 27 of file CallAction\&.java\&.
 .PP
 .nf
                                                                                 {
@@ -76,13 +79,19 @@ Definition at line 18 of file CallAction\&.java\&.
             newActionModel =    renameAction((RenameModel) actionModel);
         }else if(actionModel instanceof StatsModel){
             newActionModel =    statsAction((StatsModel) actionModel);
+        }else if(actionModel instanceof ExistsModel){
+            newActionModel =    existsAction((ExistsModel) actionModel);
+        }else if(actionModel instanceof OpenModel){
+            newActionModel =    openAction((OpenModel) actionModel);
+        }else if(actionModel instanceof PhraseOperationModel){
+            newActionModel =    phraseAction((PhraseOperationModel) actionModel);
         }else {
-            existsAction();
-            insertAction();
-            openAction();
-            removeAction();
+            //existsAction();
+    //      insertAction();
+        //  openAction();
+        //  removeAction();
         // renameAction();
-            replaceAction();
+        //  replaceAction();
         //  statsAction();
 
         }
@@ -92,7 +101,7 @@ Definition at line 18 of file CallAction\&.java\&.
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.createAction (\fBCreateModel\fPcreateModel)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 45 of file CallAction\&.java\&.
+Definition at line 60 of file CallAction\&.java\&.
 .PP
 .nf
                                                                             {
@@ -118,7 +127,7 @@ Definition at line 45 of file CallAction\&.java\&.
 .SS "static \fBDeleteModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.deleteAction (\fBDeleteModel\fPdeleteModel)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 65 of file CallAction\&.java\&.
+Definition at line 80 of file CallAction\&.java\&.
 .PP
 .nf
                                                                      {
@@ -141,50 +150,150 @@ Definition at line 65 of file CallAction\&.java\&.
         return deleteModel  ;
     }
 .fi
-.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.existsAction ()\fC [static]\fP"
+.SS "static \fBExistsModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.existsAction (\fBExistsModel\fPexistsModel)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 85 of file CallAction\&.java\&.
+Definition at line 100 of file CallAction\&.java\&.
 .PP
 .nf
-                                      {
+                                                                     {
         log\&.info('ExistsAction action called');
+
+        HashMap<String, String> fileListData = existsModel\&.getFileListData();
+        HashMap<String, String> folderListData = existsModel\&.getFolderListData();
+        
+        Set<String> keySet = fileListData\&.keySet();
+        for (String fileName : keySet) {
+            String message = FileActionUtils\&.exists(fileName);
+            fileListData\&.put(fileName, message);
+        }
+        keySet = folderListData\&.keySet();
+        for (String folderName : keySet) {
+            String message = FileActionUtils\&.exists(folderName);
+            fileListData\&.put(folderName, message);
+        }
+        existsModel\&.setFileListData(fileListData);
+        existsModel\&.setFolderListData(folderListData);
+        existsModel\&.setModelRun(true);
+        return existsModel;
     }
 .fi
-.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.insertAction ()\fC [static]\fP"
+.SS "static \fBPhraseOperationModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.insertAction (\fBPhraseOperationModel\fPphraseModel)\fC [static]\fP"
 
 .PP
-Definition at line 89 of file CallAction\&.java\&.
+Definition at line 122 of file CallAction\&.java\&.
 .PP
 .nf
-                                      {
+                                                                                      {
         log\&.info('InsertAction action called');
+        String oldPhrase = phraseModel\&.getOldPhrase();
+        String newPhrase = phraseModel\&.getNewPhrase();
+        String position = phraseModel\&.getPosition() ;
+        String repetition = phraseModel\&.getRepetition();
+        HashMap<String, String> fileListData = phraseModel\&.getFileListData();
+        
+        Set<String> keySet = fileListData\&.keySet();
+        for (String fileName : keySet) {
+        String message = FileActionUtils\&.insert(newPhrase, oldPhrase, position, repetition, fileName) ;  
+        fileListData\&.put(fileName, message);
+        }
+        
+        return phraseModel;
     }
 .fi
-.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.openAction ()\fC [static]\fP"
+.SS "static \fBOpenModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.openAction (\fBOpenModel\fPopenModel)\fC [static]\fP"
 
 .PP
-Definition at line 93 of file CallAction\&.java\&.
+Definition at line 139 of file CallAction\&.java\&.
 .PP
 .nf
-                                    {
-        log\&.info('OpenAction action called');
+                                                            {
+        log\&.info('ExistsAction action called');
+
+        HashMap<String, String> fileListData = openModel\&.getFileListData();
+        HashMap<String, String> folderListData = openModel\&.getFolderListData();
+        
+        Set<String> keySet = fileListData\&.keySet();
+        for (String fileName : keySet) {
+            String message = FileActionUtils\&.open(fileName);
+            fileListData\&.put(fileName, message);
+        }
+        keySet = folderListData\&.keySet();
+        for (String folderName : keySet) {
+            String message = FileActionUtils\&.open(folderName);
+            fileListData\&.put(folderName, message);
+        }
+        openModel\&.setFileListData(fileListData);
+        openModel\&.setFolderListData(folderListData);
+        openModel\&.setModelRun(true);
+        return openModel;
     }
 .fi
-.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.removeAction ()\fC [static]\fP"
+.SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.phraseAction (\fBPhraseOperationModel\fPphraseModel)\fC [static]\fP"
 
 .PP
-Definition at line 97 of file CallAction\&.java\&.
+Definition at line 250 of file CallAction\&.java\&.
 .PP
 .nf
-                                      {
+                                                                                    {
+        log\&.info('PhraseAction action called');
+
+        int action = phraseModel\&.getOperationType() ;
+        String oldPhrase = phraseModel\&.getOldPhrase();
+        String newPhrase = phraseModel\&.getNewPhrase();
+        String position = phraseModel\&.getPosition();
+        String repetition = phraseModel\&.getRepetition();
+        HashMap<String, String> fileListData = phraseModel\&.getFileListData();
+        
+        Set<String> keySet = fileListData\&.keySet();
+//      for (String fileName : keySet) {
+//      String message = FileActionUtils\&.insert(newPhrase, oldPhrase, position, repetition, fileName) ;  
+//      fileListData\&.put(fileName, message);
+//      }
+//      
+        switch (action) {
+        case 7:
+            phraseModel = insertAction(phraseModel);
+            break;
+        case 8:
+            phraseModel = replaceAction(phraseModel);
+            break;
+        case 9:
+            phraseModel = removeAction(phraseModel);
+            break;
+        default:
+            break;
+        }
+        return phraseModel;     
+    }
+.fi
+.SS "static \fBPhraseOperationModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.removeAction (\fBPhraseOperationModel\fPphraseModel)\fC [static]\fP"
+
+.PP
+Definition at line 161 of file CallAction\&.java\&.
+.PP
+.nf
+                                                                                      {
         log\&.info('RemoveAction action called');
+        String oldPhrase = phraseModel\&.getOldPhrase();
+        String newPhrase = phraseModel\&.getNewPhrase();
+        String position = phraseModel\&.getPosition() ;
+        String repetition = phraseModel\&.getRepetition();
+        HashMap<String, String> fileListData = phraseModel\&.getFileListData();
+        
+        Set<String> keySet = fileListData\&.keySet();
+        for (String fileName : keySet) {
+        String message = FileActionUtils\&.remove(oldPhrase, repetition, fileName) ;   
+        fileListData\&.put(fileName, message);
+        }
+        
+        return phraseModel;
     }
 .fi
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.renameAction (\fBRenameModel\fPrenameModel)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 101 of file CallAction\&.java\&.
+Definition at line 178 of file CallAction\&.java\&.
 .PP
 .nf
                                                                             {
@@ -197,20 +306,34 @@ Definition at line 101 of file CallAction\&.java\&.
         return renameModel;
     }
 .fi
-.SS "static void com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.replaceAction ()\fC [static]\fP"
+.SS "static \fBPhraseOperationModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.replaceAction (\fBPhraseOperationModel\fPphraseModel)\fC [static]\fP"
 
 .PP
-Definition at line 111 of file CallAction\&.java\&.
+Definition at line 188 of file CallAction\&.java\&.
 .PP
 .nf
-                                       {
+                                                                                       {
         log\&.info('ReplaceAction action called');
+        String oldPhrase = phraseModel\&.getOldPhrase();
+        String newPhrase = phraseModel\&.getNewPhrase();
+        String position = phraseModel\&.getPosition() ;
+        String repetition = phraseModel\&.getRepetition();
+        HashMap<String, String> fileListData = phraseModel\&.getFileListData();
+        
+        Set<String> keySet = fileListData\&.keySet();
+        for (String fileName : keySet) {
+            String message = FileActionUtils\&.replace(newPhrase, oldPhrase, repetition, fileName);
+        //String message = FileActionUtils\&.replace(newPhrase, oldPhrase, position, repetition, fileName) ;   
+        fileListData\&.put(fileName, message);
+        }
+        
+        return phraseModel;
     }
 .fi
 .SS "static \fBGenericActionModel\fP com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.statsAction (\fBStatsModel\fPstatsModel)\fC [static]\fP"
 
 .PP
-Definition at line 115 of file CallAction\&.java\&.
+Definition at line 206 of file CallAction\&.java\&.
 .PP
 .nf
                                                                         {
@@ -222,7 +345,7 @@ Definition at line 115 of file CallAction\&.java\&.
         for (String fileName : fileListData\&.keySet()) {
             if(statsModel\&.getStatsType() == FileKommander\&.COUNT){
                 int count = FileActionUtils\&.countWords(fileName);
-                String message = 'Count of all the words is'+count;
+                String message = 'Count of all the words is '+count +' ';
                 fileListData\&.put(fileName, message);
             }else if(statsModel\&.getStatsType() == FileKommander\&.COUNT_WORD){
         //      int count = countSpecificWord(fileName, word); //where is dis word passed from ?? how??
@@ -239,18 +362,13 @@ Definition at line 115 of file CallAction\&.java\&.
         for (String folderName : folderListData\&.keySet()) {
             if(statsModel\&.getStatsType() == FileKommander\&.COUNT){
                 int count = FileActionUtils\&.countFiles(folderName);
-                String message = 'Count of all the files in the folder '+folderName+' is'+count;
+                String message = 'Count of all the files in the folder '+folderName+' is '+count;
                 fileListData\&.put(folderName, message);
             } else if(statsModel\&.getStatsType() == FileKommander\&.LIST_FILES){
                 ArrayList<String> l = new ArrayList<String>();
                 ArrayList<String> list = FileActionUtils\&.listFiles(folderName, l);
-                java\&.util\&.ListIterator<String> ls = list\&.listIterator();
-                StringBuffer sb = new StringBuffer('');
-                while(ls\&.hasNext()){
-                    System\&.out\&.println(ls\&.next());
-                    sb\&.append(ls\&.next()+'</br>');
-                }
-                folderListData\&.put(folderName, sb\&.toString());
+            
+                folderListData\&.put(folderName, 'List of files :' + list\&.toString());
             } else if(statsModel\&.getStatsType() == FileKommander\&.SIZEOF){
                 String message = FileActionUtils\&.sizeOf(folderName);
                 folderListData\&.put(folderName, message);
@@ -267,7 +385,7 @@ Definition at line 115 of file CallAction\&.java\&.
 .SS "final Logger com\&.poly\&.nlp\&.filekommander\&.file\&.actions\&.CallAction\&.log = Logger\&.getLogger(CallAction\&.class)\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 16 of file CallAction\&.java\&.
+Definition at line 25 of file CallAction\&.java\&.
 
 .SH "Author"
 .PP 

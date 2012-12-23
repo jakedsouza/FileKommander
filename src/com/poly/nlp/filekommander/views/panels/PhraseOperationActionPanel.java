@@ -26,6 +26,8 @@ import javax.swing.table.DefaultTableModel;
 public class PhraseOperationActionPanel extends AbstractMessagePanel {
 
 	private static final long serialVersionUID = 1L;
+    /**
+	 */
     private PhraseOperationModel model ;	
 	private static final Logger log = Logger.getLogger(PhraseOperationActionPanel.class);
 

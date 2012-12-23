@@ -6,7 +6,6 @@
     <innerdir refid="dir_8f0ed429963c7774b8675318969e1623">git/FileKommander/src/com/poly/nlp/filekommander/gate</innerdir>
     <innerdir refid="dir_f5b33acb4b3756d1c6551353e4e31111">git/FileKommander/src/com/poly/nlp/filekommander/views</innerdir>
     <innerfile refid="_file_kommander_8java">FileKommander.java</innerfile>
-    <innerfile refid="_file_kommander_exception_8java">FileKommanderException.java</innerfile>
     <innerfile refid="_file_kommander_run_8java">FileKommanderRun.java</innerfile>
     <briefdescription>
     </briefdescription>

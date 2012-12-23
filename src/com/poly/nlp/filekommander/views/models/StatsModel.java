@@ -12,12 +12,20 @@ import com.poly.nlp.filekommander.FileKommander;
  */
 public class StatsModel implements GenericActionModel {
 	// Is create action run 
+	/**
+	 */
 	private boolean isModelRun;
 	
 	// list of files as key and error message if any as value
+	/**
+	 */
 	private HashMap<String, String> fileListData;
 	// list of folders as key and error message if any as value
+	/**
+	 */
 	private HashMap<String, String> folderListData;
+	/**
+	 */
 	private int statsType;
 	
 	/**
@@ -73,7 +81,7 @@ public class StatsModel implements GenericActionModel {
 	}
 
 	/**
-	 * @return the isModelRun
+	 * @return  the isModelRun
 	 */
 	public boolean isModelRun() {
 		return isModelRun;
@@ -87,10 +95,16 @@ public class StatsModel implements GenericActionModel {
 		this.isModelRun = isModelRun;
 	}
 
+	/**
+	 * @return
+	 */
 	public int getStatsType() {
 		return statsType;
 	}
 
+	/**
+	 * @param statsType
+	 */
 	public void setStatsType(int statsType) {
 		this.statsType = statsType;
 	}

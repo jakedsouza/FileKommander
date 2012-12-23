@@ -12,7 +12,11 @@ import java.util.Map;
  */
 public class ProcessingResource {
 	
+	/**
+	 */
 	public String prClass ;
+	/**
+	 */
 	public Map<String, String> params;
 	
 	public ProcessingResource(){}
@@ -30,10 +34,16 @@ public class ProcessingResource {
 		this.params.remove(key);		
 	}
 
+	/**
+	 * @return
+	 */
 	public String getPrClass() {
 		return prClass;
 	}
 
+	/**
+	 * @param prClass
+	 */
 	public void setPrClass(String prClass) {
 		this.prClass = prClass;
 	}

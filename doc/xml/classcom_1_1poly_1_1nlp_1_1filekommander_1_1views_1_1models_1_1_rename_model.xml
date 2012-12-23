@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="11" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="11" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="13" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1af8d2e53c35dede94551d1f5a2564b5df" prot="private" static="no" mutable="no">
         <type>String</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="12" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="12" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="16" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a36edac739e8a22593db90d3fa324694f" prot="private" static="no" mutable="no">
         <type>String</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="13" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="13" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="19" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a3dc034a375694317447630ef30f51d89" prot="private" static="no" mutable="no">
         <type>String</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="14" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="14" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="22" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a0eee3a0c575de1b43577b438bf3b83e2" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="15" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="15" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="25" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="25" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -82,7 +82,7 @@
 <para>Create an empty model </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="20" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="20" bodyend="25"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="30" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="30" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a06cf62ffb83238b41dfd4d1df3e95943" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>boolean</type>
@@ -96,7 +96,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="30" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="30" bodyend="32"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="40" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="40" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a9691de88be50d986edec0d0c54273329" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -121,7 +121,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="38" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="38" bodyend="40"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="48" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="48" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a5be9f73a2ddace081d26ba159bb1c415" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -135,7 +135,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="45" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="45" bodyend="47"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="55" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="55" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a7c6c7cb4dc19244aee018bf7df2364bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -160,7 +160,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="53" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="53" bodyend="55"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="62" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="62" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1aa95c21414668c1e1cc9558f6b319ad0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -174,7 +174,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="60" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="60" bodyend="62"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="69" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="69" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a698f16a4a634954a6c445d74e0ca674a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -199,7 +199,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="68" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="68" bodyend="70"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="76" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="76" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a65538416cd95e769db9b5a99e08245b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -213,7 +213,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="75" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="75" bodyend="77"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="83" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="83" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a42b436d3ba343ebcb10b71da9ab7df2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -238,7 +238,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="83" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="83" bodyend="85"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="90" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="90" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a16fd29d812d927dd77e00864a8acf111" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -252,7 +252,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="90" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="90" bodyend="92"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="97" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="97" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1ac338a4eddf57ed8bfc7e158ec24de468" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -277,7 +277,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="97" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="97" bodyend="99"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="104" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="104" bodyend="106"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -286,30 +286,30 @@
 <para>Model to hold information about create action .</para><para><simplesect kind="author"><para>jake </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="284">
+      <node id="313">
         <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
         <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
       </node>
-      <node id="283">
+      <node id="312">
         <label>com.poly.nlp.filekommander.views.models.RenameModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model"/>
-        <childnode refid="284" relation="public-inheritance">
+        <childnode refid="313" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="286">
+      <node id="315">
         <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
         <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
       </node>
-      <node id="285">
+      <node id="314">
         <label>com.poly.nlp.filekommander.views.models.RenameModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model"/>
-        <childnode refid="286" relation="public-inheritance">
+        <childnode refid="315" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="9" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="9" bodyend="101"/>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" line="9" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/RenameModel.java" bodystart="9" bodyend="108"/>
     <listofallmembers>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a3dc034a375694317447630ef30f51d89" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>errorMessage</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model_1a65538416cd95e769db9b5a99e08245b0" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::RenameModel</scope><name>getErrorMessage</name></member>

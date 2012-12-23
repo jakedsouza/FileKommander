@@ -24,24 +24,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="218">
+      <node id="242">
         <label>javax::swing::SwingWorker&lt; Integer, String &gt;</label>
       </node>
-      <node id="217">
+      <node id="241">
         <label>com.poly.nlp.filekommander.MySwingWorker</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker"/>
-        <childnode refid="218" relation="public-inheritance">
+        <childnode refid="242" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="220">
+      <node id="244">
         <label>javax::swing::SwingWorker&lt; Integer, String &gt;</label>
       </node>
-      <node id="219">
+      <node id="243">
         <label>com.poly.nlp.filekommander.MySwingWorker</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_my_swing_worker"/>
-        <childnode refid="220" relation="public-inheritance">
+        <childnode refid="244" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

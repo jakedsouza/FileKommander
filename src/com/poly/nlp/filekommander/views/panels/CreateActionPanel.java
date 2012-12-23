@@ -15,6 +15,8 @@ public class CreateActionPanel extends AbstractFileFolderPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	/**
+	 */
 	private CreateModel createModel;
 	private static final Logger log = Logger.getLogger(CreateActionPanel.class);
 
@@ -28,14 +30,14 @@ public class CreateActionPanel extends AbstractFileFolderPanel {
 	}
 
 	/**
-	 * @return the createModel
+	 * @return  the createModel
 	 */
 	public CreateModel getCreateModel() {
 		return createModel;
 	}
 
 	/**
-	 * @param createModel the createModel to set
+	 * @param createModel  the createModel to set
 	 */
 	public void setCreateModel(CreateModel createModel) {
 		this.createModel = createModel;

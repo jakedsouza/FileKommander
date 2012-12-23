@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="7" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="7" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="9" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a3cc9f099059b9e5e2f53e450e78650f1" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -28,7 +28,59 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="8" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="8" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="12" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a7347d617c39bc105626f1a1bcee12f1e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.PhraseOperationModel.repetition</definition>
+        <argsstring></argsstring>
+        <name>repetition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="15" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1adb4ce1401274c126993693e673a8be5c" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.PhraseOperationModel.position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="18" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a5f8b38d37f7d3ee52d15ef572263168c" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.PhraseOperationModel.newPhrase</definition>
+        <argsstring></argsstring>
+        <name>newPhrase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="22" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a0dace372bc4a84cc98b975c2910d68e2" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.PhraseOperationModel.oldPhrase</definition>
+        <argsstring></argsstring>
+        <name>oldPhrase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="25" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="25" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -43,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="10" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="10" bodyend="12"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="27" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="27" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ab5595eb942a1c0567dbc412af601ef7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -60,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="14" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="14" bodyend="16"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="33" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="33" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a80fd6066949ef4eabf1a4c0749afc364" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>HashMap&lt; String, String &gt;</type>
@@ -74,7 +126,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="21" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="21" bodyend="23"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="40" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="40" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ace58d8b740d482171bccd637875661f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -99,7 +151,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="28" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="28" bodyend="30"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="47" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="47" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ad8d071e0e95d8a5f8afe757e457ced11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -109,10 +161,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="32" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="32" bodyend="34"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="54" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="54" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1aeda52758118855e19786c7bb399fd097" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -126,10 +179,174 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>operationType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="36" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="36" bodyend="38"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="61" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a03b0bfac9755a1219712dd15a89ae5d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.PhraseOperationModel.getNewPhrase</definition>
+        <argsstring>()</argsstring>
+        <name>getNewPhrase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="68" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ac8da1de30c282f969ffd74a0529d6bb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.PhraseOperationModel.setNewPhrase</definition>
+        <argsstring>(String newPhrase)</argsstring>
+        <name>setNewPhrase</name>
+        <param>
+          <type>String</type>
+          <declname>newPhrase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newPhrase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="75" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a0a0c1b07cdb6e282e5312957a240d319" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.PhraseOperationModel.getOldPhrase</definition>
+        <argsstring>()</argsstring>
+        <name>getOldPhrase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="82" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1af6119ef333a4f7af836de597839cc016" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.PhraseOperationModel.setOldPhrase</definition>
+        <argsstring>(String oldPhrase)</argsstring>
+        <name>setOldPhrase</name>
+        <param>
+          <type>String</type>
+          <declname>oldPhrase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>oldPhrase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="89" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="89" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a2483da9685a62fd03f6b62b7c291f827" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.PhraseOperationModel.getRepetition</definition>
+        <argsstring>()</argsstring>
+        <name>getRepetition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the repetition </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="96" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="96" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a88e53cb79b310fa306c685043f492e05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.PhraseOperationModel.setRepetition</definition>
+        <argsstring>(String repetition)</argsstring>
+        <name>setRepetition</name>
+        <param>
+          <type>String</type>
+          <declname>repetition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>repetition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the repetition to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="103" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ab6aaaae482a6d5bb0e0ad0e193d611c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String com.poly.nlp.filekommander.views.models.PhraseOperationModel.getPosition</definition>
+        <argsstring>()</argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the position </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="110" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a36b0e3108bc0909fd1abe08df05bcd00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void com.poly.nlp.filekommander.views.models.PhraseOperationModel.setPosition</definition>
+        <argsstring>(String position)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>String</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the position to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="117" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="117" bodyend="119"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -137,45 +354,57 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="256">
+      <node id="288">
         <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
         <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
       </node>
-      <node id="255">
+      <node id="287">
         <label>com.poly.nlp.filekommander.views.models.PhraseOperationModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model"/>
-        <childnode refid="256" relation="public-inheritance">
+        <childnode refid="288" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="259">
+      <node id="291">
         <label>HashMap&lt; String, String &gt;</label>
       </node>
-      <node id="258">
+      <node id="290">
         <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
         <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
       </node>
-      <node id="257">
+      <node id="289">
         <label>com.poly.nlp.filekommander.views.models.PhraseOperationModel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model"/>
-        <childnode refid="258" relation="public-inheritance">
+        <childnode refid="290" relation="public-inheritance">
         </childnode>
-        <childnode refid="259" relation="usage">
+        <childnode refid="291" relation="usage">
           <edgelabel>fileListData</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="5" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="5" bodyend="40"/>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" line="5" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/models/PhraseOperationModel.java" bodystart="5" bodyend="121"/>
     <listofallmembers>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ab5595eb942a1c0567dbc412af601ef7c" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>add</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1afdc0b835818c55deb8ff7f22ec6b3d62" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>fileListData</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a80fd6066949ef4eabf1a4c0749afc364" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>getFileListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a03b0bfac9755a1219712dd15a89ae5d8" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>getNewPhrase</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a0a0c1b07cdb6e282e5312957a240d319" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>getOldPhrase</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ad8d071e0e95d8a5f8afe757e457ced11" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>getOperationType</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ab6aaaae482a6d5bb0e0ad0e193d611c0" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>getPosition</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a2483da9685a62fd03f6b62b7c291f827" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>getRepetition</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a5f8b38d37f7d3ee52d15ef572263168c" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>newPhrase</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a0dace372bc4a84cc98b975c2910d68e2" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>oldPhrase</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a3cc9f099059b9e5e2f53e450e78650f1" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>operationType</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a0a3dec91dda5527a9e6b91d8fa0eba83" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>PhraseOperationModel</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1adb4ce1401274c126993693e673a8be5c" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>position</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a7347d617c39bc105626f1a1bcee12f1e" prot="private" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>repetition</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ace58d8b740d482171bccd637875661f7" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>setFileListData</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1ac8da1de30c282f969ffd74a0529d6bb1" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>setNewPhrase</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1af6119ef333a4f7af836de597839cc016" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>setOldPhrase</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1aeda52758118855e19786c7bb399fd097" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>setOperationType</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a36b0e3108bc0909fd1abe08df05bcd00" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>setPosition</name></member>
+      <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model_1a88e53cb79b310fa306c685043f492e05" prot="public" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::models::PhraseOperationModel</scope><name>setRepetition</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

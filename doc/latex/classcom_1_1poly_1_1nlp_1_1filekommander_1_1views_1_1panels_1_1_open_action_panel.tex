@@ -10,19 +10,54 @@ Inheritance diagram for com.\-poly.\-nlp.\-filekommander.\-views.\-panels.\-Open
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba56569929488006bc879522f8d65da8}{update\-Panel\-Data} (\hyperlink{interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model}{Generic\-Action\-Model} model)
+\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aabcf90dcbfa737963540dfa801123e90}{Open\-Action\-Panel} ()
+\item 
+void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba56569929488006bc879522f8d65da8}{update\-Panel\-Data} (\hyperlink{interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model}{Generic\-Action\-Model} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba846378e4e1fd54f49642dcf88cb3d6}{model})
 \item 
 void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_a1e8521089a09fd734402e62d2352c275}{update\-Panel\-Data} ()
 \item 
 void \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aa37ab18925690ab2ed3ba3f1071126b2}{update\-Panel\-Data\-After\-Action} ()
 \end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model}{Open\-Model} \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba846378e4e1fd54f49642dcf88cb3d6}{model}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_a2f0300dacedd726f9822a744a90284cd}{serial\-Version\-U\-I\-D} = 1\-L
+\item 
+static final Logger \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_ae294b0a7ffcc9883269b1392750065b5}{log} = Logger.\-get\-Logger(Open\-Action\-Panel.\-class)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line \hyperlink{L5}{5} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L30}{30} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
 
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aabcf90dcbfa737963540dfa801123e90}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel}!Open\-Action\-Panel@{Open\-Action\-Panel}}
+\index{Open\-Action\-Panel@{Open\-Action\-Panel}!com::poly::nlp::filekommander::views::panels::OpenActionPanel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel}}
+\subsubsection[{Open\-Action\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}com.\-poly.\-nlp.\-filekommander.\-views.\-panels.\-Open\-Action\-Panel.\-Open\-Action\-Panel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aabcf90dcbfa737963540dfa801123e90}
+Create the panel. 
+
+Definition at line \hyperlink{L41}{41} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
+
+
+\begin{DoxyCode}
+                             \{
+        super();    
+    \}
+\end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
@@ -46,13 +81,17 @@ Implements \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panel
 
 
 
-Definition at line \hyperlink{L8}{8} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L45}{45} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
 
 
 \begin{DoxyCode}
                                                           \{
-        \textcolor{comment}{// TODO Auto-generated method stub}
-        
+        \textcolor{keywordflow}{if}(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba846378e4e1fd54f49642dcf88cb3d6}{model} instanceof OpenModel)\{
+        this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba846378e4e1fd54f49642dcf88cb3d6}{model} = (OpenModel)\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba846378e4e1fd54f49642dcf88cb3d6}{model};    
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_a1e8521089a09fd734402e62d2352c275}{updatePanelData}();
+        \}\textcolor{keywordflow}{else}\{
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_ae294b0a7ffcc9883269b1392750065b5}{log}.error(\textcolor{stringliteral}{"Wrong class"});
+        \}
     \}
 \end{DoxyCode}
 \hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_a1e8521089a09fd734402e62d2352c275}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel}!update\-Panel\-Data@{update\-Panel\-Data}}
@@ -68,13 +107,61 @@ Implements \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panel
 
 
 
-Definition at line \hyperlink{L14}{14} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L54}{54} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
 
 
 \begin{DoxyCode}
                                   \{
-        \textcolor{comment}{// TODO Auto-generated method stub}
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a2d8c613b03cb000425ae32a9a44dc805}{getMessagePanel}().removeAll();
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba846378e4e1fd54f49642dcf88cb3d6}{model} = (OpenModel) CallAction.callAction(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba846378e4e1fd54f49642dcf88cb3d6}{model});
+        HashMap<String, String> fileListData = this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba846378e4e1fd54f49642dcf88cb3d6}{model}.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_a188833367eaa0547760c2eb156f83a93}{getFileListData}
+      ();
+        HashMap<String, String> folderListData= this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba846378e4e1fd54f49642dcf88cb3d6}{model}.
+      \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model_aa91a0f55a062cec0e4ba825482847fe4}{getFolderListData}();
         
+        \textcolor{keywordflow}{if} (fileListData.size() > 1) \{
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a565a70e35ba8533880099438337eea08}{setActionString}(\textcolor{stringliteral}{"The details for the following
+       files/folders will be shown"});
+        \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (fileListData.size() == 0) \{
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a565a70e35ba8533880099438337eea08}{setActionString}(\textcolor{stringliteral}{""});
+        \} \textcolor{keywordflow}{else} \{
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a565a70e35ba8533880099438337eea08}{setActionString}(\textcolor{stringliteral}{"The details for the following
+       file/folder will be shown"});
+        \}
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a0b449a096a5bd31e4eb1bb90daa6bf77}{getActionLabel}().setText(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a657e69a7b792b6ad57846ecbebcb99e9}{getActionString}()
+      );
+
+        
+        Set<String> col = fileListData.keySet();
+        Iterator<String> iterator = col.iterator();
+        
+        \textcolor{keywordflow}{while}(iterator.hasNext())
+        \{   
+            String key = iterator.next();
+            String value= fileListData.get(key);
+            
+            String [] data = \textcolor{keyword}{new} String[2];
+            data[0] = key;
+            data[0]= value;
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a2d8c613b03cb000425ae32a9a44dc805}{getMessagePanel}().add(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_aa28d1e99f183f68a2e9ecc75d9292981}{createDefaultMessageRow}
+      (data));
+        \}       
+        
+        Set<String> folder = folderListData.keySet();
+        Iterator<String> iterator2 = folder.iterator();
+        
+        \textcolor{keywordflow}{while}(iterator2.hasNext())
+        \{   
+            String key = iterator2.next();
+            String value= folderListData.get(key);
+            
+            String [] data = \textcolor{keyword}{new} String[2];
+            data[0] = key;
+            data[0]= value;
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a2d8c613b03cb000425ae32a9a44dc805}{getMessagePanel}().add(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_aa28d1e99f183f68a2e9ecc75d9292981}{createDefaultMessageRow}
+      (data));
+        \}
+        this.paintAll(this.getGraphics());      
     \}
 \end{DoxyCode}
 \hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aa37ab18925690ab2ed3ba3f1071126b2}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel}!update\-Panel\-Data\-After\-Action@{update\-Panel\-Data\-After\-Action}}
@@ -90,7 +177,7 @@ Implements \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panel
 
 
 
-Definition at line \hyperlink{L20}{20} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L101}{101} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
 
 
 \begin{DoxyCode}
@@ -99,6 +186,30 @@ Definition at line \hyperlink{L20}{20} of file \hyperlink{}{Open\-Action\-Panel.
         
     \}
 \end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_ae294b0a7ffcc9883269b1392750065b5}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel}!log@{log}}
+\index{log@{log}!com::poly::nlp::filekommander::views::panels::OpenActionPanel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}final Logger com.\-poly.\-nlp.\-filekommander.\-views.\-panels.\-Open\-Action\-Panel.\-log = Logger.\-get\-Logger(Open\-Action\-Panel.\-class)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_ae294b0a7ffcc9883269b1392750065b5}
+
+
+Definition at line \hyperlink{L36}{36} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba846378e4e1fd54f49642dcf88cb3d6}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel}!model@{model}}
+\index{model@{model}!com::poly::nlp::filekommander::views::panels::OpenActionPanel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel}}
+\subsubsection[{model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Open\-Model} com.\-poly.\-nlp.\-filekommander.\-views.\-panels.\-Open\-Action\-Panel.\-model\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_aba846378e4e1fd54f49642dcf88cb3d6}
+
+
+Definition at line \hyperlink{L35}{35} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
+
+\hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_a2f0300dacedd726f9822a744a90284cd}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel}!serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}}
+\index{serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}!com::poly::nlp::filekommander::views::panels::OpenActionPanel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Open\-Action\-Panel}}
+\subsubsection[{serial\-Version\-U\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}final long com.\-poly.\-nlp.\-filekommander.\-views.\-panels.\-Open\-Action\-Panel.\-serial\-Version\-U\-I\-D = 1\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel_a2f0300dacedd726f9822a744a90284cd}
+
+
+Definition at line \hyperlink{L32}{32} of file \hyperlink{}{Open\-Action\-Panel.\-java}.
+
 
 
 The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}

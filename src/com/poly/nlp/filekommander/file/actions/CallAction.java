@@ -212,7 +212,7 @@ public class CallAction {
 		for (String fileName : fileListData.keySet()) {
 			if(statsModel.getStatsType() == FileKommander.COUNT){
 				int count = FileActionUtils.countWords(fileName);
-				String message = "Count of all the words is"+count;
+				String message = "Count of all the words is "+count +" ";
 				fileListData.put(fileName, message);
 			}else if(statsModel.getStatsType() == FileKommander.COUNT_WORD){
 		//		int count = countSpecificWord(fileName, word); //where is dis word passed from ?? how??
@@ -229,7 +229,7 @@ public class CallAction {
 		for (String folderName : folderListData.keySet()) {
 			if(statsModel.getStatsType() == FileKommander.COUNT){
 				int count = FileActionUtils.countFiles(folderName);
-				String message = "Count of all the files in the folder "+folderName+" is"+count;
+				String message = "Count of all the files in the folder "+folderName+" is "+count;
 				fileListData.put(folderName, message);
 			} else if(statsModel.getStatsType() == FileKommander.LIST_FILES){
 				ArrayList<String> l = new ArrayList<String>();

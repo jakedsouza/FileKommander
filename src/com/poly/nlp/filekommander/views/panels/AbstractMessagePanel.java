@@ -23,12 +23,22 @@ import java.awt.FlowLayout;
 public abstract class AbstractMessagePanel extends GenericPanel {
 
 	private static final long serialVersionUID = 1L;
+	/**
+	 */
 	private String actionString;
+	/**
+	 */
 	private JPanel commandPanel;
 	private static final Logger log = Logger
 			.getLogger(AbstractMessagePanel.class);
+	/**
+	 */
 	private JButton btnClear;
+	/**
+	 */
 	private JLabel actionLabel;
+	/**
+	 */
 	private JPanel messagePanel;
 
 	/**
@@ -111,36 +121,41 @@ public abstract class AbstractMessagePanel extends GenericPanel {
 	}
 
 	/**
-	 * @param actionString
-	 *            the actionString to set
+	 * @param actionString  the actionString to set
 	 */
 	public void setActionString(String actionString) {
 		this.actionString = actionString;
 	}
 
 	/**
-	 * @return the actionString
+	 * @return  the actionString
 	 */
 	public String getActionString() {
 		return actionString;
 	}
 
+	/**
+	 * @return
+	 */
 	public JPanel getMessagePanel() {
 		return messagePanel;
 	}
 	/**
-	 * @param messagePanel the messagePanel to set
+	 * @param messagePanel  the messagePanel to set
 	 */
 	public void setMessagePanel(JPanel messagePanel) {
 		this.messagePanel = messagePanel ;
 	}
 
+	/**
+	 * @return
+	 */
 	public JPanel getCommandPanel() {
 		return commandPanel;
 	}
 
 	/**
-	 * @param commandPanel the commandPanel to set
+	 * @param commandPanel  the commandPanel to set
 	 */
 	public void setCommandPanel(JPanel commandPanel) {
 		this.commandPanel = commandPanel;
@@ -155,14 +170,14 @@ public abstract class AbstractMessagePanel extends GenericPanel {
 	}
 
 	/**
-	 * @return the btnClear
+	 * @return  the btnClear
 	 */
 	public JButton getBtnClear() {
 		return btnClear;
 	}
 
 	/**
-	 * @param btnClear the btnClear to set
+	 * @param btnClear  the btnClear to set
 	 */
 	public void setBtnClear(JButton btnClear) {
 		this.btnClear = btnClear;
@@ -174,12 +189,15 @@ public abstract class AbstractMessagePanel extends GenericPanel {
 	public abstract void updatePanelData();
 
 	public abstract void updatePanelDataAfterAction();
+	/**
+	 * @return
+	 */
 	public JLabel getActionLabel() {
 		return actionLabel;
 	}
 
 	/**
-	 * @param actionLabel the actionLabel to set
+	 * @param actionLabel  the actionLabel to set
 	 */
 	public void setActionLabel(JLabel actionLabel) {
 		this.actionLabel = actionLabel;

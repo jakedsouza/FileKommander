@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="25" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="25" bodyend="-1"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="27" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="27" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -46,7 +46,7 @@
 <para>Create the panel. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="30" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="30" bodyend="50"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="32" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="32" bodyend="52"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="52" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="52" bodyend="57"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="54" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="54" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1ac5a9651b87cfddaa37774622acbfa3b8" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="75" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="75" bodyend="108"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="77" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="77" bodyend="110"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1a478a27e7168e5045b9f4ee5ffe1523cc" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="118" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="118" bodyend="122"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="120" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="120" bodyend="124"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="59" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="59" bodyend="73"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="61" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="61" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1afcd1856362c78beb91904ec0976cbcf9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -131,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="110" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="110" bodyend="116"/>
+        <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="112" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="112" bodyend="118"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -139,58 +139,58 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="140">
+      <node id="160">
         <label>com.poly.nlp.filekommander.views.FileKommanderMenu</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu"/>
-        <childnode refid="141" relation="public-inheritance">
+        <childnode refid="161" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="141">
+      <node id="161">
         <label>JMenuBar</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="148">
+      <node id="168">
         <label>JPanel</label>
       </node>
-      <node id="144">
+      <node id="164">
         <label>com.poly.nlp.filekommander.views.OptionsFileKommander</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander"/>
-        <childnode refid="145" relation="public-inheritance">
+        <childnode refid="165" relation="public-inheritance">
         </childnode>
-        <childnode refid="146" relation="usage">
+        <childnode refid="166" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
-        <childnode refid="147" relation="usage">
+        <childnode refid="167" relation="usage">
           <edgelabel>okButton</edgelabel>
         </childnode>
-        <childnode refid="148" relation="usage">
+        <childnode refid="168" relation="usage">
           <edgelabel>contentPanel</edgelabel>
         </childnode>
       </node>
-      <node id="146">
+      <node id="166">
         <label>Logger</label>
       </node>
-      <node id="142">
+      <node id="162">
         <label>com.poly.nlp.filekommander.views.FileKommanderMenu</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu"/>
-        <childnode refid="143" relation="public-inheritance">
+        <childnode refid="163" relation="public-inheritance">
         </childnode>
-        <childnode refid="144" relation="usage">
+        <childnode refid="164" relation="usage">
           <edgelabel>optionsFileKommander</edgelabel>
         </childnode>
       </node>
-      <node id="145">
+      <node id="165">
         <label>JDialog</label>
       </node>
-      <node id="143">
+      <node id="163">
         <label>JMenuBar</label>
       </node>
-      <node id="147">
+      <node id="167">
         <label>JButton</label>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="19" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="19" bodyend="124"/>
+    <location file="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" line="19" bodyfile="C:/Users/jake/git/FileKommander/src/com/poly/nlp/filekommander/views/FileKommanderMenu.java" bodystart="19" bodyend="126"/>
     <listofallmembers>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1a478a27e7168e5045b9f4ee5ffe1523cc" prot="protected" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::FileKommanderMenu</scope><name>displayAbout</name></member>
       <member refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu_1a27842ee6e2731a5b9d459852dcdd5a4d" prot="protected" virt="non-virtual"><scope>com::poly::nlp::filekommander::views::FileKommanderMenu</scope><name>displayOptions</name></member>

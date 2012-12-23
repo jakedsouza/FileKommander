@@ -8,10 +8,20 @@ package com.poly.nlp.filekommander.views.models;
  */
 public class RenameModel implements GenericActionModel {
 	// Is create action run
+	/**
+	 */
 	private boolean isModelRun;
+	/**
+	 */
 	private String oldFileName;
+	/**
+	 */
 	private String newFileName;
+	/**
+	 */
 	private String errorMessage;
+	/**
+	 */
 	private int type ;
 
 	/**
@@ -25,7 +35,7 @@ public class RenameModel implements GenericActionModel {
 	}
 
 	/**
-	 * @return the isModelRun
+	 * @return  the isModelRun
 	 */
 	public boolean isModelRun() {
 		return isModelRun;
@@ -40,59 +50,56 @@ public class RenameModel implements GenericActionModel {
 	}
 
 	/**
-	 * @return the oldFileName
+	 * @return  the oldFileName
 	 */
 	public String getOldFileName() {
 		return oldFileName;
 	}
 
 	/**
-	 * @param oldFileName
-	 *            the oldFileName to set
+	 * @param oldFileName  the oldFileName to set
 	 */
 	public void setOldFileName(String oldFileName) {
 		this.oldFileName = oldFileName;
 	}
 
 	/**
-	 * @return the newFileName
+	 * @return  the newFileName
 	 */
 	public String getNewFileName() {
 		return newFileName;
 	}
 
 	/**
-	 * @param newFileName
-	 *            the newFileName to set
+	 * @param newFileName  the newFileName to set
 	 */
 	public void setNewFileName(String newFileName) {
 		this.newFileName = newFileName;
 	}
 
 	/**
-	 * @return the errorMessage
+	 * @return  the errorMessage
 	 */
 	public String getErrorMessage() {
 		return errorMessage;
 	}
 
 	/**
-	 * @param errorMessage
-	 *            the errorMessage to set
+	 * @param errorMessage  the errorMessage to set
 	 */
 	public void setErrorMessage(String errorMessage) {
 		this.errorMessage = errorMessage;
 	}
 
 	/**
-	 * @return the type
+	 * @return  the type
 	 */
 	public int getType() {
 		return type;
 	}
 
 	/**
-	 * @param type the type to set
+	 * @param type  the type to set
 	 */
 	public void setType(int type) {
 		this.type = type;

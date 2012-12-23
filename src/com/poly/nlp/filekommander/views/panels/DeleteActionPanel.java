@@ -16,6 +16,8 @@ public class DeleteActionPanel extends AbstractFileFolderPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	/**
+	 */
 	private DeleteModel deleteModel;
 	private static final Logger log = Logger.getLogger(DeleteActionPanel.class);
 
@@ -96,7 +98,7 @@ public class DeleteActionPanel extends AbstractFileFolderPanel {
 			getActionLabelFile().setText("");
 			getFilepanel().setVisible(false);
 		} else {
-			getActionLabelFile().setText("Created the following files/folders");
+			getActionLabelFile().setText("Deleted the following files/folders");
 			getFilepanel().setVisible(true);
 		}
 		this.repaint();		

@@ -1,13 +1,15 @@
 var classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel =
 [
     [ "AbstractMessagePanel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a3d34321337c68753d8ca1c3cfb4cb37b", null ],
+    [ "createDefaultMessageRow", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#aa28d1e99f183f68a2e9ecc75d9292981", null ],
     [ "createDefaultObjectLabel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a623b9852884a79f9db920f3e3444ac47", null ],
+    [ "getActionLabel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a0b449a096a5bd31e4eb1bb90daa6bf77", null ],
     [ "getActionString", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a657e69a7b792b6ad57846ecbebcb99e9", null ],
     [ "getBtnClear", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#ab88a15cf8a7d5f3a3266342841b8ea13", null ],
     [ "getCommandPanel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a20b6fcda2f2cbd8aa5973d6c08b9690a", null ],
     [ "getMessagePanel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a2d8c613b03cb000425ae32a9a44dc805", null ],
-    [ "getTable", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#aab424ea4f0cf49aa1a619f21a996d6b5", null ],
     [ "resetPanel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a28d7298227a165c9b3e64a7b9182d2b1", null ],
+    [ "setActionLabel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a51f97279213dbc80136b483082f5ac56", null ],
     [ "setActionString", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a565a70e35ba8533880099438337eea08", null ],
     [ "setBtnClear", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#ad2c1bd073c20d8e9dfcd1bdf0b2f27ba", null ],
     [ "setCommandPanel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#ab3030d917dffd39a79418b3eeb0fbd83", null ],
@@ -16,11 +18,11 @@ var classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_mes
     [ "updatePanelData", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a9e5c061f76725ea2cbc6db991e1e4968", null ],
     [ "updatePanelData", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a1c0fcce6b9a3e540c8985c69bea60cd3", null ],
     [ "updatePanelDataAfterAction", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a305ad7e0b41448b92cfc567062fbb874", null ],
+    [ "actionLabel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a1942c7082090f64dafda75c91d7d8f3e", null ],
     [ "actionString", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a295643f08d4ad315ef3fa316d304dd27", null ],
     [ "btnClear", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#af85293e132ba96e5c707b39c418260c3", null ],
     [ "commandPanel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#aa43af4d88699d2fe9fe0c52a8b1d250c", null ],
     [ "log", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a8f8836218e523baaab4c65c0bc9b1f7e", null ],
     [ "messagePanel", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a5f778cbc2ed9dd8c37928dbe1412a0b0", null ],
-    [ "serialVersionUID", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a865c3834ea52d557283acefd0d2c855c", null ],
-    [ "table", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#ab00e095308fb951695dc4fefe0d86cb3", null ]
+    [ "serialVersionUID", "classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel.html#a865c3834ea52d557283acefd0d2c855c", null ]
 ];

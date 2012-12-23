@@ -30,12 +30,13 @@ static final long \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1
 \item 
 static final Logger \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_a9d905505e7514da823b65ce32d31d22e}{log} = Logger.\-get\-Logger(Stats\-Action\-Panel.\-class)
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line \hyperlink{L26}{26} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L28}{28} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
 
 
 
@@ -49,53 +50,12 @@ Definition at line \hyperlink{L26}{26} of file \hyperlink{}{Stats\-Action\-Panel
 )}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_a2b841c6de0cfb7cd6520f01ef22e99c9}
 Create the panel. 
 
-Definition at line \hyperlink{L35}{35} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L39}{39} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
 
 
 \begin{DoxyCode}
                               \{
-        super();
-\textcolor{comment}{//      SpringLayout springLayout = new SpringLayout();}
-\textcolor{comment}{//      setLayout(springLayout);}
-\textcolor{comment}{//}
-\textcolor{comment}{//      messagePanel = new JPanel();}
-\textcolor{comment}{//      springLayout.putConstraint(SpringLayout.NORTH, messagePanel, 0,
-       SpringLayout.NORTH, this);}
-\textcolor{comment}{//      springLayout.putConstraint(SpringLayout.EAST, messagePanel, 0,}
-\textcolor{comment}{//              SpringLayout.EAST, this);}
-\textcolor{comment}{//      messagePanel.setAutoscrolls(true);}
-\textcolor{comment}{//      add(messagePanel);}
-\textcolor{comment}{//      messagePanel.setLayout(null);}
-\textcolor{comment}{//          commandPanel = new JPanel();}
-\textcolor{comment}{//          springLayout.putConstraint(SpringLayout.WEST, messagePanel, 0,
-       SpringLayout.WEST, commandPanel);}
-\textcolor{comment}{//          springLayout.putConstraint(SpringLayout.SOUTH, messagePanel, -6,
-       SpringLayout.NORTH, commandPanel);}
-\textcolor{comment}{//              }
-\textcolor{comment}{//              table = new JTable();}
-\textcolor{comment}{//              table.setBorder(new BevelBorder(BevelBorder.RAISED, null, null,
-       null, null));}
-\textcolor{comment}{//              table.setBounds(386, 217, -324, -173);}
-\textcolor{comment}{//              messagePanel.add(table);}
-\textcolor{comment}{//              springLayout.putConstraint(SpringLayout.WEST, commandPanel, 0,
-       SpringLayout.WEST, this);}
-\textcolor{comment}{//              springLayout.putConstraint(SpringLayout.SOUTH, commandPanel, 0,
-       SpringLayout.SOUTH, this);}
-\textcolor{comment}{//              springLayout.putConstraint(SpringLayout.EAST, commandPanel, 0,
-       SpringLayout.EAST, this);}
-\textcolor{comment}{//              springLayout.putConstraint(SpringLayout.NORTH, commandPanel,
-       -40, SpringLayout.SOUTH, this);}
-\textcolor{comment}{//              add(commandPanel);}
-\textcolor{comment}{//              }
-\textcolor{comment}{//              btnReject = new JButton("");}
-\textcolor{comment}{//              btnReject.setFocusPainted(false);}
-\textcolor{comment}{//              btnReject.setMargin(new Insets(0, 0, 0, 0));}
-\textcolor{comment}{//              btnReject.setContentAreaFilled(false);}
-\textcolor{comment}{//              btnReject.setBorderPainted(true);}
-\textcolor{comment}{//              btnReject.setOpaque(true);}
-\textcolor{comment}{//              btnReject.setIcon(new
-       ImageIcon(CreateActionPanel.class.getResource("/com/poly/nlp/filekommander/views/icon/reject.png")));}
-\textcolor{comment}{//              commandPanel.add(btnReject);}
+        super();    
     \}
 \end{DoxyCode}
 
@@ -121,7 +81,7 @@ Implements \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panel
 
 
 
-Definition at line \hyperlink{L71}{71} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L43}{43} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
 
 
 \begin{DoxyCode}
@@ -147,12 +107,14 @@ Implements \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panel
 
 
 
-Definition at line \hyperlink{L80}{80} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L52}{52} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
 
 
 \begin{DoxyCode}
                                   \{
         \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a2d8c613b03cb000425ae32a9a44dc805}{getMessagePanel}().removeAll();
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_aaefc874fb6203949c9a759791eaf06b3}{statsModel} = (StatsModel) CallAction.callAction(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_aaefc874fb6203949c9a759791eaf06b3}{statsModel}
+      );
         HashMap<String, String> fileListData = this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_aaefc874fb6203949c9a759791eaf06b3}{statsModel}.
       \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model_abf285e0acda3ac3a582abda3bbf12987}{getFileListData}();
         HashMap<String, String> folderListData= this.\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_aaefc874fb6203949c9a759791eaf06b3}{statsModel}.
@@ -167,23 +129,23 @@ Definition at line \hyperlink{L80}{80} of file \hyperlink{}{Stats\-Action\-Panel
             \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a565a70e35ba8533880099438337eea08}{setActionString}(\textcolor{stringliteral}{"The details for the following
        file/folder will be shown"});
         \}
-        
-        DefaultTableModel model = \textcolor{keyword}{new} DefaultTableModel();     
-        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_ae66c31b95e8c1fe4d28565e7dcaf9a91}{setTable}(\textcolor{keyword}{new} javax.swing.JTable(model));     
-        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_aab424ea4f0cf49aa1a619f21a996d6b5}{getTable}().setModel(\textcolor{keyword}{new} DefaultTableModel());    
+        \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a0b449a096a5bd31e4eb1bb90daa6bf77}{getActionLabel}().setText(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a657e69a7b792b6ad57846ecbebcb99e9}{getActionString}()
+      );
+
         
         Set<String> col = fileListData.keySet();
         Iterator<String> iterator = col.iterator();
         
         \textcolor{keywordflow}{while}(iterator.hasNext())
         \{   
-            Object key = iterator.next();
-            Object value= fileListData.get(key);
+            String key = iterator.next();
+            String value= fileListData.get(key);
             
-            Object [] data = \textcolor{keyword}{new} Object[2];
+            String [] data = \textcolor{keyword}{new} String[2];
             data[0] = key;
             data[1]= value;
-            model.addRow(data); \textcolor{comment}{//Adds Row to JTable}
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a2d8c613b03cb000425ae32a9a44dc805}{getMessagePanel}().add(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_aa28d1e99f183f68a2e9ecc75d9292981}{createDefaultMessageRow}
+      (data));
         \}       
         
         Set<String> folder = folderListData.keySet();
@@ -191,21 +153,16 @@ Definition at line \hyperlink{L80}{80} of file \hyperlink{}{Stats\-Action\-Panel
         
         \textcolor{keywordflow}{while}(iterator2.hasNext())
         \{   
-            Object key = iterator2.next();
-            Object value= folderListData.get(key);
+            String key = iterator2.next();
+            String value= folderListData.get(key);
             
-            Object [] data = \textcolor{keyword}{new} Object[2];
+            String [] data = \textcolor{keyword}{new} String[2];
             data[0] = key;
             data[1]= value;
-            model.addRow(data); \textcolor{comment}{//Adds Row to JTable}
+            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a2d8c613b03cb000425ae32a9a44dc805}{getMessagePanel}().add(\hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_aa28d1e99f183f68a2e9ecc75d9292981}{createDefaultMessageRow}
+      (data));
         \}
-
-        \textcolor{keywordflow}{if}(fileListData == null && fileListData.size() == 0 || folderListData =
-      = null && folderListData.size() == 0 )\{
-            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a2d8c613b03cb000425ae32a9a44dc805}{getMessagePanel}().setVisible(\textcolor{keyword}{false});
-        \}\textcolor{keywordflow}{else}\{
-            \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel_a2d8c613b03cb000425ae32a9a44dc805}{getMessagePanel}().setVisible(\textcolor{keyword}{true});
-        \}
+        this.paintAll(this.getGraphics());      
     \}
 \end{DoxyCode}
 \hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_a2c9b149207152e5d1570c62172fd8823}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Stats\-Action\-Panel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Stats\-Action\-Panel}!update\-Panel\-Data\-After\-Action@{update\-Panel\-Data\-After\-Action}}
@@ -221,7 +178,7 @@ Implements \hyperlink{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panel
 
 
 
-Definition at line \hyperlink{L133}{133} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L99}{99} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
 
 
 \begin{DoxyCode}
@@ -238,21 +195,21 @@ Definition at line \hyperlink{L133}{133} of file \hyperlink{}{Stats\-Action\-Pan
 \subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}final Logger com.\-poly.\-nlp.\-filekommander.\-views.\-panels.\-Stats\-Action\-Panel.\-log = Logger.\-get\-Logger(Stats\-Action\-Panel.\-class)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_a9d905505e7514da823b65ce32d31d22e}
 
 
-Definition at line \hyperlink{L30}{30} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L34}{34} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
 
 \hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_ae7f395a4db15fdb7194b11934cd0732a}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Stats\-Action\-Panel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Stats\-Action\-Panel}!serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}}
 \index{serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}!com::poly::nlp::filekommander::views::panels::StatsActionPanel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Stats\-Action\-Panel}}
 \subsubsection[{serial\-Version\-U\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}final long com.\-poly.\-nlp.\-filekommander.\-views.\-panels.\-Stats\-Action\-Panel.\-serial\-Version\-U\-I\-D = 1\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_ae7f395a4db15fdb7194b11934cd0732a}
 
 
-Definition at line \hyperlink{L28}{28} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L30}{30} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
 
 \hypertarget{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_aaefc874fb6203949c9a759791eaf06b3}{\index{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Stats\-Action\-Panel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Stats\-Action\-Panel}!stats\-Model@{stats\-Model}}
 \index{stats\-Model@{stats\-Model}!com::poly::nlp::filekommander::views::panels::StatsActionPanel@{com\-::poly\-::nlp\-::filekommander\-::views\-::panels\-::\-Stats\-Action\-Panel}}
 \subsubsection[{stats\-Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stats\-Model} com.\-poly.\-nlp.\-filekommander.\-views.\-panels.\-Stats\-Action\-Panel.\-stats\-Model\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel_aaefc874fb6203949c9a759791eaf06b3}
 
 
-Definition at line \hyperlink{L29}{29} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
+Definition at line \hyperlink{L33}{33} of file \hyperlink{}{Stats\-Action\-Panel.\-java}.
 
 
 

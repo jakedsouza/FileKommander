@@ -4,7 +4,9 @@
     <compoundname>com::poly::nlp::filekommander::views::models</compoundname>
     <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model" prot="public">com::poly::nlp::filekommander::views::models::CreateModel</innerclass>
     <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model" prot="public">com::poly::nlp::filekommander::views::models::DeleteModel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_exists_model" prot="public">com::poly::nlp::filekommander::views::models::ExistsModel</innerclass>
     <innerclass refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model" prot="public">com::poly::nlp::filekommander::views::models::GenericActionModel</innerclass>
+    <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model" prot="public">com::poly::nlp::filekommander::views::models::OpenModel</innerclass>
     <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model" prot="public">com::poly::nlp::filekommander::views::models::PhraseOperationModel</innerclass>
     <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model" prot="public">com::poly::nlp::filekommander::views::models::RenameModel</innerclass>
     <innerclass refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model" prot="public">com::poly::nlp::filekommander::views::models::StatsModel</innerclass>

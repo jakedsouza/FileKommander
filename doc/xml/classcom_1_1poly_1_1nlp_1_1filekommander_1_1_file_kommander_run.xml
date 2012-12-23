@@ -291,315 +291,386 @@
 <para><simplesect kind="author"><para>jake </para></simplesect>
 </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="163">
+      <node id="183">
         <label>JPanel</label>
       </node>
-      <node id="170">
+      <node id="211">
+        <label>com.poly.nlp.filekommander.views.models.ExistsModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_exists_model"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+        <childnode refid="188" relation="usage">
+          <edgelabel>fileListData</edgelabel>
+          <edgelabel>folderListData</edgelabel>
+        </childnode>
+      </node>
+      <node id="190">
         <label>com.poly.nlp.filekommander.views.panels.AbstractFileFolderPanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_file_folder_panel"/>
-        <childnode refid="162" relation="public-inheritance">
+        <childnode refid="182" relation="public-inheritance">
         </childnode>
-        <childnode refid="151" relation="usage">
+        <childnode refid="171" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
-        <childnode refid="164" relation="usage">
+        <childnode refid="184" relation="usage">
           <edgelabel>btnAccept</edgelabel>
           <edgelabel>btnReject</edgelabel>
         </childnode>
-        <childnode refid="171" relation="usage">
+        <childnode refid="185" relation="usage">
           <edgelabel>actionLabelFile</edgelabel>
         </childnode>
-        <childnode refid="163" relation="usage">
+        <childnode refid="183" relation="usage">
           <edgelabel>filepanel</edgelabel>
           <edgelabel>commandPanel</edgelabel>
           <edgelabel>fileListPanel</edgelabel>
         </childnode>
       </node>
-      <node id="152">
+      <node id="172">
         <label>PropertiesConfiguration</label>
       </node>
-      <node id="186">
+      <node id="209">
         <label>JProgressBar</label>
       </node>
-      <node id="178">
+      <node id="199">
         <label>com.poly.nlp.filekommander.views.panels.CreateActionPanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_create_action_panel"/>
-        <childnode refid="170" relation="public-inheritance">
+        <childnode refid="190" relation="public-inheritance">
         </childnode>
-        <childnode refid="151" relation="usage">
+        <childnode refid="171" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
-        <childnode refid="179" relation="usage">
+        <childnode refid="200" relation="usage">
           <edgelabel>createModel</edgelabel>
         </childnode>
       </node>
-      <node id="181">
+      <node id="193">
+        <label>com.poly.nlp.filekommander.views.models.OpenModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_open_model"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+        <childnode refid="188" relation="usage">
+          <edgelabel>fileListData</edgelabel>
+          <edgelabel>folderListData</edgelabel>
+        </childnode>
+      </node>
+      <node id="204">
         <label>JToggleButton</label>
       </node>
-      <node id="161">
+      <node id="181">
         <label>com.poly.nlp.filekommander.views.panels.AbstractMessagePanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_abstract_message_panel"/>
-        <childnode refid="162" relation="public-inheritance">
+        <childnode refid="182" relation="public-inheritance">
         </childnode>
-        <childnode refid="151" relation="usage">
+        <childnode refid="171" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
-        <childnode refid="164" relation="usage">
+        <childnode refid="184" relation="usage">
           <edgelabel>btnClear</edgelabel>
         </childnode>
-        <childnode refid="165" relation="usage">
-          <edgelabel>table</edgelabel>
+        <childnode refid="185" relation="usage">
+          <edgelabel>actionLabel</edgelabel>
         </childnode>
-        <childnode refid="163" relation="usage">
+        <childnode refid="183" relation="usage">
           <edgelabel>messagePanel</edgelabel>
           <edgelabel>commandPanel</edgelabel>
         </childnode>
       </node>
-      <node id="160">
+      <node id="180">
         <label>com.poly.nlp.filekommander.views.panels.StatsActionPanel</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_stats_action_panel"/>
-        <childnode refid="161" relation="public-inheritance">
+        <childnode refid="181" relation="public-inheritance">
         </childnode>
-        <childnode refid="151" relation="usage">
+        <childnode refid="171" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
-        <childnode refid="166" relation="usage">
+        <childnode refid="186" relation="usage">
           <edgelabel>statsModel</edgelabel>
         </childnode>
       </node>
-      <node id="155">
+      <node id="175">
         <label>com.poly.nlp.filekommander.gate.GateBuilder</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1gate_1_1_gate_builder"/>
-        <childnode refid="151" relation="usage">
+        <childnode refid="171" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
-        <childnode refid="156" relation="usage">
+        <childnode refid="176" relation="usage">
           <edgelabel>prList</edgelabel>
         </childnode>
-        <childnode refid="157" relation="usage">
+        <childnode refid="177" relation="usage">
           <edgelabel>annieHome</edgelabel>
         </childnode>
-        <childnode refid="158" relation="usage">
+        <childnode refid="178" relation="usage">
           <edgelabel>annieController</edgelabel>
         </childnode>
       </node>
-      <node id="171">
+      <node id="185">
         <label>JLabel</label>
       </node>
-      <node id="185">
+      <node id="208">
         <label>Microphone</label>
       </node>
-      <node id="159">
-        <label>com.poly.nlp.filekommander.views.FileKommanderGUIV2</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2"/>
-        <childnode refid="160" relation="usage">
-          <edgelabel>statsActionPanel</edgelabel>
-        </childnode>
-        <childnode refid="169" relation="usage">
-          <edgelabel>deleteActionPanel</edgelabel>
-        </childnode>
-        <childnode refid="173" relation="usage">
-          <edgelabel>menuBar</edgelabel>
-        </childnode>
-        <childnode refid="164" relation="usage">
-          <edgelabel>runBtn</edgelabel>
-        </childnode>
-        <childnode refid="177" relation="usage">
-          <edgelabel>emptyActionPanel</edgelabel>
-        </childnode>
-        <childnode refid="178" relation="usage">
-          <edgelabel>createActionPanel</edgelabel>
-        </childnode>
-        <childnode refid="180" relation="usage">
-          <edgelabel>inputTextFld</edgelabel>
-        </childnode>
-        <childnode refid="181" relation="usage">
-          <edgelabel>micBtn</edgelabel>
-        </childnode>
-        <childnode refid="182" relation="usage">
-          <edgelabel>frmFileKommander</edgelabel>
+      <node id="210">
+        <label>com.poly.nlp.filekommander.views.panels.ExistActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_exist_action_panel"/>
+        <childnode refid="181" relation="public-inheritance">
         </childnode>
         <childnode refid="171" relation="usage">
-          <edgelabel>errorMessageLabel</edgelabel>
-        </childnode>
-        <childnode refid="183" relation="usage">
-          <edgelabel>renameActionPanel</edgelabel>
-        </childnode>
-        <childnode refid="185" relation="usage">
-          <edgelabel>microphone</edgelabel>
-        </childnode>
-        <childnode refid="163" relation="usage">
-          <edgelabel>informatinDisplayPanel</edgelabel>
-        </childnode>
-        <childnode refid="186" relation="usage">
-          <edgelabel>progressBar</edgelabel>
-        </childnode>
-      </node>
-      <node id="168">
-        <label>HashMap&lt; String, String &gt;</label>
-      </node>
-      <node id="153">
-        <label>com.poly.nlp.filekommander.FileKommander</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander"/>
-        <childnode refid="154" relation="public-inheritance">
-        </childnode>
-        <childnode refid="151" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
-        <childnode refid="155" relation="usage">
+        <childnode refid="211" relation="usage">
+          <edgelabel>model</edgelabel>
+        </childnode>
+      </node>
+      <node id="201">
+        <label>com.poly.nlp.filekommander.views.panels.PhraseOperationActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_phrase_operation_action_panel"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+        <childnode refid="171" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="202" relation="usage">
+          <edgelabel>model</edgelabel>
+        </childnode>
+      </node>
+      <node id="179">
+        <label>com.poly.nlp.filekommander.views.FileKommanderGUIV2</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_g_u_i_v2"/>
+        <childnode refid="180" relation="usage">
+          <edgelabel>statsActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="189" relation="usage">
+          <edgelabel>deleteActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="192" relation="usage">
+          <edgelabel>openActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="194" relation="usage">
+          <edgelabel>menuBar</edgelabel>
+        </childnode>
+        <childnode refid="184" relation="usage">
+          <edgelabel>runBtn</edgelabel>
+        </childnode>
+        <childnode refid="198" relation="usage">
+          <edgelabel>emptyActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="199" relation="usage">
+          <edgelabel>createActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="201" relation="usage">
+          <edgelabel>phraseActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="203" relation="usage">
+          <edgelabel>inputTextFld</edgelabel>
+        </childnode>
+        <childnode refid="204" relation="usage">
+          <edgelabel>micBtn</edgelabel>
+        </childnode>
+        <childnode refid="205" relation="usage">
+          <edgelabel>frmFileKommander</edgelabel>
+        </childnode>
+        <childnode refid="185" relation="usage">
+          <edgelabel>errorMessageLabel</edgelabel>
+        </childnode>
+        <childnode refid="206" relation="usage">
+          <edgelabel>renameActionPanel</edgelabel>
+        </childnode>
+        <childnode refid="208" relation="usage">
+          <edgelabel>microphone</edgelabel>
+        </childnode>
+        <childnode refid="183" relation="usage">
+          <edgelabel>informatinDisplayPanel</edgelabel>
+        </childnode>
+        <childnode refid="209" relation="usage">
+          <edgelabel>progressBar</edgelabel>
+        </childnode>
+        <childnode refid="210" relation="usage">
+          <edgelabel>existActionPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="188">
+        <label>HashMap&lt; String, String &gt;</label>
+      </node>
+      <node id="173">
+        <label>com.poly.nlp.filekommander.FileKommander</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander"/>
+        <childnode refid="174" relation="public-inheritance">
+        </childnode>
+        <childnode refid="171" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="175" relation="usage">
           <edgelabel>gateBuilder</edgelabel>
         </childnode>
-        <childnode refid="158" relation="usage">
+        <childnode refid="178" relation="usage">
           <edgelabel>annie</edgelabel>
         </childnode>
       </node>
-      <node id="175">
+      <node id="192">
+        <label>com.poly.nlp.filekommander.views.panels.OpenActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_open_action_panel"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+        <childnode refid="171" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="193" relation="usage">
+          <edgelabel>model</edgelabel>
+        </childnode>
+      </node>
+      <node id="196">
         <label>com.poly.nlp.filekommander.views.OptionsFileKommander</label>
         <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_options_file_kommander"/>
-        <childnode refid="176" relation="public-inheritance">
+        <childnode refid="197" relation="public-inheritance">
         </childnode>
-        <childnode refid="151" relation="usage">
-          <edgelabel>log</edgelabel>
-        </childnode>
-        <childnode refid="164" relation="usage">
-          <edgelabel>okButton</edgelabel>
-        </childnode>
-        <childnode refid="163" relation="usage">
-          <edgelabel>contentPanel</edgelabel>
-        </childnode>
-      </node>
-      <node id="182">
-        <label>JFrame</label>
-      </node>
-      <node id="177">
-        <label>com.poly.nlp.filekommander.views.panels.EmptyActionPanel</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel"/>
-        <childnode refid="162" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="167">
-        <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
-        <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
-      </node>
-      <node id="179">
-        <label>com.poly.nlp.filekommander.views.models.CreateModel</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model"/>
-        <childnode refid="167" relation="public-inheritance">
-        </childnode>
-        <childnode refid="168" relation="usage">
-          <edgelabel>fileListData</edgelabel>
-          <edgelabel>folderListData</edgelabel>
-        </childnode>
-      </node>
-      <node id="156">
-        <label>ArrayList&lt; ProcessingResource &gt;</label>
-      </node>
-      <node id="150">
-        <label>com.poly.nlp.filekommander.FileKommanderRun</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run"/>
-        <childnode refid="151" relation="usage">
-          <edgelabel>log</edgelabel>
-        </childnode>
-        <childnode refid="152" relation="usage">
-          <edgelabel>configuration</edgelabel>
-        </childnode>
-        <childnode refid="153" relation="usage">
-          <edgelabel>kommander</edgelabel>
-        </childnode>
-        <childnode refid="159" relation="usage">
-          <edgelabel>guiv2</edgelabel>
-        </childnode>
-      </node>
-      <node id="158">
-        <label>SerialAnalyserController</label>
-      </node>
-      <node id="151">
-        <label>Logger</label>
-      </node>
-      <node id="184">
-        <label>com.poly.nlp.filekommander.views.models.RenameModel</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model"/>
-        <childnode refid="167" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="172">
-        <label>com.poly.nlp.filekommander.views.models.DeleteModel</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model"/>
-        <childnode refid="167" relation="public-inheritance">
-        </childnode>
-        <childnode refid="168" relation="usage">
-          <edgelabel>fileListData</edgelabel>
-          <edgelabel>folderListData</edgelabel>
-        </childnode>
-      </node>
-      <node id="173">
-        <label>com.poly.nlp.filekommander.views.FileKommanderMenu</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu"/>
-        <childnode refid="174" relation="public-inheritance">
-        </childnode>
-        <childnode refid="175" relation="usage">
-          <edgelabel>optionsFileKommander</edgelabel>
-        </childnode>
-      </node>
-      <node id="180">
-        <label>JTextField</label>
-      </node>
-      <node id="169">
-        <label>com.poly.nlp.filekommander.views.panels.DeleteActionPanel</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel"/>
-        <childnode refid="170" relation="public-inheritance">
-        </childnode>
-        <childnode refid="151" relation="usage">
-          <edgelabel>log</edgelabel>
-        </childnode>
-        <childnode refid="172" relation="usage">
-          <edgelabel>deleteModel</edgelabel>
-        </childnode>
-      </node>
-      <node id="176">
-        <label>JDialog</label>
-      </node>
-      <node id="162">
-        <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
-        <childnode refid="163" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="174">
-        <label>JMenuBar</label>
-      </node>
-      <node id="183">
-        <label>com.poly.nlp.filekommander.views.panels.RenameActionPanel</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel"/>
-        <childnode refid="170" relation="public-inheritance">
-        </childnode>
-        <childnode refid="151" relation="usage">
+        <childnode refid="171" relation="usage">
           <edgelabel>log</edgelabel>
         </childnode>
         <childnode refid="184" relation="usage">
-          <edgelabel>renameModel</edgelabel>
+          <edgelabel>okButton</edgelabel>
+        </childnode>
+        <childnode refid="183" relation="usage">
+          <edgelabel>contentPanel</edgelabel>
         </childnode>
       </node>
-      <node id="164">
-        <label>JButton</label>
+      <node id="205">
+        <label>JFrame</label>
       </node>
-      <node id="165">
-        <label>JTable</label>
-      </node>
-      <node id="166">
-        <label>com.poly.nlp.filekommander.views.models.StatsModel</label>
-        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model"/>
-        <childnode refid="167" relation="public-inheritance">
+      <node id="198">
+        <label>com.poly.nlp.filekommander.views.panels.EmptyActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_empty_action_panel"/>
+        <childnode refid="182" relation="public-inheritance">
         </childnode>
-        <childnode refid="168" relation="usage">
+      </node>
+      <node id="187">
+        <label>com.poly.nlp.filekommander.views.models.GenericActionModel</label>
+        <link refid="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model"/>
+      </node>
+      <node id="200">
+        <label>com.poly.nlp.filekommander.views.models.CreateModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_create_model"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+        <childnode refid="188" relation="usage">
           <edgelabel>fileListData</edgelabel>
           <edgelabel>folderListData</edgelabel>
         </childnode>
       </node>
-      <node id="154">
+      <node id="176">
+        <label>ArrayList&lt; ProcessingResource &gt;</label>
+      </node>
+      <node id="170">
+        <label>com.poly.nlp.filekommander.FileKommanderRun</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1_file_kommander_run"/>
+        <childnode refid="171" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="172" relation="usage">
+          <edgelabel>configuration</edgelabel>
+        </childnode>
+        <childnode refid="173" relation="usage">
+          <edgelabel>kommander</edgelabel>
+        </childnode>
+        <childnode refid="179" relation="usage">
+          <edgelabel>guiv2</edgelabel>
+        </childnode>
+      </node>
+      <node id="178">
+        <label>SerialAnalyserController</label>
+      </node>
+      <node id="171">
+        <label>Logger</label>
+      </node>
+      <node id="207">
+        <label>com.poly.nlp.filekommander.views.models.RenameModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_rename_model"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>com.poly.nlp.filekommander.views.models.DeleteModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_delete_model"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+        <childnode refid="188" relation="usage">
+          <edgelabel>fileListData</edgelabel>
+          <edgelabel>folderListData</edgelabel>
+        </childnode>
+      </node>
+      <node id="202">
+        <label>com.poly.nlp.filekommander.views.models.PhraseOperationModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_phrase_operation_model"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+        <childnode refid="188" relation="usage">
+          <edgelabel>fileListData</edgelabel>
+        </childnode>
+      </node>
+      <node id="194">
+        <label>com.poly.nlp.filekommander.views.FileKommanderMenu</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1_file_kommander_menu"/>
+        <childnode refid="195" relation="public-inheritance">
+        </childnode>
+        <childnode refid="196" relation="usage">
+          <edgelabel>optionsFileKommander</edgelabel>
+        </childnode>
+      </node>
+      <node id="203">
+        <label>JTextField</label>
+      </node>
+      <node id="189">
+        <label>com.poly.nlp.filekommander.views.panels.DeleteActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_delete_action_panel"/>
+        <childnode refid="190" relation="public-inheritance">
+        </childnode>
+        <childnode refid="171" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="191" relation="usage">
+          <edgelabel>deleteModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="197">
+        <label>JDialog</label>
+      </node>
+      <node id="182">
+        <label>com.poly.nlp.filekommander.views.panels.GenericPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_generic_panel"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>JMenuBar</label>
+      </node>
+      <node id="206">
+        <label>com.poly.nlp.filekommander.views.panels.RenameActionPanel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1panels_1_1_rename_action_panel"/>
+        <childnode refid="190" relation="public-inheritance">
+        </childnode>
+        <childnode refid="171" relation="usage">
+          <edgelabel>log</edgelabel>
+        </childnode>
+        <childnode refid="207" relation="usage">
+          <edgelabel>renameModel</edgelabel>
+        </childnode>
+      </node>
+      <node id="184">
+        <label>JButton</label>
+      </node>
+      <node id="186">
+        <label>com.poly.nlp.filekommander.views.models.StatsModel</label>
+        <link refid="classcom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_stats_model"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+        <childnode refid="188" relation="usage">
+          <edgelabel>fileListData</edgelabel>
+          <edgelabel>folderListData</edgelabel>
+        </childnode>
+      </node>
+      <node id="174">
         <label>Runnable</label>
       </node>
-      <node id="157">
+      <node id="177">
         <label>URI</label>
       </node>
     </collaborationgraph>

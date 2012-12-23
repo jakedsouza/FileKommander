@@ -29,6 +29,8 @@ import javax.swing.table.DefaultTableModel;
 public class ExistActionPanel extends AbstractMessagePanel {
 
 	private static final long serialVersionUID = 1L;
+    /**
+	 */
     private ExistsModel model ;
 	private static final Logger log = Logger.getLogger(ExistActionPanel.class);
 

@@ -22,6 +22,8 @@ public class FileKommanderMenu extends JMenuBar{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	/**
+	 */
 	OptionsFileKommander optionsFileKommander ;
 
 	/**

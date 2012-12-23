@@ -219,7 +219,10 @@ public class AnalyseAction {
 			if(phraseOperationModel.getOperationType() == FileKommander.INSERT ) {
 			phraseOperationModel.setNewPhrase(phrases.get(0));
 			phraseOperationModel.setOldPhrase(phrases.get(1));
-			}else if(phraseOperationModel.getOperationType() == FileKommander.REMOVE || phraseOperationModel.getOperationType() == FileKommander.REPLACE){
+			}else if(phraseOperationModel.getOperationType() == FileKommander.REMOVE){
+			//	phraseOperationModel.setNewPhrase(phrases.get(1));
+				phraseOperationModel.setOldPhrase(phrases.get(0));
+			}else if(phraseOperationModel.getOperationType() == FileKommander.REPLACE){
 				phraseOperationModel.setNewPhrase(phrases.get(1));
 				phraseOperationModel.setOldPhrase(phrases.get(0));
 			}

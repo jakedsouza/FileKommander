@@ -527,7 +527,7 @@ public class FileActionUtils {
 					numWords++;
 				}
 
-				log.info("no. of words in file = " + numWords);
+				log.info(" No . of words in file = " + numWords +" ");
 			} else {
 				log.info("This file doesn't exists.");
 			}

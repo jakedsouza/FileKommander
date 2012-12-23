@@ -127,6 +127,8 @@ Static Private Member Functions</h2></td></tr>
 <tr class="separator:a9970d61dcf513507ed64217bd16838ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a683b8ce8891c552588d2247fbd9f4328"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model.html">GenericActionModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a683b8ce8891c552588d2247fbd9f4328">analyseExistsAction</a> (Annotation annotation)</td></tr>
 <tr class="separator:a683b8ce8891c552588d2247fbd9f4328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9896688bb8b9d517ff050315835804b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model.html">GenericActionModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#aa9896688bb8b9d517ff050315835804b">analysePhraseAction</a> (Annotation annotation, String actionType)</td></tr>
+<tr class="separator:aa9896688bb8b9d517ff050315835804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75f845c14e6046304b2ad4ac56d0f56f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model.html">GenericActionModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a75f845c14e6046304b2ad4ac56d0f56f">analyseInsertAction</a> (Annotation annotation)</td></tr>
 <tr class="separator:a75f845c14e6046304b2ad4ac56d0f56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4da9b25dc9bdae9570ef0459276548ad"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model.html">GenericActionModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a4da9b25dc9bdae9570ef0459276548ad">analyseOpenAction</a> (Annotation annotation)</td></tr>
@@ -146,8 +148,9 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:ae99df52b353dd7b0d2014d581fcc8cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="#L20">20</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<div class="textblock"><dl class="section author"><dt>Author</dt><dd>neha , jake </dd></dl>
+
+<p>Definition at line <a class="el" href="#L32">32</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aef5f93dbdd411587de327fc2c6913622"></a>
 <div class="memitem">
@@ -181,7 +184,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L23">23</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<p>Definition at line <a class="el" href="#L35">35</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 <div class="fragment"><div class="line">                                   {</div>
 <div class="line">        <span class="keywordflow">if</span> (actionType == null)</div>
 <div class="line">            <span class="keywordflow">return</span> null;</div>
@@ -197,26 +200,26 @@ Static Private Attributes</h2></td></tr>
 <div class="line">        <span class="keywordflow">case</span> <span class="stringliteral">&quot;delete&quot;</span>:</div>
 <div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a9970d61dcf513507ed64217bd16838ab">analyseDeleteAction</a>(annotation);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> <span class="stringliteral">&quot;exists&quot;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="stringliteral">&quot;exist&quot;</span>:</div>
 <div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a683b8ce8891c552588d2247fbd9f4328">analyseExistsAction</a>(annotation);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="stringliteral">&quot;insert&quot;</span>:</div>
-<div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a75f845c14e6046304b2ad4ac56d0f56f">analyseInsertAction</a>(annotation);</div>
+<div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#aa9896688bb8b9d517ff050315835804b">analysePhraseAction</a>(annotation, actionType);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="stringliteral">&quot;open&quot;</span>:</div>
 <div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a4da9b25dc9bdae9570ef0459276548ad">analyseOpenAction</a>(annotation);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="stringliteral">&quot;remove&quot;</span>:</div>
-<div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#aea934abe03154ab654a156add6133093">analyseRemoveAction</a>(annotation);</div>
+<div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#aa9896688bb8b9d517ff050315835804b">analysePhraseAction</a>(annotation, actionType);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="stringliteral">&quot;rename&quot;</span>:</div>
 <div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#aade5e40cbf6a964d4b95b81815cea68f">analyseRenameAction</a>(annotation);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="stringliteral">&quot;replace&quot;</span>:</div>
-<div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a55c78bdeee6905c8e95f3d8115a6c222">analyseReplaceAction</a>(annotation);</div>
+<div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#aa9896688bb8b9d517ff050315835804b">analysePhraseAction</a>(annotation, actionType);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="stringliteral">&quot;stats&quot;</span>:</div>
-<div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a7bd195f986019e22721f048aec378f67">analyseStatsAction</a>(annotation,actionType);</div>
+<div class="line">            returnModel = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a7bd195f986019e22721f048aec378f67">analyseStatsAction</a>(annotation, actionType);</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">default</span>:</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
@@ -249,7 +252,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L69">69</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<p>Definition at line <a class="el" href="#L79">79</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 <div class="fragment"><div class="line">                                                                                 {</div>
 <div class="line">        FeatureMap featureMap = annotation.getFeatures();</div>
 <div class="line">        ArrayList&lt;String&gt; fileNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
@@ -306,7 +309,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L101">101</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<p>Definition at line <a class="el" href="#L111">111</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 <div class="fragment"><div class="line">                                                                                 {</div>
 <div class="line">        FeatureMap featureMap = annotation.getFeatures();</div>
 <div class="line">        ArrayList&lt;String&gt; fileNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
@@ -363,10 +366,35 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L133">133</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<p>Definition at line <a class="el" href="#L143">143</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 <div class="fragment"><div class="line">                                                                                 {</div>
-<div class="line">        <span class="comment">//TODO</span></div>
-<div class="line">        <span class="keywordflow">return</span> null;</div>
+<div class="line">        FeatureMap featureMap = annotation.getFeatures();</div>
+<div class="line">        ArrayList&lt;String&gt; fileNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
+<div class="line">                featureMap, <span class="stringliteral">&quot;fileName&quot;</span>);</div>
+<div class="line">        ArrayList&lt;String&gt; directoryNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
+<div class="line">                featureMap, <span class="stringliteral">&quot;directoryName&quot;</span>);</div>
+<div class="line">        ArrayList&lt;String&gt; quotedObjectNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
+<div class="line">                featureMap, <span class="stringliteral">&quot;quotedObject&quot;</span>);</div>
+<div class="line">        ExistsModel existsModel = <span class="keyword">new</span> ExistsModel();</div>
+<div class="line">        <span class="keywordflow">if</span> (fileNamesList != null) {</div>
+<div class="line">            <span class="keywordflow">for</span> (String fileName : fileNamesList) {</div>
+<div class="line">                existsModel.add(fileName, FileKommander.FILE);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">if</span> (directoryNamesList != null) {</div>
+<div class="line">            <span class="keywordflow">for</span> (String folderName : directoryNamesList) {</div>
+<div class="line">                existsModel.add(folderName, FileKommander.DIRECTORY);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">if</span> (quotedObjectNamesList != null) {</div>
+<div class="line">            <span class="keywordflow">for</span> (String quotedName : quotedObjectNamesList) {</div>
+<div class="line">                <span class="keywordflow">if</span> (!fileNamesList.contains(quotedName)</div>
+<div class="line">                        &amp;&amp; !directoryNamesList.contains(quotedName))</div>
+<div class="line">                    existsModel.add(quotedName, FileKommander.DIRECTORY);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line"></div>
+<div class="line">        <span class="keywordflow">return</span> existsModel;</div>
 <div class="line"></div>
 <div class="line">    }</div>
 </div><!-- fragment -->
@@ -394,10 +422,38 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L139">139</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<p>Definition at line <a class="el" href="#L255">255</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 <div class="fragment"><div class="line">                                                                                 {</div>
-<div class="line">        <span class="comment">//TODO</span></div>
-<div class="line">        <span class="keywordflow">return</span> null;</div>
+<div class="line"></div>
+<div class="line">        FeatureMap featureMap = annotation.getFeatures();</div>
+<div class="line">        ArrayList&lt;String&gt; fileNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
+<div class="line">                featureMap, <span class="stringliteral">&quot;fileName&quot;</span>);</div>
+<div class="line">        ArrayList&lt;String&gt; quotedObjectNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
+<div class="line">                featureMap, <span class="stringliteral">&quot;quotedObject&quot;</span>);</div>
+<div class="line">        ArrayList&lt;String&gt; phraseList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(featureMap,</div>
+<div class="line">                <span class="stringliteral">&quot;phraseName&quot;</span>);</div>
+<div class="line">        PhraseOperationModel phraseOperationModel = <span class="keyword">new</span> PhraseOperationModel();</div>
+<div class="line">        phraseOperationModel.setOperationType(FileKommander.INSERT);</div>
+<div class="line"></div>
+<div class="line">        phraseOperationModel.setRepetition(<a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
+<div class="line">                featureMap, <span class="stringliteral">&quot;position&quot;</span>).<span class="keyword">get</span>(0));</div>
+<div class="line">        <span class="comment">// phraseOperationModel.set</span></div>
+<div class="line">        String position = phraseOperationModel.getRepetition();</div>
+<div class="line">        <span class="comment">// String newPhrase = &quot;&quot;;</span></div>
+<div class="line">        <span class="comment">// String oldPhrase = &quot;&quot;;</span></div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// phraseOperationModel.setRepetition(repetition)</span></div>
+<div class="line"></div>
+<div class="line">        <span class="keywordflow">if</span> (quotedObjectNamesList != null) {</div>
+<div class="line">            <span class="keywordflow">for</span> (String quotedName : quotedObjectNamesList) {</div>
+<div class="line">                <span class="keywordflow">if</span> (phraseList.contains(quotedName))</div>
+<div class="line">                    phraseOperationModel.setNewPhrase(quotedName);</div>
+<div class="line">                <span class="keywordflow">else</span></div>
+<div class="line">                    phraseOperationModel.setOldPhrase(quotedName);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line"></div>
+<div class="line">        <span class="keywordflow">return</span> phraseOperationModel;</div>
 <div class="line"></div>
 <div class="line">    }</div>
 </div><!-- fragment -->
@@ -425,11 +481,151 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L145">145</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<p>Definition at line <a class="el" href="#L289">289</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 <div class="fragment"><div class="line">                                                                               {</div>
-<div class="line">        <span class="comment">//TODO</span></div>
-<div class="line">        <span class="keywordflow">return</span> null;</div>
+<div class="line">        FeatureMap featureMap = annotation.getFeatures();</div>
+<div class="line">        ArrayList&lt;String&gt; fileNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
+<div class="line">                featureMap, <span class="stringliteral">&quot;fileName&quot;</span>);</div>
+<div class="line">        ArrayList&lt;String&gt; directoryNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
+<div class="line">                featureMap, <span class="stringliteral">&quot;directoryName&quot;</span>);</div>
+<div class="line">        ArrayList&lt;String&gt; quotedObjectNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
+<div class="line">                featureMap, <span class="stringliteral">&quot;quotedObject&quot;</span>);</div>
+<div class="line">        OpenModel openModel = <span class="keyword">new</span> OpenModel();</div>
+<div class="line">        <span class="keywordflow">if</span> (fileNamesList != null) {</div>
+<div class="line">            <span class="keywordflow">for</span> (String fileName : fileNamesList) {</div>
+<div class="line">                openModel.add(fileName, FileKommander.FILE);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">if</span> (directoryNamesList != null) {</div>
+<div class="line">            <span class="keywordflow">for</span> (String folderName : directoryNamesList) {</div>
+<div class="line">                openModel.add(folderName, FileKommander.DIRECTORY);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">if</span> (quotedObjectNamesList != null) {</div>
+<div class="line">            <span class="keywordflow">for</span> (String quotedName : quotedObjectNamesList) {</div>
+<div class="line">                <span class="keywordflow">if</span> (!fileNamesList.contains(quotedName)</div>
+<div class="line">                        &amp;&amp; !directoryNamesList.contains(quotedName))</div>
+<div class="line">                    openModel.add(quotedName, FileKommander.DIRECTORY);</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
 <div class="line"></div>
+<div class="line">        <span class="keywordflow">return</span> openModel;</div>
+<div class="line"></div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa9896688bb8b9d517ff050315835804b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="interfacecom_1_1poly_1_1nlp_1_1filekommander_1_1views_1_1models_1_1_generic_action_model.html">GenericActionModel</a> com.poly.nlp.filekommander.file.actions.AnalyseAction.analysePhraseAction </td>
+          <td>(</td>
+          <td class="paramtype">Annotation&#160;</td>
+          <td class="paramname"><em>annotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>actionType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="#L174">174</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<div class="fragment"><div class="line">                                                      {</div>
+<div class="line"></div>
+<div class="line">        FeatureMap featureMap = annotation.getFeatures();</div>
+<div class="line">        ArrayList&lt;String&gt; fileNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
+<div class="line">                featureMap, <span class="stringliteral">&quot;fileName&quot;</span>);</div>
+<div class="line">        ArrayList&lt;String&gt; quotedObjectNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
+<div class="line">                featureMap, <span class="stringliteral">&quot;quotedObject&quot;</span>);</div>
+<div class="line">        ArrayList&lt;String&gt; phraseList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(featureMap,</div>
+<div class="line">                <span class="stringliteral">&quot;phraseName&quot;</span>);</div>
+<div class="line">        PhraseOperationModel phraseOperationModel = <span class="keyword">new</span> PhraseOperationModel();</div>
+<div class="line">        <span class="keywordflow">if</span> (actionType.equalsIgnoreCase(<span class="stringliteral">&quot;insert&quot;</span>))</div>
+<div class="line">            phraseOperationModel.setOperationType(FileKommander.INSERT);</div>
+<div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (actionType.equalsIgnoreCase(<span class="stringliteral">&quot;replace&quot;</span>))</div>
+<div class="line">            phraseOperationModel.setOperationType(FileKommander.REPLACE);</div>
+<div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (actionType.equalsIgnoreCase(<span class="stringliteral">&quot;remove&quot;</span>))</div>
+<div class="line">            phraseOperationModel.setOperationType(FileKommander.REMOVE);</div>
+<div class="line">        <span class="keywordflow">for</span> (String fileName : fileNamesList) {</div>
+<div class="line">            phraseOperationModel.add(fileName);</div>
+<div class="line">        }</div>
+<div class="line">        <span class="comment">// phraseOperationModel.setFileListData(fileNamesList);</span></div>
+<div class="line">        ArrayList&lt;String&gt; repList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(featureMap,</div>
+<div class="line">                <span class="stringliteral">&quot;repitition&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (!repList.isEmpty()) {</div>
+<div class="line">            phraseOperationModel.setRepetition(repList.get(0));</div>
+<div class="line">        } <span class="keywordflow">else</span> {</div>
+<div class="line">            phraseOperationModel.setRepetition(<span class="stringliteral">&quot;every&quot;</span>);</div>
+<div class="line">        }</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// phraseOperationModel.set</span></div>
+<div class="line">        ArrayList&lt;String&gt; posList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(featureMap,</div>
+<div class="line">                <span class="stringliteral">&quot;position&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (!posList.isEmpty()) {</div>
+<div class="line">            phraseOperationModel.setPosition(posList.get(0));</div>
+<div class="line">        } <span class="keywordflow">else</span> {</div>
+<div class="line">            phraseOperationModel.setPosition(<span class="stringliteral">&quot;after&quot;</span>);</div>
+<div class="line">        }</div>
+<div class="line">        <span class="comment">// String newPhrase = &quot;&quot;;</span></div>
+<div class="line">        <span class="comment">// String oldPhrase = &quot;&quot;;</span></div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// phraseOperationModel.setRepetition(repetition)</span></div>
+<div class="line"></div>
+<div class="line">        ArrayList&lt;String&gt; phrases = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(featureMap,</div>
+<div class="line">                <span class="stringliteral">&quot;quotedObject&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (phrases.size() &lt;= 2) {</div>
+<div class="line">            <span class="keywordflow">if</span>(phraseOperationModel.getOperationType() == FileKommander.INSERT ) {</div>
+<div class="line">            phraseOperationModel.setNewPhrase(phrases.get(0));</div>
+<div class="line">            phraseOperationModel.setOldPhrase(phrases.get(1));</div>
+<div class="line">            }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(phraseOperationModel.getOperationType() == FileKommander.REMOVE){</div>
+<div class="line">            <span class="comment">//  phraseOperationModel.setNewPhrase(phrases.get(1));</span></div>
+<div class="line">                phraseOperationModel.setOldPhrase(phrases.get(0));</div>
+<div class="line">            }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(phraseOperationModel.getOperationType() == FileKommander.REPLACE){</div>
+<div class="line">                phraseOperationModel.setNewPhrase(phrases.get(1));</div>
+<div class="line">                phraseOperationModel.setOldPhrase(phrases.get(0));</div>
+<div class="line">            }</div>
+<div class="line">        } </div>
+<div class="line"><span class="comment">//      else if (phrases.size() == 1) {</span></div>
+<div class="line"><span class="comment">//          phraseOperationModel.setNewPhrase(phrases.get(0));</span></div>
+<div class="line"><span class="comment">//          phraseOperationModel.setOldPhrase(&quot;\\w&quot;);</span></div>
+<div class="line"><span class="comment">//      }</span></div>
+<div class="line">        <span class="keywordflow">else</span> {</div>
+<div class="line">            FileKommanderRun.getGuiv2().displayErrorMessage(</div>
+<div class="line">                    <span class="stringliteral">&quot;Multiple phrases found. Not sure what to do.&quot;</span>);</div>
+<div class="line">            <span class="keywordflow">return</span> null;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">if</span> (quotedObjectNamesList != null) {</div>
+<div class="line">            <span class="keywordflow">for</span> (String quotedName : quotedObjectNamesList) {</div>
+<div class="line">                <span class="keywordflow">if</span> (phraseList.contains(quotedName)) {</div>
+<div class="line">                    <span class="keywordflow">if</span> (phraseOperationModel.getNewPhrase().equals(<span class="stringliteral">&quot;&quot;</span>)) {</div>
+<div class="line">                        phraseOperationModel.setNewPhrase(quotedName);</div>
+<div class="line">                    }</div>
+<div class="line">                } <span class="keywordflow">else</span> {</div>
+<div class="line">                    <span class="keywordflow">if</span> (phraseOperationModel.getOldPhrase().equals(<span class="stringliteral">&quot;&quot;</span>)) {</div>
+<div class="line">                        phraseOperationModel.setOldPhrase(quotedName);</div>
+<div class="line">                    }</div>
+<div class="line">                }</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">return</span> phraseOperationModel;</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
 </div>
@@ -456,9 +652,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L151">151</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<p>Definition at line <a class="el" href="#L320">320</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 <div class="fragment"><div class="line">                                                                                 {</div>
-<div class="line">        <span class="comment">//TODO</span></div>
+<div class="line">        <span class="comment">// TODO</span></div>
 <div class="line">        <span class="keywordflow">return</span> null;</div>
 <div class="line"></div>
 <div class="line">    }</div>
@@ -487,30 +683,34 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L157">157</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<p>Definition at line <a class="el" href="#L326">326</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 <div class="fragment"><div class="line">                                                                                 {</div>
 <div class="line">        FeatureMap featureMap = annotation.getFeatures();</div>
 <div class="line">        String content = (String) featureMap.get(<span class="stringliteral">&quot;content&quot;</span>);</div>
-<div class="line">        </div>
+<div class="line"></div>
 <div class="line">        ArrayList&lt;String&gt; fileNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
 <div class="line">                featureMap, <span class="stringliteral">&quot;fileName&quot;</span>);</div>
-<div class="line">        fileNamesList.addAll(<a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
-<div class="line">                featureMap, <span class="stringliteral">&quot;directoryName&quot;</span>));</div>
-<div class="line">        fileNamesList.addAll(<a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
-<div class="line">                featureMap, <span class="stringliteral">&quot;quotedObject&quot;</span>));</div>
-<div class="line"><span class="comment">//      ArrayList&lt;String&gt; directoryNamesList = getObjectNameFromAnnotation(</span></div>
-<div class="line"><span class="comment">//              featureMap, &quot;directoryName&quot;);</span></div>
-<div class="line"><span class="comment">//      ArrayList&lt;String&gt; quotedObjectNamesList = getObjectNameFromAnnotation(</span></div>
-<div class="line"><span class="comment">//              featureMap, &quot;quotedObject&quot;);</span></div>
+<div class="line">        fileNamesList.addAll(<a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(featureMap,</div>
+<div class="line">                <span class="stringliteral">&quot;directoryName&quot;</span>));</div>
+<div class="line">        fileNamesList.addAll(<a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(featureMap,</div>
+<div class="line">                <span class="stringliteral">&quot;quotedObject&quot;</span>));</div>
+<div class="line">        <span class="comment">// ArrayList&lt;String&gt; directoryNamesList = getObjectNameFromAnnotation(</span></div>
+<div class="line">        <span class="comment">// featureMap, &quot;directoryName&quot;);</span></div>
+<div class="line">        <span class="comment">// ArrayList&lt;String&gt; quotedObjectNamesList =</span></div>
+<div class="line">        <span class="comment">// getObjectNameFromAnnotation(</span></div>
+<div class="line">        <span class="comment">// featureMap, &quot;quotedObject&quot;);</span></div>
 <div class="line">        RenameModel renameModel = <span class="keyword">new</span> RenameModel();</div>
-<div class="line">        <span class="keywordflow">if</span>(fileNamesList.size() == 2){</div>
+<div class="line">        <span class="keywordflow">if</span> (fileNamesList.size() == 2) {</div>
 <div class="line">            renameModel.setOldFileName(fileNamesList.get(0));</div>
 <div class="line">            renameModel.setNewFileName(fileNamesList.get(1));</div>
 <div class="line">            renameModel.setType(0);</div>
 <div class="line">            renameModel.setModelRun(<span class="keyword">false</span>);</div>
-<div class="line">        }<span class="keywordflow">else</span>{</div>
-<div class="line">            FileKommanderRun.getGuiv2().displayErrorMessage(<span class="stringliteral">&quot;Multiple file/folder names found , unsure which to rename to which&quot;</span>);</div>
-<div class="line">            <span class="keywordflow">return</span> null ;</div>
+<div class="line">        } <span class="keywordflow">else</span> {</div>
+<div class="line">            FileKommanderRun</div>
+<div class="line">                    .getGuiv2()</div>
+<div class="line">                    .displayErrorMessage(</div>
+<div class="line">                            <span class="stringliteral">&quot;Multiple file/folder names found , unsure which to rename to which&quot;</span>);</div>
+<div class="line">            <span class="keywordflow">return</span> null;</div>
 <div class="line">        }</div>
 <div class="line">        <span class="keywordflow">return</span> renameModel;</div>
 <div class="line">    }</div>
@@ -539,9 +739,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L184">184</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<p>Definition at line <a class="el" href="#L357">357</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 <div class="fragment"><div class="line">                                                                                  {</div>
-<div class="line">        <span class="comment">//TODO</span></div>
+<div class="line">        <span class="comment">// TODO</span></div>
 <div class="line">        <span class="keywordflow">return</span> null;</div>
 <div class="line"></div>
 <div class="line">    }</div>
@@ -580,65 +780,19 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L190">190</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
-<div class="fragment"><div class="line">                                                                                                   {</div>
-<div class="line"><span class="comment">//      StatsModel statsModel = new StatsModel();</span></div>
-<div class="line"><span class="comment">//        FeatureMap featureMap = annotation.getFeatures();</span></div>
-<div class="line"><span class="comment">//        AnnotationSet actions = (AnnotationSet) featureMap.get(&quot;actions&quot;);</span></div>
-<div class="line"><span class="comment">//        Annotation action  = null ;</span></div>
-<div class="line"><span class="comment">//        Iterator iterator = actions.iterator() ;</span></div>
-<div class="line"><span class="comment">//        String statType = &quot;&quot; ; </span></div>
-<div class="line"><span class="comment">//        while(iterator.hasNext()){</span></div>
-<div class="line"><span class="comment">//          action = (Annotation) iterator.next() ; </span></div>
-<div class="line"><span class="comment">//          FeatureMap featureMap2 = action.getFeatures() ;</span></div>
-<div class="line"><span class="comment">//          if(featureMap2.get(&quot;minorType&quot;).equals(&quot;stats&quot;)){</span></div>
-<div class="line"><span class="comment">//              statType  = ((String) featureMap2.get(&quot;string&quot;)).toLowerCase(); </span></div>
-<div class="line"><span class="comment">//          }</span></div>
-<div class="line"><span class="comment">//        }</span><span class="comment"></span></div>
-<div class="line"><span class="comment">////        String action = ((String)((Annotation)featureMap.get(&quot;actions&quot;)).getFeatures().get(&quot;string&quot;)).toLowerCase();</span></div>
-<div class="line"><span class="comment"></span><span class="comment">//        ArrayList&lt;String&gt; fileNamesList = getObjectNameFromAnnotation(</span></div>
-<div class="line"><span class="comment">//                        featureMap, &quot;fileName&quot;);</span></div>
-<div class="line"><span class="comment">//        ArrayList&lt;String&gt; directoryNamesList = getObjectNameFromAnnotation(</span></div>
-<div class="line"><span class="comment">//                        featureMap, &quot;directoryName&quot;);</span></div>
-<div class="line"><span class="comment">//        ArrayList&lt;String&gt; quotedObjectNamesList = getObjectNameFromAnnotation(</span></div>
-<div class="line"><span class="comment">//                        featureMap, &quot;quotedObject&quot;);</span></div>
-<div class="line"><span class="comment">//        if (fileNamesList != null) {</span></div>
-<div class="line"><span class="comment">//                for (String fileName : fileNamesList) {</span></div>
-<div class="line"><span class="comment">//                        statsModel.add(fileName, FileKommander.FILE);</span></div>
-<div class="line"><span class="comment">//                }</span></div>
-<div class="line"><span class="comment">//        }</span></div>
-<div class="line"><span class="comment">//        if (directoryNamesList != null) {</span></div>
-<div class="line"><span class="comment">//                for (String folderName : directoryNamesList) {</span></div>
-<div class="line"><span class="comment">//                        statsModel.add(folderName, FileKommander.DIRECTORY);</span></div>
-<div class="line"><span class="comment">//                }</span></div>
-<div class="line"><span class="comment">//        }</span></div>
-<div class="line"><span class="comment">//        if (quotedObjectNamesList != null) {</span></div>
-<div class="line"><span class="comment">//                for (String quotedName : quotedObjectNamesList) {</span></div>
-<div class="line"><span class="comment">//                        if (!fileNamesList.contains(quotedName)</span></div>
-<div class="line"><span class="comment">//                                        &amp;&amp; !directoryNamesList.contains(quotedName))</span></div>
-<div class="line"><span class="comment">//                                statsModel.add(quotedName, FileKommander.DIRECTORY);</span></div>
-<div class="line"><span class="comment">//                }</span></div>
-<div class="line"><span class="comment">//        }</span></div>
-<div class="line"><span class="comment">//        log.info(&quot;Files to be analysed : &quot; + fileNamesList);</span></div>
-<div class="line"><span class="comment">//        log.info(&quot;Directories to be analysed: &quot; + directoryNamesList);</span></div>
-<div class="line"><span class="comment">//        log.info(&quot;Files to be abalysed : &quot; + quotedObjectNamesList);</span></div>
-<div class="line"><span class="comment">//</span></div>
-<div class="line"><span class="comment">//</span></div>
-<div class="line"><span class="comment">//        if(statType.equals(&quot;count&quot;) || statType.contains(&quot;count&quot;) ){</span></div>
-<div class="line"><span class="comment">//                statsModel.setStatsType(FileKommander.COUNT);</span></div>
-<div class="line"><span class="comment">//               </span></div>
-<div class="line"><span class="comment">//        }else if(statType.equals(&quot;size&quot;) || statType.contains(&quot;size&quot;) ){</span></div>
-<div class="line"><span class="comment">//                statsModel.setStatsType(FileKommander.SIZEOF);</span></div>
-<div class="line"><span class="comment">//        }else if(statType.equals(&quot;list&quot;) || statType.contains(&quot;list&quot;) ){</span></div>
-<div class="line"><span class="comment">//                statsModel.setStatsType(FileKommander.LIST_FILES);</span></div>
-<div class="line"><span class="comment">//        }else if(statType.equals(&quot;modified&quot;) || statType.contains(&quot;modified&quot;) ){</span></div>
-<div class="line"><span class="comment">//                statsModel.setStatsType(FileKommander.LAST_MODIFIED);</span></div>
-<div class="line"><span class="comment">//        }</span></div>
-<div class="line"><span class="comment">//        return statsModel;</span></div>
-<div class="line"></div>
+<p>Definition at line <a class="el" href="#L363">363</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<div class="fragment"><div class="line">                               {</div>
 <div class="line">        StatsModel statsModel = <span class="keyword">new</span> StatsModel();</div>
 <div class="line">        FeatureMap featureMap = annotation.getFeatures();</div>
-<div class="line">        String action = ((String)((Annotation)featureMap.get(<span class="stringliteral">&quot;action&quot;</span>)).getFeatures().get(<span class="stringliteral">&quot;string&quot;</span>)).toLowerCase();</div>
+<div class="line">        ArrayList&lt;String&gt; actionList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(featureMap,</div>
+<div class="line">                <span class="stringliteral">&quot;actions&quot;</span>);</div>
+<div class="line">        String action = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line">        <span class="keywordflow">if</span> (!actionList.isEmpty()) {</div>
+<div class="line">            action = actionList.get(0);</div>
+<div class="line">        } <span class="keywordflow">else</span> {</div>
+<div class="line">            <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#ae99df52b353dd7b0d2014d581fcc8cff">log</a>.error(<span class="stringliteral">&quot;No stat action found&quot;</span>);</div>
+<div class="line">        }</div>
+<div class="line"></div>
 <div class="line">        ArrayList&lt;String&gt; fileNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
 <div class="line">                featureMap, <span class="stringliteral">&quot;fileName&quot;</span>);</div>
 <div class="line">        ArrayList&lt;String&gt; directoryNamesList = <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#a8652e1bba48585a8c416e6e212fe4766">getObjectNameFromAnnotation</a>(</div>
@@ -665,17 +819,17 @@ Static Private Attributes</h2></td></tr>
 <div class="line">        <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#ae99df52b353dd7b0d2014d581fcc8cff">log</a>.info(<span class="stringliteral">&quot;Files to be Created : &quot;</span> + fileNamesList);</div>
 <div class="line">        <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#ae99df52b353dd7b0d2014d581fcc8cff">log</a>.info(<span class="stringliteral">&quot;Directories to be Created : &quot;</span> + directoryNamesList);</div>
 <div class="line">        <a class="code" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html#ae99df52b353dd7b0d2014d581fcc8cff">log</a>.info(<span class="stringliteral">&quot;Files to be Created : &quot;</span> + quotedObjectNamesList);</div>
-<div class="line">    <span class="comment">//  String actionType= ((String)action.getFeatures().get(&quot;string&quot;)).toLowerCase();</span></div>
-<div class="line"></div>
-<div class="line">        <span class="keywordflow">if</span>(action.equals(<span class="stringliteral">&quot;count&quot;</span>) || action.contains(<span class="stringliteral">&quot;count&quot;</span>) ){</div>
+<div class="line">        <span class="keywordflow">if</span> (action.equals(<span class="stringliteral">&quot;count&quot;</span>) || action.contains(<span class="stringliteral">&quot;count&quot;</span>)) {</div>
 <div class="line">            statsModel.setStatsType(FileKommander.COUNT);</div>
-<div class="line">            </div>
-<div class="line">        }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(action.equals(<span class="stringliteral">&quot;size&quot;</span>) || action.contains(<span class="stringliteral">&quot;size&quot;</span>) ){</div>
+<div class="line"></div>
+<div class="line">        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (action.equals(<span class="stringliteral">&quot;size&quot;</span>) || action.contains(<span class="stringliteral">&quot;size&quot;</span>)) {</div>
 <div class="line">            statsModel.setStatsType(FileKommander.SIZEOF);</div>
-<div class="line">        }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(action.equals(<span class="stringliteral">&quot;list&quot;</span>) || action.contains(<span class="stringliteral">&quot;list&quot;</span>) ){</div>
+<div class="line">        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (action.equals(<span class="stringliteral">&quot;list&quot;</span>) || action.contains(<span class="stringliteral">&quot;list&quot;</span>)) {</div>
 <div class="line">            statsModel.setStatsType(FileKommander.LIST_FILES);</div>
-<div class="line">        }<span class="keywordflow">else</span> <span class="keywordflow">if</span>(action.equals(<span class="stringliteral">&quot;modified&quot;</span>) || action.contains(<span class="stringliteral">&quot;modified&quot;</span>) ){</div>
+<div class="line">        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (action.equals(<span class="stringliteral">&quot;modified&quot;</span>) || action.contains(<span class="stringliteral">&quot;modified&quot;</span>)) {</div>
 <div class="line">            statsModel.setStatsType(FileKommander.LAST_MODIFIED);</div>
+<div class="line">        }<span class="keywordflow">else</span> <span class="keywordflow">if</span> (action.equals(<span class="stringliteral">&quot;list&quot;</span>) || action.contains(<span class="stringliteral">&quot;list&quot;</span>)) {</div>
+<div class="line">            statsModel.setStatsType(FileKommander.LIST_FILES);</div>
 <div class="line">        }</div>
 <div class="line">        <span class="keywordflow">return</span> statsModel;</div>
 <div class="line">    }</div>
@@ -714,18 +868,35 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L289">289</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<p>Definition at line <a class="el" href="#L417">417</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 <div class="fragment"><div class="line">                                               {</div>
 <div class="line">        ArrayList&lt;String&gt; outputList = null;</div>
 <div class="line">        <span class="keywordflow">if</span> (featureMap.containsKey(key)) {</div>
 <div class="line">            outputList = <span class="keyword">new</span> ArrayList&lt;String&gt;();</div>
 <div class="line">            AnnotationSet objectNames = (AnnotationSet) featureMap.get(key);</div>
-<div class="line">            <span class="keywordflow">for</span> (Annotation <span class="keywordtype">object</span> : objectNames) {</div>
-<div class="line">                FeatureMap featureMap2 = <span class="keywordtype">object</span>.getFeatures();</div>
-<div class="line">                String objectName = (String) featureMap2.get(<span class="stringliteral">&quot;string&quot;</span>);</div>
-<div class="line">                objectName = objectName.replaceAll(<span class="stringliteral">&quot;\&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line">                outputList.add(objectName);</div>
+<div class="line">            ArrayList&lt;Annotation&gt; objectList = <span class="keyword">new</span> ArrayList&lt;Annotation&gt;(</div>
+<div class="line">                    objectNames);</div>
+<div class="line">            Collections.sort(objectList, <span class="keyword">new</span> OffsetComparator());</div>
+<div class="line">            Iterator&lt;Annotation&gt; iterator = objectList.iterator();</div>
+<div class="line">            <span class="keywordflow">while</span> (iterator.hasNext()) {</div>
+<div class="line">                Annotation <span class="keywordtype">object</span> = iterator.next();</div>
+<div class="line">                <span class="keywordflow">if</span> (<span class="keywordtype">object</span> == null) {</div>
+<div class="line">                    <span class="comment">// node =objectNames.nextNode(node) ;</span></div>
+<div class="line">                } <span class="keywordflow">else</span> {</div>
+<div class="line">                    FeatureMap featureMap2 = <span class="keywordtype">object</span>.getFeatures();</div>
+<div class="line">                    String objectName = (String) featureMap2.get(<span class="stringliteral">&quot;string&quot;</span>);</div>
+<div class="line">                    objectName = objectName.replaceAll(<span class="stringliteral">&quot;\&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line">                    outputList.add(objectName);</div>
+<div class="line">                    <span class="comment">// node =objectNames.nextNode(node) ;</span></div>
+<div class="line">                }</div>
 <div class="line">            }</div>
+<div class="line"></div>
+<div class="line">            <span class="comment">// for (Annotation object : objectNames) {</span></div>
+<div class="line">            <span class="comment">// FeatureMap featureMap2 = object.getFeatures();</span></div>
+<div class="line">            <span class="comment">// String objectName = (String) featureMap2.get(&quot;string&quot;);</span></div>
+<div class="line">            <span class="comment">// objectName = objectName.replaceAll(&quot;\&quot;&quot;, &quot;&quot;);</span></div>
+<div class="line">            <span class="comment">// outputList.add(objectName);</span></div>
+<div class="line">            <span class="comment">// }</span></div>
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            <span class="keywordflow">return</span> <span class="keyword">new</span> ArrayList&lt;String&gt;();</div>
 <div class="line">        }</div>
@@ -755,7 +926,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="#L21">21</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
+<p>Definition at line <a class="el" href="#L33">33</a> of file <a class="el" href="">AnalyseAction.java</a>.</p>
 
 </div>
 </div>
@@ -768,7 +939,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecom.html">com</a></li><li class="navelem"><a class="el" href="namespacecom_1_1poly.html">poly</a></li><li class="navelem"><a class="el" href="namespacecom_1_1poly_1_1nlp.html">nlp</a></li><li class="navelem"><a class="el" href="namespacecom_1_1poly_1_1nlp_1_1filekommander.html">filekommander</a></li><li class="navelem"><a class="el" href="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1file.html">file</a></li><li class="navelem"><a class="el" href="namespacecom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions.html">actions</a></li><li class="navelem"><a class="el" href="classcom_1_1poly_1_1nlp_1_1filekommander_1_1file_1_1actions_1_1_analyse_action.html">AnalyseAction</a></li>
-    <li class="footer">Generated on Thu Dec 20 2012 09:41:39 for FileKommander by
+    <li class="footer">Generated on Sat Dec 22 2012 13:38:41 for FileKommander by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.2 </li>
   </ul>
